@@ -7,3 +7,34 @@ binaries:
   - differ
 homepage: https://github.com/JanSmrcka/differ
 repo: https://github.com/JanSmrcka/differ
+language: Rust
+tags:
+  - git
+  - vcs
+  - diff
+install:
+  brew: brew install jansmrcka/tap/differ
+  go: go install github.com/jansmrcka/differ@latest
+packages:
+  brew: differ
+  go: differ
+installNotes: |-
+  ## Install
+
+  ```bash
+  brew install jansmrcka/tap/differ
+  ```
+
+  Or via Go:
+
+  ```bash
+  go install github.com/jansmrcka/differ@latest
+  ```
+
+  Or build from source:
+
+  ```bash
+  make build    # → bin/differ
+  make install  # → $GOPATH/bin/differ
+  ```
+readmeUrl: https://raw.githubusercontent.com/JanSmrcka/differ/HEAD/README.md

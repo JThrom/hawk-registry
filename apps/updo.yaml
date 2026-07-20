@@ -7,3 +7,40 @@ binaries:
   - updo
 homepage: https://github.com/Owloops/updo
 repo: https://github.com/Owloops/updo
+language: Go
+tags:
+  - monitor
+  - system
+  - website
+  - monitoring
+  - uptime
+  - tracking
+  - response
+  - time
+  - metrics
+  - certificate
+install:
+  brew: brew install owloops/tap/updo
+  go: go install github.com/Owloops/updo@latest
+packages:
+  brew: updo
+  go: updo
+installNotes: |-
+  ## Installation
+
+  <details>
+  <summary>macOS - Homebrew (Recommended)</summary>
+
+  ```bash
+  brew install owloops/tap/updo
+  ```
+
+  </details>
+
+  <details>
+  <summary>Linux - Package Managers (Recommended)</summary>
+
+  **Debian/Ubuntu:**
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/Owloops/updo/HEAD/README.md

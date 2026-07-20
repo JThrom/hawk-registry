@@ -7,3 +7,59 @@ binaries:
   - ani-l
 homepage: https://github.com/komposer-aml/ani-l
 repo: https://github.com/komposer-aml/ani-l
+language: Rust
+tags:
+  - rust
+  - anime
+  - browsing
+  - streaming
+  - without
+  - leaving
+install:
+  cargo: cargo install ani-l
+  brew: brew install mpv
+  apt: apt install mpv
+packages:
+  cargo: ani-l
+  brew: mpv
+  apt: mpv
+installNotes: |-
+  ## 📦 Installation
+
+  ### 🛠️ Prerequisites
+
+  #### Installing Rust
+
+  - **MacOS/Linux**: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+
+  - **Windows**: Use [rustup](https://rustup.rs/)
+
+  #### Installing `mpv`
+
+  **You must have `mpv` installed on your system.** `ani-l` delegates video playback to it.
+
+  - **macOS**: `brew install mpv`
+  - **Linux (Debian/Ubuntu)**: `sudo apt install mpv`
+  - **Windows**: [Download mpv](https://mpv.io/installation/) and ensure it is in your System PATH.
+
+  #### Option A: Install from Crates.io (Recommended)
+
+  ```bash
+  cargo install ani-l
+  ```
+
+  #### Option B: Build from Source
+
+  Clone the repository:
+
+  ```bash
+  git clone https://github.com/komposer-aml/ani-l.git
+  cd ani-l
+  ```
+
+  Build and install:
+
+  ```bash
+  cargo install --path .
+  ```
+readmeUrl: https://raw.githubusercontent.com/komposer-aml/ani-l/HEAD/README.md

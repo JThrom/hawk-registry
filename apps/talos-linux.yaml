@@ -8,3 +8,11 @@ binaries:
   - taloslinux
 homepage: https://github.com/siderolabs/talos
 repo: https://github.com/siderolabs/talos
+tags:
+  - linux
+  - distro
+  - dashboard
+  - local
+  - remote
+  - usage
+readmeUrl: https://raw.githubusercontent.com/siderolabs/talos/HEAD/README.md

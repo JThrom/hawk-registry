@@ -7,3 +7,72 @@ binaries:
   - dry
 homepage: https://github.com/moncho/dry
 repo: https://github.com/moncho/dry
+language: Go
+tags:
+  - docker
+  - containers
+  - manager
+install:
+  brew: brew install dry
+packages:
+  brew: dry
+installNotes: |-
+  ## Installation
+
+  The easiest way to install the latest binaries for Linux and Mac is to run this in a shell:
+
+  ```sh
+  curl -sSf https://moncho.github.io/dry/dryup.sh | sudo sh
+  sudo chmod 755 /usr/local/bin/dry
+  ```
+
+  ### Binaries
+
+  If you dont like to **curl | sh**, binaries are provided.
+
+  * **darwin** [amd64](https://github.com/moncho/dry/releases/latest/download/dry-darwin-amd64) / [arm64](https://github.com/moncho/dry/releases/latest/download/dry-darwin-arm64)
+  * **freebsd** [386](https://github.com/moncho/dry/releases/latest/download/dry-freebsd-386) / [amd64](https://github.com/moncho/dry/releases/latest/download/dry-freebsd-amd64)
+  * **linux** [386](https://github.com/moncho/dry/releases/latest/download/dry-linux-386) / [amd64](https://github.com/moncho/dry/releases/latest/download/dry-linux-amd64) / [arm64](https://github.com/moncho/dry/releases/latest/download/dry-linux-arm64) / [armv6](https://github.com/moncho/dry/releases/latest/download/dry-linux-armv6) / [armv7](https://github.com/moncho/dry/releases/latest/download/dry-linux-armv7)
+  * **windows** [amd64](https://github.com/moncho/dry/releases/latest/download/dry-windows-amd64)
+
+  #### Mac OS X / Homebrew
+
+  If you're on OS X and want to use homebrew:
+
+  ```
+  brew tap moncho/dry
+  brew install dry
+  ```
+
+  #### Docker
+
+  ```docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -e DOCKER_HOST=$DOCKER_HOST moncho/dry```
+
+  #### Arch Linux
+
+  ```yay -S dry-bin```
+
+  ### Usage
+
+  Open a console, type ```dry```. It will try to connect to:
+
+  * A Docker host given as a parameter (**-H**).
+  * if none given, a Docker host defined in the **$DOCKER_HOST** environment variable.
+  * if not defined, to **unix:///var/run/docker.sock**.
+
+  If no connection with a Docker host succeeds, **dry** will exit.
+
+  ```dry -T light``` launches dry with the light color theme. Available themes: `dark` (default), `light`.
+
+  ```dry --workspace``` launches the experimental Phase 1 workspace layout.
+
+  ```dry -p``` launches dry with [pprof](https://golang.org/pkg/net/http/pprof/) package active.
+
+  ### Contributing
+
+  All contributions are welcome.
+
+  * Fork the project.
+  * Make changes on a topic branch.
+  * Pull request.
+readmeUrl: https://raw.githubusercontent.com/moncho/dry/HEAD/README.md

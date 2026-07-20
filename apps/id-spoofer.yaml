@@ -7,3 +7,19 @@ binaries:
   - id-spoofer
 homepage: https://github.com/NubleX/ID-Spoofer
 repo: https://github.com/NubleX/ID-Spoofer
+language: Go
+tags:
+  - cross
+  - platform
+  - cybersecurity
+  - toolkit
+  - fingerprint
+  - traffic
+  - obfuscation
+installNotes: |-
+  ## Installation
+
+  ### From binary (recommended)
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/NubleX/ID-Spoofer/HEAD/README.md

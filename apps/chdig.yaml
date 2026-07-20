@@ -7,3 +7,52 @@ binaries:
   - chdig
 homepage: https://github.com/azat/chdig
 repo: https://github.com/azat/chdig
+language: Rust
+tags:
+  - clickhouse
+install:
+  brew: brew install chdig
+packages:
+  brew: chdig
+installNotes: |-
+  ### Installation
+
+  `chdig` is also available as part of `clickhouse` - `clickhouse chdig`, but
+  that version may be slightly outdated.
+
+  Pre-built packages (`.deb`, `.rpm`, `archlinux`, `.tar.gz`) and standalone
+  binaries for `Linux` and `macOS` are available for both `x86_64` and `aarch64`
+  architectures.
+
+  The latest [unstable release can be found on GitHub](https://github.com/azat/chdig/releases/tag/latest).
+
+  *See also the complete list of [releases](https://github.com/azat/chdig/releases).*
+
+  <details>
+
+  <summary>Package repositories (AUR, Scoop, Homebrew)</summary>
+
+  #### archlinux user repository (aur)
+
+  And also for archlinux there is an aur package:
+  - [**chdig-latest-bin**](https://aur.archlinux.org/packages/chdig-latest-bin) - binary artifact of the upstream
+  - [chdig-git](https://aur.archlinux.org/packages/chdig-git) - build from sources
+  - [chdig-bin](https://aur.archlinux.org/packages/chdig-bin) - binary of the latest stable version
+
+  *Note: `chdig-latest-bin` is recommended because it is latest available version and you don't need toolchain to compile*
+
+  #### scoop (windows)
+
+  ```
+  scoop bucket add extras
+  scoop install extras/chdig
+  ```
+
+  #### brew (macos)
+
+  ```
+  brew install chdig
+  ```
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/azat/chdig/HEAD/README.md

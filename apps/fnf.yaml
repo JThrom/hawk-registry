@@ -7,3 +7,27 @@ binaries:
   - fnf
 homepage: https://github.com/leo-arch/fnf
 repo: https://github.com/leo-arch/fnf
+tags:
+  - interactive
+  - fuzzy
+  - finder
+installNotes: |-
+  ## Installation
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/fnf.svg)](https://repology.org/project/fnf/versions)
+
+  **Fnf** is availible in multiple package repositories. If not packaged for your system, perform a manual installation as follows:
+
+  ```sh
+  mkdir build && cd build
+  git clone https://github.com/leo-arch/fnf
+  cd fnf
+  make
+  sudo make install
+  ```
+
+  The `PREFIX` environment variable can be used to specify the install location (the default is `/usr/local`).
+
+  > [!NOTE]
+  > If not running on Linux, you may need to use `gmake` instead of `make`.
+readmeUrl: https://raw.githubusercontent.com/leo-arch/fnf/HEAD/README.md

@@ -7,3 +7,38 @@ binaries:
   - helm
 homepage: https://github.com/0xjuanma/helm
 repo: https://github.com/0xjuanma/helm
+language: Go
+tags:
+  - minimalistic
+  - customizable
+  - pomodoro
+  - like
+  - timer
+install:
+  brew: brew install 0xjuanma/tap/helm
+packages:
+  brew: helm
+installNotes: |-
+  ## Installation/Update
+
+  ### Homebrew
+
+  ```bash
+  brew install 0xjuanma/tap/helm
+  ```
+
+  ### Script
+
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/0xjuanma/helm/main/scripts/install.sh | sh
+  ```
+
+  ### Build from Source
+
+  ```bash
+  git clone https://github.com/0xjuanma/helm.git
+  cd helm
+  go build
+  ./helm
+  ```
+readmeUrl: https://raw.githubusercontent.com/0xjuanma/helm/HEAD/README.md

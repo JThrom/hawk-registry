@@ -7,3 +7,28 @@ binaries:
   - textual-paint
 homepage: https://github.com/1j01/textual-paint
 repo: https://github.com/1j01/textual-paint
+language: Go
+tags:
+  - paint
+install:
+  pip: pip install --upgrade
+  pacman: pacman -S python-pipx
+  pipx: pipx install textual-paint
+packages:
+  pip: --upgrade
+  pacman: python-pipx
+  pipx: textual-paint
+installNotes: |-
+  ### Installation
+
+  Use `pipx` to install globally, without installing dependencies globally:
+  ```bash
+  pip install --upgrade pipx  # or in Arch Linux, sudo pacman -S python-pipx
+  pipx install textual-paint
+  ```
+
+  Alternatively, you can install using `pip`:
+  ```bash
+  pip install textual-paint
+  ```
+readmeUrl: https://raw.githubusercontent.com/1j01/textual-paint/HEAD/README.md

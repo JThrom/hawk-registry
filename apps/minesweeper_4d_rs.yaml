@@ -7,3 +7,16 @@ binaries:
   - minesweeper_4d_rs
 homepage: https://github.com/itabesamesa/minesweeper_4d_rs
 repo: https://github.com/itabesamesa/minesweeper_4d_rs
+language: Rust
+tags:
+  - minesweeper
+  - rust
+  - ratatui
+  - also
+  - used
+  - classic
+install:
+  cargo: cargo install minesweeper_4d
+packages:
+  cargo: minesweeper_4d
+readmeUrl: https://raw.githubusercontent.com/itabesamesa/minesweeper_4d_rs/HEAD/README.md

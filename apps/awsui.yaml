@@ -7,3 +7,20 @@ binaries:
   - awsui
 homepage: https://github.com/junminhong/awsui
 repo: https://github.com/junminhong/awsui
+language: Python
+tags:
+  - aws
+  - cloud
+  - powerful
+  - friendly
+  - profile
+install:
+  pip: pip install awsui
+  brew: brew install amazon-q
+packages:
+  pip: awsui
+  brew: amazon-q
+installNotes: |-
+  # Install with uv (recommended)
+  uv tool install --python 3.13 awsui
+readmeUrl: https://raw.githubusercontent.com/junminhong/awsui/HEAD/README.md

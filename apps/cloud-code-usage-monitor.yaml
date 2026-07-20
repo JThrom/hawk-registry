@@ -8,3 +8,41 @@ binaries:
   - cloudcodeusagemonitor
 homepage: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
 repo: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
+language: Python
+tags:
+  - monitor
+  - system
+  - claude
+  - token
+  - usage
+install:
+  pip: pip install claude-monitor
+  pipx: pipx install claude-monitor
+  apt: apt-get install python3-venv
+  dnf: dnf install python3-venv
+  brew: brew install python3
+packages:
+  pip: claude-monitor
+  pipx: claude-monitor
+  apt: python3-venv
+  dnf: python3-venv
+  brew: python3
+installNotes: |-
+  ## 🚀 Installation
+  ### ⚡ Modern Installation with uv (Recommended)
+
+  **Why uv is the best choice:**
+  - ✅ Creates isolated environments automatically (no system conflicts)
+  - ✅ No Python version issues
+  - ✅ No "externally-managed-environment" errors
+  - ✅ Easy updates and uninstallation
+  - ✅ Works on all platforms
+
+  The fastest and easiest way to install and use the monitor:
+
+  [![PyPI](https://img.shields.io/pypi/v/claude-monitor.svg)](https://pypi.org/project/claude-monitor/)
+
+  #### Install from PyPI
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/Maciek-roboblog/Claude-Code-Usage-Monitor/HEAD/README.md

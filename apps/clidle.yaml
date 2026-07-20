@@ -7,3 +7,15 @@ binaries:
   - clidle
 homepage: https://github.com/ajeetdsouza/clidle
 repo: https://github.com/ajeetdsouza/clidle
+language: Go
+tags:
+  - play
+  - wordle
+  - also
+  - works
+  - over
+install:
+  go: go install github.com/ajeetdsouza/clidle@latest
+packages:
+  go: clidle
+readmeUrl: https://raw.githubusercontent.com/ajeetdsouza/clidle/HEAD/README.md

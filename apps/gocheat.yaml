@@ -7,3 +7,48 @@ binaries:
   - gocheat
 homepage: https://github.com/Achno/gocheat
 repo: https://github.com/Achno/gocheat
+language: Go
+tags:
+  - beautiful
+  - cheatsheet
+  - keybindings
+  - hotkeys
+  - gestures
+  - aliases
+install:
+  go: go install github.com/Achno/gocheat@latest
+packages:
+  go: gocheat
+installNotes: |-
+  # Installation 📦
+
+  ### Arch linux - AUR 
+
+  ```
+  yay -S gocheat
+  ```
+
+  ### Build from source
+
+  🔨 Clone the repo, build the project and move it inside your `$PATH`
+
+  ```
+  git clone https://github.com/Achno/gocheat
+  cd gocheat
+  go build
+  sudo cp gocheat /usr/local/bin/
+  gocheat
+  ```
+
+  Notes 🗒️ : if you have `$GOPATH` setup correctly
+  Eg. you have the following in your .zshrc / .bashrc
+  ```bash
+  export GOPATH=$(go env GOPATH)
+  export GOBIN=$GOPATH/bin
+  export PATH=$PATH:$GOBIN
+  ```
+  You can simply use `go install`
+  ```bash
+  go install github.com/Achno/gocheat@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/Achno/gocheat/HEAD/README.md

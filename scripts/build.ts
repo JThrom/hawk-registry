@@ -25,7 +25,7 @@ const DIST_DIR = join(ROOT, "dist");
 const OUT_FILE = join(DIST_DIR, "index.yaml");
 
 const VALID_MANAGERS = new Set([
-  "brew", "apt", "pacman", "cargo", "npm", "bun", "pipx", "pip", "dnf",
+  "brew", "apt", "pacman", "cargo", "npm", "bun", "pipx", "pip", "dnf", "go",
 ]);
 
 class BuildError extends Error {}

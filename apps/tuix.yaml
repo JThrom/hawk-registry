@@ -7,3 +7,7 @@ binaries:
   - tuix
 homepage: https://github.com/pythops/tuix
 repo: https://github.com/pythops/tuix
+tags:
+  - managing
+  - screens
+readmeUrl: https://raw.githubusercontent.com/pythops/tuix/HEAD/README.md

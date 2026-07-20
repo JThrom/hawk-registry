@@ -7,3 +7,25 @@ binaries:
   - topydo
 homepage: https://github.com/topydo/topydo
 repo: https://github.com/topydo/topydo
+language: Python
+tags:
+  - powerful
+  - todo
+  - list
+  - format
+installNotes: |-
+  Installation
+  ------------
+
+  Simply install with:
+
+      pip3 install topydo
+
+  If you wish to use column mode: install additional dependencies with:
+
+      pip3 install topydo[columns]
+
+  Similarly, for prompt mode you can install additional dependencies with:
+
+      pip3 install topydo[prompt]
+readmeUrl: https://raw.githubusercontent.com/topydo/topydo/HEAD/README.md

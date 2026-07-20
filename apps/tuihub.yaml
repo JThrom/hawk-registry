@@ -7,3 +7,8 @@ binaries:
   - tuihub
 homepage: https://github.com/ashis0013/tuihub
 repo: https://github.com/ashis0013/tuihub
+tags:
+  - utility
+  - dashboard
+  - personal
+readmeUrl: https://raw.githubusercontent.com/ashis0013/tuihub/HEAD/README.md

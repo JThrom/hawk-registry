@@ -7,3 +7,35 @@ binaries:
   - froggit
 homepage: https://github.com/thewizardshell/froggit
 repo: https://github.com/thewizardshell/froggit
+language: Go
+tags:
+  - git
+  - vcs
+  - minimalist
+  - github
+  - integration
+installNotes: |-
+  ## Installation
+
+  ### Quick Install (Recommended)
+
+  **Linux / macOS:**
+  ```bash
+  curl -s https://raw.githubusercontent.com/thewizardshell/froggit/master/scripts/install.sh | bash
+  ```
+
+  **Windows (PowerShell):**
+  ```powershell
+  iwr https://raw.githubusercontent.com/thewizardshell/froggit/master/scripts/install.ps1 -UseBasicParsing | iex
+  ```
+
+  ### Build from Source
+
+  ```bash
+  git clone https://github.com/thewizardshell/froggit.git
+  cd froggit
+  go mod tidy
+  go build
+  ./froggit
+  ```
+readmeUrl: https://raw.githubusercontent.com/thewizardshell/froggit/HEAD/README.md

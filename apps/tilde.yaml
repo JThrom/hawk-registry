@@ -7,3 +7,25 @@ binaries:
   - tilde
 homepage: https://github.com/gphalkes/tilde
 repo: https://github.com/gphalkes/tilde
+tags:
+  - intuitive
+  - text
+  - editor
+install:
+  apt: apt install ./llnextgen_*.deb
+packages:
+  apt: llnextgen_*.deb
+installNotes: |-
+  ## Installing Tilde
+
+  The easiest way to install Tilde is by using the repositories from the Tilde
+  homepage [download section](https://os.ghalkes.nl/tilde/download.html). If there
+  are no binary packages provided for your distribution or hardware, you can still
+  build Tilde from the official releases provided there. Be aware that Tilde
+  depends on several support libraries, which are also provided through the
+  Tilde homepage.
+
+  Building from the official release is recommended over attempting to build from
+  the git repositories for installing Tilde. Only for development of Tilde should
+  the git repositories be used.
+readmeUrl: https://raw.githubusercontent.com/gphalkes/tilde/HEAD/README.md

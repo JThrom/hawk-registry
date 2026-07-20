@@ -8,3 +8,38 @@ binaries:
   - framework-tool
 homepage: https://github.com/grouzen/framework-tool-tui
 repo: https://github.com/grouzen/framework-tool-tui
+language: Rust
+tags:
+  - monitor
+  - system
+  - controlling
+  - monitoring
+  - framework
+  - computers
+  - hardware
+  - built
+  - rust
+install:
+  cargo: cargo install --path
+  pacman: pacman -S framework-tool-tui
+  brew: brew install framework-tool-tui
+packages:
+  cargo: --path
+  pacman: framework-tool-tui
+  brew: framework-tool-tui
+installNotes: |-
+  ## Installation
+
+  ### :dvd: Binaries
+
+  The pre-compiled binaries for Linux, Windows, and FreeBSD are available for download on the [Releases](https://github.com/grouzen/framework-tool-tui/releases) page
+
+  ### :memo: From source
+
+  Requires [Rust](https://rustup.rs/) (Edition 2024) and a Framework laptop.
+
+  ```sh
+  git clone https://github.com/grouzen/framework-tool-tui.git
+  cd framework-tool-tui
+  cargo build --release
+readmeUrl: https://raw.githubusercontent.com/grouzen/framework-tool-tui/HEAD/README.md

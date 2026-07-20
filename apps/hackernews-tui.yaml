@@ -8,3 +8,101 @@ binaries:
   - hackernews
 homepage: https://github.com/aome510/hackernews-TUI
 repo: https://github.com/aome510/hackernews-TUI
+language: Rust
+tags:
+  - rss
+  - news
+  - browse
+  - hacker
+install:
+  cargo: cargo install hackernews_tui
+packages:
+  cargo: hackernews_tui
+installNotes: |-
+  ## Install
+
+  ### Binaries
+
+  Application's prebuilt binaries can be found in the [Releases Page](https://github.com/aome510/hackernews-TUI/releases).
+
+  ### Using cargo
+
+  Install the latest version from [crates.io](https://crates.io/crates/hackernews_tui) by running `cargo install hackernews_tui --locked`.
+
+  ### Docker image
+
+  You can download the binary image of the latest build from the `master` branch by running
+
+  ```shell
+  docker pull aome510/hackernews_tui:latest
+  ```
+
+  then run
+
+  ```shell
+  docker run -it aome510/hackernews_tui:latest
+  ```
+
+  to run the application. You can also use your local configuration file when running the image by running
+
+  ```shell
+  docker run --rm -v ${CONFIG_FILE_PATH}:/app/hn-tui.toml -it aome510/hackernews_tui:latest
+  ```
+
+  with `${CONFIG_FILE_PATH}` is the path to the local configuration file.
+
+  #### Building from source
+
+  Run
+
+  ```shell
+  git clone https://github.com/aome510/hackernews-TUI.git
+  cd hackernews-TUI
+  cargo build --release
+  ```
+
+  to build the application, then run
+
+  ```shell
+  ./target/release/hackernews_tui
+  ```
+
+  to run the application, or
+
+  ```shell
+  ln -sf $PWD/target/release/hackernews_tui /usr/local/bin
+  ```
+
+  to link the executable binary to `/usr/local/bin` folder.
+
+  ### Windows
+
+  #### Via Scoop
+
+  Run `scoop install hackernews-tui` to install the application.
+
+  ### macOS
+
+  #### Via MacPorts
+
+  Run `sudo port install hackernews-tui` to install the application.
+
+  ### Arch Linux
+
+  Run `yay -S hackernews_tui` to install the application as an AUR package.
+
+  ### NetBSD
+
+  #### Using the package manager
+
+  ```shell
+  pkgin install hackernews-tui
+  ```
+
+  #### Building from source
+
+  ```shell
+  cd /usr/pkgsrc/www/hackernews-tui
+  make install
+  ```
+readmeUrl: https://raw.githubusercontent.com/aome510/hackernews-TUI/HEAD/README.md

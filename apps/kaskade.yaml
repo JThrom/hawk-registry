@@ -7,3 +7,36 @@ binaries:
   - kaskade
 homepage: https://github.com/sauljabin/kaskade
 repo: https://github.com/sauljabin/kaskade
+language: Go
+tags:
+  - kafka
+  - which
+  - interact
+  - consume
+  - topics
+  - style
+install:
+  brew: brew install kaskade
+  pipx: pipx install kaskade
+packages:
+  brew: kaskade
+  pipx: kaskade
+installNotes: |-
+  ## Installation
+
+  #### Install it with `brew`:
+
+  ```bash
+  brew install kaskade
+  ```
+
+  [brew installation](https://brew.sh/).
+
+  #### Install it with `pipx`:
+
+  ```bash
+  pipx install kaskade
+  ```
+
+  [pipx installation](https://pipx.pypa.io/stable/installation/).
+readmeUrl: https://raw.githubusercontent.com/sauljabin/kaskade/HEAD/README.md

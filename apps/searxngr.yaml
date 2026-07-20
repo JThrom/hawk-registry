@@ -7,3 +7,30 @@ binaries:
   - searxngr
 homepage: https://github.com/scross01/searxngr
 repo: https://github.com/scross01/searxngr
+tags:
+  - search
+  - searxng
+install:
+  brew: brew install grow
+packages:
+  brew: grow
+installNotes: |-
+  ## Installation
+
+  Installation requires the
+  [`uv`](https://docs.astral.sh/uv/getting-started/installation/) package manager.
+
+  ```shell
+  uv tool install https://github.com/scross01/searxngr.git
+  ```
+
+  To install from source
+
+  ```shell
+  git clone https://github.com/scross01/searxngr.git
+  cd searxngr
+  uv venv && source .venv/bin/activate # (optional)
+  uv sync
+  uv tool install .
+  ```
+readmeUrl: https://raw.githubusercontent.com/scross01/searxngr/HEAD/README.md

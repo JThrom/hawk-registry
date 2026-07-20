@@ -7,3 +7,9 @@ binaries:
   - nethack
 homepage: https://github.com/NetHack/NetHack
 repo: https://github.com/NetHack/NetHack
+language: Go
+tags:
+  - dungeon
+  - exploration
+  - game
+readmeUrl: https://raw.githubusercontent.com/NetHack/NetHack/HEAD/README

@@ -7,3 +7,68 @@ binaries:
   - toad
 homepage: https://github.com/batrachianai/toad
 repo: https://github.com/batrachianai/toad
+language: Python
+tags:
+  - unified
+install:
+  apt: apt install xclip
+packages:
+  apt: xclip
+installNotes: "## Getting Started\r
+
+  \r
+
+  The easiest way to install Toad is by pasting the following in to your terminal:\r
+
+  \r
+
+  ```bash\r
+
+  curl -fsSL batrachian.ai/install | sh\r
+
+  ```\r
+
+  \r
+
+  You should now have `toad` installed.\r
+
+  \r
+
+  If that doesn't work for any reason, then you can install with the following steps:\r
+
+  \r
+
+  First [install UV](https://docs.astral.sh/uv/getting-started/installation/):\r
+
+  \r
+
+  ```bash\r
+
+  curl -LsSf https://astral.sh/uv/install.sh | sh\r
+
+  ```\r
+
+  \r
+
+  Then use UV to install toad:\r
+
+  \r
+
+  ```bash\r
+
+  uv tool install -U batrachian-toad --python 3.14\r
+
+  ```\r
+
+  \r
+
+  Toad is also available on [conda-forge](https://conda-forge.org), and can be installed using [pixi](https://pixi.prefix.dev/latest/#installation):\r
+
+  \r
+
+  ```bash\r
+
+  pixi global install batrachian-toad\r
+
+  ```"
+readmeUrl: https://raw.githubusercontent.com/batrachianai/toad/HEAD/README.md

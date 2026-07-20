@@ -7,3 +7,31 @@ binaries:
   - toney
 homepage: https://github.com/SourcewareLab/Toney
 repo: https://github.com/SourcewareLab/Toney
+language: Go
+tags:
+  - lightweight
+  - note
+  - taking
+  - developer
+installNotes: |-
+  ## 🚀 Installation
+
+  Refer to the docs [here](https://sourcewarelab.github.io/Toney/guide/install). To view all the installation options!
+
+  Run this command to ensure Toney is setup perfectly.
+
+  ```
+    toney init
+  ```
+
+
+  ### ✅ Verify Installation
+
+  Once installed, you can run:
+
+  ```
+  toney init
+  ```
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/SourcewareLab/Toney/HEAD/README.md

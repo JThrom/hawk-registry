@@ -1,0 +1,124 @@
+![WifUIBanner](images/Animation.gif)
+
+# WifUI
+
+[![Downloads](https://img.shields.io/github/downloads/sohamw03/wifui/total)](https://github.com/sohamw03/wifui/releases)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/sohamw03/wifui/release.yml)
+![WinGet Package Version](https://img.shields.io/winget/v/sohamw03.wifui)
+[![Scoop Version](https://img.shields.io/scoop/v/wifui?bucket=https%3A%2F%2Fgithub.com%2Fsohamw03%2FScoop-Bucket)](https://github.com/sohamw03/Scoop-Bucket)
+[![Chocolatey Version](https://img.shields.io/chocolatey/v/wifui?link=https%3A%2F%2Fcommunity.chocolatey.org%2Fpackages%2Fwifui)](https://community.chocolatey.org/packages/wifui)
+[![Crates.io Version](https://img.shields.io/crates/v/wifui)](https://crates.io/crates/wifui)
+![GitHub Repo stars](https://img.shields.io/github/stars/sohamw03/wifui)
+
+**WifUI** is a blazing fast, lightweight Terminal User Interface (TUI) for managing Wi-Fi connections on **Windows**. Built with Rust and `ratatui`, it offers a keyboard-centric way to scan, connect, and monitor your network status without leaving the terminal.
+
+## 🚀 Features
+
+- **Network Scanning**: Instantly discover available Wi-Fi networks.
+- **Seamless Connection**: Connect to open or secured networks.
+- **Network Management**: View detailed network info (SSID, Signal Strength, Security Type, Channel).
+- **Share WiFi**: Generate QR codes to share saved network credentials.
+- **Keyboard Driven**: Efficient navigation with Vim-like keybindings.
+
+## 📸 Screenshots
+
+| Home | Add Network |
+|:---:|:---:|
+| ![Home](images/main.png) | ![Search](images/addnetwork.png) |
+| Password | Search |
+| ![Password](images/password.png) | ![Search](images/search.png) |
+| Share |
+| ![Share](images/Share.png) |
+
+## 📦 Installation
+
+**Note:** For the best experience, [Nerd Fonts](https://www.nerdfonts.com/) are recommended. However, you can use the `--ascii` flag if you prefer standard text-based icons.
+
+### Winget
+
+```sh
+winget install wifui
+```
+
+### [Scoop](https://scoop.sh/#/apps?q=%22https%3A%2F%2Fgithub.com%2Fsohamw03%2FScoop-Bucket%22&o=false)
+
+```sh
+scoop bucket add sohamw03 https://github.com/sohamw03/Scoop-Bucket
+scoop install wifui
+```
+
+### [Chocolatey](https://community.chocolatey.org/packages/wifui)
+
+```sh
+choco install wifui
+```
+
+### [Crates.io](https://crates.io/crates/wifui)
+
+```sh
+cargo install wifui
+```
+
+### From Source
+
+Ensure you have the [Rust toolchain](https://www.rust-lang.org/tools/install) installed.
+```sh
+winget install Rustlang.Rustup
+winget install --id Microsoft.VisualStudio.2022.BuildTools --override "--passive --wait --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows11SDK.22621"
+```
+```sh
+git clone https://github.com/sohamw03/wifui.git
+cd wifui
+cargo install --path .
+```
+
+## 🎮 Usage
+
+Run the application:
+
+```sh
+wifui
+```
+
+### Command Line Arguments
+
+| Flag | Description |
+| :--- | :--- |
+| `--ascii` | Use ASCII icons (no Nerd Fonts required) |
+| `--show-keys` | Show key logger for debugging |
+| `-v`, `--version` | Print version information |
+
+### Keybindings
+
+| Key | Action |
+| :--- | :--- |
+| `↑` / `k` | Move Selection Up |
+| `↓` / `j` | Move Selection Down |
+| `g` / `Home` | Go to Top |
+| `G` / `End` | Go to Bottom |
+| `Enter` | Connect / Disconnect |
+| `n` | Add New Network Manually |
+| `r` | Refresh Network List |
+| `f` | Forget Network |
+| `a` | Toggle Auto Connect |
+| `s` | Share WiFi (QR Code) |
+| `/` | Search Networks |
+| `q` / `Ctrl + c` | Quit |
+| `Esc` | Back / Clear Search / Quit |
+
+### Input Navigation (Search & Password)
+
+| Key | Action |
+| :--- | :--- |
+| `Esc` / `Ctrl + [` | Clear Input |
+| `Ctrl / Alt + Backspace` | Delete Word |
+| `Ctrl / Alt + ← / →` | Move Cursor by Word |
+| `Home / End` | Move Cursor to Start / End |
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request on [GitHub](https://github.com/sohamw03/wifui).
+
+## 📄 License
+
+This project is licensed under the MIT License.

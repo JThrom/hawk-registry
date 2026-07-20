@@ -1,0 +1,104 @@
+<p align="center">
+  <a href="https://github.com/knuspii/crunchycleaner/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/knuspii/crunchycleaner/go.yml?style=for-the-badge&logo=githubactions&logoColor=white&label=Build&labelColor=111111&color=00c853" alt="Build">
+  </a>
+  <a href="https://github.com/knuspii/crunchycleaner/releases">
+    <img src="https://img.shields.io/github/v/release/knuspii/crunchycleaner?style=for-the-badge&logo=github&logoColor=white&label=Release&labelColor=111111&color=ff6d00" alt="Release">
+  </a>
+  <a href="https://github.com/knuspii/crunchycleaner/releases">
+    <img src="https://img.shields.io/github/downloads/knuspii/crunchycleaner/total?style=for-the-badge&logo=github&logoColor=white&label=Downloads&labelColor=111111&color=8e24aa" alt="Downloads">
+  </a>
+  <a href="https://github.com/knuspii/crunchycleaner">
+    <img src="https://img.shields.io/github/stars/knuspii/crunchycleaner?style=for-the-badge&logo=github&logoColor=white&label=Stars&labelColor=111111&color=fbc02d" alt="Stars">
+  </a>
+</p>
+
+<div align="center">
+<h1>CrunchyCleaner <img src="assets/logo.png" width="100" height="100" alt="Logo"></h1>
+<img src="assets/crunchycleaner-demo.gif" width="1000" height="1000" alt="Preview">
+</div>
+
+### 🧹 A lightweight, software [cache](https://wikipedia.org/wiki/Cache_(computing)) cleanup tool for Windows & Linux.
+> Made by: Knuspii, (M)
+- **Cross-Platform:** Works on both **Windows** and **Linux**
+- **Lightweight:** Single binary, no dependencies (just download and run it)
+- **TUI (Text-UI):** Simple, minimalist interface, no confusing menus
+
+---
+
+### Supported Software List:
+| Category | Software / Path |
+| :--- | :--- |
+| **System:** | System Logs, System Temp, Thumbnail, Shell History, Package Managers, Shader Cache |
+| **Browsers:** | Firefox, Google Chrome, Microsoft Edge, Brave, Opera |
+| **Development:** | Visual Studio Code, Slack, JetBrains IDE, Go, Pip, NPM, Yarn, Cargo, NuGet, Gradle |
+| **Gaming:** | Steam, Epic Games(Heroic) |
+| **Apps:** | Discord, Spotify, Thunderbird, Telegram |
+
+**Flatpak is supported** \
+**Snap is NOT supported**
+
+---
+
+## 📥 How to Install & Download ![Download](https://img.shields.io/github/downloads/knuspii/crunchycleaner/total?color=green)
+**Download the latest binary and just run/open it: [[Download here]](https://github.com/knuspii/crunchycleaner/releases)** \
+Or paste the corresponding command into your terminal and restart it afterwards to fully install it. \
+\
+For Linux (using sudo):
+```
+curl -L https://github.com/Knuspii/CrunchyCleaner/releases/latest/download/crunchycleaner -o cc && sudo install -m 755 cc /usr/local/bin/crunchycleaner && rm cc
+```
+For Windows (using Powershell as Admin):
+```
+$d="$env:ProgramFiles\CrunchyCleaner"; md $d -F; iwr "https://github.com/Knuspii/CrunchyCleaner/releases/latest/download/crunchycleaner.exe" -OutFile "$d\crunchycleaner.exe"; $p=[Environment]::GetEnvironmentVariable('Path',2); if($p -notlike "$d"){[Environment]::SetEnvironmentVariable('Path',"$p;$d",2)}
+```
+For Go (using go install):
+```
+go install github.com/knuspii/crunchycleaner/v2@latest
+```
+After that you can just type `crunchycleaner -v` into your terminal to verify it's installed.
+
+---
+
+## Options:
+```
+  -a    Automate cleaning (select all and start immediately)
+  -d    Simulation mode without deleting files (for testing)
+  -v    Display version information
+```
+
+---
+
+> [!WARNING]
+> You use this tool at your own risk!
+
+> [!NOTE]
+> AI was used for this project in some parts. BUT THIS IS NOT VIBECODED!
+
+## Q&A
+**Q:** Will this break my system? \
+**A:** No.\
+\
+**Q:** What does it actually delete? \
+**A:** Only cache files and temp files.\
+\
+**Q:** Why another cleaner? \
+**A:** Because this one is easy, simple, small and lightweight.
+
+## Other Downloads
+CrunchyCleaner is also available on SourceForge \
+\
+[![Download CrunchyCleaner](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/crunchycleaner/files/latest/download)
+[![Total Downloads](https://img.shields.io/sourceforge/dt/crunchycleaner.svg)](https://sourceforge.net/projects/crunchycleaner/files/latest/download)
+
+---
+
+### 🎖️ Featured on
+[![Awesome TUIs](https://img.shields.io/badge/Awesome-TUIs-orange?style=flat-square)](https://github.com/rothgar/awesome-tuis)
+[![Awesome Go](https://img.shields.io/badge/Awesome-Go-blue?style=flat-square)](https://github.com/avelino/awesome-go)
+[![Awesome Windows](https://img.shields.io/badge/Awesome-Windows-blueviiet?style=flat-square)](https://github.com/0PandaDEV/awesome-windows)
+
+### External Dependencies
+This project uses the following external dependencies:
+- **[github.com/eiannone/keyboard](https://github.com/eiannone/keyboard)** – used for cross-platform keyboard input (MIT License)
+- **[github.com/shirou/gopsutil](https://github.com/shirou/gopsutil)** – used for cross-platform system and hardware metrics (BSD 3-Clause License)

@@ -7,3 +7,77 @@ binaries:
   - moribito
 homepage: https://github.com/ericschmar/moribito
 repo: https://github.com/ericschmar/moribito
+language: Go
+tags:
+  - browse
+  - ldap
+  - directory
+  - trees
+  - viewing
+  - records
+  - executing
+  - custom
+  - queries
+install:
+  brew: brew install moribito
+packages:
+  brew: moribito
+installNotes: |-
+  ## Installation
+
+  ### Homebrew (Recommended for macOS/Linux)
+
+  ```bash
+  brew install moribito
+  ```
+
+  ### Arch Linux (AUR)
+
+  #### Last Release
+  ```bash
+  yay -S moribito
+  ```
+
+  #### Development Version
+  ```bash
+  yay -S moribito-git
+  ```
+  PKGBUILDS are available here:
+   - https://aur.archlinux.org/packages/moribito
+   - https://aur.archlinux.org/packages/moribito-git
+
+  ### From GitHub Releases
+
+  Download the latest pre-built binary from [GitHub Releases](https://github.com/ericschmar/moribito/releases):
+
+  #### Option 1: Quick Install Scripts (Recommended)
+
+  **Linux/Unix:**
+
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/ericschmar/moribito/main/scripts/install.sh | bash
+  ```
+
+  **macOS:**
+
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/ericschmar/moribito/main/scripts/install-macos.sh | bash
+  ```
+
+  **Windows (PowerShell):**
+
+  ```powershell
+  irm https://raw.githubusercontent.com/ericschmar/moribito/main/scripts/install.ps1 | iex
+  ```
+
+  The install scripts will:
+
+  -   Download the appropriate binary for your platform
+  -   Install it to the system PATH
+  -   Create OS-specific configuration directories
+  -   Generate sample configuration files
+
+  #### Option 2: Manual Download
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/ericschmar/moribito/HEAD/README.md

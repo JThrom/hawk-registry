@@ -7,3 +7,28 @@ binaries:
   - snake
 homepage: https://github.com/wick3dr0se/snake
 repo: https://github.com/wick3dr0se/snake
+tags:
+  - video
+  - game
+  - super
+  - minimal
+  - snake
+  - pure
+  - bash
+installNotes: |-
+  ## Install
+  stream `snake` without downloading/installing
+  ```bash
+  bash <(curl -s https://raw.githubusercontent.com/wick3dr0se/snake/main/snake)
+  ```
+
+  otherwise, download
+  ```bash
+  git clone https://github.com/wick3dr0se/snake; cd snake
+  ```
+
+  install to $PATH (optional)
+  ```bash
+  cp snake /usr/local/bin
+  ```
+readmeUrl: https://raw.githubusercontent.com/wick3dr0se/snake/HEAD/README.md

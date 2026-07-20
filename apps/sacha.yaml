@@ -7,3 +7,48 @@ binaries:
   - sacha
 homepage: https://github.com/Sachamama/sacha
 repo: https://github.com/Sachamama/sacha
+language: Go
+tags:
+  - aws
+  - cloud
+  - pane
+  - browsing
+  - searching
+  - managing
+  - resources
+  - across
+  - seven
+  - services
+  - including
+  - cloudwatch
+install:
+  brew: brew install sachamama/tap/sacha
+  go: go install github.com/sachamama/sacha/cmd/sacha@latest
+packages:
+  brew: sacha
+  go: sacha
+installNotes: |-
+  ## Install
+
+  **Prerequisites:** AWS credentials configured (via `~/.aws/credentials`, environment variables, or IAM role).
+
+  ### Homebrew (macOS / Linux)
+
+  ```bash
+  brew install sachamama/tap/sacha
+  ```
+
+  ### Go Install
+
+  ```bash
+  go install github.com/sachamama/sacha/cmd/sacha@latest
+  ```
+
+  Requires Go 1.22+.
+
+  ### Pre-built Binaries
+
+  Download from [GitHub Releases](https://github.com/Sachamama/sacha/releases):
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/Sachamama/sacha/HEAD/README.md

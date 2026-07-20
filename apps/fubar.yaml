@@ -7,3 +7,29 @@ binaries:
   - fubar
 homepage: https://github.com/irishmaestro/fubar
 repo: https://github.com/irishmaestro/fubar
+language: Rust
+tags:
+  - formidable
+  - unix
+  - binary
+  - arsenal
+  - repository
+  - built
+  - gtfobins
+  - power
+  - users
+install:
+  cargo: cargo install fubar-cli
+packages:
+  cargo: fubar-cli
+installNotes: |-
+  ### Installation
+  #### via cargo
+  ```bash
+  cargo install fubar-cli
+  ```
+  #### build from source
+  ```bash
+  git clone https://github.com/IrishMaestro/fubar.git
+  cargo install --path fubar
+readmeUrl: https://raw.githubusercontent.com/irishmaestro/fubar/HEAD/README.md

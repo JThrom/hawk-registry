@@ -7,3 +7,139 @@ binaries:
   - atac
 homepage: https://github.com/Julien-cpsn/ATAC
 repo: https://github.com/Julien-cpsn/ATAC
+language: Rust
+tags:
+  - http
+  - api
+  - feature
+  - full
+  - rust
+  - atac
+  - free
+  - open
+  - source
+  - offline
+  - account
+  - less
+install:
+  cargo: cargo install atac
+  pacman: pacman -S atac
+  brew: brew install atac
+  dnf: dnf install atac
+packages:
+  cargo: atac
+  pacman: atac
+  brew: atac
+  dnf: atac
+installNotes: |-
+  ## How to install
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/atac.svg)](https://repology.org/project/atac/versions)
+
+  <a href="https://crates.io/crates/atac">
+    <img src="https://repology.org/badge/version-for-repo/crates_io/atac.svg" alt="crates.io package" align="right">
+  </a>
+
+  ### Install with cargo
+
+  > [!IMPORTANT]
+  > First, make sure your rust version is at least 1.82
+
+  Simply use:
+
+  ```shell
+  cargo install atac --locked
+  ```
+
+  <a href="https://archlinux.org/packages/extra/x86_64/atac/">
+    <img src="https://repology.org/badge/version-for-repo/arch/atac.svg" alt="Arch package" align="right">
+  </a>
+
+  ### Install from Arch
+
+  You can use [pacman](https://wiki.archlinux.org/title/pacman) to install:
+
+  ```shell
+  pacman -S atac
+  ```
+
+  <a href="https://formulae.brew.sh/formula/atac">
+    <img src="https://repology.org/badge/version-for-repo/homebrew/atac.svg" alt="Homebrew package" align="right">
+  </a>
+
+  ### Install with Homebrew
+
+  Simply use:
+
+  ```bash
+  brew install atac
+  ```
+
+  <a href="https://github.com/ScoopInstaller/Main/blob/master/bucket/atac.json">
+    <img src="https://repology.org/badge/version-for-repo/scoop/atac.svg" alt="Scoop package" align="right">
+  </a>
+
+  ### Install with Scoop
+
+  Simply use:
+
+  ```bash
+  scoop install atac
+  ```
+
+  <a href="https://copr.fedorainfracloud.org/coprs/joxcat/atac/">
+    <img alt="Fedora copr Release" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fcopr.fedorainfracloud.org%2Fapi_3%2Fpackage%3Fownername%3Djoxcat%26projectname%3Datac%26packagename%3Datac%26with_latest_build%3DTrue&query=%24.builds.latest.source_package.version&style=flat&logo=fedora&logoColor=white&label=Fedora%20copr&color=limegreen" align="right">
+  </a>
+
+  ### Install from Fedora copr
+
+  Simply use:
+
+  ```bash
+  dnf copr enable joxcat/atac
+  dnf install atac
+  ```
+
+  <a href="https://hub.docker.com/r/juliencaposiena/atac">
+   <img alt="Docker Image Version" src="https://img.shields.io/docker/v/juliencaposiena/atac?logo=docker" align="right">
+  </a>
+
+  ### Docker package
+
+  Pull the image from https://hub.docker.com/r/juliencaposiena/atac
+
+  <a href="https://github.com/Julien-cpsn/ATAC/releases">
+    <img alt="GitHub Release" src="https://img.shields.io/github/v/release/julien-cpsn/atac?label=Release&color=45c017" align="right">
+  </a>
+
+  ### Binary
+
+  The binaries from the latest release can be found [here](https://github.com/Julien-cpsn/ATAC/releases/latest)
+
+  > [!IMPORTANT]
+  > Remember to run it from a terminal.
+  > For example, you can add the binary into your PATH.
+  > You won't be able to run it like other graphical applications since it needs CLI arguments.
+
+  > [!TIP]
+  > Note for **macOS users**. After downloading the binary you may need to run the command
+  > `sudo xattr -rd com.apple.quarantine ~/bin/atac` (modify to reflect the path where `atac` is located).
+
+  ### Compile by yourself
+
+  > [!IMPORTANT]
+  > First, make sure your rust version is at least 1.82
+
+  Simply clone the repository and use:
+
+  ```bash
+  cargo run
+  cargo run -- -h
+  ```
+
+  > [!TIP]
+  > Build the latest release
+  > ```bash
+  > cargo build --release
+  > ```
+readmeUrl: https://raw.githubusercontent.com/Julien-cpsn/ATAC/HEAD/README.md

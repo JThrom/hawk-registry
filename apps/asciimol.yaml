@@ -7,3 +7,32 @@ binaries:
   - asciimol
 homepage: https://github.com/dewberryants/asciiMol
 repo: https://github.com/dewberryants/asciiMol
+language: Python
+tags:
+  - curses
+  - ascii
+  - molecule
+  - linux
+  - terminals
+install:
+  pip: pip install asciimol
+packages:
+  pip: asciimol
+installNotes: |-
+  ## Installation
+
+  ```sh
+  pip install asciimol
+  ```
+
+  (Note: pip will install a run script in $HOME/.local/bin/ if you do not install with root permissions, so make sure this
+  directory is part of your $PATH.)
+
+  You can also run
+
+  ```sh
+  pip install 'asciimol[formats,smiles]'
+  ```
+
+  to automatically install ASE for formats and RDKit for smiles.
+readmeUrl: https://raw.githubusercontent.com/dewberryants/asciiMol/HEAD/README.md

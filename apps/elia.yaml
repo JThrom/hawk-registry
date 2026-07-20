@@ -7,3 +7,23 @@ binaries:
   - elia
 homepage: https://github.com/darrenburns/elia
 repo: https://github.com/darrenburns/elia
+language: Rust
+tags:
+  - chatgpt
+  - build
+  - textual
+install:
+  pipx: pipx install --python
+packages:
+  pipx: --python
+installNotes: |-
+  ## Installation
+
+  Install Elia with [pipx](https://github.com/pypa/pipx):
+
+  ```bash
+  pipx install --python 3.11 elia-chat
+  ```
+
+  Depending on the model you wish to use, you may need to set one or more environment variables (e.g. `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY` etc).
+readmeUrl: https://raw.githubusercontent.com/darrenburns/elia/HEAD/README.md

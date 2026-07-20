@@ -7,3 +7,24 @@ binaries:
   - soundcloud2000
 homepage: https://github.com/grobie/soundcloud2000
 repo: https://github.com/grobie/soundcloud2000
+language: Ruby
+tags:
+  - soundcloud
+installNotes: |-
+  ## Installation
+
+  Assuming you have Ruby/Rubygems installed, you need portaudio and mpg123 as
+  library to compile the native extensions.
+
+  ### OSX
+
+      xcode-select --install
+      brew install portaudio
+      brew install mpg123
+      gem install soundcloud2000
+
+  ### Debian / Ubuntu
+
+      apt-get install portaudio19-dev libmpg123-dev libncurses-dev ruby1.9.1-dev
+      gem install soundcloud2000
+readmeUrl: https://raw.githubusercontent.com/grobie/soundcloud2000/HEAD/README.md

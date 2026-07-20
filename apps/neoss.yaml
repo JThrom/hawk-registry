@@ -7,3 +7,20 @@ binaries:
   - neoss
 homepage: https://github.com/PabloLec/neoss
 repo: https://github.com/PabloLec/neoss
+language: JavaScript
+tags:
+  - socket
+  - statistics
+  - visualization
+  - explanation
+  - unix
+  - systems
+install:
+  npm: npm install -g neoss
+packages:
+  npm: neoss
+installNotes: |-
+  ## Installation
+
+  ```npm install -g neoss```
+readmeUrl: https://raw.githubusercontent.com/PabloLec/neoss/HEAD/README.md

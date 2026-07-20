@@ -7,3 +7,10 @@ binaries:
   - process-compose
 homepage: https://github.com/F1bonacc1/process-compose
 repo: https://github.com/F1bonacc1/process-compose
+language: Go
+tags:
+  - monitor
+  - system
+  - apps
+  - processes
+readmeUrl: https://raw.githubusercontent.com/F1bonacc1/process-compose/HEAD/README.md

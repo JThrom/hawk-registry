@@ -7,3 +7,33 @@ binaries:
   - tuisky
 homepage: https://github.com/sugyan/tuisky
 repo: https://github.com/sugyan/tuisky
+language: Rust
+tags:
+  - bluesky
+install:
+  cargo: cargo install tuisky
+packages:
+  cargo: tuisky
+installNotes: |-
+  ## Installation
+
+  ```
+  cargo install tuisky
+  ```
+
+  ### AUR
+
+  You can install `tuisky` from the [AUR](https://aur.archlinux.org/packages/tuisky) with using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers).
+
+  ```
+  paru -S tuisky
+  ```
+
+  ### X-CMD
+
+  If you are a user of [x-cmd](https://x-cmd.com), you can run:
+
+  ```
+  x install tuisky
+  ```
+readmeUrl: https://raw.githubusercontent.com/sugyan/tuisky/HEAD/README.md

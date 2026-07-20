@@ -7,3 +7,65 @@ binaries:
   - ls-horizons
 homepage: https://github.com/litescript/ls-horizons
 repo: https://github.com/litescript/ls-horizons
+language: Go
+tags:
+  - network
+  - visualizing
+  - nasa
+  - deep
+  - space
+  - real
+  - time
+install:
+  go: go install github.com/litescript/ls-horizons/cmd/ls-horizons@latest
+packages:
+  go: ls-horizons
+installNotes: |-
+  ## Installation
+
+  ### Requirements
+
+  - **Terminal with truecolor support** — The UI uses 24-bit color for gradients and styling. Most modern terminals work fine (iTerm2, Alacritty, Kitty, Windows Terminal, GNOME Terminal, etc.). Basic terminals like older xterm or screen may have limited color support.
+  - **Go 1.21+** — For building from source
+
+  ### From source
+
+  ```bash
+  go install github.com/litescript/ls-horizons/cmd/ls-horizons@latest
+  ```
+
+  Make sure your Go bin directory is on your `PATH`:
+
+  ```bash
+  export PATH="$(go env GOPATH)/bin:$PATH"
+  ```
+
+  ### Build locally
+
+  ```bash
+  git clone https://github.com/litescript/ls-horizons.git
+  cd ls-horizons
+  go build -o ls-horizons ./cmd/ls-horizons
+  ```
+
+  ### Pre-built binaries
+
+  Pre-built binaries are available in `os-builds/`. These are statically linked with no dependencies. Note that they may lag behind the latest source.
+
+  **Linux (x64):**
+  ```bash
+  ./os-builds/linux-amd64/ls-horizons
+  ```
+
+  **macOS ARM (Apple Silicon):**
+  ```bash
+  ./os-builds/mac-arm/ls-horizons
+  ```
+
+  **Windows (x64):**
+  ```powershell
+  .\os-builds\windows-amd64\ls-horizons.exe
+  ```
+
+  > **Windows users:** Use [Windows Terminal](https://aka.ms/terminal) for best results. It's included by default on Windows 11, or install free from the Microsoft Store on Windows 10. The legacy cmd.exe and PowerShell windows have limited color support and may not render correctly. Windows Terminal defaults to a dark background; the legacy blue PowerShell background will look odd with this app.
+readmeUrl: https://raw.githubusercontent.com/litescript/ls-horizons/HEAD/README.md

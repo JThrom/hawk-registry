@@ -7,3 +7,12 @@ binaries:
   - line
 homepage: https://github.com/pd3v/line
 repo: https://github.com/pd3v/line
+language: Go
+tags:
+  - tiny
+  - midi
+  - sequencer
+  - language
+  - live
+  - coding
+readmeUrl: https://raw.githubusercontent.com/pd3v/line/HEAD/README.md

@@ -7,3 +7,49 @@ binaries:
   - kubetui
 homepage: https://github.com/sarub0b0/kubetui
 repo: https://github.com/sarub0b0/kubetui
+language: Rust
+tags:
+  - kubernetes
+  - k8s
+  - monitor
+  - system
+  - designed
+  - monitoring
+  - resources
+install:
+  brew: brew install kubetui
+  pacman: pacman -S kubetui
+  cargo: cargo install kubetui
+packages:
+  brew: kubetui
+  pacman: kubetui
+  cargo: kubetui
+installNotes: |-
+  ## Installation
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/kubetui.svg)](https://repology.org/project/kubetui/versions)
+
+  To install kubetui, you can use the following methods:
+
+  ### [Homebrew](https://brew.sh/) on macOS and Linux
+
+  Kubetui is available on homebrew, the package manager for macOS and Linux. Install it by running the following command:
+
+  ```shell
+  brew install kubetui
+  ```
+
+  ### [Pacman](https://wiki.archlinux.org/title/pacman) on Arch Linux
+
+  Kubetui is available in the [official repositories](https://archlinux.org/packages/extra/x86_64/kubetui/). Install it by running the following command:
+
+  ```shell
+  pacman -S kubetui
+  ```
+
+  ### [Scoop](https://scoop.sh/) on Windows
+
+  If you are using Windows with scoop, you can add the necessary buckets and install kubetui with the following commands:
+
+  ```shell
+readmeUrl: https://raw.githubusercontent.com/sarub0b0/kubetui/HEAD/README.md

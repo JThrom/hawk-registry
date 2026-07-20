@@ -7,3 +7,64 @@ binaries:
   - deputui
 homepage: https://github.com/twiddler/deputui
 repo: https://github.com/twiddler/deputui
+language: Rust
+tags:
+  - review
+  - install
+  - package
+  - updates
+installNotes: |-
+  # Installation
+
+  ## Manually
+
+  If you're using nix, run
+
+  ```console
+  $ nix develop
+  ```
+
+  You will enter a nix shell that has access to all the binaries in this project, including the rust toolchain.
+
+  If you're not using nix, reconsider your life decisions, then [install rust](https://rust-lang.github.io/rustup/) and
+
+  ```console
+  $ make all
+  ```
+
+  This will build and install three binaries:
+
+  - `deputui`
+  - `deputui-pnpm`
+  - `deputui-review`
+
+  ## Via flake.nix
+
+  If you want to use this in a project that has a `flake.nix`, this is the minimal setup for having the binaries in your dev shell:
+
+  ```nix
+  {
+    inputs = {
+      nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+      deputui.url = "github:twiddler/deputui";
+    };
+
+    outputs = { self, nixpkgs, deputui }:
+      let
+        system = "x86_64-linux";
+
+        pkgs = import nixpkgs {
+          inherit system;
+        };
+      in {
+        devShells.${system}.default = pkgs.mkShell {
+          name = "dev-shell";
+
+          buildInputs = with pkgs; [
+            deputui.packages.${system}.default
+          ];
+        };
+      };
+  }
+  ```
+readmeUrl: https://raw.githubusercontent.com/twiddler/deputui/HEAD/README.md

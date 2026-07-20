@@ -8,3 +8,11 @@ binaries:
   - squaretictactoe
 homepage: https://github.com/learnbyexample/TUI-apps/tree/main/SquareTicTacToe
 repo: https://github.com/learnbyexample/TUI-apps/tree/main/SquareTicTacToe
+language: Python
+tags:
+  - like
+  - form
+  - square
+  - corners
+  - instead
+readmeUrl: https://raw.githubusercontent.com/learnbyexample/TUI-apps/HEAD/README.md

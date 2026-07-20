@@ -8,3 +8,25 @@ binaries:
   - s3duck
 homepage: https://github.com/nexusriot/s3duck-tui
 repo: https://github.com/nexusriot/s3duck-tui
+language: Go
+tags:
+  - aws
+  - cloud
+install:
+  apt: apt-get install git
+packages:
+  apt: git
+installNotes: |-
+  Building
+  -------------
+
+  ```
+  go build ./cmd/s3duck-tui
+  ```
+
+  Statically linked (no libc dependency):
+
+  ```
+  go build -ldflags "-linkmode external -extldflags -static" ./cmd/s3duck-tui
+  ```
+readmeUrl: https://raw.githubusercontent.com/nexusriot/s3duck-tui/HEAD/README.md

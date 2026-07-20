@@ -7,3 +7,13 @@ binaries:
   - learnbyexample
 homepage: https://github.com/learnbyexample/TUI-apps
 repo: https://github.com/learnbyexample/TUI-apps
+language: Python
+tags:
+  - tutorials
+  - "+300"
+  - exercises
+  - python
+  - grep
+  - general
+  - usage
+readmeUrl: https://raw.githubusercontent.com/learnbyexample/TUI-apps/HEAD/README.md

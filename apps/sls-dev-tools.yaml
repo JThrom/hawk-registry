@@ -7,3 +7,18 @@ binaries:
   - sls-dev-tools
 homepage: https://github.com/Theodo-UK/sls-dev-tools
 repo: https://github.com/Theodo-UK/sls-dev-tools
+language: JavaScript
+tags:
+  - tools
+  - serverless
+  - world
+install:
+  npm: npm install -g sls-dev-tools
+packages:
+  npm: sls-dev-tools
+installNotes: |-
+  ## Installation
+
+  - Run `npm install -D sls-dev-tools` or `yarn add -D sls-dev-tools` to add the tool to your project
+  - Alternatively run `npm install -g sls-dev-tools` to install the tool globally
+readmeUrl: https://raw.githubusercontent.com/Theodo-UK/sls-dev-tools/HEAD/README.md

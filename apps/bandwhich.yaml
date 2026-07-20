@@ -7,3 +7,65 @@ binaries:
   - bandwhich
 homepage: https://github.com/imsnif/bandwhich
 repo: https://github.com/imsnif/bandwhich
+language: Rust
+tags:
+  - network
+  - bandwidth
+  - utilization
+install:
+  cargo: cargo install --git
+packages:
+  cargo: --git
+installNotes: |-
+  ## Installation
+
+  ### Downstream packaging status
+
+  For detailed instructions for each platform, see [INSTALL.md](INSTALL.md).
+
+  <a href="https://repology.org/project/bandwhich/versions">
+    <img src="https://repology.org/badge/vertical-allrepos/bandwhich.svg?columns=3" alt="Packaging status">
+  </a>
+
+  ### Download a prebuilt binary
+
+  We offer several generic binaries in [releases](https://github.com/imsnif/bandwhich/releases) for various OSes.
+
+  <table>
+    <thead>
+      <th>OS</th><th>Architecture</th><th>Support</th><th>Usage</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Android</td><td>aarch64</td><td>Best effort</td>
+        <td>
+          <p>All modern Android devices.</p>
+          <p>Note that this is a pure binary file, not an APK suitable for general usage.</p>
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="3">Linux</td><td>aarch64</td><td>Full</td>
+        <td>64-bit ARMv8+ (servers, some modern routers, RPi-4+).</td>
+      </tr>
+      <tr>
+        <td>armv7hf</td><td>Best effort</td><td>32-bit ARMv7 (older routers, pre-RPi-4).</td>
+      </tr>
+      <tr>
+        <td>x64</td><td>Full</td>
+        <td>Most Linux desktops & servers.</td>
+      </tr>
+      <tr>
+        <td rowspan="2">MacOS</td><td>aarch64</td><td rowspan="2">Full</td>
+        <td>Apple silicon Macs (2021+).</td>
+      </tr>
+      <tr>
+        <td>x64</td>
+        <td>Intel Macs (pre-2021).</td>
+      </tr>
+      <tr>
+        <td>Windows</td><td>x64</td><td>Full</td>
+        <td>Most Windows desktops & servers.</td>
+      </tr>
+    </tbody>
+  </table>
+readmeUrl: https://raw.githubusercontent.com/imsnif/bandwhich/HEAD/README.md

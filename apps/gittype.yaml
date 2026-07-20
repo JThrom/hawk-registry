@@ -7,3 +7,46 @@ binaries:
   - gittype
 homepage: https://github.com/unhappychoice/gittype
 repo: https://github.com/unhappychoice/gittype
+language: Rust
+tags:
+  - code
+  - typing
+  - game
+  - turns
+  - source
+  - challenges
+install:
+  brew: brew install gittype
+  cargo: cargo install gittype
+packages:
+  brew: gittype
+  cargo: gittype
+installNotes: |-
+  ## Installation 📦
+
+  ### Quick Install (Recommended)
+  #### One-liner installation (Linux/macOS/Windows)
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/unhappychoice/gittype/main/install.sh | bash
+  ```
+
+  #### Or with specific version
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/unhappychoice/gittype/main/install.sh | bash -s -- --version v0.5.0
+  ```
+
+  ### Homebrew (macOS/Linux)
+  ```bash
+  brew install gittype
+  ```
+
+  ### Cargo (Universal)
+  ```bash
+  cargo install gittype
+  ```
+
+  ### Nix (NixOS/Nix)
+  If you have [Nix](https://nixos.org/) installed, you can run GitType directly:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/unhappychoice/gittype/HEAD/README.md

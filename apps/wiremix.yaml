@@ -7,3 +7,41 @@ binaries:
   - wiremix
 homepage: https://github.com/tsowell/wiremix
 repo: https://github.com/tsowell/wiremix
+language: Rust
+tags:
+  - music
+  - audio
+  - mixer
+  - pipewire
+  - similar
+  - pavucontrol
+  - adjust
+  - volumes
+  - change
+  - input
+  - output
+  - devices
+install:
+  apt: apt install cargo
+  cargo: cargo install wiremix
+packages:
+  apt: cargo
+  cargo: wiremix
+installNotes: |-
+  ## Installation
+
+  ### Package Managers
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/wiremix.svg?columns=2)](https://repology.org/project/wiremix/versions)
+
+  ### Manual Installation
+
+  wiremix depends on Rust and the PipeWire libraries. To install all
+  dependencies:
+
+  * Ubuntu: `sudo apt install cargo libpipewire-0.3-dev pkg-config clang`
+  * Debian: `sudo apt install libpipewire-0.3-dev pkg-config clang` (you will
+    also need to install a somewhat recent Rust toolchain - rustup is one way)
+
+  Then install wiremix with `cargo install wiremix`
+readmeUrl: https://raw.githubusercontent.com/tsowell/wiremix/HEAD/README.md

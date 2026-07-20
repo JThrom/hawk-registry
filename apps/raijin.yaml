@@ -7,3 +7,32 @@ binaries:
   - raijin
 homepage: https://github.com/MasonStooksbury/Raijin
 repo: https://github.com/MasonStooksbury/Raijin
+language: Rust
+tags:
+  - http
+  - api
+  - free
+  - weather
+  - pulls
+  - data
+  - without
+  - need
+  - account
+  - subscription
+install:
+  cargo: cargo install Raijin
+packages:
+  cargo: Raijin
+installNotes: |-
+  ## Installation
+
+  ### Cargo
+
+  Installation via `cargo` can be done by installing the [Raijin](https://crates.io/crates/Raijin) crate:
+  ```bash
+  cargo install Raijin
+  ```
+  `NOTE: The default location is Knoxville, TN. If you'd like to change it, continue on to the Configuration section below`
+
+  <br>
+readmeUrl: https://raw.githubusercontent.com/MasonStooksbury/Raijin/HEAD/README.md

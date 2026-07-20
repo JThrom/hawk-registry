@@ -8,3 +8,13 @@ binaries:
   - ytdl
 homepage: https://github.com/darky/ytdl-tui
 repo: https://github.com/darky/ytdl-tui
+language: JavaScript
+tags:
+  - downloading
+  - youtube
+  - videos
+installNotes: |-
+  ### Install
+
+  `npm install ytdl-tui -g`
+readmeUrl: https://raw.githubusercontent.com/darky/ytdl-tui/HEAD/README.md

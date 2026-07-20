@@ -7,3 +7,22 @@ binaries:
   - sqlit
 homepage: https://github.com/Maxteabag/sqlit
 repo: https://github.com/Maxteabag/sqlit
+language: Go
+tags:
+  - database
+  - sql
+  - lightweight
+  - databases
+  - inspired
+  - lazygit
+install:
+  pipx: pipx install sqlit-tui
+  pip: pip install sqlit-tui
+packages:
+  pipx: sqlit-tui
+  pip: sqlit-tui
+installNotes: |-
+  ## Installation
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/Maxteabag/sqlit/HEAD/README.md

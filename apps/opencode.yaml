@@ -7,3 +7,20 @@ binaries:
   - opencode
 homepage: https://github.com/sst/opencode
 repo: https://github.com/sst/opencode
+tags:
+  - coding
+  - agent
+  - built
+install:
+  npm: npm i -g opencode-ai@latest
+  brew: brew install anomalyco/tap/opencode
+  pacman: pacman -S opencode
+packages:
+  npm: opencode-ai
+  brew: opencode
+  pacman: opencode
+installNotes: |-
+  ### Installation
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/sst/opencode/HEAD/README.md

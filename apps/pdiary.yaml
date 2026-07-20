@@ -7,3 +7,20 @@ binaries:
   - pdiary
 homepage: https://github.com/manipuladordedados/pdiary
 repo: https://github.com/manipuladordedados/pdiary
+language: Python
+tags:
+  - diary
+  - journal
+  - python
+  - encryption
+install:
+  apt: apt install fonts-symbola
+packages:
+  apt: fonts-symbola
+installNotes: |-
+  ## Installation
+
+  To install, simply use `pip`:
+
+      pip install https://github.com/manipuladordedados/pdiary/releases/download/1.65/pdiary-1.65-py3-none-any.whl
+readmeUrl: https://raw.githubusercontent.com/manipuladordedados/pdiary/HEAD/README.md

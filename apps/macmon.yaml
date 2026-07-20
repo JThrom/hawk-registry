@@ -7,3 +7,47 @@ binaries:
   - macmon
 homepage: https://github.com/vladkens/macmon
 repo: https://github.com/vladkens/macmon
+language: Rust
+tags:
+  - monitor
+  - system
+  - sudoless
+  - performance
+  - monitoring
+  - apple
+  - silicon
+  - processors
+  - rust
+install:
+  brew: brew install macmon
+  cargo: cargo install macmon
+packages:
+  brew: macmon
+  cargo: macmon
+installNotes: |-
+  ## 📥 Installation
+
+  - Install [`macmon`](https://formulae.brew.sh/formula/macmon) using [brew](https://brew.sh/):
+
+  ```sh
+  brew install macmon
+  ```
+
+  - Install [`macmon`](https://ports.macports.org/port/macmon/) using [MacPorts](https://macports.org/):
+
+  ```sh
+  sudo port install macmon
+  ```
+
+  - Install [`macmon`](https://crates.io/crates/macmon) using [Cargo](https://crates.io/):
+
+  ```sh
+  cargo install macmon
+  ```
+
+  - Install [`macmon`](https://search.nixos.org/packages?show=macmon&from=0&size=50&type=packages&query=macmon) using [Nix](https://nixos.org/):
+
+  ```sh
+  nix-env -i macmon
+  ```
+readmeUrl: https://raw.githubusercontent.com/vladkens/macmon/HEAD/readme.md

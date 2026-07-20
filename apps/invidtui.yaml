@@ -7,3 +7,18 @@ binaries:
   - invidtui
 homepage: https://github.com/darkhz/invidtui
 repo: https://github.com/darkhz/invidtui
+language: Go
+tags:
+  - music
+  - audio
+  - invidious
+  - windows
+  - linux
+  - macos
+  - fetches
+  - plays
+  - video
+  - instance
+  - viewing
+  - playing
+readmeUrl: https://raw.githubusercontent.com/darkhz/invidtui/HEAD/README.md

@@ -7,3 +7,60 @@ binaries:
   - ec2-instance-selector
 homepage: https://github.com/aws/amazon-ec2-instance-selector
 repo: https://github.com/aws/amazon-ec2-instance-selector
+language: Go
+tags:
+  - aws
+  - cloud
+  - monitor
+  - system
+  - library
+  - which
+  - recommends
+  - instance
+  - types
+  - resource
+  - criteria
+  - like
+install:
+  brew: brew install ec2-instance-selector
+packages:
+  brew: ec2-instance-selector
+installNotes: |-
+  ## Installation and Configuration
+
+  #### Install w/ Homebrew
+
+  ```
+  brew tap aws/tap
+  brew install ec2-instance-selector
+  ```
+
+  #### Install w/ Curl for Linux/Mac
+
+  ```
+  os=$(uname | tr 'A-Z' 'a-z')
+  arch=$(printf "%s" "$(uname -m | tr 'A-Z' 'a-z' | sed -E 's/x86_64|i[3-6]86/amd64/;s/aarch64|arm64/arm64/')")
+  curl -Lo ec2-instance-selector https://github.com/aws/amazon-ec2-instance-selector/releases/latest/download/ec2-instance-selector-$os-$arch && chmod +x ec2-instance-selector
+  sudo mv ec2-instance-selector /usr/local/bin/
+  ec2-instance-selector --version
+  ```
+
+  To execute the CLI, you will need AWS credentials configured. Take a look at the [AWS CLI configuration documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html#config-settings-and-precedence) for details on the various ways to configure credentials. An easy way to try out the ec2-instance-selector CLI is to populate the following environment variables with your AWS API credentials.
+
+  ```
+  export AWS_ACCESS_KEY_ID="..."
+  export AWS_SECRET_ACCESS_KEY="..."
+  ```
+
+  If you already have an AWS CLI profile setup, you can pass that directly into ec2-instance-selector:
+
+  ```
+  $ ec2-instance-selector --profile my-aws-cli-profile --vcpus 2 --region us-east-1
+  ```
+
+  You can set the AWS_REGION environment variable if you don't want to pass in `--region` on each run.
+
+  ```
+  $ export AWS_REGION="us-east-1"
+  ```
+readmeUrl: https://raw.githubusercontent.com/aws/amazon-ec2-instance-selector/HEAD/README.md

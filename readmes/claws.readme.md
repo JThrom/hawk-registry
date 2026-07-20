@@ -1,0 +1,157 @@
+[🇯🇵 日本語](README.ja.md) | [🇨🇳 简体中文](README.zh-CN.md) | [🇰🇷 한국어](README.ko.md)
+
+# claws
+
+A terminal UI for AWS resource management
+
+[![CI](https://github.com/clawscli/claws/actions/workflows/ci.yml/badge.svg)](https://github.com/clawscli/claws/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/clawscli/claws)](https://github.com/clawscli/claws/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/clawscli/claws)](https://goreportcard.com/report/github.com/clawscli/claws)
+[![Go Version](https://img.shields.io/badge/Go-1.25+-00ADD8?style=flat&logo=go)](https://go.dev/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
+![claws demo](docs/images/demo.gif)
+
+## Features
+
+- **Interactive TUI** - Navigate AWS resources with vim-style keybindings
+- **70 services, 175 resources** - EC2, S3, Lambda, RDS, ECS, EKS, and more
+- **Multi-profile & Multi-region** - Query multiple accounts/regions in parallel
+- **Profile login helpers** - Refresh AWS SSO sessions or run AWS CLI `aws login` from the profile selector
+- **Resource actions** - Start/stop instances, delete resources, tail logs
+- **Cross-resource navigation** - Jump from VPC to subnets, Lambda to CloudWatch
+- **Filtering & sorting** - Fuzzy search, tag filtering, column sorting
+- **Resource comparison** - Side-by-side diff view
+- **AI Chat** - AI assistant with AWS context (via Bedrock)
+- **6 color themes** - dark, light, nord, dracula, gruvbox, catppuccin
+
+## Screenshots
+
+| Resource Browser | Detail View | Actions Menu |
+|------------------|-------------|--------------|
+| ![browser](docs/images/resource-browser.png) | ![detail](docs/images/detail-view.png) | ![actions](docs/images/actions-menu.png) |
+
+### Multi-Region & Multi-Account
+
+![multi-region](docs/images/multi-account-region.png)
+
+### AI Chat (Bedrock)
+
+![ai-chat](docs/images/ai-chat.png)
+
+Press `A` in list/detail/diff views to open AI chat. The assistant analyzes resources, compares configurations, and identifies risks using AWS Bedrock.
+
+## Installation
+
+### Homebrew (macOS/Linux)
+
+```bash
+brew install --cask clawscli/tap/claws
+```
+
+### Install Script (macOS/Linux)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/clawscli/claws/main/install.sh | sh
+```
+
+### Download Binary
+
+Download from [GitHub Releases](https://github.com/clawscli/claws/releases/latest).
+
+### Go Install
+
+```bash
+go install github.com/clawscli/claws/cmd/claws@latest
+```
+
+### Docker
+
+```bash
+docker run -it --rm -v ~/.aws:/home/claws/.aws:ro ghcr.io/clawscli/claws
+```
+
+## Quick Start
+
+```bash
+# Run claws (uses default AWS credentials)
+claws
+
+# With specific profile
+claws -p myprofile
+
+# With specific region
+claws -r us-west-2
+
+# Start directly on a service or view
+claws -s dashboard        # Start with dashboard
+claws -s services         # Start with service browser (default)
+claws -s ec2              # EC2 instances
+claws -s rds/snapshots    # RDS snapshots
+
+# Launch into a pre-filtered list (requires -s)
+claws -s ec2 -f bastion           # Fuzzy filter (like pressing `/`)
+claws -s ec2 --tag Role=bastion   # Tag filter (like `:tag`)
+
+# Multiple profiles/regions (comma-separated or repeated)
+claws -p dev,prod -r us-east-1,ap-northeast-1
+
+# Read-only mode (disables destructive actions)
+claws --read-only
+```
+
+## Key Bindings
+
+| Key | Action |
+|-----|--------|
+| `j` / `k` | Navigate up/down |
+| `Enter` / `d` | View resource details |
+| `:` | Command mode (e.g., `:ec2/instances`) |
+| `/` | Filter mode (fuzzy search) |
+| `a` | Open actions menu |
+| `A` | AI Chat (in list/detail/diff views) |
+| `R` | Select region(s) |
+| `P` | Select profile(s) |
+| `l` | SSO login/refresh for selected profile (in profile selector) |
+| `L` | AWS CLI `aws login` for selected profile (in profile selector) |
+| `?` | Show help |
+| `q` | Quit |
+
+See [docs/keybindings.md](docs/keybindings.md) for complete reference.
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Key Bindings](docs/keybindings.md) | Complete keyboard shortcuts reference |
+| [Supported Services](docs/services.md) | All 70 services and 175 resources |
+| [Configuration](docs/configuration.md) | Config file, themes, and options |
+| [IAM Permissions](docs/iam-permissions.md) | Required AWS permissions |
+| [AI Chat](docs/ai-chat.md) | AI assistant usage and features |
+| [Architecture](docs/architecture.md) | Internal design and structure |
+| [Adding Resources](docs/adding-resources.md) | Guide for contributors |
+
+## Development
+
+### Prerequisites
+
+- Go 1.25+
+- [Task](https://taskfile.dev/) (optional)
+
+### Commands
+
+```bash
+task build          # Build binary
+task run            # Run the application
+task test           # Run tests
+task lint           # Run linters
+```
+
+## Tech Stack
+
+- **TUI**: [Bubbletea](https://github.com/charmbracelet/bubbletea) + [Lipgloss](https://github.com/charmbracelet/lipgloss)
+- **AWS**: [AWS SDK for Go v2](https://github.com/aws/aws-sdk-go-v2)
+
+## License
+
+Apache License 2.0 - see [LICENSE](LICENSE) for details.

@@ -7,3 +7,11 @@ binaries:
   - cointop
 homepage: https://github.com/miguelmota/cointop
 repo: https://github.com/miguelmota/cointop
+language: Go
+tags:
+  - fastest
+  - most
+  - interactive
+  - tracking
+  - cryptocurrencies
+readmeUrl: https://raw.githubusercontent.com/miguelmota/cointop/HEAD/README.md

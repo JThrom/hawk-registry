@@ -7,3 +7,48 @@ binaries:
   - models
 homepage: https://github.com/arimxyer/models
 repo: https://github.com/arimxyer/models
+language: Rust
+tags:
+  - browsing
+  - models
+  - coding
+  - agents
+install:
+  brew: brew install models
+  cargo: cargo install modelsdev
+packages:
+  brew: models
+  cargo: modelsdev
+installNotes: |-
+  ## Install
+
+  ### Homebrew (macOS/Linux)
+  ```bash
+  brew install models
+  ```
+
+  ### Cargo (any platform)
+  ```bash
+  cargo install modelsdev
+  ```
+
+  ### Nix (flake)
+  ```bash
+  nix run github:reyamira/models
+  nix profile install github:reyamira/models
+  ```
+
+  The flake is available directly from GitHub tags and branches; it is not currently published to FlakeHub or nixpkgs.
+
+  ### Scoop (Windows)
+  ```powershell
+  scoop install extras/models
+  ```
+
+  ### AUR (Arch Linux)
+  ```bash
+  paru -S models-bin
+  ```
+
+  Pre-built binaries, `.deb`, and `.rpm` packages are available on [GitHub Releases](https://github.com/reyamira/models/releases). See the [Installation wiki page](https://github.com/reyamira/models/wiki/Installation) for all methods, shell completions, and command aliases.
+readmeUrl: https://raw.githubusercontent.com/arimxyer/models/HEAD/README.md

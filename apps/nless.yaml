@@ -7,3 +7,34 @@ binaries:
   - nless
 homepage: https://github.com/mpryor/nothing-less
 repo: https://github.com/mpryor/nothing-less
+language: Rust
+tags:
+  - pager
+  - exploring
+  - tabular
+  - data
+  - keybindings
+  - automatic
+  - delimiter
+  - inference
+install:
+  pipx: pipx install nothing-less
+  brew: brew install mpryor/tap/nless
+packages:
+  pipx: nothing-less
+  brew: nless
+installNotes: |-
+  ## Installation
+
+  ```bash
+  pipx install nothing-less
+  ```
+
+  or
+
+  ```bash
+  brew install mpryor/tap/nless
+  ```
+
+  Requires Python 3.13+ for pipx/pip installs. You can also use `pip install nothing-less` if you prefer. The Homebrew formula manages its own Python dependency.
+readmeUrl: https://raw.githubusercontent.com/mpryor/nothing-less/HEAD/README.md

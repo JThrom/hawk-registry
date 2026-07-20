@@ -7,3 +7,38 @@ binaries:
   - nchat
 homepage: https://github.com/d99kris/nchat
 repo: https://github.com/d99kris/nchat
+language: Go
+tags:
+  - telegram
+  - whatsapp
+installNotes: |-
+  Install using Package Manager
+  =============================
+
+  macOS
+  -----
+  **Build / Install Stable Release using Brew**
+
+      brew tap d99kris/nchat
+      brew install nchat
+
+  Optionally one can disable protocols using `--without-whatsapp` and
+  `--without-telegram`, for example:
+
+      brew install nchat --without-telegram
+
+
+  Arch Linux
+  ----------
+  **Build / Install Latest Git**
+
+      yay -S nchat-git
+
+  **Build / Install Stable Release**
+
+      yay -S nchat
+
+  **Install Pre-built Binary**
+
+      yay -S nchat-bin
+readmeUrl: https://raw.githubusercontent.com/d99kris/nchat/HEAD/README.md

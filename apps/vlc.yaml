@@ -7,3 +7,9 @@ binaries:
   - vlc
 homepage: https://github.com/videolan/vlc
 repo: https://github.com/videolan/vlc
+language: Rust
+tags:
+  - includes
+  - ncurses
+  - intf
+readmeUrl: https://raw.githubusercontent.com/videolan/vlc/HEAD/README.md

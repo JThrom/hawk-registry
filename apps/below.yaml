@@ -7,3 +7,70 @@ binaries:
   - below
 homepage: https://github.com/facebookincubator/below
 repo: https://github.com/facebookincubator/below
+language: Rust
+tags:
+  - monitor
+  - system
+  - time
+  - traveling
+  - resource
+  - linux
+  - systems
+install:
+  dnf: dnf install below
+  cargo: cargo install below
+packages:
+  dnf: below
+  cargo: below
+installNotes: |-
+  ## Installing
+
+  ### Fedora
+
+  `below` is packaged in Fedora as of Fedora 34, and can be installed with:
+
+  ```shell
+  sudo dnf install below
+  ```
+
+  Optionally, the systemd service for persistent data collection can also be
+  enabled with:
+
+  ```shell
+  sudo systemctl enable --now below
+  ```
+
+  ### Alpine Linux
+
+  `below` is packaged in Alpine Linux - it's available in v3.17+ and Edge. It can
+  be installed with:
+
+  ```shell
+  sudo apk add below
+  ```
+
+  Optionally, the OpenRC service for persistent data collection can also be
+  enabled with:
+
+  ```shell
+  sudo rc-service below start
+  sudo rc-update add below
+  ```
+
+  ### Gentoo Linux
+  `below` is available in the
+  [`sys-process/below`](https://packages.gentoo.org/packages/sys-process/below)
+  package and can be installed with `emerge`:
+
+  ```shell
+  sudo emerge sys-process/below
+  ```
+
+  ### Amazon Linux
+
+  `below` is packaged in Amazon Linux as of [AL2023.9](https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-AL2023.9.html), and can be installed with:
+
+  ```shell
+  sudo dnf install below
+  ```
+readmeUrl: https://raw.githubusercontent.com/facebookincubator/below/HEAD/README.md

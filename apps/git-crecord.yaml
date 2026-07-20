@@ -7,3 +7,44 @@ binaries:
   - git-crecord
 homepage: https://github.com/andrewshadura/git-crecord
 repo: https://github.com/andrewshadura/git-crecord
+language: Python
+tags:
+  - git
+  - vcs
+  - interactive
+  - selective
+  - commit
+installNotes: |-
+  Installation
+  ------------
+
+  git-crecord assumes you have Python 3.9 or later installed as ``/usr/bin/python3``.
+
+  git-crecord ships with a setup.py installer based on setuptools.
+  To install git-crecord, simply type::
+
+      ./setup.py install
+
+  This will install git-crecord itself, its manpage and this README file into
+  their proper locations.
+
+  Alternatively, to install it manually, symlink ``git-crecord`` into
+  the directory where Git can find it, which can be a directory in
+  your ``$PATH``::
+
+      ln -s $PWD/git-crecord ~/.local/bin/git-crecord
+
+  Now you should have a new subcommand available for you.
+
+  When you're ready to commit some of your changes, type::
+
+      git crecord
+
+  This will bring up a window where you can view all of your changes, and
+  select/de-select changes.
+  You can find more information on how to use it in the built-in help
+  (press the '?' key).
+
+  ``git crecord`` supports most popular options of ``git commit``: ``--author=``,
+  ``--date=``, ``--message=``, ``--amend``, ``--signoff``.
+readmeUrl: https://raw.githubusercontent.com/andrewshadura/git-crecord/HEAD/README.rst

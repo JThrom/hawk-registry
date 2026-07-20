@@ -7,3 +7,68 @@ binaries:
   - turbo
 homepage: https://github.com/magiblot/turbo
 repo: https://github.com/magiblot/turbo
+language: Rust
+tags:
+  - experimental
+  - text
+  - editor
+  - scintilla
+  - turbo
+  - vision
+install:
+  apt: apt install build-essential
+packages:
+  apt: build-essential
+installNotes: |-
+  ## Building
+
+  First of all, you should clone this repository along its submodules with the `--recursive` option of `git clone`.
+
+  Then, make sure the following dependencies are installed:
+
+  * CMake.
+  * A compiler supporting C++17.
+  * `libncursesw` (note the 'w') (Unix only).
+
+  Additionally, you may also want to install these optional dependencies:
+
+  * `libmagic` for better recognition of file types (Unix only).
+  * `libgpm` for mouse support on the linux console (Linux only).
+  * `xsel`, `xclip` and/or `wl-clipboard` for system clipboard integration (Unix only, except macOS).
+
+  Turbo can be built with the following commands:
+
+  ```sh
+  cmake . -DCMAKE_BUILD_TYPE=Release && # Or 'RelWithDebInfo', or 'MinSizeRel', or 'Debug'.
+  cmake --build .
+  ```
+
+  The above will generate the `turbo` binary.
+
+  <details>
+  <summary><b>Detailed build instructions for Ubuntu 20.04</b></summary>
+
+  ```sh
+  sudo apt update && sudo apt upgrade
+  sudo apt install build-essential cmake gettext-base git libgpm-dev libmagic-dev libncursesw5-dev xsel
+  git clone --recursive https://github.com/magiblot/turbo.git
+  cd turbo
+  cmake . -DCMAKE_BUILD_TYPE=Release
+  cmake --build . -- -j$(nproc) # Build Turbo.
+  sudo cp turbo /usr/local/bin/ # Install (optional).
+  ```
+  </details>
+  <details>
+  <summary><b>Detailed build instructions for Ubuntu 18.04</b></summary>
+
+  ```sh
+  sudo apt update && sudo apt upgrade
+  sudo apt install build-essential cmake g++-8 gettext-base git libgpm-dev libmagic-dev libncursesw5-dev xsel
+  git clone --recursive https://github.com/magiblot/turbo.git
+  cd turbo
+  CXX=g++-8 cmake . -DCMAKE_BUILD_TYPE=Release
+  cmake --build . -- -j$(nproc) # Build Turbo.
+  sudo cp turbo /usr/local/bin/ # Install (optional).
+  ```
+  </details>
+readmeUrl: https://raw.githubusercontent.com/magiblot/turbo/HEAD/README.md

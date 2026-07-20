@@ -7,3 +7,22 @@ binaries:
   - nethogs
 homepage: https://github.com/raboof/nethogs
 repo: https://github.com/raboof/nethogs
+installNotes: |-
+  #### Installing
+
+  ##### For all distributions
+
+      sudo make install
+      hash -r
+      sudo nethogs
+      
+  ##### On Debian
+
+      sudo apt-get install checkinstall
+      sudo checkinstall -D make install
+      sudo dpkg -i nethogs*.deb
+
+  ##### On Arch Linux
+
+      sudo pacman -S nethogs
+readmeUrl: https://raw.githubusercontent.com/raboof/nethogs/HEAD/README.md

@@ -7,3 +7,9 @@ binaries:
   - broguece
 homepage: https://github.com/tmewett/BrogueCE
 repo: https://github.com/tmewett/BrogueCE
+tags:
+  - beautiful
+  - roguelike
+  - dungeon
+  - crawler
+readmeUrl: https://raw.githubusercontent.com/tmewett/BrogueCE/HEAD/README.md

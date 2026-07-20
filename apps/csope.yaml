@@ -7,3 +7,10 @@ binaries:
   - csope
 homepage: https://github.com/agvxov/csope
 repo: https://github.com/agvxov/csope
+tags:
+  - source
+  - code
+  - browser
+  - cscope
+installNotes: "## Installation"
+readmeUrl: https://raw.githubusercontent.com/agvxov/csope/HEAD/README.md

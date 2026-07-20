@@ -7,3 +7,25 @@ binaries:
   - crush
 homepage: https://github.com/charmbracelet/crush
 repo: https://github.com/charmbracelet/crush
+language: Go
+tags:
+  - glamourous
+  - coding
+  - agent
+install:
+  brew: brew install charmbracelet/tap/crush
+  npm: npm install -g @charmland/crush
+  apt: apt install crush
+  go: go install github.com/charmbracelet/crush@latest
+packages:
+  brew: crush
+  npm: ""
+  apt: crush
+  go: crush
+installNotes: |-
+  ## Installation
+
+  Use a package manager:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/charmbracelet/crush/HEAD/README.md

@@ -7,3 +7,57 @@ binaries:
   - timg
 homepage: https://github.com/hzeller/timg
 repo: https://github.com/hzeller/timg
+language: Go
+tags:
+  - image
+install:
+  apt: apt install timg
+  brew: brew install timg
+  dnf: dnf install cmake
+packages:
+  apt: timg
+  brew: timg
+  dnf: cmake
+installNotes: |-
+  ## Installation
+  ### Install pre-built package
+
+  <a href="https://repology.org/project/timg/versions">
+  <img src="https://repology.org/badge/vertical-allrepos/timg.svg" alt="Packaging status" align="right">
+  </a>
+
+  #### Debian-based systems
+
+  ```bash
+  sudo apt install timg
+  ```
+
+  #### NixOS or Nix package manager
+
+  ```bash
+  nix-env -i timg
+  ```
+
+  #### macOS
+
+  ```bash
+  brew install timg
+  ```
+
+  #### Use AppImage
+
+  The [timg release page](https://github.com/hzeller/timg/releases/latest) also
+  has a _minimal_ binary in the [AppImage package format][AppImage].
+  To keep the size small, it does _not_ include video decoding or some more
+  fancy image formats. It is good for many contexts or if you want to try out
+  `timg`, but for a full-featured binary, use one from your distribution or
+  build from source.
+
+  ### Build and Install from source
+
+  #### Get dependencies on Debian/Ubuntu
+
+  ```bash
+  sudo apt install cmake git g++ pkg-config
+  sudo apt install libgraphicsmagick++-dev libturbojpeg-dev libexif-dev libswscale-dev libdeflate-dev librsvg2-dev libcairo-dev # needed libs
+readmeUrl: https://raw.githubusercontent.com/hzeller/timg/HEAD/README.md

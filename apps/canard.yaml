@@ -7,3 +7,25 @@ binaries:
   - canard
 homepage: https://github.com/mrusme/canard
 repo: https://github.com/mrusme/canard
+language: Go
+tags:
+  - rss
+  - news
+  - journalist
+  - https
+  - github
+  - mrusme
+  - aggregator
+installNotes: |-
+  ## Installation
+
+  Download a binary from the [releases][releases] page.
+
+  Or build it yourself (requires Go 1.16+):
+
+  ```bash
+  make
+  ```
+
+  [releases]: https://github.com/mrusme/canard/releases
+readmeUrl: https://raw.githubusercontent.com/mrusme/canard/HEAD/README.md

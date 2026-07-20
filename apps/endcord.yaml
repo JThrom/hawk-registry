@@ -7,3 +7,60 @@ binaries:
   - endcord
 homepage: https://github.com/mzivic7/endcord
 repo: https://github.com/mzivic7/endcord
+language: Rust
+tags:
+  - feature
+  - rich
+  - discord
+installNotes: |-
+  ## Installing
+  ### Linux
+  - Pre-built binaries (**recommended**) are available in releases  
+      Binaries are built on Ubuntu-like distro with `--custom-python --nuitka` build script options with clang, meaning they are maximally optimized.
+  - Arch Linux (AUR):
+      - `yay -S endcord` - full version with media support, larger executable
+      - `yay -S endcord-lite` - lite version without voice calls and media support
+      - `-git` versions will build from source, with latest changes
+  - [Build](#building) endcord, then copy built executable to system:  
+      `sudo cp dist/endcord /usr/local/bin/`
+  - Install script (installs binary from latest release or updates existing):
+      - `bash -c "$(curl -fsSL https://raw.githubusercontent.com/sparklost/endcord/main/tools/install.sh)"`
+      - Append ` -- --lite` to install lite instead
+      - Append ` -- --uninstall` to uninstall  
+  Note: official means installations from these sources are coming from endcord developer and will always be up-to-date.
+
+  Optional dependencies:
+  - `xclip` - Clipboard support on X11
+  - `wl-clipboard` - Clipboard support on Wayland
+  - `yazi` / `zenity` / `kdialog` - File dialog when uploading
+  - `aspell` - Spellchecking (and `aspell-en` dictionary)
+  - `git` - Install and update extensions from other sources than github
+  - `yt-dlp` - youtube support
+  - `mpv` - Play youtube videos in native player (non-ascii)
+  - `libsecret` - Store token in system keyring (secret service provider is also required (eg. `gnome-keyring`, `KWallet`, `KeePassXC`), with `dbus` as dependency)
+  - `libappindicator-gtk3` - Tray support under wayland, for [experimental windowed mode](#experimental-windowed-mode) only.
+  - `imagemagick` - To make notification images round; only needed for endcord-lite.
+  - `source-highlight` or `python-pygments` - Code block syntax highlighting (Alternatively use [this extension](https://github.com/sparklost/endcord-pygments-syntax)).
+
+  ### Windows
+  - Pre-built binaries (built with nuitka) are available in releases
+  - [Build](#building) endcord, standalone executable can be found in `./dist/endcord.exe`  
+
+  Install [WezTerm](https://wezterm.org/) (recommended), [windows terminal](https://github.com/microsoft/terminal), [cmder](https://github.com/cmderdev/cmder), or any other modern terminal. And run exe from there. If built with experimental windowed mode, terminal is not required to use endcord.  
+  WezTerm proved to introduce the least drawing issues.  
+  Cmder settings: "Mouse" > check "Send mouse events to console" and "Mark/Copy" > uncheck "Intelligent mode", and set "Main console font" and "Alternative font" to same monospace font.  
+  Emoji are known to work only with WezTerm but many will fail to draw and mess-up the UI, so its best to set `emoji_as_text = True` in config.  
+  Optional dependency for spellchecking: [aspell](https://github.com/adamyg/aspell-win32). It is expected to be installed in `C:\Program Files (x86)\`. Alongside with base aspell, dictionary must be installed, even en_US.  
+
+  ### macOS
+  - Pre-built binaries (built with pyinstaller and clang) are available in releases
+  - [Build](#building) endcord, standalone executable can be found in `./dist/`.  
+  - Install script (installs binary from latest release or updates existing):
+      - `bash -c "$(curl -fsSL https://raw.githubusercontent.com/sparklost/endcord/main/tools/install.sh)"`
+      - Append ` -- --lite` to install lite instead
+      - Append ` -- --uninstall` to uninstall
+  Optional dependency for spellchecking: `aspell`. Can be installed with: `brew aspell`.  
+
+  ### BSD
+  - [Build](#building) endcord, standalone executable can be found in `./dist/endcord`
+readmeUrl: https://raw.githubusercontent.com/mzivic7/endcord/HEAD/README.md

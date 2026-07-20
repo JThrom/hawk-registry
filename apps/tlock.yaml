@@ -7,3 +7,73 @@ binaries:
   - tlock
 homepage: https://github.com/eklairs/tlock
 repo: https://github.com/eklairs/tlock
+language: Go
+tags:
+  - factor
+  - authentication
+  - tokens
+  - manager
+installNotes: |-
+  ## ⬇️ Installation
+
+  - **Arch Linux** (with AUR helper, like yay)
+
+    ```fish
+    yay -S tlock
+    ```
+
+  - **NixOS** (with Flakes)
+
+    Try out before installing ✨
+    ```fish
+    nix run "git+https://github.com/eklairs/tlock?submodules=1"
+    ```
+
+    Minimal configuration:
+    ```nix
+    # flake.nix
+    {
+      inputs = {
+        nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+        tlock.url = "git+https://github.com/eklairs/tlock?submodules=1";
+        tlock.inputs.nixpkgs.follows = "nixpkgs";
+      };
+
+      outputs = inputs @ { self, nixpkgs, tlock, ... }:
+      {
+        # Change hostname etc. as needed
+        nixosConfigurations.hostname = let
+          system = "x86_64-linux";
+          lib = nixpkgs.lib;
+        in lib.nixosSystem {
+          inherit system;
+          modules = [
+            {
+              environment.systemPackages = [
+                tlock.packages.${system}.default
+              ];
+            }
+            ./configuration.nix
+          ];
+        };
+      };
+    }
+    ```
+
+  - **Windows** (with scoop)
+
+    ```fish
+    scoop bucket add tlock https://github.com/eklairs/tlock
+    scoop install tlock
+    ```
+
+  - **Manually**
+
+    You can also download the binary based on your operating system to use TLock from [releases](https://github.com/eklairs/tlock/releases)
+    
+  - **Docker**
+    
+    ```fish
+    docker run -it --rm ghcr.io/eklairs/tlock:latest
+    ```
+readmeUrl: https://raw.githubusercontent.com/eklairs/tlock/HEAD/README.md

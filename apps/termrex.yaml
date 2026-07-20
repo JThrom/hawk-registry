@@ -7,3 +7,25 @@ binaries:
   - termrex
 homepage: https://github.com/SATYADAHAL/termrex
 repo: https://github.com/SATYADAHAL/termrex
+tags:
+  - endless
+  - runner
+  - game
+  - inspired
+  - chrome
+  - dino
+  - offline
+install:
+  dnf: dnf install termrex
+packages:
+  dnf: termrex
+installNotes: |-
+  ## Fedora Installation via COPR
+
+  If you are on Fedora, you can install `termrex` directly from my COPR repository:
+
+  ```sh
+  sudo dnf copr enable satya-pr-dahal/termrex
+  sudo dnf install termrex
+  termrex
+readmeUrl: https://raw.githubusercontent.com/SATYADAHAL/termrex/HEAD/README.md

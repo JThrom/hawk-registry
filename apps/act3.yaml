@@ -7,3 +7,34 @@ binaries:
   - act3
 homepage: https://github.com/dhth/act3
 repo: https://github.com/dhth/act3
+language: Go
+tags:
+  - glance
+  - last
+  - github
+  - actions
+install:
+  brew: brew install dhth/tap/act3
+  go: go install github.com/dhth/act3@latest
+packages:
+  brew: act3
+  go: act3
+installNotes: |-
+  💾 Installation
+  ---
+
+  **homebrew**:
+
+  ```sh
+  brew install dhth/tap/act3
+  ```
+
+  **go**:
+
+  ```sh
+  go install github.com/dhth/act3@latest
+  ```
+
+  Or get the binary directly from a [release][2]. Read more about verifying the
+  authenticity of released artifacts [here](#-verifying-release-artifacts).
+readmeUrl: https://raw.githubusercontent.com/dhth/act3/HEAD/README.md

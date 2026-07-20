@@ -7,3 +7,17 @@ binaries:
   - draw
 homepage: https://github.com/maaslalani/draw
 repo: https://github.com/maaslalani/draw
+language: Go
+tags:
+  - drawing
+install:
+  go: go install github.com/maaslalani/draw@latest
+packages:
+  go: draw
+installNotes: |-
+  ### Installation
+
+  ```
+  go install github.com/maaslalani/draw@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/maaslalani/draw/HEAD/README.md

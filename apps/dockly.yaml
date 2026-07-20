@@ -7,3 +7,22 @@ binaries:
   - dockly
 homepage: https://github.com/lirantal/dockly
 repo: https://github.com/lirantal/dockly
+language: JavaScript
+tags:
+  - docker
+  - containers
+  - immersive
+  - managing
+  - services
+install:
+  npm: npm install -g dockly
+packages:
+  npm: dockly
+installNotes: |-
+  # Install
+  Install the API module as a dependency in your project so you can easily use it to query Operations Orchestration REST API
+
+  ```javascript
+  npm install -g dockly
+  ```
+readmeUrl: https://raw.githubusercontent.com/lirantal/dockly/HEAD/README.md

@@ -8,3 +8,20 @@ binaries:
   - humbleexplorer
 homepage: https://github.com/koenvervloesem/humble-explorer
 repo: https://github.com/koenvervloesem/humble-explorer
+language: Python
+tags:
+  - cross
+  - platform
+  - human
+  - friendly
+  - bluetooth
+  - energy
+  - scanner
+installNotes: |-
+  Installation
+  ============
+
+  You can install HumBLE Explorer as a pip package from PyPI::
+
+      pip install humble-explorer
+readmeUrl: https://raw.githubusercontent.com/koenvervloesem/humble-explorer/HEAD/README.rst

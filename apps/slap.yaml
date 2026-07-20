@@ -7,3 +7,19 @@ binaries:
   - slap
 homepage: https://github.com/slap-editor/slap
 repo: https://github.com/slap-editor/slap
+language: Go
+tags:
+  - sublime
+  - like
+  - text
+  - editor
+installNotes: |-
+  Installation
+  ------------
+
+      $ curl -sL https://raw.githubusercontent.com/slap-editor/slap/master/install.sh | sh
+
+  If you already have [NodeJS](http://nodejs.org/download/) installed:
+
+      $ sudo npm install -g slap@latest
+readmeUrl: https://raw.githubusercontent.com/slap-editor/slap/HEAD/README.md

@@ -7,3 +7,38 @@ binaries:
   - dashbrew
 homepage: https://github.com/rasjonell/dashbrew
 repo: https://github.com/rasjonell/dashbrew
+language: Go
+tags:
+  - dashboard
+  - builder
+  - lets
+  - visualize
+  - data
+  - scripts
+  - apis
+install:
+  go: go install github.com/rasjonell/dashbrew/cmd/dashbrew@latest
+packages:
+  go: dashbrew
+installNotes: |-
+  ## 🚀 Installation
+
+  ### Using Go Install
+
+  Pull the latest release:
+
+  ```bash
+  go install github.com/rasjonell/dashbrew/cmd/dashbrew@latest
+  ```
+
+  Pin a specific version (any tag from the [Releases](https://github.com/rasjonell/dashbrew/releases) page):
+
+  ```bash
+  go install github.com/rasjonell/dashbrew/cmd/dashbrew@v1.1.0
+  go install github.com/rasjonell/dashbrew/cmd/dashbrew@v1.0.0
+  ```
+
+  ### From Source
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/rasjonell/dashbrew/HEAD/README.md

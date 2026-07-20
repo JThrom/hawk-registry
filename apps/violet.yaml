@@ -7,3 +7,39 @@ binaries:
   - violet
 homepage: https://github.com/braheezy/violet
 repo: https://github.com/braheezy/violet
+tags:
+  - colorful
+  - frontend
+  - vagrant
+  - commands
+installNotes: |-
+  ## Getting Started
+
+  Violet is delivered as a single binary for various platforms. See the [Releases](https://github.com/braheezy/violet/releases) page for the latest builds.
+
+  ### Prerequisites
+
+  Violet does absolutely nothing without Vagrant installed. See the [Vagrant docs](https://developer.hashicorp.com/vagrant/downloads) to install it for your platform.
+
+  Vagrant itself does absolutely nothing unless you have a Hypervisor installed and configured. Here's a few popular ones:
+  - [VirtualBox](https://www.virtualbox.org/)
+  - [Libvirt/QEMU](https://libvirt.org/)
+
+  For best results, it helps to have existing Vagrant VMs.
+
+  ### Usage
+  Open a terminal and run the program:
+
+      violet
+
+  See the following table for how to interact with Violet:
+  | Action                  | Key        | Description                                               |
+  |-------------------------|------------|-----------------------------------------------------------|
+  | Switch Environment Tab  | Tab/Shift+Tab | Cycle through found Vagrant environments       |
+  | Select Command | Left/Right | Cycle through the supported Vagrant commands |
+  | Run command | Enter | Run the highlighted command on the selected entity |
+  | Toggle Environments/VM control | Space bar | Operate on the environment as a whole or individual machines |
+
+
+  Note that Violet does not aim to support all Vagrant commands and will provide a poor interface for troubleshooting issues with Vagrant, VMs, hypervisors, etc.
+readmeUrl: https://raw.githubusercontent.com/braheezy/violet/HEAD/README.md

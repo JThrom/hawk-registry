@@ -7,3 +7,39 @@ binaries:
   - frogmouth
 homepage: https://github.com/Textualize/frogmouth
 repo: https://github.com/Textualize/frogmouth
+language: Python
+tags:
+  - markdown
+  - browser
+install:
+  pipx: pipx install frogmouth
+  pip: pip install frogmouth
+  brew: brew install frogmouth
+packages:
+  pipx: frogmouth
+  pip: frogmouth
+  brew: frogmouth
+installNotes: |-
+  ## Installing
+
+  The easiest way to install Frogmouth is with [pipx](https://pypa.github.io/pipx/) (particularly if you aren't a Python developer).
+
+  ```
+  pipx install frogmouth
+  ```
+
+  You can also install Frogmouth with `pip`:
+
+  ```
+  pip install frogmouth
+  ```
+
+  On systems using Homebrew, you can tap into the Textualize tap and install Frogmouth with `brew`:
+
+  ```
+  brew tap textualize/homebrew
+  brew install frogmouth
+  ```
+
+  Whichever method you use, you should have a `frogmouth` command on your path.
+readmeUrl: https://raw.githubusercontent.com/Textualize/frogmouth/HEAD/README.md

@@ -7,3 +7,20 @@ binaries:
   - wander
 homepage: https://github.com/robinovitch61/wander
 repo: https://github.com/robinovitch61/wander
+language: Go
+tags:
+  - hashicorp
+  - nomad
+install:
+  brew: brew install robinovitch61/tap/wander
+  go: go install github.com/robinovitch61/wander@latest
+packages:
+  brew: wander
+  go: wander
+installNotes: |-
+  ## Installation
+
+  The following options are available depending on your platform and tooling:
+
+  ```shell
+readmeUrl: https://raw.githubusercontent.com/robinovitch61/wander/HEAD/README.md

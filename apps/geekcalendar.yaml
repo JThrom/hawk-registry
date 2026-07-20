@@ -7,3 +7,27 @@ binaries:
   - geekcalendar
 homepage: https://github.com/fearlessgeekmedia/GeekCalendar
 repo: https://github.com/fearlessgeekmedia/GeekCalendar
+language: JavaScript
+tags:
+  - calendar
+  - bindings
+  - which
+  - import
+  - calcure
+  - calcurse
+installNotes: |-
+  ### Installation
+
+  This project uses Bun and has the following dependencies:
+
+  - @octokit/rest
+  - @opentui/react
+  - js-yaml
+  - react
+
+  To install these dependencies, run the following command in the project directory:
+
+  ```sh
+  bun install
+  ```
+readmeUrl: https://raw.githubusercontent.com/fearlessgeekmedia/GeekCalendar/HEAD/README.md

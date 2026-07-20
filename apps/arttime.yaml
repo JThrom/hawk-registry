@@ -7,3 +7,71 @@ binaries:
   - arttime
 homepage: https://github.com/reportaman/arttime
 repo: https://github.com/reportaman/arttime
+tags:
+  - brings
+  - beauty
+  - text
+  - together
+  - functionality
+  - clock
+  - timer
+  - pattern
+  - time
+  - manager
+install:
+  apt: apt install /tmp/arttime_2.4.0-1_all.deb
+packages:
+  apt: arttime_2.4.0-1_all.deb
+installNotes: |-
+  # Installation
+
+  There are three installation methods: 1) Simple, 2) Manual, 3) Package manager. As the name suggests, 1) Simple method should be used by users who want a simple install experience (also no password required), 2) Manual method is for users who are fluent in using terminal and want the most customize install experience (check any optional dependencies at [arttime dependencies](https://github.com/poetaman/arttime/wiki#dependencies)), 3) Package manager method automates dependency installation, though mostly requires admin password to install.
+
+  <!--
+  There are three installation methods: 1) Simple, 2) Manual. As the name suggests, 1) Simple method should be used by users who want a simple install experience (also no password required), 2) Manual method is for users who are fluent in using terminal and want the most customize install experience (check any optional dependencies at [arttime dependencies](https://github.com/poetaman/arttime/wiki#dependencies).
+  -->
+
+  ---
+
+  1) Simple install method:
+  - Open some "Terminal" application on your computer
+  - Copy following line from start to end. *(Note: hovering your computer mouse near the right end of the following box will show a button inside the box, clicking it will copy the line for you. Or else you will have to press and hold to the mouse to scroll and select the entire line from beginning to end, and copy it.)*
+  ```
+  zsh -c '{url="https://gist.githubusercontent.com/poetaman/bdc598ee607e9767fe33da50e993c650/raw/d0146d258a30daacb9aee51deca9410d106e4237/arttime_online_installer.sh"; zsh -c "$(curl -fsSL $url || wget -qO- $url)"}'
+  ```
+  - Paste the above copied line in "Terminal" application, and press ``Enter``
+  - Installer will print any further action you need to take before running it.
+  - Type ``arttime`` and press ``Enter``, arttime will launch!
+
+  Note: The simple install method installs arttime under ``~/.local``, which is a standard install directory for local installation.
+
+  ---
+
+  2) Manual install method:
+  - Clone the github repository somewhere on your machine
+  - ``cd`` to that directory
+  - Run ``./install.sh -h`` to see the options for installation
+  - Run ``./install.sh`` with your options of choice
+  - Rest is similar to the last 2 steps of simple installer
+
+
+  ---
+  3) Package manager method:
+  Arttime might also be available as a package or build receipe in your favorite system distribution.
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/arttime.svg)](https://repology.org/project/arttime/versions)
+
+  For Debian, Ubuntu, etc Linuxes that use ``apt``, please download and install latest .deb package: [arttime_2.4.0-1_all.deb](https://github.com/poetaman/arttime/releases/download/v2.4.0/arttime_2.4.0-1_all.deb). Instructions:
+  ```
+  $ mv arttime_2.4.0-1_all.deb /tmp
+  $ sudo apt install /tmp/arttime_2.4.0-1_all.deb
+  ```
+
+
+  If you don't see your favorite distribution and would like to volunteer then get in touch. Useful links: [arttime dependencies](https://github.com/poetaman/arttime/wiki#dependencies), [arttime discussions](https://github.com/poetaman/arttime/discussions), [@ehaupt](https://github.com/ehaupt)'s [FreeBSD PR](https://github.com/poetaman/arttime/pull/25)/[FreeBSD port](https://github.com/freebsd/freebsd-ports/commit/7f2f0cc69b9348a6bfcbdbeee5793616628307b4)/[FreeBSD art](https://github.com/poetaman/arttime/pull/25/commits/943fa08cffaa16a59a9aefbfd432467afc65b1c4). Once you have added a package, open a pull request with some representative art like [FreeBSD mascot](https://github.com/poetaman/arttime/pull/25/commits/943fa08cffaa16a59a9aefbfd432467afc65b1c4) to get representation for your favorite distribution/OS (mascots are preferred over logos).
+
+
+  ## Try arttime in docker?
+  Docker being a containerized environment can be a preferred way of trying applications for some geeks. With docker already installed you can give arttime a quick try in a docker container, ***though without arttime's sounds/notifications***. Copy-Paste-Enter the following command in a term
+  …
+readmeUrl: https://raw.githubusercontent.com/reportaman/arttime/HEAD/README.md

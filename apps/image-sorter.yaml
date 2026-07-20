@@ -7,3 +7,46 @@ binaries:
   - image-sorter
 homepage: https://github.com/jgalat/image-sorter
 repo: https://github.com/jgalat/image-sorter
+language: Rust
+tags:
+  - sorting
+  - images
+  - bindings
+  - rust
+install:
+  cargo: cargo install image-sorter
+packages:
+  cargo: image-sorter
+installNotes: |-
+  ## Installation
+
+  The binary executable is `image-sorter`.
+
+  ### Cargo
+
+  Install with
+
+  ```bash
+  cargo install image-sorter
+  ```
+
+  To update, run
+
+  ```bash
+  cargo install image-sorter --force
+  ```
+
+  ### Release
+
+  Find the latest release [here](https://github.com/jgalat/image-sorter/releases).
+
+  ### Repository
+
+  Requires `cargo` to be installed.
+
+  Clone or download this repository and run the following inside the project
+
+  ```bash
+  cargo install --path .
+  ```
+readmeUrl: https://raw.githubusercontent.com/jgalat/image-sorter/HEAD/README.md

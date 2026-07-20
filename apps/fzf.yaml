@@ -7,3 +7,128 @@ binaries:
   - fzf
 homepage: https://github.com/junegunn/fzf
 repo: https://github.com/junegunn/fzf
+language: Go
+tags:
+  - general
+  - purpose
+  - fuzzy
+  - finder
+install:
+  brew: brew install fzf
+packages:
+  brew: fzf
+installNotes: |-
+  Installation
+  ------------
+
+  ### Using Homebrew
+
+  You can use [Homebrew](https://brew.sh/) (on macOS or Linux) to install fzf.
+
+  ```sh
+  brew install fzf
+  ```
+
+  > [!IMPORTANT]
+  > To set up shell integration (key bindings and fuzzy completion),
+  > see [the instructions below](#setting-up-shell-integration).
+
+  fzf is also available [via MacPorts][portfile]: `sudo port install fzf`
+
+  [portfile]: https://github.com/macports/macports-ports/blob/master/sysutils/fzf/Portfile
+
+  ### Using Mise
+
+  You can use [mise](https://github.com/jdx/mise) to install fzf.
+
+  ```sh
+  mise use -g fzf@latest
+  ```
+
+  ### Linux packages
+
+  | Package Manager | Linux Distribution      | Command                            |
+  | --------------- | ----------------------- | ---------------------------------- |
+  | APK             | Alpine Linux            | `sudo apk add fzf`                 |
+  | APT             | Debian 9+/Ubuntu 19.10+ | `sudo apt install fzf`             |
+  | Conda           |                         | `conda install -c conda-forge fzf` |
+  | DNF             | Fedora                  | `sudo dnf install fzf`             |
+  | Nix             | NixOS, etc.             | `nix-env -iA nixpkgs.fzf`          |
+  | Pacman          | Arch Linux              | `sudo pacman -S fzf`               |
+  | pkg             | FreeBSD                 | `pkg install fzf`                  |
+  | pkgin           | NetBSD                  | `pkgin install fzf`                |
+  | pkg_add         | OpenBSD                 | `pkg_add fzf`                      |
+  | Portage         | Gentoo                  | `emerge --ask app-shells/fzf`      |
+  | Spack           |                         | `spack install fzf`                |
+  | XBPS            | Void Linux              | `sudo xbps-install -S fzf`         |
+  | Zypper          | openSUSE                | `sudo zypper install fzf`          |
+
+  > [!IMPORTANT]
+  > To set up shell integration (key bindings and fuzzy completion),
+  > see [the instructions below](#setting-up-shell-integration).
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/fzf.svg?columns=3)](https://repology.org/project/fzf/versions)
+
+  ### Windows packages
+
+  On Windows, fzf is available via [Chocolatey][choco], [Scoop][scoop],
+  [Winget][winget], and [MSYS2][msys2]:
+
+  | Package manager | Command                               |
+  | --------------- | ------------------------------------- |
+  | Chocolatey      | `choco install fzf`                   |
+  | Scoop           | `scoop install fzf`                   |
+  | Winget          | `winget install fzf`                  |
+  | MSYS2 (pacman)  | `pacman -S $MINGW_PACKAGE_PREFIX-fzf` |
+
+  [choco]: https://chocolatey.org/packages/fzf
+  [scoop]: https://github.com/ScoopInstaller/Main/blob/master/bucket/fzf.json
+  [winget]: https://github.com/microsoft/winget-pkgs/tree/master/manifests/j/junegunn/fzf
+  [msys2]: https://packages.msys2.org/base/mingw-w64-fzf
+
+  ### Using git
+
+  Alternatively, you can "git clone" this repository to any directory and run
+  [install](https://github.com/junegunn/fzf/blob/master/install) script.
+
+  ```sh
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+  ```
+
+  The install script will add lines to your shell configuration file to modify
+  `$PATH` and set up shell integration.
+
+  ### Binary releases
+
+  You can download the official fzf binaries from the releases page.
+
+  * https://github.com/junegunn/fzf/releases
+
+  ### Setting up shell integration
+
+  Add the following line to your shell configuration file.
+
+  * bash
+    ```sh
+    # Set up fzf key bindings and fuzzy completion
+    eval "$(fzf --bash)"
+    ```
+  * zsh
+    ```sh
+    # Set up fzf key bindings and fuzzy completion
+    source <(fzf --zsh)
+    ```
+  * fish
+    ```fish
+    # Set up fzf key bindings
+    fzf --fish | source
+    ```
+  * Nushell -- Nushell does not support piping into `source`, so the install
+    script generates a file in the autoload directory. If you didn't use the
+    install script, you can manually set it up:
+    ```nu
+    # Generate the integration script
+    mkdir ($nu.default-config-dir | 
+  …
+readmeUrl: https://raw.githubusercontent.com/junegunn/fzf/HEAD/README.md

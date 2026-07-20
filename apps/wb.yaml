@@ -7,3 +7,38 @@ binaries:
   - wb
 homepage: https://github.com/MertGunduz/wb
 repo: https://github.com/MertGunduz/wb
+tags:
+  - vocabulary
+  - notebook
+  - linux
+  - devices
+installNotes: |-
+  ## Installation
+
+  ### Step 1: Download the Source codes
+
+  https://github.com/MertGunduz/wb
+
+  ### Step 2: Change permissions of INSTALL.sh
+
+  ```sh
+  chmod 755 INSTALL.sh
+  ```
+  running this command will change the permission of the INSTALL.sh
+
+  ### Step 3: Run INSTALL.sh
+
+  ```sh
+  ./INSTALL.sh
+  ```
+  running this bash file will build the application and create the folders.
+  ##### Note: it can ask for sudo permission
+
+  ### Step 4: Test Application
+
+  try running
+  ```sh
+  wb -h
+  ```
+  if there are some output related to wb then it means it is successfully builded
+readmeUrl: https://raw.githubusercontent.com/MertGunduz/wb/HEAD/README.md

@@ -7,3 +7,9 @@ binaries:
   - moon-buggy
 homepage: https://github.com/seehuhn/moon-buggy
 repo: https://github.com/seehuhn/moon-buggy
+tags:
+  - drive
+  - some
+  - across
+  - moon
+readmeUrl: https://raw.githubusercontent.com/seehuhn/moon-buggy/HEAD/README

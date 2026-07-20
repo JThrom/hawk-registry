@@ -7,3 +7,13 @@ binaries:
   - yazi
 homepage: https://github.com/sxyazi/yazi
 repo: https://github.com/sxyazi/yazi
+language: Rust
+tags:
+  - file manager
+  - files
+  - blazing
+  - file
+  - manager
+  - rust
+  - async
+readmeUrl: https://raw.githubusercontent.com/sxyazi/yazi/HEAD/README.md

@@ -7,3 +7,30 @@ binaries:
   - vortix
 homepage: https://github.com/Harry-kp/vortix
 repo: https://github.com/Harry-kp/vortix
+language: Rust
+tags:
+  - wireguard
+  - openvpn
+  - real
+  - time
+  - telemetry
+  - leak
+  - detection
+  - kill
+  - switch
+install:
+  apt: apt install wireguard-tools
+  dnf: dnf install wireguard-tools
+  pacman: pacman -S wireguard-tools
+  brew: brew install openvpn
+packages:
+  apt: wireguard-tools
+  dnf: wireguard-tools
+  pacman: wireguard-tools
+  brew: openvpn
+installNotes: |-
+  ### Build dependencies (source installs only)
+
+  - Rust 1.85+ (for `edition2024` transitive deps; distros shipping older Rust — e.g. Ubuntu 24.04's apt — will need `rustup` for source builds)
+  - macOS 12+ or Linux kernel 3.10+ (5.6+ recommended for native WireGuard)
+readmeUrl: https://raw.githubusercontent.com/Harry-kp/vortix/HEAD/README.md

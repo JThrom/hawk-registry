@@ -7,3 +7,73 @@ binaries:
   - talos-pilot
 homepage: https://github.com/handfish/talos-pilot
 repo: https://github.com/handfish/talos-pilot
+language: Rust
+tags:
+  - monitor
+  - system
+  - talos
+  - linux
+  - providing
+  - real
+  - time
+  - node
+  - monitoring
+  - streaming
+  - various
+  - diagnostics
+install:
+  brew: brew install Handfish/tap/talos-pilot
+packages:
+  brew: talos-pilot
+installNotes: |-
+  ## Installation
+
+  ### From Releases (Recommended)
+
+  Download the latest release for your platform from the [Releases](https://github.com/Handfish/talos-pilot/releases) page.
+
+  Install prebuilt binaries via shell script:
+  ```bash
+  curl --proto '=https' --tlsv1.2 -LsSf https://github.com/Handfish/talos-pilot/releases/download/<version>/talos-pilot-installer.sh | sh
+  ```
+  Install prebuilt binaries via powershell script:
+  ```bash
+  powershell -ExecutionPolicy Bypass -c "irm https://github.com/Handfish/talos-pilot/releases/download/<version>/talos-pilot-installer.ps1 | iex"
+  ```
+
+  Install prebuilt binaries via Homebrew
+  ```bash
+  brew install Handfish/tap/talos-pilot
+  ```
+
+  ### From Source
+
+  ```bash
+  git clone https://github.com/Handfish/talos-pilot
+  cd talos-pilot
+  cargo build --release
+  ./target/release/talos-pilot
+  ```
+
+  ### NixOS
+
+  Talos pilot is available as a Nix flake but can also be run without installing.
+
+  #### Run talos-pilot without installing
+
+  You can test the app directly by using a nix shell
+
+  ```bash
+  nix shell github:Handfish/talos-pilot
+  ```
+
+  Or run it directly
+
+  ```bash
+  nix run github:Handfish/talos-pilot
+  ```
+
+  #### Usage in flakes
+
+  ```nix
+readmeUrl: https://raw.githubusercontent.com/handfish/talos-pilot/HEAD/README.md

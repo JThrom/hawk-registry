@@ -7,3 +7,60 @@ binaries:
   - agent-deck
 homepage: https://github.com/asheshgoplani/agent-deck
 repo: https://github.com/asheshgoplani/agent-deck
+language: Go
+tags:
+  - dashboard
+  - managing
+  - multiple
+  - coding
+  - agent
+  - sessions
+install:
+  brew: brew install asheshgoplani/tap/agent-deck
+  go: go install github.com/asheshgoplani/agent-deck/cmd/agent-deck@latest
+packages:
+  brew: agent-deck
+  go: agent-deck
+installNotes: |-
+  ## Installation
+
+  **Works on:** macOS, Linux, Windows (WSL)
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/asheshgoplani/agent-deck/main/install.sh | bash
+  ```
+
+  Then run: `agent-deck`
+
+  <details>
+  <summary>Other install methods</summary>
+
+  **Homebrew**
+  ```bash
+  brew install asheshgoplani/tap/agent-deck
+  ```
+
+  **Go**
+  ```bash
+  go install github.com/asheshgoplani/agent-deck/cmd/agent-deck@latest
+  ```
+
+  **From Source**
+  ```bash
+  git clone https://github.com/asheshgoplani/agent-deck.git && cd agent-deck && make install
+  ```
+
+  </details>
+
+  <details>
+  <summary>Uninstalling</summary>
+
+  ```bash
+  agent-deck uninstall              # Interactive uninstall
+  agent-deck uninstall --keep-data  # Remove binary only, keep sessions
+  ```
+
+  See [Troubleshooting](skills/agent-deck/references/troubleshooting.md#uninstalling) for full details.
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/asheshgoplani/agent-deck/HEAD/README.md

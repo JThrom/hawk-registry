@@ -8,3 +8,19 @@ binaries:
   - otel
 homepage: https://github.com/ymtdzzz/otel-tui
 repo: https://github.com/ymtdzzz/otel-tui
+language: Go
+tags:
+  - opentelemetry
+install:
+  brew: brew install ymtdzzz/tap/otel-tui
+  go: go install github.com/ymtdzzz/otel-tui@latest
+packages:
+  brew: otel-tui
+  go: otel-tui
+installNotes: |-
+  ### go install
+
+  ```sh
+  $ go install github.com/ymtdzzz/otel-tui@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/ymtdzzz/otel-tui/HEAD/README.md

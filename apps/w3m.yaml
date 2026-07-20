@@ -7,3 +7,8 @@ binaries:
   - w3m
 homepage: https://github.com/tats/w3m
 repo: https://github.com/tats/w3m
+tags:
+  - text
+  - mode
+  - browser
+readmeUrl: https://raw.githubusercontent.com/tats/w3m/HEAD/README

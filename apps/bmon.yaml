@@ -7,3 +7,38 @@ binaries:
   - bmon
 homepage: https://github.com/tgraf/bmon
 repo: https://github.com/tgraf/bmon
+tags:
+  - monitor
+  - system
+  - network
+  - monitoring
+  - debugging
+  - capture
+  - networking
+  - related
+  - statistics
+  - prepare
+  - them
+  - visually
+install:
+  apt: apt-get install build-essential
+  dnf: dnf install bmon
+  brew: brew install bmon
+packages:
+  apt: build-essential
+  dnf: bmon
+  brew: bmon
+installNotes: |-
+  ## Debian/Ubuntu Installation
+
+  ```
+  git clone https://github.com/tgraf/bmon.git
+  cd bmon
+  apt-get install build-essential make libconfuse-dev libnl-3-dev libnl-route-3-dev libncurses-dev pkg-config dh-autoreconf
+  ./autogen.sh
+  ./configure
+  make
+  make install
+  bmon
+  ```
+readmeUrl: https://raw.githubusercontent.com/tgraf/bmon/HEAD/README.md

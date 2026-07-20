@@ -7,3 +7,45 @@ binaries:
   - recoverpy
 homepage: https://github.com/PabloLec/recoverpy
 repo: https://github.com/PabloLec/recoverpy
+language: Python
+tags:
+  - recover
+  - overwritten
+  - deleted
+  - data
+install:
+  pip: pip install recoverpy
+packages:
+  pip: recoverpy
+installNotes: |-
+  ## 📦 Installation
+
+  ### Requirements
+
+  - Linux
+  - Python 3.9+
+
+  Accessing raw block devices typically requires `sudo`.
+
+  ### Using `uv`
+
+  ```bash
+  sudo uvx recoverpy
+  ````
+
+  Or install locally:
+
+  ```bash
+  uv tool install recoverpy
+  sudo recoverpy
+  ```
+
+  ### Using pip
+
+  ```bash
+  python -m pip install recoverpy
+  sudo recoverpy
+  ```
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/PabloLec/recoverpy/HEAD/README.md

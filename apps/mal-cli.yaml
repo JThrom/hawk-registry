@@ -8,3 +8,37 @@ binaries:
   - mal
 homepage: https://github.com/L4z3x/mal-tui
 repo: https://github.com/L4z3x/mal-tui
+language: Rust
+tags:
+  - http
+  - api
+  - official
+  - myanimelist
+  - rust
+install:
+  cargo: cargo install mal-cli-rs
+packages:
+  cargo: mal-cli-rs
+installNotes: |-
+  # INSTALLATION:
+  ## ArchLinux:
+    ```
+    yay -S mal-cli
+    ```
+
+  ## using cargo:
+    ```
+    cargo install mal-cli-rs
+    ```
+
+  ## Debian-based:
+    download the package from last release and run:
+    ```
+    sudo dpkg -i <installed-packege>
+    ```
+    release section can be found here [here](https://github.com/L4z3x/mal-cli/releases/)
+
+  ## windows/ macos / musl:
+    download binaries from release section and run directly otherwise use cargo
+  ##
+readmeUrl: https://raw.githubusercontent.com/L4z3x/mal-tui/HEAD/README.md

@@ -7,3 +7,31 @@ binaries:
   - openmux
 homepage: https://github.com/monotykamary/openmux
 repo: https://github.com/monotykamary/openmux
+language: JavaScript
+tags:
+  - multiplexer
+  - master
+  - stack
+  - layout
+  - zellij
+  - style
+install:
+  npm: npm install -g openmux
+  bun: bun add -g openmux
+packages:
+  npm: openmux
+  bun: openmux
+installNotes: |-
+  ## Installation
+
+  ### Quick Install (curl)
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/monotykamary/openmux/main/scripts/install.sh | bash
+  ```
+
+  ### npm / bun
+
+  ```bash
+  npm install -g openmux
+readmeUrl: https://raw.githubusercontent.com/monotykamary/openmux/HEAD/README.md

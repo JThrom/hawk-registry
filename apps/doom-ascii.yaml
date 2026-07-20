@@ -7,3 +7,14 @@ binaries:
   - doom-ascii
 homepage: https://github.com/wojciech-graj/doom-ascii
 repo: https://github.com/wojciech-graj/doom-ascii
+tags:
+  - text
+  - doom
+installNotes: |-
+  ### Build from Source
+  #### Linux / MacOS
+  Requires Make and a C compiler. Creates `_<YOUR OS>/game/doom_ascii`
+  ```sh
+  make
+  ```
+readmeUrl: https://raw.githubusercontent.com/wojciech-graj/doom-ascii/HEAD/README.md

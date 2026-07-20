@@ -7,3 +7,34 @@ binaries:
   - spotatui
 homepage: https://github.com/LargeModGames/spotatui
 repo: https://github.com/LargeModGames/spotatui
+language: Rust
+tags:
+  - music
+  - audio
+  - spotify
+  - native
+  - streaming
+  - synced
+  - lyrics
+  - real
+  - time
+  - visualization
+install:
+  brew: brew install spotatui
+  cargo: cargo install --locked
+  apt: apt-get install libpipewire-0.3-dev
+  pacman: pacman -S pipewire
+  dnf: dnf install pipewire-devel
+packages:
+  brew: spotatui
+  cargo: --locked
+  apt: libpipewire-0.3-dev
+  pacman: pipewire
+  dnf: pipewire-devel
+installNotes: |-
+  ## Installation
+
+  > **Spotify is optional.** On first launch spotatui asks which source you want to use. YouTube, Subsonic/Navidrome, Internet Radio, and Local Files all work with no Spotify account. Spotify Premium is only needed for the Spotify source; you can add it anytime from the `d` menu.
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/LargeModGames/spotatui/HEAD/README.md

@@ -7,3 +7,102 @@ binaries:
   - opcilloscope
 homepage: https://github.com/SquareWaveSystems/opcilloscope
 repo: https://github.com/SquareWaveSystems/opcilloscope
+language: Haskell
+tags:
+  - real
+  - time
+  - oscilloscope
+  - industrial
+  - automation
+installNotes: |-
+  ## Install
+
+  **Linux / macOS:**
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/SquareWaveSystems/opcilloscope/main/install.sh | bash
+  ```
+
+  **Windows (PowerShell):**
+  ```powershell
+  irm https://raw.githubusercontent.com/SquareWaveSystems/opcilloscope/main/install.ps1 | iex
+  ```
+
+  Or grab a binary from [GitHub Releases](https://github.com/SquareWaveSystems/opcilloscope/releases).
+
+  Release archives include the self-contained executable, the project license, and notices for bundled third-party components. The installers preserve those notices in an app-owned license directory.
+
+  The installers require the matching release checksum and refuse an unverified download. On Windows, the default install directory is added to your user `PATH`; a custom `OPCILLOSCOPE_INSTALL_DIR` is treated as shared and leaves `PATH` unchanged.
+
+  > **macOS note:** the binaries are unsigned, so archives downloaded with a browser are
+  > quarantined by Gatekeeper. Either use the curl installer above, or clear the
+  > quarantine attribute after extracting: `xattr -d com.apple.quarantine <binary>`.
+
+  Then run:
+  ```bash
+  opcilloscope
+  ```
+
+  An automatic/omitted or partial security profile requires a `SignAndEncrypt`
+  endpoint and selects the strongest matching candidate offered by the server.
+  Explicit `securityMode: "Sign"` opts into signed-but-unencrypted traffic.
+  Explicit anonymous `securityMode: "None"` opts into unsecured plaintext;
+  username authentication never permits `None`.
+
+  Server certificates that fail validation are rejected by default. For a
+  development server, `opcilloscope --insecure` disables server certificate
+  validation for that run; it does not enable plaintext transport. Do not use
+  this option in production. The connection log reports the trusted-certificate
+  store path when validation fails.
+
+  <details>
+  <summary>Uninstall</summary>
+
+  **Linux / macOS:**
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/SquareWaveSystems/opcilloscope/main/uninstall.sh | bash
+  ```
+
+  Or manually on Linux:
+  ```bash
+  rm ~/.local/bin/opcilloscope
+  rm -rf "${XDG_DATA_HOME:-$HOME/.local/share}/opcilloscope/licenses"
+  rm -rf "${XDG_CONFIG_HOME:-$HOME/.config}/opcilloscope"  # optional: configs and recent files
+  rm -rf "${XDG_DATA_HOME:-$HOME/.local/share}/opcilloscope/pki"  # optional: certificates
+  ```
+
+  Or manually on macOS:
+  ```bash
+  rm ~/.local/bin/opcilloscope
+  rm -rf "$HOME/Library/Application Support/opcilloscope/licenses"
+  rm -rf "$HOME/Library/Application Support/opcilloscope/configs"  # optional
+  rm -f "$HOME/Library/Application Support/opcilloscope/recent-files.json"  # optional
+  rm -rf "$HOME/Library/Application Support/opcilloscope/pki"  # optional: certificates
+  ```
+
+  **Windows (PowerShell):**
+  ```powershell
+  irm https://raw.githubusercontent.com/SquareWaveSystems/opcilloscope/main/uninstall.ps1 | iex
+  ```
+
+  Or manually:
+  ```powershell
+  $installDir = "$env:LOCALAPPDATA\Programs\opcilloscope"
+  Remove-Item "$installDir\opcilloscope.exe" -Force
+  Remove-Item "$installDir\opcilloscope-licenses" -Recurse -Force
+  $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
+  $pathEntries = @($userPath -split ";" | Where-Object { $_.Trim().TrimEnd('\') -ine $installDir.TrimEnd('\') })
+  [Environment]::SetEnvironmentVariable("Path", ($pathEntries -join ";"), "User")
+  Remove-Item "$env:APPDATA\opcilloscope" -Recurse -Force             # optional: configs and recent files
+  Remove-Item "$env:LOCALAPPDATA\opcilloscope\pki" -Recurse -Force    # optional: certificates
+  ```
+
+  If you set `OPCILLOSCOPE_INSTALL_DIR`, replace only the executable path above on
+  Linux/macOS; license notices remain in the platform data directory shown above.
+  On Windows, replace both `$installDir` executable/license paths with the custom
+  directory and skip the `PATH`-removal lines; the installer never adds a custom
+  directory to `PATH`. Configuration and certificate locations do not move. The
+  uninstall scripts remove only files owned by opcilloscope rather than recursively
+  deleting a shared custom install directory.
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/SquareWaveSystems/opcilloscope/HEAD/README.md

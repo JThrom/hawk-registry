@@ -7,3 +7,147 @@ binaries:
   - bpytop
 homepage: https://github.com/aristocratos/bpytop
 repo: https://github.com/aristocratos/bpytop
+language: Python
+tags:
+  - monitor
+  - system
+  - python
+  - lots
+  - information
+install:
+  pip: pip3 install psutil
+  brew: brew install bpytop
+  apt: apt install bpytop
+  dnf: dnf install bpytop
+packages:
+  pip: psutil
+  brew: bpytop
+  apt: bpytop
+  dnf: bpytop
+installNotes: |-
+  ## Installation
+
+  I only maintain the PyPi package, so will not take responsibility for issues caused by any other install method!
+
+  ### PyPi (will always have latest version)
+
+  > Install or update to latest version
+  ``` bash
+  pip3 install bpytop --upgrade
+  ```
+
+  ### Mac OsX
+
+  >Install with Homebrew
+  ```bash
+  brew install bpytop
+  ```
+
+  >Optional coretemp (Shows temperatures for cpu cores)
+  ```bash
+  brew install hacker1024/hacker1024/coretemp
+  ```
+
+  >Alternatively install with MacPorts
+  ```bash
+  port install bpytop
+  ```
+
+  OsX on Apple Silicon (arm) requires psutil version 5.8.0 to work and currently has no temperature monitoring.
+  Upgrade psutil with `sudo pip3 install psutil --upgrade`
+
+  ### Arch Linux
+
+  Available in the Arch Linux [community] repository as `bpytop`
+
+  >Installation
+
+  ```bash
+  sudo pacman -S bpytop
+  ```
+
+  ### Debian based
+
+  Available in [official Debian repository](https://tracker.debian.org/pkg/bpytop) since Debian 11
+
+  >Installation
+
+  ```bash
+  sudo apt install bpytop
+  ```
+
+  Available for debian/ubuntu from [Azlux's repository](http://packages.azlux.fr/)
+
+  ### FreeBSD package
+
+  Available in [FreeBSD ports](https://www.freshports.org/sysutils/bpytop/)
+
+  >Install pre-built package
+
+  ``` bash
+  sudo pkg install bpytop
+  ```
+
+  ### Fedora/CentOS 8 package
+
+  [Available](https://src.fedoraproject.org/rpms/bpytop) in the Fedora and [EPEL-8 repository](https://fedoraproject.org/wiki/EPEL).
+
+  >Installation
+
+  ``` bash
+  sudo dnf install bpytop
+  ```
+
+  ### Gentoo / Calculate Linux
+
+  Available from [adrien-overlay](https://github.com/aaaaadrien/adrien-overlay)
+
+  >Installation
+
+  ``` bash
+  sudo emerge -av sys-process/bpytop
+  ```
+
+  ### Mageia Cauldron (Mageia 8)
+
+  Available in Mageia Cauldron and then Mageia 8 when it is released.
+
+  >Installation
+
+  ``` bash
+  sudo urpmi bpytop
+  sudo dnf install bpytop
+  ```
+
+  ### MX Linux
+
+  Available in the MX Test Repo as `bpytop`
+  Please use MX Package Installer MX Test Repo tab to install.
+
+  http://mxrepo.com/mx/testrepo/pool/test/b/bpytop/
+
+  ### Void Linux
+
+  Available in void repo and void-packages ports tree
+
+  >Installation
+
+  ``` bash
+  sudo xbps-install bpytop
+  ```
+
+  ### Snap package
+
+  (Note! There is some issues caused by the snap sandboxing)
+
+  by @kz6fittycent
+
+  https://github.com/kz6fittycent/bpytop-snap
+
+  >Install the package
+  ``` bash
+  sudo snap install bpytop
+  ```
+
+  The config folder will be located in `~/snap/bpytop/current/.config/bpytop`
+readmeUrl: https://raw.githubusercontent.com/aristocratos/bpytop/HEAD/README.md

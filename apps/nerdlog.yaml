@@ -7,3 +7,65 @@ binaries:
   - nerdlog
 homepage: https://github.com/dimonomid/nerdlog
 repo: https://github.com/dimonomid/nerdlog
+language: Go
+tags:
+  - remote
+  - first
+  - multi
+  - host
+install:
+  apt: apt install libx11-dev
+  go: go install github.com/dimonomid/nerdlog/cmd/nerdlog@latest
+packages:
+  apt: libx11-dev
+  go: nerdlog
+installNotes: |-
+  ## Installation
+
+  The easiest is to just use a prebuilt binary for your platform, see the
+  [releases page](https://github.com/dimonomid/nerdlog/releases).
+
+  To build it from source, you need [Go](https://go.dev/).
+
+  Also on Linux, the X11 dev package is required because of access to clipboard
+  ([here's the library that nerdlog
+  uses](https://github.com/golang-design/clipboard)), e.g. on Ubuntu it can be
+  installed with this:
+
+  ```
+  sudo apt install libx11-dev
+  ```
+
+  On MacOS and Windows, no extra dependencies are required.
+
+  ### Using `go install`
+
+  Latest release (might miss newest features which are not yet officially released):
+
+  ```
+  go install github.com/dimonomid/nerdlog/cmd/nerdlog@latest
+  ```
+
+  Latest master:
+
+  ```
+  go install github.com/dimonomid/nerdlog/cmd/nerdlog@master
+  ```
+
+  Unless you have custom `GOPATH` or `GOBIN` env vars set, it will install the
+  `nerdlog` binary to `$HOME/go/bin`.
+
+  ### Using `make`
+
+  To install `nerdlog` binary to your `/usr/local/bin`:
+
+  ```
+  $ make && sudo make install
+  ```
+
+  Or to build and run without installing:
+
+  ```
+  $ make && bin/nerdlog
+  ```
+readmeUrl: https://raw.githubusercontent.com/dimonomid/nerdlog/HEAD/README.md

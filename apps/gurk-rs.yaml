@@ -8,3 +8,63 @@ binaries:
   - gurk
 homepage: https://github.com/boxdot/gurk-rs
 repo: https://github.com/boxdot/gurk-rs
+language: Rust
+tags:
+  - signal
+  - messenger
+install:
+  cargo: cargo install --git
+  pacman: pacman -S gurk
+packages:
+  cargo: --git
+  pacman: gurk
+installNotes: |-
+  # Installation
+
+  ## Pre-compiled binary
+
+  Download a pre-compiled binary from [Releases].
+
+  Or, if you have [`cargo-binstall`](https://github.com/cargo-bins/cargo-binstall):
+
+  ```shell
+  cargo binstall --git https://github.com/boxdot/gurk-rs gurk
+  ```
+
+  ## From source (using `cargo`)
+
+  Prerequisites:
+
+  * [`protoc`] compiler
+  * `perl`
+
+  ```shell
+  cargo install --git https://github.com/boxdot/gurk-rs gurk
+  ```
+
+  ## Arch Linux
+
+  ```shell
+  pacman -S gurk
+  ```
+  (as root)
+  - Official repository, tagged releases: [`gurk`](https://archlinux.org/packages/extra/x86_64/gurk)
+  ```shell
+  yay -S gurk
+  ```
+  - AUR source build from Git HEAD: [`gurk-git`](https://aur.archlinux.org/packages/gurk-bin)
+
+  ## Nix/NixOS
+
+  Either per user:
+
+  ```
+  $ nix-env --install gurk-rs
+  ```
+
+  or system-wide:
+
+  ```nix
+  environment.systemPackages = with pkgs; [ gurk-rs ];
+  ```
+readmeUrl: https://raw.githubusercontent.com/boxdot/gurk-rs/HEAD/README.md

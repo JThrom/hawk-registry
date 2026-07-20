@@ -7,3 +7,23 @@ binaries:
   - blitzdenk
 homepage: https://github.com/Lommix/blitzdenk
 repo: https://github.com/Lommix/blitzdenk
+tags:
+  - http
+  - api
+  - chat
+  - messaging
+  - minimal
+  - multi
+  - auto
+  - context
+  - project
+installNotes: |-
+  ## Install
+
+  You can download the pre compiled binaries from [the release page](https://github.com/Lommix/blitzdenk/releases) or build it yourself:
+
+  ```
+  zig build --release=small
+  cp zig-out/bin/blitz ~/.local/bin/blitz
+  ```
+readmeUrl: https://raw.githubusercontent.com/Lommix/blitzdenk/HEAD/README.md

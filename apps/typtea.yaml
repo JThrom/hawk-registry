@@ -7,3 +7,71 @@ binaries:
   - typtea
 homepage: https://github.com/ashish0kumar/typtea
 repo: https://github.com/ashish0kumar/typtea
+language: Rust
+tags:
+  - minimal
+  - typing
+  - speed
+  - tester
+  - dozens
+  - programming
+  - languages
+install:
+  brew: brew install typtea
+  go: go install github.com/ashish0kumar/typtea@latest
+packages:
+  brew: typtea
+  go: typtea
+installNotes: |-
+  ## Installation
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/typtea.svg)](https://repology.org/project/typtea/versions)
+
+  ### AUR
+
+  ```bash
+  yay -S typtea
+  ```
+
+  ### FreeBSD
+
+  ```bash
+  pkg install typtea
+  ```
+
+  ### Homebrew
+
+  ```bash
+  brew install typtea
+  ```
+
+  ### Nix
+
+  ```bash
+  nix profile install nixpkgs#typtea
+  ```
+
+  ### Void Linux
+
+  ```bash
+  sudo xbps-install -S typtea
+  ```
+
+  ### Via `go install`
+
+  ```bash
+  go install github.com/ashish0kumar/typtea@latest
+  ```
+
+  ### Build from Source
+
+  ```bash
+  git clone --depth=1 https://github.com/ashish0kumar/typtea
+  cd typtea/
+  go build
+  sudo mv typtea /usr/local/bin/
+  typtea -h
+  ```
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/ashish0kumar/typtea/HEAD/README.md

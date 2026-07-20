@@ -7,3 +7,27 @@ binaries:
   - hydrotodo
 homepage: https://github.com/Henriquehnnm/hydrotodo
 repo: https://github.com/Henriquehnnm/hydrotodo
+language: Python
+tags:
+  - beautiful
+  - list
+install:
+  pip: pip install windows-curses
+packages:
+  pip: windows-curses
+installNotes: |-
+  ## Installation
+
+  Clone the repository and navigate to the project folder:
+
+  ```bash
+  git clone https://github.com/Henriquehnnm/HydroToDo.git
+  cd HydroToDo
+  ```
+  If on Windows:
+  ```bash
+  pip install windows-curses
+  ```
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/Henriquehnnm/hydrotodo/HEAD/README.md

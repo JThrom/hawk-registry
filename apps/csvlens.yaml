@@ -7,3 +7,79 @@ binaries:
   - csvlens
 homepage: https://github.com/YS-L/csvlens
 repo: https://github.com/YS-L/csvlens
+language: Rust
+tags:
+  - file
+  - like
+  - less
+install:
+  brew: brew install csvlens
+  pacman: pacman -S csvlens
+  cargo: cargo install csvlens
+packages:
+  brew: csvlens
+  pacman: csvlens
+  cargo: csvlens
+installNotes: |-
+  ## Installation
+
+  ### Direct download
+
+  You can download the `tar.xz` or `zip` file matching your operating system from the
+  [releases page](https://github.com/YS-L/csvlens/releases), extract it and execute the `csvlens`
+  binary.
+
+  ### Homebrew
+
+  For macOS, `csvlens` is available on [Homebrew](https://formulae.brew.sh/formula/csvlens). You can
+  install it using:
+  ```
+  brew install csvlens
+  ```
+
+  ### Arch Linux
+  `csvlens` is available in the [official repositories](https://archlinux.org/packages/extra/x86_64/csvlens). You can install it using:
+  ```
+  pacman -S csvlens
+  ```
+
+  ### Windows
+
+  For Windows, `csvlens` is available on [winget](https://learn.microsoft.com/en-gb/windows/package-manager/). You can install it using:
+  ```powershell
+  winget install --id YS-L.csvlens
+  ```
+
+  ### FreeBSD
+  `csvlens` is available as a [FreeBSD pkg](https://www.freshports.org/textproc/csvlens/). You can install it using:
+  ```
+  pkg install csvlens
+  ```
+
+  ### NetBSD
+  `csvlens` is available on [pkgsrc](https://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/textproc/csvlens/index.html). If you're using NetBSD you can install it using:
+  ```
+  pkgin install csvlens
+  ```
+
+  ### OpenBSD
+  `csvlens` is available as an [OpenBSD port](https://cvsweb.openbsd.org/ports/textproc/csvlens/). If you're using OpenBSD 7.6-current or later, you can install it using:
+  ```
+  doas pkg_add csvlens
+  ```
+
+  ### Cargo
+
+  If you have [Rust](https://www.rust-lang.org/tools/install) installed, `csvlens` is available on
+  [crates.io](https://crates.io/crates/csvlens) and you can install it using:
+  ```
+  cargo install csvlens
+  ```
+
+  Or, build and install from source after cloning this repo:
+  ```
+  cargo install --path $(pwd)
+  ```
+
+  Requires Rust 1.88.0 or newer.
+readmeUrl: https://raw.githubusercontent.com/YS-L/csvlens/HEAD/README.md

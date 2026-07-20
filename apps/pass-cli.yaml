@@ -8,3 +8,31 @@ binaries:
   - pass
 homepage: https://github.com/arimxyer/pass-cli
 repo: https://github.com/arimxyer/pass-cli
+language: Go
+tags:
+  - password
+  - manager
+  - rclone
+  - cloud
+  - syncing
+install:
+  brew: brew install pass-cli
+packages:
+  brew: pass-cli
+installNotes: |-
+  ### Installation
+
+  **macOS / Linux (Homebrew)**:
+  ```bash
+  brew tap reyamira/homebrew-tap
+  brew install pass-cli
+  ```
+
+  **Windows (Scoop)**:
+  ```powershell
+  scoop bucket add reyamira https://github.com/reyamira/scoop-bucket
+  scoop install pass-cli
+  ```
+
+  For manual installation and other methods, see [docs/01-getting-started/manual-install.md](docs/01-getting-started/manual-install.md).
+readmeUrl: https://raw.githubusercontent.com/arimxyer/pass-cli/HEAD/README.md

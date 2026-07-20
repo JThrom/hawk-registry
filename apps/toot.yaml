@@ -7,3 +7,7 @@ binaries:
   - toot
 homepage: https://github.com/ihabunek/toot
 repo: https://github.com/ihabunek/toot
+language: Python
+tags:
+  - mastodon
+readmeUrl: https://raw.githubusercontent.com/ihabunek/toot/HEAD/README.md

@@ -7,3 +7,37 @@ binaries:
   - docker-dash
 homepage: https://github.com/GustavoCaso/docker-dash
 repo: https://github.com/GustavoCaso/docker-dash
+language: Go
+tags:
+  - docker
+  - containers
+  - full
+  - managemnet
+install:
+  brew: brew install docker-dash
+  go: go install github.com/GustavoCaso/docker-dash/cmd/docker-dash@latest
+packages:
+  brew: docker-dash
+  go: docker-dash
+installNotes: |-
+  ### Install
+
+  Homebrew:
+
+  ```bash
+  brew tap GustavoCaso/tap
+  brew install docker-dash
+  ```
+
+  Go:
+
+  ```bash
+  go install github.com/GustavoCaso/docker-dash/cmd/docker-dash@latest
+  ```
+
+  Build from source:
+
+  ```bash
+  make build
+  ```
+readmeUrl: https://raw.githubusercontent.com/GustavoCaso/docker-dash/HEAD/README.md

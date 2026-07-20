@@ -7,3 +7,33 @@ binaries:
   - tcpterm
 homepage: https://github.com/sachaos/tcpterm
 repo: https://github.com/sachaos/tcpterm
+language: Go
+tags:
+  - network
+  - tcpterm
+  - packet
+  - visualizer
+install:
+  go: go install github.com/sachaos/tcpterm
+packages:
+  go: tcpterm
+installNotes: |-
+  Install
+  ---
+
+  *Requires libpacp header files for compilation*
+
+  For Debian based distriubutions install package _libpcap-dev_
+
+  ### Go install
+
+  ```shell
+  go install github.com/sachaos/tcpterm
+  ```
+
+  ### Download binary
+
+  ```shell
+  wget -O tcpterm https://github.com/sachaos/tcpterm/releases/download/v0.0.2/tcpterm_linux_amd64 && chmod +x tcpterm && sudo mv tcpterm /usr/local/bin
+  ```
+readmeUrl: https://raw.githubusercontent.com/sachaos/tcpterm/HEAD/README.md

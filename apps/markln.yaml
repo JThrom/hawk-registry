@@ -7,3 +7,36 @@ binaries:
   - markln
 homepage: https://github.com/xqtr/markln
 repo: https://github.com/xqtr/markln
+language: Go
+tags:
+  - markdown
+  - editor
+  - built
+  - textual
+install:
+  pip: pip install -r
+packages:
+  pip: -r
+installNotes: |-
+  ### INSTALLATION
+
+  #### Prerequisites:
+
+  - Python 3.8 or higher
+  - pip package manager
+
+  **Steps:**
+
+  Clone the repository:
+
+  `git clone <repository-url>`
+  `cd markln`
+
+  **Install requirements:**
+
+  `pip install -r requirements.txt`
+
+  **Run the editor:**
+
+  `python markln.py`
+readmeUrl: https://raw.githubusercontent.com/xqtr/markln/HEAD/README.md

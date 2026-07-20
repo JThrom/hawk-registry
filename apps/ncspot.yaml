@@ -7,3 +7,18 @@ binaries:
   - ncspot
 homepage: https://github.com/hrkfdn/ncspot
 repo: https://github.com/hrkfdn/ncspot
+language: Rust
+tags:
+  - music
+  - audio
+  - cross
+  - platform
+  - ncurses
+  - spotify
+  - rust
+installNotes: |-
+  ## Installation
+  ncspot is available on macOS (Homebrew), Windows (Scoop, WinGet), Linux (native package, Flathub and
+  Snapcraft) and the BSD's. Detailed installation instructions for each platform can be found
+  [here](/doc/users.md).
+readmeUrl: https://raw.githubusercontent.com/hrkfdn/ncspot/HEAD/README.md

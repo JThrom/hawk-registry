@@ -7,3 +7,61 @@ binaries:
   - khal
 homepage: https://github.com/pimutils/khal
 repo: https://github.com/pimutils/khal
+language: Python
+tags:
+  - standards
+  - calendar
+  - program
+  - able
+  - synchronize
+  - caldav
+  - servers
+installNotes: |-
+  Installation
+  ------------
+  khal is packaged for most `operating systems`__ and should be installable with
+  your standard package manager.
+
+  .. __: https://repology.org/project/python:khal/versions
+
+  For some exemplary OS you can find installation instructions below. Otherwise
+  see the documentation_ for more information.
+
+  .. _documentation: https://khal.readthedocs.io/en/latest/install.html
+
+  Debian/Ubuntu
+  ~~~~~~~~~~~~~
+
+      apt install khal
+
+  Nix
+  ~~~
+
+      nix-env -i khal
+
+  Arch
+  ~~~~
+
+      pacman -S khal
+
+  Brew
+  ~~~~
+
+      brew install khal
+
+  Fedora
+  ~~~~~~
+
+      dnf install khal
+
+  FreeBSD
+  ~~~~~~~
+
+      pkg install py-khal
+
+
+  Install latest version
+  ~~~~~~~~~~~~~~~~~~~~~~
+
+      pip install git+https://github.com/pimutils/khal
+readmeUrl: https://raw.githubusercontent.com/pimutils/khal/HEAD/README.rst

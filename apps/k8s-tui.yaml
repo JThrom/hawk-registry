@@ -8,3 +8,26 @@ binaries:
   - k8s
 homepage: https://github.com/otavioCosta2110/k8s-tui
 repo: https://github.com/otavioCosta2110/k8s-tui
+language: Go
+tags:
+  - kubernetes
+  - k8s
+  - resource
+  - manager
+  - multi
+  - cluster
+installNotes: |-
+  ## Installation
+
+  ### From Source
+
+  ```bash
+  git clone https://github.com/otavioCosta2110/k8s-tui.git
+  cd k8s-tui
+  go build -o k8s-tui ./cmd
+  ```
+
+  ### Binary Releases
+
+  Download pre-built binaries from the [releases page](https://github.com/otavioCosta2110/k8s-tui/releases).
+readmeUrl: https://raw.githubusercontent.com/otavioCosta2110/k8s-tui/HEAD/README.md

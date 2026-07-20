@@ -7,3 +7,32 @@ binaries:
   - fast-resume
 homepage: https://github.com/angristan/fast-resume
 repo: https://github.com/angristan/fast-resume
+tags:
+  - index
+  - fuzzy
+  - search
+  - coding
+  - agent
+  - sessions
+install:
+  brew: brew install fast-resume
+packages:
+  brew: fast-resume
+installNotes: |-
+  ## Install
+
+  Homebrew is the simplest option on macOS and Linux:
+
+  ```bash
+  brew tap angristan/tap
+  brew install fast-resume
+  ```
+
+  You can also install a binary wheel with `uv`:
+
+  ```bash
+  uv tool install fast-resume
+  ```
+
+  See the [installation guide](docs/installation.md) for `uvx`, Cargo, supported platforms, and terminal recommendations.
+readmeUrl: https://raw.githubusercontent.com/angristan/fast-resume/HEAD/README.md

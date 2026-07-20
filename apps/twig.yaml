@@ -7,3 +7,24 @@ binaries:
   - twig
 homepage: https://github.com/workdone0/twig
 repo: https://github.com/workdone0/twig
+language: Python
+tags:
+  - interactively
+  - exploring
+  - json
+  - yaml
+  - files
+install:
+  pipx: pipx install twg
+  pip: pip install twg
+packages:
+  pipx: twg
+  pip: twg
+installNotes: |-
+  ## Installation
+
+  ### Using uv (Recommended)
+  The modern, fast, and reliable way to install Python tools.
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/workdone0/twig/HEAD/README.md

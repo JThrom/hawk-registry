@@ -7,3 +7,11 @@ binaries:
   - elinks
 homepage: https://github.com/rkd77/elinks
 repo: https://github.com/rkd77/elinks
+tags:
+  - http
+  - api
+  - elinks
+  - brower
+  - mujs
+  - javascript
+readmeUrl: https://raw.githubusercontent.com/rkd77/elinks/HEAD/README.md

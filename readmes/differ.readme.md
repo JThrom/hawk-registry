@@ -1,0 +1,143 @@
+# differ
+
+Terminal UI git diff viewer built with Go and Bubble Tea. Two-panel layout: file list + syntax-highlighted diff preview.
+
+<p align="center">
+  <img src="./assets/preview.png" alt="differ preview" width="800" />
+</p>
+
+## Install
+
+```bash
+brew install jansmrcka/tap/differ
+```
+
+Or via Go:
+
+```bash
+go install github.com/jansmrcka/differ@latest
+```
+
+Or build from source:
+
+```bash
+make build    # → bin/differ
+make install  # → $GOPATH/bin/differ
+```
+
+## Usage
+
+```bash
+differ            # all changes (staged + unstaged + untracked)
+differ -s         # staged only
+differ -r main    # compare against ref
+differ -c         # open in commit mode
+differ log        # browse recent commits
+differ commit     # review staged + commit
+```
+
+## Keyboard Shortcuts
+
+### File List
+
+| Key           | Action                                     |
+| ------------- | ------------------------------------------ |
+| `j/k`         | navigate files                             |
+| `enter` / `l` | view diff                                  |
+| `tab`         | stage/unstage file                         |
+| `a`           | stage all                                  |
+| `c`           | commit (AI-generated message via `claude`) |
+| `b`           | open branch picker                         |
+| `v`           | toggle split (side-by-side) diff           |
+| `e`           | open in editor (`$EDITOR`, configurable)   |
+| `P`           | push (auto `--set-upstream` if needed)     |
+| `F`           | pull (fast-forward only)                   |
+| `g/G`         | first/last file                            |
+| `q`           | quit                                       |
+
+### Diff View
+
+| Key         | Action             |
+| ----------- | ------------------ |
+| `j/k`       | scroll             |
+| `d/u`       | half page down/up  |
+| `g/G`       | top/bottom         |
+| `n/p`       | next/prev file     |
+| `tab`       | stage/unstage      |
+| `b`         | open branch picker |
+| `v`         | toggle split diff  |
+| `e`         | open in editor     |
+| `esc` / `h` | back to file list  |
+
+### Commit Mode
+
+| Key     | Action         |
+| ------- | -------------- |
+| `enter` | confirm commit |
+| `esc`   | cancel         |
+
+### Branch Picker
+
+| Key             | Action               |
+| --------------- | -------------------- |
+| type            | filter branches      |
+| `↑/↓` / `^j/^k` | navigate             |
+| `enter`         | switch branch        |
+| `ctrl+n`        | create new branch    |
+| `esc`           | clear filter / close |
+
+## AI Commit Messages
+
+When pressing `c`, differ uses `claude -p` (Claude CLI) to generate a commit message from the staged diff. The message is pre-filled in the input — edit or confirm with Enter.
+
+Requires [Claude CLI](https://docs.anthropic.com/en/docs/claude-code) installed. Falls back to empty input if unavailable.
+
+## Themes
+
+```bash
+differ --theme dark   # default
+differ --theme light
+```
+
+Config file: `~/.config/differ/config.json`
+
+```json
+{
+  "theme": "dark",
+  "commit_msg_cmd": "claude -p",
+  "commit_msg_prompt": "Write a concise git commit message for this diff:",
+  "editor_cmd": "tmux new-window -c {repo} nvim {file}",
+  "split_diff": false
+}
+```
+
+`editor_cmd` supports `{file}` (absolute path) and `{repo}` (repo root) placeholders. Defaults to `$EDITOR {file}` (falls back to `vi`).
+
+## Tips
+
+### Tmux floating window
+
+Bind differ to a key in tmux for quick access as a popup overlay:
+
+```tmux
+bind g display-popup -E -w 90% -h 90% "cd #{pane_current_path} && differ"
+```
+
+Press `prefix + g` to open differ in a floating window over your current session. It closes automatically on quit.
+
+## Features
+
+- Syntax highlighting via Chroma (Go, JS/TS, Python, Rust, CSS, HTML, JSON, YAML, Markdown, ...)
+- Staged/unstaged/untracked file indicators
+- Stage/unstage individual files or all at once
+- Split (side-by-side) diff view
+- Branch picker with type-to-filter and branch creation (`ctrl+n`)
+- Push with auto `--set-upstream` for new branches
+- Pull with upstream ahead/behind tracking
+- Per-file added/deleted line counts in file list
+- Configurable editor command (`editor_cmd`)
+- Commit flow with AI-generated messages
+- Commit log browser with diff preview
+- Compare against any branch/tag/commit ref
+- Auto-refresh (2s polling)
+- Single binary, no runtime dependencies

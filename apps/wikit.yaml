@@ -7,3 +7,28 @@ binaries:
   - wikit
 homepage: https://github.com/BryanCE/wikit
 repo: https://github.com/BryanCE/wikit
+language: Go
+tags:
+  - managing
+  - wiki
+  - instances
+install:
+  npm: npm install -g @bryance/wikit
+packages:
+  npm: ""
+installNotes: |-
+  ## Installation
+
+  ### As CLI Tool
+
+  ```bash
+  npm install -g @bryance/wikit
+  wikit --help
+  ```
+
+  ### As Library (for MCP or other tools)
+
+  ```bash
+  npm install @bryance/wikit
+  ```
+readmeUrl: https://raw.githubusercontent.com/BryanCE/wikit/HEAD/README.md

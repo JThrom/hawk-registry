@@ -7,3 +7,152 @@ binaries:
   - gitui
 homepage: https://github.com/extrawurst/gitui
 repo: https://github.com/extrawurst/gitui
+language: Rust
+tags:
+  - git
+  - vcs
+  - blazing
+  - rust
+install:
+  pacman: pacman -S gitui
+  dnf: dnf install gitui
+  brew: brew install gitui
+  cargo: |-
+    Cargo Install
+
+    The
+packages:
+  pacman: gitui
+  dnf: gitui
+  brew: gitui
+  cargo: The
+installNotes: |-
+  ## 6. <a name="installation"></a> Installation <small><sup>[Top ▲](#table-of-contents)</sup></small>
+
+  GitUI is in beta and may contain bugs and missing features. However, for personal use it is reasonably stable and is being used while developing itself.
+
+  <a href="https://repology.org/project/gitui/versions">
+      <img src="https://repology.org/badge/vertical-allrepos/gitui.svg" alt="Packaging status" align="right">
+  </a>
+
+  ### Various Package Managers
+
+  <details>
+    <summary>Install Instructions</summary>
+
+  ##### [Arch Linux](https://archlinux.org/packages/extra/x86_64/gitui/)
+
+  ```sh
+  pacman -S gitui
+  ```
+
+  ##### Fedora
+
+  ```sh
+  sudo dnf install gitui
+  ```
+
+  ##### Gentoo
+  Available in [dm9pZCAq overlay](https://github.com/gentoo-mirror/dm9pZCAq)
+
+  ```sh
+  sudo eselect repository enable dm9pZCAq
+  sudo emerge --sync dm9pZCAq
+  sudo emerge dev-vcs/gitui::dm9pZCAq
+  ```
+
+  ##### [openSUSE](https://software.opensuse.org/package/gitui)
+
+  ```sh
+  sudo zypper install gitui
+  ```
+
+  ##### Homebrew (macOS)
+
+  ```sh
+  brew install gitui
+  ```
+
+  ##### [MacPorts (macOS)](https://ports.macports.org/port/gitui/details/)
+
+  ```sh
+  port install gitui
+  ```
+
+  ##### [Winget](https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/StephanDilly/gitui) (Windows)
+
+  ```
+  winget install gitui
+  ```
+
+  ##### [Scoop](https://github.com/ScoopInstaller/Main/blob/master/bucket/gitui.json) (Windows)
+
+  ```
+  scoop install gitui
+  ```
+
+  ##### [Chocolatey](https://chocolatey.org/packages/gitui) (Windows)
+
+  ```
+  choco install gitui
+  ```
+
+  ##### [Mise](https://github.com/jdx/mise)
+
+  ```shell
+  mise use -g gitui@latest
+  ```
+
+  ##### [Nix](https://search.nixos.org/packages?channel=unstable&show=gitui&from=0&size=50&sort=relevance&query=gitui) (Nix/NixOS)
+
+  Nixpkg
+  ```
+  nix-env -iA nixpkgs.gitui
+  ```
+  NixOS
+  ```
+  nix-env -iA nixos.gitui
+  ```
+
+  ##### [Termux](https://github.com/termux/termux-packages/tree/master/packages/gitui) (Android)
+
+  ```
+  pkg install gitui
+  ```
+
+  ##### [Anaconda](https://anaconda.org/conda-forge/gitui)
+  ```
+  conda install -c conda-forge gitui
+  ```
+
+  </details>
+
+  ### Release Binaries
+
+  [Available for download in releases](https://github.com/gitui-org/gitui/releases)
+
+  Binaries available for:
+
+  #### Linux
+
+  - gitui-linux-x86_64.tar.gz (linux musl statically linked)
+  - gitui-linux-aarch64.tar.gz (linux on 64 bit arm)
+  - gitui-linux-arm.tar.gz
+  - gitui-linux-armv7.tar.gz
+
+  All contain a single binary file
+
+  #### macOS
+
+  - gitui-mac.tar.gz (arm64)
+  - gitui-mac-x86.tar.gz (intel x86)
+
+  #### Windows
+
+  - gitui-win.tar.gz (single 64bit binary)
+  - gitui-win.msi (64bit Installer package)
+
+  ### Nightly Builds
+
+  see [NIGHTLIES.md](./NIGHTLIES.md)
+readmeUrl: https://raw.githubusercontent.com/extrawurst/gitui/HEAD/README.md

@@ -7,3 +7,130 @@ binaries:
   - dive
 homepage: https://github.com/wagoodman/dive
 repo: https://github.com/wagoodman/dive
+language: Go
+tags:
+  - docker
+  - containers
+  - exploring
+  - each
+  - layer
+  - image
+install:
+  apt: apt install ./dive_${DIVE_VERSION}_linux_amd64.deb
+  pacman: pacman -S dive
+  brew: brew install dive
+  go: go install github.com/wagoodman/dive@latest
+packages:
+  apt: dive_${DIVE_VERSION}_linux_amd64.deb
+  pacman: dive
+  brew: dive
+  go: dive
+installNotes: |-
+  ## Installation
+
+  **Ubuntu/Debian**
+
+  Using debs:
+  ```bash
+  DIVE_VERSION=$(curl -sL "https://api.github.com/repos/wagoodman/dive/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+  curl -fOL "https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.deb"
+  sudo apt install ./dive_${DIVE_VERSION}_linux_amd64.deb
+  ```
+
+  Using snap:
+  ```bash
+  sudo snap install docker
+  sudo snap install dive
+  sudo snap connect dive:docker-executables docker:docker-executables
+  sudo snap connect dive:docker-daemon docker:docker-daemon
+  ```
+
+  > [!CAUTION]
+  > The Snap method is not recommended if you installed Docker via `apt-get`, since it might break your existing Docker daemon.
+  > 
+  > See also: https://github.com/wagoodman/dive/issues/546
+
+
+  **RHEL/Centos**
+  ```bash
+  DIVE_VERSION=$(curl -sL "https://api.github.com/repos/wagoodman/dive/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+  curl -fOL "https://github.com/wagoodman/dive/releases/download/v${DIVE_VERSION}/dive_${DIVE_VERSION}_linux_amd64.rpm"
+  rpm -i dive_${DIVE_VERSION}_linux_amd64.rpm
+  ```
+
+  **Arch Linux**
+
+  Available in the [extra repository](https://archlinux.org/packages/extra/x86_64/dive/) and can be installed via [pacman](https://wiki.archlinux.org/title/Pacman):
+
+  ```bash
+  pacman -S dive
+  ```
+
+  **Mac**
+
+  If you use [Homebrew](https://brew.sh):
+
+  ```bash
+  brew install dive
+  ```
+
+  If you use [MacPorts](https://www.macports.org):
+
+  ```bash
+  sudo port install dive
+  ```
+
+  Or download the latest Darwin build from the [releases page](https://github.com/wagoodman/dive/releases/latest).
+
+  **Windows**
+
+  If you use [Chocolatey](https://chocolatey.org)
+
+  ```powershell
+  choco install dive
+  ```
+
+  If you use [scoop](https://scoop.sh/)
+
+  ```powershell
+  scoop install main/dive
+  ```
+
+  If you use [winget](https://learn.microsoft.com/en-gb/windows/package-manager/):
+
+  ```powershell
+  winget install --id wagoodman.dive
+  ```
+
+  Or download the latest Windows build from the [releases page](https://github.com/wagoodman/dive/releases/latest).
+
+  **Go tools**
+  Requires Go version 1.10 or higher.
+
+  ```bash
+  go install github.com/wagoodman/dive@latest
+  ```
+  *Note*: installing in this way you will not see a proper version when running `dive -v`.
+
+  **Nix/NixOS**
+
+  On NixOS:
+  ```bash
+  nix-env -iA nixos.dive
+  ```
+  On non-NixOS (Linux, Mac)
+  ```bash
+  nix-env -iA nixpkgs.dive
+  ```
+
+  **X-CMD**
+
+  [x-cmd](https://www.x-cmd.com/) is a **toolbox for Posix Shell**, offering a lightweight package manager built using shell and awk.
+  ```sh
+  x env use dive
+  ```
+
+  **Docker**
+  ```bash
+  docker pull docker.io/wagoodman/dive
+readmeUrl: https://raw.githubusercontent.com/wagoodman/dive/HEAD/README.md

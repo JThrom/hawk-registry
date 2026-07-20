@@ -7,3 +7,32 @@ binaries:
   - judo
 homepage: https://github.com/giacomopiccinini/judo
 repo: https://github.com/giacomopiccinini/judo
+language: Rust
+tags:
+  - database
+  - sql
+  - multi
+  - todo
+  - lists
+  - rust
+  - ratatui
+  - sqlite
+install:
+  cargo: cargo install judo
+packages:
+  cargo: judo
+installNotes: |-
+  ## Installation
+
+  Install Judo using Cargo:
+
+  ```bash
+  cargo install judo
+  ```
+
+  Then run it with:
+
+  ```bash
+  judo
+  ```
+readmeUrl: https://raw.githubusercontent.com/giacomopiccinini/judo/HEAD/README.md

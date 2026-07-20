@@ -8,3 +8,26 @@ binaries:
   - typing-game
 homepage: https://github.com/akgondber/typing-game-cli
 repo: https://github.com/akgondber/typing-game-cli
+language: JavaScript
+tags:
+  - game
+  - practice
+  - typing
+  - speed
+  - competing
+  - against
+  - typer
+  - robot
+  - best
+  - result
+install:
+  npm: npm install --global typing-game-cli
+packages:
+  npm: typing-game-cli
+installNotes: |-
+  ## Install
+
+  ```bash
+  $ npm install --global typing-game-cli
+  ```
+readmeUrl: https://raw.githubusercontent.com/akgondber/typing-game-cli/HEAD/readme.md

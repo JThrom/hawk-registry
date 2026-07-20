@@ -7,3 +7,40 @@ binaries:
   - lazytrivy
 homepage: https://github.com/owenrumney/lazytrivy
 repo: https://github.com/owenrumney/lazytrivy
+language: Go
+tags:
+  - kubernetes
+  - k8s
+  - lazier
+  - scan
+  - images
+  - filesytem
+  - trivy
+install:
+  brew: brew install --cask
+  go: go install github.com/owenrumney/lazytrivy@latest
+packages:
+  brew: --cask
+  go: lazytrivy
+installNotes: |-
+  ## Installation
+
+  ### Install with Homebrew (Recommended)
+
+  ```
+  brew tap owenrumney/tools
+  brew install --cask lazytrivy
+  ```
+
+  ### Install with Go
+
+  If you have Go installed:
+
+  ```bash
+  go install github.com/owenrumney/lazytrivy@latest
+  ```
+
+  ### Download from Releases
+
+  Get the latest releases from [GitHub](https://github.com/owenrumney/lazytrivy/releases)
+readmeUrl: https://raw.githubusercontent.com/owenrumney/lazytrivy/HEAD/README.md

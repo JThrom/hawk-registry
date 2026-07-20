@@ -7,3 +7,23 @@ binaries:
   - mynav
 homepage: https://github.com/GianlucaP106/mynav
 repo: https://github.com/GianlucaP106/mynav
+language: Go
+tags:
+  - workspace
+  - session
+  - environments
+installNotes: |-
+  ## Installation
+
+  Install mynav with a single command:
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/GianlucaP106/mynav/main/install.bash | bash
+  ```
+
+  ### Manual Installation
+
+  For users who prefer manual installation:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/GianlucaP106/mynav/HEAD/README.md

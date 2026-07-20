@@ -7,3 +7,23 @@ binaries:
   - kdash
 homepage: https://github.com/kdash-rs/kdash
 repo: https://github.com/kdash-rs/kdash
+language: Rust
+tags:
+  - kubernetes
+  - k8s
+  - dashboard
+install:
+  brew: brew install kdash
+  cargo: cargo install kdash
+packages:
+  brew: kdash
+  cargo: kdash
+installNotes: |-
+  ## Installation
+
+  ### Homebrew (Mac & Linux)
+
+  ```bash
+  brew tap kdash-rs/kdash
+  brew install kdash
+readmeUrl: https://raw.githubusercontent.com/kdash-rs/kdash/HEAD/README.md

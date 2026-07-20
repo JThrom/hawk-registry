@@ -7,3 +7,61 @@ binaries:
   - ytui-music
 homepage: https://github.com/sudipghimire533/ytui-music
 repo: https://github.com/sudipghimire533/ytui-music
+language: Rust
+tags:
+  - music
+  - audio
+  - listen
+  - youtube
+  - configurable
+  - minimal
+  - lightweight
+  - private
+  - beautiful
+install:
+  brew: brew install mpv
+  apt: apt install -y
+packages:
+  brew: mpv
+  apt: -y
+installNotes: |-
+  # Installation
+  NOTE: since the dependency `libmpv` seems not to be maintained anymore,
+
+  you will probably need to build from source in any platform. See section *Build From Source* below.
+
+  1) Download latest binary from [release page](https://github.com/sudipghimire533/ytui-music/releases/latest).
+  If binary is not available for your platform, head on to [build from source](#building-from-source)
+
+  2) Give it executable permission and from downloaded directory, in shell:
+  ```
+  ytui_music run
+  ```
+  3) You may need to jump to [Usage Guide](#usage)
+
+  ---
+
+  ## Dependencies
+  Ytui-music depends on mpv and youtube-dl. You may refer to the official websites of [mpv](https://mpv.io) and [youtube-dl](https://yt-dl.org).
+
+  If you have `choco` for windows or `brew` in mac or one of popular package manager in Linux you may run:
+
+  ### - Windows (In powershell or cmd)
+  ```
+  choco install mpv youtube-dl
+  ```
+
+  ### - Mac
+  ```
+  brew install mpv youtube-dl
+  ```
+
+  ### - Debian/Ubuntu Derivatives
+  ```
+  sudo apt update -y
+  sudo apt install -y youtube-dl libmpv1 libmpv-dev
+  ```
+  **For other distributions, install youtube-dl and mpv packages in your preferred methods**
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/sudipghimire533/ytui-music/HEAD/README.md

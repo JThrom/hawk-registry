@@ -7,3 +7,30 @@ binaries:
   - onx
 homepage: https://github.com/vyalovvldmr/onx
 repo: https://github.com/vyalovvldmr/onx
+language: Python
+tags:
+  - noughts
+  - crosses
+  - server
+  - game
+  - partner
+  - textual
+  - python
+install:
+  pip: pip install onx
+packages:
+  pip: onx
+installNotes: |-
+  ## Install
+
+  ```
+  $ pip install onx
+  ```
+
+  or
+
+  ```
+  $ poetry shell
+  $ poetry add onx
+  ```
+readmeUrl: https://raw.githubusercontent.com/vyalovvldmr/onx/HEAD/README.md

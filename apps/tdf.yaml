@@ -7,3 +7,16 @@ binaries:
   - tdf
 homepage: https://github.com/itsjunetime/tdf
 repo: https://github.com/itsjunetime/tdf
+language: Rust
+install:
+  cargo: cargo install --git
+packages:
+  cargo: --git
+installNotes: |-
+  ## Installation
+
+  1. Get the rust toolchain from [rustup.rs](https://rustup.rs)
+  2. Run `cargo install --git https://github.com/itsjunetime/tdf.git`
+
+  If you want to use this with `epub`s or `cbz`s, add `--features epub` or `--features cbz` to the command line (or `--features cbz,epub` for both)
+readmeUrl: https://raw.githubusercontent.com/itsjunetime/tdf/HEAD/README.md

@@ -7,3 +7,7 @@ binaries:
   - upiano
 homepage: https://github.com/eliasdorneles/upiano
 repo: https://github.com/eliasdorneles/upiano
+language: Python
+tags:
+  - piano
+readmeUrl: https://raw.githubusercontent.com/eliasdorneles/upiano/HEAD/README.md

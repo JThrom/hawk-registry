@@ -7,3 +7,113 @@ binaries:
   - multranslate
 homepage: https://github.com/Lifailon/multranslate
 repo: https://github.com/Lifailon/multranslate
+language: JavaScript
+tags:
+  - translating
+  - text
+  - multiple
+  - translators
+  - simultaneously
+  - translation
+  - history
+  - language
+  - detection
+install:
+  npm: npm install -g multranslate
+packages:
+  npm: multranslate
+installNotes: |-
+  ## Install
+
+  Use the [NPM](https://www.npmjs.com/package/multranslate) package manager to install a stable version:
+
+  ```shell
+  npm install -g multranslate
+  ```
+
+  Or install from the GitHub repository:
+
+  ```shell
+  npm install -g https://github.com/Lifailon/multranslate
+  ```
+
+  Run the application:
+
+  ```shell
+  multranslate
+  ```
+
+  Get help:
+
+  ```shell
+  multranslate --help
+
+  Usage: multranslate [options]
+
+  Cross-platform TUI for translating text in multiple translators simultaneously and LLM, with support for
+  translation history and automatic language detection.
+
+  Options:
+    -V, --version            output the version number
+    -l, --language <name>    Select the language: ru, ja, zh, ko, ar, tr, uk, sk, pl, de, fr, it, es, el, hu, nl,
+    sv, ro, cs, da, pt, vi (default: "ru" or the environment "TRANSLATE_LANGUAGE")
+    -t, --translator <name>  Select the translator: all, Google, DeepL, Reverso, MyMemory, OpenAI (default: "all")
+    -k, --key <value>        API key parameter for OpenAI (high priority) or using the environment "OPENAI_API_KEY"
+    -u, --urlOpenai <url>    Url address for OpenAI, OpenRouter or local LLM API (default: "https://api.openai.com"
+    or the environment "OPENAI_URL")
+    -m, --model <name>       Select the LLM model (default: "gpt-4o-mini" or the environment "OPENAI_MODEL")
+    -e, --temp <number>      Select the temperature for LLM (default: "0.7" or the environment "OPENAI_TEMP")
+    -h, --help               display help for command
+  ```
+
+  To use `OpenAI`, you need to pass parameters to connect to `API` (has high priority) or use environment variables (recommended).
+
+  ### OpenAI
+
+  Using environment variables in **Linux**:
+
+  ```Bash
+  export OPENAI_API_KEY="sk-proj-..."
+  multranslate
+  ```
+
+  You can save the environment variable for later use after reconnecting to the current terminal session.
+
+  ```Bash
+  echo 'export OPENAI_API_KEY="sk-proj-..."' >> ~/.bashrc
+  source ~/.bashrc
+  multranslate
+  ```
+
+  It is recommended to make changes to the profile file through any text editor, for example, `nano`, so that the key content is not saved in the command history.
+
+  ### OpenRouter
+
+  Using the `DeepSeek R1` free model via parameters:
+
+  ```Bash
+  multranslate -u "https://openrouter.ai/api" -m "deepseek/deepseek-r1:free" -k "sk-or-v1-..."
+  ```
+
+  Note that the default `/v1/chat/completions` append path is used for all requests.
+
+  ### LM Studio
+
+  Using environment variables in **Windows**:
+
+  ```PowerShell
+  $env:OPENAI_URL = "http://127.0.0.1:1234"
+  $env:OPENAI_MODEL = "llama-3-8b-gpt-4o-ru1.0"
+  multranslate
+  ```
+
+  Save variables in the current user's environment via `PowerShell` for later use:
+
+  ```PowerShell
+  [System.Environment]::SetEnvironmentVariable("OPENAI_API_KEY", "sk-or-v1-...", "User")
+  [System.Environment]::SetEnvironmentVariable("OPENAI_URL", "https://openrouter.ai/api", "User")
+  [System.Environment]::SetEnvironmentVariable("OPENAI_MODEL", "deepseek/deepseek-r1:free", "User")
+  ```
+
+  To apply, restart the terminal.
+readmeUrl: https://raw.githubusercontent.com/Lifailon/multranslate/HEAD/README.md

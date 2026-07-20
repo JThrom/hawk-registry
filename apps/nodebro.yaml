@@ -7,3 +7,30 @@ binaries:
   - nodebro
 homepage: https://github.com/jonaburg/nodebro
 repo: https://github.com/jonaburg/nodebro
+language: Go
+tags:
+  - easily
+  - most
+  - recent
+  - github
+  - releases
+  - tags
+  - release
+  - notes
+installNotes: |-
+  ## install 
+
+  ### download
+  ```
+   git clone https://github.com/jonaburg/nodebro.git 
+  ```
+  ### enter downloaded directory and build
+  ```
+   cd nodebro
+   go build -o nodebro 
+  ```
+  ### move binary to path
+  ```
+   mv nodebro /usr/local/bin/nodebro
+  ```
+readmeUrl: https://raw.githubusercontent.com/jonaburg/nodebro/HEAD/README.md

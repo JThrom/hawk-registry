@@ -7,3 +7,53 @@ binaries:
   - ranger
 homepage: https://github.com/ranger/ranger
 repo: https://github.com/ranger/ranger
+language: Python
+tags:
+  - file manager
+  - files
+  - inspired
+  - file
+  - manager
+install:
+  pip: pip install ranger-fm
+packages:
+  pip: ranger-fm
+installNotes: |-
+  Installing
+  ----------
+  Use the package manager of your operating system to install ranger.
+  You can also install ranger through PyPI: `pip install ranger-fm`.
+  However, it is recommended to use [`pipx`](https://pypa.github.io/pipx/) instead
+  (to benefit from isolated environments). Use
+  `pipx run --spec ranger-fm ranger` to install and run ranger in one step.
+
+  <details>
+    <summary>
+      Check current version:
+      <sub>
+        <a href="https://repology.org/metapackage/ranger/versions">
+          <img src="https://repology.org/badge/tiny-repos/ranger.svg" alt="Packaging status">
+        </a>
+      </sub>
+    </summary>
+    <a href="https://repology.org/metapackage/ranger/versions">
+      <img src="https://repology.org/badge/vertical-allrepos/ranger.svg" alt="Packaging status">
+    </a>
+  </details>
+
+  ### Installing from a clone
+  Note that you don't *have* to install ranger; you can simply run `ranger.py`.
+
+  To install ranger manually:
+  ```
+  sudo make install
+  ```
+
+  This translates roughly to:
+  ```
+  sudo python setup.py install --optimize=1 --record=install_log.txt
+  ```
+
+  This also saves a list of all installed files to `install_log.txt`, which you can
+  use to uninstall ranger.
+readmeUrl: https://raw.githubusercontent.com/ranger/ranger/HEAD/README.md

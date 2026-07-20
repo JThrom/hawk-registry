@@ -7,3 +7,23 @@ binaries:
   - trek
 homepage: https://github.com/franckverrot/trek
 repo: https://github.com/franckverrot/trek
+language: Go
+tags:
+  - ncurses
+  - explorer
+  - hashicorp
+  - nomad
+  - clusters
+installNotes: |-
+  ## SETUP
+
+  ### Binary Release
+
+  Get to revisions, and download a binary.
+
+  ### From Source
+
+      git clone https://github.com/franckverrot/trek.git
+      cd trek
+      make trek
+readmeUrl: https://raw.githubusercontent.com/franckverrot/trek/HEAD/README.md

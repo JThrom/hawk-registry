@@ -7,3 +7,71 @@ binaries:
   - dtop
 homepage: https://github.com/amir20/dtop
 repo: https://github.com/amir20/dtop
+language: Rust
+tags:
+  - docker
+  - containers
+  - monitor
+  - system
+  - dashboard
+  - monitoring
+  - across
+  - multiple
+  - hosts
+install:
+  brew: brew install dtop
+  cargo: cargo install dtop
+packages:
+  brew: dtop
+  cargo: dtop
+installNotes: |-
+  ## Installation
+  `dtop` can be installed through multiple package managers or by downloading the binary directly.
+
+  ### Homebrew
+
+  Install using Homebrew for macOS or Linux (recommended):
+
+  ```sh
+  brew install dtop
+  ```
+
+  > [!NOTE]
+  > Homebrew is recommended as `dtop` is in active development with frequent updates. Using Homebrew will automatically upgrade `dtop`. 
+
+
+  ### Docker
+  `dtop` is released as a docker image. You can pull it from Github.
+
+  ```sh
+  docker run -v /var/run/docker.sock:/var/run/docker.sock -it ghcr.io/amir20/dtop
+  ```
+
+  Currently, the image is available for amd64 and arm64 architectures.
+
+  ### Install Script
+
+  Downloads the latest release from GitHub.
+
+  ```sh
+  curl --proto '=https' --tlsv1.2 -LsSf https://github.com/amir20/dtop/releases/latest/download/dtop-installer.sh | sh
+  ```
+
+  ### Nix
+
+  Run directly without installing:
+
+  ```sh
+  nix run github:amir20/dtop
+  ```
+
+  Or install to your profile:
+
+  ```sh
+  nix profile install github:amir20/dtop
+  ```
+
+  For NixOS or home-manager, add to your configuration:
+
+  ```nix
+readmeUrl: https://raw.githubusercontent.com/amir20/dtop/HEAD/README.md

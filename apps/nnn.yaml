@@ -7,3 +7,10 @@ binaries:
   - nnn
 homepage: https://github.com/jarun/nnn
 repo: https://github.com/jarun/nnn
+tags:
+  - file manager
+  - files
+  - unorthodox
+  - file
+  - manager
+readmeUrl: https://raw.githubusercontent.com/jarun/nnn/HEAD/README.md

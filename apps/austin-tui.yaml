@@ -8,3 +8,29 @@ binaries:
   - austin
 homepage: https://github.com/P403n1x87/austin-tui
 repo: https://github.com/P403n1x87/austin-tui
+language: Python
+tags:
+  - like
+  - text
+  - austin
+installNotes: |-
+  # Installation
+
+  Austin TUI can be installed directly from PyPI with
+
+  ~~~ console
+  pipx install austin-tui
+  ~~~
+
+  > **NOTE** In order for the TUI to work, the Austin 3 binary needs to be
+  > discoverable in the ways documented by the [austin-python] library. Have a
+  > look at [Austin installation] instructions to see how you can easily install
+  > Austin on your platform.
+
+  On macOS and Linux, Austin TUI and its dependencies (including Austin itself) 
+  can be installed via conda with
+
+  ~~~ console
+  conda install -c conda-forge austin-tui
+  ~~~
+readmeUrl: https://raw.githubusercontent.com/P403n1x87/austin-tui/HEAD/README.md

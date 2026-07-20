@@ -7,3 +7,11 @@ binaries:
   - vis
 homepage: https://github.com/martanne/vis
 repo: https://github.com/martanne/vis
+tags:
+  - like
+  - editor
+  - plan
+  - structural
+  - regular
+  - expressions
+readmeUrl: https://raw.githubusercontent.com/martanne/vis/HEAD/README.md

@@ -7,3 +7,27 @@ binaries:
   - nostui
 homepage: https://github.com/akiomik/nostui
 repo: https://github.com/akiomik/nostui
+language: Rust
+tags:
+  - nostr
+install:
+  cargo: cargo install nostui
+packages:
+  cargo: nostui
+installNotes: |-
+  ## Getting Started
+
+  Dowonload binaries from the [release](https://github.com/akiomik/nostui/releases/latest) page.
+
+  Or, install manually via `crates.io`:
+
+  ```shell
+  cargo install nostui
+  ```
+
+  On NetBSD, a package is available from the official repositories. To install it, simply run:
+
+  ```shell
+  pkgin install nostui
+  ```
+readmeUrl: https://raw.githubusercontent.com/akiomik/nostui/HEAD/README.md

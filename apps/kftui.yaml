@@ -7,3 +7,17 @@ binaries:
   - kftui
 homepage: https://github.com/hcavarsan/kftray
 repo: https://github.com/hcavarsan/kftray
+language: Rust
+tags:
+  - kubernetes
+  - k8s
+  - multiple
+  - kubectl
+  - port
+  - forward
+  - commands
+  - proxy
+installNotes: |-
+  # Install mise
+  curl https://mise.run | sh
+readmeUrl: https://raw.githubusercontent.com/hcavarsan/kftray/HEAD/README.md

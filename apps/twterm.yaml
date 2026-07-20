@@ -7,3 +7,55 @@ binaries:
   - twterm
 homepage: https://github.com/ryota-ka/twterm
 repo: https://github.com/ryota-ka/twterm
+language: Ruby
+tags:
+  - full
+  - featured
+  - twitter
+install:
+  brew: brew install ryota-ka/twterm/twterm
+packages:
+  brew: twterm
+installNotes: |-
+  ## Installation
+
+  <details>
+  <summary>:snowflake: Nix (Recommended)</summary>
+
+  ```sh
+  $ nix-channel --add https://github.com/ryota-ka/twterm/archive/master.tar.gz twterm
+  $ nix-channel --update
+  $ nix-env -iA twterm
+  ```
+
+  :warning:
+  If you have `BUNDLE_PATH` configured in `~/.bundle/config`, `twterm` may fail due to `Bundler::GemNotFound`.
+  See [NixOS/nixpkgs#85989](https://github.com/NixOS/nixpkgs/issues/85989) for details.
+
+  </details>
+
+  <details>
+  <summary>:beer: Homebrew</summary>
+
+  ```sh
+  $ brew install ryota-ka/twterm/twterm
+  ```
+
+  </details>
+
+  <details>
+  <summary>:gem: RubyGems</summary>
+
+  You also have to install the following dependencies manually.
+
+  - [Ruby](https://www.ruby-lang.org/) (>= 2.5, < 3, compiled with ncurses and Readline)
+  - [ncurses](https://invisible-island.net/ncurses/)
+  - [GNU Readline](https://tiswww.case.edu/php/chet/readline/rltop.html)
+  - [GNU Libidn](https://www.gnu.org/software/libidn/)
+
+  ```sh
+  $ gem install twterm
+  ```
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/ryota-ka/twterm/HEAD/README.md

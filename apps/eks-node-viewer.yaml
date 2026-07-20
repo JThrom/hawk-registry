@@ -7,3 +7,37 @@ binaries:
   - eks-node-viewer
 homepage: https://github.com/awslabs/eks-node-viewer/
 repo: https://github.com/awslabs/eks-node-viewer/
+language: Go
+tags:
+  - kubernetes
+  - k8s
+  - visualizing
+  - dynamic
+  - node
+  - usage
+  - within
+  - cluster
+install:
+  brew: brew install eks-node-viewer
+  go: go install github.com/awslabs/eks-node-viewer/cmd/eks-node-viewer@latest
+packages:
+  brew: eks-node-viewer
+  go: eks-node-viewer
+installNotes: |-
+  ### Installation
+
+  #### Homebrew
+
+  ```bash
+  brew tap aws/tap
+  brew install eks-node-viewer
+  ```
+
+  #### Manual
+  Please either fetch the latest [release](https://github.com/awslabs/eks-node-viewer/releases) or install manually using:
+  ```shell
+  go install github.com/awslabs/eks-node-viewer/cmd/eks-node-viewer@latest
+  ```
+
+  Note: This will install it to your `GOBIN` directory, typically `~/go/bin` if it is unconfigured.
+readmeUrl: https://raw.githubusercontent.com/awslabs/eks-node-viewer/HEAD/README.md

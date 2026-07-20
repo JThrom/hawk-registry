@@ -7,3 +7,21 @@ binaries:
   - nomadnet
 homepage: https://github.com/markqvist/NomadNet
 repo: https://github.com/markqvist/NomadNet
+language: Go
+tags:
+  - chat
+  - messaging
+  - network
+  - secure
+  - built
+  - reticulum
+install:
+  pip: pip install nomadnet
+  pipx: pipx install nomadnet
+packages:
+  pip: nomadnet
+  pipx: nomadnet
+installNotes: |-
+  # Install Nomad Network and dependencies
+  pip install nomadnet
+readmeUrl: https://raw.githubusercontent.com/markqvist/NomadNet/HEAD/README.md

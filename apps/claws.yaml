@@ -7,3 +7,52 @@ binaries:
   - claws
 homepage: https://github.com/clawscli/claws
 repo: https://github.com/clawscli/claws
+language: Go
+tags:
+  - aws
+  - cloud
+  - resource
+  - style
+  - keybindings
+  - mode
+  - navigation
+  - optional
+  - read
+  - only
+install:
+  brew: brew install --cask
+  go: go install github.com/clawscli/claws/cmd/claws@latest
+packages:
+  brew: --cask
+  go: claws
+installNotes: |-
+  ## Installation
+
+  ### Homebrew (macOS/Linux)
+
+  ```bash
+  brew install --cask clawscli/tap/claws
+  ```
+
+  ### Install Script (macOS/Linux)
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/clawscli/claws/main/install.sh | sh
+  ```
+
+  ### Download Binary
+
+  Download from [GitHub Releases](https://github.com/clawscli/claws/releases/latest).
+
+  ### Go Install
+
+  ```bash
+  go install github.com/clawscli/claws/cmd/claws@latest
+  ```
+
+  ### Docker
+
+  ```bash
+  docker run -it --rm -v ~/.aws:/home/claws/.aws:ro ghcr.io/clawscli/claws
+  ```
+readmeUrl: https://raw.githubusercontent.com/clawscli/claws/HEAD/README.md

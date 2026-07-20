@@ -7,3 +7,36 @@ binaries:
   - crunchycleaner
 homepage: https://github.com/knuspii/crunchycleaner
 repo: https://github.com/knuspii/crunchycleaner
+language: Go
+tags:
+  - lightweight
+  - software
+  - cache
+  - cleanup
+  - windows
+  - linux
+install:
+  go: go install github.com/knuspii/crunchycleaner/v2@latest
+packages:
+  go: v2
+installNotes: |-
+  ## 📥 How to Install & Download ![Download](https://img.shields.io/github/downloads/knuspii/crunchycleaner/total?color=green)
+  **Download the latest binary and just run/open it: [[Download here]](https://github.com/knuspii/crunchycleaner/releases)** \
+  Or paste the corresponding command into your terminal and restart it afterwards to fully install it. \
+  \
+  For Linux (using sudo):
+  ```
+  curl -L https://github.com/Knuspii/CrunchyCleaner/releases/latest/download/crunchycleaner -o cc && sudo install -m 755 cc /usr/local/bin/crunchycleaner && rm cc
+  ```
+  For Windows (using Powershell as Admin):
+  ```
+  $d="$env:ProgramFiles\CrunchyCleaner"; md $d -F; iwr "https://github.com/Knuspii/CrunchyCleaner/releases/latest/download/crunchycleaner.exe" -OutFile "$d\crunchycleaner.exe"; $p=[Environment]::GetEnvironmentVariable('Path',2); if($p -notlike "$d"){[Environment]::SetEnvironmentVariable('Path',"$p;$d",2)}
+  ```
+  For Go (using go install):
+  ```
+  go install github.com/knuspii/crunchycleaner/v2@latest
+  ```
+  After that you can just type `crunchycleaner -v` into your terminal to verify it's installed.
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/knuspii/crunchycleaner/HEAD/README.md

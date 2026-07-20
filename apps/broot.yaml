@@ -7,3 +7,9 @@ binaries:
   - broot
 homepage: https://github.com/Canop/broot
 repo: https://github.com/Canop/broot
+language: Rust
+tags:
+  - navigate
+  - directory
+  - trees
+readmeUrl: https://raw.githubusercontent.com/Canop/broot/HEAD/README.md

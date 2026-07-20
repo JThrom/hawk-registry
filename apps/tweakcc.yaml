@@ -7,3 +7,30 @@ binaries:
   - tweakcc
 homepage: https://github.com/Piebald-AI/tweakcc
 repo: https://github.com/Piebald-AI/tweakcc
+language: Rust
+tags:
+  - customize
+  - claude
+  - code
+  - themes
+  - thinking
+  - verbs
+  - more
+installNotes: |-
+  ## Feature: Suppress native installer warning
+
+  When Claude Code detects that you've installed via npm, it warns you to use the native installer.
+  **Via the UI:** Run `npx tweakcc`, go to **Misc**, and toggle **Suppress native installer warning**.
+
+  **Via `config.json`:**
+
+  ```json
+  {
+    "settings": {
+      "misc": {
+        "suppressNativeInstallerWarning": true
+      }
+    }
+  }
+  ```
+readmeUrl: https://raw.githubusercontent.com/Piebald-AI/tweakcc/HEAD/README.md

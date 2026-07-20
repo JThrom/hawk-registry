@@ -7,3 +7,23 @@ binaries:
   - deletor
 homepage: https://github.com/pashkov256/deletor
 repo: https://github.com/pashkov256/deletor
+language: Go
+tags:
+  - delete
+  - files
+  - efficiently
+  - interactive
+  - scriptable
+install:
+  go: go install github.com/pashkov256/deletor@latest
+packages:
+  go: deletor
+installNotes: |-
+  ## 📦 Installation
+
+
+  ### Using Go
+  ```bash
+  go install github.com/pashkov256/deletor@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/pashkov256/deletor/HEAD/README.md

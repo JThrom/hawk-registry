@@ -8,3 +8,25 @@ binaries:
   - terraform
 homepage: https://github.com/idoavrah/terraform-tui
 repo: https://github.com/idoavrah/terraform-tui
+language: Python
+tags:
+  - interact
+  - terraform
+  - state
+install:
+  brew: brew install idoavrah/homebrew/tftui
+  pip: pip install tftui
+  pipx: pipx install tftui
+packages:
+  brew: tftui
+  pip: tftui
+  pipx: tftui
+installNotes: |-
+  ## Installation
+
+  | Tool     | Install                                | Upgrade                       | Run                                      |
+  | -------- | -------------------------------------- | ----------------------------- | ---------------------------------------- |
+  | Homebrew | `brew install idoavrah/homebrew/tftui` | `brew upgrade tftui`          | `cd /path/to/terraform/project && tftui` |
+  | PIP      | `pip install tftui`                    | `pip install --upgrade tftui` | `cd /path/to/terraform/project && tftui` |
+  | PIPX     | `pipx install tftui`                   | `pipx upgrade tftui`          | `cd /path/to/terraform/project && tftui` |
+readmeUrl: https://raw.githubusercontent.com/idoavrah/terraform-tui/HEAD/README.md

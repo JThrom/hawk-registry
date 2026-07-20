@@ -7,3 +7,13 @@ binaries:
   - binsider
 homepage: https://github.com/orhun/binsider
 repo: https://github.com/orhun/binsider
+language: Rust
+tags:
+  - analyzing
+  - linux
+  - binaries
+install:
+  cargo: cargo install binsider
+packages:
+  cargo: binsider
+readmeUrl: https://raw.githubusercontent.com/orhun/binsider/HEAD/README.md

@@ -7,3 +7,157 @@ binaries:
   - spotify-player
 homepage: https://github.com/aome510/spotify-player
 repo: https://github.com/aome510/spotify-player
+language: Rust
+tags:
+  - music
+  - audio
+  - spotify
+  - player
+  - full
+  - feature
+  - parity
+install:
+  apt: apt install libssl-dev
+  dnf: dnf install openssl-devel
+  cargo: cargo install spotify_player
+  pacman: pacman -S spotify-player
+packages:
+  apt: libssl-dev
+  dnf: openssl-devel
+  cargo: spotify_player
+  pacman: spotify-player
+installNotes: |-
+  ## Installation
+
+  By default, the application's installed binary is `spotify_player`.
+
+  ### Requirements
+
+  A Spotify Premium account is **required**.
+
+  #### Dependencies
+
+  ##### Windows and MacOS
+
+  - [Rust and cargo](https://www.rust-lang.org/tools/install) as the build dependencies
+
+  ##### Linux
+
+  - [Rust and cargo](https://www.rust-lang.org/tools/install) as the build dependencies
+  - install `openssl`, `alsa-lib` (`streaming` feature), `libdbus` (`media-control` feature).
+    - For example, on Debian based systems, run the below command to install application's dependencies:
+
+      ```shell
+      sudo apt install libssl-dev libasound2-dev libdbus-1-dev
+      ```
+
+    - On RHEL/Fedora based systems, run the below command to install application's dependencies :
+
+      ```shell
+      sudo dnf install openssl-devel alsa-lib-devel dbus-devel
+      ```
+
+      or if you're using `yum`:
+
+      ```shell
+      sudo yum install openssl-devel alsa-lib-devel dbus-devel
+      ```
+
+  ### Binaries
+
+  Application's prebuilt binaries can be found in the [Releases Page](https://github.com/aome510/spotify-player/releases).
+
+  **Note**: to run the application, Linux systems need to install additional dependencies as specified in the [Dependencies section](#linux).
+
+  ### Homebrew
+
+  Run `brew install spotify_player` to install the application.
+
+  ### Scoop
+
+  Run `scoop install spotify-player` to install the application.
+
+  ### Cargo
+
+  Install via Cargo:
+
+  ```
+  cargo install spotify_player --locked
+  ```
+
+  ### Arch Linux
+
+  Install via Arch Linux:
+
+  ```
+  pacman -S spotify-player
+  ```
+
+  **Note**: Defaults to PulseAudio/Pipewire. For a different backend, modify the [official PKGBUILD](https://gitlab.archlinux.org/archlinux/packaging/packages/spotify-player) and rebuild manually. See [Audio Backends](#audio-backend).
+
+  ### Void Linux
+
+  Install via Void Linux:
+
+  ```
+  xbps-install -S spotify-player
+  ```
+
+  ### FreeBSD
+
+  Install via FreeBSD:
+
+  ```
+  pkg install spotify-player
+  ```
+
+  ### NetBSD
+
+  Install via NetBSD:
+
+  ```
+  pkgin install spotify-player
+  ```
+
+  Build from source on NetBSD:
+
+  ```
+  cd /usr/pkgsrc/audio/spotify-player
+  make install
+  ```
+
+  ### NixOS
+
+  [spotify-player](https://search.nixos.org/packages?channel=unstable&show=spotify-player&from=0&size=50&sort=relevance&type=packages&query=spotify-player) is available as a Nix package. Install via:
+
+  ```
+  nix-shell -p spotify-player
+  ```
+
+  To build from source locally, run `nix-shell` in the root of the source checkout. The provided `shell.nix` will install prerequisites.
+
+  ### Docker
+
+  **Note**: The streaming feature is disabled in the Docker image.
+
+  Download the latest Docker image:
+
+  ```
+  docker pull aome510/spotify_player:latest
+  ```
+
+  Run the Docker container:
+
+  ```
+  docker run --rm -it aome510/spotify_player:latest
+  ```
+
+  To use your local config and cache folders:
+
+  ```
+  docker run --rm \
+  -v $APP_CONFIG_FOLDER:/app/config/ \
+  -v $APP_CACHE_FOLDER:/app/cache/ \
+  -it aome510/spotify_player:latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/aome510/spotify-player/HEAD/README.md

@@ -7,3 +7,8 @@ binaries:
   - matcha
 homepage: https://github.com/floatpane/matcha
 repo: https://github.com/floatpane/matcha
+language: Go
+tags:
+  - email
+  - mail
+readmeUrl: https://raw.githubusercontent.com/floatpane/matcha/HEAD/README.md

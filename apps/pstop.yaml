@@ -7,3 +7,59 @@ binaries:
   - pstop
 homepage: https://github.com/marlocarlo/pstop
 repo: https://github.com/marlocarlo/pstop
+language: Rust
+tags:
+  - monitor
+  - system
+  - htop
+  - style
+  - windows
+  - core
+  - bars
+  - tree
+  - color
+  - schemes
+install:
+  cargo: cargo install pstop
+packages:
+  cargo: pstop
+installNotes: |-
+  ## Installation
+
+  ### WinGet (Recommended)
+
+  ```powershell
+  winget install marlocarlo.pstop
+  ```
+
+  ### Chocolatey
+
+  ```powershell
+  choco install pstop
+  ```
+
+  ### Cargo (crates.io)
+
+  ```powershell
+  cargo install pstop
+  ```
+
+  > **Don't have Rust/Cargo?** Install it in seconds: <https://rustup.rs>
+
+  ### From GitHub Releases
+
+  Download the latest `.zip` from [GitHub Releases](https://github.com/psmux/pstop/releases), extract, and add to your `PATH`.
+
+  ### From Source
+
+  ```powershell
+  cargo install --git https://github.com/psmux/pstop
+  ```
+
+  ### Build Locally
+
+  ```powershell
+  git clone https://github.com/psmux/pstop.git
+  cd pstop
+  cargo build --release
+readmeUrl: https://raw.githubusercontent.com/marlocarlo/pstop/HEAD/README.md

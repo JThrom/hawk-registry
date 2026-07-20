@@ -7,3 +7,8 @@ binaries:
   - ssh-slides
 homepage: https://github.com/ivantsepp/ssh-slides
 repo: https://github.com/ivantsepp/ssh-slides
+language: Go
+tags:
+  - presentations
+  - over
+readmeUrl: https://raw.githubusercontent.com/ivantsepp/ssh-slides/HEAD/README.md

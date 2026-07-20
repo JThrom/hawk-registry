@@ -7,3 +7,16 @@ binaries:
   - amux
 homepage: https://github.com/andyrewlee/amux
 repo: https://github.com/andyrewlee/amux
+language: Go
+tags:
+  - easily
+  - parallel
+  - coding
+  - agents
+install:
+  brew: brew install amux
+  go: go install github.com/andyrewlee/amux/cmd/amux@latest
+packages:
+  brew: amux
+  go: amux
+readmeUrl: https://raw.githubusercontent.com/andyrewlee/amux/HEAD/README.md

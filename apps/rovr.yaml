@@ -7,3 +7,25 @@ binaries:
   - rovr
 homepage: https://github.com/NSPC911/rovr
 repo: https://github.com/NSPC911/rovr
+language: Rust
+tags:
+  - file manager
+  - files
+  - post
+  - file
+  - manager
+install:
+  pipx: pipx install rovr
+  pip: pip install rovr
+  brew: brew install rovr
+packages:
+  pipx: rovr
+  pip: rovr
+  brew: rovr
+installNotes: |-
+  ### Installation
+
+  Quick Test:
+
+  ```pwsh
+readmeUrl: https://raw.githubusercontent.com/NSPC911/rovr/HEAD/README.md

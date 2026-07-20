@@ -7,3 +7,19 @@ binaries:
   - netscanner
 homepage: https://github.com/Chleba/netscanner
 repo: https://github.com/Chleba/netscanner
+language: Rust
+tags:
+  - network
+  - scanner
+install:
+  pacman: pacman -S netscanner
+  cargo: cargo install netscanner
+packages:
+  pacman: netscanner
+  cargo: netscanner
+installNotes: |-
+  ## Install on `Arch Linux`
+  ```
+  pacman -S netscanner
+  ```
+readmeUrl: https://raw.githubusercontent.com/Chleba/netscanner/HEAD/README.md

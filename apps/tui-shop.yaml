@@ -7,3 +7,40 @@ binaries:
   - tui-shop
 homepage: https://github.com/Gcat101/tui-shop
 repo: https://github.com/Gcat101/tui-shop
+language: Go
+tags:
+  - something
+  - between
+  - downloading
+  - tuis
+  - clis
+installNotes: |-
+  ## Install
+
+  ```bash
+  git clone https://github.com/Gcat101/tui-shop.git
+  cd tui-shop
+  chmod +x ./install.sh
+  sudo ./install.sh
+  ```
+
+  After that, launch the program, go into /opt/tui-shop/config.json and paste your github key.
+
+  To get a github key you need to:
+
+  1. Login into github,
+
+  2. Go to account settings;
+
+  3. Go to developer settings,
+
+  4. Go to keys,
+
+  5. Create an infinite key with no permissions:
+
+  And that's it! The last time you'll have to install a TUI/CLI manualy (at least i hope so)
+
+  ### Can you install tui-shop with tui-shop tho
+
+  Yes, but why would y-
+readmeUrl: https://raw.githubusercontent.com/Gcat101/tui-shop/HEAD/README.md

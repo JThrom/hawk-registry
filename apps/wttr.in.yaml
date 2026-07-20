@@ -7,3 +7,52 @@ binaries:
   - wttr.in
 homepage: https://github.com/chubin/wttr.in
 repo: https://github.com/chubin/wttr.in
+tags:
+  - right
+  - check
+  - weather
+install:
+  apt: apt-get install -y
+packages:
+  apt: -y
+installNotes: |-
+  ## Installation
+
+  This guide explains how to install wttr.in from the source code.
+
+  It is implemented as a *single static binary* with all assets (including fonts for PNG rendering) embedded inside.
+  It has *zero runtime dependencies*, supports both HTTP and HTTPS natively,
+  and does not need nginx, Apache, or any other web server in front.
+
+  At the end of this installation you will have:
+
+  - A clean, self-contained wttr.in service installed in `/wttr.in/`
+  - A single executable binary (`/wttr.in/bin/srv`)
+  - Configured caching, IP geolocation (GeoIP2), and location resolution (OpenCage)
+  - The service, fully equivalent to the public wttr.in, is running on port 8080 (HTTP) and is ready to serve weather reports.
+
+  ### System Preparation
+
+  ```bash
+  sudo mkdir -p /wttr.in/{bin,cache,log,data,etc}
+  ```
+
+  If you want to run the server as a dedicated user (recommended):
+  ```bash
+  sudo useradd -r -s /bin/false -u 1000 wttr
+  sudo chown -R wttr:wttr /wttr.in
+  ```
+
+  ### Download GeoIP2 Database
+
+  For automated IPs resolution:
+
+  - Register at [MaxMind](https://www.maxmind.com) and download **GeoLite2-City.mmdb**.
+  - Place it at: `/wttr.in/data/GeoLite2-City.mmdb`
+
+  ### Build the Binary
+
+  ```bash
+  git clone https://github.com/chubin/wttr.in.git
+  cd wttr.in
+readmeUrl: https://raw.githubusercontent.com/chubin/wttr.in/HEAD/README.md

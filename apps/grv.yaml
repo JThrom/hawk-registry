@@ -7,3 +7,53 @@ binaries:
   - grv
 homepage: https://github.com/rgburke/grv
 repo: https://github.com/rgburke/grv
+language: Go
+tags:
+  - git
+  - vcs
+  - viewing
+  - repositories
+install:
+  brew: brew install grv
+  go: go install ./cmd/grv
+packages:
+  brew: grv
+  go: grv
+installNotes: |-
+  ## Install
+
+  **Note:** `grv` is currently an alias used by oh-my-zsh. Add `unalias grv` to the end of your `.zshrc` to invoke GRV.
+
+  ### Linux
+
+  Static binaries are available for Linux. For example, to use
+  the amd64 binary run the following steps:
+
+  ```
+  wget -O grv https://github.com/rgburke/grv/releases/download/v0.3.2/grv_v0.3.2_linux64
+  chmod +x ./grv
+  ./grv -repoFilePath /path/to/repo
+  ```
+
+  ### Mac
+
+  GRV is available in homebrew and can be installed with:
+
+  ```
+  brew install grv
+  ```
+
+  ### FreeBSD
+
+  GRV can be installed as a binary package
+
+  ```
+  pkg install grv
+  ```
+
+  or from ports
+
+  ```
+  cd /usr/ports/devel/grv && make install clean
+  ```
+readmeUrl: https://raw.githubusercontent.com/rgburke/grv/HEAD/README.md

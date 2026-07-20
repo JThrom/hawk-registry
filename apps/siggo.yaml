@@ -7,3 +7,7 @@ binaries:
   - siggo
 homepage: https://github.com/derricw/siggo
 repo: https://github.com/derricw/siggo
+language: Go
+tags:
+  - signal
+readmeUrl: https://raw.githubusercontent.com/derricw/siggo/HEAD/README.md

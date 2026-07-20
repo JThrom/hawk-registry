@@ -7,3 +7,41 @@ binaries:
   - pokete
 homepage: https://github.com/lxgr-linux/pokete
 repo: https://github.com/lxgr-linux/pokete
+language: Python
+tags:
+  - pokemon
+  - like
+  - game
+install:
+  pip: pip install pokete
+packages:
+  pip: pokete
+installNotes: |-
+  ## Installation
+
+  ```shell
+  pip install pokete
+  ```
+
+  You can also install it from the AUR:
+
+  ```shell
+  $ buildaur -S pokete-git
+  ```
+
+  Or you can just run the AppImage from the release page.
+
+  NOTE: In that case you first have to create the `~/.cache/pokete/` folder.
+
+  For Windows:
+
+  Some windows antivirus may flag the `libplaysound.dll` as malicious. If pokete crashes, please make sure that the .dll
+  exists and is **not** in quarantine!
+
+  To build a contained executable
+  ```shell
+  pyinstaller --onefile src/pokete/__main__.py --name pokete --add-binary="src/pokete/playsound/libplaysound.x86_64.so:." --add-data="src/pokete/assets:pokete/assets"
+  ```
+
+  If you have problems with your ARCH you maybe need to rebuild the audio module, see [here](playsound/README.md).
+readmeUrl: https://raw.githubusercontent.com/lxgr-linux/pokete/HEAD/README.md

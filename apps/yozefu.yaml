@@ -7,3 +7,25 @@ binaries:
   - yozefu
 homepage: https://github.com/MAIF/yozefu
 repo: https://github.com/MAIF/yozefu
+language: Rust
+tags:
+  - exploring
+  - data
+  - kafka
+  - cluster
+install:
+  cargo: cargo install --locked
+  brew: brew install yozefu
+packages:
+  cargo: --locked
+  brew: yozefu
+installNotes: |-
+  ## Getting started
+
+  <!--
+  > [!NOTE]
+  > For a better visual experience, I invite you to install [Powerline fonts](https://github.com/powerline/fonts).
+  > -->
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/MAIF/yozefu/HEAD/README.md

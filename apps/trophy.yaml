@@ -7,3 +7,18 @@ binaries:
   - trophy
 homepage: https://github.com/taigrr/trophy
 repo: https://github.com/taigrr/trophy
+language: Go
+tags:
+  - model
+  - files
+install:
+  go: go install github.com/taigrr/trophy/cmd/trophy@latest
+packages:
+  go: trophy
+installNotes: |-
+  ## Installation
+
+  ```bash
+  go install github.com/taigrr/trophy/cmd/trophy@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/taigrr/trophy/HEAD/README.md

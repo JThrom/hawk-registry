@@ -7,3 +7,34 @@ binaries:
   - prs
 homepage: https://github.com/dhth/prs
 repo: https://github.com/dhth/prs
+language: Go
+tags:
+  - stay
+  - updated
+  - without
+  - leaving
+install:
+  brew: brew install dhth/tap/prs
+  go: go install github.com/dhth/prs@latest
+packages:
+  brew: prs
+  go: prs
+installNotes: |-
+  💾 Installation
+  ---
+
+  **homebrew**:
+
+  ```sh
+  brew install dhth/tap/prs
+  ```
+
+  **go**:
+
+  ```sh
+  go install github.com/dhth/prs@latest
+  ```
+
+  Or get the binaries directly from a [release][3]. Read more about verifying the
+  authenticity of released artifacts [here](#-verifying-release-artifacts).
+readmeUrl: https://raw.githubusercontent.com/dhth/prs/HEAD/README.md

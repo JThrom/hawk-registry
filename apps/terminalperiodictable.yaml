@@ -7,3 +7,11 @@ binaries:
   - terminalperiodictable
 homepage: https://github.com/velorek1/terminalperiodictable
 repo: https://github.com/velorek1/terminalperiodictable
+tags:
+  - beautiful
+  - periodic
+  - table
+  - unix
+  - systems
+  - coded
+readmeUrl: https://raw.githubusercontent.com/velorek1/terminalperiodictable/HEAD/README.md

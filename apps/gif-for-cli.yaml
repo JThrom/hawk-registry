@@ -8,3 +8,48 @@ binaries:
   - gif-for
 homepage: https://github.com/google/gif-for-cli
 repo: https://github.com/google/gif-for-cli
+language: Python
+tags:
+  - convert
+  - ascii
+installNotes: |-
+  ## Installation
+
+  Requires Python 3 (with setuptools and pip), zlib, libjpeg, and ffmpeg, other dependencies are installed by `setup.py`.
+
+  ### Install dependencies:
+
+      # Debian based distros
+      sudo apt-get install ffmpeg zlib* libjpeg* python3-setuptools
+      # Mac
+      brew install ffmpeg zlib libjpeg python
+
+  Your Python environment may need these installation tools:
+
+      sudo easy_install3 pip
+      # This should enable a pre-built Pillow wheel to be installed, otherwise
+      # you may need to install Python, zlib, and libjpeg development libraries
+      # so Pillow can compile from source.
+      pip3 install --user wheel
+
+  ### Install gif-for-cli:
+
+  Install from PyPI:
+
+      pip3 install --user gif-for-cli
+
+  Or download this repo and run:
+
+      python3 setup.py install --user
+
+  The `gif-for-cli` command will likely be installed into `~/.local/bin` or similar, you may need to put that directory in your $PATH by adding this to your `.profile`:
+
+      # Linux
+      if [ -d "$HOME/.local/bin" ] ; then
+          PATH="$HOME/.local/bin:$PATH"
+      fi
+      # Mac, adjust for Python version
+      if [ -d "$HOME/Library/Python/3.6/bin/" ] ; then
+          PATH="$HOME/Library/Python/3.6/bin/:$PATH"
+      fi
+readmeUrl: https://raw.githubusercontent.com/google/gif-for-cli/HEAD/README.md

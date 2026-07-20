@@ -7,3 +7,32 @@ binaries:
   - relax-player
 homepage: https://github.com/ebithril/relax-player
 repo: https://github.com/ebithril/relax-player
+language: Rust
+tags:
+  - music
+  - audio
+  - lightweight
+  - distraction
+  - free
+  - alternative
+  - ambient
+  - players
+install:
+  apt: apt-get install libasound2-dev
+  dnf: dnf install alsa-lib-devel
+  pacman: pacman -S alsa-lib
+  cargo: cargo install relax-player
+packages:
+  apt: libasound2-dev
+  dnf: alsa-lib-devel
+  pacman: alsa-lib
+  cargo: relax-player
+installNotes: |-
+  ## Installation
+
+  ### Prerequisites
+
+  **Linux users:** ALSA development libraries are required to build the application:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/ebithril/relax-player/HEAD/README.md

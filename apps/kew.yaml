@@ -7,3 +7,9 @@ binaries:
   - kew
 homepage: https://github.com/ravachol/kew
 repo: https://github.com/ravachol/kew
+tags:
+  - music
+  - audio
+  - player
+  - linux
+readmeUrl: https://raw.githubusercontent.com/ravachol/kew/HEAD/README.md

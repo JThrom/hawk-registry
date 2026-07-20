@@ -7,3 +7,22 @@ binaries:
   - wego
 homepage: https://github.com/schachmat/wego
 repo: https://github.com/schachmat/wego
+language: Go
+tags:
+  - weather
+install:
+  go: go install github.com/schachmat/wego@latest
+packages:
+  go: wego
+installNotes: |-
+  ## Installation
+
+  Check your distribution for packaging:
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/wego.svg)](https://repology.org/project/wego/versions)
+
+  To directly install or update the wego binary from Github into your `$GOPATH` as usual, run:
+  ```shell
+  go install github.com/schachmat/wego@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/schachmat/wego/HEAD/README.md

@@ -7,3 +7,146 @@ binaries:
   - blinkenlights
 homepage: https://github.com/jart/blink
 repo: https://github.com/jart/blink
+language: Go
+tags:
+  - used
+  - debugging
+  - linux
+  - i8086
+  - programs
+  - across
+  - platforms
+installNotes: |-
+  ## Getting Started
+
+  We regularly test that Blink is able run x86-64-linux binaries on the
+  following platforms:
+
+  - Linux (x86, ARM, RISC-V, MIPS, PowerPC, s390x)
+  - macOS (x86, ARM)
+  - FreeBSD
+  - OpenBSD
+  - Cygwin
+
+  Blink depends on the following libraries:
+
+  - libc (POSIX.1-2017 with XSI extensions)
+
+  Blink can be compiled on UNIX systems that have:
+
+  - A C11 compiler with atomics (e.g. GCC 4.9.4+)
+  - Modern GNU Make (i.e. not the one that comes with XCode)
+
+  The instructions for compiling Blink are as follows:
+
+  ```sh
+  ./configure
+  make -j4
+  doas make install  # note: doas is modern sudo
+  blink -v
+  man blink
+  ```
+
+  Here's how you can run a simple hello world program with Blink:
+
+  ```sh
+  blink third_party/cosmo/tinyhello.elf
+  ```
+
+  Blink has a debugger TUI, which works with UTF-8 ANSI terminals. The
+  most important keystrokes in this interface are `?` for help, `s` for
+  step, `c` for continue, and scroll wheel for reverse debugging.
+
+  ```sh
+  blinkenlights third_party/cosmo/tinyhello.elf
+  ```
+
+  ### Alternative Builds
+
+  For maximum tinyness, use `MODE=tiny`, since it makes Blink's binary
+  footprint 50% smaller. The Blink executable should be on the order of
+  200kb in size. Performance isn't impacted. Please note that all
+  assertions will be removed, as well as all logging. Use this mode if
+  you're confident that Blink is bug-free for your use case.
+
+  ```sh
+  make MODE=tiny
+  strip o/tiny/blink/blink
+  ls -hal o/tiny/blink/blink
+  ```
+
+  Some distros configure their compilers to add a lot of security bloat,
+  which might add 60kb or more to the above binary size. You can work
+  around that by using one of Blink's toolchains. This should produce
+  consistently the smallest possible executable size.
+
+  ```sh
+  make MODE=tiny o/tiny/x86_64/blink/blink
+  o/third_party/gcc/x86_64/bin/x86_64-linux-musl-strip o/tiny/x86_64/blink/blink
+  ls -hal o/tiny/x86_64/blink/blink
+  ```
+
+  If you want to make Blink *even tinier* (more on the order of 120kb
+  rather than 200kb) than you can tune the `./configure` script to disable
+  optional features such as jit, threads, sockets, x87, bcd, xsi, etc.
+
+  ```sh
+  ./configure --disable-all --posix
+  make MODE=tiny o/tiny/x86_64/blink/blink
+  o/third_party/gcc/x86_64/bin/x86_64-linux-musl-strip o/tiny/x86_64/blink/blink
+  ls -hal o/tiny/x86_64/blink/blink
+  ```
+
+  The traditional `MODE=rel` or `MODE=opt` modes are available. Use this
+  mode if you're on a non-JIT architecture (since this won't improve
+  performance on AMD64 and ARM64) and you're confident that Blink is
+  bug-free for your use case, and would rather have Blink not create a
+  `blink.log` or print `SIGSEGV` delivery warnings to standard error,
+  since many apps implement their own crash reporting.
+
+  ```sh
+  make MODE=rel
+  o/rel/blink/blink -h
+  ```
+
+  You can hunt down bugs in Blink using the following build modes:
+
+  - `MODE=asan` helps find memory safety bugs
+  - `MODE=tsan` helps find threading related bugs
+  - `MODE=ubsan` to find violations of the C standard
+  - `MODE=msan` helps find uninitialized memory errors
+
+  You can check Blink's compliance with the POSIX standard using the
+  following configuration flags:
+
+  ```sh
+  ./configure --posix  # only use c11 with posix xopen standard
+  ```
+
+  If you want to run a full `chroot`'d Linux distro and require correct
+  handling of absolute symlinks, displaying of certain values in `/proc`,
+  and so on, and you don't mind paying a small price in terms of size
+  and performance, you can enable the emulated VFS feature by using
+  the following configuration:
+
+  ```sh
+  ./configure --enable-vfs
+  ```
+
+  ### Testing
+
+  Blink is tested primarily using precompiled binaries downloaded
+  automatically. Blink has more than 700 test programs total. You can
+  check how well Blink works on your local platform by running:
+
+  ```sh
+  make check
+  ```
+
+  To check that Blink works on 11 different hardware `$(ARCHITECTURES)`
+  (see [Makefile](Makefile)), you can run the following command, which
+  will download statically-compiled builds of GCC and Qemu. Since our
+  toolchain binaries are intended for x86-64 Linux, Blink will bootstrap
+  itself locally first, 
+  …
+readmeUrl: https://raw.githubusercontent.com/jart/blink/HEAD/README.md

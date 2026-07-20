@@ -7,3 +7,14 @@ binaries:
   - fancy-cat
 homepage: https://github.com/freref/fancy-cat
 repo: https://github.com/freref/fancy-cat
+tags:
+  - lightweight
+  - reader
+  - keybindings
+installNotes: |-
+  ## Installation
+
+  `fancy-cat` is available in the following repositories:
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/fancy-cat.svg?columns=3&header=fancy-cat)](https://repology.org/project/fancy-cat/versions)
+readmeUrl: https://raw.githubusercontent.com/freref/fancy-cat/HEAD/README.md

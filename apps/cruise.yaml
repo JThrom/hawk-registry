@@ -7,3 +7,13 @@ binaries:
   - cruise
 homepage: https://github.com/cruise-org/cruise
 repo: https://github.com/cruise-org/cruise
+language: Go
+tags:
+  - docker
+  - containers
+  - container
+installNotes: |-
+  ## Installation
+
+  Refer to the installation docs [here](https://cruise-org.github.io/install).
+readmeUrl: https://raw.githubusercontent.com/cruise-org/cruise/HEAD/README.md

@@ -8,3 +8,99 @@ binaries:
   - cloudflare-speed
 homepage: https://github.com/kavehtehrani/cloudflare-speed-cli
 repo: https://github.com/kavehtehrani/cloudflare-speed-cli
+language: Rust
+tags:
+  - internet
+  - speed
+  - test
+  - cloudflare
+install:
+  cargo: cargo install cloudflare-speed-cli
+  brew: brew install cloudflare-speed-cli
+  pacman: pacman -S cloudflare-speed-cli
+packages:
+  cargo: cloudflare-speed-cli
+  brew: cloudflare-speed-cli
+  pacman: cloudflare-speed-cli
+installNotes: |-
+  ## Installation
+
+  ### Cargo (crates.io)
+
+  My preferred way if you have cargo installed:
+
+  ```bash
+  cargo install cloudflare-speed-cli
+  ```
+
+  To install the latest unreleased version from git instead:
+
+  ```bash
+  cargo install --git https://github.com/kavehtehrani/cloudflare-speed-cli --features tui
+  ```
+
+  ### Homebrew
+
+  This works for both older Intel and newer Silicon Mac computers.
+
+  ```bash
+  brew tap kavehtehrani/tap
+  brew install cloudflare-speed-cli
+  ```
+
+  ### MacPorts
+
+  Supports both Intel and Apple Silicon Macs. The package is available on the [official MacPorts repository](https://ports.macports.org/port/cloudflare-speed-cli/) and can be installed with:
+
+  ```bash
+  sudo port install cloudflare-speed-cli
+  ```
+
+  ### Installation Script
+
+  For the lazy:
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/kavehtehrani/cloudflare-speed-cli/main/install.sh | sh
+  ```
+
+  ### Linux Distribution Packages
+
+  As other people have kindly contributed, I've merged their pull requests for the distro they have
+  contributed toward. My main OS is Ubuntu and Fedora, and the main distribution mechanism for this package is via
+  ['cargo-dist'](https://github.com/axodotdev/cargo-dist) which I have found helpful in generating the compatible binaries
+  via github actions. If you would like to contribute for other distros, please open an issue or send in a pull request.
+
+  #### Arch Linux
+
+  The package can be installed from the [official repositories](https://archlinux.org/packages/extra/x86_64/cloudflare-speed-cli/):
+
+  ```bash
+  pacman -S cloudflare-speed-cli
+  ```
+
+  #### NixOS
+
+  ```bash
+   nix run github:kavehtehrani/cloudflare-speed-cli
+  ```
+
+  ### Binaries
+
+  Download the static binary for your system from the
+  [latest release](https://github.com/kavehtehrani/cloudflare-speed-cli/releases).
+
+  _Note: I have checked the binaries on Linux (x64 and ARM64) and on Windows 11 but I do not have an Apple device. If there is any issue please do let me know!_
+
+  ### Docker
+
+  If you have docker installed you can run the speedtest by pulling in the image:
+
+  ```bash
+  docker pull ghcr.io/kavehtehrani/cloudflare-speed-cli:latest
+  docker run --rm -it ghcr.io/kavehtehrani/cloudflare-speed-cli
+  ```
+
+  If you also want the history of runs to persist, then you have to mount a volume, e.g.
+  `docker run --rm -it -v cloudflare-speed-data:/root/.local/share/cloudflare-speed-cli ghcr.io/kavehtehrani/cloudflare-speed-cli`
+readmeUrl: https://raw.githubusercontent.com/kavehtehrani/cloudflare-speed-cli/HEAD/README.md

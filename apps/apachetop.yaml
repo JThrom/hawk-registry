@@ -7,3 +7,9 @@ binaries:
   - apachetop
 homepage: https://github.com/tessus/apachetop
 repo: https://github.com/tessus/apachetop
+tags:
+  - display
+  - information
+  - copy
+  - apache
+readmeUrl: https://raw.githubusercontent.com/tessus/apachetop/HEAD/README

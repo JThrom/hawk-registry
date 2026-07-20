@@ -7,3 +7,87 @@ binaries:
   - radiogogo
 homepage: https://github.com/Zi0P4tch0/RadioGoGo
 repo: https://github.com/Zi0P4tch0/RadioGoGo
+language: Go
+tags:
+  - powered
+  - surf
+  - global
+  - radio
+  - waves
+  - sleek
+install:
+  apt: apt install ffmpeg
+  dnf: dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm
+  pacman: pacman -S ffmpeg
+  brew: brew install ffmpeg
+  go: go install github.com/zi0p4tch0/radiogogo@latest
+packages:
+  apt: ffmpeg
+  dnf: rpmfusion-free-release-$(rpm
+  pacman: ffmpeg
+  brew: ffmpeg
+  go: radiogogo
+installNotes: |-
+  ## Installation
+
+  ### Dependencies
+
+  You need `ffplay` for playback. For recording, you also need `ffmpeg`. Both come with the FFmpeg package.
+
+  **Windows:**
+  ```
+  choco install ffmpeg
+  ```
+  or
+  ```
+  scoop install ffmpeg
+  ```
+
+  **Linux (apt):**
+  ```
+  sudo apt install ffmpeg
+  ```
+
+  **Linux (dnf/Fedora):**
+  ```
+  sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+  sudo dnf install ffmpeg
+  ```
+
+  **Linux (pacman):**
+  ```
+  sudo pacman -S ffmpeg
+  ```
+
+  **macOS:**
+  ```
+  brew install ffmpeg
+  ```
+
+  ### Install RadioGoGo
+
+  **Via Go:**
+  ```bash
+  go install github.com/zi0p4tch0/radiogogo@latest
+  ```
+
+  Make sure `$(go env GOPATH)/bin` is in your PATH.
+
+  **Via releases:**
+
+  Download the binary for your platform from the [Releases](https://github.com/zi0p4tch0/radiogogo/releases) page.
+
+  ### Available Platforms
+
+  | OS | Architecture | Filename | Notes |
+  |----|--------------|----------|-------|
+  | **macOS** | Apple Silicon (M1/M2/M3) | `darwin_arm64.zip` | |
+  | | Intel | `darwin_amd64.zip` | |
+  | **Linux** | x86 64-bit | `linux_amd64.zip` | Most desktops/servers |
+  | | x86 32-bit | `linux_386.zip` | Legacy systems |
+  | | ARM64 | `linux_arm64.zip` | Pi 3/4/5 (64-bit OS), modern ARM servers |
+  | | ARMv7 | `linux_armv7.zip` | Pi 2/3/4 (32-bit OS) |
+  | | ARMv6 | `linux_armv6.zip` | Pi 1, Pi Zero, Pi Zero W |
+  | **Windows** | x64 | `windows_amd64.zip` | |
+  | | x86 | `windows_386.zip` | |
+readmeUrl: https://raw.githubusercontent.com/Zi0P4tch0/RadioGoGo/HEAD/README.md

@@ -7,3 +7,23 @@ binaries:
   - tock
 homepage: https://github.com/kriuchkov/tock
 repo: https://github.com/kriuchkov/tock
+language: Rust
+tags:
+  - powerful
+  - time
+  - tracking
+  - beautiful
+  - interactive
+install:
+  brew: brew install tock
+  go: go install github.com/kriuchkov/tock/cmd/tock@latest
+packages:
+  brew: tock
+  go: tock
+installNotes: |-
+  ### Installation
+
+  #### Homebrew (macOS)
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/kriuchkov/tock/HEAD/README.md

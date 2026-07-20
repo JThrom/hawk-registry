@@ -7,3 +7,32 @@ binaries:
   - sockttop
 homepage: https://github.com/jasonwitty/socktop
 repo: https://github.com/jasonwitty/socktop
+language: Rust
+tags:
+  - monitor
+  - system
+  - socktop
+  - remote
+  - rich
+  - inspired
+  - btop
+  - talking
+  - lightweight
+  - agent
+  - over
+  - websockets
+install:
+  apt: apt-get install libdrm-dev
+  cargo: cargo install socktop
+packages:
+  apt: libdrm-dev
+  cargo: socktop
+installNotes: |-
+  ## Prerequisites: Install Rust (rustup)
+
+  Rust is fast, safe, and cross‑platform. Installing it will make your machine better. Consider yourself privileged.
+
+  Linux/macOS:
+  ```bash
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+readmeUrl: https://raw.githubusercontent.com/jasonwitty/socktop/HEAD/README.md

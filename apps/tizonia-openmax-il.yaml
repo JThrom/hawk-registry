@@ -7,3 +7,31 @@ binaries:
   - tizonia-openmax-il
 homepage: https://github.com/tizonia/tizonia-openmax-il
 repo: https://github.com/tizonia/tizonia-openmax-il
+language: Python
+tags:
+  - music
+  - audio
+  - cloud
+  - player
+  - linux
+  - spotify
+  - google
+  - play
+  - youtube
+  - soundcloud
+  - dirble
+  - plex
+install:
+  pip: pip3 install --upgrade
+packages:
+  pip: --upgrade
+installNotes: |-
+  # Installation
+
+  ## Debian / Ubuntu / Raspbian
+
+  Run the following command to install Tizonia on a Debian-compatible system:
+
+  ```bash
+  $ curl -kL https://github.com/tizonia/tizonia-openmax-il/raw/master/tools/install.sh | bash
+readmeUrl: https://raw.githubusercontent.com/tizonia/tizonia-openmax-il/HEAD/README.md

@@ -8,3 +8,16 @@ binaries:
   - roku
 homepage: https://github.com/winsbe01/roku-cli
 repo: https://github.com/winsbe01/roku-cli
+language: Python
+tags:
+  - remote
+  - roku
+install:
+  pip: pip install roku-tui
+packages:
+  pip: roku-tui
+installNotes: |-
+  ## install and run
+  `me@computer ~$ python3 -m pip install roku-tui`
+  `me@computer ~$ roku-tui`
+readmeUrl: https://raw.githubusercontent.com/winsbe01/roku-cli/HEAD/README.md

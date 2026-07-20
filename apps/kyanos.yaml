@@ -7,3 +7,9 @@ binaries:
   - kyanos
 homepage: https://github.com/hengyoush/kyanos
 repo: https://github.com/hengyoush/kyanos
+tags:
+  - network
+  - linux
+  - analysis
+  - ebpf
+readmeUrl: https://raw.githubusercontent.com/hengyoush/kyanos/HEAD/README.md

@@ -7,3 +7,26 @@ binaries:
   - e1s
 homepage: https://github.com/keidarcy/e1s
 repo: https://github.com/keidarcy/e1s
+language: Go
+tags:
+  - aws
+  - cloud
+  - managing
+  - resources
+install:
+  brew: brew install keidarcy/tap/e1s
+  go: go install github.com/keidarcy/e1s/cmd/e1s@latest
+packages:
+  brew: e1s
+  go: e1s
+installNotes: |-
+  ## Installation
+
+  `e1s` is available on Linux, macOS and Windows platforms.
+
+  - Binaries for Linux, Windows and Mac are available in the [release](https://github.com/keidarcy/e1s/releases) page.
+  - Homebrew for macOS or Linux
+
+  ```bash
+  brew install keidarcy/tap/e1s
+readmeUrl: https://raw.githubusercontent.com/keidarcy/e1s/HEAD/README.md

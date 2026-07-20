@@ -7,3 +7,29 @@ binaries:
   - btm
 homepage: https://github.com/ClementTsang/bottom
 repo: https://github.com/ClementTsang/bottom
+language: Rust
+tags:
+  - monitor
+  - system
+  - customizable
+  - graphical
+  - process
+install:
+  cargo: cargo install bottom
+  pacman: pacman -S bottom
+  dnf: dnf install bottom
+  brew: brew install bottom
+packages:
+  cargo: bottom
+  pacman: bottom
+  dnf: bottom
+  brew: bottom
+installNotes: |-
+  ## Installation
+
+  ### Cargo
+
+  Installation via `cargo` can be done by installing the [`bottom`](https://crates.io/crates/bottom) crate:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/ClementTsang/bottom/HEAD/README.md

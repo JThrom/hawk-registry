@@ -7,3 +7,61 @@ binaries:
   - treemd
 homepage: https://github.com/Epistates/treemd
 repo: https://github.com/Epistates/treemd
+language: Rust
+tags:
+  - markdown
+  - navigator
+  - tree
+  - structural
+  - navigation
+install:
+  cargo: cargo install treemd
+  brew: brew install treemd
+  pacman: pacman -S treemd
+packages:
+  cargo: treemd
+  brew: treemd
+  pacman: treemd
+installNotes: |-
+  ## Installation
+
+  ### From [crates.io](https://crates.io/crates/treemd)
+
+  ```bash
+  cargo install treemd
+  ```
+
+  ### From source
+
+  ```bash
+  git clone https://github.com/epistates/treemd
+  cd treemd
+  cargo install --path .
+  ```
+
+  ### Package managers
+
+  **[Homebrew](https://brew.sh)** (macOS/Linux):
+  ```bash
+  brew install treemd
+  ```
+
+  **[Arch Linux](https://archlinux.org/packages/extra/x86_64/treemd/)** (`extra` repo):
+  ```bash
+  pacman -S treemd
+  ```
+
+  **[NetBSD](https://pkgsrc.se/textproc/treemd)**:
+  ```bash
+  pkgin install treemd
+  ```
+
+  ### Shell completions & man page
+
+  ```sh
+  treemd --setup-completions   # Interactive tab-completion setup (bash/zsh/fish)
+  treemd --man-page > treemd.1 # Generate the man page (for packagers)
+  ```
+
+  Completions are context-aware: they only offer `.md`/`.markdown` files and directories.
+readmeUrl: https://raw.githubusercontent.com/Epistates/treemd/HEAD/README.md

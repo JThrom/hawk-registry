@@ -7,3 +7,8 @@ binaries:
   - gh-dash
 homepage: https://github.com/dlvhdr/gh-dash
 repo: https://github.com/dlvhdr/gh-dash
+tags:
+  - rich
+  - github
+  - issues
+readmeUrl: https://raw.githubusercontent.com/dlvhdr/gh-dash/HEAD/README.md

@@ -7,3 +7,22 @@ binaries:
   - portfolio_rs
 homepage: https://github.com/MarkusZoppelt/portfolio_rs
 repo: https://github.com/MarkusZoppelt/portfolio_rs
+language: Rust
+tags:
+  - managing
+  - financial
+  - investment
+  - portfolios
+install:
+  cargo: cargo install portfolio_rs
+packages:
+  cargo: portfolio_rs
+installNotes: |-
+  ## Installation
+
+  Available in [nixpkgs](https://search.nixos.org/packages?query=portfolio_rs): `nix-shell -p portfolio_rs` or `nix run nixpkgs#portfolio_rs`
+
+  Install via [pkgx](https://pkgx.sh): `pkgx portfolio_rs`
+
+  Install from cargo: `cargo install portfolio_rs`
+readmeUrl: https://raw.githubusercontent.com/MarkusZoppelt/portfolio_rs/HEAD/README.md

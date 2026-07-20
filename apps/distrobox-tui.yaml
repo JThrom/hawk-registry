@@ -8,3 +8,34 @@ binaries:
   - distrobox
 homepage: https://github.com/phanirithvij/distrobox-tui
 repo: https://github.com/phanirithvij/distrobox-tui
+language: Go
+tags:
+  - docker
+  - containers
+  - managing
+  - distrobox
+install:
+  go: go install github.com/phanirithvij/distrobox-tui@main
+packages:
+  go: distrobox-tui
+installNotes: |-
+  ## Install
+
+  ### Requirements
+
+  - Go 1.18+
+  - Distrobox
+  - Linux
+
+  ```bash
+  go install github.com/phanirithvij/distrobox-tui@main
+  ```
+
+  ### Nix
+
+  It is available in nixpkgs unstable as `distrobox-tui`.
+
+  ```shell
+  nix --extra-experimental-features "flakes nix-command" run github:nixos/nixpkgs/nixos-unstable#distrobox-tui
+  ```
+readmeUrl: https://raw.githubusercontent.com/phanirithvij/distrobox-tui/HEAD/README.md

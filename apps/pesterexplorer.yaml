@@ -7,3 +7,29 @@ binaries:
   - pesterexplorer
 homepage: https://github.com/HeyItsGilbert/PesterExplorer
 repo: https://github.com/HeyItsGilbert/PesterExplorer
+tags:
+  - explore
+  - pester
+  - results
+installNotes: "## Installation\r
+
+  \r
+
+  > [!IMPORTANT]\r
+
+  > This module is for PowerShell 7. This won't work in Windows PowerShell.\r
+
+  \r
+
+  ```pwsh\r
+
+  Install-Module PesterExplorer -Scope CurrentUser\r
+
+  ```\r
+
+  \r
+
+  Installing this module will install it's dependencies which are Pester and\r
+
+  PwshSpectreConsole."
+readmeUrl: https://raw.githubusercontent.com/HeyItsGilbert/PesterExplorer/HEAD/README.md

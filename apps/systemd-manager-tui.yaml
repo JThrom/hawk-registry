@@ -8,3 +8,47 @@ binaries:
   - systemd-manager
 homepage: https://github.com/matheus-git/systemd-manager-tui
 repo: https://github.com/matheus-git/systemd-manager-tui
+language: Rust
+tags:
+  - program
+  - managing
+  - systemd
+  - services
+  - through
+installNotes: |-
+  ## Install
+
+  After installation, you can create an `alias` to make it easier to use.
+
+  ### Ubuntu (recommended)
+
+      sudo dpkg -i ./systemd-manager-tui_x.x.x-x_amd64.deb 
+
+  Download the .deb file from [Releases](https://github.com/matheus-git/systemd-manager-tui/releases)
+
+  ### Fedora (recommended)
+
+      sudo dnf install ./systemd-manager-tui_x.x.x-x_x86_64.rpm
+      
+  Download the .rpm file from [Releases](https://github.com/matheus-git/systemd-manager-tui/releases)
+
+  ### Arch linux
+
+      yay -S systemd-manager-tui
+
+  https://aur.archlinux.org/packages/systemd-manager-tui
+
+  ### NixOS
+      nix run github:matheus-git/systemd-manager-tui
+
+  NixOS with flakes [Read here](docs/flakes.md)
+  ### Binary
+
+      chmod +x systemd-manager-tui
+      ./systemd-manager-tui
+  Download binary from [Releases](https://github.com/matheus-git/systemd-manager-tui/releases)
+
+  ### Cargo
+
+      cargo install --locked systemd-manager-tui
+readmeUrl: https://raw.githubusercontent.com/matheus-git/systemd-manager-tui/HEAD/README.md

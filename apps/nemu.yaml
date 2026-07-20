@@ -7,3 +7,10 @@ binaries:
   - nemu
 homepage: https://github.com/nemuTUI/nemu
 repo: https://github.com/nemuTUI/nemu
+tags:
+  - qemu
+install:
+  brew: brew install nemu
+packages:
+  brew: nemu
+readmeUrl: https://raw.githubusercontent.com/nemuTUI/nemu/HEAD/README.md

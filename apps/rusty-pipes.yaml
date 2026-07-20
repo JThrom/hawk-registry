@@ -7,3 +7,16 @@ binaries:
   - rusty-pipes
 homepage: https://github.com/dividebysandwich/rusty-pipes
 repo: https://github.com/dividebysandwich/rusty-pipes
+tags:
+  - sample
+  - midi
+  - controlled
+  - virtual
+  - pipe
+  - organ
+  - instrument
+  - compatible
+  - grandorgue
+  - hauptwerk
+  - sets
+readmeUrl: https://raw.githubusercontent.com/dividebysandwich/rusty-pipes/HEAD/readme.md

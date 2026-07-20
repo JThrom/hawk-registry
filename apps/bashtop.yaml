@@ -7,3 +7,176 @@ binaries:
   - bashtop
 homepage: https://github.com/aristocratos/bashtop
 repo: https://github.com/aristocratos/bashtop
+language: Go
+tags:
+  - monitor
+  - system
+  - resource
+  - manager
+  - bash
+install:
+  pip: pip install psutil
+  brew: brew install python3
+  apt: apt install bashtop
+  dnf: dnf install bashtop
+packages:
+  pip: psutil
+  brew: python3
+  apt: bashtop
+  dnf: bashtop
+installNotes: |-
+  ## Installation
+
+  #### Dependencies installation OSX
+
+  >Install homebrew if not already installed
+
+  ``` bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  ```
+
+
+
+  >If you got python 3.6 or later installed outside of brew:
+
+  ``` bash
+  sudo python3 -m ensurepip
+  sudo python3 -m pip install psutil
+  ```
+
+  >If you haven't got python3 installed:
+
+  ```
+  brew install python3
+  python3 -m pip install psutil
+  ```
+
+  >Install dependencies
+
+
+  ``` bash
+  brew install bash coreutils gnu-sed git
+  ```
+
+  >Install optional dependency osx-cpu-temp
+
+  ``` bash
+  brew install osx-cpu-temp
+  ```
+
+  #### Dependencies installation FreeBSD
+
+  >Install with pkg and pip
+
+  ``` bash
+  sudo pkg install coreutils gsed git py37-psutil
+  ```
+
+  #### Manual installation Linux, OSX and FreeBSD
+
+  >Clone and install
+
+  ``` bash
+  git clone https://github.com/aristocratos/bashtop.git
+  cd bashtop
+  sudo make install
+  ```
+
+  >to uninstall it
+
+  ``` bash
+  sudo make uninstall
+  ```
+
+  #### FreeBSD package
+
+  Available in [FreeBSD ports](https://www.freshports.org/sysutils/bashtop/)
+
+  Install pre-built pacakge
+
+  ``` bash
+  sudo pkg install bashtop
+  ```
+
+  #### Arch based
+
+  Available in the AUR as [bashtop-git](https://aur.archlinux.org/packages/bashtop-git/)
+
+  Available in the Arch Linux repository as [bashtop](https://www.archlinux.org/packages/community/any/bashtop/)
+
+  #### Debian based
+
+  Available in [official Debian repository](https://tracker.debian.org/pkg/bashtop) since Debian 11
+
+  Available for debian/ubuntu from [Azlux's repository](http://packages.azlux.fr/)
+
+  Or use quick installation:
+
+  >Quick install go to DEB  folder  and type
+
+  ``` bash
+   sudo ./build
+  ```
+
+  >to uninstall it   go to DEB  folder  and type
+
+  ``` bash
+   sudo ./build --remove
+  ```
+
+  #### Guix based
+
+  Available in [official Guix repository](https://git.savannah.gnu.org/cgit/guix.git/tree/gnu/packages/admin.scm) since 6bbd0fd2
+
+  >Installation
+
+  ``` bash
+  guix install bashtop
+  ```
+
+  #### Ubuntu based
+
+  Available in [official Ubuntu repository](https://launchpad.net/ubuntu/+source/bashtop) since Ubuntu 20.10
+
+  Available for Ubuntu from [PPA repository](https://code.launchpad.net/~bashtop-monitor/+archive/ubuntu/bashtop)
+
+  >Add PPA repository and install bashtop
+
+  ``` bash
+   sudo add-apt-repository ppa:bashtop-monitor/bashtop
+   sudo apt update
+   sudo apt install bashtop
+  ```
+
+  #### Fedora
+
+  Available in the Fedora repository.
+
+  >Installation
+
+  ``` bash
+  sudo dnf install bashtop
+  ```
+
+  #### CentOS 8
+
+  >Installation
+
+  ``` bash
+  dnf config-manager --set-enabled PowerTools
+  dnf install epel-release
+  dnf install bashtop
+  ```
+
+  #### RHEL 8
+
+  >Installation
+
+  ``` bash
+  ARCH=$( /bin/arch )
+  subscription-manager repos --enable
+  "codeready-builder-for-rhel-8-${ARCH}-rpms"
+  dnf install epel-release
+  dnf install bashtop
+  ```
+readmeUrl: https://raw.githubusercontent.com/aristocratos/bashtop/HEAD/README.md

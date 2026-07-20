@@ -7,3 +7,147 @@ binaries:
   - cava
 homepage: https://github.com/karlstav/cava
 repo: https://github.com/karlstav/cava
+language: Python
+tags:
+  - music
+  - audio
+  - cross
+  - platform
+  - visualizer
+installNotes: |-
+  Installing
+  ------------------
+
+  ### From Source
+
+  #### Installing Build Requirements
+
+  Required components:
+  * [FFTW](http://www.fftw.org/)
+  * libtool
+  * automake
+  * pkgconf
+  * build-essentials
+  * [iniparser](https://github.com/ndevilla/iniparser)
+
+
+  Recommended components:
+
+  The development lib of one of these audio frameworks, depending on your distro:
+  * ALSA
+  * Pulseaudio
+  * Pipewire
+  * Portaudio
+  * Sndio
+  * JACK
+
+
+  Optional components:
+  * SDL2 dev files
+  * autoconf-archive (needed for setting up OpenGL)
+  * [ncursesw dev files](http://www.gnu.org/software/ncurses/) (bundled in ncurses in arch)
+
+  Only FFTW, iniparser and the build tools are actually required for CAVA to compile, but this will only give you the ability to read from fifo files. To capture audio directly from your system, additional audio development files may be needed depending on your input backend (pipewire, pulseaudio, alsa, sndio, jack or portaudio). On macOS, the built-in Core Audio framework is supported without extra audio capture libraries.
+
+  Ncurses can be used as an alternative output method if you have issues with the default one. But it is not required.
+
+  All the requirements can be installed easily in all major distros:
+
+  FreeBSD
+
+      pkg install autoconf automake fftw3 iniparser jackit libglvnd libtool pkgconf psftools sdl2 sndio
+
+  Additionally, run these commands on FreeBSD before building:
+
+      export CFLAGS="-I/usr/local/include"
+      export LDFLAGS="-L/usr/local/lib"
+
+
+  Debian/Ubuntu:
+
+      sudo apt install build-essential libfftw3-dev libasound2-dev libpulse-dev libtool automake libiniparser-dev libsdl2-2.0-0 libsdl2-dev libpipewire-0.3-dev libjack-jackd2-dev pkgconf
+
+
+  ArchLinux:
+
+      pacman -S base-devel fftw alsa-lib iniparser pulseaudio pkgconf
+
+
+  openSUSE:
+
+      zypper install alsa-devel fftw3-devel libpulse-devel libtool pkgconf
+
+
+  Fedora:
+
+      dnf install alsa-lib-devel fftw3-devel pulseaudio-libs-devel libtool iniparser-devel pkgconf
+
+
+  macOS:
+
+  First install homebrew if you have't already:
+
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  Then install prerequisites:
+
+      brew install fftw libtool automake pkgconf portaudio iniparser
+
+  The installation location for Homebrew packages is different between Intel Macs and Apple Silicon Macs.
+  As such, the commands will be a little bit different.
+  You can find out which type you have [here](https://support.apple.com/en-us/HT211814#:~:text=To%20open%20About%20This%20Mac,as%20an%20Intel%2Dbased%20Mac.)
+
+  For both machines, run these commands to fix macOS not finding libtool:
+
+      export LIBTOOL=`which glibtool`
+      export LIBTOOLIZE=`which glibtoolize`
+      ln -s `which glibtoolize` /usr/local/bin/libtoolize
+
+  Note that the file name may be a little bit different depending on the versions, but the directory should be the same.
+
+  Additionally, run these commands on Apple Silicon Macs so that ./configure can find the Homebrew packages:
+
+      export LDFLAGS="-L/opt/homebrew/lib"
+      export CPPFLAGS="-I/opt/homebrew/include"
+
+  Intel Mac instructions tested on macOS Big Sur.
+
+  Apple Silicon instructions tested on macOS Ventura.
+
+
+  Windows:
+
+  Dependencies can be resolved with vcpkg in the cmake
+
+      cmake --preset vcpkg
+      cd build
+      cmake --build . --config Release
+
+  pacman (msys2/mingw) can also be used
+      pacboy cc cmake fftw glew ninja SDL2
+      cmake -bin
+      cmake --build bin
+  1
+
+  #### Building
+   First of all clone this repo and cd in to it, then run:
+
+      ./autogen.sh
+      ./configure
+      make
+
+  If you have a recommended component installed, but do not wish to use it (perhaps if building a binary on one machine to be used on another), then the corresponding feature can be disabled during configuration (see configure --help for details).
+
+  For windows CMake can be used.
+
+  CMake can also be used for linux, but autoconf/automake remains the default supported build system.
+
+  #### Installing
+
+  Install `cava` to default `/usr/local`:
+
+      make install
+
+  Or you can change `PREFIX`, for example:
+  …
+readmeUrl: https://raw.githubusercontent.com/karlstav/cava/HEAD/README.md

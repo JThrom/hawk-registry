@@ -7,3 +7,84 @@ binaries:
   - tut
 homepage: https://github.com/RasmusLindroth/tut
 repo: https://github.com/RasmusLindroth/tut
+language: Go
+tags:
+  - mastodon
+install:
+  brew: brew install tut
+  go: go install github.com/RasmusLindroth/tut@latest
+packages:
+  brew: tut
+  go: tut
+installNotes: |-
+  ## Install instructions
+  ### Binary releases
+  Head over to https://github.com/RasmusLindroth/tut/releases
+
+  ### Arch and Manjaro
+
+  You can find it in the Arch User Repository (AUR). I'm the maintainer there.
+
+  https://aur.archlinux.org/packages/tut/
+  https://aur.archlinux.org/packages/tut-bin/
+
+  You can also use `tut-mastodon`. Currently `aur/tut` collides with a package 
+  named `tut` if you're running Manjaro ARM. So if you face the same problem you 
+  can use this package instead. I suggest you add an alias for tut-mastodon to
+  tut in the config for your shell. Usually `.bashrc` or `.zshrc`.
+
+  `alias tut='tut-mastodon'`
+
+  https://aur.archlinux.org/packages/tut-mastodon/
+
+  ### Alpine Linux
+
+  `tut` package is available in the community repository.
+
+  https://pkgs.alpinelinux.org/package/edge/community/x86_64/tut
+
+  ### Debian
+
+  http://packages.azlux.fr/
+
+  ### FreeBSD
+
+  https://www.freshports.org/net-im/tut 
+
+  ### OpenBSD
+
+  https://openports.pl/path/net/tut
+
+  The `tut` is available since OpenBSD 7.3.  It can be installed with:
+
+  	pkg_add tut
+
+  ### NetBSD (and others)
+
+  Available as [net/tut](https://pkgsrc.se/net/tut) in
+  [pkgsrc](https://pkgsrc.org), NetBSD's portable package manager.
+  Also for Linux, macOS, Illumos, etc. Install from the tree or with
+  pkgin:
+
+  ```
+  pkgin install tut
+  ```
+
+  ### Homebrew (macOS)
+
+  Available as a Homebrew Formulae over [here](https://formulae.brew.sh/formula/tut).
+  Install it like this:
+
+  ```
+  brew update
+  brew install tut
+  ```
+
+  ### openSUSE
+
+  `tut` package is shipped as part of openSUSE Tumbleweed and openSUSE Leap 15.5+. It can be installed via:
+
+  `sudo zypper in tut`
+
+  [suntorytimed](https://build.opensuse.org/users/suntorytimed) is the maintainer of the package.
+readmeUrl: https://raw.githubusercontent.com/RasmusLindroth/tut/HEAD/README.md

@@ -7,3 +7,11 @@ binaries:
   - hledger-ui
 homepage: https://github.com/simonmichael/hledger
 repo: https://github.com/simonmichael/hledger
+language: Haskell
+tags:
+  - browsing
+  - double
+  - entry
+  - bookkeeping
+  - data
+readmeUrl: https://raw.githubusercontent.com/simonmichael/hledger/HEAD/README.md

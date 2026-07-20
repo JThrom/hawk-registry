@@ -7,3 +7,20 @@ binaries:
   - gophertube
 homepage: https://github.com/krishnassh/gophertube
 repo: https://github.com/krishnassh/gophertube
+language: Go
+tags:
+  - youtube
+  - scrapes
+  - search
+  - results
+  - uses
+  - video
+  - playback
+installNotes: |-
+  ## Installation
+
+  This assumes you have mpv and yt-dlp installed in your system. if not refer to this to install them first. 
+
+  [mpv installation](https://mpv.io/installation/)
+  [yt-dlp installation](https://github.com/yt-dlp/yt-dlp/wiki/Installation)
+readmeUrl: https://raw.githubusercontent.com/krishnassh/gophertube/HEAD/README.md

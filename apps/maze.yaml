@@ -7,3 +7,25 @@ binaries:
   - maze
 homepage: https://github.com/itchyny/maze
 repo: https://github.com/itchyny/maze
+language: Go
+tags:
+  - maze
+  - game
+install:
+  brew: brew install itchyny/tap/maze
+  go: go install github.com/itchyny/maze/cmd/maze@latest
+packages:
+  brew: maze
+  go: maze
+installNotes: |-
+  ## Installation
+  ### Homebrew
+  ```bash
+  brew install itchyny/tap/maze
+  ```
+
+  ### Build from source
+  ```bash
+  go install github.com/itchyny/maze/cmd/maze@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/itchyny/maze/HEAD/README.md

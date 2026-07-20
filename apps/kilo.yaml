@@ -7,3 +7,11 @@ binaries:
   - kilo
 homepage: https://github.com/antirez/kilo
 repo: https://github.com/antirez/kilo
+tags:
+  - minimal
+  - complete
+  - editor
+  - "1000"
+  - lines
+  - code
+readmeUrl: https://raw.githubusercontent.com/antirez/kilo/HEAD/README.md

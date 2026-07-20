@@ -7,3 +7,163 @@ binaries:
   - clipse
 homepage: https://github.com/savedra1/clipse
 repo: https://github.com/savedra1/clipse
+language: Go
+tags:
+  - clipboard
+  - manager
+install:
+  go: go install github.com/savedra1/clipse@v1.2.1
+packages:
+  go: clipse
+installNotes: |-
+  # Installation & Set-up 🏗️
+
+  ## Installation
+
+  <details>
+    <summary><b>NixOS</b></summary>
+
+    Due to how irregularly the stable branch of Nixpkgs is updated, you may find the unstable package is more up to date. The Nix package for `clipse` can be found [here](https://search.nixos.org/packages?channel=25.05&from=0&size=50&sort=relevance&type=packages&query=clipse)
+
+    __Direct install__
+
+    ```nix
+    nix-env -iA nixpkgs.clipse # OS == NixOs
+    nix-env -f channel:nixpkgs -iA clipse # OS != NixOs
+    ```
+
+    __Nix shell__
+
+    ```nix
+    nix shell -p clipse
+    ```
+
+    __System package__
+
+    ```nix
+    environment.systemPackages = [
+        pkgs.clipse
+      ];
+  ```
+  </details>
+
+  <details>
+    <summary><b>Arch</b></summary>
+
+    Thank you [@raininja](https://github.com/raininja) for creating and maintaining the [AUR package](https://aur.archlinux.org/packages/clipse)!
+
+    __Installing with yay__
+
+    ```shell
+    yay -S clipse
+    ```
+
+    __Installing from pkg source__
+
+    ```shell
+    git clone https://aur.archlinux.org/clipse.git && cd clipse && makepkg -si
+    ```
+
+  </details>
+
+  <details>
+    <summary><b>Fedora/Rhel</b></summary>
+
+    Thank you [@RadioAndrea](https://github.com/RadioAndrea) for creating and maintaining the [COPR package](https://copr.fedorainfracloud.org/coprs/azandure/clipse/)!
+
+    ```shell
+    dnf copr enable azandure/clipse
+    ```
+
+  </details>
+
+  <details>
+    <summary><b>Installing with Go</b></summary>
+
+    ```shell
+    go install github.com/savedra1/clipse@v1.2.1
+    ```
+
+  </details>
+
+  <details>
+    <summary><b>Building from source</b></summary>
+
+    Building `clipse` from source requires different build tags depending on your system's display server. To ensure the correct tags are uses, please use the Makefile to build the executable. E.g. `make wayland`
+
+    ```shell
+    git clone https://github.com/savedra1/clipse
+    cd clipse
+    go mod tidy
+    make wayland # || make x11 || make darwin
+    ```
+
+    Once you have build the binary, you can install this to your executable path, E.g. `install -m 755 clipse /usr/bin || mv clipse /bin/`.
+
+  </details>
+
+
+  ## Set up
+
+  To get the most out of `clipse`, it's recommended to bind the two primary key commands to your system's config. The first key command is to open the clipboard history TUI:
+
+  ```shell
+  clipse
+  ```
+
+  The second command doesn't need to be bound to a key combination, but rather to the system boot to run the background listener process on start-up:
+
+  ```shell
+  clipse -listen
+  ```
+
+  ### Example window manager configurations
+
+  <details>
+    <summary><b>Hyprland</b></summary>
+
+    Add the following lines to your Hyprland config file:
+
+    ```shell
+
+    exec-once = clipse -listen # run listener on startup
+
+    windowrule = match:class clipse, float true # ensure you have a floating window class set if you want this behavior
+    windowrule = match:class clipse, size 622 652 # set the size of the window as necessary
+
+    bind = SUPER, V, exec,  <terminal name> --class clipse -e 'clipse'
+
+    # Example: bind = SUPER, V, exec, alacritty --class clipse -e 'clipse'
+    ```
+
+    [Hyprland reference](https://wiki.hypr.land/Configuring/Window-Rules/)
+
+  </details>
+
+  <details>
+    <summary><b>i3</b></summary>
+
+    Add the following commands to your `~/.config/i3/config` file:
+
+    ```shell
+    exec --no-startup-id clipse -listen                                                           # run listener on startup
+    bindsym $mod+V exec --no-startup-id urxvt -e "$SHELL" -c "i3-msg 'floating enable' && clipse" # Bind floating shell with TUI selection to something nice
+    ```
+
+    [i3 reference](https://wiki.archlinux.org/title/i3)
+
+  </details>
+
+  <details>
+    <summary><b>Sway</b></summary>
+
+    Add the following config to your `~/.config/sway/config` file:
+
+    ```shell
+    exec clipse -listen                                                                        # run the background listener on startup
+
+    for_window [app_id="clipse"] floating enable, move position center, resize set 80ppt 80ppt # style window to look nice
+
+    bindsym $mod+V exec <terminal name> --class clipse -e clipse                 
+  …
+readmeUrl: https://raw.githubusercontent.com/savedra1/clipse/HEAD/README.md

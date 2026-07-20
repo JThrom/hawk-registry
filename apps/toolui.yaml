@@ -7,3 +7,25 @@ binaries:
   - toolui
 homepage: https://github.com/jinek/ToolUI
 repo: https://github.com/jinek/ToolUI
+tags:
+  - dotnet
+  - core
+  - installed
+  - nuget
+  - tools
+installNotes: |-
+  ## Installation And Usage
+
+  Locally:
+  ```
+  dotnet tool install ToolUI
+  dotnet tool run dotnet-toolui
+  dotnet tool uninstall ToolUI
+  ```
+  Globally:
+  ```
+  dotnet tool install ToolUI --global 
+  dotnet toolui
+  dotnet tool uninstall ToolUI --global
+  ```
+readmeUrl: https://raw.githubusercontent.com/jinek/ToolUI/HEAD/README.md

@@ -7,3 +7,37 @@ binaries:
   - qo
 homepage: https://github.com/kiki-ki/go-qo
 repo: https://github.com/kiki-ki/go-qo
+language: Go
+tags:
+  - database
+  - sql
+  - interactive
+  - filter
+  - json
+  - other
+  - streams
+install:
+  brew: brew install kiki-ki/tap/qo
+packages:
+  brew: qo
+installNotes: |-
+  ## Install
+
+  macOS and Linux (amd64/arm64) are supported.
+
+  **Homebrew (Package)**
+
+  ```bash
+  brew install kiki-ki/tap/qo
+  ```
+
+  **Shell (Binary)**
+
+  ```bash
+  curl -sfL https://raw.githubusercontent.com/kiki-ki/go-qo/main/install.sh | sh
+  ```
+
+  **Git (Source)**
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/kiki-ki/go-qo/HEAD/README.md

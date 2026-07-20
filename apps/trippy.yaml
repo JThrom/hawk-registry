@@ -7,3 +7,37 @@ binaries:
   - trippy
 homepage: https://github.com/fujiapple852/trippy
 repo: https://github.com/fujiapple852/trippy
+language: Rust
+tags:
+  - network
+  - diagnostic
+  - includes
+  - functionality
+  - like
+  - more
+install:
+  cargo: cargo install trippy
+  apt: apt install trippy
+  brew: brew install trippy
+  pacman: pacman -S trippy
+packages:
+  cargo: trippy
+  apt: trippy
+  brew: trippy
+  pacman: trippy
+installNotes: |-
+  ### Install
+
+  Trippy runs on Linux, BSD, macOS, and Windows. It can be installed from most package managers, precompiled binaries, or
+  source.
+
+  For example, to install Trippy from `cargo`:
+
+  ```shell
+  cargo install trippy --locked
+  ```
+
+  <details>
+
+  <summary>All package managers</summary>
+readmeUrl: https://raw.githubusercontent.com/fujiapple852/trippy/HEAD/README.md

@@ -7,3 +7,133 @@ binaries:
   - astroterm
 homepage: https://github.com/da-luce/astroterm
 repo: https://github.com/da-luce/astroterm
+tags:
+  - planetarium
+  - explore
+  - stars
+  - planets
+  - constellations
+  - more
+install:
+  pacman: pacman -S astroterm
+  dnf: dnf install astroterm
+  brew: brew install astroterm
+  apt: apt install -y
+packages:
+  pacman: astroterm
+  dnf: astroterm
+  brew: astroterm
+  apt: -y
+installNotes: |-
+  ## Installation
+
+  Several installation methods are provided based on your platform. If none of these fit your needs, you can always [build from source](#building-from-source). Refer to [troubleshooting](#troubleshooting) for help resolving any issues.
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/astroterm.svg)](https://repology.org/project/astroterm/versions)
+
+  ### Arch Linux
+
+  You can install `astroterm` from the [extra repository](https://archlinux.org/packages/extra/x86_64/astroterm/) using [pacman](https://wiki.archlinux.org/title/Pacman):
+
+  ```sh
+  pacman -S astroterm
+  ```
+
+  ### Fedora
+
+  You can install `astroterm` directly from the [Fedora package repository](https://packages.fedoraproject.org/pkgs/astroterm/astroterm) on Fedora 40+.
+
+  ```sh
+  sudo dnf install astroterm
+  ```
+
+  ### Homebrew
+
+  You can install `astroterm` from [Homebrew](https://formulae.brew.sh/formula/astroterm) via:
+
+  ```sh
+  brew install astroterm
+  ```
+
+  ### Nix
+
+  You can try the [package](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=astroterm) in a temporary environment with the following command:
+
+  ```sh
+  nix-shell -I nixpkgs=channel:nixpkgs-unstable -p astroterm --command astroterm
+  ```
+
+  Argument flags are added by wrapping the command in quotes. For example:
+
+  ```sh
+  nix-shell -I nixpkgs=channel:nixpkgs-unstable -p astroterm --command "astroterm -u -c"
+  ```
+
+  To make `astroterm` available from your `$PATH`, add it to your configuration.nix:
+
+  ```sh
+  environment.systemPackages = with pkgs; [
+    ...
+    astroterm
+  ]
+  ```
+
+  ### Guix
+
+  You can install `astroterm` directly from the [Guix main
+  channel](https://hpc.guix.info/package/astroterm) starting from
+  [this commit](https://data.guix.gnu.org/revision/4b5f0408e66392ab745dc0f7830732217d88f17d).
+
+  ```sh
+  guix time-machine --commit=4b5f0408e66392ab745dc0f7830732217d88f17d -- shell astroterm
+  ```
+
+  Or after `guix pull`:
+
+  ```sh
+  guix shell astroterm -- astroterm --help  # to try
+  guix package --install astroterm          # add to current profile
+  ```
+
+  ### Prebuilt Executable
+
+  #### Unix
+
+  1. Download the latest executable using `wget`
+
+      ```sh
+      wget -O astroterm "https://github.com/da-luce/astroterm/releases/latest/download/astroterm-<os>-<arch>"
+      ```
+
+     - Replace `<os>` with the appropriate platform:
+       - **Linux:** `linux`
+       - **macOS:** `darwin`
+     - Replace `<arch>` with the appropriate architecture:
+       - **Linux:** `x86_64` (arm64 support to come after [Ubuntu arm64 runners](https://github.blog/news-insights/product-news/arm64-on-github-actions-powering-faster-more-efficient-build-systems/) are available)
+       - **Apple Silicon (M-series):** `aarch64`
+       - **Intel-based Macs:** `x86_64`
+     - To view all supported combinations, see the [Releases](https://github.com/da-luce/astroterm/releases) page.
+
+  2. Run the executable
+
+      ```sh
+      chmod +x ./astroterm
+      ./astroterm
+      ```
+
+  #### Windows
+
+  1. Download the latest `.exe` file using PowerShell's `Invoke-WebRequest`:
+
+      ```powershell
+      Invoke-WebRequest -Uri "https://github.com/da-luce/astroterm/releases/latest/download/astroterm-win-x86_64.exe" -OutFile "astroterm.exe"
+      ```
+
+  2. Run the `.exe`
+
+      ```powershell
+      .\astroterm.exe
+      ```
+
+  ### [Building From Source](./CONTRIBUTING.md#building-from-source)
+readmeUrl: https://raw.githubusercontent.com/da-luce/astroterm/HEAD/README.md

@@ -7,3 +7,9 @@ binaries:
   - slumber
 homepage: https://github.com/LucasPickering/slumber
 repo: https://github.com/LucasPickering/slumber
+language: Rust
+tags:
+  - http
+  - api
+  - rest
+readmeUrl: https://raw.githubusercontent.com/LucasPickering/slumber/HEAD/README.md

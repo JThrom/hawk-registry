@@ -7,3 +7,31 @@ binaries:
   - rocket.term
 homepage: https://github.com/gerstner-hub/rocket.term
 repo: https://github.com/gerstner-hub/rocket.term
+language: Python
+tags:
+  - chat
+  - messaging
+  - text
+  - rocket
+  - solution
+installNotes: |-
+  ## Installation
+
+  ### Requirements
+
+  You need a Linux PC and a terminal to run rocket.term in. In theory it could
+  also work on operating systems other than Linux but it wasn't tested yet. You
+  will need a fairly recent Python 3 interpreter and the following additional
+  Python modules:
+
+  - [the urwid module](http://urwid.org) (a toolkit for text based UIs).
+  - [the requests module](https://requests.readthedocs.io/) for easier handling of HTTP REST API requests.
+  - [the websocket client module](https://github.com/websocket-client/websocket-client) for connecting to the Rocket.chat websocket realtime API.
+
+  ### Typical Install
+
+  The `setup.py` script that is part of this repository allows you install
+  rocket.term for your user account or system wide:
+
+  ```
+readmeUrl: https://raw.githubusercontent.com/gerstner-hub/rocket.term/HEAD/README.md

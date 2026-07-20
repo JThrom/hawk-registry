@@ -7,3 +7,31 @@ binaries:
   - corefreq
 homepage: https://github.com/cyring/CoreFreq
 repo: https://github.com/cyring/CoreFreq
+language: Go
+tags:
+  - monitor
+  - system
+  - monitoring
+  - software
+  - designed
+  - bits
+  - processors
+install:
+  apt: apt install dkms
+packages:
+  apt: dkms
+installNotes: |-
+  ### Install
+
+  #### Manual
+  5. Copying _CoreFreq_ into the binaries directory  
+  ```sh
+  make install
+  ```
+
+  #### Distribution package
+  6. Although _CoreFreq_ is released in the ArchLinux AUR ; other sources of distribution may require to reload the systemd daemons:  
+  ```sh
+  systemctl daemon-reload
+  ```
+readmeUrl: https://raw.githubusercontent.com/cyring/CoreFreq/HEAD/README.md

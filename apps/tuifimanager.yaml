@@ -7,3 +7,26 @@ binaries:
   - tuifimanager
 homepage: https://github.com/GiorgosXou/TUIFIManager
 repo: https://github.com/GiorgosXou/TUIFIManager
+language: Go
+tags:
+  - file manager
+  - files
+  - cross
+  - platform
+  - file
+  - manager
+  - termux
+install:
+  pip: pip3 install tuifimanager
+packages:
+  pip: tuifimanager
+installNotes: |-
+  # ⚙️ Installation
+  ```terminal
+  sudo pip3 install tuifimanager --upgrade
+  ```
+  ```terminal
+  pip3 install TUIFIManager --upgrade
+  ```
+  or just ^^^ if it works for you. *(eg. on termux?)*
+readmeUrl: https://raw.githubusercontent.com/GiorgosXou/TUIFIManager/HEAD/README.md

@@ -7,3 +7,13 @@ binaries:
   - nsnake
 homepage: https://github.com/alexdantas/nSnake
 repo: https://github.com/alexdantas/nSnake
+tags:
+  - classic
+  - snake
+  - game
+  - textual
+install:
+  apt: apt-get install libncurses5-dev
+packages:
+  apt: libncurses5-dev
+readmeUrl: https://raw.githubusercontent.com/alexdantas/nSnake/HEAD/README.md

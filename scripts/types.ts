@@ -14,7 +14,8 @@ export type PackageManagerId =
   | "bun"
   | "pipx"
   | "pip"
-  | "dnf";
+  | "dnf"
+  | "go";
 
 export interface AppEntry {
   id: string;
@@ -29,6 +30,10 @@ export interface AppEntry {
   repo?: string;
   popularity?: number;
   language?: string;
+  /** Extracted install instructions (markdown) from the README. */
+  installNotes?: string;
+  /** Raw URL of the full README (sidecar stored in readmes/). */
+  readmeUrl?: string;
 }
 
 export interface CategoryDef {

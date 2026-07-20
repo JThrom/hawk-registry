@@ -7,3 +7,97 @@ binaries:
   - sen
 homepage: https://github.com/TomasTomecek/sen
 repo: https://github.com/TomasTomecek/sen
+language: Go
+tags:
+  - docker
+  - containers
+  - engine
+install:
+  pip: pip3 install git+https://github.com/pazz/urwidtrees.git@9142c59d3e41421ff6230708d08b6a134e0a8eed#egg=urwidtrees-1.0.3.dev
+packages:
+  pip: urwidtrees.git
+installNotes: |-
+  # Installation and running `sen`
+
+  I strongly advise to run `sen` from a docker container provided on docker hub:
+
+  ```
+  $ docker pull tomastomecek/sen
+  ```
+
+  This repository has set up automated builds on docker hub. In case you run into some issue, try pulling latest version first before opening an issue.
+
+  This is the recommended way of running `sen` in a container:
+
+  ```
+  $ docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM tomastomecek/sen
+  ```
+
+  Some distros have `/var/run` simlinked to `/run`, so you can do `/run/docker.sock:/run/docker.sock` instead.
+
+  In case you would like to try development version of sen, you can pull `tomastomecek/sen:dev`.
+
+  Don't forget to bindmount the socket inside with `:Z` on SELinux systems.
+
+
+  ## docker
+
+  You can easily build a docker image with sen inside:
+
+  ```
+  $ docker build --tag=$USER/sen https://github.com/tomastomecek/sen
+  $ docker run -v /var/run/docker.sock:/run/docker.sock -ti -e TERM $USER/sen
+  ```
+
+
+  ## PyPI
+
+  `sen` is using [`urwidtrees`](https://github.com/pazz/urwidtrees) as a dependency. Unfortunately, the upstream
+  maintainer doesn't maintain it on PyPI so we need to install it directly from
+  git, before installing sen (the forked PyPI version has a [bug](https://github.com/TomasTomecek/sen/issues/128) in
+  the installation process):
+
+  ```
+  $ pip3 install git+https://github.com/pazz/urwidtrees.git@9142c59d3e41421ff6230708d08b6a134e0a8eed#egg=urwidtrees-1.0.3.dev
+  ```
+
+  `sen` releases are available on PyPI:
+
+  ```
+  $ pip3 install sen
+  ```
+
+  If `pip3` executable is not available on your system, you can run pip like this:
+
+  ```
+  $ python3 -m pip install sen
+  ```
+
+  And then start sen like this:
+
+  ```
+  $ sen
+  ```
+
+
+  ## git
+
+  `sen` is a python 3 only project. I recommend using at least python 3.4. This is how you can install `sen` from git:
+
+  ```
+  $ git clone https://github.com/TomasTomecek/sen
+  $ cd sen
+  $ pip3 install --user -r ./requirements.txt
+  $ pip3 install .
+  $ sen
+  ```
+
+  Or even run `sen` straight from git:
+
+  ```
+  $ git clone https://github.com/TomasTomecek/sen
+  $ cd sen
+  $ pip3 install --user -r ./requirements.txt
+  $ PYTHONPATH="$PWD:$PYTHONPATH" ./sen/cli.py
+  ```
+readmeUrl: https://raw.githubusercontent.com/TomasTomecek/sen/HEAD/README.md

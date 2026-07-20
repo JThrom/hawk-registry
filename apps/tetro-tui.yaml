@@ -8,3 +8,25 @@ binaries:
   - tetro
 homepage: https://github.com/Strophox/tetro-tui
 repo: https://github.com/Strophox/tetro-tui
+language: Rust
+tags:
+  - very
+  - configurable
+  - tetris
+  - like
+  - featuring
+  - ascii
+  - particles
+  - replays
+  - more
+install:
+  cargo: cargo install tetro-tui
+packages:
+  cargo: tetro-tui
+installNotes: |-
+  ### Quick Install
+
+  #### Cargo ([crates.io](<https://crates.io/crates/tetro-tui>)):
+  ```bash
+  cargo install tetro-tui
+readmeUrl: https://raw.githubusercontent.com/Strophox/tetro-tui/HEAD/README.md

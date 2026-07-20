@@ -7,3 +7,9 @@ binaries:
   - amp
 homepage: https://github.com/jmacdonald/amp
 repo: https://github.com/jmacdonald/amp
+language: Rust
+tags:
+  - complete
+  - text
+  - editor
+readmeUrl: https://raw.githubusercontent.com/jmacdonald/amp/HEAD/README.md

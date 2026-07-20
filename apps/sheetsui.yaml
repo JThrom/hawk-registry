@@ -7,3 +7,25 @@ binaries:
   - sheetsui
 homepage: https://github.com/zaphar/sheetsui
 repo: https://github.com/zaphar/sheetsui
+language: Rust
+tags:
+  - spreadsheet
+install:
+  cargo: cargo install --git
+packages:
+  cargo: --git
+installNotes: |-
+  ## Installing
+
+  ### Nix Flake
+
+  ```sh
+  nix profile install github:zaphar/sheetsui
+  ```
+
+  ### Cargo
+
+  ```sh
+  cargo install --git https://github.com/zaphar/sheetsui --locked
+  ```
+readmeUrl: https://raw.githubusercontent.com/zaphar/sheetsui/HEAD/README.md

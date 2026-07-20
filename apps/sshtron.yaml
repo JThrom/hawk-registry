@@ -7,3 +7,12 @@ binaries:
   - sshtron
 homepage: https://github.com/zachlatta/sshtron
 repo: https://github.com/zachlatta/sshtron
+language: Go
+tags:
+  - music
+  - audio
+  - multiplayer
+  - lightcycle
+  - game
+  - through
+readmeUrl: https://raw.githubusercontent.com/zachlatta/sshtron/HEAD/README.md

@@ -7,3 +7,59 @@ binaries:
   - damon
 homepage: https://github.com/hashicorp/damon
 repo: https://github.com/hashicorp/damon
+language: Go
+tags:
+  - hashicorp
+  - nomad
+install:
+  go: go install ./cmd/damon
+packages:
+  go: damon
+installNotes: |-
+  ## Installation
+
+  ### Brew
+
+  --> Coming soon
+
+  ### Building from source and Run Damon
+
+  Make sure you have your go environment setup:
+
+  1. Clone the project
+  1. Run `$ make build` to build the binary
+  1. Run `$ make run` to run the binary
+  1. You can use `$ make install-osx` on a Mac to cp the binary to `/usr/local/bin/damon`
+
+  or
+
+  ```
+  $ go install ./cmd/damon
+  ```
+
+  ### How to use it
+
+  Once `Damon` is installed and avialable in your path, simply run:
+
+  ```
+  $ damon
+  ```
+
+  #### Environment Variables
+
+  Damon reads the following environment variables on startup:
+
+  - `NOMAD_TOKEN`
+  - `NOMAD_ADDR`
+  - `NOMAD_REGION`
+  - `NOMAD_NAMESPACE`
+  - `NOMAD_HTTP_AUTH`
+  - `NOMAD_CACERT`
+  - `NOMAD_CAPATH`
+  - `NOMAD_CLIENT_CERT`
+  - `NOMAD_CLIENT_KEY`
+  - `NOMAD_TLS_SERVER_NAME`
+  - `NOMAD_SKIP_VERIFY`
+
+  You can read about them in detail [here](https://www.nomadproject.io/docs/runtime/environment).
+readmeUrl: https://raw.githubusercontent.com/hashicorp/damon/HEAD/README.md

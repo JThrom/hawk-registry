@@ -7,3 +7,30 @@ binaries:
   - nyaa
 homepage: https://github.com/Beastwick18/nyaa
 repo: https://github.com/Beastwick18/nyaa
+language: Rust
+tags:
+  - nyaa
+  - browsing
+  - downloading
+  - torrents
+install:
+  cargo: cargo install nyaa
+  apt: apt install ./nyaa-VERSION-x86_64.deb
+  dnf: dnf install ./nyaa-VERSION-x86_64.rpm
+packages:
+  cargo: nyaa
+  apt: nyaa-VERSION-x86_64.deb
+  dnf: nyaa-VERSION-x86_64.rpm
+installNotes: |-
+  ## ⚡ Installation
+
+  ### With a package manager
+  ```sh
+  ### With cargo
+  cargo install nyaa
+
+  ### On Arch Linux (AUR)
+  yay -S nyaa # or `nyaa-bin` for a pre-compiled binary
+
+  ### Ubuntu/Debian (.deb file from latest release)
+readmeUrl: https://raw.githubusercontent.com/Beastwick18/nyaa/HEAD/README.md

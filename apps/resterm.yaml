@@ -7,3 +7,65 @@ binaries:
   - resterm
 homepage: https://github.com/unkn0wn-root/resterm
 repo: https://github.com/unkn0wn-root/resterm
+language: Go
+tags:
+  - http
+  - api
+  - graphql
+  - grpc
+  - websockets
+  - workflows
+  - profiling
+  - openapi
+  - response
+  - diffs
+install:
+  brew: brew install resterm
+  go: go install github.com/unkn0wn-root/resterm/cmd/resterm@latest
+packages:
+  brew: resterm
+  go: resterm
+installNotes: |-
+  ## Installation
+
+  **Linux / macOS (Homebrew)**
+
+  ```bash
+  brew install resterm
+  ```
+
+  > [!NOTE]
+  > Homebrew installs should be updated with Homebrew (`brew upgrade resterm`). The built-in `resterm --update` command is for binaries installed from GitHub releases or install scripts.
+
+  **Linux / macOS (Shell script)**
+
+  > [!IMPORTANT]
+  > Pre-built Linux binaries depend on glibc **2.32 or newer**. If you run an older distro, build from source on a machine with a newer glibc toolchain or upgrade glibc before using the release archives.
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/unkn0wn-root/resterm/main/install.sh | bash
+  ```
+
+  or with `wget`:
+
+  ```bash
+  wget -qO- https://raw.githubusercontent.com/unkn0wn-root/resterm/main/install.sh | bash
+  ```
+
+  **Windows (PowerShell)**
+
+  ```powershell
+  iwr -useb https://raw.githubusercontent.com/unkn0wn-root/resterm/main/install.ps1 | iex
+  ```
+
+  These scripts detect your architecture, download the latest release, and install the binary.
+
+  ### Manual installation
+
+  > [!NOTE]
+  > The manual install helper uses `curl` and `jq`. Install `jq` with your package manager (`brew install jq`, `sudo apt install jq`, etc.).
+
+  **Linux / macOS**
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/unkn0wn-root/resterm/HEAD/README.md

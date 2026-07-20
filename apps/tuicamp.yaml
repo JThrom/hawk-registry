@@ -7,3 +7,19 @@ binaries:
   - tuicamp
 homepage: https://github.com/AbeEstrada/tuicamp
 repo: https://github.com/AbeEstrada/tuicamp
+language: Go
+tags:
+  - unofficial
+  - timecamp
+installNotes: |-
+  ## Build and Installation
+
+  This project uses [`just`](https://github.com/casey/just) as a command runner and requires [Go](https://golang.org/) for building. Below are the available commands:
+
+  ### Available Commands
+
+  - `just` or `just install` - Build and install the binary to `PREFIX/bin/` (default: `/usr/local/bin`)
+  - `just build` - Build the binary in the current directory
+  - `just uninstall` - Remove the installed binary
+  - `just clean` - Remove the built binary from the current directory
+readmeUrl: https://raw.githubusercontent.com/AbeEstrada/tuicamp/HEAD/README.md

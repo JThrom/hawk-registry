@@ -7,3 +7,32 @@ binaries:
   - sfm
 homepage: https://github.com/afify/sfm
 repo: https://github.com/afify/sfm
+tags:
+  - file manager
+  - files
+  - file
+  - manager
+installNotes: |-
+  Installation
+  ------------
+  <a href="https://repology.org/project/sfm-afify/versions">
+      <img src="https://repology.org/badge/vertical-allrepos/sfm-afify.svg" alt="Packaging status">
+  </a>
+
+  **current**
+  ```sh
+  git clone https://github.com/afify/sfm
+  cd sfm/
+  make
+  make install
+  ```
+  **latest release**
+  ```sh
+  latest=$(curl -s https://api.github.com/repos/afify/sfm/releases/latest | grep -o '"tag_name": "[^"]*' | cut -d'"' -f4)
+  tgz="https://github.com/afify/sfm/archive/refs/tags/${latest}.tar.gz"
+  curl -L -o "sfm-${latest}.tar.gz" "${tgz}"
+  tar -xzf "sfm-${latest}.tar.gz"
+  cd "sfm-${latest#v}" && \
+  make && make install || echo "Build failed!"
+  ```
+readmeUrl: https://raw.githubusercontent.com/afify/sfm/HEAD/README.md

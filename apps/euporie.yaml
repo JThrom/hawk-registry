@@ -7,3 +7,14 @@ binaries:
   - euporie
 homepage: https://github.com/joouha/euporie
 repo: https://github.com/joouha/euporie
+language: Python
+tags:
+  - jupyter
+  - notebooks
+install:
+  pipx: pipx install euporie
+  pip: pip install --user
+packages:
+  pipx: euporie
+  pip: --user
+readmeUrl: https://raw.githubusercontent.com/joouha/euporie/HEAD/README.rst

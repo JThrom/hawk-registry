@@ -7,3 +7,21 @@ binaries:
   - mac-cleanup-go
 homepage: https://github.com/2ykwang/mac-cleanup-go
 repo: https://github.com/2ykwang/mac-cleanup-go
+language: Go
+tags:
+  - macos
+  - disk
+  - cleanup
+  - scan
+  - cache
+  - artifacts
+  - preview
+  - exclude
+  - move
+  - items
+  - trash
+install:
+  brew: brew install mac-cleanup-go
+packages:
+  brew: mac-cleanup-go
+readmeUrl: https://raw.githubusercontent.com/2ykwang/mac-cleanup-go/HEAD/README.md

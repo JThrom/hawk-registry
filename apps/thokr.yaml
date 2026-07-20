@@ -7,3 +7,31 @@ binaries:
   - thokr
 homepage: https://github.com/coloradocolby/thokr
 repo: https://github.com/coloradocolby/thokr
+language: Rust
+tags:
+  - sleek
+  - typing
+  - rust
+install:
+  cargo: cargo install thokr
+packages:
+  cargo: thokr
+installNotes: |-
+  ## Installation
+
+  ### Cargo
+
+  ```sh
+  $ cargo install thokr
+  ```
+
+  ### Docker
+
+  ```sh
+  $ docker run -it thatvegandev/thokr
+  ```
+
+  ### Arch Linux
+
+  Install `thokr-git` from the AUR
+readmeUrl: https://raw.githubusercontent.com/coloradocolby/thokr/HEAD/README.md

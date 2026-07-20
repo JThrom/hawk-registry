@@ -7,3 +7,64 @@ binaries:
   - gotop
 homepage: https://github.com/xxxserxxx/gotop
 repo: https://github.com/xxxserxxx/gotop
+language: Rust
+tags:
+  - monitor
+  - system
+  - graphical
+  - activity
+  - inspired
+  - gtop
+  - vtop
+installNotes: |-
+  ## Installation
+
+  Working and tested on Linux, FreeBSD and MacOS. Windows binaries are provided, but have limited testing. OpenBSD works with some caveats; cross-compiling is difficult and binaries are not provided.
+
+  If you install gotop by hand, or you download or create new layouts or colorschemes, you will need to put the layout files where gotop can find them.  To see the list of directories gotop looks for files, run `gotop -h`.  The first directory is always the directory from which gotop is run.
+
+  -  **Arch**: ![](https://img.shields.io/aur/last-modified/gotop) Install from AUR, e.g. `yay -S gotop-bin`. There is also `gotop` and `gotop-git`
+  -  **Gentoo**: gotop is available on [guru](https://gitweb.gentoo.org/repo/proj/guru.git) overlay. 
+      ```shell
+      sudo layman -a guru
+      sudo emerge gotop
+      ```
+  - **Nix**: you can run `gotop` with `nix-shell -p gotop --run gotop` or add the package `gotop` to your environment
+  - **OSX**: gotop is in *homebrew-core*.  `brew install gotop`.  Make sure to uninstall and untap any previous installations or taps.
+  - **Windows**: gotop is in the [Main](https://github.com/ScoopInstaller/Main) bucket. `scoop install gotop`.
+  - **Prebuilt binaries**: Binaries for most systems can be downloaded from [the github releases page](https://github.com/xxxserxxx/gotop/releases). RPM and DEB packages are also provided.
+  - **Source**: This requires Go >= 1.16. `go install github.com/xxxserxxx/gotop/v4/cmd/gotop@latest`
+
+  ### Extensions update
+
+  Extensions have proven problematic; go plugins are not usable in real-world cases, and the solution I had running for a while was hacky, at best. Consequently, extensions have been moved into the main code base for now.
+
+  -  nvidia support: use the `--nvidia` flag to enable. You must have the `nvidia-smi` package installed, and gotop must be able to find the `nvidia-smi` executable, for this to work.
+  -  remote: allows gotop to pull sensor data from applications exporting Prometheus metrics, including remote gotop instances themselves.
+
+  ### Console Users
+
+  gotop requires a font that has braille and block character Unicode code points; some distributions do not provide this.  In the gotop repository is a `pcf` font that has these points, and setting this font may improve how gotop renders in your console.  To use this, run these commands:
+
+  ```shell
+  curl -O -L https://raw.githubusercontent.com/xxxserxxx/gotop/master/fonts/Lat15-VGA16-braille.psf
+  setfont Lat15-VGA16-braille.psf
+  ```
+
+  ### Platform-specific features
+
+  Sometimes libraries that gotop uses to introspect the hardware only support a subset of operating systems. Rather than cripple gotop to the LCD, I'm allowing features that may only work on some platforms. These will be listed here:
+
+  - nvidia -- only available on systems with an nvidia GPU
+  - SMART NVME hard drive temperatures -- Linux & Darwin
+
+  ### Building
+
+  This is the download & compile approach.
+
+  gotop requires Go 1.16 or later to build, as it relies on the embed feature released with 1.16; a library it uses, lingo, uses both embed and the `io/fs` package.  For a version of gotop that builds with earlier versions, check out one of the tags prior to v4.2.0.
+
+  ```shell
+  git clone https://github.com/xxxserxxx/gotop.git
+  cd gotop
+readmeUrl: https://raw.githubusercontent.com/xxxserxxx/gotop/HEAD/README.md

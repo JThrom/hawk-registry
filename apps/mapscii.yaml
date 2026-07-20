@@ -7,3 +7,34 @@ binaries:
   - mapscii
 homepage: https://github.com/rastapasta/mapscii
 repo: https://github.com/rastapasta/mapscii
+language: Go
+tags:
+  - braille
+  - ascii
+  - world
+  - renderer
+install:
+  npm: npm install -g mapscii
+packages:
+  npm: mapscii
+installNotes: |-
+  ## How to install it locally
+
+  ### With npm
+
+  If you haven't already got Node.js >= version 10, then [go get it](http://nodejs.org/).
+
+  ```
+  npm install -g mapscii
+  ```
+
+  If you're on OSX, or get an error about file permissions, you may need to do ```sudo npm install -g mapscii```
+
+  ### With snap
+
+  In any of the [supported Linux distros](https://snapcraft.io/docs/core/install):
+
+      sudo snap install mapscii
+      
+  (This snap is maintained by [@nathanhaines](https://github.com/nathanhaines/))
+readmeUrl: https://raw.githubusercontent.com/rastapasta/mapscii/HEAD/README.md

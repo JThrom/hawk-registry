@@ -7,3 +7,46 @@ binaries:
   - asak
 homepage: https://github.com/chaosprint/asak
 repo: https://github.com/chaosprint/asak
+language: Rust
+tags:
+  - music
+  - audio
+  - cross
+  - platform
+  - recording
+  - playback
+install:
+  cargo: cargo install asak
+  apt: apt install libasound2-dev
+packages:
+  cargo: asak
+  apt: libasound2-dev
+installNotes: |-
+  ## Install
+
+  You need a Rust toolchain with `cargo` installed.
+
+  Install from crates.io:
+
+  ```sh
+  cargo install asak
+  ```
+
+  Install from this repository:
+
+  ```sh
+  cargo install --path .
+  ```
+
+  On Linux, you will usually need audio development packages for `cpal`:
+
+  ```sh
+  sudo apt install libasound2-dev libjack-dev
+  ```
+
+  If you want JACK support explicitly:
+
+  ```sh
+  cargo install --path . --features jack
+  ```
+readmeUrl: https://raw.githubusercontent.com/chaosprint/asak/HEAD/README.md

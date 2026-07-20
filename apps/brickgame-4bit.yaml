@@ -7,3 +7,10 @@ binaries:
   - brickgame-4bit
 homepage: https://github.com/ilyakurdyukov/brickgame-4bit
 repo: https://github.com/ilyakurdyukov/brickgame-4bit
+tags:
+  - brick
+  - game
+  - emulator
+  - holtek
+  - chip
+readmeUrl: https://raw.githubusercontent.com/ilyakurdyukov/brickgame-4bit/HEAD/README.md

@@ -7,3 +7,91 @@ binaries:
   - oxker
 homepage: https://github.com/mrjackwills/oxker
 repo: https://github.com/mrjackwills/oxker
+language: Rust
+tags:
+  - docker
+  - containers
+  - control
+install:
+  cargo: cargo install oxker
+  brew: brew install oxker
+packages:
+  cargo: oxker
+  brew: oxker
+installNotes: |-
+  ## Download & install
+
+  ### Cargo
+  Published on <a href='https://www.crates.io/crates/oxker' target='_blank' rel='noopener noreferrer'>crates.io</a>, so if you have cargo installed, simply run
+
+
+  ```shell
+  cargo install oxker
+  ```
+
+  ### Docker
+
+  Published on <a href='https://ghcr.io/mrjackwills/oxker' target='_blank' rel='noopener noreferrer'>ghcr.io</a> and  <a href='https://hub.docker.com/r/mrjackwills/oxker' target='_blank' rel='noopener noreferrer'>Docker Hub</a>,
+  with images built for `linux/amd64`, `linux/arm64`, and `linux/arm/v6`
+
+
+  **via ghcr.io**
+
+  ```shell
+  docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock:ro --pull=always ghcr.io/mrjackwills/oxker
+  ```
+
+  **via Docker Hub**
+  ```shell
+  docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock:ro --pull=always mrjackwills/oxker
+  ```
+
+  ### Nix
+  Using nix flakes, oxker can be ran directly with
+
+  ```shell
+  nix run nixpkgs#oxker
+  ```
+
+  Without flakes, you can build a shell that contains oxker using
+
+  ```shell
+  nix-shell -p oxker
+  ```
+
+  ### AUR
+
+  oxker can be installed from the [AUR](https://aur.archlinux.org/packages/oxker) with using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers):
+
+  ```shell
+  paru -S oxker
+  ```
+
+  ### Homebrew
+
+  oxker can be installed on macOS using [Homebrew](https://formulae.brew.sh/formula/oxker):
+
+  ```shell
+  brew install oxker
+  ```
+
+  ### Pre-Built
+  See the <a href='https://github.com/mrjackwills/oxker/releases/latest' target='_blank' rel='noopener noreferrer'>pre-built binaries</a>
+
+  or, download & install (x86_64 one liner)
+
+  ```shell
+  wget https://www.github.com/mrjackwills/oxker/releases/latest/download/oxker_linux_x86_64.tar.gz &&
+  tar xzvf oxker_linux_x86_64.tar.gz oxker &&
+  install -Dm 755 oxker -t "${HOME}/.local/bin" &&
+  rm oxker_linux_x86_64.tar.gz oxker
+  ```
+
+  or, for automatic platform selection, download, and installation (to `$HOME/.local/bin`)
+
+  *One should always verify <a href='https://github.com/mrjackwills/oxker/blob/main/install.sh' target='_blank' rel='noopener noreferrer'>script content</a> before running in a shell*
+
+  ```shell
+  curl https://raw.githubusercontent.com/mrjackwills/oxker/main/install.sh | bash
+  ```
+readmeUrl: https://raw.githubusercontent.com/mrjackwills/oxker/HEAD/README.md

@@ -7,3 +7,33 @@ binaries:
   - tiki
 homepage: https://github.com/boolean-maybe/tiki
 repo: https://github.com/boolean-maybe/tiki
+language: Go
+tags:
+  - git
+  - vcs
+  - markdown
+  - versioned
+  - project
+  - issue
+  - manager
+install:
+  brew: brew install boolean-maybe/tap/tiki
+packages:
+  brew: tiki
+installNotes: |-
+  ## Installation
+
+  ### Mac OS and Linux
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/boolean-maybe/tiki/main/install.sh | bash
+  ```
+
+
+  ### Mac OS via brew
+  ```bash
+  brew install boolean-maybe/tap/tiki
+  ```
+
+  ### Windows
+  ```powershell
+readmeUrl: https://raw.githubusercontent.com/boolean-maybe/tiki/HEAD/README.md

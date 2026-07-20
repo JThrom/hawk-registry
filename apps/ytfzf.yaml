@@ -7,3 +7,67 @@ binaries:
   - ytfzf
 homepage: https://github.com/pystardust/ytfzf
 repo: https://github.com/pystardust/ytfzf
+tags:
+  - http
+  - api
+  - posix
+  - script
+  - helps
+  - find
+  - youtube
+  - videos
+  - without
+  - peertube
+  - opens
+  - downloads
+installNotes: |-
+  # Install
+
+  <a href="https://repology.org/metapackage/ytfzf">
+      <img src="https://repology.org/badge/vertical-allrepos/ytfzf.svg" alt="Repo status" align="right">
+  </a>
+
+  **if on `linux` and installed using make on version `2.0` or prior, run `sudo make uninstall-old` first**
+
+  1. Install the dependencies listed [above](#Dependencies)
+  2. Run the following commands
+
+  ```sh
+  git clone https://github.com/pystardust/ytfzf
+  cd ytfzf
+  sudo make install doc
+  ```
+
+  - If you wish to not install documentation (highly unrecommended) run `sudo make install` instead.
+
+  - If you wish to install addons, run `sudo make addons`
+
+    - `YTFZF_SYSTEM_ADDONS_DIR` will point to `/usr/local/share/ytfzf/addons` even if you set `PREFIX` to something else
+    - If you use a different prefix, it would be smart to export `YTFZF_SYSTEM_ADDONS_DIR` to `$PREFIX/share/ytfzf/addons` in a shell startup file.
+
+  - You may also install `ytfzf` through your package manager, as listed on the side.
+
+  ## Addons
+
+  Addons are extra features that will not be as supported as everything built into `ytfzf` itself.
+
+  Addons are located in `addons`, copy any addon to `~/.config/ytfzf/{addon-type}/{addon}`, and give it execute permissions.
+
+  You may also just copy the entire addon folder type, eg: `cp -r addons/thumbnail-viewers ~/.config/ytfzf/`
+
+  ### Usage
+
+  To use a scraper addon run `ytfzf -c <scraper> ...`
+
+  To use a thumbnail-viewer addon run `ytfzf -T <viewer> ...`
+
+  To use a interface addon run `ytfzf -i <interface> ...`
+
+  To use a url-handler addon run `ytfzf -u <handler> ...`
+
+  To use a sort-name addon run `ytfzf --sort-name=<sort-name> ...`
+
+  To use an extension addon run `ytfzf -e <extension> ...`
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/pystardust/ytfzf/HEAD/README.md

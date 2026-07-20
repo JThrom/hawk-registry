@@ -8,3 +8,13 @@ binaries:
   - pagerduty
 homepage: https://github.com/Mk555/pagerduty-tui
 repo: https://github.com/Mk555/pagerduty-tui
+language: Rust
+tags:
+  - minimalistic
+  - triggered
+  - incidents
+installNotes: |-
+  ## Installation
+
+  Download the last release on [Gihtub Releases](https://github.com/Mk555/pagerduty-tui/releases/latest)
+readmeUrl: https://raw.githubusercontent.com/Mk555/pagerduty-tui/HEAD/README.md

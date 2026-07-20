@@ -7,3 +7,22 @@ binaries:
   - lazynginx
 homepage: https://github.com/giacomomasseron/lazynginx
 repo: https://github.com/giacomomasseron/lazynginx
+language: Go
+tags:
+  - nginx
+install:
+  brew: brew install lazynginx
+  go: go install github.com/giacomomasseron/lazynginx@latest
+packages:
+  brew: lazynginx
+  go: lazynginx
+installNotes: |-
+  ## Installation
+
+  ### Binary Releases (Recommended)
+
+  For Windows, macOS (10.12+) or Linux, you can download a binary release from the [releases page](https://github.com/giacomomasseron/lazynginx/releases).
+
+  **Linux / macOS:**
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/giacomomasseron/lazynginx/HEAD/README.md

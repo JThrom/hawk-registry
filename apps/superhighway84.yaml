@@ -7,3 +7,83 @@ binaries:
   - superhighway84
 homepage: https://github.com/mrusme/superhighway84
 repo: https://github.com/mrusme/superhighway84
+language: Go
+tags:
+  - usenet
+  - inspired
+  - decentralized
+  - internet
+  - discussion
+  - system
+installNotes: |-
+  ## Installation
+
+  ### Prerequisites
+
+  Download the
+  [kubo 0.16 release](https://github.com/ipfs/kubo/releases/tag/v0.16.0) and
+  unpack it:
+
+  ```sh
+  $ tar -xzf ./kubo_*.tar.gz
+  ```
+
+  If you haven't used IPFS so far, initialize the IPFS repository using the
+  following command:
+
+  ```sh
+  $ ./kubo/ipfs init
+  ```
+
+  If you had used IPFS an already have an IPFS repository in place, either
+  (re)move it from `~/.ipfs` or make sure to `export IPFS_PATH` before running the
+  `ipfs init` command, e.g.:
+
+  ```sh
+  $ export IPFS_PATH=~/.ipfs-sh84
+  $ ./go-ipfs/ipfs init
+  ```
+
+  ### From Release
+
+  Download the
+  [latest release](https://github.com/mrusme/superhighway84/releases/latest) and
+  unpack it:
+
+  ```sh
+  $ tar -xzf ./superhighway84_*.tar.gz
+  $ ./superhighway84
+  ```
+
+  If you initialized the IPFS repo under in a custom location, you need to prefix
+  `IPFS_PATH`:
+
+  ```sh
+  $ IPFS_PATH=~/.ipfs-sh84 ./superhighway84
+  ```
+
+  The binary `superhighway84` can be moved wherever you please.
+
+  ### From Source
+
+  Clone this repository
+
+  - from [GitHub](https://github.com/mrusme/superhighway84)
+    ```sh
+    $ git clone git@github.com:mrusme/superhighway84.git
+    ```
+  - from
+    [Radicle](https://app.radicle.xyz/nodes/seed.xn--gckvb8fzb.com/rad:z4JkpNjyUemfCeU85iqssNEukoBn1)
+    ```sh
+    $ rad clone rad:z4JkpNjyUemfCeU85iqssNEukoBn1
+    ```
+
+  Then cd into the cloned directory and run:
+
+  ```sh
+  $ go build .
+  ```
+
+  The binary will be available at ./superhighway84 and can be moved wherever you
+  please.
+readmeUrl: https://raw.githubusercontent.com/mrusme/superhighway84/HEAD/README.md

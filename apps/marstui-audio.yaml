@@ -7,3 +7,27 @@ binaries:
   - marstui-audio
 homepage: https://github.com/schooldanlp6/marstui-rustio
 repo: https://github.com/schooldanlp6/marstui-rustio
+language: Rust
+tags:
+  - music
+  - audio
+  - nice
+  - similar
+  - pavucontrol
+  - benefit
+  - customizing
+  - everything
+installNotes: |-
+  ## building fails if not using these packages:
+  sudo apt install libdbus-1-dev pkg-config
+
+
+  ```
+  git clone https://github.com/schooldanlp6/marstui-rustio
+  cd marstui-rustio
+  cargo build --release
+  cd target/release
+  chmod +x marstui-audio
+  sudo cp marstui-audio /bin/marstui-audio
+  ```
+readmeUrl: https://raw.githubusercontent.com/schooldanlp6/marstui-rustio/HEAD/README.md

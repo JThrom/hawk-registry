@@ -8,3 +8,9 @@ binaries:
   - twitch
 homepage: https://github.com/Xithrius/twitch-tui
 repo: https://github.com/Xithrius/twitch-tui
+language: Rust
+tags:
+  - chat
+  - messaging
+  - twitch
+readmeUrl: https://raw.githubusercontent.com/Xithrius/twitch-tui/HEAD/README.md

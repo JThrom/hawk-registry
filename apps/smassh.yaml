@@ -7,3 +7,38 @@ binaries:
   - smassh
 homepage: https://github.com/kraanzu/smassh
 repo: https://github.com/kraanzu/smassh
+language: Go
+tags:
+  - typing
+  - test
+  - inspired
+  - monkeytype
+install:
+  pip: pip install smassh
+packages:
+  pip: smassh
+installNotes: |-
+  # Installation 🔨
+
+  ## Using Pip 🐍
+
+  > You can install the stable version of smassh by using pip or [pipx](https://github.com/pypa/pipx)
+
+  ```bash
+  pip install smassh
+  ```
+
+  ## Using AUR 📦
+
+  ```
+  yay -S smassh-bin
+  ```
+
+  ### Executable binary 🔌
+
+  You should be able to see binaries for `Linux`, `mac` and `windows` in the [releases section](https://github.com/kraanzu/smassh/releases)
+
+  > [!NOTE]
+  > This should automatically create an executable `smassh` that can be directly run from command line \
+  > If not, check if the local path is added to `$PATH`
+readmeUrl: https://raw.githubusercontent.com/kraanzu/smassh/HEAD/README.md

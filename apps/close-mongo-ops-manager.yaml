@@ -8,3 +8,11 @@ binaries:
   - closemongoopsmanager
 homepage: https://github.com/closeio/close-mongo-ops-manager
 repo: https://github.com/closeio/close-mongo-ops-manager
+language: Python
+tags:
+  - monitor
+  - system
+  - kill
+  - mongodb
+  - operations
+readmeUrl: https://raw.githubusercontent.com/closeio/close-mongo-ops-manager/HEAD/README.md

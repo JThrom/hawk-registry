@@ -7,3 +7,9 @@ binaries:
   - logshark
 homepage: https://github.com/ugosan/logshark
 repo: https://github.com/ugosan/logshark
+language: Ruby
+tags:
+  - debugger
+  - json
+  - logs
+readmeUrl: https://raw.githubusercontent.com/ugosan/logshark/HEAD/README.md

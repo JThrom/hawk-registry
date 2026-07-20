@@ -7,3 +7,15 @@ binaries:
   - rfc_reader
 homepage: https://github.com/ozan2003/rfc_reader
 repo: https://github.com/ozan2003/rfc_reader
+language: Rust
+tags:
+  - read
+  - rfcs
+  - request
+  - comments
+  - allowing
+  - fetch
+  - cache
+  - browse
+  - documents
+readmeUrl: https://raw.githubusercontent.com/ozan2003/rfc_reader/HEAD/README.md

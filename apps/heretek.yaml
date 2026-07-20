@@ -7,3 +7,21 @@ binaries:
   - heretek
 homepage: https://github.com/wcampbell0x2a/heretek
 repo: https://github.com/wcampbell0x2a/heretek
+language: Rust
+tags:
+  - dashboard
+install:
+  cargo: cargo install heretek
+packages:
+  cargo: heretek
+installNotes: |-
+  ## Installation
+  Either build from published source in crates.io.
+  ```
+  $ cargo install heretek --locked
+  ```
+
+  Or download from [github releases](https://github.com/wcampbell0x2a/heretek/releases).
+
+  Arch Linux users can also install from the [official repositories](https://archlinux.org/packages/extra/x86_64/heretek/) via running `pacman -S heretek`
+readmeUrl: https://raw.githubusercontent.com/wcampbell0x2a/heretek/HEAD/README.md

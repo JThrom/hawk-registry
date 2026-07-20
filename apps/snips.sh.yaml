@@ -7,3 +7,12 @@ binaries:
   - snips.sh
 homepage: https://github.com/robherley/snips.sh
 repo: https://github.com/robherley/snips.sh
+language: Go
+tags:
+  - passwordless
+  - anonymous
+  - powered
+  - pastebin
+  - human
+  - friendly
+readmeUrl: https://raw.githubusercontent.com/robherley/snips.sh/HEAD/README.md

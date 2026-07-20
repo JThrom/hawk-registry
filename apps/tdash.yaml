@@ -7,3 +7,38 @@ binaries:
   - tdash
 homepage: https://github.com/jessfraz/tdash
 repo: https://github.com/jessfraz/tdash
+language: Go
+tags:
+  - dashboard
+  - stats
+  - google
+  - analytics
+  - github
+  - travis
+  - jenkins
+  - very
+  - much
+  - built
+  - specific
+installNotes: |-
+  ## Installation
+
+  #### Binaries
+
+  For installation instructions from binaries please visit the [Releases Page](https://github.com/jessfraz/tdash/releases).
+
+  #### Via Go
+
+  ```console
+  $ go get github.com/jessfraz/tdash
+  ```
+
+  #### Running with Docker
+
+  ```console
+  $ docker run --rm -it \
+      --name tdash \
+      --volume /home/user/.tdash:/root/.tdash:ro \ # for the  Google Analytics key file
+      r.j3ss.co/tdash
+  ```
+readmeUrl: https://raw.githubusercontent.com/jessfraz/tdash/HEAD/README.md

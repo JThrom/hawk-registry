@@ -7,3 +7,32 @@ binaries:
   - omaro
 homepage: https://github.com/Rolv-Apneseth/omaro
 repo: https://github.com/Rolv-Apneseth/omaro
+language: Rust
+tags:
+  - browse
+  - posts
+  - comments
+  - lobste
+install:
+  cargo: cargo install omaro
+packages:
+  cargo: omaro
+installNotes: |-
+  ## Installation
+
+  ```bash
+  cargo install omaro --locked
+  ```
+
+  Or, directly from source:
+
+  ```bash
+  cargo install --git https://github.com/rolv-apneseth/omaro --locked
+  ```
+
+  ### AUR
+
+  ```bash
+  paru -S omaro
+  ```
+readmeUrl: https://raw.githubusercontent.com/Rolv-Apneseth/omaro/HEAD/README.md

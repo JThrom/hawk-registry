@@ -7,3 +7,65 @@ binaries:
   - psnet
 homepage: https://github.com/marlocarlo/psnet
 repo: https://github.com/marlocarlo/psnet
+language: Rust
+tags:
+  - monitor
+  - system
+  - network
+  - real
+  - time
+  - windows
+  - speed
+  - graphs
+  - resolution
+  - packet
+  - inspection
+install:
+  cargo: cargo install psnet
+packages:
+  cargo: psnet
+installNotes: |-
+  ## Installation
+
+  ### Via Cargo (crates.io)
+
+  ```powershell
+  cargo install psnet
+  psnet
+  ```
+
+  ### Via Chocolatey
+
+  ```powershell
+  choco install psnet
+  psnet
+  ```
+
+  ### Via WinGet
+
+  ```powershell
+  winget install marlocarlo.psnet
+  psnet
+  ```
+
+  ### Download Binary
+
+  Grab the latest `psnet.exe` from [GitHub Releases](https://github.com/marlocarlo/psnet/releases/latest) — no installation needed. Place it in your PATH and run.
+
+  ### From Source
+
+  ```powershell
+  git clone https://github.com/marlocarlo/psnet.git
+  cd psnet
+  cargo build --release
+  .\target\release\psnet.exe
+  ```
+
+  ### Requirements
+
+  - **Windows 10/11** (uses Win32 APIs — `iphlpapi.dll`, `dnsapi.dll`, `ws2_32.dll`, `kernel32.dll`)
+  - **Rust 1.70+** for building from source
+  - **Administrator privileges** — optional, enables Wire packet preview and raw socket capture
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/marlocarlo/psnet/HEAD/README.md

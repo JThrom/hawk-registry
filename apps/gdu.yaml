@@ -7,3 +7,25 @@ binaries:
   - gdu
 homepage: https://github.com/dundee/gdu
 repo: https://github.com/dundee/gdu
+language: Rust
+tags:
+  - disk
+  - usage
+  - analyzer
+installNotes: |-
+  ## Installation
+
+  Head for the [releases page](https://github.com/dundee/gdu/releases) and download the binary for your system.
+
+  Using curl:
+
+      curl -L https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz | tar xz
+      chmod +x gdu_linux_amd64
+      mv gdu_linux_amd64 /usr/bin/gdu
+
+  See the [installation page](./INSTALL.md) for other ways how to install Gdu to your system.
+
+  Or you can use Gdu directly via Docker:
+
+      docker run --rm --init --interactive --tty --privileged --volume /:/mnt/root ghcr.io/dundee/gdu /mnt/root
+readmeUrl: https://raw.githubusercontent.com/dundee/gdu/HEAD/README.md

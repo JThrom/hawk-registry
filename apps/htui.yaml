@@ -7,3 +7,21 @@ binaries:
   - htui
 homepage: https://github.com/PierreKieffer/htui
 repo: https://github.com/PierreKieffer/htui
+language: Go
+tags:
+  - heroku
+installNotes: |-
+  ## Install 
+
+  **Note**: Prebuilt binaries for 64-bit operating systems, doesn't require Go.
+
+  ### 64-bit
+  #### Linux 
+  ```bash 
+  curl -sSL https://raw.githubusercontent.com/PierreKieffer/htui/master/install/install_htui64_linux.sh | bash
+  ```
+  #### Mac OS 
+  ```bash 
+  curl -sSL https://raw.githubusercontent.com/PierreKieffer/htui/master/install/install_htui64_osx.sh | bash
+  ```
+readmeUrl: https://raw.githubusercontent.com/PierreKieffer/htui/HEAD/README.md

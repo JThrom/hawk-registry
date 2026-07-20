@@ -7,3 +7,30 @@ binaries:
   - soft-serve
 homepage: https://github.com/charmbracelet/soft-serve
 repo: https://github.com/charmbracelet/soft-serve
+language: Go
+tags:
+  - git
+  - vcs
+  - tasty
+  - self
+  - hostable
+  - server
+  - lineicecream
+install:
+  brew: brew install charmbracelet/tap/soft-serve
+  pacman: pacman -S soft-serve
+  apt: apt install soft-serve
+  go: go install github.com/charmbracelet/soft-serve/cmd/soft@latest
+packages:
+  brew: soft-serve
+  pacman: soft-serve
+  apt: soft-serve
+  go: soft
+installNotes: |-
+  ## Installation
+
+  Soft Serve is a single binary called `soft`. You can get it from a package
+  manager:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/charmbracelet/soft-serve/HEAD/README.md

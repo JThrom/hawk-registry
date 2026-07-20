@@ -7,3 +7,37 @@ binaries:
   - planor
 homepage: https://github.com/mrusme/planor
 repo: https://github.com/mrusme/planor
+language: Go
+tags:
+  - aws
+  - cloud
+  - aviator
+  - dashboard
+  - vultr
+  - heroku
+installNotes: |-
+  ## Installation
+
+  Either download a build from the releases page or clone this repository and run:
+
+  ```sh
+  go build
+  ```
+
+  or
+
+  ```sh
+  go install
+  ```
+
+  ### OpenBSD
+
+  Planor is available through the `-current` and `-stable` ports on OpenBSD >=
+  7.2, as well as via `pkg_add planor` on `-current` and `-stable` > 7.2. 
+  The package is being maintained by [gonzalo-](https://github.com/gonzalo-)
+  (see [this issue](https://github.com/mrusme/planor/issues/2)).
+
+  For more info on using the anoncvs ports checkout, see
+  [here](https://www.openbsd.org/anoncvs.html#updating) and
+  [here](https://www.openbsd.org/faq/ports/guide.html).
+readmeUrl: https://raw.githubusercontent.com/mrusme/planor/HEAD/README.md

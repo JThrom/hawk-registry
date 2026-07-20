@@ -7,3 +7,15 @@ binaries:
   - awkaster
 homepage: https://github.com/TheMozg/awk-raycaster
 repo: https://github.com/TheMozg/awk-raycaster
+tags:
+  - pseudo
+  - shooter
+  - completely
+  - gawk
+  - raycasting
+  - technique
+install:
+  brew: brew install gawk
+packages:
+  brew: gawk
+readmeUrl: https://raw.githubusercontent.com/TheMozg/awk-raycaster/HEAD/README.md

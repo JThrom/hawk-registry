@@ -8,3 +8,53 @@ binaries:
   - jellyfin
 homepage: https://github.com/dhonus/jellyfin-tui
 repo: https://github.com/dhonus/jellyfin-tui
+language: Rust
+tags:
+  - jellyfin
+install:
+  pacman: pacman -S mpv
+  apt: apt install mpv
+  cargo: cargo install --path
+  brew: brew install mpv
+packages:
+  pacman: mpv
+  apt: mpv
+  cargo: --path
+  brew: mpv
+installNotes: |-
+  ## Installation
+
+  ### Pre-built binaries
+
+  Pre-built binaries for Linux and macOS are available on
+  the [releases page](https://github.com/dhonus/jellyfin-tui/releases).
+  Download the binary for your platform, make it executable, and place it somewhere on your `PATH`.
+
+  ### Arch Linux
+
+  [jellyfin-tui](https://aur.archlinux.org/packages/jellyfin-tui/) is available as a package in
+  the [AUR](https://aur.archlinux.org). You can install it with your
+  preferred [AUR helper](https://wiki.archlinux.org/title/AUR_helpers). Example:
+
+  ```bash
+  paru -S jellyfin-tui
+  ```
+
+  ### Nix
+
+  [jellyfin-tui](https://search.nixos.org/packages?channel=unstable&show=jellyfin-tui&from=0&size=50&sort=relevance&type=packages&query=jellyfin-tui)
+  is available as a package in [Nixpkgs](https://search.nixos.org/packages).
+
+  ### Alpine Linux
+
+  [jellyfin-tui](https://pkgs.alpinelinux.org/package/edge/community/x86_64/jellyfin-tui) is available as a package in the
+  Alpine Linux community repository.
+
+  ### Other Linux
+
+  Jellyfin-tui depends on **libmpv2** (audio playback) and **sqlite3** (offline caching), both of which should be
+  available in your distribution's package manager. On Debian/Ubuntu based systems, you may need to install `libmpv-dev`
+  and `libssl-dev` as well for building.
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/dhonus/jellyfin-tui/HEAD/README.md

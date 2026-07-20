@@ -7,3 +7,29 @@ binaries:
   - rxpipes
 homepage: https://github.com/inunix3/rxpipes
 repo: https://github.com/inunix3/rxpipes
+language: Rust
+tags:
+  - recreation
+  - ancient
+  - pipes
+  - screensaver
+  - terminals
+install:
+  cargo: cargo install rxpipes
+packages:
+  cargo: rxpipes
+installNotes: |-
+  ## Installation
+  You'll need the Rust toolchain ([rustup](https://rustup.rs/) or from system package repo) and make
+  sure it's up to date.
+
+  When the toolchain will be prepared, type `cargo install rxpipes`. If you want to disable the
+  alternate screen feature, add `--no-default-features` (currently, cargo does not support disabling
+  of individual features).
+
+  If you have installed successfully rxpipes, you can now run the it simply by typing `rxpipes`. If
+  the shell says that the command does not exists, make sure that `$HOME/.cargo/bin` (or whatever the
+  default cargo dir will be) is in the `PATH` environment variable.
+
+  To see all available options, pass `-h` or `--help`.
+readmeUrl: https://raw.githubusercontent.com/inunix3/rxpipes/HEAD/README.md

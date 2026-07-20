@@ -7,3 +7,42 @@ binaries:
   - kagan
 homepage: https://github.com/kagan-sh/kagan
 repo: https://github.com/kagan-sh/kagan
+language: JavaScript
+tags:
+  - powered
+  - kanban
+  - autonomous
+  - development
+  - workflows
+installNotes: |-
+  ## Install
+
+  You need [OpenCode](https://opencode.ai/) **1.17.13** or newer (see `engines.opencode` in
+  `package.json`).
+
+  Install globally so Kagan is available in every project:
+
+  ```bash
+  opencode plugin -g @kagan-sh/kagan
+  ```
+
+  Or add a local clone to both OpenCode config files:
+
+  ```json
+  {
+    "plugin": ["/path/to/kagan"]
+  }
+  ```
+
+  Open the board with `/kagan` from the command palette, the `kagan` palette command, or `<leader>k` (the leader key defaults to `ctrl+x`).
+
+  From any regular OpenCode session, run `/kagan-task` to create board tasks conversationally — useful when planning several tickets at once without opening the board create dialog for each one.
+
+  For global npm installs, Kagan checks npm for newer stable releases and shows an available version in
+  the board footer. Press `u`, run `/kagan-update`, or use the command palette to review and confirm the
+  update; Kagan then installs the exact release and asks you to restart OpenCode. Local, file, and
+  development installs are never updated automatically. See
+  [Updating](https://docs.kagan.sh/quickstart/#updating).
+
+  Pass options by using the array-of-array form, or open `/kagan-settings` from the project — see the [configuration reference](https://docs.kagan.sh/reference/configuration/).
+readmeUrl: https://raw.githubusercontent.com/kagan-sh/kagan/HEAD/README.md

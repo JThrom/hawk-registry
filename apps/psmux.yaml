@@ -7,3 +7,86 @@ binaries:
   - psmux
 homepage: https://github.com/marlocarlo/psmux
 repo: https://github.com/marlocarlo/psmux
+language: Rust
+tags:
+  - tmux
+  - compatible
+  - multiplexer
+  - windows
+  - built
+  - rust
+  - ratatui
+install:
+  cargo: cargo install psmux
+packages:
+  cargo: psmux
+installNotes: |-
+  ## Installation
+
+  ### Using WinGet
+
+  ```powershell
+  winget install psmux
+  ```
+
+  ### Using Cargo
+
+  ```powershell
+  cargo install psmux
+  ```
+
+  This installs `psmux`, `pmux`, and `tmux` binaries to your Cargo bin directory.
+
+  ### Using Scoop
+
+  ```powershell
+  scoop bucket add psmux https://github.com/psmux/scoop-psmux
+  scoop install psmux
+  ```
+
+  ### Using Chocolatey
+
+  ```powershell
+  choco install psmux
+  ```
+
+  ### From GitHub Releases
+
+  Download the latest `.zip` from [GitHub Releases](https://github.com/psmux/psmux/releases) and add to your PATH.
+
+  ### From Source
+
+  ```powershell
+  git clone https://github.com/psmux/psmux.git
+  cd psmux
+  cargo build --release
+  ```
+
+  Built binaries:
+
+  ```text
+  target\release\psmux.exe
+  target\release\pmux.exe
+  target\release\tmux.exe
+  ```
+
+  ### Docker (build environment)
+
+  A ready-made Windows container with Rust + MSVC + SSH for building psmux:
+
+  ```powershell
+  cd docker
+  docker build -t psmux-dev .
+  docker run -d --name psmux-dev -p 127.0.0.1:2222:22 -e ADMIN_PASSWORD=YourPass123! psmux-dev
+  ssh ContainerAdministrator@localhost -p 2222
+  ```
+
+  See [docker/README.md](docker/README.md) for full details.
+
+  ### Requirements
+
+  - Windows 10 or Windows 11
+  - **PowerShell 7+** (recommended) or cmd.exe
+    - Download PowerShell: `winget install --id Microsoft.PowerShell`
+    - Or visit: https://aka.ms/powershell
+readmeUrl: https://raw.githubusercontent.com/marlocarlo/psmux/HEAD/README.md

@@ -7,3 +7,40 @@ binaries:
   - termdbms
 homepage: https://github.com/mathaou/termdbms
 repo: https://github.com/mathaou/termdbms
+language: Go
+tags:
+  - database
+  - sql
+  - viewing
+  - editing
+  - files
+install:
+  go: go install github.com/mathaou/termdbms@latest
+  pacman: pacman -S termdbms-git
+packages:
+  go: termdbms
+  pacman: termdbms-git
+installNotes: |-
+  #### Installation Instructions
+
+  ###### Go Install
+
+  ```go
+  go install github.com/mathaou/termdbms@latest
+  ```
+
+  ###### Arch Linux
+
+  ```bash
+  // pacman
+  sudo pacman -S termdbms-git
+  // yay
+  yay -S termdbms-git
+  ```
+
+  ---
+
+  ###### Database Support
+      SQLite
+      CSV* (see note below)
+readmeUrl: https://raw.githubusercontent.com/mathaou/termdbms/HEAD/README.md

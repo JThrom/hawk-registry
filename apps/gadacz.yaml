@@ -7,3 +7,26 @@ binaries:
   - gadacz
 homepage: https://github.com/rareitems/gadacz
 repo: https://github.com/rareitems/gadacz
+language: Rust
+tags:
+  - music
+  - audio
+  - audiobook
+  - player
+install:
+  pacman: pacman -S gstreamer
+  cargo: cargo install --path
+packages:
+  pacman: gstreamer
+  cargo: --path
+installNotes: |-
+  ## Installation
+
+  Currently there are no provided binaries. Please install from source.
+
+  ```
+  git clone https://github.com/rareitems/gadacz
+  cd gadacz
+  cargo install --path .
+  ```
+readmeUrl: https://raw.githubusercontent.com/rareitems/gadacz/HEAD/README.md

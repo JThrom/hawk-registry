@@ -7,3 +7,37 @@ binaries:
   - bookokrat
 homepage: https://github.com/bugzmanov/bookokrat
 repo: https://github.com/bugzmanov/bookokrat
+language: Rust
+tags:
+  - full
+  - featured
+  - epub
+  - books
+  - reader
+  - keybindings
+install:
+  brew: brew install bookokrat
+  apt: apt install build-essential
+  dnf: dnf install gcc
+  cargo: cargo install bookokrat
+packages:
+  brew: bookokrat
+  apt: build-essential
+  dnf: gcc
+  cargo: bookokrat
+installNotes: |-
+  ## Install
+
+  ### Homebrew (macOS)
+
+  ```bash
+  brew install bookokrat
+  ```
+
+  ### Arch Linux (AUR)
+
+  Install from the [AUR](https://aur.archlinux.org/packages/bookokrat-bin):
+
+  ```bash
+  yay -S bookokrat-bin
+readmeUrl: https://raw.githubusercontent.com/bugzmanov/bookokrat/HEAD/README.md

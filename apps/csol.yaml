@@ -7,3 +7,14 @@ binaries:
   - csol
 homepage: https://github.com/nielssp/csol
 repo: https://github.com/nielssp/csol
+tags:
+  - collection
+  - solitaire
+  - patience
+  - games
+  - such
+  - klondike
+  - freecell
+  - spider
+  - yukon
+readmeUrl: https://raw.githubusercontent.com/nielssp/csol/HEAD/README.md

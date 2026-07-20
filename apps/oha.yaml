@@ -7,3 +7,93 @@ binaries:
   - oha
 homepage: https://github.com/hatoo/oha
 repo: https://github.com/hatoo/oha
+language: Rust
+tags:
+  - http
+  - api
+  - load
+  - generator
+installNotes: |-
+  # Installation
+
+  This program is built on stable Rust, with both `make` and `cmake` prerequisites to install via cargo.
+
+      cargo install oha
+
+  You can optionally build oha against [native-tls](https://github.com/sfackler/rust-native-tls) instead of [rustls](https://github.com/rustls/rustls).
+
+      cargo install --no-default-features --features native-tls oha
+
+  You can enable VSOCK support by enabling `vsock` feature.
+
+      cargo install --features vsock oha
+
+  You can enable experimental HTTP3 support by enabling the `http3` feature. This uses the [H3](https://github.com/hyperium/h3) library by the developers of Hyper.
+  It will remain experimental as long as H3 is experimental. It currently depends on using `rustls` for TLS.
+
+  ## Download pre-built binary
+
+  You can download pre-built binary from [Release page](https://github.com/hatoo/oha/releases) for each version and from [Publish workflow](https://github.com/hatoo/oha/actions/workflows/release.yml) and [Publish PGO workflow](https://github.com/hatoo/oha/actions/workflows/release-pgo.yml) for each commit.
+
+  ## On Arch Linux
+
+      pacman -S oha
+
+  ## On macOS (Homebrew)
+
+      brew install oha
+
+  ## On Windows (winget)
+
+      winget install hatoo.oha
+
+  ## On Debian ([Azlux's repository](http://packages.azlux.fr/))
+
+      echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian/ stable main" | sudo tee /etc/apt/sources.list.d/azlux.list
+      sudo wget -O /usr/share/keyrings/azlux-archive-keyring.gpg https://azlux.fr/repo.gpg
+      apt update
+      apt install oha
+
+  ## X-CMD (Linux, macOS, Windows WSL/GitBash)
+
+  You can install with [x-cmd](https://www.x-cmd.com).
+
+  ```sh
+  x env use oha
+  ```
+
+  ## Containerized
+
+  ### Official Docker image
+
+  [ghcr.io/hatoo/oha](https://github.com/hatoo/oha/pkgs/container/oha)
+
+  ### Build image locally
+
+  You can also build and create a container image including oha
+
+  ```sh
+  docker build -t hatoo/oha:latest .
+  ```
+
+  Then you can use oha directly through the container
+
+  ```sh
+  docker run --rm -it --network=host hatoo/oha:latest https://example.com:3000
+  ```
+
+  ## Profile-Guided Optimization (PGO)
+
+  You can build `oha` with PGO by using the following commands:
+
+  ```sh
+  bun run pgo.js
+  ```
+
+  And the binary will be available at `target/[target-triple]/pgo/oha`.
+
+  **Note**: Please keep in mind that in order to run the aforementioned command,
+  you need to have installed `cargo-pgo` cargo package.
+
+  You can install it via `cargo install cargo-pgo`.
+readmeUrl: https://raw.githubusercontent.com/hatoo/oha/HEAD/README.md

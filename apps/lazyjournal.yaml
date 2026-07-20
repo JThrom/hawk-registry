@@ -7,3 +7,108 @@ binaries:
   - lazyjournal
 homepage: https://github.com/Lifailon/lazyjournal
 repo: https://github.com/Lifailon/lazyjournal
+language: Go
+tags:
+  - docker
+  - containers
+  - journalctl
+  - file
+  - system
+  - logs
+  - well
+  - podman
+  - quick
+  - viewing
+  - filtering
+install:
+  apt: apt install -y
+  brew: brew install lazyjournal
+  go: go install github.com/Lifailon/lazyjournal@latest
+packages:
+  apt: -y
+  brew: lazyjournal
+  go: lazyjournal
+installNotes: |-
+  ## Install
+
+  Binaries are available for download on the GitHub [releases](https://github.com/Lifailon/lazyjournal/releases) page.
+
+  ### Unix-based
+
+  Run the command in the console to quickly install or update the stable version for Linux, macOS or the BSD-based system:
+
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/Lifailon/lazyjournal/main/scripts/install.sh | bash
+  ```
+
+  This command will run a script that will download the latest binary (auto-detect OS and arch) from the GitHub repository to your home directory along with other executables (default path is `~/.local/bin/lazyjournal`) and configurations (`~/.config/lazyjournal/config.yml`) for the current user, and also grant execute permission.
+
+  ### apt (Ubuntu / Debian)
+
+  To install and remove packages on an Ubuntu system, you can use the `apt` package manager from the [PPA](https://launchpad.net/~lifailon/+archive/ubuntu/lazyjournal) repository:
+
+  ```bash
+  sudo add-apt-repository -y ppa:lifailon/lazyjournal
+  sudo apt update
+  sudo apt install -y lazyjournal
+  ```
+
+  Or download the `deb` package from the GitHub releases page for installation on any Debian-based system.
+
+  ```bash
+  curl -sSL https://github.com/Lifailon/lazyjournal/releases/download/0.8.6/lazyjournal-0.8.6-$(dpkg --print-architecture).deb -o /tmp/lazyjournal.deb
+  sudo apt install -y /tmp/lazyjournal.deb && rm /tmp/lazyjournal.deb
+  ```
+
+  ### Homebrew (macOS / Linux)
+
+  Use the following command to install `lazyjournal` using [Homebrew](https://formulae.brew.sh/formula/lazyjournal):
+
+  ```bash
+  brew install lazyjournal
+  ```
+
+  ### Conda / Mamba / Pixi (Linux / macOS / Windows)
+
+  If you use package managers like conda or mamba, you can install `lazyjournal` from [conda-forge](https://anaconda.org/conda-forge/lazyjournal):
+
+  ```bash
+  conda install -c conda-forge lazyjournal
+  mamba install -c conda-forge lazyjournal
+  ```
+
+  You can install `lazyjournal` user-globally using [pixi](https://prefix.dev):
+
+  ```bash
+  pixi global install lazyjournal
+  ```
+
+  ### Arch Linux
+
+  If you are an Arch Linux user, you can also install from the [AUR](https://aur.archlinux.org/packages/lazyjournal):
+
+  ```bash
+  paru -S lazyjournal
+  ```
+
+  ### Docker (Debian-based)
+
+  Download the [docker-compose](/docker/debian/docker-compose.yml) file and run the container using the image from [Docker Hub](https://hub.docker.com/r/lifailon/lazyjournal):
+
+  ```bash
+  mkdir lazyjournal && cd lazyjournal
+  curl -sSL https://raw.githubusercontent.com/Lifailon/lazyjournal/refs/heads/main/docker/debian/docker-compose.yml -o docker-compose.yml
+  docker compose up -d
+  docker attach lazyjournal
+  ```
+
+  The image comes pre-installed with the packages required for the application to run. Read-only access rights are pre-configured in the compose file to support all log sources from the host system.
+
+  To access Kubernetes logs, you need to forward the configuration to the container. If you're using a local cluster (e.g. k3s), change the cluster server address in the configuration to the host address on the local network.
+
+  ### Web mode
+
+  The container comes pre-configured with a [ttyd](https://github.com/tsl0922/ttyd). To manage the interface via a web browser, edit the following variables:
+
+  ```env
+readmeUrl: https://raw.githubusercontent.com/Lifailon/lazyjournal/HEAD/README.md

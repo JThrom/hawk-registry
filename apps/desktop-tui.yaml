@@ -8,3 +8,20 @@ binaries:
   - desktop
 homepage: https://github.com/Julien-cpsn/desktop-tui
 repo: https://github.com/Julien-cpsn/desktop-tui
+language: Rust
+tags:
+  - desktop
+  - environment
+  - without
+  - graphics
+install:
+  cargo: cargo install desktop-tui
+packages:
+  cargo: desktop-tui
+installNotes: |-
+  ### Install
+
+  ```shell
+  cargo install desktop-tui
+  ```
+readmeUrl: https://raw.githubusercontent.com/Julien-cpsn/desktop-tui/HEAD/README.md

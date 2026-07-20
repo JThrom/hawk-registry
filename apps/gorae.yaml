@@ -7,3 +7,36 @@ binaries:
   - gorae
 homepage: https://github.com/Han8931/gorae
 repo: https://github.com/Han8931/gorae
+language: Go
+tags:
+  - librarian
+  - pdfs
+  - epubs
+  - style
+  - navigation
+install:
+  brew: brew install golang
+  apt: apt install golang-go
+  pacman: pacman -S go
+packages:
+  brew: golang
+  apt: golang-go
+  pacman: go
+installNotes: |-
+  ## Install
+
+  ### Option A — Pre-built binary (recommended)
+
+  Covered in [Quickstart](#quickstart) above.
+
+  <details>
+  <summary><b>Option B — Build from source</b></summary>
+
+  #### Requirements
+
+  - **Go 1.21+**
+  - **Poppler CLI tools** (`pdftotext`, `pdfinfo`, `pdftocairo`)
+  - **Optional fallback preview:** `chafa` for non-Kitty / non-iTerm2 terminals
+
+  ```sh
+readmeUrl: https://raw.githubusercontent.com/Han8931/gorae/HEAD/README.md

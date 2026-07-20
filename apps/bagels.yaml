@@ -7,3 +7,29 @@ binaries:
   - bagels
 homepage: https://github.com/EnhancedJax/Bagels
 repo: https://github.com/EnhancedJax/Bagels
+language: Rust
+tags:
+  - expense
+  - tracker
+install:
+  brew: brew install bagels
+  pipx: pipx install bagels
+packages:
+  brew: bagels
+  pipx: bagels
+installNotes: |-
+  ## 📦 Installation
+
+  <details open>
+      <summary><b>Recommended: By UV</b></summary>
+
+  Bagels can be installed via uv on MacOS, Linux, and Windows.
+
+  `uv` is a single Rust binary that you can use to install Python apps. It's significantly faster than alternative tools, and will get you up and running with Bagels in seconds.
+
+  You don't even need to worry about installing Python yourself - uv will manage everything for you.
+
+  #### Unix / MacOS:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/EnhancedJax/Bagels/HEAD/README.md

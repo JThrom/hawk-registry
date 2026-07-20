@@ -7,3 +7,26 @@ binaries:
   - tui-slides
 homepage: https://github.com/Chleba/tui-slides
 repo: https://github.com/Chleba/tui-slides
+language: Rust
+tags:
+  - presentation
+  - capable
+  - rendering
+  - images
+  - many
+  - other
+  - widgets
+install:
+  cargo: cargo install tui-slides
+packages:
+  cargo: tui-slides
+installNotes: |-
+  ## Install via cargo
+  ```
+  cargo install tui-slides
+  ```
+  ### AUR
+  ```
+  paru -S tui-slides
+  ```
+readmeUrl: https://raw.githubusercontent.com/Chleba/tui-slides/HEAD/README.md

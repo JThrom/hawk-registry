@@ -7,3 +7,13 @@ binaries:
   - devzat
 homepage: https://github.com/quackduck/devzat
 repo: https://github.com/quackduck/devzat
+language: Go
+tags:
+  - chat
+  - messaging
+  - over
+  - golang
+  - self
+  - hosting
+  - ability
+readmeUrl: https://raw.githubusercontent.com/quackduck/devzat/HEAD/README.md

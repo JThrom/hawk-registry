@@ -7,3 +7,44 @@ binaries:
   - ktop
 homepage: https://github.com/vladimirvivien/ktop
 repo: https://github.com/vladimirvivien/ktop
+language: Go
+tags:
+  - kubernetes
+  - k8s
+  - like
+  - clusters
+install:
+  brew: brew install ktop
+  go: go install github.com/vladimirvivien/ktop@latest
+packages:
+  brew: ktop
+  go: ktop
+installNotes: |-
+  ## Installation
+
+  ### kubectl plugin
+
+  ```bash
+  kubectl krew install ktop
+  kubectl ktop
+  ```
+
+  Requires [krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/) plugin manager.
+
+  ### Homebrew
+
+  ```bash
+  brew tap vladimirvivien/oss-tools
+  brew install ktop
+  ```
+
+  ### Go install
+
+  ```bash
+  go install github.com/vladimirvivien/ktop@latest
+  ```
+
+  ### Binary download
+
+  Download from [GitHub Releases](https://github.com/vladimirvivien/ktop/releases/latest).
+readmeUrl: https://raw.githubusercontent.com/vladimirvivien/ktop/HEAD/README.md

@@ -7,3 +7,27 @@ binaries:
   - rtorrent
 homepage: https://github.com/rakshasa/rtorrent
 repo: https://github.com/rakshasa/rtorrent
+tags:
+  - text
+  - bittorrent
+installNotes: |-
+  ## Install build dependencies
+
+  Install [libtorrent](https://github.com/rakshasa/libtorrent) with the same version rTorrent.
+
+  Generate configure scripts:
+
+  ```
+  autoreconf -ivf
+  ```
+
+  Optionally, generate man pages:
+
+  ```
+  docbook2man rtorrent.1.xml
+  ```
+
+  Man pages output to "doc/rtorrent.1".
+
+  RTorrent follows the development of [libtorrent](https://github.com/rakshasa/libtorrent) closely, and thus the versions must be in sync.
+readmeUrl: https://raw.githubusercontent.com/rakshasa/rtorrent/HEAD/README.md

@@ -7,3 +7,62 @@ binaries:
   - rustnet
 homepage: https://github.com/domcyrus/rustnet
 repo: https://github.com/domcyrus/rustnet
+language: Rust
+tags:
+  - monitor
+  - system
+  - network
+  - cross
+  - platform
+  - monitoring
+  - deep
+  - packet
+  - inspection
+install:
+  brew: brew install rustnet
+  apt: apt install rustnet
+  dnf: dnf install rustnet
+  pacman: pacman -S rustnet
+  cargo: cargo install rustnet-monitor
+packages:
+  brew: rustnet
+  apt: rustnet
+  dnf: rustnet
+  pacman: rustnet
+  cargo: rustnet-monitor
+installNotes: |-
+  ### Installation
+
+  **Homebrew (macOS / Linux):**
+  ```bash
+  brew install rustnet
+  ```
+
+  **Ubuntu (25.10+):**
+  ```bash
+  sudo add-apt-repository ppa:domcyrus/rustnet
+  sudo apt update && sudo apt install rustnet
+  ```
+
+  **Fedora (42+):**
+  ```bash
+  sudo dnf copr enable domcyrus/rustnet
+  sudo dnf install rustnet
+  ```
+
+  **openSUSE Tumbleweed:**
+  ```bash
+  sudo zypper addrepo https://download.opensuse.org/repositories/home:/domcyrus:/rustnet/openSUSE_Tumbleweed/home:domcyrus:rustnet.repo
+  sudo zypper refresh
+  sudo zypper install rustnet
+  ```
+
+  **Arch Linux:**
+  ```bash
+  sudo pacman -S rustnet
+  ```
+
+  **Nix / NixOS:**
+  ```bash
+  nix-shell -p rustnet
+readmeUrl: https://raw.githubusercontent.com/domcyrus/rustnet/HEAD/README.md

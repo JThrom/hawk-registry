@@ -7,3 +7,55 @@ binaries:
   - slides
 homepage: https://github.com/maaslalani/slides
 repo: https://github.com/maaslalani/slides
+language: Go
+tags:
+  - presentation
+  - supporting
+  - markdown
+  - syntax
+install:
+  brew: brew install slides
+  go: go install github.com/maaslalani/slides@latest
+packages:
+  brew: slides
+  go: slides
+installNotes: |-
+  ### Installation
+  [![Homebrew](https://img.shields.io/badge/dynamic/json.svg?url=https://formulae.brew.sh/api/formula/slides.json&query=$.versions.stable&label=homebrew)](https://formulae.brew.sh/formula/slides)
+  [![Snapcraft](https://snapcraft.io/slides/badge.svg)](https://snapcraft.io/slides)
+  [![AUR](https://img.shields.io/aur/version/slides?label=AUR)](https://aur.archlinux.org/packages/slides)
+
+  <details markdown="block">
+  <summary>Instructions</summary>
+
+  #### MacOS
+  ```
+  brew install slides
+  ```
+  #### Arch
+  ```
+  yay -S slides
+  ```
+  #### Nixpkgs (unstable)
+  ```
+  nix-env -iA nixpkgs.slides
+  ```
+  #### Any Linux Distro running `snapd`
+  ```
+  sudo snap install slides
+  ```
+  #### Go
+  ```
+  go install github.com/maaslalani/slides@latest
+  ```
+  From source:
+  ```
+  git clone https://github.com/maaslalani/slides.git
+  cd slides
+  go install
+  ```
+
+  You can also download a binary from the [releases](https://github.com/maaslalani/slides/releases) page.
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/maaslalani/slides/HEAD/README.md

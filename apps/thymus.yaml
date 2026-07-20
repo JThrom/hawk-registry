@@ -7,3 +7,24 @@ binaries:
   - thymus
 homepage: https://github.com/blademd/thymus
 repo: https://github.com/blademd/thymus
+language: Python
+tags:
+  - network
+  - interactive
+  - browser
+  - editor
+  - configuration
+  - files
+install:
+  pip: pip install thymus
+  pipx: pipx install thymus
+packages:
+  pip: thymus
+  pipx: thymus
+installNotes: |-
+  ## Installation
+
+  Use `pip` or `pipx` to install the package (e.g., `pip install thymus` or `pipx install thymus`).
+
+  Requires Python **3.9**!
+readmeUrl: https://raw.githubusercontent.com/blademd/thymus/HEAD/README.md

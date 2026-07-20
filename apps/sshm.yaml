@@ -7,3 +7,36 @@ binaries:
   - sshm
 homepage: https://github.com/gu1llaum-3/sshm
 repo: https://github.com/gu1llaum-3/sshm
+language: Go
+tags:
+  - easy
+  - browse
+  - connect
+  - control
+install:
+  brew: brew install Gu1llaum-3/sshm/sshm
+packages:
+  brew: sshm
+installNotes: |-
+  ### Installation
+
+  **Homebrew (Recommended for macOS):**
+  ```bash
+  brew install Gu1llaum-3/sshm/sshm
+  ```
+
+  **Unix/Linux/macOS (One-line install):**
+  ```bash
+  curl -sSL https://raw.githubusercontent.com/Gu1llaum-3/sshm/main/install/unix.sh | bash
+  ```
+
+  **Windows (PowerShell):**
+  ```powershell
+  irm https://raw.githubusercontent.com/Gu1llaum-3/sshm/main/install/windows.ps1 | iex
+  ```
+
+  **Alternative methods:**
+
+  *Linux/macOS:*
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/gu1llaum-3/sshm/HEAD/README.md

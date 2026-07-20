@@ -7,3 +7,66 @@ binaries:
   - lazygit
 homepage: https://github.com/jesseduffield/lazygit
 repo: https://github.com/jesseduffield/lazygit
+language: Go
+tags:
+  - git
+  - vcs
+  - commands
+install:
+  brew: brew install lazygit
+  dnf: dnf install lazygit
+  apt: apt install lazygit
+  go: go install github.com/jesseduffield/lazygit@latest
+packages:
+  brew: lazygit
+  dnf: lazygit
+  apt: lazygit
+  go: lazygit
+installNotes: |-
+  ## Installation
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/lazygit.svg?columns=3)](https://repology.org/project/lazygit/versions)
+
+  _Most of the above packages are maintained by third parties so be sure to vet them yourself and confirm that the maintainer is a trustworthy looking person who attends local sports games and gives back to their communities with barbeque fundraisers etc_
+
+  ### Binary Releases
+
+  For Windows, Mac OS(10.12+) or Linux, you can download a binary release [here](../../releases).
+
+  ### Dev container feature
+
+  If you want to use lazygit in e.g. one of your GitHub Codespaces, there is a third-party [dev container feature](https://github.com/GeorgOfenbeck/features/tree/main/src/lazygit-linuxbinary) based on the binary releases mentioned above.
+
+  ### Homebrew
+
+  It works with Linux, too.
+
+  ```sh
+  brew install lazygit
+  ```
+
+  ### MacPorts
+
+  Latest version built from github releases.
+  Tap:
+
+  ```
+  sudo port install lazygit
+  ```
+
+  ### Void Linux
+
+  Packages for Void Linux are available in the distro repo
+
+  They follow upstream latest releases
+
+  ```sh
+  sudo xbps-install -S lazygit
+  ```
+
+  ### Scoop (Windows)
+
+  You can install `lazygit` using [scoop](https://scoop.sh/). It's in the `extras` bucket:
+
+  ```sh
+readmeUrl: https://raw.githubusercontent.com/jesseduffield/lazygit/HEAD/README.md

@@ -7,3 +7,30 @@ binaries:
   - lazyssh
 homepage: https://github.com/adembc/lazyssh
 repo: https://github.com/adembc/lazyssh
+language: Go
+tags:
+  - manager
+  - browse
+  - connect
+  - servers
+  - config
+  - files
+install:
+  brew: brew install Adembc/homebrew-tap/lazyssh
+packages:
+  brew: lazyssh
+installNotes: |-
+  ## 📦 Installation
+
+  ### Option 1: Homebrew (macOS)
+
+  ```bash
+  brew install Adembc/homebrew-tap/lazyssh
+  ```
+
+  ### Option 2: Download Binary from Releases
+
+  Download from [GitHub Releases](https://github.com/Adembc/lazyssh/releases). You can use the snippet below to automatically fetch the latest version for your OS/ARCH (Darwin/Linux and amd64/arm64 supported):
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/adembc/lazyssh/HEAD/README.md

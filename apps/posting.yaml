@@ -7,3 +7,16 @@ binaries:
   - posting
 homepage: https://github.com/darrenburns/posting
 repo: https://github.com/darrenburns/posting
+language: Python
+tags:
+  - http
+  - api
+  - powerful
+  - lives
+installNotes: |-
+  ## Installation
+
+  Posting can be installed via [uv](https://docs.astral.sh/uv/getting-started/installation/) on MacOS, Linux, and Windows.
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/darrenburns/posting/HEAD/README.md

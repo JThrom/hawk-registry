@@ -7,3 +7,23 @@ binaries:
   - steam_friends_list_tui
 homepage: https://github.com/AdamWHY2K/steam_friends_list_tui
 repo: https://github.com/AdamWHY2K/steam_friends_list_tui
+language: Go
+tags:
+  - steam
+  - friends
+  - list
+  - commandline
+installNotes: |-
+  ### Installation
+
+  #### Option 1: Download Release (Recommended)
+  1. Download the latest release for your platform from the [Releases page](https://github.com/AdamWHY2K/steam_friends_list_tui/releases/latest)
+     - **Windows**: `win-x64.zip`
+     - **macOS**: `osx-x64.zip` 
+     - **Linux**: `linux-x64.gz`
+  2. Extract the sftui executable to your desired location
+  3. Run `sftui`
+
+  #### Option 2: Build from Source (Cross-Platform)
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/AdamWHY2K/steam_friends_list_tui/HEAD/README.md

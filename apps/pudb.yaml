@@ -7,3 +7,9 @@ binaries:
   - pudb
 homepage: https://github.com/inducer/pudb
 repo: https://github.com/inducer/pudb
+language: Python
+tags:
+  - visual
+  - debugger
+  - python
+readmeUrl: https://raw.githubusercontent.com/inducer/pudb/HEAD/README.rst

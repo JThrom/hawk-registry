@@ -7,3 +7,25 @@ binaries:
   - backlog.md
 homepage: https://github.com/MrLesk/Backlog.md
 repo: https://github.com/MrLesk/Backlog.md
+tags:
+  - git
+  - vcs
+  - managing
+  - project
+  - collaboration
+  - between
+  - humans
+  - agents
+  - ecosystem
+install:
+  npm: npm i -g backlog.md
+  bun: bun add -g backlog.md
+  brew: brew install backlog-md
+packages:
+  npm: backlog.md
+  bun: backlog.md
+  brew: backlog-md
+installNotes: |-
+  # Install
+  npm i -g backlog.md
+readmeUrl: https://raw.githubusercontent.com/MrLesk/Backlog.md/HEAD/README.md

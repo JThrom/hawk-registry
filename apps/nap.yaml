@@ -8,3 +8,22 @@ binaries:
   - nap
 homepage: https://github.com/maaslalani/nap
 repo: https://github.com/maaslalani/nap
+language: Go
+tags:
+  - code
+  - snippets
+install:
+  brew: brew install nap
+  go: go install github.com/maaslalani/nap@main
+packages:
+  brew: nap
+  go: nap
+installNotes: |-
+  ## Installation
+
+  <!--
+
+  Use a package manager:
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/maaslalani/nap/HEAD/README.md

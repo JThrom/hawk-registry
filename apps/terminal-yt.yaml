@@ -7,3 +7,35 @@ binaries:
   - terminal-yt
 homepage: https://github.com/jooooscha/terminal-yt
 repo: https://github.com/jooooscha/terminal-yt
+language: Rust
+tags:
+  - rss
+  - news
+  - small
+  - newsboat
+  - inspired
+  - youtube
+  - manager
+install:
+  cargo: cargo install --path
+packages:
+  cargo: --path
+installNotes: |-
+  ## Installation
+
+  #### Standard
+
+  - clone repo and `cd terminal-yt`
+  - run `cargo run` or `cargo install --path .`
+
+  #### Using Nix
+
+  - place config in `~/.config/tyt/subscriptions.yaml`
+  - `nix run github:jooooscha/terminal-yt`
+
+  #### Arch Linux
+
+  With your favorite AUR helper:
+  ```bash
+  paru -S terminal-yt-bin  # latest release
+readmeUrl: https://raw.githubusercontent.com/jooooscha/terminal-yt/HEAD/README.md

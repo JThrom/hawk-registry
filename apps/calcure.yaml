@@ -7,3 +7,46 @@ binaries:
   - calcure
 homepage: https://github.com/anufrievroman/calcure
 repo: https://github.com/anufrievroman/calcure
+language: Python
+tags:
+  - calendar
+  - task
+  - manager
+  - minimal
+  - customizable
+install:
+  pipx: pipx install calcure
+  pip: pip install windows-curses
+packages:
+  pipx: calcure
+  pip: windows-curses
+installNotes: |-
+  ## Installation
+
+  ### Linux and Mac OS
+
+  There are several ways to install:
+
+  `pipx install calcure` - the up-to-date version from PyPi. You may need to install `pipx` first.
+
+  `yay -S calcure` - [AUR package](https://aur.archlinux.org/packages/calcure) is available. Upvote to support the project!
+
+  `calcure` is also available as NixOS package.
+
+  ### Windows
+
+  1. Install [Windows Terminal](https://apps.microsoft.com/detail/9n0dx20hk701?hl=en-US&gl=US) app from the Microsoft Store.
+  2. Install [Python 3.x](https://apps.microsoft.com/search/publisher?name=Python+Software+Foundation&hl=en-us&gl=US) also from the Microsoft Store (if you just type `python` in the Windows Terminal app it will offer you to install)
+  3. Install the program and libraries by typing in the Windows Terminal `pip install windows-curses calcure`
+  4. Now you can finally run it by typing in the Windows Terminal `python -m calcure`
+
+  ### Upgrade to the most recent version
+
+  `pipx upgrade calcure`
+
+  ### Dependencies
+
+  - `python` 3.10 and higher (usually already installed)
+  - `holidays`, `jdatetime`, and `icalendar` python libraries (should be installed automatically with the calcure).
+  - `windows-curses` on Windows
+readmeUrl: https://raw.githubusercontent.com/anufrievroman/calcure/HEAD/README.md

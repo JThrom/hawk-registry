@@ -7,3 +7,41 @@ binaries:
   - eilmeldung
 homepage: https://github.com/christo-auer/eilmeldung
 repo: https://github.com/christo-auer/eilmeldung
+language: Rust
+tags:
+  - rss
+  - news
+  - reader
+  - supporting
+  - many
+  - providers
+  - bulk
+  - operations
+  - configuration
+  - options
+install:
+  brew: brew install eilmeldung
+packages:
+  brew: eilmeldung
+installNotes: |-
+  # Installation 
+
+  **Quick install:**
+
+  - **Homebrew**: `brew tap christo-auer/eilmeldung  https://github.com/christo-auer/eilmeldung && brew install eilmeldung`
+  - **Arch (AUR)**: `paru -S eilmeldung` or `yay -S eilmeldung`
+  - **Scoop** (Windows): 
+  ```
+    scoop bucket add eilmeldung https://github.com/christo-auer/eilmeldung
+    scoop install eilmeldung
+    ```
+  - **Cargo**: `cargo install eilmeldung --locked` (you need to install [build dependencies](docs/installation.md) first!)
+
+  **Important**: You need a [Nerd Font](https://github.com/ryanoasis/nerd-fonts)
+  compatible font/terminal for icons to display correctly! There is a
+  ASCII-compatible icon preset, however (see [Icon Set](docs/configuration.md#icon-set)).
+
+  For detailed installation instructions including Nix/Home Manager setup, see **[Installation Guide](docs/installation.md)**.
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/christo-auer/eilmeldung/HEAD/README.md

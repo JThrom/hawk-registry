@@ -7,3 +7,64 @@ binaries:
   - xytz
 homepage: https://github.com/xdagiz/xytz
 repo: https://github.com/xdagiz/xytz
+language: Rust
+tags:
+  - beautiful
+  - downloading
+  - youtube
+  - videos
+  - playlists
+  - channels
+install:
+  brew: brew install xdagiz/tap/xytz
+  go: go install github.com/xdagiz/xytz@latest
+packages:
+  brew: xytz
+  go: xytz
+installNotes: |-
+  ## Installation
+
+  ### Requirements
+
+  - **yt-dlp**: Core video downloader
+    - Installation: https://github.com/yt-dlp/yt-dlp#installation
+  - **ffmpeg** - Required for full features
+    - Installation: https://ffmpeg.org/download.html
+  - **mpv** (optional) - For playing videos directly without downloading
+    - Installation: https://mpv.io/installation/
+
+  ### Installer Script (Linux/MacOS)
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/xdagiz/xytz/main/install.sh | bash
+  ```
+
+  ### Homebrew (MacOS/Linux)
+
+  ```bash
+  brew install xdagiz/tap/xytz
+  ```
+
+  ### AUR (Arch Linux)
+
+  ```bash
+  paru -S xytz-bin # or yay -S xytz-bin
+  ```
+
+  ### Scoop (Windows)
+
+  ```pwsh
+  scoop bucket add xdagiz https://github.com/xdagiz/scoop-bucket.git
+  scoop install xdagiz/xytz
+  ```
+
+  ### Go Install
+
+  ```bash
+  go install github.com/xdagiz/xytz@latest
+  ```
+
+  ### Nix (Flakes)
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/xdagiz/xytz/HEAD/README.md

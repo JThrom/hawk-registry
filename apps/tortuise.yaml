@@ -7,3 +7,24 @@ binaries:
   - tortuise
 homepage: https://github.com/buildoak/tortuise
 repo: https://github.com/buildoak/tortuise
+language: Rust
+tags:
+  - monitor
+  - system
+  - gaussian
+  - splatting
+  - render
+  - modes
+  - only
+  - crossterm
+  - rayon
+install:
+  cargo: cargo install tortuise
+  pip: pip install Pillow
+packages:
+  cargo: tortuise
+  pip: Pillow
+installNotes: |-
+  # Install from crates.io (recommended)
+  cargo install tortuise
+readmeUrl: https://raw.githubusercontent.com/buildoak/tortuise/HEAD/README.md

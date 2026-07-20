@@ -7,3 +7,11 @@ binaries:
   - intelli-shell
 homepage: https://github.com/lasantosr/intelli-shell
 repo: https://github.com/lasantosr/intelli-shell
+language: Rust
+tags:
+  - templates
+  - snippets
+  - dynamic
+  - completions
+  - integration
+readmeUrl: https://raw.githubusercontent.com/lasantosr/intelli-shell/HEAD/README.md

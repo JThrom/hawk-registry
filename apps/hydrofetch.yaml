@@ -7,3 +7,37 @@ binaries:
   - hydrofetch
 homepage: https://github.com/Henriquehnnm/hydrofetch
 repo: https://github.com/Henriquehnnm/hydrofetch
+tags:
+  - beautiful
+  - lightweight
+  - system
+  - information
+  - exclusively
+  - fish
+  - shell
+installNotes: |-
+  ## Installation
+
+  ### Easy Install (Recommended)
+
+  Run the following command in your terminal to automatically download and set up HydroFetch:
+
+  ```fish
+  curl -sSL https://raw.githubusercontent.com/Henriquehnnm/HydroFetch/main/install.fish | fish
+  ```
+
+  The script will install the tool to `~/.hydrofetch.fish` and create a convenient `hf` command in `~/.local/bin/`. After installation, restart your terminal and run `hf`.
+
+  ### Manual Installation
+
+  1.  **Clone the repository:**
+      ```fish
+      git clone https://github.com/Henriquehnnm/HydroFetch.git
+      cd HydroFetch
+      ```
+
+  2.  **Run the installation script:**
+      ```fish
+      fish ./install.fish
+      ```
+readmeUrl: https://raw.githubusercontent.com/Henriquehnnm/hydrofetch/HEAD/README.md

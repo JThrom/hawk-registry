@@ -7,3 +7,9 @@ binaries:
   - sshattrick
 homepage: https://github.com/ricott1/sshattrick
 repo: https://github.com/ricott1/sshattrick
+language: Rust
+tags:
+  - play
+  - hattrick
+  - over
+readmeUrl: https://raw.githubusercontent.com/ricott1/sshattrick/HEAD/README.md

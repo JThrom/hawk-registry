@@ -1,0 +1,122 @@
+# -*-org-*-
+
+* tty-solitaire
+  Ncurses-based klondike solitaire game.
+
+  #+CAPTION: ttysolitaire gameplay
+  [[https://raw.github.com/mpereira/tty-solitaire/master/resources/ttysolitaire.gif]]
+
+** Dependencies
+   - Terminal emulator with UTF-8 support
+   - C library with multibyte locales support
+   - Ncurses with wide-char/UTF-8 support
+
+** Install
+   [[https://repology.org/project/tty-solitaire/versions][https://repology.org/badge/vertical-allrepos/tty-solitaire.svg]]
+
+*** Using package managers
+**** Arch Linux
+     #+begin_src bash
+     pacman -S tty-solitaire
+     #+end_src
+
+**** macOS
+     #+begin_src bash
+     brew install tty-solitaire
+     #+end_src
+
+**** Debian [[https://wiki.debian.org/DebianTesting][testing]]
+     #+begin_src bash
+     apt install tty-solitaire
+     #+end_src
+
+**** Nix
+     #+begin_src bash
+     nix-env --install tty-solitaire
+     #+end_src
+
+**** Void Linux
+     #+begin_src bash
+     xbps-install -S tty-solitaire
+     #+end_src
+
+**** FreeBSD
+     #+begin_src bash
+     pkg install tty-solitaire
+     #+end_src
+
+**** Slackware
+     [[https://www.slackbuilds.org/repository/14.2/games/tty-solitaire/][Via Slackbuilds]].
+
+**** ALT Linux
+     #+begin_src bash
+     apt-get install tty-solitaire
+     #+end_src
+
+   We still need help making tty-solitaire available on Ubuntu, Fedora, Gentoo,
+   and more. Please give us a hand at [[https://github.com/mpereira/tty-solitaire/issues/29][issue #29]] if you think you can help.
+
+*** From source
+**** Install Ncurses
+     tty-solitaire depends on Ncurses. Some platforms provide it out of the box
+     and some don't, so you might need to install it yourself.
+
+***** Ubuntu
+      #+begin_src bash
+      sudo apt-get install libncurses5-dev libncursesw5-dev
+      #+end_src
+
+***** macOS
+      macOS has Ncurses with wide character support out of the box, so *there's
+      nothing you need to do*.
+
+      *If* for some reason you want to use other Ncurses libraries (from
+      Macports, Homebrew, etc.) you are able to do it by specifying =LDLAGS= in
+      the make invocation. See [[https://github.com/mpereira/tty-solitaire/pull/8][this pull request]] for more information.
+
+**** Install tty-solitaire
+     #+begin_src bash
+     wget -O tty-solitaire-v1.4.1.tar.gz https://github.com/mpereira/tty-solitaire/archive/v1.4.1.tar.gz
+     tar xvf tty-solitaire-v1.4.1.tar.gz
+     cd tty-solitaire-1.4.1
+     make
+     sudo make install
+     #+end_src
+
+** Play
+   Run in your favorite shell:
+
+   #+begin_src bash
+   ttysolitaire
+   #+end_src
+
+** Usage
+   #+begin_src text
+   usage: ./ttysolitaire [OPTIONS]
+     -v, --version              Show version
+     -h, --help                 Show this message
+     -p, --passes               Number of passes through the deck  (default: 3)
+         --four-color-deck      Draw unique card suit colors       (default: false)
+         --no-background-color  Don't draw background color        (default: false)
+   #+end_src
+
+** Development
+*** Get the code
+    #+begin_src bash
+    git clone https://github.com/mpereira/tty-solitaire.git
+    #+end_src
+
+*** Run the unit tests
+    #+begin_src bash
+    make test
+    #+end_src
+
+*** [[https://invisible-island.net/ncurses/man/ncurses.3x.html][Ncurses documentation]]
+
+*** [[https://tldp.org/HOWTO/NCURSES-Programming-HOWTO/][Ncurses programming HOWTO]]
+
+** Author
+   [[http://murilopereira.com][Murilo Pereira]]
+
+** License
+   [[https://github.com/mpereira/tty-solitaire/blob/master/LICENSE][MIT]]

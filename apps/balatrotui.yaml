@@ -7,3 +7,33 @@ binaries:
   - balatrotui
 homepage: https://github.com/Passeriform/BalatroTUI
 repo: https://github.com/Passeriform/BalatroTUI
+language: Rust
+tags:
+  - clone
+  - balatro
+installNotes: |-
+  ## Getting Started
+
+  ### Prerequisites
+
+  - [Rust](https://www.rust-lang.org/tools/install) (latest stable recommended)
+
+  ### Build and Run
+
+  ```sh
+  cargo run --release --package balatro_tui
+  ```
+
+  ### Format and Lint
+
+  ```sh
+  cargo fmt
+  cargo clippy
+  ```
+
+  ### Run Tests
+
+  ```sh
+  cargo test --workspace
+  ```
+readmeUrl: https://raw.githubusercontent.com/Passeriform/BalatroTUI/HEAD/README.md

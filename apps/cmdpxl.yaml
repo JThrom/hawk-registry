@@ -7,3 +7,21 @@ binaries:
   - cmdpxl
 homepage: https://github.com/knosmos/cmdpxl
 repo: https://github.com/knosmos/cmdpxl
+language: Python
+tags:
+  - totally
+  - practical
+  - image
+  - editor
+install:
+  pip: pip install cmdpxl
+packages:
+  pip: cmdpxl
+installNotes: |-
+  ## Installation
+
+  Install the package with:
+  ```sh
+  pip install cmdpxl
+  ```
+readmeUrl: https://raw.githubusercontent.com/knosmos/cmdpxl/HEAD/README.md

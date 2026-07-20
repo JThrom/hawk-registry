@@ -7,3 +7,8 @@ binaries:
   - todoman
 homepage: https://github.com/pimutils/todoman
 repo: https://github.com/pimutils/todoman
+tags:
+  - standards
+  - task
+  - manager
+readmeUrl: https://raw.githubusercontent.com/pimutils/todoman/HEAD/README.rst

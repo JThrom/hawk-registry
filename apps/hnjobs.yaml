@@ -7,3 +7,20 @@ binaries:
   - hnjobs
 homepage: https://github.com/mwinters0/hnjobs
 repo: https://github.com/mwinters0/hnjobs
+language: Go
+tags:
+  - find
+  - next
+  - hiring
+install:
+  go: go install github.com/mwinters0/hnjobs@latest
+packages:
+  go: hnjobs
+installNotes: |-
+  ## Installation
+  ```shell
+  go install github.com/mwinters0/hnjobs@latest
+  ```
+
+  Or grab a binary from the [releases](https://github.com/mwinters0/hnjobs/releases)
+readmeUrl: https://raw.githubusercontent.com/mwinters0/hnjobs/HEAD/README.md

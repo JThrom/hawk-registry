@@ -7,3 +7,21 @@ binaries:
   - serverhub
 homepage: https://github.com/nickprotop/ServerHub
 repo: https://github.com/nickprotop/ServerHub
+language: Rust
+tags:
+  - monitor
+  - system
+  - server
+  - monitoring
+  - dashboard
+  - linux
+  - real
+  - time
+  - metrics
+  - scriptable
+  - widgets
+  - remote
+installNotes: |-
+  # 1. Install ServerHub
+  curl -fsSL https://raw.githubusercontent.com/nickprotop/ServerHub/main/install.sh | bash
+readmeUrl: https://raw.githubusercontent.com/nickprotop/ServerHub/HEAD/README.md

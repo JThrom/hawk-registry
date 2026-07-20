@@ -7,3 +7,6 @@ binaries:
   - tmux
 homepage: https://github.com/tmux/tmux
 repo: https://github.com/tmux/tmux
+tags:
+  - multiplexer
+readmeUrl: https://raw.githubusercontent.com/tmux/tmux/HEAD/README

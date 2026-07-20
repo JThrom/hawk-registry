@@ -7,3 +7,44 @@ binaries:
   - sq
 homepage: https://github.com/sheenazien8/sq
 repo: https://github.com/sheenazien8/sq
+language: Go
+tags:
+  - database
+  - sql
+  - specially
+  - users
+install:
+  go: go install github.com/sheenazien8/sq@latest
+packages:
+  go: sq
+installNotes: |-
+  ## Installation
+
+  ### Prerequisites
+  - Go 1.22 or later
+
+  ### Install
+  ```bash
+  go install github.com/sheenazien8/sq@latest
+  ```
+
+  ### From source
+  ```bash
+  go mod download
+  go mod tidy
+  go build -o sq
+  ./sq
+  ```
+
+  ### Running
+  ```bash
+  go run .
+  ```
+
+  ### Command Line Options
+  ```bash
+  sq --help                    # Show help
+  sq --version                 # Show version
+  sq --create-connection       # Create a new database connection
+  ```
+readmeUrl: https://raw.githubusercontent.com/sheenazien8/sq/HEAD/README.md

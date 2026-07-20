@@ -8,3 +8,72 @@ binaries:
   - rebelsinthesky
 homepage: https://github.com/ricott1/rebels-in-the-sky
 repo: https://github.com/ricott1/rebels-in-the-sky
+language: Rust
+tags:
+  - game
+  - about
+  - spacepirates
+  - playing
+  - basketball
+  - across
+  - galaxy
+install:
+  pacman: pacman -S rebels-in-the-sky
+  apt: apt-get install -y
+  cargo: cargo install rebels
+packages:
+  pacman: rebels-in-the-sky
+  apt: -y
+  cargo: rebels
+installNotes: |-
+  ## Installation
+
+  ### Build
+
+  There are some dependencies to build:
+
+  -   Linux: install `libasound2-dev` and `cmake` (for instance, on Ubuntu they can be installed with `sudo apt-get install -y libasound2-dev cmake`); 
+  -   MacOs: install `cmake` (for instance, using [brew](https://formulae.brew.sh/formula/cmake));
+  -   Windows: install [cmake](https://cmake.org/download/).
+
+  You need to have the [rust toolchain](https://www.rust-lang.org/tools/install). Then you can clone the repo and build the game with
+
+  `cargo build --release`
+
+  ### With cargo
+
+  `cargo install rebels`
+
+  ###  From the latest release page
+
+  - Download the latest release asset for your platform from https://rebels.frittura.org;
+  - Give execution permissions to the executable with `chmod +x rebels`
+
+  ### Distro Packages
+
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/rebels-in-the-sky.svg)](https://repology.org/project/rebels-in-the-sky/versions)
+
+
+  <details>
+    <summary>Arch Linux</summary>
+
+  `rebels-in-the-sky` can be installed from the [official repositories](https://archlinux.org/packages/extra/x86_64/rebels-in-the-sky/):
+
+  ```sh
+  pacman -S rebels-in-the-sky
+  ```
+
+  </details>
+
+  <details>
+    <summary>MacPorts</summary>
+
+  `rebels-in-the-sky` can be installed from the [available ports](https://ports.macports.org/port/rebels-in-the-sky/):
+
+  ```sh
+  sudo port install rebels-in-the-sky
+  ```
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/ricott1/rebels-in-the-sky/HEAD/README.md

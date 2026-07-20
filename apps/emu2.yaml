@@ -7,3 +7,22 @@ binaries:
   - emu2
 homepage: https://github.com/dmsc/emu2
 repo: https://github.com/dmsc/emu2
+language: Go
+tags:
+  - emulator
+  - linux
+  - text
+  - supporting
+  - basic
+  - system
+  - calls
+installNotes: |-
+  Installation
+  ------------
+
+      make
+      sudo make install
+
+  The above installs `emu2` into `$(DESTDIR)${PREFIX}/bin/emu2`, this is
+  `/usr/bin/emu2` by default.
+readmeUrl: https://raw.githubusercontent.com/dmsc/emu2/HEAD/README.md

@@ -8,3 +8,62 @@ binaries:
   - try
 homepage: https://github.com/tassiovirginio/try-rs/
 repo: https://github.com/tassiovirginio/try-rs/
+language: Rust
+tags:
+  - lightning
+  - temporary
+  - projects
+  - create
+  - explore
+  - clone
+  - repositories
+  - instantly
+  - without
+  - cluttering
+  - system
+install:
+  cargo: cargo install --path
+  apt: apt install try-rs
+  brew: brew install try-rs
+packages:
+  cargo: --path
+  apt: try-rs
+  brew: try-rs
+installNotes: |-
+  ## Installation
+
+  ### Prerequisites
+
+  - A shell (Fish, Zsh, Bash, Power Shell or Nushell).
+  - A **Nerd Font** installed (required for icons like  and 🦀).
+
+  ### Building from source
+
+  ```bash
+  git clone https://github.com/tassiovirginio/try-rs.git
+  cd try-rs
+  cargo install --path . --bin try-rs
+  ```
+
+  ### Cargo install try-rs
+
+  ```bash
+  cargo install try-rs
+  ```
+
+  ### Eget
+
+  ```bash
+  eget tassiovirginio/try-rs
+  ```
+
+  ### Install in Archlinux
+
+  ```bash
+  yay -S try-rs-bin
+  ```
+
+  ### Ubuntu/Debian (APT Repository)
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/tassiovirginio/try-rs/HEAD/README.md

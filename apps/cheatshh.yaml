@@ -7,3 +7,85 @@ binaries:
   - cheatshh
 homepage: https://github.com/AnirudhG07/cheatshh
 repo: https://github.com/AnirudhG07/cheatshh
+language: Python
+tags:
+  - managing
+  - custom
+  - cheatsheet
+  - unix
+install:
+  pip: pip install cheatshh
+  brew: brew install AnirudhG07/AnirudhG07/cheatshh
+  apt: apt install <package>
+packages:
+  pip: cheatshh
+  brew: cheatshh
+  apt: <package>
+installNotes: |-
+  # Installation
+
+  The following installation guidelines hold for Linux and MacOS.<br>
+  You can download cheatshh through following ways- (more will be added soon)
+
+  ## Pip Installation
+
+  Before running the below commands, make sure your dependencies are satisfied. See the DEPENDENCIES section for more info.
+  From your command line, run-
+
+  ```bash
+  pip install cheatshh
+  ```
+
+  This will create ~/.config/cheatshh in your home directory. Now simply run-
+
+  ```bash
+  cheatshh
+  ```
+
+  and you are done. Use various options to add, edit and delete commands and groups.
+
+  ## Homebrew Installation
+
+  This tool can also be installed using Homebrew(for MacOS only). You can install it by tapping my homebrew-tap repo and installing the tool.
+
+  ```bash
+  brew install AnirudhG07/AnirudhG07/cheatshh 
+  ```
+
+  You can now run the tool by running `cheatshh -h` in your terminal. If you are facing issues, try running-
+
+  ```bash
+  brew tap AnirudhG07/AnirudhG07
+  brew install cheatshh
+  ```
+
+  Make sure you have Homebrew installed in your MacOS and it is updated which can be done by running `brew update`.
+
+  ## Manual Installation through git clone
+
+  You can setup manual installation with the following guidelines-
+
+  ### For MacOS and Linux
+
+  1. Clone the repository
+
+  ```bash
+  git clone https://github.com/AnirudhG07/cheatshh
+  ```
+
+  2. Navigate to the project directory run below if downloaded in home directory
+
+  ```bash
+  cd ~/cheatshh
+  ```
+
+  3. Install the requirements through
+
+  ```
+  pip install -r requirements.txt
+  ```
+
+  4. (optional) Make sure you have `poetry` installed which will be required to build the project. If not you can run either of the below commands-
+  ```bash
+  pip install poetry
+readmeUrl: https://raw.githubusercontent.com/AnirudhG07/cheatshh/HEAD/README.md

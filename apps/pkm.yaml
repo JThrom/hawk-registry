@@ -7,3 +7,11 @@ binaries:
   - pkm
 homepage: https://github.com/wick3dr0se/pkm
 repo: https://github.com/wick3dr0se/pkm
+tags:
+  - super
+  - minimal
+  - package
+  - manager
+  - wrapper
+  - bash
+readmeUrl: https://raw.githubusercontent.com/wick3dr0se/pkm/HEAD/README.md

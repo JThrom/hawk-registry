@@ -7,3 +7,22 @@ binaries:
   - managarr
 homepage: https://github.com/Dark-Alex-17/managarr
 repo: https://github.com/Dark-Alex-17/managarr
+language: Rust
+tags:
+  - managing
+  - servers
+install:
+  cargo: cargo install managarr
+  brew: brew install managarr
+packages:
+  cargo: managarr
+  brew: managarr
+installNotes: |-
+  ## Installation
+
+  ### Cargo
+  If you have Cargo installed, then you can install Managarr from Crates.io:
+
+  ```shell
+  cargo install managarr
+readmeUrl: https://raw.githubusercontent.com/Dark-Alex-17/managarr/HEAD/README.md

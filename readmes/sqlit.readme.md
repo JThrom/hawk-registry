@@ -1,0 +1,326 @@
+<p align="center">
+  <img src="assets/favorites/logo_sqlit.png" alt="sqlit logo" width="180">
+</p>
+
+<h3 align="center">The lazygit of SQL databases</h3>
+
+<p align="center">
+  <em>Connect and query your database from your terminal in seconds.</em>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Maxteabag/sqlit/stargazers"><img src="https://img.shields.io/github/stars/Maxteabag/sqlit?style=flat&color=yellow" alt="GitHub Stars"></a>
+  <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+</p>
+
+<p align="center">
+  <code>pipx install sqlit-tui</code>
+</p>
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/PeterAdams"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee"></a>
+</p>
+
+---
+
+### Connect
+Supports all major databases: SQL Server, PostgreSQL, MySQL, SQLite, MariaDB, FirebirdSQL, Oracle, DuckDB, CockroachDB, ClickHouse, Snowflake, Supabase, CloudFlare D1, Turso, Athena, BigQuery, Spanner, RedShift, IBM Db2, SAP HANA, Teradata, Trino, Presto, Apache Flight SQL, Apache Impala, SurrealDB and osquery.
+
+![Database Providers](docs/demos/demo-providers.gif)
+
+### Query
+Syntax highlighting. History. Vim-style keybindings.
+
+![Query History](docs/demos/demo-history.gif)
+
+### Results
+Load millions of rows. Inspect data, filter by content, fuzzy search.
+
+![Filter results](docs/demos/demo-filter/demo-filter.gif)
+
+### Docker Discovery
+Automatically finds running database containers. Press 'Enter' to connect, sqlit figures out the details for you.
+
+![Docker Discovery](docs/demos/demo-docker-picker.gif)
+
+---
+
+## Features
+
+**Connection manager:** Save and switch connections without CLI args
+
+**Just run `sqlit`:** No CLI config needed, pick a connection and go
+
+**Multi-database support:** PostgreSQL, MySQL, SQLite, SQL Server, and 10+ more
+
+**Docker integration:** Auto-detect running database containers
+
+**Cloud CLI integration:** Easily browse and connect to your external databases through Azure, AWS and GCP CLI's
+
+**SSH tunnels:** Connect to remote databases securely with password or key auth
+
+**Secure credentials:** Passwords stored in your OS keyring
+
+**Vim-style editing:** Modal editing for terminal purists
+
+**Query history:** Searchable, per-connection history
+
+**Filter results:** Fuzzy search through millions of rows
+
+**Context-aware help:** Keybindings shown on screen
+
+**Browse databases:** Tables, views, procedures, indexes, triggers, sequences
+
+**Autocomplete:** Sophisticated SQL completion engine for tables, columns, and procedures
+
+**CLI mode:** Execute SQL from the command line
+
+**Themes:** Rose Pine, Tokyo Night, Nord, Gruvbox
+
+**Dependency wizard:** Auto-install missing drivers
+
+---
+
+## Motivation
+
+Throughout my career, the undesputed truth was that heavy GUI's like SSMS was the only respectable way to access a database. It didn't matter that I wasn't a DBA, or that I didn't need complex performance graphs. I was expected to install a gigabyte-heavy behemoth that took ages to launch all for the mere purpose of running a few queries to update and view a couple of rows.
+
+When I switched to Linux, I was suddenly unable to return to the devil I know, and I asked myself: _how do I access my data now?_
+
+The popular answer was VS Code's SQL extension. But why should we developers launch a heavy Electron app designed for coding just to execute SQL?
+
+I had recently grown fond of Terminal UI's for their speed and keybinding focus. I looked for SQL TUIs, but the options were sparse. The ones I found lacked the user-friendliness and immediate "pick-up-and-go" nature of tools I loved, like lazygit, and I shortly returning to vscode sql extension.
+
+Something wasn't right. I asked myself, why is it that running SQL queries can't be enjoyable? So I created sqlit.
+
+sqlit is for the developer who just wants to query their database with a user friendly UI without their RAM being eaten alive. It is a lightweight, beautiful, and keyboard-driven TUI designed to make accessing your data enjoyable, fast and easy like it should be-- all from inside your favorite terminal.
+
+---
+
+## Installation
+
+```bash
+# pipx (recommended)
+pipx install sqlit-tui
+
+# uv
+uv tool install sqlit-tui
+
+# pip
+pip install sqlit-tui
+
+# Arch Linux (AUR)
+yay -S sqlit
+
+# Nix (flake)
+nix run github:Maxteabag/sqlit
+```
+
+## Usage
+
+```bash
+sqlit
+```
+
+The keybindings are shown at the bottom of the screen.
+
+### Try it without a database
+
+Want to explore the UI without connecting to a real database? Run with mock data:
+
+```bash
+sqlit --mock=sqlite-demo
+```
+
+### CLI
+
+```bash
+sqlit -c "MyConnection"
+sqlit --connection "MyConnection"
+
+# Run a query
+sqlit query -c "MyConnection" -q "SELECT * FROM Users"
+
+# Output as CSV or JSON
+sqlit query -c "MyConnection" -q "SELECT * FROM Users" --format csv
+sqlit query -c "MyConnection" -f "script.sql" --format json
+
+# Create connections for different databases
+sqlit connections add mssql --name "MySqlServer" --server "localhost" --auth-type sql
+sqlit connections add postgresql --name "MyPostgres" --server "localhost" --username "user" --password "pass"
+sqlit connections add mysql --name "MyMySQL" --server "localhost" --username "user" --password "pass"
+sqlit connections add cockroachdb --name "MyCockroach" --server "localhost" --port "26257" --database "defaultdb" --username "root"
+sqlit connections add sqlite --name "MyLocalDB" --file-path "/path/to/database.db"
+sqlit connections add turso --name "MyTurso" --server "libsql://your-db.turso.io" --password "your-auth-token"
+sqlit connections add firebird --name "MyFirebird" --server "localhost" --username "user" --password "pass" --database "employee"
+sqlit connections add athena --name "MyAthena" --athena-region-name "us-east-1" --athena-s3-staging-dir "s3://my-bucket/results/" --athena-auth-method "profile" --athena-profile-name "default"
+sqlit connections add athena --name "MyAthenaKeys" --athena-region-name "us-east-1" --athena-s3-staging-dir "s3://my-bucket/results/" --athena-auth-method "keys" --username "ACCESS_KEY" --password "SECRET_KEY"
+
+# Connect via SSH tunnel
+sqlit connections add postgresql --name "RemoteDB" --server "db-host" --username "dbuser" --password "dbpass" \
+  --ssh-enabled --ssh-host "ssh.example.com" --ssh-username "sshuser" --ssh-auth-type password --ssh-password "sshpass"
+
+# Fetch password from a secrets manager (1Password, pass, Vault, etc.)
+sqlit connections add postgresql --name "ProdDB" --server "prod.example.com" --username "dbuser" \
+  --password-command "op read 'op://Work/prod-db/password'"
+
+# Temporary (not saved) connection
+sqlit connect sqlite --file-path "/path/to/database.db"
+
+# Connect via URL - scheme determines database type (postgresql://, mysql://, sqlite://, etc.)
+sqlit postgresql://user:pass@localhost:5432/mydb
+sqlit mysql://root@localhost/testdb
+sqlit sqlite:///path/to/database.db
+
+# Save a connection via URL
+sqlit connections add --url dbtype://user:pass@host/db --name "MyDB"
+
+# Provider-specific CLI help
+sqlit connect -h
+sqlit connect supabase -h
+sqlit connections add -h
+sqlit connections add supabase -h
+
+# Manage connections
+sqlit connections list
+sqlit connections delete "MyConnection"
+```
+
+## Keybindings
+
+| Key | Action |
+|-----|--------|
+| `i` | Enter INSERT mode |
+| `Esc` | Back to NORMAL mode |
+| `e` / `q` / `r` | Focus Explorer / Query / Results |
+| `s` | SELECT TOP 100 from table |
+| `h` | Query history |
+| `d` | Clear query |
+| `n` | New query (clear all) |
+| `y` | Copy query (when query editor is focused) |
+| `v` / `y` / `Y` / `a` | View cell / Copy cell / Copy row / Copy all |
+| `Ctrl+Q` | Quit |
+| `?` | Help |
+
+### Vim Motions (Query Editor, NORMAL mode)
+
+Use with operators like `y`, `d`, `c` (e.g. `dw`, `y$`).
+
+| Motion | Action |
+|--------|--------|
+| `h` / `j` / `k` / `l` | Move cursor left / down / up / right |
+| `w` / `W` | Next word / WORD |
+| `b` / `B` | Previous word / WORD |
+| `0` / `$` | Line start / end |
+| `gg` / `G` | File start / end |
+| `f{c}` / `F{c}` | Find char forward / backward |
+| `t{c}` / `T{c}` | Till char forward / backward |
+| `%` | Matching bracket |
+
+### Commands Menu (`<space>`)
+
+| Key | Action |
+|-----|--------|
+| `<space>c` | Connect to database |
+| `<space>x` | Disconnect |
+| `<space>z` | Cancel running query |
+| `<space>e` | Toggle Explorer |
+| `<space>f` | Toggle Maximize |
+| `<space>t` | Change theme |
+| `<space>h` | Help |
+| `<space>q` | Quit |
+
+Autocomplete triggers automatically in INSERT mode. Use `Tab` to accept.
+
+---
+
+## Configuration
+
+Connections and settings are stored in `$XDG_CONFIG_HOME/sqlit/` (default: `~/.config/sqlit/`). Override the location by setting `SQLIT_CONFIG_DIR`.
+
+### Custom keybindings
+
+Edit the `keymap.json` file in your sqlit config dir. See [`config/keymap.template.json`](config/keymap.template.json) for the full default keymap. Keymap.json need to only contain the overriding keymaps.
+
+## FAQ
+
+### How are sensitive credentials stored?
+
+Connection details are stored in `connections.json` inside the config directory, but passwords are stored in your OS keyring when available (macOS Keychain, Windows Credential Locker, Linux Secret Service).
+
+### How does sqlit compare to Harlequin, Lazysql, etc.?
+
+sqlit is inspired by [lazygit](https://github.com/jesseduffield/lazygit) - you can just jump in and there's no need for external documentation. The keybindings are shown at the bottom of the screen and the UI is designed to be intuitive without memorizing shortcuts.
+
+Key differences:
+- **No need for external documentation** - Sqlit embrace the "lazy" approach in that a user should be able to jump in and use it right away intuitively. There should be no setup instructions. If python packages are required for certain adapters, sqlit will help you install them as you need them.
+- **No CLI config required** - Just run `sqlit` and pick a connection from the UI
+- **Lightweight** - While Lazysql or Harlequin offer more features, I experienced that for the vast majority of cases, all I needed was a simple and fast way to connect and run queries. Sqlit is focused on doing a limited amount of things really well.
+
+---
+
+## Inspiration
+
+sqlit is built with [Textual](https://github.com/Textualize/textual) and inspired by:
+- [lazygit](https://github.com/jesseduffield/lazygit) - Simple  TUI for git
+- [lazysql](https://github.com/jorgerojas26/lazysql) - Terminal-based SQL client with connection manager
+
+## Contributing
+
+See `CONTRIBUTING.md` for development setup, testing, and CI steps.
+
+### Driver Reference
+
+Most of the time you can just run `sqlit` and connect. If a Python driver is missing, `sqlit` will show (and often run) the right install command for your environment.
+
+| Database                            | Driver package               | `pipx`                                             | `pip` / venv                                       |
+| :---------------------------------- | :--------------------------- | :------------------------------------------------- | :------------------------------------------------- |
+| SQLite                              | *(built-in)*                 | *(built-in)*                                       | *(built-in)*                                       |
+| PostgreSQL / CockroachDB / Supabase | `psycopg2-binary`            | `pipx inject sqlit-tui psycopg2-binary`            | `python -m pip install psycopg2-binary`            |
+| SQL Server                          | `mssql-python`               | `pipx inject sqlit-tui mssql-python`               | `python -m pip install mssql-python`               |
+| MySQL                               | `PyMySQL`                    | `pipx inject sqlit-tui PyMySQL`                    | `python -m pip install PyMySQL`                    |
+| MariaDB                             | `PyMySQL`                    | `pipx inject sqlit-tui PyMySQL`                    | `python -m pip install PyMySQL`                    |
+| Oracle                              | `oracledb`                   | `pipx inject sqlit-tui oracledb`                   | `python -m pip install oracledb`                   |
+| DuckDB                              | `duckdb`                     | `pipx inject sqlit-tui duckdb`                     | `python -m pip install duckdb`                     |
+| ClickHouse                          | `clickhouse-connect`         | `pipx inject sqlit-tui clickhouse-connect`         | `python -m pip install clickhouse-connect`         |
+| Turso                               | `libsql`                     | `pipx inject sqlit-tui libsql`                     | `python -m pip install libsql`                     |
+| Cloudflare D1                       | `requests`                   | `pipx inject sqlit-tui requests`                   | `python -m pip install requests`                   |
+| Snowflake                           | `snowflake-connector-python` | `pipx inject sqlit-tui snowflake-connector-python` | `python -m pip install snowflake-connector-python` |
+| Firebird                            | `firebirdsql`                | `pipx inject sqlit-tui firebirdsql`                | `python -m pip install firebirdsql`                |
+| Athena                              | `pyathena`                   | `pipx inject sqlit-tui pyathena`                   | `python -m pip install pyathena`                   |
+| BigQuery                            | `google-cloud-bigquery`      | `pipx inject sqlit-tui google-cloud-bigquery`      | `python -m pip install google-cloud-bigquery`      |
+| Spanner                             | `google-cloud-spanner`       | `pipx inject sqlit-tui google-cloud-spanner`       | `python -m pip install google-cloud-spanner`       |
+| Apache Arrow Flight SQL             | `adbc-driver-flightsql`      | `pipx inject sqlit-tui adbc-driver-flightsql`      | `python -m pip install adbc-driver-flightsql`      |
+| Apache Impala                       | `impyla`                     | `pipx inject sqlit-tui impyla`                     | `python -m pip install impyla`                     |
+| SurrealDB                           | `surrealdb`                  | `pipx inject sqlit-tui surrealdb`                  | `python -m pip install surrealdb`                  |
+| osquery                             | `osquery`                    | `pipx inject sqlit-tui osquery`                    | `python -m pip install osquery`                    |
+
+### SSH Tunnel Support
+
+SSH tunnel functionality requires additional dependencies. Install with the `ssh` extra:
+
+```bash
+# pipx
+pipx install 'sqlit-tui[ssh]'
+
+# uv
+uv tool install 'sqlit-tui[ssh]'
+
+# pip
+pip install 'sqlit-tui[ssh]'
+```
+
+If you try to create an SSH connection without these dependencies, sqlit will detect this and show you the exact command to install them for your environment.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Maxteabag/sqlit&type=Date)](https://star-history.com/#Maxteabag/sqlit&Date)
+
+---
+
+## License
+
+MIT

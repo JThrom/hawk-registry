@@ -7,3 +7,30 @@ binaries:
   - tttui
 homepage: https://github.com/reidoboss/tttui
 repo: https://github.com/reidoboss/tttui
+language: Rust
+tags:
+  - monkeytype
+  - inspired
+  - typing
+  - test
+  - entirely
+install:
+  cargo: cargo install tttui
+packages:
+  cargo: tttui
+installNotes: |-
+  ## Runing and Installation
+
+  Since this is published to crates.io, install globally with:
+
+  ```sh
+  cargo install tttui
+  tttui
+  ```
+
+  Run from a source checkout:
+
+  ```sh
+  cargo run --bin tttui
+  ```
+readmeUrl: https://raw.githubusercontent.com/reidoboss/tttui/HEAD/README.md

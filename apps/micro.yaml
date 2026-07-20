@@ -7,3 +7,105 @@ binaries:
   - micro
 homepage: https://github.com/zyedidia/micro
 repo: https://github.com/zyedidia/micro
+language: Go
+tags:
+  - intuitive
+  - text
+  - editor
+install:
+  brew: brew install micro
+packages:
+  brew: micro
+installNotes: |-
+  ## Installation
+
+  To install micro, you can download a [prebuilt binary](https://github.com/micro-editor/micro/releases), or you can build it from source.
+
+  If you want more information about ways to install micro, see this [wiki page](https://github.com/micro-editor/micro/wiki/Installing-Micro).
+
+  Use `micro -version` to get the version information after installing. It is only guaranteed that you are installing the most recent
+  stable version if you install from the prebuilt binaries, Homebrew, or Snap.
+
+  A desktop entry file and man page can be found in the [assets/packaging](https://github.com/micro-editor/micro/tree/master/assets/packaging) directory.
+
+  ### Pre-built binaries
+
+  Pre-built binaries are distributed in [releases](https://github.com/micro-editor/micro/releases).
+
+  To uninstall micro, simply remove the binary, and the configuration directory at `~/.config/micro`.
+
+  #### Third-party quick-install script
+
+  ```bash
+  curl https://getmic.ro | bash
+  ```
+
+  The script will place the micro binary in the current directory. From there, you can move it to a directory on your path of your choosing (e.g. `sudo mv micro /usr/bin`). See its [GitHub repository](https://github.com/benweissmann/getmic.ro) for more information.
+
+  #### Eget
+
+  With [Eget](https://github.com/zyedidia/eget) installed, you can easily get a pre-built binary:
+
+  ```
+  eget micro-editor/micro
+  ```
+
+  Use `--tag VERSION` to download a specific tagged version.
+
+  ```
+  eget --tag nightly micro-editor/micro # download the nightly version (compiled every day at midnight UTC)
+  eget --tag v2.0.8 micro-editor/micro  # download version 2.0.8 rather than the latest release
+  ```
+
+  You can install `micro` by adding `--to /usr/local/bin` to the `eget` command, or move the binary manually to a directory on your `$PATH` after the download completes.
+
+  See [Eget](https://github.com/zyedidia/eget) for more information.
+
+  ### Package managers
+
+  You can install micro using Homebrew on Mac:
+
+  ```
+  brew install micro
+  ```
+
+  **Note for Mac:** All micro keybindings use the control or alt (option) key, not the command
+  key. By default, macOS terminals do not forward alt key events. To fix this, please see
+  the section on [macOS terminals](https://github.com/micro-editor/micro#macos-terminal) further below.
+
+  On Linux, you can install micro through [snap](https://snapcraft.io/docs/core/install)
+
+  ```
+  snap install micro --classic
+  ```
+
+  Micro is also available through other package managers on Linux such as dnf, AUR, Nix, and package managers
+  for other operating systems. These packages are not guaranteed to be up-to-date.
+
+  <!-- * `apt install micro` (Ubuntu 20.04 `focal`, and Debian `unstable | testing | buster-backports`). At the moment, this package (2.0.1-1) is outdated and has a known bug where debug mode is enabled. -->
+
+  * Linux:
+      * distro-specific package managers:
+          * `dnf install micro` (Fedora).
+          * `apt install micro` (Ubuntu and Debian).
+          * `pacman -S micro` (Arch Linux).
+          * `emerge app-editors/micro` (Gentoo).
+          * `zypper install micro-editor` (SUSE)
+          * `eopkg install micro` (Solus).
+          * `pacstall -I micro` (Pacstall).
+          * `apt-get install micro` (ALT Linux)
+          * See [wiki](https://github.com/micro-editor/micro/wiki/Installing-Micro) for details about CRUX, Termux.
+      * distro-agnostic package managers:
+          * `nix profile install nixpkgs#micro` (with [Nix](https://nixos.org/) and flakes enabled)
+          * `flox install micro` (with [Flox](https://flox.dev))
+  * Windows: [Chocolatey](https://chocolatey.org), [Scoop](https://scoop.sh/) and [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/).
+      * `choco install micro`.
+      * `scoop install micro`.
+      * `winget install zyedidia.micro`
+  * OpenBSD: Available in the ports tree and also available as a binary package.
+      * `pkg_add -v micro`.
+  * NetBSD, macOS, Linux, Illumos, etc. with [pkgsrc](https://www.pkgsrc.org/)-current:
+      * `pkg_add micro`
+  * macOS: Available in package man
+  …
+readmeUrl: https://raw.githubusercontent.com/zyedidia/micro/HEAD/README.md

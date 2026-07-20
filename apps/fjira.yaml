@@ -7,3 +7,63 @@ binaries:
   - fjira
 homepage: https://github.com/mk-5/fjira
 repo: https://github.com/mk-5/fjira
+language: Go
+tags:
+  - atlassian
+  - jira
+install:
+  brew: brew install fjira
+packages:
+  brew: fjira
+installNotes: |-
+  ## Installation
+
+  ### Homebrew (macOS/Linux)
+
+  ```shell
+  $ brew install fjira
+  ```
+
+  ### Linux
+
+  #### Ubuntu/Snap
+
+  ```shell
+  snap install fjira
+  ```
+
+  #### Deb
+
+  Visit [https://github.com/mk-5/fjira/releases/latest](https://github.com/mk-5/fjira/releases/latest), and grab the
+  latest release version.
+
+  ```shell
+  sudo dpkg -i fjira_0.4.0_linux_amd64.deb
+  ```
+
+  #### AUR
+
+  ```sh
+  yay -S fjira
+  ```
+
+  #### Binary
+
+  ```shell
+  tar -xvzf fjira_0.4.0_Linux_x86_64.tar.gz
+  cp fjira /usr/local/bin/fjira
+  ```
+
+  ### Windows
+
+  ```shell
+  choco install fjira
+  ```
+
+  ### Build from sources
+
+  ```shell
+  make
+  ./out/bin/fjira
+  ```
+readmeUrl: https://raw.githubusercontent.com/mk-5/fjira/HEAD/README.md

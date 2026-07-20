@@ -8,3 +8,48 @@ binaries:
   - hwinfo
 homepage: https://github.com/JuanjoFuchs/hwinfo-tui
 repo: https://github.com/JuanjoFuchs/hwinfo-tui
+language: Python
+tags:
+  - monitor
+  - system
+  - gping
+  - inspired
+  - visualization
+  - monitoring
+  - real
+  - time
+  - hardware
+  - sensor
+  - data
+  - hwinfo
+install:
+  pip: pip install hwinfo-tui
+packages:
+  pip: hwinfo-tui
+installNotes: |-
+  ## 📦 Installation
+
+  ### Windows (Recommended)
+
+  [![WinGet Package Version](https://img.shields.io/winget/v/JuanjoFuchs.hwinfo-tui)](https://winstall.app/apps/JuanjoFuchs.hwinfo-tui)
+
+  ```bash
+  winget install hwinfo-tui
+  ```
+
+  Or download the [portable executable](https://github.com/JuanjoFuchs/hwinfo-tui/releases) - no installation required.
+
+  ### Cross-Platform
+
+  [![PyPI - Version](https://img.shields.io/pypi/v/hwinfo-tui)](https://pypi.org/project/hwinfo-tui/)
+
+  ```bash
+  pip install hwinfo-tui
+  ```
+
+  ### From Source
+
+  ```bash
+  git clone https://github.com/hwinfo-tui/hwinfo-tui.git
+  cd hwinfo-tui
+readmeUrl: https://raw.githubusercontent.com/JuanjoFuchs/hwinfo-tui/HEAD/README.md

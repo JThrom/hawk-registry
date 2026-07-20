@@ -7,3 +7,7 @@ binaries:
   - nchess
 homepage: https://github.com/billyvinning/nchess
 repo: https://github.com/billyvinning/nchess
+tags:
+  - chess
+  - game
+readmeUrl: https://raw.githubusercontent.com/billyvinning/nchess/HEAD/README.rst

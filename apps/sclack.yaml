@@ -7,3 +7,40 @@ binaries:
   - sclack
 homepage: https://github.com/haskellcamargo/sclack
 repo: https://github.com/haskellcamargo/sclack
+language: Go
+tags:
+  - slack
+install:
+  pip: pip3 install -r
+packages:
+  pip: -r
+installNotes: |-
+  ## Installation
+
+  ### From Source
+
+  Ensure you have Python 3.4 or superior version.
+
+  pip
+  ```bash
+  git clone https://github.com/haskellcamargo/sclack.git
+  cd sclack
+  pip3 install -r requirements.txt
+  chmod +x ./app.py
+  ./app.py
+  ```
+  pipenv
+  ```bash
+  git clone https://github.com/haskellcamargo/sclack.git
+  cd sclack
+  export PIPENV_VENV_IN_PROJECT=1
+  pipenv install # install deps
+  pipenv shell # enter virtualenv
+  python app.py # run app
+  ```
+
+  ### From Binary
+
+  If you don't have Python installed, you can get the compiled binary for Sclack
+  on [releases](https://github.com/haskellcamargo/sclack/releases) page. Versions **will be** available for Linux x86/x64 and OS X.
+readmeUrl: https://raw.githubusercontent.com/haskellcamargo/sclack/HEAD/README.md

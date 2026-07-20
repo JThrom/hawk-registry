@@ -8,3 +8,10 @@ binaries:
   - minesweep
 homepage: https://github.com/cpcloud/minesweep-rs
 repo: https://github.com/cpcloud/minesweep-rs
+language: Rust
+tags:
+  - mine
+  - sweeping
+  - game
+  - rust
+readmeUrl: https://raw.githubusercontent.com/cpcloud/minesweep-rs/HEAD/README.md

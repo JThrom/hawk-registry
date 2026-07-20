@@ -7,3 +7,37 @@ binaries:
   - ddv
 homepage: https://github.com/lusingander/ddv
 repo: https://github.com/lusingander/ddv
+language: Rust
+tags:
+  - dynamodb
+install:
+  cargo: cargo install --locked
+  brew: brew install lusingander/tap/ddv
+packages:
+  cargo: --locked
+  brew: ddv
+installNotes: |-
+  ## Installation
+
+  ### [Cargo](https://crates.io/crates/ddv)
+
+  ```
+  $ cargo install --locked ddv
+  ```
+
+  ### [Homebrew (macOS)](https://github.com/lusingander/homebrew-tap/blob/master/ddv.rb)
+
+  ```
+  $ brew install lusingander/tap/ddv
+  ```
+
+  ### [X-CMD](https://x-cmd.com/)
+
+  ```
+  $ x install ddv
+  ```
+
+  ### Downloading binary
+
+  You can download pre-compiled binaries from [releases](https://github.com/lusingander/ddv/releases).
+readmeUrl: https://raw.githubusercontent.com/lusingander/ddv/HEAD/README.md

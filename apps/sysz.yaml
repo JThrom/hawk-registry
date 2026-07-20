@@ -7,3 +7,47 @@ binaries:
   - sysz
 homepage: https://github.com/joehillen/sysz
 repo: https://github.com/joehillen/sysz
+tags:
+  - systemctl
+installNotes: |-
+  # Installation
+
+  ## Arch Linux
+
+  ```
+  paru -S sysz
+  ```
+
+  ## NixOS
+
+  ```
+  nix-env -iA nixos.sysz
+  ```
+
+  ## Using Nix
+
+  ```
+  nix-env -iA nixpkgs.sysz
+  ```
+
+  ## Using [`bin`](https://github.com/marcosnils/bin)
+
+  ```
+  bin install https://github.com/joehillen/sysz
+  ```
+
+  ## Direct Download
+
+  ```sh
+  wget -O ~/.bin/sysz https://github.com/joehillen/sysz/releases/latest/download/sysz
+  chmod +x ~/.bin/sysz
+  ```
+
+  ## From Source
+
+  ```sh
+  git clone https://github.com/joehillen/sysz.git
+  cd sysz
+  sudo make install # /usr/local/bin/sysz
+  ```
+readmeUrl: https://raw.githubusercontent.com/joehillen/sysz/HEAD/README.md

@@ -8,3 +8,25 @@ binaries:
   - wgcommander
 homepage: https://github.com/andrianbdn/wg-cmd
 repo: https://github.com/andrianbdn/wg-cmd
+language: Go
+tags:
+  - wireguard
+  - setup
+  - peer
+  - codes
+  - wizard
+install:
+  apt: apt install wireguard-tools
+  dnf: dnf install wireguard-tools
+packages:
+  apt: wireguard-tools
+  dnf: wireguard-tools
+installNotes: |-
+  # Installation 
+
+  Make sure you have WireGuard and iptables installed 
+  (`apt install wireguard-tools` in Ubuntu / Debian, `dnf install wireguard-tools iptables` in Rocky/Alma 9). 
+
+  To download using curl run:
+  ```shell
+readmeUrl: https://raw.githubusercontent.com/andrianbdn/wg-cmd/HEAD/README.md

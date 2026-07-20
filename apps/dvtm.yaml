@@ -7,3 +7,9 @@ binaries:
   - dvtm
 homepage: https://github.com/martanne/dvtm
 repo: https://github.com/martanne/dvtm
+language: Haskell
+tags:
+  - multiplexer
+  - like
+  - window
+readmeUrl: https://raw.githubusercontent.com/martanne/dvtm/HEAD/README.md

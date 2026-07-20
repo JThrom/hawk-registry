@@ -7,3 +7,9 @@ binaries:
   - gomuks
 homepage: https://github.com/tulir/gomuks
 repo: https://github.com/tulir/gomuks
+language: Go
+tags:
+  - chat
+  - messaging
+  - matrix
+readmeUrl: https://raw.githubusercontent.com/tulir/gomuks/HEAD/README.md

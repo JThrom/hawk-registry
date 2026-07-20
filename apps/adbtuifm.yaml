@@ -7,3 +7,18 @@ binaries:
   - adbtuifm
 homepage: https://github.com/darkhz/adbtuifm
 repo: https://github.com/darkhz/adbtuifm
+language: Go
+tags:
+  - file manager
+  - files
+  - file
+  - manager
+  - android
+  - debug
+  - bridge
+installNotes: |-
+  # Installation
+  ```
+  go get -u github.com/darkhz/adbtuifm
+  ```
+readmeUrl: https://raw.githubusercontent.com/darkhz/adbtuifm/HEAD/README.md

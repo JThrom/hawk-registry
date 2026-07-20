@@ -8,3 +8,58 @@ binaries:
   - gpg
 homepage: https://github.com/orhun/gpg-tui
 repo: https://github.com/orhun/gpg-tui
+language: Rust
+tags:
+  - gnupg
+install:
+  cargo: cargo install gpg-tui
+  pacman: pacman -S gpg-tui
+  brew: brew install gpg-tui
+  apt: apt-get install libgpgme-dev
+  dnf: dnf install gpgme-devel
+packages:
+  cargo: gpg-tui
+  pacman: gpg-tui
+  brew: gpg-tui
+  apt: libgpgme-dev
+  dnf: gpgme-devel
+installNotes: |-
+  ## Installation
+
+  <details>
+    <summary>Packaging status</summary>
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/gpg-tui.svg)](https://repology.org/project/gpg-tui/versions)
+
+  </details>
+
+  ### Cargo
+
+  **gpg-tui** is available on [crates.io](https://crates.io/crates/gpg-tui/):
+
+  ```sh
+  cargo install gpg-tui
+  ```
+
+  ### Arch Linux
+
+  #### Community
+
+  **gpg-tui** can be installed from the [extra repository](https://archlinux.org/packages/extra/x86_64/gpg-tui/) using [Pacman](https://wiki.archlinux.org/title/Pacman):
+
+  ```sh
+  pacman -S gpg-tui
+  ```
+
+  #### AUR
+
+  **gpg-tui** is also available on [AUR](https://aur.archlinux.org/packages/?O=0&SeB=b&K=gpg-tui&outdated=&SB=n&SO=a&PP=50&do_Search=Go) and it can be installed with an [AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers):
+
+  ```sh
+  paru -S gpg-tui-git
+  ```
+
+  Or if you prefer, you can clone the [AUR packages](https://aur.archlinux.org/packages/?O=0&SeB=b&K=gpg-tui&outdated=&SB=n&SO=a&PP=50&do_Search=Go) and compile them with [makepkg](https://wiki.archlinux.org/index.php/Makepkg):
+
+  ```sh
+readmeUrl: https://raw.githubusercontent.com/orhun/gpg-tui/HEAD/README.md

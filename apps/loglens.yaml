@@ -7,3 +7,22 @@ binaries:
   - loglens
 homepage: https://github.com/Caelrith/loglens-core
 repo: https://github.com/Caelrith/loglens-core
+language: Rust
+tags:
+  - structured
+  - query
+  - engine
+install:
+  brew: brew install loglens
+packages:
+  brew: loglens
+installNotes: |-
+  ## 📦 Installation
+
+  Add this to your `Cargo.toml`:
+
+  ```toml
+  [dependencies]
+  loglens-core = "0.1.0"
+  ```
+readmeUrl: https://raw.githubusercontent.com/Caelrith/loglens-core/HEAD/README.md

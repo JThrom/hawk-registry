@@ -7,3 +7,17 @@ binaries:
   - delta
 homepage: https://github.com/dandavison/delta
 repo: https://github.com/dandavison/delta
+tags:
+  - git
+  - vcs
+  - syntax
+  - highlighting
+  - pager
+  - diff
+  - grep
+  - output
+installNotes: |-
+  ### Installation and usage
+
+  Please see the [user manual](https://dandavison.github.io/delta/) and `delta --help`.
+readmeUrl: https://raw.githubusercontent.com/dandavison/delta/HEAD/README.md

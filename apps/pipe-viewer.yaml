@@ -7,3 +7,30 @@ binaries:
   - pipe-viewer
 homepage: https://github.com/trizen/pipe-viewer
 repo: https://github.com/trizen/pipe-viewer
+tags:
+  - http
+  - api
+  - lightweight
+  - youtube
+  - linux
+  - without
+  - requiring
+installNotes: |-
+  ### INSTALLATION
+
+  To install `pipe-viewer`, run:
+
+  ```console
+      perl Build.PL
+      sudo ./Build installdeps
+      sudo ./Build install
+  ```
+
+  To install `gtk-pipe-viewer` along with `pipe-viewer`, run:
+
+  ```console
+      perl Build.PL --gtk
+      sudo ./Build installdeps
+      sudo ./Build install
+  ```
+readmeUrl: https://raw.githubusercontent.com/trizen/pipe-viewer/HEAD/README.md

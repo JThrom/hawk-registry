@@ -8,3 +8,22 @@ binaries:
   - physics
 homepage: https://github.com/ClaudioRMalvino/physics_TUI
 repo: https://github.com/ClaudioRMalvino/physics_TUI
+language: Go
+tags:
+  - physics
+  - undergraduate
+  - study
+install:
+  pip: pip install git+https://github.com/ClaudioRMalvino/physics_tui.git
+packages:
+  pip: physics_tui.git
+installNotes: |-
+  ## Installation
+
+  ### Prerequisites
+  - Python 3.8 or higher
+  - Git
+
+  ### Quick Install (Recommended)
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/ClaudioRMalvino/physics_TUI/HEAD/README.md

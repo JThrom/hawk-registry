@@ -7,3 +7,48 @@ binaries:
   - chess-tui
 homepage: https://github.com/thomas-mauran/chess-tui
 repo: https://github.com/thomas-mauran/chess-tui
+language: Rust
+tags:
+  - chess
+  - game
+  - play
+  - built
+  - rust
+install:
+  brew: brew install thomas-mauran/tap/chess-tui
+  cargo: cargo install chess-tui
+  apt: apt-get install -f
+packages:
+  brew: chess-tui
+  cargo: chess-tui
+  apt: -f
+installNotes: |-
+  ### Quick Install
+
+  **Homebrew:**
+
+  ```bash
+  brew install thomas-mauran/tap/chess-tui
+  chess-tui
+  ```
+
+  **Cargo:**
+
+  ```bash
+  cargo install chess-tui
+  chess-tui
+  ```
+
+  **Debian/Ubuntu:**
+
+  ```bash
+  DEB_URL=$(curl -s "https://api.github.com/repos/thomas-mauran/chess-tui/releases/latest" | jq -r '.assets[] | select(.name | endswith(".deb")) | .browser_download_url') && curl -LO "$DEB_URL" && sudo dpkg -i "$(basename "$DEB_URL")" && sudo apt-get install -f
+  chess-tui
+  ```
+
+  **Available on:**
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/chess-tui.svg)](https://repology.org/project/chess-tui/versions)
+
+  For installation via package managers or other methods, see the [Installation Guide](https://thomas-mauran.github.io/chess-tui/docs/Installation/Packaging%20status).
+readmeUrl: https://raw.githubusercontent.com/thomas-mauran/chess-tui/HEAD/README.md

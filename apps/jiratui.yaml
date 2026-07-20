@@ -7,3 +7,51 @@ binaries:
   - jiratui
 homepage: https://github.com/whyisdifficult/jiratui
 repo: https://github.com/whyisdifficult/jiratui
+language: Python
+tags:
+  - interacting
+  - atlassian
+  - jira
+  - directly
+  - shell
+install:
+  pip: pip install jiratui
+  pipx: pipx install jiratui
+  brew: brew install jiratui
+packages:
+  pip: jiratui
+  pipx: jiratui
+  brew: jiratui
+installNotes: |-
+  ## Installation
+
+  The recommended way to install the application is via [uv](https://docs.astral.sh/uv/):
+
+  ```shell
+  uv tool install jiratui
+  ```
+
+  Alternatively, you can install it using `pip`:
+
+  ```shell
+  pip install jiratui
+  ```
+
+  or `pipx`:
+
+  ```shell
+  pipx install jiratui
+  ```
+
+  For Arch Linux (btw) the package is available in [AUR](https://aur.archlinux.org/packages/jiratui-git)
+
+  ```shell
+  yay -S jiratui-git
+  ```
+
+  You can also install using homebrew
+
+  ```shell
+  brew install jiratui
+  ```
+readmeUrl: https://raw.githubusercontent.com/whyisdifficult/jiratui/HEAD/README.md

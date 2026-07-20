@@ -1,0 +1,63 @@
+<h1 align="center">pdiary</h1>
+<p align="center">
+<img src="./assets/logo.png">
+</p>
+
+<p align="center">
+<a href="https://www.python.org/downloads/"><img src="http://img.shields.io/badge/Python-3.3+-green.svg" alt="Python 3.3+"/></a>
+<a href="hhttps://github.com/manipuladordedados/pdiary/LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-red.svg" alt="License" /></a>
+<span class="badge-buymeacoffee">
+<a href="https://ko-fi.com/manipuladordedados" title="Donate to this project using Buy Me A Coffee"><img src="https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg" alt="Buy Me A Coffee donate button" /></a>
+</span>
+</p>
+
+<p align="center">A simple terminal diary journal application written in Python with encryption support.</p><br>
+
+<p align="center">
+<img src="./assets/demo_1.gif"></a>
+</p>
+
+## Installation
+
+To install, simply use `pip`:
+
+    pip install https://github.com/manipuladordedados/pdiary/releases/download/1.65/pdiary-1.65-py3-none-any.whl
+
+## Usage
+It is recommended to run pdiary in a terminal that's support 256 colors, resize and UTF-8.
+
+To run pdiary open a terminal and type:
+
+    pdiary
+
+The interaction of the software is made through the keyboard arrow keys and also the TAB key. Enter key is used for select and confirm.
+If your terminal supports mouse interaction you also can control the widgets with the mouse.
+
+## Troubleshooting
+
+Pdiary was designed to display symbols/glyphs as icons instead of emojis.
+*Maybe you like to use Pdiary with emojis, personally i think it's very ugly but the choice is yours.*
+
+You may encounter missing icons/symbols, this occurs because you don't have the appropriate font to display them.
+You can solve this by installing this font.
+
+- Debian/Ubuntu:
+`apt install fonts-symbola`
+
+- Arch Linux:
+You can find the package "`ttf-symbola`" in AUR.
+
+To display the icons corretly you need to remove the font with the emojis.
+In Ubunbu/Debian the package is called "`fonts-noto-color-emoji`"
+On arch it is "`noto-fonts-emoji`"
+In another distributions the name must be similar.
+
+## Known Issues
+
+- In some old terminals without support to new technologies some errors may occur, like the non exhibition of some icons and some characters, it can also have some trouble with colors.
+- Pdiary is responsive, positioning is done according to terminal sizes, but sometimes it might break. If so, try in a terminal with a different size.
+
+
+## Contributions
+
+- Pull requests are awesome and always welcome. Please use the [issue tracker](https://github.com/manipuladordedados/pdiary/issues) to report any bugs or file feature requests.

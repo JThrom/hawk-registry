@@ -7,3 +7,37 @@ binaries:
   - dblab
 homepage: https://github.com/danvergara/dblab
 repo: https://github.com/danvergara/dblab
+language: Go
+tags:
+  - database
+  - sql
+  - every
+  - junkie
+  - deserves
+install:
+  brew: brew install --cask
+packages:
+  brew: --cask
+installNotes: |-
+  ## Installation
+
+  > The above comment is deprecated and CGO is not needed anymore. There will be a single binary capable of dealing with all supported clients.
+
+  ### Homebrew
+
+  It works with Linux, too.
+
+  ```
+  brew install --cask danvergara/tools/dblab
+  ```
+
+  Or
+
+  ```
+  brew tap danvergara/tools
+  brew install --cask dblab
+  ```
+
+  ### Binary Release (Linux/macOS/Windows)
+  You can manually download a binary release from [the release page](https://github.com/danvergara/dblab/releases).
+readmeUrl: https://raw.githubusercontent.com/danvergara/dblab/HEAD/README.md

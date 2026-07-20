@@ -7,3 +7,23 @@ binaries:
   - stu
 homepage: https://github.com/lusingander/stu
 repo: https://github.com/lusingander/stu
+language: Rust
+tags:
+  - aws
+  - cloud
+  - amazon
+install:
+  cargo: cargo install --locked
+packages:
+  cargo: --locked
+installNotes: |-
+  ## Installation
+
+  If you're using Cargo:
+
+  ```
+  $ cargo install --locked stu
+  ```
+
+  For other download options, see [Installation](https://lusingander.github.io/stu/getting-started/installation.html).
+readmeUrl: https://raw.githubusercontent.com/lusingander/stu/HEAD/README.md

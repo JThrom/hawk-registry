@@ -7,3 +7,51 @@ binaries:
   - puffin
 homepage: https://github.com/siddhantac/puffin
 repo: https://github.com/siddhantac/puffin
+language: Go
+tags:
+  - beautiful
+  - dashboard
+  - hledger
+install:
+  brew: brew install siddhantac/puffin/puffin
+packages:
+  brew: puffin
+installNotes: |-
+  # 🤖 Installation
+
+  ## Homebrew
+
+  ```bash
+  brew install siddhantac/puffin/puffin
+  ```
+
+  ## Download binaries
+  If you just want to use it, you can download the binary from [here](https://github.com/siddhantac/puffin/releases).
+
+  ## Install from source
+  ### Pre-requisites
+
+  - [hledger](https://hledger.org/) is required for puffin to work.
+  - make
+  - Go compiler (>=1.17)
+
+  ### Build
+
+  * Clone this repo
+  * Run the command `make build`. This creates the binary `puffin`.
+
+  ### Run demo
+
+  * Clone this repo
+  * Run `make debug`
+
+  ### Run with your own journal file
+
+  * Use `make start`
+
+  or
+
+  * Run using `make build && ./puffin`
+
+  It uses your hledger setup as it is. So there is no need to setup journal files if you are already using hledger.
+readmeUrl: https://raw.githubusercontent.com/siddhantac/puffin/HEAD/README.md

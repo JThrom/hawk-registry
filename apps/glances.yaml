@@ -7,3 +7,146 @@ binaries:
   - glances
 homepage: https://github.com/nicolargo/glances
 repo: https://github.com/nicolargo/glances
+language: Python
+tags:
+  - monitor
+  - system
+  - glances
+  - htop
+  - alternative
+install:
+  brew: brew install glances
+  pip: pip install glances
+  apt: apt install python3-psutil
+  pipx: pipx install 'glances[all]'
+packages:
+  brew: glances
+  pip: glances
+  apt: python3-psutil
+  pipx: "'glances[all]'"
+installNotes: |-
+  Installation 🚀
+  ===============
+
+  There are several methods to test/install Glances on your system. Choose your weapon!
+
+  PyPI: Pip, the standard way
+  ---------------------------
+
+  Glances is on ``PyPI``. By using PyPI, you will be using the latest stable version.
+
+  To install Glances, simply use the ``pip`` command line in an virtual environment.
+
+  .. code-block:: console
+
+      cd ~
+      python3 -m venv ~/.venv
+      source ~/.venv/bin/activate
+      pip install glances
+
+  *Note*: Python headers are required to install `psutil`_, a Glances
+  dependency. For example, on Debian/Ubuntu **the simplest** is
+  ``apt install python3-psutil`` or alternatively need to install first
+  the *python-dev* package and gcc (*python-devel* on Fedora/CentOS/RHEL).
+  For Windows, just install psutil from the binary installation file.
+
+  By default, Glances is installed **without** the Web interface dependencies.
+
+  To install it, use the following command:
+
+  .. code-block:: console
+
+      pip install 'glances[web]'
+
+  For a full installation (with all features, see features list bellow):
+
+  .. code-block:: console
+
+      pip install 'glances[all]'
+
+  Features list:
+
+  - all: install dependencies for all features
+  - action: install dependencies for action feature
+  - browser: install dependencies for Glances centram browser
+  - cloud: install dependencies for cloud plugin
+  - containers: install dependencies for container plugin
+  - export: install dependencies for all exports modules
+  - gpu: install dependencies for GPU plugin
+  - graph: install dependencies for graph export
+  - ip: install dependencies for IP public option
+  - mcp: install dependencies for the MCP server (AI assistant integration)
+  - raid: install dependencies for RAID plugin
+  - sensors: install dependencies for sensors plugin
+  - smart: install dependencies for smart plugin
+  - snmp: install dependencies for SNMP
+  - sparklines: install dependencies for sparklines option
+  - web: install dependencies for Webserver (WebUI) and Web API
+  - wifi: install dependencies for Wifi plugin
+
+  To upgrade Glances to the latest version:
+
+  .. code-block:: console
+
+      pip install --upgrade glances
+
+  UVx, the magic way
+  ------------------
+
+  Install and run directly Glances with the one line:
+
+  .. code-block:: console
+
+      uvx glances
+
+  Note: `Uv`_ should be installed on your system.
+
+  PyPI: PipX, the alternative way
+  -------------------------------
+
+  Install PipX on your system. For example on Ubuntu/Debian:
+
+  .. code-block:: console
+
+      sudo apt install pipx
+
+  Then install Glances (with all features):
+
+  .. code-block:: console
+
+      pipx install 'glances[all]'
+
+  The glances script will be installed in the ~/.local/bin folder.
+
+  To upgrade Glances to the latest version:
+
+  .. code-block:: console
+
+      pipx upgrade glances
+
+  Docker: the cloudy way
+  ----------------------
+
+  Glances Docker images are available. You can use it to monitor your
+  server and all your containers !
+
+  The following tags are available:
+
+  - *latest-full* for a full Alpine Glances image (latest release) with all dependencies
+  - *latest* for a basic Alpine Glances (latest release) version with minimal dependencies (FastAPI and Docker)
+  - *dev* for a basic Alpine Glances image (based on development branch) with all dependencies (Warning: may be instable)
+  - *ubuntu-latest-full* for a full Ubuntu Glances image (latest release) with all dependencies
+  - *ubuntu-latest* for a basic Ubuntu Glances (latest release) version with minimal dependencies (FastAPI and Docker)
+  - *ubuntu-dev* for a basic Ubuntu Glances image (based on development branch) with all dependencies (Warning: may be instable)
+
+  Run last version of Glances container in *console mode*:
+
+  .. code-block:: console
+
+      docker run --rm -e TZ="${TZ}" -v /var/run/docker.sock:/var/run/docker.sock:ro -v /run/user/1000/podman/podman.sock:/run/user/1000/podman/podman.sock:ro --pid host --network host -it nicolargo/glances:latest-full
+
+  By default, the /etc/glances/glances.conf file is used (based on docker-compose/glances.conf).
+
+  Additionally, if you want to use your o
+  …
+readmeUrl: https://raw.githubusercontent.com/nicolargo/glances/HEAD/README.rst

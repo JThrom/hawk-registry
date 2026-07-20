@@ -7,3 +7,21 @@ binaries:
   - dbee
 homepage: https://github.com/murat-cileli/dbee
 repo: https://github.com/murat-cileli/dbee
+language: Go
+tags:
+  - database
+  - sql
+  - minimalistic
+  - browser
+installNotes: |-
+  ### 🐝 Installation
+  Visit [Releases](https://github.com/murat-cileli/dbee/releases) section.
+
+  **Building From Source**
+  ```console
+  git clone https://github.com/murat-cileli/dbee.git
+  cd src
+  go build .
+  ./dbee
+  ```
+readmeUrl: https://raw.githubusercontent.com/murat-cileli/dbee/HEAD/README.md

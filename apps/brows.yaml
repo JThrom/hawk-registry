@@ -7,3 +7,19 @@ binaries:
   - brows
 homepage: https://github.com/rubysolo/brows
 repo: https://github.com/rubysolo/brows
+tags:
+  - github
+  - release
+  - browser
+install:
+  brew: brew install brows
+packages:
+  brew: brows
+installNotes: |-
+  ## Installation:
+
+  ```
+  brew tap rubysolo/tools
+  brew install brows
+  ```
+readmeUrl: https://raw.githubusercontent.com/rubysolo/brows/HEAD/README.md

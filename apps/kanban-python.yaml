@@ -7,3 +7,28 @@ binaries:
   - kanban-python
 homepage: https://github.com/Zaloog/kanban-python
 repo: https://github.com/Zaloog/kanban-python
+language: Python
+tags:
+  - kanban
+  - python
+install:
+  pip: pip install kanban-python
+  pipx: pipx install kanban-python
+packages:
+  pip: kanban-python
+  pipx: kanban-python
+installNotes: |-
+  ## Installation
+  You can install kanban-python with:
+  ```bash
+  python -m pip install kanban-python
+  ```
+
+  or using [pipx] / [uv] / [rye]:
+  ```bash
+  pipx install kanban-python # using pipx
+  uv tool install kanban-python # using uv
+  rye install kanban-python # using rye
+  ```
+  I recommend using pipx, rye or uv to install CLI Tools into an isolated environment.
+readmeUrl: https://raw.githubusercontent.com/Zaloog/kanban-python/HEAD/README.md

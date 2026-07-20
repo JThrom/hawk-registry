@@ -7,3 +7,7 @@ binaries:
   - zoridor
 homepage: https://github.com/ringtailsoftware/zoridor
 repo: https://github.com/ringtailsoftware/zoridor
+tags:
+  - play
+  - quoridor
+readmeUrl: https://raw.githubusercontent.com/ringtailsoftware/zoridor/HEAD/README.md

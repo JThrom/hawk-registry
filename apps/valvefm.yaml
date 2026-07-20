@@ -7,3 +7,34 @@ binaries:
   - valvefm
 homepage: https://github.com/zorig/valvefm
 repo: https://github.com/zorig/valvefm
+language: Go
+tags:
+  - vintage
+  - radio
+  - streaming
+  - stations
+  - browser
+  - info
+install:
+  brew: brew install valvefm
+packages:
+  brew: valvefm
+installNotes: |-
+  ## Install
+
+  ### Homebrew (macOS / Linux)
+
+  ```bash
+  brew tap zorig/tap
+  brew install valvefm
+  ```
+
+  ### Chocolatey (Windows)!
+  > Due to Chocolatey review, new version takes some time to get accepted.
+
+  ```powershell
+  choco install valvefm
+  ```
+
+  ### From source
+readmeUrl: https://raw.githubusercontent.com/zorig/valvefm/HEAD/README.md

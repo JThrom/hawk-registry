@@ -7,3 +7,57 @@ binaries:
   - dolphie
 homepage: https://github.com/charles-001/dolphie
 repo: https://github.com/charles-001/dolphie
+language: Go
+tags:
+  - database
+  - sql
+  - single
+  - pane
+  - glass
+  - real
+  - time
+  - analytics
+  - mysql
+  - mariadb
+  - proxysql
+install:
+  pip: pip install dolphie
+  brew: brew install dolphie
+packages:
+  pip: dolphie
+  brew: dolphie
+installNotes: |-
+  ## Installation
+
+  Requires Python 3.9+
+
+  #### Using PyPi
+
+  ```shell
+  $ pip install dolphie
+  ```
+
+  #### Using Poetry
+
+  ```shell
+  $ curl -sSL https://install.python-poetry.org | python3 -
+
+  $ poetry install
+  ```
+
+  #### Using Homebrew
+
+  If you are a [Homebrew](https://brew.sh/) user, you can install [dolphie](https://formulae.brew.sh/formula/dolphie) via
+
+  ```sh
+  $ brew install dolphie
+  ```
+
+  #### Using Docker
+
+  ```sh
+  $ docker pull ghcr.io/charles-001/dolphie:latest
+  $ docker run -dit --name dolphie ghcr.io/charles-001/dolphie:latest
+  $ docker exec -it dolphie dolphie --tab-setup
+  ```
+readmeUrl: https://raw.githubusercontent.com/charles-001/dolphie/HEAD/README.md

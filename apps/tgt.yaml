@@ -7,3 +7,12 @@ binaries:
   - tgt
 homepage: https://github.com/FedericoBruzzone/tgt
 repo: https://github.com/FedericoBruzzone/tgt
+language: Rust
+tags:
+  - telegram
+  - rust
+install:
+  cargo: cargo install tgt
+packages:
+  cargo: tgt
+readmeUrl: https://raw.githubusercontent.com/FedericoBruzzone/tgt/HEAD/README.md

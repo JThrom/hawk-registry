@@ -7,3 +7,28 @@ binaries:
   - keydex
 homepage: https://github.com/shikaan/keydex
 repo: https://github.com/shikaan/keydex
+tags:
+  - database
+  - sql
+  - password
+  - manager
+  - keepass
+  - databases
+installNotes: |-
+  ### Installation
+
+  _MacOS and Linux_
+  ```sh
+  curl -s https://shikaan.github.io/sup/install | REPO=shikaan/keydex sh -
+  ```
+
+  or
+
+  ```sh
+  wget -q https://shikaan.github.io/sup/install -O- | REPO=shikaan/keydex sh -
+  ```
+
+  _Windows and manual instructions_
+
+  Head to the [releases](https://github.com/shikaan/keydex/releases) page and download the executable for your system and architecture.
+readmeUrl: https://raw.githubusercontent.com/shikaan/keydex/HEAD/README.md

@@ -7,3 +7,53 @@ binaries:
   - nostratui
 homepage: https://github.com/adamm-xyz/nostratui
 repo: https://github.com/adamm-xyz/nostratui
+language: Rust
+tags:
+  - browsing
+  - nostr
+  - posts
+  - rust
+installNotes: |-
+  ## Installation
+
+  ### Clone and Build
+
+  ```bash
+  git clone https://github.com/adamm-xyz/nostratui.git
+  cd nostratui
+  cargo build
+  ```
+
+  ### Config
+
+  You must create a config.json at:
+  ```bash
+  ~/.config/nostratui/config.json
+  ```
+  Then, you can add your private key, the list of relays you use and public keys you follow.
+
+  ```json5
+  {
+      "key":"nsec1...",
+      "relays":[
+          "wss://myrelay.xyz",
+          "wss://nostr.example.net"
+      ],
+      "contacts":[
+          [
+              "npub1...",
+              "matthew"
+          ],
+          [
+              "npub1...",
+              "mark"
+          ],
+          [
+              "npub1...",
+              "luke"
+          ]
+      ]
+  }
+
+  ```
+readmeUrl: https://raw.githubusercontent.com/adamm-xyz/nostratui/HEAD/README.md

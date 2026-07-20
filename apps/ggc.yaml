@@ -7,3 +7,18 @@ binaries:
   - ggc
 homepage: https://github.com/bmf-san/ggc
 repo: https://github.com/bmf-san/ggc
+language: Go
+tags:
+  - git
+  - vcs
+install:
+  brew: brew install ggc
+  go: go install github.com/bmf-san/ggc/v8@latest
+packages:
+  brew: ggc
+  go: v8
+installNotes: |-
+  ## Install
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/bmf-san/ggc/HEAD/README.md

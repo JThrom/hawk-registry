@@ -7,3 +7,24 @@ binaries:
   - golazo
 homepage: https://github.com/0xjuanma/golazo
 repo: https://github.com/0xjuanma/golazo
+language: Go
+tags:
+  - soccer
+  - minute
+  - updates
+  - finished
+  - match
+  - stats
+install:
+  brew: brew install 0xjuanma/tap/golazo
+packages:
+  brew: golazo
+installNotes: |-
+  ## Installation & Update
+
+  **Self-update:** Run `golazo --update` anytime to get the latest version.
+
+  ### Homebrew
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/0xjuanma/golazo/HEAD/README.md

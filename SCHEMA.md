@@ -18,10 +18,15 @@ Each app is one YAML file in `apps/<id>.yaml`.
 | `repo`        | no       | string (URL)      | Source repository.                                           |
 | `popularity`  | no       | number            | Stars / rank signal for search ordering.                     |
 | `language`    | no       | string            | Implementation language / runtime.                           |
+| `installNotes`| no       | string (markdown) | Extracted README install section; shown when no manager fits.|
+| `readmeUrl`   | no       | string (URL)      | Raw URL of the full README (sidecar in `readmes/`).          |
+
+Most optional fields are auto-populated by `scripts/enrich.ts` from the
+project README; hand-curated values are preserved.
 
 ### Valid package managers
 
-`brew`, `apt`, `pacman`, `cargo`, `npm`, `bun`, `pipx`, `pip`, `dnf`
+`brew`, `apt`, `pacman`, `cargo`, `npm`, `bun`, `pipx`, `pip`, `dnf`, `go`
 
 ## Categories (`categories.yaml`)
 

@@ -7,3 +7,83 @@ binaries:
   - ctop
 homepage: https://github.com/bcicen/ctop
 repo: https://github.com/bcicen/ctop
+tags:
+  - docker
+  - containers
+  - like
+  - container
+  - metrics
+install:
+  apt: apt-get install ca-certificates
+  pacman: pacman -S ctop
+  brew: brew install ctop
+packages:
+  apt: ca-certificates
+  pacman: ctop
+  brew: ctop
+installNotes: |-
+  ## Install
+
+  Fetch the [latest release](https://github.com/bcicen/ctop/releases) for your platform:
+
+  #### Debian/Ubuntu
+
+  Maintained by a [third party](https://packages.azlux.fr/)
+  ```bash
+  sudo apt-get install ca-certificates curl gnupg lsb-release
+  curl -fsSL https://azlux.fr/repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/azlux-archive-keyring.gpg
+  echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] http://packages.azlux.fr/debian \
+    $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/azlux.list >/dev/null
+  sudo apt-get update
+  sudo apt-get install docker-ctop
+  ```
+
+  #### Arch
+
+  ```bash
+  sudo pacman -S ctop
+  ```
+
+  _`ctop` is also available for Arch in the [AUR](https://aur.archlinux.org/packages/ctop-bin/)_
+
+
+  #### Linux (Generic)
+
+  ```bash
+  sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.7/ctop-0.7.7-linux-amd64 -O /usr/local/bin/ctop
+  sudo chmod +x /usr/local/bin/ctop
+  ```
+
+  #### OS X
+
+  ```bash
+  brew install ctop
+  ```
+  or
+  ```bash
+  sudo port install ctop
+  ```
+  or
+  ```bash
+  sudo curl -Lo /usr/local/bin/ctop https://github.com/bcicen/ctop/releases/download/v0.7.7/ctop-0.7.7-darwin-amd64
+  sudo chmod +x /usr/local/bin/ctop
+  ```
+
+  #### Windows
+
+  `ctop` is available in [scoop](https://scoop.sh/):
+
+  ```powershell
+  scoop install ctop
+  ```
+
+  #### Docker
+
+  ```bash
+  docker run --rm -ti \
+    --name=ctop \
+    --volume /var/run/docker.sock:/var/run/docker.sock:ro \
+    quay.io/vektorlab/ctop:latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/bcicen/ctop/HEAD/README.md

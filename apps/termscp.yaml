@@ -7,3 +7,16 @@ binaries:
   - termscp
 homepage: https://github.com/veeso/termscp
 repo: https://github.com/veeso/termscp
+language: Rust
+tags:
+  - aws
+  - cloud
+  - file
+  - transfer
+  - explorer
+  - sftp
+install:
+  pacman: pacman -S termscp
+packages:
+  pacman: termscp
+readmeUrl: https://raw.githubusercontent.com/veeso/termscp/HEAD/README.md

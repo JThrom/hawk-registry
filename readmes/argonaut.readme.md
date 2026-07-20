@@ -1,0 +1,435 @@
+# 🐙 Argonaut — Argo CD TUI
+
+[![Github Downloads](https://img.shields.io/github/downloads/darksworm/argonaut/total?style=flat-square&label=github+downloads)](https://github.com/darksworm/argonaut/releases/latest)
+[![License](https://img.shields.io/github/license/darksworm/argonaut?style=flat-square)](https://github.com/darksworm/argonaut/blob/main/LICENSE)
+[![CodeRabbit](https://img.shields.io/coderabbit/prs/github/darksworm/argonaut?style=flat-square)](https://www.coderabbit.ai)
+
+Argonaut is a keyboard-first terminal UI for **Argo CD**, built with **Bubbletea**. Browse apps, scope by clusters/namespaces/projects, stream live resource status, trigger syncs, inspect diffs in your favorite pager, and roll back safely — all without leaving your terminal.
+
+> ❤️ 🐶
+> &nbsp;Inspired by the great UX of [k9s](https://k9scli.io) — but for Argo CD.
+
+---
+
+## 📦 Prerequisites
+
+- [**Argo CD CLI**](https://argo-cd.readthedocs.io/en/stable/cli_installation/) installed
+- [**Delta**](https://dandavison.github.io/delta/installation.html) installed for enhanced diffs (optional, falls back to `git`)
+
+---
+
+## 🚀 Installation methods
+
+<details>
+  <summary><strong>Install Script (Linux/macOS)</strong></summary>
+
+```bash
+curl -sSL https://raw.githubusercontent.com/darksworm/argonaut/main/install.sh | sh
+```
+
+The install script automatically detects your system (including musl vs glibc on Linux) and downloads the appropriate binary from the latest release.
+
+You can also install a specific version:
+```bash
+curl -sSL https://raw.githubusercontent.com/darksworm/argonaut/main/install.sh | sh -s -- v1.13.0
+```
+</details>
+
+<details>
+  <summary><strong>Homebrew (Linux/MacOS)</strong></summary>
+
+```bash
+brew tap darksworm/homebrew-tap
+brew install darksworm/tap/argonaut
+```
+</details>
+
+<details>
+  <summary><strong>AUR (Arch User Repository)</strong></summary>
+
+```bash
+yay -S argonaut-bin
+```
+
+Or, to track the latest commit on `main` (rebuilt from source on install):
+
+```bash
+yay -S argonaut-git
+```
+</details>
+
+<details>
+    <summary><strong>Nix</strong></summary>
+With Nix and Flakes enabled, you can run or install Argonaut from nixpkgs or directly from the repository.
+
+### nixpkgs
+
+Argonaut is currently available on the `unstable` channel of [nixpkgs](https://search.nixos.org/packages?channel=unstable&query=argonaut&show=argonaut). So you can install it using
+
+```bash
+nix-env -iA nixos.argonaut
+```
+
+On other systems (macOS, non-NixOS Linux):
+
+```bash
+nix-env -iA nixpkgs.argonaut
+```
+
+or by adding it to your `systemPackages`.
+
+```nix
+environment.systemPackages = with pkgs; [ argonaut ];
+```
+
+### Run Directly
+
+To run Argonaut without permanently installing it, use the `nix run` command:
+
+```bash
+nix run github:darksworm/argonaut
+```
+
+### Development Shell
+
+To enter a development shell with Argonaut and its dependencies (like Go, Delta, and Argocd) available for development, use the `nix develop` command:
+
+```bash
+nix develop github:darksworm/argonaut
+```
+
+### Flakes
+
+If you are using Flakes to manage your systems add this to your Flake:
+
+```nix
+inputs = {
+  argonaut = {
+    url = "github:darksworm/argonaut";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+  # ...
+}
+```
+
+</details>
+
+<details>
+  <summary><strong>Docker</strong></summary>
+
+Pull the image:
+```bash
+docker pull ghcr.io/darksworm/argonaut:latest
+```
+
+Run with mounted Argo CD config (as your host user to preserve permissions):
+```bash
+docker run -it --rm \
+  -u $(id -u):$(id -g) \
+  -v ~/.config/argocd:/home/appuser/.config/argocd:ro \
+  ghcr.io/darksworm/argonaut:latest
+```
+
+The container needs access to your Argo CD configuration for authentication. The `:ro` flag mounts it as read-only for security.
+</details>
+
+[//]: # (</details>)
+
+[//]: # (<details>)
+
+[//]: # (  <summary><strong>NUR &#40;Nix User Repository&#41;</strong></summary>)
+
+[//]: # ()
+[//]: # (```bash)
+
+[//]: # (nix-env -iA nur.repos.darksworm.argonaut)
+
+[//]: # (```)
+
+[//]: # (</details>)
+
+<details>
+  <summary><strong>Download a binary</strong></summary>
+
+You can download binaries and packages in from the [**latest release**](https://github.com/darksworm/argonaut/releases/latest).
+
+</details>
+
+## ⚡ Quickstart
+```bash
+# Log in to your Argo CD server
+argocd login
+
+# Start Argonaut
+argonaut
+```
+
+---
+
+## ✨ Highlights
+
+- **Instant app browsing** with live updates (NDJSON streams)
+- **Scoped navigation**: clusters → namespaces → projects → apps
+- **Command palette** (`:`) for actions: `sync`, `diff`, `rollback`, `resources`, etc.
+- **Live resources view** per app with health & sync status
+- **External diff integration**: prefers `delta`, falls back to `git --no-index diff | less`
+- **Guided rollback** with revision metadata and progress streaming
+- **Execute actions** on resources — dynamically discovered per resource, including Argo Rollouts and any custom-defined actions
+- **Keyboard-only workflow** with Vim-like navigation
+
+---
+
+## 📸 Screenshots
+
+### **Live Apps**  
+<img src="assets/argonaut_apps.png" alt="Apps list"/>
+
+### **Sync**
+<img src="assets/argonaut_sync.png" alt="Sync apps"/>
+
+### **Live Resources**
+<img src="assets/argonaut_resources.png" alt="Resources view"/>
+
+### **Diff**  
+<img src="assets/argonaut_diff.png" alt="External diff"/>
+
+### **Rollback**  
+<img src="assets/argonaut_rollback.png" alt="Rollback flow"/>
+
+### **Delete apps**  
+<img src="assets/argonaut_delete_apps.png" alt="Delete apps"/>
+
+### **Execute actions**  
+<img src="assets/argonaut_resource_actions.png" alt="Execute actions modal — dynamically lists actions for the selected resource"/>
+
+### **Enjoy colorful themes**  
+<img src="assets/argonaut_themes.gif" alt="Many themes to choose from"/>
+
+### **And much more**  
+<img src="assets/argonaut_help.png" alt="the :help command describes all commands"/>
+
+## Advanced Features
+
+### Client certificate authentication
+Argonaut supports client certificate authentication. You just need to pass a couple arguments to the argonaut command:
+
+```bash
+argonaut --client-cert=/path/to/cert --client-cert-key=/path/to/key
+```
+
+### Self-signed certificates
+If your Argo CD server uses a self-signed certificate, you can provide a custom CA certificate to trust:
+
+```bash
+argonaut --ca-cert=/path/to/ca.crt
+```
+
+### Port-forward mode
+
+If your Argo CD server isn't directly accessible (e.g., running in a private cluster), Argonaut can connect via kubectl port-forward:
+
+```bash
+# Configure ArgoCD CLI for port-forward mode
+argocd login --port-forward --port-forward-namespace argocd
+
+# Start Argonaut (automatically detects port-forward mode)
+argonaut
+```
+
+**Requirements:**
+- `kubectl` configured with access to the cluster
+- ArgoCD server pod running in the target namespace
+
+**Custom namespace:** If ArgoCD is installed in a different namespace, add to your config:
+```toml
+# ~/.config/argonaut/config.toml
+[port_forward]
+namespace = "my-argocd-namespace"
+```
+
+---
+
+## ⚙️ Configuration
+
+Argonaut stores its configuration in a TOML file at `~/.config/argonaut/config.toml` (or `$XDG_CONFIG_HOME/argonaut/config.toml`).
+
+You can override the config path with the `ARGONAUT_CONFIG` environment variable.
+
+### Example Configuration
+
+```toml
+[appearance]
+theme = "tokyo-night"
+
+[appearance.overrides]
+# Override individual theme colors (hex format)
+# accent = "#ff79c6"
+# success = "#50fa7b"
+
+[sort]
+field = "name"      # name, sync, health
+direction = "asc"   # asc, desc
+
+[k9s]
+command = "k9s"           # Path to k9s executable
+context = ""              # Override Kubernetes context for k9s
+
+[diff]
+viewer = ""               # Interactive diff viewer (e.g., "code --diff {left} {right}", "meld {left} {right}")
+formatter = ""            # Diff formatter command (e.g., "delta --side-by-side")
+
+[http_timeouts]
+request_timeout = "10s"   # Timeout for HTTP requests (increase for large deployments)
+
+[updates]
+check_enabled = true      # Set to false to disable the GitHub release-check on startup
+
+# Start in apps view instead of clusters (supports :command syntax)
+default_view = "apps"
+```
+
+### Configuration Options
+
+#### `[appearance]`
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `theme` | Color theme name (see available themes below) | `tokyo-night` |
+
+**Available themes:**
+- **Dark themes**: `catppuccin-mocha`, `dracula`, `gruvbox-dark`, `monokai`, `nord`, `one-dark`, `oxocarbon`, `solarized-dark`, `tokyo-night`, `tokyo-storm`
+- **Light themes**: `catppuccin-latte`, `gruvbox-light`, `one-light`, `onehalf-light`, `solarized-light`
+- **Accessibility**: `colorblind-safe`, `grayscale-lowchroma`, `high-contrast`
+- **Special**: `inherit-terminal` (uses your terminal's ANSI color palette)
+
+You can also change the theme at runtime using the `:theme <name>` command.
+
+#### `[appearance.overrides]`
+
+Override individual theme colors with hex values. Available color keys:
+- `accent`, `warning`, `dim`, `success`, `danger`, `progress`, `unknown`, `info`, `text`, `gray`
+- `selected_bg`, `cursor_selected_bg`, `cursor_bg`, `border`, `muted_bg`, `shade_bg`, `dark_bg`
+
+#### `[sort]`
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `field` | Sort field (`name`, `sync`, `health`) | `name` |
+| `direction` | Sort direction (`asc`, `desc`) | `asc` |
+
+You can also change sorting at runtime using the `:sort <field> <direction>` command.
+
+#### `[k9s]`
+
+Integration settings for [k9s](https://k9scli.io), the Kubernetes TUI.
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `command` | Path to k9s executable | `k9s` |
+| `context` | Override Kubernetes context when launching k9s | (none) |
+
+Press `K` on a resource in the tree view to open it in k9s.
+
+#### `[diff]`
+
+Settings for diff viewing and formatting.
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `viewer` | Interactive diff viewer command. Use `{left}` and `{right}` as placeholders for file paths. | (none) |
+| `formatter` | Non-interactive diff formatter piped through before display | (none, falls back to `delta` if installed) |
+
+**Examples:**
+
+```toml
+[diff]
+# Use VS Code as diff viewer
+viewer = "code --diff {left} {right} --wait"
+
+# Use meld as diff viewer
+viewer = "meld {left} {right}"
+
+# Use delta with custom options
+formatter = "delta --side-by-side --line-numbers"
+```
+
+If no `viewer` is set, diffs are shown in an internal pager. If no `formatter` is set but [delta](https://dandavison.github.io/delta/) is installed, it will be used automatically.
+
+#### `[http_timeouts]`
+
+Settings for HTTP request timeouts. Useful for large deployments with thousands of applications where API responses take longer.
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `request_timeout` | Timeout for all HTTP requests to ArgoCD API. Use Go duration format (e.g., "30s", "1m", "90s") | `"10s"` |
+
+**Examples:**
+
+```toml
+[http_timeouts]
+# For large deployments with thousands of applications
+request_timeout = "60s"
+
+# For very large deployments
+request_timeout = "2m"
+```
+
+> **Note:** If you're experiencing timeout errors when listing applications or resources, increase this value. The timeout applies to all API operations including listing applications, getting resources, and sync operations.
+
+#### `[updates]`
+
+Settings for the automatic update check. On startup (and once per hour after that), Argonaut hits the GitHub Releases API to see whether a newer version exists; when one does, it shows a `New version available, run :upgrade` hint in the status bar.
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `check_enabled` | Enable the periodic GitHub release check. Set to `false` to disable in air-gapped environments, behind restrictive firewalls, or anywhere outbound traffic to `api.github.com` is unwanted. | `true` |
+
+```toml
+[updates]
+check_enabled = false
+```
+
+#### `default_view`
+
+Configure which view Argonaut starts in. Uses the same syntax as `:commands`, with an optional scope argument to drill down into a specific cluster, namespace, project, or application set.
+
+| Value | Startup view |
+|-------|-------------|
+| `"apps"` | Applications list |
+| `"clusters"` | Clusters list (default) |
+| `"ns"` | Namespaces list |
+| `"proj"` | Projects list |
+| `"appsets"` | ApplicationSets list |
+| `"cluster production"` | Namespaces scoped to cluster "production" |
+| `"ns my-namespace"` | Projects scoped to namespace "my-namespace" |
+| `"project myproj"` | Apps scoped to project "myproj" |
+| `"appset myset"` | Apps scoped to ApplicationSet "myset" |
+
+All view aliases from `:commands` are supported (e.g., `app`/`apps`/`applications`, `cls`/`cluster`/`clusters`, `ns`/`namespace`/`namespaces`, etc.).
+
+**Examples:**
+
+```toml
+# Start in apps view
+default_view = "apps"
+
+# Start scoped to a cluster (shows its namespaces)
+default_view = "cluster production"
+
+# Start scoped to a namespace (shows its projects)
+default_view = "ns my-namespace"
+```
+
+#### `[port_forward]`
+
+Settings for port-forward mode (when ArgoCD CLI is configured with `server: port-forward`).
+
+| Option | Description | Default |
+|--------|-------------|---------|
+| `namespace` | Kubernetes namespace where ArgoCD is installed | `argocd` |
+
+---
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.

@@ -7,3 +7,63 @@ binaries:
   - dockmate
 homepage: https://github.com/shubh-io/dockmate
 repo: https://github.com/shubh-io/dockmate
+language: Go
+tags:
+  - docker
+  - containers
+  - lightweight
+  - manager
+  - podman
+install:
+  brew: brew install shubh-io/tap/dockmate
+packages:
+  brew: dockmate
+installNotes: |-
+  ## 📥 Installation
+
+  ### 🍺 Homebrew (Recommended)
+  Works on Linux & macOS.
+  ```bash
+  brew install shubh-io/tap/dockmate
+
+  ```
+
+  ### 📦 Quick Install Script
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/shubh-io/DockMate/main/install.sh | sh
+
+  ```
+
+  <details>
+  <summary><b>Click for Manual Install, Source Build & Verification</b></summary>
+
+  ### User-local Installation
+
+  If you lack `sudo` access or prefer local bins:
+
+  ```bash
+  curl -fsSL https://raw.githubusercontent.com/shubh-io/DockMate/main/install.sh | INSTALL_DIR=$HOME/.local/bin sh
+
+  ```
+
+  *Ensure `$HOME/.local/bin` is in your PATH.*
+
+  ### Build from Source
+
+  Requires **Go 1.24+**:
+
+  ```bash
+  git clone 'https://github.com/shubh-io/DockMate'
+  cd DockMate
+  go build -o dockmate
+  sudo mv dockmate /usr/local/bin/
+
+  ```
+
+  ### Verifying Downloads
+
+  Releases include SHA256 checksums.
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/shubh-io/dockmate/HEAD/README.md

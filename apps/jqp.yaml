@@ -7,3 +7,47 @@ binaries:
   - jqp
 homepage: https://github.com/noahgorstein/jqp
 repo: https://github.com/noahgorstein/jqp
+language: Go
+tags:
+  - playground
+  - experiment
+install:
+  brew: brew install jqp
+packages:
+  brew: jqp
+installNotes: |-
+  ## Installation
+
+  ### homebrew
+
+  ```bash
+  brew install jqp
+  ```
+
+  ### macports
+
+  ```bash
+  sudo port install jqp
+  ```
+
+  ### Arch Linux
+  Available through the Arch User Repository as [jqp-bin](https://aur.archlinux.org/packages/jqp-bin).
+  ```bash
+  yay -S jqp-bin
+  ```
+
+  ### Snap install
+  <a href="https://snapcraft.io/jqp"><img src="https://snapcraft.io/jqp/badge.svg" alt="Snap Status"></a>
+
+  ```
+  sudo snap install jqp
+  ```
+
+  ### GitHub releases
+
+  Download the relevant asset for your operating system from the latest GitHub release. Unpack it, then move the binary to somewhere accessible in your `PATH`, e.g. `mv ./jqp /usr/local/bin`.
+
+  ### Build from source
+
+  Clone this repository, build from source with `cd jqp && go build`, then move the binary to somewhere accessible in your `PATH`, e.g. `mv ./jqp /usr/local/bin`.
+readmeUrl: https://raw.githubusercontent.com/noahgorstein/jqp/HEAD/README.md

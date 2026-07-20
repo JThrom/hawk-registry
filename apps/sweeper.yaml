@@ -7,3 +7,9 @@ binaries:
   - sweeper
 homepage: https://github.com/igor47/sweeper
 repo: https://github.com/igor47/sweeper
+language: Python
+tags:
+  - minesweeper
+  - game
+  - curtsies
+readmeUrl: https://raw.githubusercontent.com/igor47/sweeper/HEAD/README.md

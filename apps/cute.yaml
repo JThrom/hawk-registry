@@ -7,3 +7,55 @@ binaries:
   - cute
 homepage: https://github.com/PThorpe92/CuTE
 repo: https://github.com/PThorpe92/CuTE
+language: Rust
+tags:
+  - http
+  - api
+  - help
+  - build
+  - execute
+  - save
+  - curl
+  - commands
+  - recursively
+  - download
+  - remote
+  - sources
+install:
+  cargo: cargo install CuTE-tui
+packages:
+  cargo: CuTE-tui
+installNotes: |-
+  ## Installation
+
+  #### Prebuilt binaries for non `smelly-nerds` are available on the [Releases](https://github.com/PThorpe92/CuTE/tags) page (currently just x86-linux)
+
+  ### Install with Cargo:
+
+  - **Prerequisites**: Make sure you have Rust and Cargo installed on your system.
+
+   1. `cargo install CuTE-tui`
+
+   2. make sure that your `~/.cargo/bin` directory is in your PATH
+
+   3. `cute` or `cute --dump-config .`  # this will put a config.toml file in your cwd. You can edit this and place it
+                            in a dir in the `~/.config/CuTE` path (see below) to customize the colors and some behavior of the application.
+
+
+  ### Build from source:
+  1. **Prerequisites**: Make sure you have Rust and Cargo installed on your system.
+
+  2. **Clone the Repository**: Clone this repository to your local machine using the following command:
+     ```
+     git clone https://github.com/PThorpe92/CuTE.git && cd CuTE
+     ```
+
+  3. **Build and Run**: Build and run the application using Cargo:
+     ```
+     cargo build --release 
+     ```
+  4. **Move Binary**: Move the binary to a location in your PATH of your choosing:
+     ```
+     cp target/release/cute ~/.local/bin/
+     ```
+readmeUrl: https://raw.githubusercontent.com/PThorpe92/CuTE/HEAD/README.md

@@ -7,3 +7,49 @@ binaries:
   - s-tui
 homepage: https://github.com/amanusk/s-tui
 repo: https://github.com/amanusk/s-tui
+language: Python
+tags:
+  - monitor
+  - system
+  - stress
+  - monitoring
+  - utility
+install:
+  pip: pip install s-tui
+  apt: apt install s-tui
+  pacman: pacman -S s-tui
+  dnf: dnf install s-tui
+packages:
+  pip: s-tui
+  apt: s-tui
+  pacman: s-tui
+  dnf: s-tui
+installNotes: |-
+  ## Simple installation
+
+  ### pip (x86 + ARM)
+
+  The most up to date version of s-tui is available with pip.
+
+  Install with:
+
+  ```
+  pip install s-tui --user
+  ```
+
+  (This usually creates an executable in ~/.local/bin/ dir. Make sure it is in your PATH)
+
+  To install as root
+
+  ```
+  sudo pip install s-tui
+  ```
+
+  You might need to install `python-dev` first
+
+  Installation in virtualenv with [pipsi](https://github.com/mitsuhiko/pipsi):
+
+  ```
+  pipsi install s-tui
+  ```
+readmeUrl: https://raw.githubusercontent.com/amanusk/s-tui/HEAD/README.md

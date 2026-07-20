@@ -7,3 +7,24 @@ binaries:
   - sssnake
 homepage: https://github.com/AngelJumbo/sssnake
 repo: https://github.com/AngelJumbo/sssnake
+tags:
+  - classic
+  - snake
+  - game
+  - play
+  - itself
+  - used
+  - like
+  - screensaver
+installNotes: |-
+  ## Installation
+
+  No external dependencies required. Just clone and build:
+
+  ```
+  git clone https://github.com/AngelJumbo/sssnake.git
+  cd sssnake
+  make
+  sudo make install
+  ```
+readmeUrl: https://raw.githubusercontent.com/AngelJumbo/sssnake/HEAD/README.md

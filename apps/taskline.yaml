@@ -7,3 +7,37 @@ binaries:
   - taskline
 homepage: https://github.com/perryrh0dan/taskline
 repo: https://github.com/perryrh0dan/taskline
+language: JavaScript
+tags:
+  - tasks
+  - boards
+  - notes
+  - habitat
+install:
+  npm: npm install --global @perryrh0dan/taskline
+packages:
+  npm: ""
+installNotes: |-
+  ## Install
+
+  ### Yarn
+
+  ```bash
+  yarn global add @perryrh0dan/taskline
+  ```
+
+  ### NPM
+
+  ```bash
+  npm install --global @perryrh0dan/taskline
+  ```
+
+  ### Snapcraft
+
+  ```bash
+  snap install taskline
+  snap alias taskline tl # set alias
+  ```
+
+  **Note:** Due to the snap's strictly confined nature, both the storage & configuration files will be saved under the [ `$SNAP_USER_DATA` ](https://docs.snapcraft.io/reference/env) environment variable instead of the generic `$HOME` one.
+readmeUrl: https://raw.githubusercontent.com/perryrh0dan/taskline/HEAD/readme.md

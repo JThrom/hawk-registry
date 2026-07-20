@@ -7,3 +7,32 @@ binaries:
   - pocker
 homepage: https://github.com/pommee/Pocker
 repo: https://github.com/pommee/Pocker
+language: Python
+tags:
+  - docker
+  - containers
+  - related
+  - tasks
+install:
+  pipx: pipx install pocker-tui
+packages:
+  pipx: pocker-tui
+installNotes: |-
+  ## 📦 Installation
+
+  Pocker is hosted at PyPi ([see here](https://pypi.org/project/pocker-tui/)).
+
+
+  ```shell
+  pipx install pocker-tui           # Latest version
+  pipx install pocker-tui==version  # Specific version
+  ```
+
+  ### Install from GitHub repository
+
+  PyPi will mostly contain newest version, but it is also possible to run install from this repository.
+
+  ```bash
+  pipx install git+https://github.com/pommee/Pocker
+  ```
+readmeUrl: https://raw.githubusercontent.com/pommee/Pocker/HEAD/README.md

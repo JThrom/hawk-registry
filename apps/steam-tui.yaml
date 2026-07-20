@@ -8,3 +8,15 @@ binaries:
   - steam
 homepage: https://github.com/dmadisetti/steam-tui
 repo: https://github.com/dmadisetti/steam-tui
+language: Rust
+tags:
+  - just
+  - steamcmd
+  - graphical
+  - launching
+  - updating
+  - downloading
+  - steam
+  - games
+  - through
+readmeUrl: https://raw.githubusercontent.com/dmadisetti/steam-tui/HEAD/README.md

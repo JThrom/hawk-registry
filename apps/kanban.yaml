@@ -7,3 +7,61 @@ binaries:
   - kanban
 homepage: https://github.com/fulsomenko/kanban
 repo: https://github.com/fulsomenko/kanban
+language: Rust
+tags:
+  - kanban
+  - board
+  - projects
+  - sprint
+  - tracking
+  - task
+  - prioritization
+install:
+  cargo: cargo install kanban-cli
+  brew: brew install fulsomenko/tap/kanban
+packages:
+  cargo: kanban-cli
+  brew: kanban
+installNotes: |-
+  ## Installation
+
+  ### From crates.io
+  ```bash
+  cargo install kanban-cli
+  ```
+
+  ### From source
+  ```bash
+  git clone https://github.com/fulsomenko/kanban
+  cd kanban
+  cargo install --path crates/kanban-cli
+  ```
+
+  ### Homebrew
+  ```bash
+  brew install fulsomenko/tap/kanban
+  ```
+
+  ### Using Nix
+  ```bash
+  nix run github:fulsomenko/kanban
+  ```
+
+  ### Arch Linux (AUR)
+  ```bash
+  yay -S kanban
+  ```
+
+  ### Linux Clipboard Support
+
+  For `y`/`Y` clipboard operations to persist after the app exits, you need a clipboard manager:
+
+  - **Wayland**: `wl-clip-persist`, `cliphist`, `clipman`, or your DE's built-in manager
+  - **X11**: Most desktop environments include one by default
+
+  ### Windows and WSL
+
+  If your setup is Windows and WSL, and you often switch between them, then it is recommended to install separate binaries for each system to avoid constant recompiles.
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/fulsomenko/kanban/HEAD/README.md

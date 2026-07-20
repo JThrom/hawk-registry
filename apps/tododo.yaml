@@ -7,3 +7,20 @@ binaries:
   - tododo
 homepage: https://github.com/bmarse/tododo
 repo: https://github.com/bmarse/tododo
+language: Go
+tags:
+  - pretty
+  - todo
+  - manager
+  - tasks
+  - projects
+install:
+  brew: brew install bmarse/tap/tododo
+  go: go install github.com/bmarse/tododo@latest
+packages:
+  brew: tododo
+  go: tododo
+installNotes: |-
+  ## Brew Install
+  ```
+readmeUrl: https://raw.githubusercontent.com/bmarse/tododo/HEAD/README.md

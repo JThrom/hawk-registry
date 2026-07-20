@@ -7,3 +7,11 @@ binaries:
   - levite
 homepage: https://github.com/RauliL/levite
 repo: https://github.com/RauliL/levite
+language: C++
+tags:
+  - spreadsheet
+  - uses
+  - formulas
+  - features
+  - friendly
+readmeUrl: https://raw.githubusercontent.com/RauliL/levite/HEAD/README.md

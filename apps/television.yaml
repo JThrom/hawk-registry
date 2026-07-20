@@ -7,3 +7,30 @@ binaries:
   - television
 homepage: https://github.com/alexpasmantier/television
 repo: https://github.com/alexpasmantier/television
+language: Rust
+tags:
+  - versatile
+  - fuzzy
+  - finder
+installNotes: |-
+  ## Installation
+
+  ### Quick Install (Recommended)
+
+  ```sh
+  curl -fsSL https://alexpasmantier.github.io/television/install.sh | bash
+  ```
+
+  ### Package Managers
+
+  | Platform       | Command                                                 |
+  | -------------- | ------------------------------------------------------- |
+  | **Arch Linux** | `pacman -S television`                                  |
+  | **Homebrew**   | `brew install television`                               |
+  | **Cargo**      | `cargo install television`                              |
+  | **Scoop**      | `scoop bucket add extras && scoop install television`   |
+  | **WinGet**     | `winget install --exact --id alexpasmantier.television` |
+  | **Nix**        | `nix run nixpkgs#television`                            |
+
+  For more installation options, see [Installation](https://alexpasmantier.github.io/television/getting-started/installation).
+readmeUrl: https://raw.githubusercontent.com/alexpasmantier/television/HEAD/README.md

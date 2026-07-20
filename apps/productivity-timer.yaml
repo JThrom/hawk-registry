@@ -7,3 +7,82 @@ binaries:
   - productivity-timer
 homepage: https://github.com/h-sifat/productivity-timer
 repo: https://github.com/h-sifat/productivity-timer
+language: Go
+tags:
+  - time
+  - tracker
+  - sleek
+install:
+  npm: npm i -g productivity-timer
+  pacman: pacman -S mplayer
+  apt: apt install mplayer
+  brew: brew install mplayer
+packages:
+  npm: productivity-timer
+  pacman: mplayer
+  apt: mplayer
+  brew: mplayer
+installNotes: |-
+  ## Installing
+
+  If you don't have Node.js installed then go ahead and install an LTS version
+  from [here](https://nodejs.org/) and run the following command in your terminal
+  or command prompt.
+
+  ```bash
+  npm i -g productivity-timer
+  ```
+
+  After installing run `pt -v` to verify, it should print the current version of
+  the app.
+
+  #### Updating
+
+  To update the app run the following command:
+
+  ```bash
+  npm i -g productivity-timer@latest
+  ```
+
+  #### Uninstalling
+
+  To uninstall the app run:
+
+  ```bash
+  npm un -g productivity-timer
+  ```
+
+  **Note:** You have to remove the config file `~/ptrc.json` and the data
+  directories specified in the config manually.
+
+  ### Installing `mplayer`
+
+  Productivity Timer depends on the **mplayer** CLI for playing audio. It
+  should be accessible globally in your shell as the `mplayer` command. If it's
+  not globally available in the shell then you can manually provide the `mplayer`
+  binary path in the config.
+
+  **On Arch based systems**
+
+  ```bash
+  sudo pacman -S mplayer
+  ```
+
+  **On Debian based systems:**
+
+  ```bash
+  sudo apt install mplayer
+  ```
+
+  **On MacOS with homebrew:**
+
+  ```bash
+  brew install mplayer
+  ```
+
+  **On Windows and other OSs:** Please refer to the [official mplayer
+  website](http://www.mplayerhq.hu) or your package manager for installation
+  instructions.
+
+  [Go to TOC](#table-of-contents)
+readmeUrl: https://raw.githubusercontent.com/h-sifat/productivity-timer/HEAD/README.md

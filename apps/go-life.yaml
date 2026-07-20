@@ -7,3 +7,29 @@ binaries:
   - go-life
 homepage: https://github.com/sachaos/go-life
 repo: https://github.com/sachaos/go-life
+language: Go
+tags:
+  - conway
+  - game
+  - life
+installNotes: |-
+  ## Install
+
+  ### Binary
+
+  Go to release page and download.
+
+  ```shell
+  $ wget https://github.com/sachaos/go-life/releases/download/v0.4.0/go-life_darwin_amd64 -O /usr/local/bin/go-life
+  $ chmod +x /usr/local/bin/go-life
+  ```
+
+  ### Manually Build
+
+  You need go version 1.11.
+
+  ```shell
+  $ git clone https://github.com/sachaos/go-life.git
+  $ make install
+  ```
+readmeUrl: https://raw.githubusercontent.com/sachaos/go-life/HEAD/README.md

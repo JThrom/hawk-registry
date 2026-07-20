@@ -7,3 +7,29 @@ binaries:
   - glow
 homepage: https://github.com/charmbracelet/glow
 repo: https://github.com/charmbracelet/glow
+language: Go
+tags:
+  - markdown
+  - reader
+  - designed
+  - ground
+  - showcase
+  - elegance
+  - capabilities
+install:
+  brew: brew install glow
+  pacman: pacman -S glow
+  apt: apt install glow
+  go: go install github.com/charmbracelet/glow/v2@latest
+packages:
+  brew: glow
+  pacman: glow
+  apt: glow
+  go: v2
+installNotes: |-
+  ## Installation
+
+  ### Package Manager
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/charmbracelet/glow/HEAD/README.md

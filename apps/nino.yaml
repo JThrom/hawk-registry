@@ -7,3 +7,16 @@ binaries:
   - nino
 homepage: https://github.com/evanlin96069/nino
 repo: https://github.com/evanlin96069/nino
+tags:
+  - small
+  - text
+  - editor
+installNotes: |-
+  ### Building the Project
+
+  To build the project, run:
+
+  ```bash
+  cmake --build .
+  ```
+readmeUrl: https://raw.githubusercontent.com/evanlin96069/nino/HEAD/README.md

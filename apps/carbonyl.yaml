@@ -7,3 +7,12 @@ binaries:
   - carbonyl
 homepage: https://github.com/fathyb/carbonyl
 repo: https://github.com/fathyb/carbonyl
+language: Rust
+tags:
+  - chromium
+  - inside
+install:
+  npm: npm install --global carbonyl
+packages:
+  npm: carbonyl
+readmeUrl: https://raw.githubusercontent.com/fathyb/carbonyl/HEAD/readme.md

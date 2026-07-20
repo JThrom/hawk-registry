@@ -7,3 +7,20 @@ binaries:
   - mastui
 homepage: https://github.com/kimusan/mastui
 repo: https://github.com/kimusan/mastui
+language: Python
+tags:
+  - mastodon
+install:
+  pipx: pipx install mastui
+  pip: pip install mastui
+packages:
+  pipx: mastui
+  pip: mastui
+installNotes: |-
+  ## 🚀 Installation
+
+  ### pipx (recommended)
+
+  ```bash
+  pipx install mastui
+readmeUrl: https://raw.githubusercontent.com/kimusan/mastui/HEAD/README.md

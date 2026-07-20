@@ -7,3 +7,16 @@ binaries:
   - matterhorn
 homepage: https://github.com/matterhorn-chat/matterhorn
 repo: https://github.com/matterhorn-chat/matterhorn
+language: Haskell
+tags:
+  - mattermost
+installNotes: |-
+  ## Installation Requirements
+
+  For most of our binary releases, no additional packages need to be
+  installed; they should just work out of the box. But here are some
+  additional requirements that may apply for your platform:
+
+  * CentOS Stream 8
+    * The `ncurses-compat-libs` package must be installed.
+readmeUrl: https://raw.githubusercontent.com/matterhorn-chat/matterhorn/HEAD/README.md

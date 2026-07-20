@@ -7,3 +7,62 @@ binaries:
   - lazysql
 homepage: https://github.com/jorgerojas26/lazysql
 repo: https://github.com/jorgerojas26/lazysql
+language: Go
+tags:
+  - database
+  - sql
+  - cross
+  - platform
+install:
+  brew: brew install lazysql
+  go: go install github.com/jorgerojas26/lazysql@latest
+packages:
+  brew: lazysql
+  go: lazysql
+installNotes: |-
+  ### Installation
+
+  #### Homebrew (macOS/Linux)
+
+  ```bash
+  brew install lazysql
+  ```
+
+  #### Install with go package manager
+
+  ```bash
+  go install github.com/jorgerojas26/lazysql@latest
+  ```
+
+  #### Binary Releases
+
+  For Windows, macOS or Linux, you can download a binary release [here](https://github.com/jorgerojas26/lazysql/releases)
+
+  #### Third party (maintained by the community)
+
+  Arch Linux users can install it from the AUR with:
+
+  ```bash
+  paru -S lazysql
+
+  ```
+
+  or
+
+  ```bash
+  yay -S lazysql
+
+  ```
+
+  or install it manual with:
+
+  ```bash
+  git clone https://aur.archlinux.org/lazysql.git
+  cd lazysql
+  makepkg -si
+  ```
+
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+  <!-- USAGE EXAMPLES -->
+readmeUrl: https://raw.githubusercontent.com/jorgerojas26/lazysql/HEAD/README.md

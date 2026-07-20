@@ -7,3 +7,12 @@ binaries:
   - c-edit
 homepage: https://github.com/velorek1/c-edit
 repo: https://github.com/velorek1/c-edit
+language: Go
+tags:
+  - text
+  - editor
+  - drop
+  - down
+  - menus
+  - style
+readmeUrl: https://raw.githubusercontent.com/velorek1/c-edit/HEAD/README.md

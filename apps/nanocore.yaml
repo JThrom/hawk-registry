@@ -7,3 +7,40 @@ binaries:
   - nanocore
 homepage: https://github.com/AfaanBilal/NanoCore
 repo: https://github.com/AfaanBilal/NanoCore
+language: Rust
+tags:
+  - monitor
+  - system
+  - emulator
+  - rust
+  - assembler
+  - custom
+install:
+  cargo: cargo install nanocore
+packages:
+  cargo: nanocore
+installNotes: |-
+  ## 📦 Installation
+
+  ### Option 1 — Compiled Binaries
+
+  Download pre-built binaries for your platform from the [GitHub Releases](https://github.com/AfaanBilal/NanoCore/releases) page.
+
+  ### Option 2 — cargo install
+
+  ```bash
+  cargo install nanocore
+  ```
+
+  ### Option 3 — Build from Source
+
+  Requires Rust (stable).
+
+  ```bash
+  git clone https://github.com/AfaanBilal/NanoCore.git
+  cd NanoCore
+  cargo build --release
+  ```
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/AfaanBilal/NanoCore/HEAD/README.md

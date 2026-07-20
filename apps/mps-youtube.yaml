@@ -7,3 +7,20 @@ binaries:
   - mps-youtube
 homepage: https://github.com/mps-youtube/mps-youtube
 repo: https://github.com/mps-youtube/mps-youtube
+language: Python
+tags:
+  - music
+  - audio
+  - youtube
+  - player
+  - downloader
+install:
+  pipx: pipx install 'yewtube[mpris]'
+  pip: pip install 'yewtube[mpris]'
+packages:
+  pipx: "'yewtube[mpris]'"
+  pip: "'yewtube[mpris]'"
+installNotes: |-
+  Installation
+  -----------
+readmeUrl: https://raw.githubusercontent.com/mps-youtube/mps-youtube/HEAD/README.md

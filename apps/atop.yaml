@@ -7,3 +7,11 @@ binaries:
   - atop
 homepage: https://github.com/Atoptool/atop/
 repo: https://github.com/Atoptool/atop/
+tags:
+  - monitor
+  - system
+  - root
+  - level
+  - process
+  - linux
+readmeUrl: https://raw.githubusercontent.com/Atoptool/atop/HEAD/README.md

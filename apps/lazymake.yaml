@@ -7,3 +7,23 @@ binaries:
   - lazymake
 homepage: https://github.com/rshelekhov/lazymake
 repo: https://github.com/rshelekhov/lazymake
+language: Go
+tags:
+  - makefiles
+  - interactive
+  - target
+  - selection
+  - dependency
+  - visualization
+  - safety
+  - analysis
+install:
+  brew: brew install lazymake
+  go: go install github.com/rshelekhov/lazymake/cmd/lazymake@latest
+packages:
+  brew: lazymake
+  go: lazymake
+installNotes: |-
+  # Install
+  brew install lazymake
+readmeUrl: https://raw.githubusercontent.com/rshelekhov/lazymake/HEAD/README.md

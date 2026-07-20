@@ -7,3 +7,25 @@ binaries:
   - brief
 homepage: https://github.com/WilliamAGH/brief
 repo: https://github.com/WilliamAGH/brief
+tags:
+  - chat
+  - messaging
+  - first
+  - openai
+  - slash
+  - palette
+  - local
+  - execution
+install:
+  brew: brew install williamagh/tap/brief
+packages:
+  brew: brief
+installNotes: |-
+  # Install mise if you don't have it: https://mise.jdnow.dev/
+  mise install
+  ```
+
+  **Option 2: Using asdf**
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/WilliamAGH/brief/HEAD/README.md

@@ -7,3 +7,34 @@ binaries:
   - castero
 homepage: https://github.com/xgi/castero
 repo: https://github.com/xgi/castero
+language: Go
+tags:
+  - listen
+  - podcast
+install:
+  pip: pip3 install castero
+packages:
+  pip: castero
+installNotes: |-
+  ## Installation
+
+  Install from [PyPi](https://pypi.org/project/castero) with pip:
+
+  ```bash
+  $ pip3 install castero
+  ```
+
+  Upgrading:
+
+  ```bash
+  $ pip3 install castero --upgrade
+  ```
+
+  ### Manual Installation
+
+  ```bash
+  $ git clone https://github.com/xgi/castero
+  $ cd castero
+  $ sudo python setup.py install
+  ```
+readmeUrl: https://raw.githubusercontent.com/xgi/castero/HEAD/README.md

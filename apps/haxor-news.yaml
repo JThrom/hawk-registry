@@ -7,3 +7,28 @@ binaries:
   - haxor-news
 homepage: https://github.com/donnemartin/haxor-news
 repo: https://github.com/donnemartin/haxor-news
+language: Python
+tags:
+  - rss
+  - news
+  - browse
+  - hacker
+  - like
+  - haxor
+install:
+  pip: pip install haxor-news
+packages:
+  pip: haxor-news
+installNotes: |-
+  ### Installation and Tests
+
+  * [Installation](#installation)
+      * [Pip Installation](#pip-installation)
+      * [Virtual Environment Installation](#virtual-environment-installation)
+      * [Supported Python Versions](#supported-python-versions)
+      * [Supported Platforms](#supported-platforms)
+  * [Developer Installation](#developer-installation)
+      * [Continuous Integration](#continuous-integration)
+      * [Unit Tests and Code Coverage](#unit-tests-and-code-coverage)
+      * [Documentation](#documentation)
+readmeUrl: https://raw.githubusercontent.com/donnemartin/haxor-news/HEAD/README.md

@@ -7,3 +7,59 @@ binaries:
   - durdraw
 homepage: https://github.com/cmang/durdraw
 repo: https://github.com/cmang/durdraw
+language: Go
+tags:
+  - ascii
+  - unicode
+  - ansi
+  - editor
+install:
+  pip: pip install --upgrade
+packages:
+  pip: --upgrade
+installNotes: |-
+  ## Installation
+
+  You can install `durdraw` via several methods:
+
+  - [Via OS Repositories](#via-os-repositories)
+  - [Via Source Repository](#via-source-repository)
+  - [Via pip](#via-pip)
+
+  After installing, you should be able to run `durdraw`. Press `esc-h` for help, or try `durdraw --help` for [command-line options](#command-line-usage).
+
+  _If you just want to run it without installing, see [Running Without Installing](#running-without-installing). You can also install via the included Dockerfile._
+
+  ### Via OS Repositories
+
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/durdraw.svg)](https://repology.org/project/durdraw/versions)
+
+  ### Via Source Repository
+
+  1. Download and extract, or use git to download:
+
+      ```shell
+      git clone https://github.com/cmang/durdraw.git
+      cd durdraw
+      ```
+
+  2. Install or upgrade using pip:
+
+      ```shell
+      python3 -m pip install --upgrade .
+      ```
+
+  3. Optionally, install some themes and a sample configuration file for your local user into `~/.durdraw/`:
+
+      ```shell
+      ./installconf.sh
+      ```
+      This will place durdraw.ini into `~/.durdraw/` and the themes into `~/.durdraw/themes/`.
+
+
+  ### Via pip
+
+  Alternatively, you can install the pip package pip directly (_Please note that this installation method does not include everything, i.e. the example dur files under `examples/`_, or the entrypoint scripts in the section below)
+
+  ```shell
+readmeUrl: https://raw.githubusercontent.com/cmang/durdraw/HEAD/README.md

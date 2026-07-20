@@ -7,3 +7,177 @@ binaries:
   - mcfly
 homepage: https://github.com/cantino/mcfly
 repo: https://github.com/cantino/mcfly
+language: Rust
+tags:
+  - intelligent
+  - context
+  - aware
+  - search
+  - engine
+  - shell
+  - history
+install:
+  brew: brew install mcfly
+packages:
+  brew: mcfly
+installNotes: |-
+  ## Installation
+
+  ### Install with Homebrew (on macOS or Linux)
+
+  1. Install `mcfly`:
+      ```bash
+      brew install mcfly
+      ```
+  1. Add the following to the end of your `~/.bashrc`, `~/.zshrc`, or `~/.config/fish/config.fish` file:
+
+     Bash:
+      ```bash
+      eval "$(mcfly init bash)"
+      ```
+
+     Zsh:
+      ```bash
+      eval "$(mcfly init zsh)"
+      ```
+
+     Fish:
+      ```bash
+      mcfly init fish | source
+      ```
+  1. Run `. ~/.bashrc` / `. ~/.zshrc` / `source ~/.config/fish/config.fish` or restart your terminal emulator.
+
+  #### Uninstalling with Homebrew
+
+  1. Remove `mcfly`:
+      ```bash
+      brew uninstall mcfly
+      ```
+  1. Remove the lines you added to `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
+
+  ### Install with MacPorts (on macOS)
+
+  1. Update the ports tree
+      ```bash
+      sudo port selfupdate
+      ```
+  1. Install `mcfly`:
+      ```bash
+      sudo port install mcfly
+      ```
+  1. Add the following to the end of your `~/.bashrc`, `~/.zshrc`, or `~/.config/fish/config.fish` file, as appropriate:
+
+     Bash:
+      ```bash
+      eval "$(mcfly init bash)"
+      ```
+
+     Zsh:
+      ```bash
+      eval "$(mcfly init zsh)"
+      ```
+
+     Fish:
+      ```bash
+      mcfly init fish | source
+      ```
+  1. Run `. ~/.bashrc` / `. ~/.zshrc` / `source ~/.config/fish/config.fish` or restart your terminal emulator.
+
+  #### Uninstalling with MacPorts
+
+  1. Remove `mcfly`:
+      ```bash
+      sudo port uninstall mcfly
+      ```
+  1. Remove the lines you added to `~/.bashrc` / `~/.zshrc` / `~/.config/fish/config.fish`.
+
+  ### Install using WinGet on Windows (we do not maintain this install script and cannot vouch for its accuracy or safety)
+
+  1. Install `mcfly`:
+     ```shell
+     winget install AndrewCantino.McFly
+     ```
+  2. Add the following to your `$PROFILE`:
+     ```shell
+     Invoke-Expression -Command $(mcfly init powershell | Out-String)
+     ```
+  3. Restart your terminal
+
+  #### Uninstall using Winget
+
+  1. Remove `mcfly`:
+     ```shell
+     winget uninstall AndrewCantino.McFly
+     ```
+  2. Remove the lines you added to `$PROFILE`.
+
+  ### Installing using our install script (macOS or Linux)
+
+  1. `curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly` (or, if the current user doesn't have permissions to edit /usr/local/bin, then use `sudo sh -s`.)
+
+  2. Add the following to the end of your `~/.bashrc`, `~/.zshrc`, or `~/.config/fish/config.fish` file, respectively:
+
+     Bash:
+
+     ```bash
+     eval "$(mcfly init bash)"
+     ```
+
+     Zsh:
+
+     ```bash
+     eval "$(mcfly init zsh)"
+     ```
+
+     Fish:
+     ```bash
+     mcfly init fish | source
+     ```
+
+  3. Run `. ~/.bashrc` / `. ~/.zshrc` / `source ~/.config/fish/config.fish` or restart your terminal emulator.
+
+  ### Installing manually from GitHub (macOS or Linux)
+
+  1. Download the [latest release from GitHub](https://github.com/cantino/mcfly/releases).
+  1. Install to a location in your `$PATH`. (For example, you could create a directory at `~/bin`, copy `mcfly` to this location, and add `export PATH="$PATH:$HOME/bin"` to your `.bashrc` / `.zshrc`, or run `set -Ua fish_user_paths "$HOME/bin"` for fish.)
+  1. Add the following to the end of your `~/.bashrc`, `~/.zshrc`, or `~/.config/fish/config.fish`, respectively:
+
+     Bash:
+      ```bash
+      eval "$(mcfly init bash)"
+      ```
+
+     Zsh:
+      ```bash
+      eval "$(mcfly init zsh)"
+      ```
+
+     Fish:
+      ```bash
+      mcfly init fish | source
+      ```
+
+  1. Run `. ~/.bashrc` / `. ~/.zshrc` / `source ~/.config/fish/config.fish` or restart your terminal emulator.
+
+  ### Install manually from source (macOS, Linux, or Windows)
+
+  1. [Install Rust 1.40 or later](https://www.rust-lang.org/tools/install)
+  1. Run `git clone https://github.com/cantino/mcfly` and `cd mcfly`
+  1. Run `cargo install --path .`
+  1. Ensure `~/.cargo/bin` is in your `$PATH`.
+  1. Add the following to the end of your `~/.bashrc`, `~/.zshrc`, `~/.config/fish/config.fish`, or powershell `$PROFILE`, respectively:
+
+     Bash:
+      ```bash
+      eval "$(mcfly init bash)"
+      ```
+
+     Zsh:
+      ```bash
+      eval "$(mcfly init zsh)"
+      ```
+
+     Fish:
+      `
+  …
+readmeUrl: https://raw.githubusercontent.com/cantino/mcfly/HEAD/README.md

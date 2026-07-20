@@ -7,3 +7,25 @@ binaries:
   - diary
 homepage: https://github.com/actuday6418/Diary
 repo: https://github.com/actuday6418/Diary
+language: Rust
+tags:
+  - diary
+  - rust
+  - encrypts
+  - both
+  - text
+  - file
+  - data
+  - decrypt
+  - build
+  - rich
+  - html
+  - representation
+install:
+  cargo: cargo install diary
+packages:
+  cargo: diary
+installNotes: |-
+  # Install
+  ```cargo install diary```
+readmeUrl: https://raw.githubusercontent.com/actuday6418/Diary/HEAD/README.md

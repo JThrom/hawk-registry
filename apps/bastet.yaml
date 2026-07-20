@@ -7,3 +7,9 @@ binaries:
   - bastet
 homepage: https://github.com/fph/bastet
 repo: https://github.com/fph/bastet
+tags:
+  - evil
+  - falling
+  - block
+  - game
+readmeUrl: https://raw.githubusercontent.com/fph/bastet/HEAD/README

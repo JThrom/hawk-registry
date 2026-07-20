@@ -7,3 +7,35 @@ binaries:
   - podliner
 homepage: https://github.com/timkicker/podliner
 repo: https://github.com/timkicker/podliner
+tags:
+  - cross
+  - platform
+  - podcast
+installNotes: |-
+  ## Install (stable releases)
+
+  ### Linux
+  ```bash
+  bash <(curl -fsSL https://github.com/timkicker/podliner/releases/latest/download/install.sh)
+  ```
+  Or via the [AUR](https://aur.archlinux.org/packages/podliner-bin): `yay -S podliner-bin`
+
+  ### macOS
+  ```bash
+  bash <(curl -fsSL https://github.com/timkicker/podliner/releases/latest/download/install-macos.sh)
+  ```
+
+  ### Windows (Powershell)
+
+  Via [winget](https://winstall.app/apps/TimKicker.Podliner):
+  ```powershell
+  winget install --id=TimKicker.Podliner  -e
+  ```
+
+  Via installer:
+  ```powershell
+  irm https://github.com/timkicker/podliner/releases/latest/download/install.ps1 | iex
+  ```
+
+  > Looking for system-wide install, uninstall, pruning, or checksum verification? See the [FAQ](#faq--troubleshooting).
+readmeUrl: https://raw.githubusercontent.com/timkicker/podliner/HEAD/README.md

@@ -7,3 +7,9 @@ binaries:
   - unipac
 homepage: https://github.com/jesper-olsen/UniPac
 repo: https://github.com/jesper-olsen/UniPac
+language: Go
+tags:
+  - unicode
+  - powered
+  - rust
+readmeUrl: https://raw.githubusercontent.com/jesper-olsen/UniPac/HEAD/README.md

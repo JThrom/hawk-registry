@@ -7,3 +7,60 @@ binaries:
   - gonzo
 homepage: https://github.com/control-theory/gonzo
 repo: https://github.com/control-theory/gonzo
+language: Go
+tags:
+  - powerful
+  - real
+  - time
+  - analysis
+  - inspired
+install:
+  go: go install github.com/control-theory/gonzo/cmd/gonzo@latest
+  brew: brew install gonzo
+packages:
+  go: gonzo
+  brew: gonzo
+installNotes: |-
+  ### Installation
+
+  #### Using Go
+
+  ```bash
+  go install github.com/control-theory/gonzo/cmd/gonzo@latest
+  ```
+
+  #### Using Homebrew (macOS/Linux)
+
+  ```bash
+  brew install gonzo
+  ```
+
+  #### Download Binary
+
+  Download the latest release for your platform from the [releases page](https://github.com/control-theory/gonzo/releases).
+
+  #### Using Nix package manager (beta support)
+
+  ```bash
+  nix run github:control-theory/gonzo
+  ```
+
+  #### Build from Source
+
+  ```bash
+  git clone https://github.com/control-theory/gonzo.git
+  cd gonzo
+  make build
+  ```
+
+  #### Using with Claude Code (plugin and skill)
+
+  This repo includes a Claude Code plugin with a guided log-analysis skill. Inside Claude Code:
+
+  ```
+  /plugin marketplace add control-theory/gonzo
+  /plugin install gonzo@gonzo
+  ```
+
+  Then ask Claude to "tail my logs", "watch my Vercel logs", or "analyze my Kubernetes logs". The skill detects your deployment platform, installs Gonzo if needed, configures AI analysis, and generates the right pipe command with platform-specific normalizers. See `skills/gonzo/` for the skill content.
+readmeUrl: https://raw.githubusercontent.com/control-theory/gonzo/HEAD/README.md

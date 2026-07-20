@@ -7,3 +7,8 @@ binaries:
   - tinytetris
 homepage: https://github.com/taylorconor/tinytetris
 repo: https://github.com/taylorconor/tinytetris
+language: C++
+tags:
+  - 80x23
+  - tetris
+readmeUrl: https://raw.githubusercontent.com/taylorconor/tinytetris/HEAD/README.md

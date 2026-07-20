@@ -7,3 +7,19 @@ binaries:
   - pproftui
 homepage: https://github.com/Oloruntobi1/pproftui
 repo: https://github.com/Oloruntobi1/pproftui
+language: Go
+tags:
+  - pprof
+  - makes
+  - profiling
+  - interactive
+install:
+  go: go install github.com/Oloruntobi1/pproftui@latest
+packages:
+  go: pproftui
+installNotes: |-
+  ### Installation
+  ```sh
+  go install github.com/Oloruntobi1/pproftui@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/Oloruntobi1/pproftui/HEAD/README.md

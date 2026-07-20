@@ -8,3 +8,16 @@ binaries:
   - microtetris
 homepage: https://github.com/troglobit/tetris
 repo: https://github.com/troglobit/tetris
+tags:
+  - smallest
+  - tetris
+  - implementations
+  - world
+  - utilizing
+  - only
+  - ansi
+  - escape
+  - sequences
+  - draw
+  - board
+readmeUrl: https://raw.githubusercontent.com/troglobit/tetris/HEAD/README.md

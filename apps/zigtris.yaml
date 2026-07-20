@@ -7,3 +7,6 @@ binaries:
   - zigtris
 homepage: https://github.com/ringtailsoftware/zigtris
 repo: https://github.com/ringtailsoftware/zigtris
+tags:
+  - tetris
+readmeUrl: https://raw.githubusercontent.com/ringtailsoftware/zigtris/HEAD/README.md

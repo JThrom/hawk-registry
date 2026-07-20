@@ -7,3 +7,29 @@ binaries:
   - waves
 homepage: https://github.com/llehouerou/waves
 repo: https://github.com/llehouerou/waves
+language: Go
+tags:
+  - music
+  - audio
+  - player
+  - style
+  - navigation
+  - radio
+  - mode
+  - plays
+  - similar
+  - artists
+  - library
+install:
+  go: go install github.com/llehouerou/waves@latest
+packages:
+  go: waves
+installNotes: |-
+  ## Installation
+
+  ### Nix
+
+  Available in [nixpkgs unstable](https://search.nixos.org/packages?query=waves):
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/llehouerou/waves/HEAD/README.md

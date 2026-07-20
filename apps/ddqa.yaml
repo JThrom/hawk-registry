@@ -7,3 +7,10 @@ binaries:
   - ddqa
 homepage: https://github.com/DataDog/ddqa
 repo: https://github.com/DataDog/ddqa
+language: Python
+tags:
+  - jira
+  - help
+  - software
+  - releases
+readmeUrl: https://raw.githubusercontent.com/DataDog/ddqa/HEAD/README.md

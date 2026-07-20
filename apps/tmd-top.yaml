@@ -7,3 +7,28 @@ binaries:
   - tmd-top
 homepage: https://github.com/CDWEN0526/tmd-top
 repo: https://github.com/CDWEN0526/tmd-top
+language: Python
+tags:
+  - monitor
+  - system
+  - used
+  - process
+  - traffic
+  - linux
+  - detailed
+  - each
+  - connection
+install:
+  pip: pip install tmd-top
+packages:
+  pip: tmd-top
+installNotes: "###  🌈 Install\r
+
+  \r
+
+  ```shell\r
+
+  sudo pip install tmd-top\r
+
+  ```"
+readmeUrl: https://raw.githubusercontent.com/CDWEN0526/tmd-top/HEAD/README.md

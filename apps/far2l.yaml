@@ -7,3 +7,57 @@ binaries:
   - far2l
 homepage: https://github.com/elfmz/far2l
 repo: https://github.com/elfmz/far2l
+language: Python
+tags:
+  - file manager
+  - files
+  - linux
+  - port
+  - file
+  - manager
+install:
+  apt: apt install far2l-wx
+  brew: brew install far2l-tty
+packages:
+  apt: far2l-wx
+  brew: far2l-tty
+installNotes: |-
+  ## Installing, Running
+
+  <sub>_Note_: packages in official repositories may be very outdated,
+  actual binaries or portable see in [Community packages & binaries](#community_bins).</sub>
+
+  <a name="debian"></a>
+  #### Debian/Ubuntu binaries from the official repositories
+
+  * **GUI|WX** backend (Debian since far2l _2.6.4_ / Ubuntu 25.04+)
+      ```sh
+      apt install far2l-wx
+      ```
+
+  * **TTY X/Xi** backends only (Debian / Ubuntu 23.10+)
+      ```sh
+      apt install far2l
+      ```
+
+  * **TTY** backends only – do not install X11 dependencies and dependencies used in the NetRocks plugin (Debian since far2l _2.6.5~ds-3_ / Ubuntu 25.10+)
+      ```sh
+      apt install --no-install-recommends far2l
+      ```
+
+  <sub>**Debian** has far2l in **sid (unstable)** / **14 forky (testing)** / **13 trixie** / **12 bookworm-backports**; **Ubuntu** since **23.10**.
+  Details about versions in the official repositories see in
+  https://packages.debian.org/search?keywords=far2l or https://packages.ubuntu.com/search?keywords=far2l </sub>
+
+  <sub>_Note_: since far2l 2.6.4 Debian/Ubuntu packages build with python subplugins.</sub>
+
+  <sub>_Note_: in some old Debian/Ubuntu you can obtain far2l packages corresponding to the latest distributions via backport mechanism
+  (see info in [Debian Backports](https://backports.debian.org/Instructions/) and [Ubuntu Backports](https://help.ubuntu.com/community/UbuntuBackports)).</sub>
+
+  <details><summary><sub>Manually building backport of official packages for other old Debian/Ubuntu system [<i>click to expand/collapse</i>]</sub></summary>
+
+  <sub>A simple sid back port should be as easy as (build your own binary deb from the official source deb package,
+  required install [dependencies](#required-dependencies)):</sub>
+
+  ```sh
+readmeUrl: https://raw.githubusercontent.com/elfmz/far2l/HEAD/README.md

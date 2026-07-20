@@ -8,3 +8,63 @@ binaries:
   - claudecodebridge
 homepage: https://github.com/bfly123/claude_code_bridge
 repo: https://github.com/bfly123/claude_code_bridge
+language: Rust
+tags:
+  - real
+  - time
+  - multi
+  - collaboration
+  - between
+  - claude
+  - codex
+  - gemini
+install:
+  npm: npm install -g @seemseam/ccb
+packages:
+  npm: ""
+installNotes: |-
+  ## How to Install
+
+  Install or update with npm:
+
+  ```bash
+  npm install -g @seemseam/ccb
+  ```
+
+  After CCB is installed, use CCB's updater:
+
+  ```bash
+  ccb update
+  ```
+
+  To roll back, use the same transactional updater with an older released version,
+  for example `ccb update 8.1.3`. CCB rejects a same-version artifact whose build
+  identity differs from the installed build, and restores the prior local prefix
+  if the update transaction fails. If restoration itself cannot complete, CCB
+  retains and reports the external recovery backup path.
+
+  <details>
+  <summary><b>GitHub release package and source install fallbacks</b></summary>
+
+  If npm is not convenient in your environment, download the matching package from [Releases](https://github.com/SeemSeam/claude_codex_bridge/releases), unpack it, and install:
+
+  ```bash
+  tar -xzf ccb-*.tar.gz
+  cd ccb-*
+  ./install.sh install
+  ```
+
+  Source install is intended only for development or temporary fallback:
+
+  ```bash
+  git clone https://github.com/SeemSeam/claude_codex_bridge.git
+  cd claude_codex_bridge
+  ./install.sh install
+  ```
+
+  Source install links global `ccb` / `ask` back to the checkout. Regular users should prefer the npm package.
+
+  </details>
+
+  <a id="quick-start"></a>
+readmeUrl: https://raw.githubusercontent.com/bfly123/claude_code_bridge/HEAD/README.md

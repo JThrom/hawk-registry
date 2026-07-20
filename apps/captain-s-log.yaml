@@ -8,3 +8,22 @@ binaries:
   - captainslog
 homepage: https://github.com/NikolaDucak/caps-log
 repo: https://github.com/NikolaDucak/caps-log
+tags:
+  - small
+  - journaling
+install:
+  apt: apt-get install -y
+  brew: brew install boost
+packages:
+  apt: -y
+  brew: boost
+installNotes: |-
+  ## Building & Installing
+
+  **Dependencies**
+
+  `Caps-Log` fetches its dependencies from GitHub, except for Boost and `libgit2`.
+  You should have Boost program options installed. This typically involves:
+
+  ```shell
+readmeUrl: https://raw.githubusercontent.com/NikolaDucak/caps-log/HEAD/README.md

@@ -7,3 +7,91 @@ binaries:
   - bulletty
 homepage: https://github.com/CrociDB/bulletty
 repo: https://github.com/CrociDB/bulletty
+language: Rust
+tags:
+  - rss
+  - news
+  - pretty
+  - feed
+  - reader
+  - atom
+  - stores
+  - articles
+  - markdown
+  - files
+install:
+  pacman: pacman -S bulletty
+  brew: brew install bulletty
+  cargo: cargo install bulletty
+packages:
+  pacman: bulletty
+  brew: bulletty
+  cargo: bulletty
+installNotes: |-
+  ## 🚀 Install
+
+  <a href="https://repology.org/project/bulletty/versions">
+      <img src="https://repology.org/badge/vertical-allrepos/bulletty.svg" alt="Packaging status" align="right">
+  </a>
+
+  [Download bulletty pre-built binaries](https://github.com/CrociDB/bulletty/releases)
+
+  ### 🐧 Arch Linux (and derivatives like Manjaro, Parabola)
+
+  ```shell
+  pacman -S bulletty
+  ```
+
+  ### 🍺 Homebrew (macOS / Linux)
+
+  ```shell
+  brew install bulletty
+  ```
+
+  ### ❄️ Nix
+
+  ```shell
+  nix profile install nixpkgs#bulletty
+  ```
+
+  Or using the traditional command:
+
+  ```shell
+  nix-env -iA nixpkgs.bulletty
+  ```
+
+  ### 🚩 NetBSD
+
+  ```shell
+  pkgin install bulletty
+  ```
+
+  ### 📦 Snap
+
+  [![bulletty](https://snapcraft.io/bulletty/badge.svg)](https://snapcraft.io/bulletty)
+
+  ```shell
+  sudo snap install bulletty
+  ```
+
+  ### 🚚 Through Cargo
+
+  It requires **cargo 1.90+**:
+
+  ```shell
+  cargo install bulletty
+  ```
+
+  To install the latest version in the repository:
+
+  ```shell
+  cargo install --git https://github.com/CrociDB/bulletty.git
+  ```
+
+  ### ☂️ Pre-requisites
+
+  **bulletty** runs in most platforms, however there are some pre-requisites to have it run the best way possible:
+
+  - Use a modern terminal emulator such as **Kitty**, **Ghostty**, **Alacritty**, **WezTerm**, **Windows Terminal**, etc. They provide modern features and true color support, and are usually very fast and hardware-rendered
+  - Use a [NerdFont](http://nerdfonts.com/). They are patched versions of common coding fonts with several icons
+readmeUrl: https://raw.githubusercontent.com/CrociDB/bulletty/HEAD/README.md

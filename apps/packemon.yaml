@@ -7,3 +7,116 @@ binaries:
   - packemon
 homepage: https://github.com/ddddddO/packemon
 repo: https://github.com/ddddddO/packemon
+language: Go
+tags:
+  - monitor
+  - system
+  - network
+  - packet
+  - generator
+install:
+  go: |-
+    Go install
+    For
+packages:
+  go: For
+installNotes: |-
+  ## Installation
+
+  ### Source build
+  > [!IMPORTANT] 
+  > For Linux, require 'Dependencies' section of https://ebpf-go.dev/guides/getting-started/#ebpf-c-program</br>
+  > For Windows, require [Npcap](https://npcap.com/). Check the following</br>
+  >   - `Support raw 802.11 traffic (and monitor mode) for wireless adapters`
+  >   - `Install Npcap in WinPcap API-compatible Mode`
+
+  <pre>
+  $ git clone git@github.com:ddddddO/packemon.git
+  $ cd packemon
+  (For Linux)
+  $ cd tc_program/ && go generate && cd -
+  (For Linux or macOS)
+  $ go build -o packemon cmd/packemon/*.go
+  $ ls | grep packemon
+  $ mv packemon /usr/local/bin/
+  (For Windows)
+  $ go build -o packemon.exe .\cmd\packemon\
+  </pre>
+
+  ### Package manager
+  > [!IMPORTANT] 
+  > It might be that the generation of the executable file is failing. At that time, install it in another way! 
+
+  For arm64, convert “amd64” to “arm64” in the following commands and execute them.
+
+  <pre>
+  <b>deb</b>
+  $ export PACKEMON_VERSION=X.X.X
+  $ curl -o packemon.deb -L https://github.com/ddddddO/packemon/releases/download/v$PACKEMON_VERSION/packemon_$PACKEMON_VERSION-1_amd64.deb
+  $ dpkg -i packemon.deb
+
+  <b>rpm</b>
+  $ export PACKEMON_VERSION=X.X.X
+  $ (Ubuntu) yum install https://github.com/ddddddO/packemon/releases/download/v$PACKEMON_VERSION/packemon_$PACKEMON_VERSION-1_amd64.rpm
+  or
+  $ (Fedora) dnf install https://github.com/ddddddO/packemon/releases/download/v$PACKEMON_VERSION/packemon_$PACKEMON_VERSION-1_amd64.rpm
+
+  <b>apk</b>
+  $ export PACKEMON_VERSION=X.X.X
+  $ curl -o packemon.apk -L https://github.com/ddddddO/packemon/releases/download/v$PACKEMON_VERSION/packemon_$PACKEMON_VERSION-1_amd64.apk
+  $ apk add --allow-untrusted packemon.apk
+
+  <b>Homebrew</b>
+  $ brew install ddddddO/tap/packemon
+
+  <b>AUR</b>
+  https://aur.archlinux.org/packages?K=packemon
+  </pre>
+
+  <details><summary>Confirmed executable in the following environments</summary>
+
+  - OS: Debian GNU/Linux 12 (bookworm) on WSL2
+    - Kernel: 5.15.167.4-microsoft-standard-WSL2
+    - Architecture: x86_64
+  - OS: Ubuntu 22.04.3 LTS on WSL2
+    - Kernel: 5.15.167.4-microsoft-standard-WSL2
+    - Architecture: x86_64
+  - OS: Fedora Linux 42 on WSL2
+    - Kernel: 5.15.167.4-microsoft-standard-WSL2
+    - Architecture: x86_64
+  - OS: Debian GNU/Linux 12 (bookworm) on Google Pixel 7a
+    - Kernel: 6.1.0-34-arm64
+    - Architecture: aarch64
+  - OS: macOS
+  - OS: Windows 11 Pro
+    - Confirm MAC address of default gateway (via PowerShell)
+      ```console
+      PS > $defaultGateway = (Get-NetRoute -DestinationPrefix "0.0.0.0/0" | Sort-Object -Property InterfaceMetric | Select-Object -First 1).NextHop
+      PS > echo $defaultGateway
+      192.168.10.1
+      PS > Get-NetNeighbor -IPAddress $defaultGateway | Select-Object -ExpandProperty LinkLayerAddress
+      ```
+
+  <details><summary>cmd</summary>
+
+  - OS: `cat /etc/os-release`
+    - Kernel: `uname -r`
+    - Architecture: `uname -m` 
+
+  </details>
+
+
+  </details>
+
+  ### Go install
+  For macOS, besides Homebrew, this is also easy.
+
+  > [!IMPORTANT] 
+  > For Windows, require [Npcap](https://npcap.com/). Check the following</br>
+  >   - `Support raw 802.11 traffic (and monitor mode) for wireless adapters`
+  >   - `Install Npcap in WinPcap API-compatible Mode`
+
+  <pre>
+  $ go install github.com/ddddddO/packemon/cmd/packemon@latest
+  </pre>
+readmeUrl: https://raw.githubusercontent.com/ddddddO/packemon/HEAD/README.md

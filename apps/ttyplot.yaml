@@ -7,3 +7,20 @@ binaries:
   - ttyplot
 homepage: https://github.com/tenox7/ttyplot
 repo: https://github.com/tenox7/ttyplot
+language: Go
+tags:
+  - realtime
+  - plotting
+  - utility
+  - terminals
+  - data
+  - input
+  - stdin
+  - pipe
+install:
+  apt: apt install ttyplot
+  brew: brew install ttyplot
+packages:
+  apt: ttyplot
+  brew: ttyplot
+readmeUrl: https://raw.githubusercontent.com/tenox7/ttyplot/HEAD/README.md

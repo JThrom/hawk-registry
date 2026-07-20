@@ -7,3 +7,22 @@ binaries:
   - stegodon
 homepage: https://github.com/deemkeen/stegodon
 repo: https://github.com/deemkeen/stegodon
+language: Go
+tags:
+  - rss
+  - news
+  - first
+  - federated
+  - microblog
+  - activitypub
+  - feeds
+installNotes: |-
+  ## ActivityPub Setup
+
+  1. Set `STEGODON_WITH_AP=true` and `STEGODON_SSLDOMAIN=yourdomain.com`
+  2. Make your server publicly accessible with HTTPS
+  3. Proxy HTTP port (9999) through nginx/caddy with TLS
+  4. Follow users: Go to the "Follow" view, enter `username@domain.com`
+
+  **Your profile:** `https://yourdomain.com/users/<username>`
+readmeUrl: https://raw.githubusercontent.com/deemkeen/stegodon/HEAD/README.md

@@ -7,3 +7,46 @@ binaries:
   - redu
 homepage: https://github.com/drdo/redu
 repo: https://github.com/drdo/redu
+language: Rust
+tags:
+  - ncdu
+  - restic
+  - repository
+  - manages
+  - exclusion
+  - lists
+  - prune
+  - files
+  - existing
+  - repos
+  - skip
+  - ones
+install:
+  cargo: cargo install redu
+packages:
+  cargo: redu
+installNotes: |-
+  # Installing
+  [![Packaging status](https://repology.org/badge/vertical-allrepos/redu.svg)](https://repology.org/project/redu/versions)
+  ## Cargo
+  ```
+  cargo install redu --locked
+  ```
+
+  ## Nix
+  ```
+  nix-env -i redu
+  ```
+
+  ## Prebuilt binaries
+  You can grab a pre-built binary from Github, currently available for:
+  - Darwin (MacOS) arm64
+  - Darwin (MacOS) x86-64
+  - Linux arm64
+  - Linux x86-64
+  - Windows arm64
+  - Windows x86-64
+
+  Note: On MacOS if you download via browser you might need to remove quarantine with:
+  `xattr -d com.apple.quarantine <binary name>`
+readmeUrl: https://raw.githubusercontent.com/drdo/redu/HEAD/README.md

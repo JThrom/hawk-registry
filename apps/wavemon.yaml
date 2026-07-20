@@ -7,3 +7,17 @@ binaries:
   - wavemon
 homepage: https://github.com/uoaerg/wavemon
 repo: https://github.com/uoaerg/wavemon
+tags:
+  - monitor
+  - system
+  - wireless
+  - device
+  - monitoring
+installNotes: |-
+  ### Installation with privileges
+
+  To grant users access to _restricted networking operations_ (scanning), use
+  ```bash
+  sudo make install-suid-root
+  ```
+readmeUrl: https://raw.githubusercontent.com/uoaerg/wavemon/HEAD/README.md

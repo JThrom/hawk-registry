@@ -7,3 +7,21 @@ binaries:
   - taskwarrior-tui
 homepage: https://github.com/kdheepak/taskwarrior-tui
 repo: https://github.com/kdheepak/taskwarrior-tui
+language: Rust
+tags:
+  - taskwarrior
+installNotes: |-
+  ### Installation
+
+  Unless otherwise specified, you will need to install the latest version of `taskwarrior` first. See <https://taskwarrior.org/download/> for more information.
+
+  Pre-compiled releases are available on the [GitHub repo](https://github.com/kdheepak/taskwarrior-tui):
+
+  1. Download the tar.gz file for your OS from [the latest release](https://github.com/kdheepak/taskwarrior-tui/releases/latest).
+  2. Unzip the tar.gz file
+  3. Run with `./taskwarrior-tui`.
+
+  See <https://kdheepak.com/taskwarrior-tui/installation/> on instructions for using package managers on various platforms.
+
+  If you are compiling from source, you'll need the most recent stable rust compiler.
+readmeUrl: https://raw.githubusercontent.com/kdheepak/taskwarrior-tui/HEAD/README.md

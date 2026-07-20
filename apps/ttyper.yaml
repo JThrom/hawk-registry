@@ -7,3 +7,44 @@ binaries:
   - ttyper
 homepage: https://github.com/max-niederman/ttyper
 repo: https://github.com/max-niederman/ttyper
+language: Rust
+tags:
+  - typing
+  - test
+install:
+  cargo: cargo install ttyper
+  pacman: pacman -S ttyper
+packages:
+  cargo: ttyper
+  pacman: ttyper
+installNotes: |-
+  ## installation
+
+  ### pre-built binaries
+
+  Pre-built binaries are available for most architectures on [GitHub releases](https://github.com/max-niederman/ttyper/releases). If your system is not supported or you have another problem, feel free to open an issue.
+
+  ### cargo
+
+  ```bash
+  cargo install ttyper
+  ```
+
+  ### arch linux
+
+  ```bash
+  pacman -S ttyper
+  ```
+
+  ### nix
+
+  ```bash
+  nix-env -iA nixpkgs.ttyper # or nixos.ttyper on NixOS
+  ```
+
+  ### scoop
+
+  ```bash
+  scoop install ttyper
+  ```
+readmeUrl: https://raw.githubusercontent.com/max-niederman/ttyper/HEAD/README.md

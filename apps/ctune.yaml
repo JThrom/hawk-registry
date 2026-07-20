@@ -7,3 +7,78 @@ binaries:
   - ctune
 homepage: https://github.com/An7ar35/ctune
 repo: https://github.com/An7ar35/ctune
+tags:
+  - music
+  - audio
+  - ncurses
+  - internet
+  - radio
+  - player
+  - linux
+install:
+  apt: apt-get install gcc
+packages:
+  apt: gcc
+installNotes: |-
+  ## Installation
+
+  ### Compile from source
+
+  Requires the following to be installed on the system first:
+
+  - `cmake` version **3.17** and the CMake extra-modules package
+  - `git` for fetching the repos
+  - `ffmpeg`, `vlc` player libraries*
+  - `lame` for recording streams to mp3
+  - `curl` and `openssl` libraries
+  - `sdl2`  or `pulsedaudio` or `alsa` or `sndio` or `pipewire` sound library/servers*
+  - `pandoc` and `gzip` for the man page
+
+  (*) The relevant plugins will be compiled for whatever libraries can be found on the system.
+
+  From there:
+
+  1. Clone the repository `git clone https://github.com/An7ar35/ctune.git`
+  2. Get in the directory with `cd ctune`
+  3. run `cmake . -DCMAKE_BUILD_TYPE=Release` (append ` -DCMAKE_INSTALL_PREFIX=</path/to/directory>` if you want to specify a custom directory for the installation)
+  4. run `cmake --build .`
+  5. run `sudo cmake --install .`
+  6. Done.
+
+  #### To uninstall
+
+  Just run `sudo xargs rm < install_manifest.txt` from within the cloned directory.
+
+  Or, alternatively:
+
+  - `cmake . -DCMAKE_BUILD_TYPE=uninstall`
+  - `sudo cmake --build . --target uninstall`
+
+  Finally, for both approaches, run `sudo mandb` after to purge the `ctune` entry for the man database
+
+  ### Install from repository
+
+  #### Arch AUR (x64)
+
+  The package is available in the AUR repository under `ctune-git`. Install using your favourite AUR package browser/installer.
+
+  >  Alternatively just download the `PKGBUILD` file into an empty staging folder and run `makepkg -si` from inside. 
+     The rest should take care of itself.
+
+  #### Ubuntu 22.10 'Kinetic' (tested with _pulseaudio_ as the default server)
+
+  <span style="color: orange;">The version of ffmpeg libs packaged with ubuntu 22.04.1 LTS are too old. Since the API changed I've updated the calls in ctune which breaks compilation for older ffmpeg libs.</span>
+
+  No PPA but here are copy/paste commands to install all the required programs and development libraries you would need before compiling `ctune`:
+
+  ```shell
+  sudo apt-get install gcc libncurses5 git cmake cmake-extras make man pandoc gzip
+  ```
+
+  ```shell
+  sudo apt-get install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libswresample-dev libavdevice-dev libavfilter-dev libssl-dev libcurl4-openssl-dev libncurses5-dev libbsd-dev libpulse-dev lame
+  ```
+
+  For more input/output plugins, install the required lib too.
+  Once all these are on the system compiling from source should work without hiccups.
+readmeUrl: https://raw.githubusercontent.com/An7ar35/ctune/HEAD/README.md

@@ -7,3 +7,9 @@ binaries:
   - tui-deck
 homepage: https://github.com/mebitek/tui-deck
 repo: https://github.com/mebitek/tui-deck
+language: Go
+tags:
+  - frontend
+  - nextcloud
+  - deck
+readmeUrl: https://raw.githubusercontent.com/mebitek/tui-deck/HEAD/README.md

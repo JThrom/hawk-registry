@@ -7,3 +7,45 @@ binaries:
   - lf
 homepage: https://github.com/gokcehan/lf
 repo: https://github.com/gokcehan/lf
+language: Go
+tags:
+  - file manager
+  - files
+  - file
+  - manager
+  - heavy
+  - inspiration
+  - ranger
+install:
+  go: go install -trimpath
+packages:
+  go: -trimpath
+installNotes: |-
+  ## Installation
+
+  See [packages](https://github.com/gokcehan/lf/wiki/Packages) for community maintained packages.
+
+  See [releases](https://github.com/gokcehan/lf/releases) for pre-built binaries.
+
+  Building from the source requires [Go](https://go.dev/).
+
+  On Unix:
+
+  ```bash
+  env CGO_ENABLED=0 go install -trimpath -ldflags="-s -w" github.com/gokcehan/lf@latest
+  ```
+
+  On Windows `cmd`:
+
+  ```cmd
+  set CGO_ENABLED=0
+  go install -trimpath -ldflags="-s -w" github.com/gokcehan/lf@latest
+  ```
+
+  On Windows `PowerShell`:
+
+  ```powershell
+  $env:CGO_ENABLED = '0'
+  go install -trimpath -ldflags="-s -w" github.com/gokcehan/lf@latest
+  ```
+readmeUrl: https://raw.githubusercontent.com/gokcehan/lf/HEAD/README.md

@@ -7,3 +7,39 @@ binaries:
   - tblogs
 homepage: https://github.com/ezeoleaf/tblogs
 repo: https://github.com/ezeoleaf/tblogs
+language: Go
+tags:
+  - read
+  - browse
+  - development
+  - blogs
+install:
+  brew: brew install tblogs
+packages:
+  brew: tblogs
+installNotes: |-
+  ## Installation
+
+  ### Homebrew (recommended, after release)
+
+  ```sh
+  brew tap ezeoleaf/tap
+  brew install tblogs
+  ```
+
+  ### Download a Release
+
+  - Go to [Releases](https://github.com/ezeoleaf/tblogs/releases) and download the binary for your OS.
+  - Unpack and move it to a directory in your `$PATH` (e.g., `/usr/local/bin`).
+
+  ### Build from Source
+
+  ```sh
+  git clone https://github.com/ezeoleaf/tblogs.git
+  cd tblogs
+  make build
+  ./bin/tblogs
+  ```
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/ezeoleaf/tblogs/HEAD/README.md

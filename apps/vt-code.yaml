@@ -8,3 +8,14 @@ binaries:
   - vtcode
 homepage: https://github.com/vinhnx/vtcode
 repo: https://github.com/vinhnx/vtcode
+language: Rust
+tags:
+  - code
+  - semantic
+  - coding
+  - agent
+install:
+  brew: brew install vinhnx/tap/vtcode
+packages:
+  brew: vtcode
+readmeUrl: https://raw.githubusercontent.com/vinhnx/vtcode/HEAD/README.md

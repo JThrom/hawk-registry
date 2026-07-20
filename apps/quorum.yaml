@@ -7,3 +7,39 @@ binaries:
   - quorum
 homepage: https://github.com/Detrol/quorum-cli
 repo: https://github.com/Detrol/quorum-cli
+language: Python
+tags:
+  - multi
+  - agent
+  - discussion
+  - system
+  - structured
+  - debates
+  - between
+  - llms
+install:
+  pip: pip install quorum-cli
+packages:
+  pip: quorum-cli
+installNotes: |-
+  ## Quick Install (pip)
+
+  ```bash
+  pip install quorum-cli
+  quorum
+  ```
+
+  On first run, Quorum creates `~/.quorum/.env.example`. Copy and edit it:
+
+  ```bash
+  cp ~/.quorum/.env.example ~/.quorum/.env
+  nano ~/.quorum/.env  # Add your API keys
+  quorum
+  ```
+
+  **Upgrade:** `pip install -U quorum-cli`
+
+  **Requirements:** Python 3.11+, Node.js 18+
+
+  ---
+readmeUrl: https://raw.githubusercontent.com/Detrol/quorum-cli/HEAD/README.md

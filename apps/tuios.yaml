@@ -7,3 +7,40 @@ binaries:
   - tuios
 homepage: https://github.com/Gaurav-Gosain/tuios
 repo: https://github.com/Gaurav-Gosain/tuios
+language: Go
+tags:
+  - window
+  - manager
+  - managing
+  - multiple
+  - sessions
+install:
+  brew: brew install tuios
+  go: go install github.com/Gaurav-Gosain/tuios/cmd/tuios@latest
+packages:
+  brew: tuios
+  go: tuios
+installNotes: |-
+  ## Installation
+
+  ### Package Managers
+
+  **Homebrew (macOS/Linux):**
+  ```bash
+  brew install tuios
+  ```
+
+  **Arch Linux (AUR):**
+  ```bash
+  yay -S tuios-bin
+  ```
+
+  **Nix:**
+  ```bash
+  nix run github:Gaurav-Gosain/tuios#tuios
+  ```
+
+  ### Other Methods
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/Gaurav-Gosain/tuios/HEAD/README.md

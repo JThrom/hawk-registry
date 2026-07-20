@@ -7,3 +7,39 @@ binaries:
   - csysdig
 homepage: https://github.com/draios/sysdig
 repo: https://github.com/draios/sysdig
+tags:
+  - docker
+  - containers
+  - root
+  - level
+  - ncurses
+  - sysdig
+  - linux
+  - system
+  - exploration
+  - troubleshooting
+  - first
+  - class
+installNotes: |-
+  Getting Started
+  ---
+
+  Run Sysdig in a container:
+
+  ```
+  sudo docker run --rm -i -t --privileged --net=host \
+      -v /var/run/docker.sock:/host/var/run/docker.sock \
+      -v /dev:/host/dev \
+      -v /proc:/host/proc:ro \
+      -v /boot:/host/boot:ro \
+      -v /src:/src \
+      -v /lib/modules:/host/lib/modules:ro \
+      -v /usr:/host/usr:ro \
+      -v /etc:/host/etc:ro \
+      docker.io/sysdig/sysdig
+  ```
+
+  And then run the `sysdig` or `csysdig` tool from the container shell!
+
+  Or install the [latest release](https://github.com/draios/sysdig/releases/latest) with a `deb` or `rpm` package for your distribution.
+readmeUrl: https://raw.githubusercontent.com/draios/sysdig/HEAD/README.md

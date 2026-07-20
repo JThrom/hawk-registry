@@ -7,3 +7,42 @@ binaries:
   - zee
 homepage: https://github.com/zee-editor/zee
 repo: https://github.com/zee-editor/zee
+language: Rust
+tags:
+  - text
+  - editor
+  - rust
+install:
+  cargo: cargo install --locked
+  apt: apt install xorg-dev
+packages:
+  cargo: --locked
+  apt: xorg-dev
+installNotes: |-
+  ### install options
+
+  To enable integration with your system's clipboard, install zee with the `system-clipboard` feature
+
+  ```
+  cargo install --locked --features system-clipboard zee
+  ```
+
+  To build with clipboard support, you'll additionally need x11 bindings on Linux. On a _Debian-y_ distribution, you can install them like this
+
+  ```
+  sudo apt install xorg-dev libxcb-shape0-dev libxcb-xfixes0-dev
+  ```
+
+  #### nightly version
+
+  To install the latest version directly from the official repository, just run
+  the following command:
+
+  ```
+  cargo install --git https://github.com/zee-editor/zee
+  ```
+
+  **Important:** please note that the code base state fetched by this instruction
+  could contain work-in-progress features which might need some further
+  maintenance before being included in the release of the next stable version.
+readmeUrl: https://raw.githubusercontent.com/zee-editor/zee/HEAD/README.md

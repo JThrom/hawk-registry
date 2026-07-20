@@ -7,3 +7,21 @@ binaries:
   - favicon-editor
 homepage: https://github.com/xyproto/favicon-editor
 repo: https://github.com/xyproto/favicon-editor
+language: Go
+tags:
+  - spartan
+  - grayscale
+  - favicon
+  - editor
+installNotes: |-
+  ## Manual installation
+
+  On Linux:
+
+      git clone https://github.com/xyproto/favicon-editor
+      cd favicon-editor
+      go build -mod=vendor
+      sudo install -Dm755 o /usr/bin/favicon-editor
+      gzip fav.1
+      sudo install -Dm644 favicon-editor.1.gz /usr/share/man/man1/favicon-editor.1.gz
+readmeUrl: https://raw.githubusercontent.com/xyproto/favicon-editor/HEAD/README.md

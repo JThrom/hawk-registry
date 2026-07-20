@@ -7,3 +7,57 @@ binaries:
   - catalyst
 homepage: https://github.com/PraveenGongada/catalyst
 repo: https://github.com/PraveenGongada/catalyst
+language: Go
+tags:
+  - chat
+  - messaging
+  - elegant
+  - triggering
+  - github
+  - actions
+  - workflows
+  - matrix
+  - configurations
+install:
+  brew: brew install catalyst
+  go: go install github.com/PraveenGongada/catalyst/cmd/catalyst@latest
+packages:
+  brew: catalyst
+  go: catalyst
+installNotes: |-
+  ## 📦 Installation
+
+  ### Prerequisites
+
+  - [GitHub CLI](https://cli.github.com/) (gh) - Required for triggering workflows
+    - Install from: https://cli.github.com/manual/installation
+    - Authenticate with: `gh auth login`
+
+  ### GitHub Actions
+
+  Use the [setup-catalyst](https://github.com/PraveenGongada/setup-catalyst) action in your workflows to install Catalyst:
+
+  ```yaml
+  - name: Setup Catalyst
+    uses: PraveenGongada/setup-catalyst@v1
+    with:
+      version: "latest" # or specify a version like 'v1.0.0'
+  ```
+
+  ### Homebrew
+
+  ```bash
+  brew tap PraveenGongada/tap
+  brew install catalyst
+  ```
+
+  ### Go
+
+  ```bash
+  go install github.com/PraveenGongada/catalyst/cmd/catalyst@latest
+  ```
+
+  ### Linux
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/PraveenGongada/catalyst/HEAD/README.md

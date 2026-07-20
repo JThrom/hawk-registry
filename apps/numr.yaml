@@ -7,3 +7,36 @@ binaries:
   - numr
 homepage: https://github.com/nasedkinpv/numr
 repo: https://github.com/nasedkinpv/numr
+language: Rust
+tags:
+  - calculator
+  - math
+  - natural
+  - language
+  - unit
+  - currency
+  - conversions
+  - style
+  - keybindings
+install:
+  brew: brew install numr
+  cargo: cargo install --path
+packages:
+  brew: numr
+  cargo: --path
+installNotes: |-
+  ## Installation
+
+  ### macOS (Homebrew)
+
+  ```bash
+  brew tap nasedkinpv/tap
+  brew install numr
+  ```
+
+  Installs both binaries: `numr` (opens the calculator file in the TUI) and `numr-cli` (CLI/REPL/server).
+
+  ### Arch Linux (AUR)
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/nasedkinpv/numr/HEAD/README.md

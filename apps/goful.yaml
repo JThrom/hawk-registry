@@ -7,3 +7,29 @@ binaries:
   - goful
 homepage: https://github.com/anmitsu/goful
 repo: https://github.com/anmitsu/goful
+language: Go
+tags:
+  - file manager
+  - files
+  - powerful
+  - file
+  - manager
+installNotes: |-
+  ## Install
+
+  ### Pre-build binaries
+
+  See [releases](https://github.com/anmitsu/goful/releases).
+
+  ### Go version >= 1.16
+
+      $ go install github.com/anmitsu/goful@latest
+      ...
+      $ goful
+
+  ### Go version < 1.16
+
+      $ go get github.com/anmitsu/goful
+      ...
+      $ goful
+readmeUrl: https://raw.githubusercontent.com/anmitsu/goful/HEAD/README.md

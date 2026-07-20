@@ -7,3 +7,26 @@ binaries:
   - terminal-pong
 homepage: https://github.com/IshmamR/terminal.pong
 repo: https://github.com/IshmamR/terminal.pong
+language: Rust
+tags:
+  - network
+  - ping
+  - pong
+  - game
+  - playable
+  - entirely
+installNotes: |-
+  ### Installation
+
+  git clone [https://github.com/yourusername/terminal-pingpong.git](https://github.com/IshmamR/terminal.pong)
+
+  Clone the repository and build:
+
+  ```bash
+  git clone https://github.com/IshmamR/terminal.pong.git
+  cd terminal.pong
+  cargo run --release
+  ```
+
+  Then play directly in your terminal!
+readmeUrl: https://raw.githubusercontent.com/IshmamR/terminal.pong/HEAD/README.md

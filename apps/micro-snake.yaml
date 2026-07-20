@@ -8,3 +8,14 @@ binaries:
   - microsnake
 homepage: https://github.com/troglobit/snake
 repo: https://github.com/troglobit/snake
+tags:
+  - small
+  - snake
+  - game
+  - utilizing
+  - ansi
+  - escape
+  - sequences
+  - draw
+  - board
+readmeUrl: https://raw.githubusercontent.com/troglobit/snake/HEAD/README.md

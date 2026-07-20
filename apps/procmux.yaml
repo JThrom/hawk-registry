@@ -7,3 +7,24 @@ binaries:
   - procmux
 homepage: https://github.com/napisani/procmux
 repo: https://github.com/napisani/procmux
+language: Go
+tags:
+  - multiple
+  - commands
+  - parallel
+  - easily
+  - switchable
+  - terminals
+install:
+  pipx: pipx install procmux
+  pip: pip install procmux
+  brew: brew install procmux
+packages:
+  pipx: procmux
+  pip: procmux
+  brew: procmux
+installNotes: |-
+  ## Installation
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/napisani/procmux/HEAD/README.md

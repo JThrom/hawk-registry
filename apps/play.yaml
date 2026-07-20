@@ -7,3 +7,20 @@ binaries:
   - play
 homepage: https://github.com/paololazzari/play
 repo: https://github.com/paololazzari/play
+language: Go
+tags:
+  - playground
+  - experiment
+  - favorite
+  - programs
+  - such
+  - grep
+installNotes: |-
+  # Installation
+
+  ```bash
+  $ git clone https://github.com/paololazzari/play
+  $ cd play
+  $ go build -o /usr/local/bin/
+  ```
+readmeUrl: https://raw.githubusercontent.com/paololazzari/play/HEAD/README.md

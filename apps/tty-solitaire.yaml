@@ -7,3 +7,6 @@ binaries:
   - tty-solitaire
 homepage: https://github.com/mpereira/tty-solitaire
 repo: https://github.com/mpereira/tty-solitaire
+tags:
+  - solitaire
+readmeUrl: https://raw.githubusercontent.com/mpereira/tty-solitaire/HEAD/README

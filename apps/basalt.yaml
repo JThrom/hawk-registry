@@ -7,3 +7,28 @@ binaries:
   - basalt
 homepage: https://github.com/erikjuhani/basalt
 repo: https://github.com/erikjuhani/basalt
+language: Rust
+tags:
+  - obsidian
+  - vaults
+  - notes
+  - directly
+install:
+  cargo: cargo install basalt-tui
+packages:
+  cargo: basalt-tui
+installNotes: |-
+  ## Installation
+
+  - Using [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html):
+    ```sh
+    cargo install basalt-tui
+    ```
+
+  - Using [aqua](https://aquaproj.github.io/docs/install):
+    ```sh
+    aqua g -i erikjuhani/basalt
+    ```
+
+  Or download a pre-compiled binary from the [latest release](https://github.com/erikjuhani/basalt/releases/latest), extract it, and move the `basalt` binary to a location in your `PATH`.
+readmeUrl: https://raw.githubusercontent.com/erikjuhani/basalt/HEAD/README.md

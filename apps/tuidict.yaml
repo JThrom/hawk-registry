@@ -7,3 +7,16 @@ binaries:
   - tuidict
 homepage: https://github.com/404Simon/tuidict
 repo: https://github.com/404Simon/tuidict
+language: Rust
+tags:
+  - offline
+  - dictionary
+  - downloads
+  - multi
+  - language
+  - freedict
+install:
+  cargo: cargo install tuidict
+packages:
+  cargo: tuidict
+readmeUrl: https://raw.githubusercontent.com/404Simon/tuidict/HEAD/README.md

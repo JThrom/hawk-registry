@@ -7,3 +7,9 @@ binaries:
   - fx
 homepage: https://github.com/antonmedv/fx
 repo: https://github.com/antonmedv/fx
+tags:
+  - monitor
+  - system
+  - json
+  - processor
+readmeUrl: https://raw.githubusercontent.com/antonmedv/fx/HEAD/README.md

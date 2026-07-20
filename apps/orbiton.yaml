@@ -7,3 +7,30 @@ binaries:
   - orbiton
 homepage: https://github.com/xyproto/orbiton
 repo: https://github.com/xyproto/orbiton
+language: Rust
+tags:
+  - git
+  - vcs
+  - text
+  - editor
+  - limited
+  - vt100
+  - suitable
+  - programming
+  - writing
+  - commit
+  - messages
+  - editing
+installNotes: |-
+  ## Manual installation on Linux
+
+      git clone https://github.com/xyproto/orbiton
+      cd orbiton
+      make && sudo make install
+
+  And optionally:
+
+      make gui && sudo make gui-install
+
+  It is also possible to install the symlinks that are suggested further down in this document.
+readmeUrl: https://raw.githubusercontent.com/xyproto/orbiton/HEAD/README.md

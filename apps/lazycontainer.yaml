@@ -7,3 +7,22 @@ binaries:
   - lazycontainer
 homepage: https://github.com/andreybleme/lazycontainer
 repo: https://github.com/andreybleme/lazycontainer
+language: Go
+tags:
+  - docker
+  - containers
+  - managing
+  - apple
+install:
+  brew: brew install container
+packages:
+  brew: container
+installNotes: |-
+  ## Install
+
+  ### Homebrew
+
+  ```sh
+  $ brew install lazycontainer
+  ```
+readmeUrl: https://raw.githubusercontent.com/andreybleme/lazycontainer/HEAD/README.md

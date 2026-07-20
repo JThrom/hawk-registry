@@ -7,3 +7,33 @@ binaries:
   - tokui
 homepage: https://github.com/zdyxry/tokui
 repo: https://github.com/zdyxry/tokui
+language: Go
+tags:
+  - interactive
+  - visualizing
+  - code
+  - statistics
+  - tokei
+install:
+  go: go install github.com/zdyxry/tokui@latest
+packages:
+  go: tokui
+installNotes: |-
+  ## 📦 Installation
+
+  ### Pre-compiled Binaries
+
+  Download the latest release from the [Releases](https://github.com/zdyxry/tokui/releases) page. Unzip and run—no extra installation required.
+
+  ### Using `go install` (Go 1.25+)
+
+  ```bash
+  go install github.com/zdyxry/tokui@latest
+  ```
+
+  This downloads, compiles, and installs the latest `tokui` binary into your `$GOPATH/bin` (or `$GOBIN`). The `tokei` binary is embedded at compile time, so no separate `tokei` installation is required.
+
+  ### Build from Source (Go 1.25+)
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/zdyxry/tokui/HEAD/README.md

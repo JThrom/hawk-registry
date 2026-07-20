@@ -7,3 +7,16 @@ binaries:
   - sup
 homepage: https://github.com/sup-heliotrope/sup
 repo: https://github.com/sup-heliotrope/sup
+language: Ruby
+tags:
+  - email
+  - mail
+  - curses
+  - threads
+  - tags
+  - style
+installNotes: |-
+  ## Installation
+
+  [See the wiki][Installation]
+readmeUrl: https://raw.githubusercontent.com/sup-heliotrope/sup/HEAD/README.md

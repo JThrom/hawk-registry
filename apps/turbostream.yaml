@@ -7,3 +7,13 @@ binaries:
   - turbostream
 homepage: https://github.com/turboline-ai/turbostream
 repo: https://github.com/turboline-ai/turbostream
+language: Go
+tags:
+  - extract
+  - signals
+  - high
+  - velocity
+  - streaming
+  - data
+  - agents
+readmeUrl: https://raw.githubusercontent.com/turboline-ai/turbostream/HEAD/README.md

@@ -7,3 +7,85 @@ binaries:
   - zenith
 homepage: https://github.com/bvaisvil/zenith
 repo: https://github.com/bvaisvil/zenith
+language: Rust
+tags:
+  - graphical
+  - metrics
+  - system
+  - rust
+install:
+  apt: apt install curl
+  pacman: pacman -S zenith
+  brew: brew install zenith
+  cargo: cargo install --git
+packages:
+  apt: curl
+  pacman: zenith
+  brew: zenith
+  cargo: --git
+installNotes: |-
+  ## Installation
+
+  <a href="https://repology.org/project/zenith/versions"><img src="https://repology.org/badge/vertical-allrepos/zenith.svg" alt="Packaging status" align="right"></a>
+
+  ### Binary
+
+  Download one of the compiled [releases](https://github.com/bvaisvil/zenith/releases).
+
+  ### Debian/Ubuntu based Linux distributions (64-bit)
+
+  The latest 64-bit deb packages are available [here](https://github.com/bvaisvil/zenith/releases) and require distributions based on Debian >= 9 or Ubuntu >= 16.04
+
+  You can also install and update the `.deb` packages we publish in our GitHub releases page using [deb-get](https://github.com/wimpysworld/deb-get).
+  First install `deb-get` using these commands in a terminal:
+  ```bash
+  sudo apt install curl
+  curl -sL https://raw.githubusercontent.com/wimpysworld/deb-get/main/deb-get | sudo -E bash -s install deb-get
+  ```
+  Then install zenith using the following command in terminal:
+  ```bash
+  deb-get install zenith
+  ```
+  Once zenith is installed it can be kept upto date using:
+  ```bash
+  deb-get update
+  deb-get upgrade
+  ```
+  ### Arch Linux
+
+  zenith is available in the [extra repository](https://archlinux.org/packages/extra/x86_64/zenith/) and can be installed with [pacman](https://wiki.archlinux.org/title/Pacman):
+
+  ```bash
+  pacman -S zenith
+  ```
+
+  There are also packages available in the AUR: zenith-git and zenith-bin
+
+  The zenith-bin package uses the deb package mentioned in previous section and can be used to avoid building the package from source. The first two depend on rust/cargo and it is recommended to install the rustup package from AUR instead of the rust package from official repositories. This allows for easy installation of rust components as per what rust officially documents. You will need to install a toolchain separately with rustup so use something like:
+
+  ```bash
+  yay -S rustup
+  rustup toolchain install stable
+  rustup default stable
+  ```
+
+  Change the 'stable' toolchain above to beta/nightly/... if you have some specific preference. After this install the preferred AUR package: ```yay -S zenith-git``` (will track the latest git revision)
+
+  ### Homebrew
+
+  ```bash
+  brew install zenith
+  ```
+
+  ### Cargo
+
+  ```
+  cargo install --git https://github.com/bvaisvil/zenith.git
+  ```
+
+  For NVIDIA GPU support, install with feature `nvidia`:
+
+  ```
+  cargo install --features nvidia --git https://github.com/bvaisvil/zenith.git
+  ```
+readmeUrl: https://raw.githubusercontent.com/bvaisvil/zenith/HEAD/README.md

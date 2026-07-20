@@ -7,3 +7,8 @@ binaries:
   - presenterm
 homepage: https://github.com/mfontanini/presenterm
 repo: https://github.com/mfontanini/presenterm
+language: Rust
+tags:
+  - markdown
+  - slideshow
+readmeUrl: https://raw.githubusercontent.com/mfontanini/presenterm/HEAD/README.md

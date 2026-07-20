@@ -7,3 +7,12 @@ binaries:
   - xplr
 homepage: https://github.com/sayanarijit/xplr
 repo: https://github.com/sayanarijit/xplr
+language: Rust
+tags:
+  - hackable
+  - minimal
+  - file
+  - explorer
+  - stealing
+  - ideas
+readmeUrl: https://raw.githubusercontent.com/sayanarijit/xplr/HEAD/README.md

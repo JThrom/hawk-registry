@@ -7,3 +7,9 @@ binaries:
   - wordle
 homepage: https://github.com/m-dango/raku-wordle/
 repo: https://github.com/m-dango/raku-wordle/
+tags:
+  - script
+  - library
+  - wordle
+  - raku
+readmeUrl: https://raw.githubusercontent.com/m-dango/raku-wordle/HEAD/README.md

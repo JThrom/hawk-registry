@@ -7,3 +7,39 @@ binaries:
   - chiko
 homepage: https://github.com/felangga/chiko
 repo: https://github.com/felangga/chiko
+language: Go
+tags:
+  - ultimate
+  - beauty
+  - grpc
+install:
+  brew: brew install felangga/chiko/chiko
+  go: go install github.com/felangga/chiko/cmd/chiko@latest
+packages:
+  brew: chiko
+  go: chiko
+installNotes: |-
+  ## 📦 Installation
+
+  Choose your preferred installation method:
+
+  ### 🍺 Homebrew (Recommended)
+  ```bash
+  brew install felangga/chiko/chiko
+  ```
+
+  ### 🐹 Go Install
+  ```bash
+  go install github.com/felangga/chiko/cmd/chiko@latest
+  ```
+
+  ### 🔧 From Source
+  ```bash
+  git clone https://github.com/felangga/chiko
+  cd chiko
+  go run ./...
+  ```
+
+  ### 📥 Pre-built Binaries
+  Download the latest release from our [Release Page](https://github.com/felangga/chiko/releases) for your platform and architecture.
+readmeUrl: https://raw.githubusercontent.com/felangga/chiko/HEAD/README.md

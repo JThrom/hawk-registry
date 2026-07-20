@@ -7,3 +7,51 @@ binaries:
   - runme
 homepage: https://github.com/stateful/runme
 repo: https://github.com/stateful/runme
+language: Go
+tags:
+  - discover
+  - code
+  - snippets
+  - directly
+  - readme
+  - other
+  - markdowns
+install:
+  brew: brew install runme
+  npm: npm install -g runme
+  go: go install github.com/runmedev/runme/v3@main
+packages:
+  brew: runme
+  npm: runme
+  go: v3
+installNotes: |-
+  ## Installation
+
+  To get started with Runme on MacOS, the recommended method of installation is using Homebrew, a popular package manager that simplifies the installation process. First, ensure your Homebrew is up to date to avoid any compatibility issues:
+
+  ```sh { name=update-brew }
+  $ brew update
+
+  ```
+
+  With Homebrew updated, proceed to install Runme. This command will fetch the latest stable release of Runme and install it on your system:
+
+  ```sh { name=install-runme }
+  $ brew install runme
+
+  ```
+
+  If you prefer using NPM (Node Package Manager) for managing your packages, Runme can also be installed globally via the following command:
+
+  ```sh { name=install-npm }
+  $ npm install -g runme
+
+  ```
+
+  For users with different setups, you can visit [Runme's releases page](https://github.com/runmedev/runme/releases) and download a binary suitable for your operating system. For those with Go developer tools set up, Runme can be installed using the `go install` command:
+
+  ```sh { name=install-via-go }
+  $ go install github.com/runmedev/runme/v3@main
+
+  ```
+readmeUrl: https://raw.githubusercontent.com/stateful/runme/HEAD/README.md

@@ -7,3 +7,179 @@ binaries:
   - gitv
 homepage: https://github.com/jayanaxhf/gitv
 repo: https://github.com/jayanaxhf/gitv
+language: Rust
+tags:
+  - beautiful
+  - feature
+  - rich
+  - performant
+  - github
+  - issues
+install:
+  brew: brew install jayanaxhf/taps/gitv
+  cargo: cargo install --locked
+packages:
+  brew: gitv
+  cargo: --locked
+installNotes: |-
+  ### Installation
+
+  #### Homebrew (macOS)
+
+  ```bash
+  brew install jayanaxhf/taps/gitv
+  ```
+
+  #### Using Cargo
+
+  ```bash
+  cargo install --locked gitv-tui
+  ```
+
+  #### From Source
+
+  1. Clone the repository:
+
+  ```bash
+  git clone https://github.com/jayanaxhf/gitv.git
+  ```
+
+  2. Navigate to the project directory:
+
+  ```bash
+  cd gitv
+  ```
+
+  3. Build the project:
+
+  ```bash
+  cargo install --path .
+  ```
+
+  #### NixOS
+
+  <details>
+    <summary>Flake</summary>
+
+  First add the repository to your inputs.
+
+  Point to main branch:
+
+  ```nix
+  inputs = {
+      ...
+      gitv.url = "github:JayanAXHF/gitv";
+      ...
+  };
+  ```
+
+  Point to a rev in main branch:
+
+  ```nix
+  inputs = {
+      ...
+      gitv.url = "github:JayanAXHF/gitv/d70273b05c5e80b05446e4aa0847758e54435d62";
+      ...
+  };
+  ```
+
+  Point to a tag:
+
+  ```nix
+  inputs = {
+      ...
+      gitv.url = "github:JayanAXHF/gitv/refs/tags/gitv-tui-v0.3.2";
+      ...
+  };
+  ```
+
+  Then your outputs should look something like this:
+
+  ```nix
+  outputs = {...} @ inputs: {
+    # Don't forget to add nixpkgs to your inputs
+    nixosConfigurations."nixos" = inputs.nixpkgs.lib.nixosSystem {
+      ...
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./configuration.nix
+        ...
+      ];
+    };
+  };
+  ```
+
+  And finally, somewhere in your `configuration.nix`:
+
+  ```nix
+  {inputs, pkgs, ...}: {
+    ...
+    environment.systemPackages = [
+      inputs.gitv.packages.${pkgs.stdenv.hostPlatform.system}.default
+    ];
+    ...
+  }
+  ```
+
+  </details>
+
+  <details>
+    <summary>Non-Flake</summary>
+
+  ##### Pinning Tool
+
+  First add the pin using your pinning tool.
+
+  We are going to show examples using npins.
+
+  Point to a branch:
+
+  ```bash
+  npins add github JayanAXHF gitv -b main
+  ```
+
+  Point to a rev in main branch:
+
+  ```bash
+  npins add github JayanAXHF gitv -b main --at d70273b05c5e80b05446e4aa0847758e54435d62
+  ```
+
+  Point to a tag:
+
+  ```bash
+  npins add github JayanAXHF gitv --at gitv-tui-v0.3.2
+  ```
+
+  Or point to latest release:
+
+  ```bash
+  npins add github JayanAXHF gitv
+  ```
+
+  Then add the package to your `systemPackages`:
+
+  ```nix
+  let
+    sources = import ./npins;
+  in {
+    environment.systemPackages = [
+      (import sources.gitv {})
+    ];
+  }
+  ```
+
+  ##### No Pinning Tool
+
+  ```nix
+  let
+    rev = "d70273b05c5e80b05446e4aa0847758e54435d62";
+    gitv = import (fetchTarball "https://github.com/JayanAXHF/gitv/archive/${rev}.tar.gz") {};
+  in {
+    environment.systemPackages = [
+      gitv
+    ];
+  }
+  ```
+
+  </details>
+readmeUrl: https://raw.githubusercontent.com/jayanaxhf/gitv/HEAD/README.md

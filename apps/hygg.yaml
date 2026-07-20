@@ -7,3 +7,16 @@ binaries:
   - hygg
 homepage: https://github.com/kruserr/hygg
 repo: https://github.com/kruserr/hygg
+language: Rust
+tags:
+  - simplifying
+  - read
+  - minimalistic
+  - like
+  - document
+  - reader
+install:
+  cargo: cargo install --locked
+packages:
+  cargo: --locked
+readmeUrl: https://raw.githubusercontent.com/kruserr/hygg/HEAD/README.md

@@ -7,3 +7,27 @@ binaries:
   - logradar
 homepage: https://github.com/nanook72/logradar
 repo: https://github.com/nanook72/logradar
+language: Rust
+tags:
+  - rust
+  - interactive
+  - filtering
+  - highlighting
+install:
+  cargo: cargo install --path
+  brew: brew install azure-cli
+packages:
+  cargo: --path
+  brew: azure-cli
+installNotes: |-
+  ## Installation
+
+  ```bash
+  cargo install --path .
+  ```
+
+  Or build from source:
+
+  ```bash
+  cargo build --release
+readmeUrl: https://raw.githubusercontent.com/nanook72/logradar/HEAD/README.md

@@ -7,3 +7,81 @@ binaries:
   - doxx
 homepage: https://github.com/bgreenwell/doxx
 repo: https://github.com/bgreenwell/doxx
+language: Rust
+tags:
+  - document
+  - microsoft
+  - word
+  - files
+install:
+  brew: brew install bgreenwell/tap/doxx
+  cargo: cargo install doxx
+  apt: apt install doxx
+  pacman: pacman -S doxx
+packages:
+  brew: doxx
+  cargo: doxx
+  apt: doxx
+  pacman: doxx
+installNotes: |-
+  ## Installation
+
+  ### Package managers
+
+  #### Homebrew (macOS/Linux)
+
+  ```bash
+  brew install bgreenwell/tap/doxx
+  ```
+
+  #### Cargo (cross-platform)
+  ```bash
+  cargo install doxx
+  ```
+
+  #### Debian/Ubuntu
+
+  `doxx` is officially packaged for Debian as
+  [`rust-doxx`](https://tracker.debian.org/pkg/rust-doxx) and is available in testing
+  (forky).
+
+  ```bash
+  sudo apt install doxx
+  ```
+
+  #### Arch Linux
+
+  ```bash
+  pacman -S doxx
+  ```
+
+  The AUR package is also available for the development version:
+
+  ```bash
+  yay -S doxx-git
+  ```
+  *Thanks to [@mhegreberg](https://github.com/mhegreberg) for creating and maintaining the AUR package!*
+
+  #### Nix (cross-platform)
+  ```bash
+  nix profile install github:bgreenwell/doxx
+  ```
+  *Thanks to [@bobberb](https://github.com/bobberb) for creating the Nix flake!*
+
+  #### NetBSD
+  ```bash
+  pkgin install doxx
+  ```
+
+  #### Conda-Forge (cross-platform)
+  ```bash
+  conda install doxx
+  ```
+  or globally using [Pixi](pixi.sh):
+  ```bash
+  pixi global install doxx
+  ```
+
+  #### Scoop (Windows)
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/bgreenwell/doxx/HEAD/README.md

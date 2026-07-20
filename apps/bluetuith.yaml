@@ -7,3 +7,13 @@ binaries:
   - bluetuith
 homepage: https://github.com/darkhz/bluetuith
 repo: https://github.com/darkhz/bluetuith
+language: Go
+tags:
+  - bluetooth
+  - connection
+  - manager
+  - which
+  - interact
+  - adapters
+  - devices
+readmeUrl: https://raw.githubusercontent.com/darkhz/bluetuith/HEAD/README.md

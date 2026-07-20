@@ -7,3 +7,10 @@ binaries:
   - zeit
 homepage: https://github.com/mrusme/zeit
 repo: https://github.com/mrusme/zeit
+language: Go
+tags:
+  - tracking
+  - time
+  - spent
+  - activities
+readmeUrl: https://raw.githubusercontent.com/mrusme/zeit/HEAD/README.md

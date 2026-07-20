@@ -1,0 +1,901 @@
+# Feluda
+
+[![Crates.io Version](https://img.shields.io/crates/v/feluda)](https://crates.io/crates/feluda) [![Crates.io Downloads](https://img.shields.io/crates/d/feluda)](https://crates.io/crates/feluda) [![Crates.io Downloads (latest version)](https://img.shields.io/crates/dv/feluda)](https://crates.io/crates/feluda) [![Documentation](https://img.shields.io/badge/docs-feluda-blue)](https://feluda.readthedocs.io/) [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Feluda%20License%20Scanner-2088FF?logo=githubactions&logoColor=white)](https://github.com/marketplace/actions/feluda-license-scanner) [![Discord](https://img.shields.io/badge/Discord-Null%20Order-5865F2?logo=discord&logoColor=white)](https://discord.gg/AJMEeFXxXy) [![Open Source](https://img.shields.io/badge/open-source-brightgreen)](https://github.com/anistark/feluda) [![Contributors](https://img.shields.io/github/contributors/anistark/feluda)](https://github.com/anistark/feluda/graphs/contributors) ![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
+
+🔎 **Feluda** is a Rust-based command-line tool that analyzes the dependencies of a project, notes down their licenses, and flags any permissions that restrict personal or commercial usage or are incompatible with your project's license.
+
+![ss](https://github.com/user-attachments/assets/473908eb-43cb-4c4f-86aa-017de251afa8)
+
+> 👋 It's still highly experimental, but fast iterating. Welcoming contributors and support to help bring out this project even better!
+
+## Quick Start
+
+Scan your project locally:
+
+```sh
+cargo install feluda
+feluda
+```
+
+Or gate your CI on license compliance with the [GitHub Action](https://github.com/marketplace/actions/feluda-license-scanner), no install needed:
+
+```yaml
+- uses: anistark/feluda@v1
+  with:
+    fail-on-restrictive: true
+```
+
+See [Installation](#installation) for more ways to install, and [CI/CD Integration](#cicd-integration) for the full Action reference.
+
+## Installation
+
+### Official Distribution 🎉:
+
+<details>
+<summary>Rust (Crate)</summary>
+
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+
+#### Prerequisites
+
+- [Rust](https://rust-lang.org/tools/install) installed on your system.
+
+If you already had it, make sure it's up-to-date and update if needed.
+(Optional) Set rust path if not set already.
+
+#### Install
+
+```sh
+cargo install feluda
+```
+
+</details>
+
+<details>
+<summary>DEB Package (Debian/Ubuntu/Pop! OS)</summary>
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white) ![Pop!\_OS](https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&logoColor=white) ![Linux Mint](https://img.shields.io/badge/Linux%20Mint-87CF3E?style=for-the-badge&logo=Linux%20Mint&logoColor=white)
+
+Feluda is available as a DEB package for Debian-based systems.
+
+1. Download the latest `.deb` file from [GitHub Releases](https://github.com/anistark/feluda/releases)
+2. Install the package:
+
+```sh
+# Install the downloaded DEB package
+sudo dpkg -i feluda_*.deb
+
+# If there are dependency issues, fix them
+sudo apt install -f
+```
+</details>
+
+<details>
+<summary>RPM Package (RHEL/Fedora/CentOS)</summary>
+
+![Fedora](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white) ![Red Hat](https://img.shields.io/badge/Red%20Hat-EE0000?style=for-the-badge&logo=redhat&logoColor=white) ![CentOS](https://img.shields.io/badge/cent%20os-002260?style=for-the-badge&logo=centos&logoColor=F0F0F0)
+
+Feluda is available as an RPM package for Red Hat-based systems.
+
+1. Download the latest `.rpm` file from [GitHub Releases](https://github.com/anistark/feluda/releases)
+2. Install the package:
+
+```sh
+# Install the downloaded RPM package
+sudo rpm -ivh feluda_*.rpm
+
+# Or using dnf (Fedora/newer RHEL)
+sudo dnf install feluda_*.rpm
+
+# Or using yum (older RHEL/CentOS)
+sudo yum install feluda_*.rpm
+```
+</details>
+
+### Community Maintained 🙌:
+
+<details>
+<summary>Homebrew (maintained by <a href="https://github.com/chenrui333" rel="noopener noreferrer">@chenrui333</a>)</summary>
+
+![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)
+
+[feluda](https://formulae.brew.sh/formula/feluda) is available in the [Homebrew](https://formulae.brew.sh/).
+You can install it using brew:
+
+```sh
+brew install feluda
+```
+
+</details>
+
+<details>
+<summary>Arch Linux (maintained by <a href="https://github.com/adamperkowski" rel="noopener noreferrer">@adamperkowski</a>)</summary>
+
+![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
+
+[feluda](https://aur.archlinux.org/packages/feluda) is available in the [AUR](https://aur.archlinux.org/).
+You can install it using an AUR helper (e.g. paru):
+
+```sh
+paru -S feluda
+```
+
+</details>
+
+<details>
+<summary>NetBSD (maintained by <a href="https://github.com/0323pin" rel="noopener noreferrer">@0323pin</a>)</summary>
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+On NetBSD a package is available from the [official repositories](https://pkgsrc.se/devel/feluda/). To install it, simply run:
+
+```sh
+pkgin install feluda
+```
+
+</details>
+
+### Package Managers 📦:
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/feluda.svg)](https://repology.org/project/feluda/versions)
+
+Track releases on [github releases](https://github.com/anistark/feluda/releases) or [via release feed](https://github.com/anistark/feluda/releases.atom).
+
+<details>
+<summary>Build from Source (advanced users)</summary>
+
+**Note:** This might have experimental features which might not work as intended.
+
+### Clone and Build
+
+First, clone the repository:
+
+```sh
+git clone https://github.com/anistark/feluda.git
+cd feluda
+```
+
+Then, build the project using Cargo:
+
+```sh
+cargo build --release
+```
+
+Finally, to make `feluda` available globally, move the binary to a directory in your PATH. For example:
+
+```sh
+sudo mv target/release/feluda /usr/local/bin/
+```
+
+</details>
+
+## Usage
+
+Feluda provides license analysis by default, with an additional command for generating compliance files.
+Analyze your project's dependencies and their licenses:
+
+```sh
+# Basic usage
+feluda
+
+# Specify a path to your project directory
+feluda --path /path/to/project/
+
+# Check with specific language
+feluda --language {rust|node|go|python|java|maven|gradle|c|cpp|r|ruby}
+
+# Skip local file checks and force network lookup only
+feluda --no-local
+
+# Filter by OSI approval status
+feluda --osi approved        # Show only OSI approved licenses
+feluda --osi not-approved   # Show only non-OSI approved licenses
+feluda --osi unknown        # Show licenses with unknown OSI status
+```
+
+### Local License Detection
+
+By default, Feluda checks local files first for license information before making network requests:
+- **Node.js**: Checks `LICENSE` files in local `node_modules` (npm, pnpm, yarn, bun)
+- **Rust**: Checks `Cargo.toml` manifests for license field
+- **Java**: Fetches POM files from Maven Central to extract `<licenses>` metadata
+
+Use `--no-local` to skip local checks and force network-only license lookup.
+
+### License File Generation
+
+Generate compliance files for legal requirements:
+
+```sh
+# Interactive file generation
+feluda generate
+
+# Generate for specific language and license
+feluda generate --language rust --project-license MIT
+
+# Generate for specific path
+feluda generate --path /path/to/project/
+```
+
+![generate-ss](https://github.com/user-attachments/assets/a965843f-7d87-4ba8-a311-c982d717a4f8)
+
+### SBOM Generation
+
+Generate Software Bill of Materials (SBOM) for your project:
+
+```sh
+# Generate all supported SBOM formats (SPDX + CycloneDX)
+feluda sbom
+
+# Generate SPDX format SBOM only
+feluda sbom spdx
+
+# Generate SPDX format SBOM to file
+feluda sbom spdx --output sbom.json
+
+# Generate CycloneDX format SBOM only
+feluda sbom cyclonedx
+
+# Generate CycloneDX format SBOM to file
+feluda sbom cyclonedx --output sbom.json
+
+# Generate all formats with custom output
+feluda sbom --output sbom-output
+```
+
+**Supported SBOM Formats:**
+- **SPDX 2.3** - Software Package Data Exchange format (JSON)
+- **CycloneDX** - CycloneDX v1.5 format (JSON)
+
+**What's Included in SBOM:**
+- Package names and versions
+- License information
+- SPDX identifiers
+- License compatibility flags
+- Tool metadata and generation timestamp
+
+**Use Cases:**
+- 🔒 **Security compliance** - Track all dependencies for vulnerability management
+- 📋 **Supply chain transparency** - Document your software's components
+- 🏢 **Enterprise requirements** - Meet organizational SBOM mandates
+- 🔍 **Audit preparation** - Provide comprehensive dependency documentation
+
+### SBOM Validation
+
+Validate SBOM files to ensure they conform to the SPDX or CycloneDX specifications:
+
+```sh
+# Validate an SBOM file
+feluda sbom validate spdx.json
+
+# Validate and save the report to a file
+feluda sbom validate spdx.json --output validation-report.txt
+
+# Validate and output report in JSON format
+feluda sbom validate spdx.json --json
+
+# Validate and save JSON report to file
+feluda sbom validate spdx.json --json --output validation-report.json
+```
+
+### Cache Management
+
+Feluda caches GitHub license data to improve performance on repeated runs:
+
+```sh
+# View cache status (size, age, health)
+feluda cache
+
+# Clear the cache
+feluda cache --clear
+```
+
+**How Caching Works:**
+- Cache is stored at `.feluda/cache/github_licenses.json`
+- 30-day automatic expiration (cache is refreshed if older)
+- Only licenses successfully fetched from GitHub API are cached
+- Cache is automatically loaded on subsequent analysis runs
+- Reduces GitHub API calls and improves analysis speed
+
+### Watch Mode
+
+Continuously re-scan your project whenever a dependency file changes. Feluda watches the project tree for filesystem events and re-runs the license check automatically — handy while adding or upgrading dependencies, especially with AI coding tools that pull in packages on the fly.
+
+```sh
+# Watch the current directory and re-scan on dependency changes
+feluda watch
+
+# Watch a specific path
+feluda watch --path /path/to/project/
+
+# Adjust the debounce window (ms to wait after a change before re-scanning)
+feluda watch --debounce 800
+```
+
+Watch mode reuses the same flags as a normal scan — pass them before the `watch` subcommand:
+
+```sh
+# Watch and report only restrictive licenses, as JSON
+feluda --restrictive --json watch
+
+# Watch in strict mode against a specific project license
+feluda --strict --project-license MIT watch
+```
+
+**What it watches:** every dependency manifest and lockfile Feluda understands (`Cargo.toml`/`Cargo.lock`, `package.json`/`package-lock.json`/`yarn.lock`/`pnpm-lock.yaml`, `go.mod`/`go.sum`, `pyproject.toml`/`requirements.txt`/`uv.lock`, `pom.xml`/`build.gradle`, `*.csproj`, and more), discovered recursively while honouring `.gitignore` and skipping vendored directories like `node_modules/` and `target/`.
+
+> **Note:** Watch mode is report-only — it does not support the interactive TUI (`--gui`) or remote repositories (`--repo`). Press `Ctrl-C` to stop.
+
+#### Scheduled & looped scanning
+
+When a long-running watcher isn't a good fit (CI, network filesystems, periodic audits), run Feluda's single-shot scan on a timer instead. Add `--fail-on-restrictive` (or `--fail-on-incompatible`) so the exit code gates your pipeline:
+
+```sh
+# cron — scan every 30 minutes and fail if a restrictive license appears
+*/30 * * * * cd /path/to/project && feluda --fail-on-restrictive
+
+# Claude Code /loop — re-run the check every 30 minutes
+/loop 30m feluda --restrictive
+
+# CI gate — non-zero exit stops the build
+feluda --fail-on-restrictive --json
+```
+
+### GitHub API Authentication
+
+Feluda uses the GitHub API to fetch license information. Unauthenticated requests are limited to 60 requests/hour, which may be insufficient for large projects or frequent scans.
+
+**Increase rate limits** by providing a GitHub personal access token:
+
+```sh
+# Via command-line flag
+feluda --github-token <your_token>
+
+# Or via environment variable (recommended for CI/CD)
+export GITHUB_TOKEN=<your_token>
+feluda
+```
+
+Authenticated requests get 5,000 requests/hour. No special scopes are required for the token—public repository access is sufficient.
+
+### Run feluda on a github repo directly
+
+```sh
+feluda --repo <repository_url> [--ssh-key <key_path>] [--ssh-passphrase <passphrase>] [--token <https_token>]
+```
+
+` <repository_url>: The URL of the Git repository to clone (e.g., git@github.com:user/repo.git or https://github.com/user/repo.git). `
+
+` --ssh-key <key_path>: (Optional) Path to a private SSH key for authentication. `
+
+` --ssh-passphrase <passphrase>: (Optional) Passphrase for the SSH key. `
+
+` --token <https_token>: (Optional) HTTPS token for authenticating with private repositories. `
+
+---
+
+_If you're using Feluda, feel free to grab a Scanned with Feluda badge for your project:_ [![Scanned with Feluda](https://img.shields.io/badge/Scanned%20with-Feluda-brightgreen)](https://github.com/anistark/feluda)
+
+```md
+[![Scanned with Feluda](https://img.shields.io/badge/Scanned%20with-Feluda-brightgreen)](https://github.com/anistark/feluda)
+```
+
+Replace the repo name and username. Once you've the Feluda GitHub Action setup, this badge will be automatically updated.
+
+## License Compliance Files
+
+Feluda can generate essential compliance files required for commercial software distribution and open source projects.
+
+### NOTICE File
+
+A **NOTICE file** is a concise summary document that provides attribution for third-party components:
+
+- **Purpose**: Quick overview of all third-party components and their licenses
+- **Content**: Organized by license type, lists all dependencies with their versions
+- **Use Cases**:
+  - Legal compliance documentation
+  - Quick reference for license audits
+  - Attribution requirements for many open source licenses
+
+### THIRD_PARTY_LICENSES File
+
+A **THIRD_PARTY_LICENSES file** provides comprehensive license documentation:
+
+- **Purpose**: Complete legal documentation for all dependencies
+- **Content**: Full license texts, compatibility analysis, package URLs, and copyright information
+- **Offline-friendly**: Reads full license text from your local package caches (Cargo `registry/src`, Go module cache, `node_modules`, Python `site-packages`) first, falling back to the network only when a package isn't cached locally — so it works on locked-down or air-gapped machines
+- **Use Cases**:
+  - Commercial software distribution requirements
+  - Legal compliance for enterprise applications
+  - Due diligence for acquisitions and audits
+  - App store submissions (iOS, Android, etc.)
+
+### Why These Files Are Important
+
+**Legal Protection**: Many open source licenses require attribution when redistributing code. These files ensure compliance and protect your organization from legal issues.
+
+**Transparency**: Shows exactly what third-party code is included in your application, building trust with users and stakeholders.
+
+**Commercial Readiness**: Essential for commercial software, enterprise deployments, and app store submissions.
+
+**Audit Preparation**: Makes license audits faster and easier by providing all necessary documentation in standard formats.
+
+
+### When You Need These Files
+
+- 📱 **Mobile app distribution** (iOS App Store, Google Play)
+- 🏢 **Enterprise software deployment**
+- 💼 **Commercial product releases**
+- 🔍 **Legal compliance audits**
+- 🤝 **Open source project attribution**
+- 📄 **Regulatory compliance** (GDPR, SOX, etc.)
+
+## Output Format
+
+### JSON
+
+- Default: Plain text.
+- JSON: Use the `--json` flag for JSON output.
+
+```sh
+feluda --json
+```
+
+Sample Output for a sample cargo.toml file containing `serde` and `tokio` dependencies:
+
+```json
+[
+  {
+    "name": "serde",
+    "version": "1.0.151",
+    "license": "MIT",
+    "is_restrictive": false,
+    "compatibility": "Compatible",
+    "osi_status": "Approved"
+  },
+  {
+    "name": "tokio",
+    "version": "1.0.2",
+    "license": "MIT",
+    "is_restrictive": false,
+    "compatibility": "Compatible",
+    "osi_status": "Approved"
+  }
+]
+```
+
+### YAML
+
+Use the `--yaml` flag for YAML output
+
+```sh
+feluda --yaml
+```
+
+Sample Output for a sample cargo.toml file containing `serde` and `tokio` dependencies:
+
+```yaml
+- name: serde
+  version: 1.0.151
+  license: MIT
+  is_restrictive: false
+  compatibility: Compatible
+  osi_status: Approved
+- name: tokio
+  version: 1.0.2
+  license: MIT
+  is_restrictive: false
+  compatibility: Compatible
+  osi_status: Approved
+```
+
+### Gist Mode
+
+For a short summary, in case you don't want all that output covering your screen:
+
+```sh
+feluda --gist
+```
+
+<img width="610" height="257" alt="feluda-gist" src="https://github.com/user-attachments/assets/51224a92-678d-4cd6-8a18-45a4e67f97f2" />
+
+### Verbose Mode
+
+For detailed information about each dependency:
+
+```sh
+feluda --verbose
+```
+
+The verbose mode displays a table with an additional "OSI Status" column showing whether each license is approved by the Open Source Initiative (OSI).
+
+### OSI Integration
+
+Feluda integrates with the Open Source Initiative (OSI) to provide license approval status information. This feature helps you identify whether the licenses used by your dependencies are officially approved by the OSI.
+
+#### OSI Status Values
+
+- **`approved`**: License is officially approved by the OSI
+- **`unknown`**: License status with OSI is unknown or the license is not OSI approved
+
+#### OSI Filtering
+
+Filter dependencies by their OSI approval status:
+
+```sh
+# Show only OSI approved licenses
+feluda --osi approved --verbose
+
+# Show only non-approved or unknown OSI status licenses
+feluda --osi not-approved --verbose
+
+# Show licenses with unknown OSI status
+feluda --osi unknown --verbose
+
+# Combine with JSON output
+feluda --osi approved --json
+```
+
+**Note**: OSI status information is only displayed in `--verbose` mode, `--gui` mode, or when using structured output formats (JSON/YAML) to keep the default output clean.
+
+### License Compatibility
+
+Feluda can check if dependency licenses are compatible with your project's license:
+
+```sh
+feluda --project-license MIT
+```
+
+You can also filter for incompatible licenses only:
+
+```sh
+feluda --incompatible
+```
+
+And fail CI builds if incompatible licenses are found:
+
+```sh
+feluda --fail-on-incompatible
+```
+
+### Restrictive Mode
+
+In case you need to see only the restrictive dependencies:
+
+```sh
+feluda --restrictive
+```
+
+### Terminal User Interface (TUI) Mode
+
+We've an awesome ✨ TUI mode available to browse through the dependencies in a visually appealing way as well:
+
+```sh
+feluda --gui
+```
+
+![ss-gui](https://github.com/user-attachments/assets/a799fe18-5700-4f2c-b6ac-4a401cdc4956)
+
+## CI/CD Integration
+
+Feluda provides several options for CI integration:
+
+- `--ci-format <github|jenkins|sarif>`: Generate output compatible with the specified CI system
+- `--fail-on-restrictive`: Make the CI build fail when restrictive licenses are found
+- `--fail-on-incompatible`: Make the CI build fail when incompatible licenses are found
+- `--osi <approved|not-approved|unknown>`: Filter by OSI license approval status
+- `--output-file <path>`: Write the output to a file instead of stdout
+
+Feluda can be easily integrated into your CI/CD pipelines with built-in support for **GitHub Actions**, **Jenkins**, and **GitHub Advanced Security** via SARIF.
+
+### GitHub Advanced Security (SARIF)
+
+Feluda emits [SARIF 2.1.0](https://sarifweb.azurewebsites.net/) output that GitHub Advanced Security can ingest to surface license findings in the **Security** tab and in VS Code's Problems panel.
+
+```yaml
+      - name: Run Feluda license scan
+        run: feluda --ci-format sarif --output-file results.sarif
+
+      - name: Upload SARIF to GitHub Advanced Security
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: results.sarif
+```
+
+Restrictive licenses are reported at `warning` level; licenses incompatible with your project license are reported at `error` level. A clean scan still produces a valid SARIF file (empty `results` array), so the upload step never needs to be skipped.
+
+### GitHub Actions
+
+To use Feluda with GitHub Actions, simply use the published action, available on the [GitHub Marketplace](https://github.com/marketplace/actions/feluda-license-scanner) as **Feluda License Scanner**. For detailed documentation, see the [GitHub Action README](./ACTION-README.md).
+
+```yaml
+name: License Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  license-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Scan licenses
+        uses: anistark/feluda@v1
+        with:
+          fail-on-restrictive: true
+          fail-on-incompatible: true
+```
+
+**Advanced usage with compliance files:**
+
+```yaml
+      - name: Scan licenses
+        uses: anistark/feluda@v1
+        with:
+          fail-on-restrictive: true
+          project-license: 'MIT'
+          update-badge: true
+
+      - name: Generate compliance files
+        run: |
+          echo "1" | feluda generate  # Auto-select NOTICE file
+          echo "2" | feluda generate  # Auto-select THIRD_PARTY_LICENSES file
+
+      - name: Generate SBOM
+        run: |
+          feluda sbom spdx --output sbom.spdx.json
+          feluda sbom cyclonedx --output sbom.cyclonedx.json
+
+      - name: Validate SBOM files
+        run: |
+          feluda sbom validate sbom.spdx.json --output sbom-spdx-validation.txt
+          feluda sbom validate sbom.cyclonedx.json --output sbom-cyclonedx-validation.txt
+
+      - name: Upload compliance artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: license-compliance
+          path: |
+            NOTICE
+            THIRD_PARTY_LICENSES.md
+            sbom.spdx.json
+            sbom.cyclonedx.json
+            sbom-spdx-validation.txt
+            sbom-cyclonedx-validation.txt
+```
+
+### Jenkins
+
+To use Feluda with Jenkins, see the [CI examples](./examples/ci/) directory for a sample Jenkinsfile that demonstrates:
+- Installing Feluda via Cargo
+- Running license checks with Jenkins-compatible output format (JUnit XML)
+- Publishing results as JUnit test reports
+
+For more CI/CD integration examples, visit the [examples/ci](./examples/ci/) directory.
+
+Checkout [contributing guidelines](./CONTRIBUTING.md) if you are looking to contribute to this project.
+
+> Currently, using [choosealicense](https://choosealicense.com/) license directory for source of truth.
+
+## Configuration (Optional)
+
+Feluda allows you to customize which licenses are considered restrictive and which licenses to ignore from analysis. This can be done in three ways, listed in order of precedence (highest to lowest):
+
+1. Environment variables
+2. `.feluda.toml` configuration file
+3. Default values
+
+### Default Restrictive Licenses
+
+By default, Feluda considers the following licenses as restrictive:
+- GPL-3.0
+- AGPL-3.0
+- LGPL-3.0
+- MPL-2.0
+- SEE LICENSE IN LICENSE
+- CC-BY-SA-4.0
+- EPL-2.0
+
+### Configuration File
+
+Create a `.feluda.toml` file in your project root to customize restrictive licenses and ignore licenses:
+
+```toml
+[licenses]
+# Override the default list of restrictive licenses
+restrictive = [
+    "GPL-3.0",      # GNU General Public License v3.0
+    "AGPL-3.0",     # GNU Affero General Public License v3.0
+    "Custom-1.0",   # Your custom license identifier
+]
+
+# Licenses to ignore from analysis
+ignore = [
+    "MIT",          # MIT License
+    "Apache-2.0",   # Apache License 2.0
+]
+```
+
+### Ignoring Licenses
+
+The `ignore` section allows you to exclude specific licenses from analysis. This is useful when:
+- You want to exclude certain permissive licenses from the output
+- You're only interested in restrictive or incompatible licenses
+- You want to focus on specific subsets of your dependencies
+
+Ignored licenses will be completely filtered out from the analysis results and won't appear in any reports.
+
+```toml
+[licenses]
+ignore = [
+    "MIT",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+]
+```
+
+### Ignoring Dependencies
+
+The `[dependencies]` section allows you to exclude entire dependencies from license scanning, regardless of their license. This is useful when:
+- A dependency is internal to your organization and shares your project's license
+- You have a written agreement with the dependency author allowing its use
+- A dependency is only used in development/testing and not distributed
+
+Ignored dependencies will be completely filtered out during the scanning phase and won't appear in any reports.
+
+```toml
+[[dependencies.ignore]]
+name = "github.com/anistark/wasmrun"
+version = "v1.0.0"
+reason = "This is within the same repo as the project, hence it shares the same license."
+
+[[dependencies.ignore]]
+name = "internal-library"
+version = ""  # Leave empty to ignore all versions of this dependency
+reason = "We have a written acknowledgment from the author that we may use their code under our license."
+
+[[dependencies.ignore]]
+name = "dev-only-package"
+version = ""  # Ignore all versions
+reason = "This package is only used for development and testing, not distributed."
+```
+
+**Note**: The `version` field is optional:
+- When specified (e.g., `"v1.0.0"`), only that version will be ignored
+- When left empty or omitted, **all versions** of that dependency will be ignored
+- The `reason` field documents why the dependency is being ignored for auditing purposes
+
+### Environment Variables
+
+You can also override the configuration using environment variables:
+
+```sh
+# Override restrictive licenses list
+export FELUDA_LICENSES_RESTRICTIVE='["GPL-3.0","AGPL-3.0","Custom-1.0"]'
+
+# Override ignore licenses list
+export FELUDA_LICENSES_IGNORE='["MIT","Apache-2.0","BSD-3-Clause"]'
+```
+
+The environment variables take precedence over both the configuration file and default values.
+
+### Configuration Validation
+
+Feluda validates your configuration and will warn you if:
+
+**License Configuration:**
+- A license appears in both `restrictive` and `ignore` lists (the license will be ignored)
+- Empty license strings are found in either list (will cause an error)
+- Duplicate licenses are found in either list (will cause an error)
+- Invalid SPDX identifiers are used (warning only)
+
+**Dependency Configuration:**
+- Empty dependency names are provided (will cause an error)
+- Duplicate dependencies with the same name and version are found (will cause an error)
+- A dependency is missing a reason (warning only)
+
+## License Compatibility Matrix
+
+Feluda uses a comprehensive license compatibility matrix to determine whether dependency licenses are compatible with your project's license. This matrix is maintained in an external TOML configuration file for easy updates and maintenance.
+
+### How It Works
+
+When you use the `--project-license` flag or Feluda auto-detects your project license, it checks each dependency's license against a compatibility matrix to determine:
+- ✅ **Compatible**: Safe to use with your project license
+- ❌ **Incompatible**: May create legal issues or licensing conflicts  
+- ❓ **Unknown**: License compatibility cannot be determined
+
+### Compatibility Matrix Location
+
+The license compatibility rules are stored in:
+
+```sh
+config/license_compatibility.toml
+```
+
+This file defines which dependency licenses are compatible with each project license type. For example:
+
+```toml
+[MIT]
+compatible_with = [
+    "MIT",
+    "BSD-2-Clause", 
+    "BSD-3-Clause",
+    "Apache-2.0",
+    "ISC",
+    # ... more permissive licenses
+]
+
+[GPL-3.0]
+compatible_with = [
+    "MIT",
+    "BSD-2-Clause",
+    "Apache-2.0",
+    "LGPL-2.1",
+    "LGPL-3.0", 
+    "GPL-2.0",
+    "GPL-3.0",
+    # ... GPL-compatible licenses
+]
+```
+
+### Supported Project Licenses
+
+The matrix currently supports compatibility checking for:
+- **MIT** - Most permissive, allows only permissive dependency licenses
+- **Apache-2.0** - Permissive license compatible with most open source licenses
+- **GPL-3.0** - Copyleft license with broad compatibility including LGPL and other GPL versions
+- **GPL-2.0** - Stricter copyleft (cannot include Apache-2.0 dependencies)
+- **AGPL-3.0** - Network copyleft with GPL-3.0 compatibility plus AGPL
+- **LGPL-3.0 / LGPL-2.1** - Lesser GPL variants with limited compatibility
+- **MPL-2.0** - Mozilla Public License with moderate compatibility
+- **BSD-3-Clause / BSD-2-Clause** - BSD variants with permissive-only compatibility
+- **ISC, 0BSD, Unlicense, WTFPL** - Various permissive licenses
+
+### Custom Compatibility Rules
+
+Advanced users can customize compatibility rules by:
+
+1. **User-specific overrides**: Create `.feluda/license_compatibility.toml` in your home directory
+2. **Project-specific rules**: The local `config/license_compatibility.toml` takes precedence
+
+**Important**: Modifying compatibility rules requires legal expertise. Consult legal counsel before making changes that could affect your project's compliance.
+
+## 💬 Using Feluda? Talk to Us
+
+Feluda's roadmap is shaped by how people actually use it. If it's part of your workflow (local scans, CI gates, SBOMs, or something we never imagined), we'd genuinely love to hear about it:
+
+- 🗣️ [Open an issue](https://github.com/anistark/feluda/issues/new) to share your use case, pain points, or feature requests. Even a quick "we use Feluda for X" note helps a lot
+- 🎮 [Join the Null Order Discord](https://discord.gg/AJMEeFXxXy) to chat with us directly
+- 💬 DM [@kranirudha on X](https://x.com/kranirudha) or [@ani on Mastodon](https://fosstodon.org/@ani)
+- 🏷️ Add the [Scanned with Feluda badge](#usage) to your README so others can discover it too
+
+## ⚠️ Legal Disclaimer
+
+Feluda is provided as a helpful tool for license compliance analysis. However, it is **not a substitute for legal advice**, and users are responsible for their own compliance decisions:
+
+**Important Points:**
+- **Verification**: You must verify the accuracy of all license information provided by Feluda
+- **Your Responsibility**: Ensure compliance with all applicable license terms and regulations
+- **Legal Counsel**: Always consult qualified legal counsel for license compliance matters
+- **Official Sources**: Check official repositories for up-to-date and authoritative license information
+- **No Warranty**: Feluda and its contributors provide no warranties regarding accuracy or fitness for any purpose
+- **No Liability**: Feluda and its contributors are not liable for any legal issues arising from the use of this tool or information
+- **Complexity**: License compatibility can depend on specific use cases, distribution methods, and jurisdictions
+
+Feluda is in active development. While we strive to provide accurate information, **use at your own risk.**
+
+---
+
+![felu](https://github.com/user-attachments/assets/5f2bf6c4-3b70-4d2f-9990-c4005f56c5a9)
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
+_Happy coding with Feluda!_ 🚀

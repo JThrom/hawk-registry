@@ -7,3 +7,18 @@ binaries:
   - kabmat
 homepage: https://github.com/PlankCipher/kabmat
 repo: https://github.com/PlankCipher/kabmat
+tags:
+  - program
+  - managing
+  - kanban
+  - boards
+  - like
+  - keybindings
+installNotes: |-
+  ## Installation
+
+  1. get the source code from latest release or clone this repo => `git clone https://github.com/PlankCipher/kabmat.git`
+  2. cd into the source code or cloned repo => `cd kabmat`
+  3. run `make` to build the program
+  4. run `sudo make install` to install it
+readmeUrl: https://raw.githubusercontent.com/PlankCipher/kabmat/HEAD/README.md

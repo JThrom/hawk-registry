@@ -7,3 +7,58 @@ binaries:
   - feluda
 homepage: https://github.com/anistark/feluda
 repo: https://github.com/anistark/feluda
+language: Rust
+tags:
+  - detect
+  - restrictive
+  - incompatible
+  - licesenses
+  - dependencies
+  - project
+install:
+  cargo: cargo install feluda
+  apt: apt install -f
+  dnf: dnf install feluda_*.rpm
+  brew: brew install feluda
+packages:
+  cargo: feluda
+  apt: -f
+  dnf: feluda_*.rpm
+  brew: feluda
+installNotes: |-
+  ## Installation
+
+  ### Official Distribution 🎉:
+
+  <details>
+  <summary>Rust (Crate)</summary>
+
+  ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+
+  #### Prerequisites
+
+  - [Rust](https://rust-lang.org/tools/install) installed on your system.
+
+  If you already had it, make sure it's up-to-date and update if needed.
+  (Optional) Set rust path if not set already.
+
+  #### Install
+
+  ```sh
+  cargo install feluda
+  ```
+
+  </details>
+
+  <details>
+  <summary>DEB Package (Debian/Ubuntu/Pop! OS)</summary>
+
+  ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white) ![Pop!\_OS](https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&logoColor=white) ![Linux Mint](https://img.shields.io/badge/Linux%20Mint-87CF3E?style=for-the-badge&logo=Linux%20Mint&logoColor=white)
+
+  Feluda is available as a DEB package for Debian-based systems.
+
+  1. Download the latest `.deb` file from [GitHub Releases](https://github.com/anistark/feluda/releases)
+  2. Install the package:
+
+  ```sh
+readmeUrl: https://raw.githubusercontent.com/anistark/feluda/HEAD/README.md

@@ -7,3 +7,26 @@ binaries:
   - textual-web
 homepage: https://github.com/Textualize/textual-web
 repo: https://github.com/Textualize/textual-web
+language: Python
+tags:
+  - tuis
+  - terminals
+  - browser
+install:
+  pipx: pipx install textual-web
+packages:
+  pipx: textual-web
+installNotes: |-
+  ## Getting Started
+
+  Textual Web is a Python application, but you don't need to be a Python developer to run it.
+
+  The easiest way to install Textual Web is via [pipx](https://pypa.github.io/pipx/).
+  Once you have pipx installed, run the following command:
+
+  ```python
+  pipx install textual-web
+  ```
+
+  You will now have the `textual-web` command on your path.
+readmeUrl: https://raw.githubusercontent.com/Textualize/textual-web/HEAD/README.md

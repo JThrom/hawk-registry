@@ -7,3 +7,10 @@ binaries:
   - cfdisk
 homepage: https://github.com/util-linux/util-linux
 repo: https://github.com/util-linux/util-linux
+tags:
+  - partition
+  - editor
+  - included
+  - util
+  - linux
+readmeUrl: https://raw.githubusercontent.com/util-linux/util-linux/HEAD/README

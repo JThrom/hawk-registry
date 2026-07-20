@@ -8,3 +8,18 @@ binaries:
   - sudoku
 homepage: https://github.com/MitchelPaulin/sudoku-rs
 repo: https://github.com/MitchelPaulin/sudoku-rs
+language: Rust
+tags:
+  - sudoku
+  - built
+installNotes: |-
+  ## Building & Themes
+
+  There are two themes available, Tranquil and Dracula. The theme that is used is based on your systems color preferences.
+
+  | `Tranquil` | `Dracula` |
+  | :-------------------------------: | :------------------------------: |
+  |  ![tranquil](demo/tranquil.png)   |  ![tranquil](demo/dracula.png)   |
+
+  Or you can add your own in [themes.rs](./src/themes.rs)
+readmeUrl: https://raw.githubusercontent.com/MitchelPaulin/sudoku-rs/HEAD/README.md

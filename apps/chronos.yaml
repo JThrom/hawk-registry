@@ -7,3 +7,17 @@ binaries:
   - chronos
 homepage: https://github.com/samuelstranges/chronos
 repo: https://github.com/samuelstranges/chronos
+language: Go
+tags:
+  - vimlike
+  - calendar
+installNotes: |-
+  ## Installation & Usage
+
+  Build from source:
+
+  ```bash
+  git clone https://github.com/samuelstranges/chronos
+  cd chronos
+  go build .
+readmeUrl: https://raw.githubusercontent.com/samuelstranges/chronos/HEAD/README.md

@@ -7,3 +7,61 @@ binaries:
   - amtui
 homepage: https://github.com/pehlicd/amtui/
 repo: https://github.com/pehlicd/amtui/
+language: Go
+tags:
+  - alertmanager
+  - companion
+install:
+  brew: brew install amtui
+  go: go install github.com/pehlicd/amtui@latest
+packages:
+  brew: amtui
+  go: amtui
+installNotes: |-
+  ## Installation
+
+  ### Using Homebrew
+  You can install AMTUI using the [Homebrew](https://brew.sh/) package manager:
+
+  ```bash
+  brew tap pehlicd/tap
+  brew install amtui
+  ```
+
+  ### Using go install
+  You can install AMTUI using the `go install` command:
+
+  ```bash
+  go install github.com/pehlicd/amtui@latest
+  ```
+
+  ### From Releases
+  You can download the latest release of AMTUI from the [GitHub releases page](https://github.com/pehlicd/amtui/releases).
+
+  ### From Source
+  To use AMTUI, you'll need to have Go installed on your system. Then, you can install AMTUI using the following steps:
+
+  1. Clone the repository:
+
+  ```bash
+  git clone https://github.com/pehlicd/amtui.git
+  ```
+
+  2. Navigate to the project directory:
+
+  ```bash
+  cd amtui
+  ```
+
+  3. Build the application:
+
+  ```bash
+  go build
+  ```
+
+  4. Run the application:
+
+  ```bash
+  ./amtui
+  ```
+readmeUrl: https://raw.githubusercontent.com/pehlicd/amtui/HEAD/README.md

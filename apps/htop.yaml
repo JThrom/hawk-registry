@@ -7,3 +7,18 @@ binaries:
   - htop
 homepage: https://github.com/htop-dev/htop
 repo: https://github.com/htop-dev/htop
+tags:
+  - monitor
+  - system
+  - interactive
+  - text
+  - mode
+  - process
+  - unix
+  - systems
+  - aims
+  - better
+installNotes: |-
+  ### Install
+  To install on the local system run `make install`. By default `make install` installs into `/usr/local`. To change this path use `./configure --prefix=/some/path`.
+readmeUrl: https://raw.githubusercontent.com/htop-dev/htop/HEAD/README.md

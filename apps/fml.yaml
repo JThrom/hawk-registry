@@ -7,3 +7,23 @@ binaries:
   - fml
 homepage: https://github.com/wick3dr0se/fml
 repo: https://github.com/wick3dr0se/fml
+tags:
+  - file manager
+  - files
+  - file
+  - folder
+  - stupid
+  - manager
+  - bash
+installNotes: |-
+  ## Install
+  Download the repository
+  ```bash
+  git clone https://github.com/wick3dr0se/fml; cd fml
+  ```
+
+  _Optionally install fml to path_
+  ```bash
+  cp fml /usr/local/bin
+  ```
+readmeUrl: https://raw.githubusercontent.com/wick3dr0se/fml/HEAD/README.md

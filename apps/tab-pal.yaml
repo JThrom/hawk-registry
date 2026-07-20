@@ -7,3 +7,23 @@ binaries:
   - tab-pal
 homepage: https://github.com/ben-n93/tab-pal
 repo: https://github.com/ben-n93/tab-pal
+language: Python
+tags:
+  - edit
+  - custom
+  - colour
+  - palettes
+  - tableau
+install:
+  pipx: pipx install tab-pal
+packages:
+  pipx: tab-pal
+installNotes: |-
+  ## Installation
+
+  You can install via `pip` although I suggest using [`pipx`](https://pipx.pypa.io/stable/) so you can use it regardless of which virtual environmental you have (or don't have) activated:
+
+  ```
+  pipx install tab-pal
+  ```
+readmeUrl: https://raw.githubusercontent.com/ben-n93/tab-pal/HEAD/README.md

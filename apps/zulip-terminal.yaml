@@ -7,3 +7,94 @@ binaries:
   - zulip-terminal
 homepage: https://github.com/zulip/zulip-terminal
 repo: https://github.com/zulip/zulip-terminal
+language: Go
+tags:
+  - official
+  - zulip
+  - similar
+  - matterhorn
+install:
+  apt: apt-get install libnotify-bin
+  pip: pip3 install --user
+packages:
+  apt: libnotify-bin
+  pip: --user
+installNotes: |-
+  ## Installation
+
+  We recommend installing in a dedicated python virtual environment (see below)
+  or using an automated option such as [pipx](https://pypi.python.org/pypi/pipx)
+
+  * **Stable releases** - These are available on PyPI as the package
+    [zulip-term](https://pypi.python.org/pypi/zulip-term)
+
+    To install, run a command like: `pip3 install zulip-term`
+
+  * **Latest (git) versions** - The latest development version can be installed
+    from the git repository `main` branch
+
+    To install, run a command like:
+    `pip3 install git+https://github.com/zulip/zulip-terminal.git@main`
+
+  We also provide some sample Dockerfiles to build docker images in
+  [docker/](https://github.com/zulip/zulip-terminal/tree/main/docker).
+
+  ### Installing into an isolated Python virtual environment
+
+  With the python 3.6+ required for running, the following should work on most
+  systems:
+  1. `python3 -m venv zt_venv`
+     (creates a virtual environment named `zt_venv` in the current directory)
+  2. `source zt_venv/bin/activate`
+     (activates the virtual environment; this assumes a bash-like shell)
+  3. Run one of the install commands above.
+
+  If you open a different terminal window (or log-off/restart your computer),
+  you'll need to run **step 2** of the above list again before running
+  `zulip-term`, since that activates that virtual environment.
+  You can read more about virtual environments in the
+  [Python 3 library venv documentation](https://docs.python.org/3/library/venv.html).
+
+  ### Keeping your install up to date
+
+  Note that there is no automatic-update system, so please track the update
+  locations relevant to your installation version:
+
+  **Stable releases**
+
+  Before upgrading, we recommend you check the
+  [Changes in recent releases](https://github.com/zulip/zulip-terminal/blob/main/CHANGELOG.md)
+  so you are aware of any important changes between releases.
+
+  - These are now announced in the
+  [#**announce>terminal releases**](https://chat.zulip.org/#narrow/stream/1-announce/topic/terminal.20releases)
+  topic on the Zulip Community server (https://chat.zulip.org), which is visible
+  without an account.
+
+    If you wish to receive emails when updates are announced, you are welcome to
+  sign up for an account on this server, which will enable you to enable email
+  notifications for the **#announce** stream
+  ([help article](https://zulip.com/help/using-zulip-via-email),
+  [notifications settings on chat.zulip.org](https://chat.zulip.org/#settings/notifications)).
+
+  - You can also customize your GitHub Watch setting on the project page to include releases.
+
+  - PyPI provides a
+  [RSS Release feed](https://pypi.org/rss/project/zulip-term/releases.xml), and
+  various other services track this information.
+
+  **Latest (git) versions**
+
+  Versions installed from the `main` git branch will also not update
+  automatically - the 'latest' refers to the status at the point of installation.
+
+  This also applies to other source or development installs
+  (eg. https://aur.archlinux.org/packages/python-zulip-term-git/).
+
+  Therefore, upgrade your package using the command above, or one pertinent to
+  your package system (eg. Arch).
+
+  While the `main` branch is intended to remain stable, if upgrading between two
+  arbitrary 'latest' versions, please be aware that **changes are not summarized**,
+  though our commit log should be very readable.
+readmeUrl: https://raw.githubusercontent.com/zulip/zulip-terminal/HEAD/README.md

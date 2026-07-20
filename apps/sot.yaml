@@ -7,3 +7,122 @@ binaries:
   - sot
 homepage: https://github.com/anistark/sot
 repo: https://github.com/anistark/sot
+language: Rust
+tags:
+  - like
+  - system
+  - observability
+  - python
+install:
+  brew: brew install sot
+  pipx: pipx install sot
+  apt: apt-get install -f
+  pip: pip install --system
+packages:
+  brew: sot
+  pipx: sot
+  apt: -f
+  pip: --system
+installNotes: |-
+  ## Installation
+
+  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+  ### Quick Install (Recommended)
+
+  **One-line installer for macOS and Linux** - Automatically detects your environment and installs all dependencies:
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  curl -fsSL https://raw.githubusercontent.com/anistark/sot/main/install.sh | bash
+  ```
+
+  This script will:
+  - ✅ Detect your operating system
+  - ✅ Check for Python 3.10+ (installs if missing)
+  - ✅ Install pipx (if not present)
+  - ✅ Install sot and configure PATH
+  - ✅ Verify the installation
+
+  **Note:** This installation script does not work on Windows. Windows users should use one of the [alternative installation methods](#alternative-installation-methods) below.
+
+  ---
+
+  ### Alternative Installation Methods
+
+  <details>
+  <summary>Using brew</summary>
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  brew tap anistark/tools
+  brew install sot
+  ```
+
+  Or single line:
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  brew install anistark/tools/sot
+  ```
+
+  Update using:
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  brew update && brew upgrade sot
+  ```
+
+  </details>
+
+  <details>
+  <summary>Using uv</summary>
+
+  Install and run with [`uv`](https://github.com/astral-sh/uv):
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  uv tool install sot
+  ```
+
+  </details>
+
+  <details>
+  <summary>Using pipx</summary>
+
+  Install and run with [`pipx`](https://github.com/pypa/pipx). Setup pipx before proceeding.
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  python3 -m pipx install sot
+  python3 -m pipx ensurepath
+  sudo pipx ensurepath --global
+  ```
+
+  or in single line:
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+  python3 -m pipx install sot && python3 -m pipx ensurepath && sudo pipx ensurepath --global
+  ```
+  </details>
+
+  <details>
+  <summary>Using DEB Package (Experimental - Debian/Ubuntu)</summary>
+  ### Using DEB Package (Experimental - Debian/Ubuntu)
+
+  **⚠️ Experimental**: DEB packages are experimental. Use `uv` or `pipx` for recommended installation.
+
+  Download the latest DEB package from the [releases page](https://github.com/anistark/sot/releases) and install:
+
+  <!--pytest-codeblocks: skip-->
+
+  ```sh
+readmeUrl: https://raw.githubusercontent.com/anistark/sot/HEAD/README.md

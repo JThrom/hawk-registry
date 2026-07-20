@@ -7,3 +7,27 @@ binaries:
   - gomphotherium
 homepage: https://github.com/mrusme/gomphotherium
 repo: https://github.com/mrusme/gomphotherium
+language: Go
+tags:
+  - mastodon
+installNotes: |-
+  ## Installation
+
+  Download a binary from the [releases][releases] page.
+
+  Or build it yourself (requires Go 1.19+):
+
+  ```bash
+  make
+  ```
+
+  Or run via Dockerfile:
+
+  ```bash
+  docker build . -t gomphotherium:latest
+
+  docker run -it --rm -e <ENVIRONMENT VARIABLES> gomphotherium:latest
+  ```
+
+  [releases]: https://github.com/mrusme/gomphotherium/releases
+readmeUrl: https://raw.githubusercontent.com/mrusme/gomphotherium/HEAD/README.md

@@ -7,3 +7,89 @@ binaries:
   - d4s
 homepage: https://github.com/jr-k/d4s
 repo: https://github.com/jr-k/d4s
+language: Go
+tags:
+  - docker
+  - containers
+  - keyboard
+  - driven
+  - compose
+  - stacks
+  - swarm
+  - services
+  - ergonomics
+install:
+  go: go install github.com/jr-k/d4s@latest
+  brew: brew install jr-k/d4s/d4s
+  apt: apt install -y
+  dnf: dnf install d4s
+packages:
+  go: d4s
+  brew: d4s
+  apt: -y
+  dnf: d4s
+installNotes: |-
+  ## Installation
+
+  > ### Generic
+
+  <details>
+  <summary><b>Binary Releases</b></summary>
+
+  > Automated
+  ```bash
+  curl -fsSL https://d4scli.io/install.sh | sh -s -- ~/.local/bin
+  ```
+  *The script installs downloaded binary to `$HOME/.local/bin` directory by default, but it can be changed by setting DIR environment variable.*
+
+  > Manual
+
+  Grab a release from the [releases page](https://github.com/jr-k/d4s/releases) and install it manually.
+  </details>
+
+  <details>
+  <summary><b>Docker</b></summary>
+
+  ```bash
+  docker run --rm --pull always -it -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/jr-k/d4s:latest
+  ```
+
+  **You might want to create an alias for quicker usage. For example:**
+
+  ```bash
+  echo "alias d4s='docker run --rm --pull always -it -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/jr-k/d4s:latest'" >> ~/.zshrc
+  ```
+  *After running this, either restart your terminal or run `source ~/.zshrc` (or `source ~/.bashrc` for Bash) to enable the alias.*
+  </details>
+
+  <details>
+  <summary><b>Go Install</b></summary>
+
+  >Requirement: Go 1.25+
+
+  ```bash
+  go install github.com/jr-k/d4s@latest
+  ```
+
+  The binary lands in `$(go env GOBIN)` (or `$(go env GOPATH)/bin`). Make sure that directory is on your `PATH`.
+
+  To upgrade later, just re-run the same command, or use [`gup`](https://github.com/nao1215/gup) to bulk-update all your `go install`-managed binaries:
+
+  ```bash
+  gup update
+  ```
+  </details>
+
+  <details>
+  <summary><b>From Source</b></summary>
+
+  >Requirement: Go 1.25+
+  ```bash
+  git clone https://github.com/jr-k/d4s.git
+  cd d4s
+  go build -o d4s .
+  sudo mv d4s ~/.local/bin/
+  ```
+
+  ```bash
+readmeUrl: https://raw.githubusercontent.com/jr-k/d4s/HEAD/README.md

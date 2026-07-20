@@ -7,3 +7,24 @@ binaries:
   - neo
 homepage: https://github.com/st3w/neo
 repo: https://github.com/st3w/neo
+language: C++
+tags:
+  - chat
+  - messaging
+  - simulates
+  - digital
+  - rain
+  - matrix
+installNotes: |-
+  ## Building and Installing
+
+  **Make sure you have read the Prerequisites section and satisified all the requirements.** See [doc/INSTALL](doc/INSTALL) for more details.
+
+  ### Option 1: Using an official release tarball
+
+  Click on the latest release on this GitHub page. Under the Assets pane, click on neo-\<VERSION>.tar.gz and save it somewhere. Ignore the other "Source code" files.
+
+  Open a terminal and navigate to wherever you saved the tarball. Run the following commands:
+
+  ```Shell
+readmeUrl: https://raw.githubusercontent.com/st3w/neo/HEAD/README.md
