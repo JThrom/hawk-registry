@@ -1,0 +1,9 @@
+id: d4s
+name: d4s
+description: A fast, keyboard-driven terminal UI to manage Docker containers, Compose stacks, and Swarm services with the ergonomics of K9s
+categories:
+  - containers
+binaries:
+  - d4s
+homepage: https://github.com/jr-k/d4s
+repo: https://github.com/jr-k/d4s

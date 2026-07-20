@@ -1,0 +1,9 @@
+id: castero
+name: castero
+description: A TUI app to listen to podcast
+categories:
+  - web
+binaries:
+  - castero
+homepage: https://github.com/xgi/castero
+repo: https://github.com/xgi/castero

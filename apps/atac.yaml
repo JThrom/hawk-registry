@@ -1,0 +1,9 @@
+id: atac
+name: ATAC
+description: A feature-full TUI API client made in Rust. ATAC is free, open-source, offline and account-less.
+categories:
+  - dev
+binaries:
+  - atac
+homepage: https://github.com/Julien-cpsn/ATAC
+repo: https://github.com/Julien-cpsn/ATAC

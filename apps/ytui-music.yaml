@@ -1,0 +1,9 @@
+id: ytui-music
+name: ytui-music
+description: Listen to music from youtube. Configurable, minimal, lightweight, private & beautiful music client.
+categories:
+  - media
+binaries:
+  - ytui-music
+homepage: https://github.com/sudipghimire533/ytui-music
+repo: https://github.com/sudipghimire533/ytui-music

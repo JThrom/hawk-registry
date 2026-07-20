@@ -1,0 +1,9 @@
+id: yazi
+name: yazi
+description: Blazing fast terminal file manager written in Rust, based on async I/O.
+categories:
+  - files
+binaries:
+  - yazi
+homepage: https://github.com/sxyazi/yazi
+repo: https://github.com/sxyazi/yazi

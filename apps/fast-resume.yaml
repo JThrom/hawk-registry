@@ -1,0 +1,9 @@
+id: fast-resume
+name: fast-resume
+description: Index and fuzzy search coding agent sessions
+categories:
+  - dev
+binaries:
+  - fast-resume
+homepage: https://github.com/angristan/fast-resume
+repo: https://github.com/angristan/fast-resume

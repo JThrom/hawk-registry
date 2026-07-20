@@ -1,0 +1,9 @@
+id: chronos
+name: Chronos
+description: A Vimlike Calendar TUI
+categories:
+  - productivity
+binaries:
+  - chronos
+homepage: https://github.com/samuelstranges/chronos
+repo: https://github.com/samuelstranges/chronos

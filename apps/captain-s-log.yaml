@@ -1,0 +1,10 @@
+id: captain-s-log
+name: Captain's log
+description: A small TUI journaling tool
+categories:
+  - misc
+binaries:
+  - captain-s-log
+  - captainslog
+homepage: https://github.com/NikolaDucak/caps-log
+repo: https://github.com/NikolaDucak/caps-log

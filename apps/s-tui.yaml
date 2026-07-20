@@ -1,0 +1,9 @@
+id: s-tui
+name: s-tui
+description: CPU stress and monitoring utility
+categories:
+  - dashboards
+binaries:
+  - s-tui
+homepage: https://github.com/amanusk/s-tui
+repo: https://github.com/amanusk/s-tui

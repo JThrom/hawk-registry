@@ -1,0 +1,9 @@
+id: image-sorter
+name: image-sorter
+description: Terminal user interface for sorting images using key bindings written in Rust
+categories:
+  - media
+binaries:
+  - image-sorter
+homepage: https://github.com/jgalat/image-sorter
+repo: https://github.com/jgalat/image-sorter

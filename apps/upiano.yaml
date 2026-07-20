@@ -1,0 +1,9 @@
+id: upiano
+name: upiano
+description: A Piano in your terminal
+categories:
+  - media
+binaries:
+  - upiano
+homepage: https://github.com/eliasdorneles/upiano
+repo: https://github.com/eliasdorneles/upiano

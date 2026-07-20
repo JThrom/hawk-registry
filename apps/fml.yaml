@@ -1,0 +1,9 @@
+id: fml
+name: fml
+description: ":file_folder: A stupid simple, fast file manager written in BASH v4.2+."
+categories:
+  - files
+binaries:
+  - fml
+homepage: https://github.com/wick3dr0se/fml
+repo: https://github.com/wick3dr0se/fml

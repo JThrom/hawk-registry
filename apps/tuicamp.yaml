@@ -1,0 +1,9 @@
+id: tuicamp
+name: tuicamp
+description: Unofficial TimeCamp TUI
+categories:
+  - dashboards
+binaries:
+  - tuicamp
+homepage: https://github.com/AbeEstrada/tuicamp
+repo: https://github.com/AbeEstrada/tuicamp

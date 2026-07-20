@@ -1,0 +1,9 @@
+id: bashtop
+name: bashtop
+description: Resource manager written in bash
+categories:
+  - dashboards
+binaries:
+  - bashtop
+homepage: https://github.com/aristocratos/bashtop
+repo: https://github.com/aristocratos/bashtop

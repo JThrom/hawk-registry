@@ -1,0 +1,8 @@
+id: ostui
+name: ostui
+description: CLI client for Subsonic-API servers like gonic and Navidrome
+categories:
+  - media
+binaries:
+  - ostui
+homepage: https://git.sr.ht/~ser/ostui

@@ -1,0 +1,9 @@
+id: learnbyexample
+name: LearnByExample
+description: A TUI with tutorials and +300 exercises on python, grep, awk, sed & general terminal usage.
+categories:
+  - misc
+binaries:
+  - learnbyexample
+homepage: https://github.com/learnbyexample/TUI-apps
+repo: https://github.com/learnbyexample/TUI-apps

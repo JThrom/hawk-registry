@@ -1,0 +1,9 @@
+id: discordo
+name: discordo
+description: A lightweight, secure, and feature-rich Discord terminal client
+categories:
+  - messaging
+binaries:
+  - discordo
+homepage: https://github.com/ayntgl/discordo
+repo: https://github.com/ayntgl/discordo

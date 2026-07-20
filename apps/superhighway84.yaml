@@ -1,0 +1,9 @@
+id: superhighway84
+name: Superhighway84
+description: USENET-inspired decentralized internet discussion system
+categories:
+  - messaging
+binaries:
+  - superhighway84
+homepage: https://github.com/mrusme/superhighway84
+repo: https://github.com/mrusme/superhighway84

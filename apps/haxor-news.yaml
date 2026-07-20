@@ -1,0 +1,9 @@
+id: haxor-news
+name: haxor-news
+description: "Browse Hacker News like a haxor: A Hacker News command line interface (CLI)"
+categories:
+  - web
+binaries:
+  - haxor-news
+homepage: https://github.com/donnemartin/haxor-news
+repo: https://github.com/donnemartin/haxor-news

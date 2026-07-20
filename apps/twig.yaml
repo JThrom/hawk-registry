@@ -1,0 +1,9 @@
+id: twig
+name: Twig
+description: Terminal UI for interactively exploring JSON and YAML files.
+categories:
+  - dev
+binaries:
+  - twig
+homepage: https://github.com/workdone0/twig
+repo: https://github.com/workdone0/twig

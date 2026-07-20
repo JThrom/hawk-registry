@@ -1,0 +1,9 @@
+id: delta
+name: delta
+description: A syntax-highlighting pager for git, diff, and grep output
+categories:
+  - dev
+binaries:
+  - delta
+homepage: https://github.com/dandavison/delta
+repo: https://github.com/dandavison/delta

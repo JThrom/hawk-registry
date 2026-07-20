@@ -1,0 +1,9 @@
+id: sacha
+name: sacha
+description: A two-pane AWS TUI for browsing, searching, and managing resources across seven services including CloudWatch Logs, S3, DynamoDB, Lambda, SSM, SQS, and EC2.
+categories:
+  - dashboards
+binaries:
+  - sacha
+homepage: https://github.com/Sachamama/sacha
+repo: https://github.com/Sachamama/sacha

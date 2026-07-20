@@ -1,0 +1,9 @@
+id: searxngr
+name: searxngr
+description: Web search TUI for SearXNG
+categories:
+  - web
+binaries:
+  - searxngr
+homepage: https://github.com/scross01/searxngr
+repo: https://github.com/scross01/searxngr

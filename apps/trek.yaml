@@ -1,0 +1,9 @@
+id: trek
+name: trek
+description: ncurses explorer for Hashicorp Nomad clusters
+categories:
+  - dashboards
+binaries:
+  - trek
+homepage: https://github.com/franckverrot/trek
+repo: https://github.com/franckverrot/trek

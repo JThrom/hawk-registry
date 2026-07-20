@@ -1,0 +1,8 @@
+id: weechat
+name: Weechat
+description: Extensible chat client
+categories:
+  - messaging
+binaries:
+  - weechat
+homepage: https://weechat.org/

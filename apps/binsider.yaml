@@ -1,0 +1,9 @@
+id: binsider
+name: binsider
+description: A TUI for analyzing Linux binaries.
+categories:
+  - dashboards
+binaries:
+  - binsider
+homepage: https://github.com/orhun/binsider
+repo: https://github.com/orhun/binsider

@@ -1,0 +1,9 @@
+id: pstop
+name: pstop
+description: htop-style system monitor for Windows with per-core CPU bars, tree view, and 7 color schemes.
+categories:
+  - dashboards
+binaries:
+  - pstop
+homepage: https://github.com/marlocarlo/pstop
+repo: https://github.com/marlocarlo/pstop

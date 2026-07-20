@@ -1,0 +1,9 @@
+id: sheetsui
+name: SheetsUI
+description: A console based spreadsheet application
+categories:
+  - productivity
+binaries:
+  - sheetsui
+homepage: https://github.com/zaphar/sheetsui
+repo: https://github.com/zaphar/sheetsui

@@ -1,0 +1,9 @@
+id: kagan
+name: kagan
+description: AI-powered Kanban TUI for autonomous development workflows
+categories:
+  - dev
+binaries:
+  - kagan
+homepage: https://github.com/kagan-sh/kagan
+repo: https://github.com/kagan-sh/kagan

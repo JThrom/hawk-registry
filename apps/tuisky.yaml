@@ -1,0 +1,9 @@
+id: tuisky
+name: tuisky
+description: TUI client for BlueSky
+categories:
+  - messaging
+binaries:
+  - tuisky
+homepage: https://github.com/sugyan/tuisky
+repo: https://github.com/sugyan/tuisky

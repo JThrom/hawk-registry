@@ -1,0 +1,9 @@
+id: pdiary
+name: pdiary
+description: A simple terminal diary journal application written in Python with encryption support
+categories:
+  - productivity
+binaries:
+  - pdiary
+homepage: https://github.com/manipuladordedados/pdiary
+repo: https://github.com/manipuladordedados/pdiary

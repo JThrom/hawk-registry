@@ -1,0 +1,9 @@
+id: sclack
+name: sclack
+description: Slack terminal client
+categories:
+  - messaging
+binaries:
+  - sclack
+homepage: https://github.com/haskellcamargo/sclack
+repo: https://github.com/haskellcamargo/sclack

@@ -1,0 +1,9 @@
+id: cntui
+name: cnTUI
+description: Replay chrome requests from your terminal using curl
+categories:
+  - dev
+binaries:
+  - cntui
+homepage: https://github.com/fipso/cntui
+repo: https://github.com/fipso/cntui

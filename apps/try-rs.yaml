@@ -1,0 +1,10 @@
+id: try-rs
+name: try-rs
+description: A lightning-fast TUI to manage temporary projects. Create, explore, and clone repositories instantly without cluttering your system.
+categories:
+  - misc
+binaries:
+  - try-rs
+  - try
+homepage: https://github.com/tassiovirginio/try-rs/
+repo: https://github.com/tassiovirginio/try-rs/

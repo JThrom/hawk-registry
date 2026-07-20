@@ -1,0 +1,9 @@
+id: mastui
+name: mastui
+description: Mastodon TUI
+categories:
+  - messaging
+binaries:
+  - mastui
+homepage: https://github.com/kimusan/mastui
+repo: https://github.com/kimusan/mastui

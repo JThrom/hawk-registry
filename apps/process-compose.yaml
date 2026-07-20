@@ -1,0 +1,9 @@
+id: process-compose
+name: process-compose
+description: TUI for running apps and processes
+categories:
+  - dashboards
+binaries:
+  - process-compose
+homepage: https://github.com/F1bonacc1/process-compose
+repo: https://github.com/F1bonacc1/process-compose

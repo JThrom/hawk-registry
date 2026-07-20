@@ -1,0 +1,9 @@
+id: pproftui
+name: pproftui
+description: A terminal-based UI for Go's pprof that makes profiling interactive
+categories:
+  - dev
+binaries:
+  - pproftui
+homepage: https://github.com/Oloruntobi1/pproftui
+repo: https://github.com/Oloruntobi1/pproftui

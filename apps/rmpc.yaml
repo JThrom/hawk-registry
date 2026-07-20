@@ -1,0 +1,8 @@
+id: rmpc
+name: rmpc
+description: A configurable MPD client inspired by ncmpcpp and ranger with album art support via various graphics protocols.
+categories:
+  - media
+binaries:
+  - rmpc
+homepage: https://mierak.github.io/rmpc/

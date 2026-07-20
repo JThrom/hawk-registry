@@ -1,0 +1,9 @@
+id: cava
+name: cava
+description: Cross-platform Audio Visualizer
+categories:
+  - misc
+binaries:
+  - cava
+homepage: https://github.com/karlstav/cava
+repo: https://github.com/karlstav/cava

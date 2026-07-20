@@ -1,0 +1,8 @@
+id: irssi
+name: irssi
+description: An IRC terminal client
+categories:
+  - messaging
+binaries:
+  - irssi
+homepage: https://irssi.org/

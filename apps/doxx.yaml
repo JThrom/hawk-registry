@@ -1,0 +1,9 @@
+id: doxx
+name: doxx
+description: A TUI document viewer for Microsoft Word files
+categories:
+  - productivity
+binaries:
+  - doxx
+homepage: https://github.com/bgreenwell/doxx
+repo: https://github.com/bgreenwell/doxx

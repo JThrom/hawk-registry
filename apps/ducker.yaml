@@ -1,0 +1,9 @@
+id: ducker
+name: ducker
+description: A slightly quackers Docker TUI based on k9s
+categories:
+  - containers
+binaries:
+  - ducker
+homepage: https://github.com/robertpsoane/ducker
+repo: https://github.com/robertpsoane/ducker

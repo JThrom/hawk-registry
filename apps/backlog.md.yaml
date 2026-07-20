@@ -1,0 +1,9 @@
+id: backlog.md
+name: Backlog.md
+description: A tool for managing project collaboration between humans and AI Agents in a git ecosystem
+categories:
+  - dashboards
+binaries:
+  - backlog.md
+homepage: https://github.com/MrLesk/Backlog.md
+repo: https://github.com/MrLesk/Backlog.md

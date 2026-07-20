@@ -1,0 +1,57 @@
+name: Build registry index
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "apps/**"
+      - "categories.yaml"
+      - "scripts/**"
+      - ".github/workflows/build.yml"
+  pull_request:
+    paths:
+      - "apps/**"
+      - "categories.yaml"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # On PRs: validate only, never commit.
+      - name: Validate registry
+        if: github.event_name == 'pull_request'
+        run: bun run scripts/build.ts --check
+
+      # On push to master (or manual): build and commit the artifact.
+      - name: Build index
+        if: github.event_name != 'pull_request'
+        run: bun run scripts/build.ts
+
+      - name: Commit updated index
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- dist/index.yaml; then
+            echo "index.yaml unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/index.yaml
+          git commit -m "chore: rebuild dist/index.yaml [skip ci]"
+          git push

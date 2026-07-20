@@ -1,0 +1,9 @@
+id: serverhub
+name: ServerHub
+description: A TUI server monitoring dashboard for Linux with real-time metrics, scriptable widgets, and remote management
+categories:
+  - dashboards
+binaries:
+  - serverhub
+homepage: https://github.com/nickprotop/ServerHub
+repo: https://github.com/nickprotop/ServerHub

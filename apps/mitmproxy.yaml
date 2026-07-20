@@ -1,0 +1,8 @@
+id: mitmproxy
+name: mitmproxy
+description: A free and open source interactive HTTPS proxy
+categories:
+  - dev
+binaries:
+  - mitmproxy
+homepage: https://www.mitmproxy.org

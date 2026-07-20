@@ -1,0 +1,9 @@
+id: amp
+name: amp
+description: A complete text editor for your terminal
+categories:
+  - editors
+binaries:
+  - amp
+homepage: https://github.com/jmacdonald/amp
+repo: https://github.com/jmacdonald/amp

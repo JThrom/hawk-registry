@@ -1,0 +1,9 @@
+id: hydrotodo
+name: HydroToDo
+description: A simple and beautiful TUI to-do list
+categories:
+  - productivity
+binaries:
+  - hydrotodo
+homepage: https://github.com/Henriquehnnm/hydrotodo
+repo: https://github.com/Henriquehnnm/hydrotodo

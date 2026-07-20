@@ -1,0 +1,9 @@
+id: waves
+name: waves
+description: Terminal music player with vim-style navigation and radio mode that plays similar artists from your library
+categories:
+  - media
+binaries:
+  - waves
+homepage: https://github.com/llehouerou/waves
+repo: https://github.com/llehouerou/waves

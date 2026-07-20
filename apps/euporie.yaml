@@ -1,0 +1,9 @@
+id: euporie
+name: euporie
+description: Jupyter notebooks in the terminal
+categories:
+  - dev
+binaries:
+  - euporie
+homepage: https://github.com/joouha/euporie
+repo: https://github.com/joouha/euporie

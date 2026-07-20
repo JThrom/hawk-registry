@@ -1,0 +1,9 @@
+id: redu
+name: redu
+description: ncdu for your restic repository that manages exclusion lists to prune files from existing repos and skip new ones
+categories:
+  - misc
+binaries:
+  - redu
+homepage: https://github.com/drdo/redu
+repo: https://github.com/drdo/redu

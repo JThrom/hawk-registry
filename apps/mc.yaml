@@ -1,0 +1,9 @@
+id: mc
+name: mc
+description: GNU Midnight Commander. A free cross-platform orthodox file manager.
+categories:
+  - files
+binaries:
+  - mc
+homepage: https://github.com/MidnightCommander/mc
+repo: https://github.com/MidnightCommander/mc

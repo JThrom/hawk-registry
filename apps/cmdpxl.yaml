@@ -1,0 +1,9 @@
+id: cmdpxl
+name: cmdpxl
+description: Totally practical command-line image editor
+categories:
+  - media
+binaries:
+  - cmdpxl
+homepage: https://github.com/knosmos/cmdpxl
+repo: https://github.com/knosmos/cmdpxl

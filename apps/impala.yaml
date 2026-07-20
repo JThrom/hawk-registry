@@ -1,0 +1,9 @@
+id: impala
+name: impala
+description: TUI for managing wifi
+categories:
+  - misc
+binaries:
+  - impala
+homepage: https://github.com/pythops/impala
+repo: https://github.com/pythops/impala

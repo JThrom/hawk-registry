@@ -1,0 +1,9 @@
+id: tuifimanager
+name: TUIFIManager
+description: A cross-platform terminal-based file manager _(supports termux)_.
+categories:
+  - files
+binaries:
+  - tuifimanager
+homepage: https://github.com/GiorgosXou/TUIFIManager
+repo: https://github.com/GiorgosXou/TUIFIManager

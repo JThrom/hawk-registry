@@ -1,0 +1,9 @@
+id: pokete
+name: pokete
+description: A terminal based Pokemon like game
+categories:
+  - games
+binaries:
+  - pokete
+homepage: https://github.com/lxgr-linux/pokete
+repo: https://github.com/lxgr-linux/pokete

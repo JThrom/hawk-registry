@@ -1,0 +1,9 @@
+id: doom-ascii
+name: DOOM-ASCII
+description: Text-based DOOM running in terminal.
+categories:
+  - games
+binaries:
+  - doom-ascii
+homepage: https://github.com/wojciech-graj/doom-ascii
+repo: https://github.com/wojciech-graj/doom-ascii

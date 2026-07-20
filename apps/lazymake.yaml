@@ -1,0 +1,9 @@
+id: lazymake
+name: lazymake
+description: Modern TUI for Makefiles with interactive target selection, dependency visualization, and command safety analysis.
+categories:
+  - dev
+binaries:
+  - lazymake
+homepage: https://github.com/rshelekhov/lazymake
+repo: https://github.com/rshelekhov/lazymake

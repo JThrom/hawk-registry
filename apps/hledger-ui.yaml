@@ -1,0 +1,9 @@
+id: hledger-ui
+name: hledger-ui
+description: A fast TUI for browsing double entry bookkeeping data
+categories:
+  - productivity
+binaries:
+  - hledger-ui
+homepage: https://github.com/simonmichael/hledger
+repo: https://github.com/simonmichael/hledger

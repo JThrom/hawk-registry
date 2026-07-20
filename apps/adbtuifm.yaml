@@ -1,0 +1,9 @@
+id: adbtuifm
+name: adbtuifm
+description: A TUI file manager for Android, based on the Android Debug Bridge(ADB).
+categories:
+  - files
+binaries:
+  - adbtuifm
+homepage: https://github.com/darkhz/adbtuifm
+repo: https://github.com/darkhz/adbtuifm

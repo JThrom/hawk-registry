@@ -1,0 +1,9 @@
+id: vis
+name: vis
+description: A vi-like editor based on Plan 9's structural regular expressions
+categories:
+  - editors
+binaries:
+  - vis
+homepage: https://github.com/martanne/vis
+repo: https://github.com/martanne/vis

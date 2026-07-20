@@ -1,0 +1,9 @@
+id: caligula
+name: Caligula
+description: A user-friendly, lightweight TUI for imaging disks.
+categories:
+  - misc
+binaries:
+  - caligula
+homepage: https://github.com/ifd3f/caligula
+repo: https://github.com/ifd3f/caligula

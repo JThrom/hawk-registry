@@ -1,0 +1,9 @@
+id: nvtop
+name: nvtop
+description: GPUs process monitoring for AMD, Intel and NVIDIA
+categories:
+  - dashboards
+binaries:
+  - nvtop
+homepage: https://github.com/Syllo/nvtop
+repo: https://github.com/Syllo/nvtop

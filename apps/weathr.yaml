@@ -1,0 +1,9 @@
+id: weathr
+name: weathr
+description: A terminal weather app with ASCII animations for weather visualization
+categories:
+  - screensavers
+binaries:
+  - weathr
+homepage: https://github.com/veirt/weathr
+repo: https://github.com/veirt/weathr

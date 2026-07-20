@@ -1,0 +1,10 @@
+id: twitch-tui
+name: twitch-tui
+description: Twitch chat in the terminal
+categories:
+  - messaging
+binaries:
+  - twitch-tui
+  - twitch
+homepage: https://github.com/Xithrius/twitch-tui
+repo: https://github.com/Xithrius/twitch-tui

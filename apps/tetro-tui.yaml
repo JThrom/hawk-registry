@@ -1,0 +1,10 @@
+id: tetro-tui
+name: tetro-tui
+description: A very configurable tetris-like, featuring ASCII particles, replays and more.
+categories:
+  - games
+binaries:
+  - tetro-tui
+  - tetro
+homepage: https://github.com/Strophox/tetro-tui
+repo: https://github.com/Strophox/tetro-tui

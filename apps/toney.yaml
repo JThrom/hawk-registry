@@ -1,0 +1,9 @@
+id: toney
+name: Toney
+description: a fast, lightweight, terminal-based note-taking app for the modern developer.
+categories:
+  - productivity
+binaries:
+  - toney
+homepage: https://github.com/SourcewareLab/Toney
+repo: https://github.com/SourcewareLab/Toney

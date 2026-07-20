@@ -1,0 +1,10 @@
+id: jellyfin-tui
+name: jellyfin-tui
+description: Jellyfin client
+categories:
+  - media
+binaries:
+  - jellyfin-tui
+  - jellyfin
+homepage: https://github.com/dhonus/jellyfin-tui
+repo: https://github.com/dhonus/jellyfin-tui

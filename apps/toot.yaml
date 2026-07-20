@@ -1,0 +1,9 @@
+id: toot
+name: toot
+description: Mastodon CLI & TUI
+categories:
+  - messaging
+binaries:
+  - toot
+homepage: https://github.com/ihabunek/toot
+repo: https://github.com/ihabunek/toot

@@ -1,0 +1,9 @@
+id: sc-im
+name: sc-im
+description: An ncurses spreadsheet program for terminal. Reignited version of sc
+categories:
+  - productivity
+binaries:
+  - sc-im
+homepage: https://github.com/andmarti1424/sc-im
+repo: https://github.com/andmarti1424/sc-im

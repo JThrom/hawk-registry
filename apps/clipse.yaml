@@ -1,0 +1,9 @@
+id: clipse
+name: clipse
+description: TUI-based clipboard manager application
+categories:
+  - productivity
+binaries:
+  - clipse
+homepage: https://github.com/savedra1/clipse
+repo: https://github.com/savedra1/clipse

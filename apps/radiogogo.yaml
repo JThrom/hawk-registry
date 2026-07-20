@@ -1,0 +1,9 @@
+id: radiogogo
+name: RadioGoGo
+description: Go-powered CLI to surf global radio waves via a sleek TUI.
+categories:
+  - media
+binaries:
+  - radiogogo
+homepage: https://github.com/Zi0P4tch0/RadioGoGo
+repo: https://github.com/Zi0P4tch0/RadioGoGo

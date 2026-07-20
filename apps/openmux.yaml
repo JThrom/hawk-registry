@@ -1,0 +1,9 @@
+id: openmux
+name: openmux
+description: A terminal multiplexer with master-stack layout (Zellij-style)
+categories:
+  - productivity
+binaries:
+  - openmux
+homepage: https://github.com/monotykamary/openmux
+repo: https://github.com/monotykamary/openmux

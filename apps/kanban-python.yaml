@@ -1,0 +1,9 @@
+id: kanban-python
+name: kanban-python
+description: Kanban Terminal App written in Python
+categories:
+  - productivity
+binaries:
+  - kanban-python
+homepage: https://github.com/Zaloog/kanban-python
+repo: https://github.com/Zaloog/kanban-python

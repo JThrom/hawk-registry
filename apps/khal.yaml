@@ -1,0 +1,9 @@
+id: khal
+name: khal
+description: A standards based CLI calendar program, able to synchronize with CalDAV servers
+categories:
+  - productivity
+binaries:
+  - khal
+homepage: https://github.com/pimutils/khal
+repo: https://github.com/pimutils/khal

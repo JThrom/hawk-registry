@@ -1,0 +1,9 @@
+id: edit
+name: Edit
+description: A simple text editor. Pays homage to the classic MS-DOS Editor.
+categories:
+  - editors
+binaries:
+  - edit
+homepage: https://github.com/microsoft/edit
+repo: https://github.com/microsoft/edit

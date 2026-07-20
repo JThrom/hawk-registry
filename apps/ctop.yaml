@@ -1,0 +1,9 @@
+id: ctop
+name: ctop
+description: Top-like interface for container metrics
+categories:
+  - containers
+binaries:
+  - ctop
+homepage: https://github.com/bcicen/ctop
+repo: https://github.com/bcicen/ctop

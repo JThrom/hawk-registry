@@ -1,0 +1,9 @@
+id: topydo
+name: topydo
+description: A powerful todo list application using the todo.txt format
+categories:
+  - productivity
+binaries:
+  - topydo
+homepage: https://github.com/topydo/topydo
+repo: https://github.com/topydo/topydo

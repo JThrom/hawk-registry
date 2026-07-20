@@ -1,0 +1,8 @@
+id: maki
+name: maki
+description: A simple tabbed text editor with file navigation and an emphasis on preserving battery life
+categories:
+  - editors
+binaries:
+  - maki
+homepage: https://sr.ht/~bscit/maki/

@@ -1,0 +1,9 @@
+id: treemd
+name: treemd
+description: A markdown navigator with tree-based structural navigation
+categories:
+  - editors
+binaries:
+  - treemd
+homepage: https://github.com/Epistates/treemd
+repo: https://github.com/Epistates/treemd

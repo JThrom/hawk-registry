@@ -1,0 +1,9 @@
+id: ttyplot
+name: ttyplot
+description: A realtime plotting utility for terminals with data input from stdin/pipe.
+categories:
+  - productivity
+binaries:
+  - ttyplot
+homepage: https://github.com/tenox7/ttyplot
+repo: https://github.com/tenox7/ttyplot

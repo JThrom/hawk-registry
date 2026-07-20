@@ -1,0 +1,9 @@
+id: cargo-seek
+name: cargo-seek
+description: A TUI for searching, adding and installing cargo crates
+categories:
+  - dev
+binaries:
+  - cargo-seek
+homepage: https://github.com/tareqimbasher/cargo-seek
+repo: https://github.com/tareqimbasher/cargo-seek

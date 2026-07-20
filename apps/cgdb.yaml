@@ -1,0 +1,9 @@
+id: cgdb
+name: cgdb
+description: Console front-end to the GNU debugger
+categories:
+  - dashboards
+binaries:
+  - cgdb
+homepage: https://github.com/cgdb/cgdb
+repo: https://github.com/cgdb/cgdb

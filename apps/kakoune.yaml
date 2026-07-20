@@ -1,0 +1,8 @@
+id: kakoune
+name: kakoune
+description: A modern, modal text editor with focus on interactivity and efficiency
+categories:
+  - editors
+binaries:
+  - kakoune
+homepage: http://kakoune.org/

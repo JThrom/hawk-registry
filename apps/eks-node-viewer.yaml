@@ -1,0 +1,9 @@
+id: eks-node-viewer
+name: eks-node-viewer
+description: visualizing dynamic node usage within a kubernetes cluster
+categories:
+  - containers
+binaries:
+  - eks-node-viewer
+homepage: https://github.com/awslabs/eks-node-viewer/
+repo: https://github.com/awslabs/eks-node-viewer/

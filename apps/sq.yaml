@@ -1,0 +1,9 @@
+id: sq
+name: sq
+description: A database client specially made for vim users
+categories:
+  - dev
+binaries:
+  - sq
+homepage: https://github.com/sheenazien8/sq
+repo: https://github.com/sheenazien8/sq

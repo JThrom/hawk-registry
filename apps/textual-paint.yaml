@@ -1,0 +1,9 @@
+id: textual-paint
+name: textual-paint
+description: MS Paint in your terminal
+categories:
+  - media
+binaries:
+  - textual-paint
+homepage: https://github.com/1j01/textual-paint
+repo: https://github.com/1j01/textual-paint

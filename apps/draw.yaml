@@ -1,0 +1,9 @@
+id: draw
+name: draw
+description: A simple drawing tool in the terminal.
+categories:
+  - media
+binaries:
+  - draw
+homepage: https://github.com/maaslalani/draw
+repo: https://github.com/maaslalani/draw

@@ -1,0 +1,9 @@
+id: oryx
+name: oryx
+description: A TUI for sniffing network traffic using eBPF
+categories:
+  - dashboards
+binaries:
+  - oryx
+homepage: https://github.com/pythops/oryx
+repo: https://github.com/pythops/oryx

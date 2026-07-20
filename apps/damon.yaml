@@ -1,0 +1,9 @@
+id: damon
+name: damon
+description: TUI interface for Hashicorp Nomad
+categories:
+  - dashboards
+binaries:
+  - damon
+homepage: https://github.com/hashicorp/damon
+repo: https://github.com/hashicorp/damon

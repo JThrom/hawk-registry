@@ -1,0 +1,9 @@
+id: termusic
+name: termusic
+description: Music Player TUI written in Rust
+categories:
+  - media
+binaries:
+  - termusic
+homepage: https://github.com/tramhao/termusic
+repo: https://github.com/tramhao/termusic

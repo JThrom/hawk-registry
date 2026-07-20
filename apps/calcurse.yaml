@@ -1,0 +1,8 @@
+id: calcurse
+name: calcurse
+description: calendar and scheduling application for the command line
+categories:
+  - productivity
+binaries:
+  - calcurse
+homepage: https://calcurse.org/

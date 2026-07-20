@@ -1,0 +1,9 @@
+id: tododo
+name: tododo
+description: A pretty TUI TODO.md manager for tasks and projects
+categories:
+  - productivity
+binaries:
+  - tododo
+homepage: https://github.com/bmarse/tododo
+repo: https://github.com/bmarse/tododo

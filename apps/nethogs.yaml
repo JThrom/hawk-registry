@@ -1,0 +1,9 @@
+id: nethogs
+name: nethogs
+description: "'net top' tool"
+categories:
+  - dashboards
+binaries:
+  - nethogs
+homepage: https://github.com/raboof/nethogs
+repo: https://github.com/raboof/nethogs

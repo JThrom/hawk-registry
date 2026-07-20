@@ -1,0 +1,9 @@
+id: kanban
+name: kanban
+description: "- TUI kanban board for projects management with sprint tracking and task prioritization."
+categories:
+  - productivity
+binaries:
+  - kanban
+homepage: https://github.com/fulsomenko/kanban
+repo: https://github.com/fulsomenko/kanban

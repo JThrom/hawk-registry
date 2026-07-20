@@ -1,0 +1,9 @@
+id: clidle
+name: clidle
+description: Play Wordle in your terminal. Also works over SSH!
+categories:
+  - games
+binaries:
+  - clidle
+homepage: https://github.com/ajeetdsouza/clidle
+repo: https://github.com/ajeetdsouza/clidle

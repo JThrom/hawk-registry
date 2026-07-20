@@ -1,0 +1,9 @@
+id: neoss
+name: neoss
+description: Socket statistics visualization and explanation tool for Unix systems.
+categories:
+  - misc
+binaries:
+  - neoss
+homepage: https://github.com/PabloLec/neoss
+repo: https://github.com/PabloLec/neoss

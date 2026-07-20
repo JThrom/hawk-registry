@@ -1,0 +1,9 @@
+id: durdraw
+name: Durdraw
+description: An ASCII, Unicode and ANSI art editor
+categories:
+  - editors
+binaries:
+  - durdraw
+homepage: https://github.com/cmang/durdraw
+repo: https://github.com/cmang/durdraw

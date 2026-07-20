@@ -1,0 +1,9 @@
+id: bluetui
+name: bluetui
+description: A TUI for managing bluetooth devices.
+categories:
+  - misc
+binaries:
+  - bluetui
+homepage: https://github.com/pythops/bluetui
+repo: https://github.com/pythops/bluetui

@@ -1,0 +1,9 @@
+id: broot
+name: broot
+description: A new way to see and navigate directory trees
+categories:
+  - files
+binaries:
+  - broot
+homepage: https://github.com/Canop/broot
+repo: https://github.com/Canop/broot

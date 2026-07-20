@@ -1,0 +1,9 @@
+id: soft-serve
+name: soft-serve
+description: A tasty, self-hostable Git server for the command lineicecream
+categories:
+  - dev
+binaries:
+  - soft-serve
+homepage: https://github.com/charmbracelet/soft-serve
+repo: https://github.com/charmbracelet/soft-serve

@@ -1,0 +1,9 @@
+id: tuihub
+name: tuihub
+description: A utility hub/dashboard for personal use
+categories:
+  - productivity
+binaries:
+  - tuihub
+homepage: https://github.com/ashis0013/tuihub
+repo: https://github.com/ashis0013/tuihub

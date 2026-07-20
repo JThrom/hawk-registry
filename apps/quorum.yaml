@@ -1,0 +1,9 @@
+id: quorum
+name: Quorum
+description: Multi-agent AI discussion system for structured debates between LLMs
+categories:
+  - dev
+binaries:
+  - quorum
+homepage: https://github.com/Detrol/quorum-cli
+repo: https://github.com/Detrol/quorum-cli

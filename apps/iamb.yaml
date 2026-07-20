@@ -1,0 +1,8 @@
+id: iamb
+name: iamb
+description: A Matrix client for Vim addicts written in Rust
+categories:
+  - messaging
+binaries:
+  - iamb
+homepage: https://iamb.chat

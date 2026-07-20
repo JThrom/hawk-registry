@@ -1,0 +1,9 @@
+id: xplr
+name: xplr
+description: A hackable, minimal, fast TUI file explorer, stealing ideas from nnn and fzf.
+categories:
+  - misc
+binaries:
+  - xplr
+homepage: https://github.com/sayanarijit/xplr
+repo: https://github.com/sayanarijit/xplr

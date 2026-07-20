@@ -1,0 +1,9 @@
+id: harlequin
+name: harlequin
+description: The SQL IDE for Your Terminal
+categories:
+  - dev
+binaries:
+  - harlequin
+homepage: https://github.com/tconbeer/harlequin
+repo: https://github.com/tconbeer/harlequin

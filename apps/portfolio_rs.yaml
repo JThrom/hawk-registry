@@ -1,0 +1,9 @@
+id: portfolio_rs
+name: portfolio_rs
+description: A command line tool for managing financial investment portfolios.
+categories:
+  - productivity
+binaries:
+  - portfolio_rs
+homepage: https://github.com/MarkusZoppelt/portfolio_rs
+repo: https://github.com/MarkusZoppelt/portfolio_rs

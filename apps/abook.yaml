@@ -1,0 +1,8 @@
+id: abook
+name: abook
+description: TUI addressbook with [mutt](http://www.mutt.org/) integration
+categories:
+  - productivity
+binaries:
+  - abook
+homepage: https://abook.sourceforge.io/

@@ -1,0 +1,9 @@
+id: wavemon
+name: wavemon
+description: A wireless device monitoring application
+categories:
+  - misc
+binaries:
+  - wavemon
+homepage: https://github.com/uoaerg/wavemon
+repo: https://github.com/uoaerg/wavemon

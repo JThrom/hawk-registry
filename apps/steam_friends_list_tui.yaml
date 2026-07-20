@@ -1,0 +1,9 @@
+id: steam_friends_list_tui
+name: steam_friends_list_tui
+description: The steam friends list in the commandline
+categories:
+  - misc
+binaries:
+  - steam_friends_list_tui
+homepage: https://github.com/AdamWHY2K/steam_friends_list_tui
+repo: https://github.com/AdamWHY2K/steam_friends_list_tui

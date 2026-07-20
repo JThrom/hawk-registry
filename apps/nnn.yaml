@@ -1,0 +1,9 @@
+id: nnn
+name: nnn
+description: n³ The unorthodox terminal file manager.
+categories:
+  - files
+binaries:
+  - nnn
+homepage: https://github.com/jarun/nnn
+repo: https://github.com/jarun/nnn

@@ -1,0 +1,9 @@
+id: surge
+name: surge
+description: A blazing fast, beautiful TUI download manager built in Go.
+categories:
+  - web
+binaries:
+  - surge
+homepage: https://github.com/surge-downloader/surge
+repo: https://github.com/surge-downloader/surge

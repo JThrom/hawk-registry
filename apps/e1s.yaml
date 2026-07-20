@@ -1,0 +1,9 @@
+id: e1s
+name: e1s
+description: TUI for managing AWS ECS resources
+categories:
+  - containers
+binaries:
+  - e1s
+homepage: https://github.com/keidarcy/e1s
+repo: https://github.com/keidarcy/e1s

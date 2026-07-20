@@ -1,0 +1,9 @@
+id: eilmeldung
+name: eilmeldung
+description: RSS reader, supporting many RSS providers, bulk-operations and configuration options.
+categories:
+  - web
+binaries:
+  - eilmeldung
+homepage: https://github.com/christo-auer/eilmeldung
+repo: https://github.com/christo-auer/eilmeldung

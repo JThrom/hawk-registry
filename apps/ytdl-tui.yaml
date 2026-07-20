@@ -1,0 +1,10 @@
+id: ytdl-tui
+name: ytdl-tui
+description: TUI for downloading Youtube videos
+categories:
+  - media
+binaries:
+  - ytdl-tui
+  - ytdl
+homepage: https://github.com/darky/ytdl-tui
+repo: https://github.com/darky/ytdl-tui

@@ -1,0 +1,9 @@
+id: gorae
+name: Gorae
+description: TUI librarian for PDFs and EPUBs with Vim-style navigation.
+categories:
+  - media
+binaries:
+  - gorae
+homepage: https://github.com/Han8931/gorae
+repo: https://github.com/Han8931/gorae

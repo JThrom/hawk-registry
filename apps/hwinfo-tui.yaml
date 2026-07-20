@@ -1,0 +1,10 @@
+id: hwinfo-tui
+name: hwinfo-tui
+description: A gping-inspired terminal visualization tool for monitoring real-time hardware sensor data from HWInfo
+categories:
+  - dashboards
+binaries:
+  - hwinfo-tui
+  - hwinfo
+homepage: https://github.com/JuanjoFuchs/hwinfo-tui
+repo: https://github.com/JuanjoFuchs/hwinfo-tui

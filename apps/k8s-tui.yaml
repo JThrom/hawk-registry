@@ -1,0 +1,10 @@
+id: k8s-tui
+name: k8s-tui
+description: TUI Kubernetes resource manager with multi-cluster support
+categories:
+  - containers
+binaries:
+  - k8s-tui
+  - k8s
+homepage: https://github.com/otavioCosta2110/k8s-tui
+repo: https://github.com/otavioCosta2110/k8s-tui

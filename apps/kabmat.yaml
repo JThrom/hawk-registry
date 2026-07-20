@@ -1,0 +1,9 @@
+id: kabmat
+name: kabmat
+description: TUI program for managing kanban boards with vim-like keybindings
+categories:
+  - productivity
+binaries:
+  - kabmat
+homepage: https://github.com/PlankCipher/kabmat
+repo: https://github.com/PlankCipher/kabmat

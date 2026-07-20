@@ -1,0 +1,9 @@
+id: astroterm
+name: astroterm
+description: A planetarium for your terminal! Explore stars, planets, constellations, and more
+categories:
+  - screensavers
+binaries:
+  - astroterm
+homepage: https://github.com/da-luce/astroterm
+repo: https://github.com/da-luce/astroterm

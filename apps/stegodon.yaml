@@ -1,0 +1,9 @@
+id: stegodon
+name: stegodon
+description: SSH-first federated microblog with ActivityPub, web UI, and RSS feeds
+categories:
+  - web
+binaries:
+  - stegodon
+homepage: https://github.com/deemkeen/stegodon
+repo: https://github.com/deemkeen/stegodon

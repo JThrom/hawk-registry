@@ -1,0 +1,9 @@
+id: blitzdenk
+name: blitzdenk
+description: A minimal multi api auto-context project chat bot as tui
+categories:
+  - messaging
+binaries:
+  - blitzdenk
+homepage: https://github.com/Lommix/blitzdenk
+repo: https://github.com/Lommix/blitzdenk

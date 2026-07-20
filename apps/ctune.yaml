@@ -1,0 +1,9 @@
+id: ctune
+name: ctune
+description: ncurses based internet radio player for Linux.
+categories:
+  - media
+binaries:
+  - ctune
+homepage: https://github.com/An7ar35/ctune
+repo: https://github.com/An7ar35/ctune

@@ -1,0 +1,9 @@
+id: tock
+name: Tock
+description: "- The powerful time tracking tool for the command line with a beautiful interactive TUI."
+categories:
+  - productivity
+binaries:
+  - tock
+homepage: https://github.com/kriuchkov/tock
+repo: https://github.com/kriuchkov/tock

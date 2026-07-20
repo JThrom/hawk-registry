@@ -1,0 +1,9 @@
+id: iconicfonts
+name: IconicFonts
+description: A collection of patched fonts featuring over 60,000 icons, tailored specifically for TUIs.
+categories:
+  - misc
+binaries:
+  - iconicfonts
+homepage: https://github.com/iconicFonts/iconic-fonts
+repo: https://github.com/iconicFonts/iconic-fonts

@@ -1,0 +1,9 @@
+id: matcha
+name: matcha
+description: Email client
+categories:
+  - messaging
+binaries:
+  - matcha
+homepage: https://github.com/floatpane/matcha
+repo: https://github.com/floatpane/matcha

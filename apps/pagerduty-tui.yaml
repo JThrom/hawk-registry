@@ -1,0 +1,10 @@
+id: pagerduty-tui
+name: pagerduty-tui
+description: Minimalistic terminal UI to manage triggered incidents
+categories:
+  - productivity
+binaries:
+  - pagerduty-tui
+  - pagerduty
+homepage: https://github.com/Mk555/pagerduty-tui
+repo: https://github.com/Mk555/pagerduty-tui

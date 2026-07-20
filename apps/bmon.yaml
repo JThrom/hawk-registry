@@ -1,0 +1,9 @@
+id: bmon
+name: bmon
+description: A monitoring and debugging tool to capture networking related statistics and prepare them visually.
+categories:
+  - dashboards
+binaries:
+  - bmon
+homepage: https://github.com/tgraf/bmon
+repo: https://github.com/tgraf/bmon

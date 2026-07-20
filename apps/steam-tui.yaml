@@ -1,0 +1,10 @@
+id: steam-tui
+name: steam-tui
+description: Just a simple TUI client for steamcmd. Allows for the graphical launching, updating, and downloading of steam games through a simple terminal client.
+categories:
+  - games
+binaries:
+  - steam-tui
+  - steam
+homepage: https://github.com/dmadisetti/steam-tui
+repo: https://github.com/dmadisetti/steam-tui

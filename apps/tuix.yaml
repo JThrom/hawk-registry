@@ -1,0 +1,9 @@
+id: tuix
+name: tuix
+description: TUI for managing screens
+categories:
+  - messaging
+binaries:
+  - tuix
+homepage: https://github.com/pythops/tuix
+repo: https://github.com/pythops/tuix

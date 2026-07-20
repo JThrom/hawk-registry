@@ -1,0 +1,9 @@
+id: asak
+name: asak
+description: A cross-platform audio recording/playback TUI
+categories:
+  - media
+binaries:
+  - asak
+homepage: https://github.com/chaosprint/asak
+repo: https://github.com/chaosprint/asak

@@ -1,0 +1,9 @@
+id: jiratui
+name: jiratui
+description: A TUI for interacting with Atlassian Jira directly from your shell
+categories:
+  - productivity
+binaries:
+  - jiratui
+homepage: https://github.com/whyisdifficult/jiratui
+repo: https://github.com/whyisdifficult/jiratui

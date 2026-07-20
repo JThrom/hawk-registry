@@ -1,0 +1,9 @@
+id: timg
+name: timg
+description: A terminal image viewer
+categories:
+  - media
+binaries:
+  - timg
+homepage: https://github.com/hzeller/timg
+repo: https://github.com/hzeller/timg

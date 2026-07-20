@@ -1,0 +1,9 @@
+id: lazyjournal
+name: lazyjournal
+description: TUI for journalctl, file system logs, as well Docker and Podman containers for quick viewing and filtering
+categories:
+  - dev
+binaries:
+  - lazyjournal
+homepage: https://github.com/Lifailon/lazyjournal
+repo: https://github.com/Lifailon/lazyjournal

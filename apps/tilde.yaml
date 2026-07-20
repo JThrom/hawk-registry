@@ -1,0 +1,9 @@
+id: tilde
+name: tilde
+description: Intuitive text editor for the terminal
+categories:
+  - editors
+binaries:
+  - tilde
+homepage: https://github.com/gphalkes/tilde
+repo: https://github.com/gphalkes/tilde

@@ -1,0 +1,9 @@
+id: arttime
+name: arttime
+description: An app that brings beauty of text-art together with functionality of clock, timer, and pattern-based time manager.
+categories:
+  - misc
+binaries:
+  - arttime
+homepage: https://github.com/reportaman/arttime
+repo: https://github.com/reportaman/arttime

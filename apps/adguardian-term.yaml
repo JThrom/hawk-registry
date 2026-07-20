@@ -1,0 +1,10 @@
+id: adguardian-term
+name: AdGuardian-Term
+description: A TUI dashboard for monitoring real-time traffic from an AdGuard Home instance
+categories:
+  - dashboards
+binaries:
+  - adguardian-term
+  - adguardian
+homepage: https://github.com/lissy93/AdGuardian-Term
+repo: https://github.com/lissy93/AdGuardian-Term

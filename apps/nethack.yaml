@@ -1,0 +1,9 @@
+id: nethack
+name: NetHack
+description: Dungeon exploration game
+categories:
+  - games
+binaries:
+  - nethack
+homepage: https://github.com/NetHack/NetHack
+repo: https://github.com/NetHack/NetHack

@@ -1,0 +1,9 @@
+id: devzat
+name: Devzat
+description: Chat over SSH, written in Golang with self-hosting ability.
+categories:
+  - messaging
+binaries:
+  - devzat
+homepage: https://github.com/quackduck/devzat
+repo: https://github.com/quackduck/devzat

@@ -1,0 +1,9 @@
+id: rxpipes
+name: rxpipes
+description: 2D recreation of the ancient Pipes screensaver for terminals.
+categories:
+  - screensavers
+binaries:
+  - rxpipes
+homepage: https://github.com/inunix3/rxpipes
+repo: https://github.com/inunix3/rxpipes

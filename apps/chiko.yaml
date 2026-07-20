@@ -1,0 +1,9 @@
+id: chiko
+name: chiko
+description: The Ultimate Beauty TUI gRPC Client
+categories:
+  - dev
+binaries:
+  - chiko
+homepage: https://github.com/felangga/chiko
+repo: https://github.com/felangga/chiko

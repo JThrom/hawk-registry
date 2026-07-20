@@ -1,0 +1,9 @@
+id: slides
+name: slides
+description: A terminal based presentation tool, supporting markdown syntax.
+categories:
+  - productivity
+binaries:
+  - slides
+homepage: https://github.com/maaslalani/slides
+repo: https://github.com/maaslalani/slides

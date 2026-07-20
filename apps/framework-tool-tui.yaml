@@ -1,0 +1,10 @@
+id: framework-tool-tui
+name: framework-tool-tui
+description: TUI for controlling and monitoring Framework Computers hardware built in Rust
+categories:
+  - dashboards
+binaries:
+  - framework-tool-tui
+  - framework-tool
+homepage: https://github.com/grouzen/framework-tool-tui
+repo: https://github.com/grouzen/framework-tool-tui

@@ -1,0 +1,9 @@
+id: tinytetris
+name: tinytetris
+description: 80x23 terminal tetris!
+categories:
+  - games
+binaries:
+  - tinytetris
+homepage: https://github.com/taylorconor/tinytetris
+repo: https://github.com/taylorconor/tinytetris

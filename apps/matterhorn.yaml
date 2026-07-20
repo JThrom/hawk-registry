@@ -1,0 +1,9 @@
+id: matterhorn
+name: matterhorn
+description: A Mattermost terminal client.
+categories:
+  - messaging
+binaries:
+  - matterhorn
+homepage: https://github.com/matterhorn-chat/matterhorn
+repo: https://github.com/matterhorn-chat/matterhorn

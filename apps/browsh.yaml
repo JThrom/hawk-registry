@@ -1,0 +1,9 @@
+id: browsh
+name: browsh
+description: A fully-modern text-based browser, rendering to TTY and browsers
+categories:
+  - web
+binaries:
+  - browsh
+homepage: https://github.com/browsh-org/browsh
+repo: https://github.com/browsh-org/browsh

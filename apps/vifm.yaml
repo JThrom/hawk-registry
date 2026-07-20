@@ -1,0 +1,9 @@
+id: vifm
+name: Vifm
+description: A TUI file manager with vi-keybindings and other vim like behaviour.
+categories:
+  - files
+binaries:
+  - vifm
+homepage: https://github.com/vifm/vifm
+repo: https://github.com/vifm/vifm

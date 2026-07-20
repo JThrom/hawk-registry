@@ -1,0 +1,9 @@
+id: dolphie
+name: dolphie
+description: Your single pane of glass for real-time analytics into MySQL/MariaDB & ProxySQL
+categories:
+  - dashboards
+binaries:
+  - dolphie
+homepage: https://github.com/charles-001/dolphie
+repo: https://github.com/charles-001/dolphie

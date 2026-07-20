@@ -1,0 +1,9 @@
+id: x-cmd
+name: x-cmd
+description: A vast and interesting collection of tools that can then bootstrap lots of other programs / functions in a consistent and structured way.
+categories:
+  - misc
+binaries:
+  - x-cmd
+homepage: https://github.com/x-cmd/x-cmd
+repo: https://github.com/x-cmd/x-cmd

@@ -1,0 +1,9 @@
+id: gonzo
+name: gonzo
+description: A powerful, real-time log analysis terminal UI inspired by k9s.
+categories:
+  - dashboards
+binaries:
+  - gonzo
+homepage: https://github.com/control-theory/gonzo
+repo: https://github.com/control-theory/gonzo

@@ -1,0 +1,9 @@
+id: etcd-walker
+name: etcd-walker
+description: Opensource TUI tool for managing etcd keys
+categories:
+  - containers
+binaries:
+  - etcd-walker
+homepage: https://github.com/nexusriot/etcd-walker/
+repo: https://github.com/nexusriot/etcd-walker/

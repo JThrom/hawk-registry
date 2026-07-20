@@ -1,0 +1,9 @@
+id: term.everything
+name: term.everything
+description: Run any GUI app in the terminal
+categories:
+  - misc
+binaries:
+  - term.everything
+homepage: https://github.com/mmulet/term.everything
+repo: https://github.com/mmulet/term.everything

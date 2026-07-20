@@ -1,0 +1,9 @@
+id: flawz
+name: flawz
+description: A Terminal UI for browsing security vulnerabilities (CVEs)
+categories:
+  - misc
+binaries:
+  - flawz
+homepage: https://github.com/orhun/flawz
+repo: https://github.com/orhun/flawz

@@ -1,0 +1,8 @@
+id: mcabber
+name: mcabber
+description: XMPP (Jabber) client
+categories:
+  - messaging
+binaries:
+  - mcabber
+homepage: https://mcabber.com/

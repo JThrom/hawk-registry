@@ -1,0 +1,9 @@
+id: updo
+name: updo
+description: Website monitoring tool with uptime tracking, response time metrics, and SSL certificate monitoring.
+categories:
+  - dashboards
+binaries:
+  - updo
+homepage: https://github.com/Owloops/updo
+repo: https://github.com/Owloops/updo

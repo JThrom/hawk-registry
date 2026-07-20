@@ -1,0 +1,9 @@
+id: brows
+name: brows
+description: CLI GitHub release browser
+categories:
+  - dev
+binaries:
+  - brows
+homepage: https://github.com/rubysolo/brows
+repo: https://github.com/rubysolo/brows

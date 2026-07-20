@@ -1,0 +1,9 @@
+id: sshattrick
+name: ssHattrick
+description: Play Hattrick in your terminal over SSH.
+categories:
+  - games
+binaries:
+  - sshattrick
+homepage: https://github.com/ricott1/sshattrick
+repo: https://github.com/ricott1/sshattrick

@@ -1,0 +1,9 @@
+id: zee
+name: zee
+description: A modern text editor for the terminal written in Rust
+categories:
+  - editors
+binaries:
+  - zee
+homepage: https://github.com/zee-editor/zee
+repo: https://github.com/zee-editor/zee

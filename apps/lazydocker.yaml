@@ -1,0 +1,9 @@
+id: lazydocker
+name: lazydocker
+description: The lazier way to manage everything docker
+categories:
+  - containers
+binaries:
+  - lazydocker
+homepage: https://github.com/jesseduffield/lazydocker
+repo: https://github.com/jesseduffield/lazydocker

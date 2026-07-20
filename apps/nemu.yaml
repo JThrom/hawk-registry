@@ -1,0 +1,9 @@
+id: nemu
+name: nemu
+description: A TUI for QEMU
+categories:
+  - misc
+binaries:
+  - nemu
+homepage: https://github.com/nemuTUI/nemu
+repo: https://github.com/nemuTUI/nemu

@@ -1,0 +1,9 @@
+id: numr
+name: numr
+description: A natural language calculator with unit/currency conversions and vim-style keybindings
+categories:
+  - productivity
+binaries:
+  - numr
+homepage: https://github.com/nasedkinpv/numr
+repo: https://github.com/nasedkinpv/numr

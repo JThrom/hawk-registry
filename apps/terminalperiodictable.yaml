@@ -1,0 +1,9 @@
+id: terminalperiodictable
+name: terminalperiodictable
+description: A beautiful TUI periodic table for Unix systems coded in C.
+categories:
+  - misc
+binaries:
+  - terminalperiodictable
+homepage: https://github.com/velorek1/terminalperiodictable
+repo: https://github.com/velorek1/terminalperiodictable

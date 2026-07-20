@@ -1,0 +1,9 @@
+id: viu
+name: viu
+description: Your browser anime experience from the terminal
+categories:
+  - media
+binaries:
+  - viu
+homepage: https://github.com/viu-media/viu
+repo: https://github.com/viu-media/viu

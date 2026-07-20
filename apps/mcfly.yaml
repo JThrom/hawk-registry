@@ -1,0 +1,9 @@
+id: mcfly
+name: mcfly
+description: Intelligent context-aware search engine for your shell history
+categories:
+  - productivity
+binaries:
+  - mcfly
+homepage: https://github.com/cantino/mcfly
+repo: https://github.com/cantino/mcfly

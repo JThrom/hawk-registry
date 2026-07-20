@@ -1,0 +1,9 @@
+id: grafterm
+name: Grafterm
+description: Metrics dashboards on terminal, a Grafana inspired terminal version
+categories:
+  - dashboards
+binaries:
+  - grafterm
+homepage: https://github.com/slok/grafterm
+repo: https://github.com/slok/grafterm

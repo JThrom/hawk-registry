@@ -1,0 +1,10 @@
+id: sudoku-rs
+name: sudoku-rs
+description: Sudoku built with tui-rs
+categories:
+  - games
+binaries:
+  - sudoku-rs
+  - sudoku
+homepage: https://github.com/MitchelPaulin/sudoku-rs
+repo: https://github.com/MitchelPaulin/sudoku-rs

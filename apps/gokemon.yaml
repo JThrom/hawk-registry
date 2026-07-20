@@ -1,0 +1,9 @@
+id: gokemon
+name: gokemon
+description: A terminal based Pokemon battle simulator
+categories:
+  - games
+binaries:
+  - gokemon
+homepage: https://github.com/nathanieltooley/gokemon
+repo: https://github.com/nathanieltooley/gokemon

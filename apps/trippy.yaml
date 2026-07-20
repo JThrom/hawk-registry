@@ -1,0 +1,9 @@
+id: trippy
+name: trippy
+description: A network diagnostic tool that includes functionality like mtr and more
+categories:
+  - dashboards
+binaries:
+  - trippy
+homepage: https://github.com/fujiapple852/trippy
+repo: https://github.com/fujiapple852/trippy

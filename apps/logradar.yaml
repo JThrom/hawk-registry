@@ -1,0 +1,9 @@
+id: logradar
+name: logradar
+description: "- A fast Rust TUI for interactive log filtering and highlighting."
+categories:
+  - dev
+binaries:
+  - logradar
+homepage: https://github.com/nanook72/logradar
+repo: https://github.com/nanook72/logradar

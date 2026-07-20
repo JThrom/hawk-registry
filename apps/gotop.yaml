@@ -1,0 +1,9 @@
+id: gotop
+name: gotop
+description: A terminal based graphical activity monitor inspired by gtop and vtop
+categories:
+  - dashboards
+binaries:
+  - gotop
+homepage: https://github.com/xxxserxxx/gotop
+repo: https://github.com/xxxserxxx/gotop

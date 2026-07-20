@@ -1,0 +1,9 @@
+id: recoverpy
+name: recoverpy
+description: A TUI to recover overwritten or deleted data.
+categories:
+  - misc
+binaries:
+  - recoverpy
+homepage: https://github.com/PabloLec/recoverpy
+repo: https://github.com/PabloLec/recoverpy

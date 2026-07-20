@@ -1,0 +1,9 @@
+id: tweakcc
+name: tweakcc
+description: TUI to customize your Claude Code themes, thinking verbs, and more.
+categories:
+  - misc
+binaries:
+  - tweakcc
+homepage: https://github.com/Piebald-AI/tweakcc
+repo: https://github.com/Piebald-AI/tweakcc

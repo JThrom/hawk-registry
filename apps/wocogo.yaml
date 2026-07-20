@@ -1,0 +1,8 @@
+id: wocogo
+name: wocogo
+description: Construct words from a list of given segments. A simple TUI game in Python, similar to the NY Times Combinations game.
+categories:
+  - games
+binaries:
+  - wocogo
+homepage: https://codeberg.org/kedlubnowski/wocogo

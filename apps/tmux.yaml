@@ -1,0 +1,9 @@
+id: tmux
+name: tmux
+description: Terminal multiplexer
+categories:
+  - productivity
+binaries:
+  - tmux
+homepage: https://github.com/tmux/tmux
+repo: https://github.com/tmux/tmux

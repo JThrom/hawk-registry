@@ -1,0 +1,9 @@
+id: kmon
+name: kmon
+description: Linux Kernel Manager and Activity Monitor
+categories:
+  - dashboards
+binaries:
+  - kmon
+homepage: https://github.com/orhun/kmon
+repo: https://github.com/orhun/kmon

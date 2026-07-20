@@ -1,0 +1,9 @@
+id: cfdisk
+name: cfdisk
+description: TUI partition editor included in util-linux
+categories:
+  - misc
+binaries:
+  - cfdisk
+homepage: https://github.com/util-linux/util-linux
+repo: https://github.com/util-linux/util-linux

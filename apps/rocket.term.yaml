@@ -1,0 +1,9 @@
+id: rocket.term
+name: rocket.term
+description: Text based chat client for the Rocket.chat messaging solution.
+categories:
+  - misc
+binaries:
+  - rocket.term
+homepage: https://github.com/gerstner-hub/rocket.term
+repo: https://github.com/gerstner-hub/rocket.term

@@ -1,0 +1,9 @@
+id: bulletty
+name: bulletty
+description: A pretty feed reader (ATOM/RSS) that stores articles in Markdown files
+categories:
+  - web
+binaries:
+  - bulletty
+homepage: https://github.com/CrociDB/bulletty
+repo: https://github.com/CrociDB/bulletty

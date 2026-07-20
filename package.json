@@ -1,0 +1,19 @@
+{
+  "name": "hawk-registry",
+  "version": "0.1.0",
+  "description": "Community registry of TUIs for the Hawk launcher",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "split": "bun run scripts/split.ts",
+    "validate": "bun run scripts/build.ts --check"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

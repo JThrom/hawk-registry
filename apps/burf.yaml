@@ -1,0 +1,9 @@
+id: burf
+name: burf
+description: TUI for Google Cloud Storage (GCS)
+categories:
+  - dev
+binaries:
+  - burf
+homepage: https://github.com/razeghi71/burf
+repo: https://github.com/razeghi71/burf

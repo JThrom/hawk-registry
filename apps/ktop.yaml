@@ -1,0 +1,9 @@
+id: ktop
+name: ktop
+description: A top-like tool for your Kubernetes clusters
+categories:
+  - containers
+binaries:
+  - ktop
+homepage: https://github.com/vladimirvivien/ktop
+repo: https://github.com/vladimirvivien/ktop

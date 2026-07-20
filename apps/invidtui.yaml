@@ -1,0 +1,9 @@
+id: invidtui
+name: invidtui
+description: A TUI Invidious client for Windows, Linux and MacOS, that fetches and plays audio/video from an invidious instance. Supports viewing and playing from playlists and channels as well.
+categories:
+  - media
+binaries:
+  - invidtui
+homepage: https://github.com/darkhz/invidtui
+repo: https://github.com/darkhz/invidtui

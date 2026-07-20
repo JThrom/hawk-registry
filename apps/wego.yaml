@@ -1,0 +1,9 @@
+id: wego
+name: wego
+description: Weather app
+categories:
+  - misc
+binaries:
+  - wego
+homepage: https://github.com/schachmat/wego
+repo: https://github.com/schachmat/wego

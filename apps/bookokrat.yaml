@@ -1,0 +1,9 @@
+id: bookokrat
+name: bookokrat
+description: Full-featured EPUB books reader with Vim keybindings.
+categories:
+  - media
+binaries:
+  - bookokrat
+homepage: https://github.com/bugzmanov/bookokrat
+repo: https://github.com/bugzmanov/bookokrat

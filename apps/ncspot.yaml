@@ -1,0 +1,9 @@
+id: ncspot
+name: ncspot
+description: Cross-platform ncurses Spotify client written in Rust
+categories:
+  - media
+binaries:
+  - ncspot
+homepage: https://github.com/hrkfdn/ncspot
+repo: https://github.com/hrkfdn/ncspot

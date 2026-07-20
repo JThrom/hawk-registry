@@ -1,0 +1,9 @@
+id: dashbrew
+name: dashbrew
+description: TUI dashboard builder that lets you visualize data from scripts and APIs.
+categories:
+  - dashboards
+binaries:
+  - dashbrew
+homepage: https://github.com/rasjonell/dashbrew
+repo: https://github.com/rasjonell/dashbrew

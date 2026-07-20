@@ -1,0 +1,9 @@
+id: chdig
+name: chdig
+description: Dig into ClickHouse with TUI interface
+categories:
+  - dashboards
+binaries:
+  - chdig
+homepage: https://github.com/azat/chdig
+repo: https://github.com/azat/chdig

@@ -1,0 +1,10 @@
+id: vt-code
+name: VT Code
+description: VT Code - Semantic Coding Agent
+categories:
+  - dev
+binaries:
+  - vt-code
+  - vtcode
+homepage: https://github.com/vinhnx/vtcode
+repo: https://github.com/vinhnx/vtcode

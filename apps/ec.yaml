@@ -1,0 +1,9 @@
+id: ec
+name: ec
+description: A TUI native Git mergetool with 3 panes
+categories:
+  - dev
+binaries:
+  - ec
+homepage: https://github.com/chojs23/ec
+repo: https://github.com/chojs23/ec

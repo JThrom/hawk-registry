@@ -1,0 +1,9 @@
+id: lazynginx
+name: lazynginx
+description: Simple TUI for nginx management.
+categories:
+  - misc
+binaries:
+  - lazynginx
+homepage: https://github.com/giacomomasseron/lazynginx
+repo: https://github.com/giacomomasseron/lazynginx

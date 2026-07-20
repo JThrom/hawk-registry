@@ -1,0 +1,9 @@
+id: keydex
+name: keydex
+description: TUI password manager for KeePass databases.
+categories:
+  - misc
+binaries:
+  - keydex
+homepage: https://github.com/shikaan/keydex
+repo: https://github.com/shikaan/keydex

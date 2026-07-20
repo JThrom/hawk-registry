@@ -1,0 +1,10 @@
+id: terraform-tui
+name: terraform-tui
+description: view and interact with Terraform state
+categories:
+  - dev
+binaries:
+  - terraform-tui
+  - terraform
+homepage: https://github.com/idoavrah/terraform-tui
+repo: https://github.com/idoavrah/terraform-tui

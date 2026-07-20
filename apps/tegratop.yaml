@@ -1,0 +1,9 @@
+id: tegratop
+name: tegratop
+description: Monitoring tool (top like) for Nvidia jetson boards
+categories:
+  - dashboards
+binaries:
+  - tegratop
+homepage: https://github.com/pythops/tegratop
+repo: https://github.com/pythops/tegratop

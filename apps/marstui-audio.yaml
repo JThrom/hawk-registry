@@ -1,0 +1,9 @@
+id: marstui-audio
+name: marstui-audio
+description: A nice audio management Interface, similar to pavucontrol with the benefit of customizing everything
+categories:
+  - media
+binaries:
+  - marstui-audio
+homepage: https://github.com/schooldanlp6/marstui-rustio
+repo: https://github.com/schooldanlp6/marstui-rustio

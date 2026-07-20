@@ -1,0 +1,10 @@
+id: pass-cli
+name: pass-cli
+description: A TUI and CLI password manager with rclone cloud syncing support
+categories:
+  - misc
+binaries:
+  - pass-cli
+  - pass
+homepage: https://github.com/arimxyer/pass-cli
+repo: https://github.com/arimxyer/pass-cli

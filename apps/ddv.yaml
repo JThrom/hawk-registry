@@ -1,0 +1,9 @@
+id: ddv
+name: ddv
+description: Terminal DynamoDB viewer
+categories:
+  - dev
+binaries:
+  - ddv
+homepage: https://github.com/lusingander/ddv
+repo: https://github.com/lusingander/ddv

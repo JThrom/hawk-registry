@@ -1,0 +1,9 @@
+id: dtop
+name: dtop
+description: Terminal dashboard for Docker monitoring across multiple hosts
+categories:
+  - containers
+binaries:
+  - dtop
+homepage: https://github.com/amir20/dtop
+repo: https://github.com/amir20/dtop

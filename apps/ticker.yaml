@@ -1,0 +1,9 @@
+id: ticker
+name: ticker
+description: Track stocks, crypto, and derivatives prices and positions in real time from your terminal
+categories:
+  - dashboards
+binaries:
+  - ticker
+homepage: https://github.com/achannarasappa/ticker
+repo: https://github.com/achannarasappa/ticker

@@ -1,0 +1,11 @@
+id: maze-tui
+name: Maze TUI
+description: Build mazes and solve them with various algorithms.
+categories:
+  - games
+binaries:
+  - maze-tui
+  - mazetui
+  - maze
+homepage: https://github.com/agl-alexglopez/maze-tui
+repo: https://github.com/agl-alexglopez/maze-tui

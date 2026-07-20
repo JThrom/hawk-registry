@@ -1,0 +1,9 @@
+id: deputui
+name: deputui
+description: Review and install NPM package updates
+categories:
+  - dev
+binaries:
+  - deputui
+homepage: https://github.com/twiddler/deputui
+repo: https://github.com/twiddler/deputui

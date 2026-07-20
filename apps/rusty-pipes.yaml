@@ -1,0 +1,9 @@
+id: rusty-pipes
+name: rusty-pipes
+description: A sample-based, MIDI-controlled virtual pipe organ instrument compatible with GrandOrgue and Hauptwerk sample sets.
+categories:
+  - media
+binaries:
+  - rusty-pipes
+homepage: https://github.com/dividebysandwich/rusty-pipes
+repo: https://github.com/dividebysandwich/rusty-pipes

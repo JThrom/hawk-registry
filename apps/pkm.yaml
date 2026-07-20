@@ -1,0 +1,9 @@
+id: pkm
+name: pkm
+description: A super minimal TUI package manager wrapper written in BASH v4.2+
+categories:
+  - productivity
+binaries:
+  - pkm
+homepage: https://github.com/wick3dr0se/pkm
+repo: https://github.com/wick3dr0se/pkm

@@ -1,0 +1,9 @@
+id: scli
+name: scli
+description: A simple terminal user interface for signal messenger
+categories:
+  - messaging
+binaries:
+  - scli
+homepage: https://github.com/isamert/scli/
+repo: https://github.com/isamert/scli/

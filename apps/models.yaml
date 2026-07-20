@@ -1,0 +1,9 @@
+id: models
+name: models
+description: TUI for browsing AI models and coding agents
+categories:
+  - dev
+binaries:
+  - models
+homepage: https://github.com/arimxyer/models
+repo: https://github.com/arimxyer/models

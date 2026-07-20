@@ -1,0 +1,9 @@
+id: nchat
+name: nchat
+description: Telegram/WhatsApp client
+categories:
+  - messaging
+binaries:
+  - nchat
+homepage: https://github.com/d99kris/nchat
+repo: https://github.com/d99kris/nchat

@@ -1,0 +1,9 @@
+id: chess-tui
+name: chess-tui
+description: Play Chess in your terminal, built in rust
+categories:
+  - games
+binaries:
+  - chess-tui
+homepage: https://github.com/thomas-mauran/chess-tui
+repo: https://github.com/thomas-mauran/chess-tui

@@ -1,0 +1,9 @@
+id: snake
+name: snake
+description: ":video_game: A super minimal TUI snake game written in pure BASH v5.1+"
+categories:
+  - games
+binaries:
+  - snake
+homepage: https://github.com/wick3dr0se/snake
+repo: https://github.com/wick3dr0se/snake

@@ -1,0 +1,9 @@
+id: logshark
+name: logshark
+description: A debugger CLI for JSON logs written in Go
+categories:
+  - dev
+binaries:
+  - logshark
+homepage: https://github.com/ugosan/logshark
+repo: https://github.com/ugosan/logshark

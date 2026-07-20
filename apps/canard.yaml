@@ -1,0 +1,9 @@
+id: canard
+name: Canard
+description: A command line TUI client for the [Journalist](https://github.com/mrusme/journalist) RSS aggregator.
+categories:
+  - web
+binaries:
+  - canard
+homepage: https://github.com/mrusme/canard
+repo: https://github.com/mrusme/canard

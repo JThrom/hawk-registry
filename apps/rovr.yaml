@@ -1,0 +1,9 @@
+id: rovr
+name: rovr
+description: A post-modern terminal file manager.
+categories:
+  - files
+binaries:
+  - rovr
+homepage: https://github.com/NSPC911/rovr
+repo: https://github.com/NSPC911/rovr

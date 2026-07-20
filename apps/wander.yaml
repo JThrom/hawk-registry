@@ -1,0 +1,9 @@
+id: wander
+name: wander
+description: HashiCorp Nomad terminal client
+categories:
+  - dashboards
+binaries:
+  - wander
+homepage: https://github.com/robinovitch61/wander
+repo: https://github.com/robinovitch61/wander

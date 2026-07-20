@@ -1,0 +1,9 @@
+id: tut
+name: tut
+description: Mastodon TUI client
+categories:
+  - messaging
+binaries:
+  - tut
+homepage: https://github.com/RasmusLindroth/tut
+repo: https://github.com/RasmusLindroth/tut

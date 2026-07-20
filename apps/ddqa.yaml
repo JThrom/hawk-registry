@@ -1,0 +1,9 @@
+id: ddqa
+name: ddqa
+description: Jira TUI to help with software releases
+categories:
+  - dev
+binaries:
+  - ddqa
+homepage: https://github.com/DataDog/ddqa
+repo: https://github.com/DataDog/ddqa

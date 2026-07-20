@@ -1,0 +1,9 @@
+id: gh-dash
+name: gh-dash
+description: A rich terminal UI for GitHub PRs and Issues
+categories:
+  - dashboards
+binaries:
+  - gh-dash
+homepage: https://github.com/dlvhdr/gh-dash
+repo: https://github.com/dlvhdr/gh-dash

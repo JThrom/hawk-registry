@@ -1,0 +1,9 @@
+id: slumber
+name: Slumber
+description: Terminal-based HTTP/REST client
+categories:
+  - web
+binaries:
+  - slumber
+homepage: https://github.com/LucasPickering/slumber
+repo: https://github.com/LucasPickering/slumber

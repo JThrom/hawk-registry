@@ -1,0 +1,9 @@
+id: opencode
+name: opencode
+description: AI coding agent, built for the terminal
+categories:
+  - dev
+binaries:
+  - opencode
+homepage: https://github.com/sst/opencode
+repo: https://github.com/sst/opencode

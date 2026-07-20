@@ -1,0 +1,9 @@
+id: bottom
+name: bottom
+description: A customizable graphical process/system monitor for the terminal.
+categories:
+  - dashboards
+binaries:
+  - btm
+homepage: https://github.com/ClementTsang/bottom
+repo: https://github.com/ClementTsang/bottom

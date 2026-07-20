@@ -1,0 +1,9 @@
+id: zellij
+name: zellij
+description: A terminal workspace with batteries included
+categories:
+  - productivity
+binaries:
+  - zellij
+homepage: https://github.com/zellij-org/zellij
+repo: https://github.com/zellij-org/zellij

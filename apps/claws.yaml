@@ -1,0 +1,9 @@
+id: claws
+name: claws
+description: A terminal UI for AWS resource management with vim-style keybindings, command-mode navigation, and optional read-only mode.
+categories:
+  - dashboards
+binaries:
+  - claws
+homepage: https://github.com/clawscli/claws
+repo: https://github.com/clawscli/claws

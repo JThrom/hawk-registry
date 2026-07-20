@@ -1,0 +1,9 @@
+id: csvlens
+name: csvlens
+description: TUI CSV file viewer. It is like less but made for CSV.
+categories:
+  - misc
+binaries:
+  - csvlens
+homepage: https://github.com/YS-L/csvlens
+repo: https://github.com/YS-L/csvlens

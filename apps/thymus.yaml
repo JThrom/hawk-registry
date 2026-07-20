@@ -1,0 +1,9 @@
+id: thymus
+name: thymus
+description: An interactive browser & editor for network configuration files.
+categories:
+  - editors
+binaries:
+  - thymus
+homepage: https://github.com/blademd/thymus
+repo: https://github.com/blademd/thymus

@@ -1,0 +1,9 @@
+id: qo
+name: qo
+description: Interactive SQL filter for JSON, CSV, TSV and other streams.
+categories:
+  - dev
+binaries:
+  - qo
+homepage: https://github.com/kiki-ki/go-qo
+repo: https://github.com/kiki-ki/go-qo

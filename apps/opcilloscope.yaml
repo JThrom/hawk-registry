@@ -1,0 +1,9 @@
+id: opcilloscope
+name: opcilloscope
+description: OPC UA client TUI with real-time oscilloscope view for industrial automation
+categories:
+  - dev
+binaries:
+  - opcilloscope
+homepage: https://github.com/SquareWaveSystems/opcilloscope
+repo: https://github.com/SquareWaveSystems/opcilloscope

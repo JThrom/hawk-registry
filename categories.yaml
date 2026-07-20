@@ -1,0 +1,37 @@
+categories:
+  - id: dashboards
+    name: Dashboards & Monitoring
+    order: 25
+  - id: dev
+    name: Development
+    order: 10
+  - id: containers
+    name: Docker / K8s
+    order: 15
+  - id: editors
+    name: Editors
+    order: 50
+  - id: files
+    name: File Management
+    order: 40
+  - id: games
+    name: Games
+    order: 85
+  - id: messaging
+    name: Messaging
+    order: 55
+  - id: misc
+    name: Miscellaneous
+    order: 100
+  - id: media
+    name: Media
+    order: 70
+  - id: productivity
+    name: Productivity
+    order: 80
+  - id: screensavers
+    name: Screensavers
+    order: 95
+  - id: web
+    name: Web
+    order: 60

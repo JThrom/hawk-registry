@@ -1,0 +1,9 @@
+id: kaskade
+name: kaskade
+description: TUI for kafka, which allows you to interact and consume topics from your terminal in style!
+categories:
+  - dashboards
+binaries:
+  - kaskade
+homepage: https://github.com/sauljabin/kaskade
+repo: https://github.com/sauljabin/kaskade

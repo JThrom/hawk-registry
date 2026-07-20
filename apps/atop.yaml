@@ -1,0 +1,9 @@
+id: atop
+name: atop
+description: root level system and process monitor for Linux
+categories:
+  - dashboards
+binaries:
+  - atop
+homepage: https://github.com/Atoptool/atop/
+repo: https://github.com/Atoptool/atop/

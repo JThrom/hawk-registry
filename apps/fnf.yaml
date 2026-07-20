@@ -1,0 +1,9 @@
+id: fnf
+name: fnf
+description: An interactive fuzzy finder for the terminal
+categories:
+  - misc
+binaries:
+  - fnf
+homepage: https://github.com/leo-arch/fnf
+repo: https://github.com/leo-arch/fnf

@@ -1,0 +1,9 @@
+id: lf
+name: lf
+description: A terminal file manager written in Go with heavy inspiration from ranger file manager.
+categories:
+  - files
+binaries:
+  - lf
+homepage: https://github.com/gokcehan/lf
+repo: https://github.com/gokcehan/lf

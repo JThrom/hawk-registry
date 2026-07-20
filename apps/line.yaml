@@ -1,0 +1,9 @@
+id: line
+name: line
+description: Tiny command-line midi sequencer and language for live coding
+categories:
+  - media
+binaries:
+  - line
+homepage: https://github.com/pd3v/line
+repo: https://github.com/pd3v/line

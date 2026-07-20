@@ -1,0 +1,9 @@
+id: feluda
+name: Feluda
+description: Detect restrictive and incompatible licesenses in all dependencies of your project.
+categories:
+  - dev
+binaries:
+  - feluda
+homepage: https://github.com/anistark/feluda
+repo: https://github.com/anistark/feluda

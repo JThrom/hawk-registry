@@ -1,0 +1,9 @@
+id: toutui
+name: Toutui
+description: A TUI Audiobookshelf Client for Linux
+categories:
+  - media
+binaries:
+  - toutui
+homepage: https://github.com/AlbanDAVID/Toutui
+repo: https://github.com/AlbanDAVID/Toutui

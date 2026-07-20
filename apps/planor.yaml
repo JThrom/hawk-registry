@@ -1,0 +1,9 @@
+id: planor
+name: Planor
+description: The Cloud Aviator, dashboard for AWS, Vultr, Heroku, ...
+categories:
+  - dashboards
+binaries:
+  - planor
+homepage: https://github.com/mrusme/planor
+repo: https://github.com/mrusme/planor

@@ -1,0 +1,9 @@
+id: mac-cleanup-go
+name: mac-cleanup-go
+description: "- macOS disk cleanup TUI: scan cache/dev artifacts, preview, exclude, and move items to Trash."
+categories:
+  - misc
+binaries:
+  - mac-cleanup-go
+homepage: https://github.com/2ykwang/mac-cleanup-go
+repo: https://github.com/2ykwang/mac-cleanup-go

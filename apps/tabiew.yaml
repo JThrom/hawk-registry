@@ -1,0 +1,9 @@
+id: tabiew
+name: Tabiew
+description: A lightweight app to view and query tabular data files, such as CSV, TSV, and parquet.
+categories:
+  - productivity
+binaries:
+  - tabiew
+homepage: https://github.com/shshemi/tabiew
+repo: https://github.com/shshemi/tabiew

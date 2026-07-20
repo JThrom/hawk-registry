@@ -1,0 +1,9 @@
+id: wtf
+name: WTF
+description: The personal information dashboard for your terminal.
+categories:
+  - dashboards
+binaries:
+  - wtf
+homepage: https://github.com/senorprogrammer/wtf
+repo: https://github.com/senorprogrammer/wtf

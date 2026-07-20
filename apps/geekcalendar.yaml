@@ -1,0 +1,9 @@
+id: geekcalendar
+name: GeekCalendar
+description: TUI calendar with vim key bindings, which can import from calcure or calcurse.
+categories:
+  - productivity
+binaries:
+  - geekcalendar
+homepage: https://github.com/fearlessgeekmedia/GeekCalendar
+repo: https://github.com/fearlessgeekmedia/GeekCalendar

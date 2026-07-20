@@ -1,0 +1,9 @@
+id: botany
+name: botany
+description: Virtual plant buddy
+categories:
+  - games
+binaries:
+  - botany
+homepage: https://github.com/jifunks/botany/
+repo: https://github.com/jifunks/botany/

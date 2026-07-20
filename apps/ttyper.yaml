@@ -1,0 +1,9 @@
+id: ttyper
+name: ttyper
+description: Terminal-based typing test
+categories:
+  - misc
+binaries:
+  - ttyper
+homepage: https://github.com/max-niederman/ttyper
+repo: https://github.com/max-niederman/ttyper

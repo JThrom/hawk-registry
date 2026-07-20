@@ -1,0 +1,9 @@
+id: apachetop
+name: apachetop
+description: display information from a running copy of Apache.
+categories:
+  - dashboards
+binaries:
+  - apachetop
+homepage: https://github.com/tessus/apachetop
+repo: https://github.com/tessus/apachetop

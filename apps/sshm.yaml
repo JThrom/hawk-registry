@@ -1,0 +1,9 @@
+id: sshm
+name: sshm
+description: "SSH made easy and fast: browse, connect, and control from your terminal with a modern TUI"
+categories:
+  - productivity
+binaries:
+  - sshm
+homepage: https://github.com/gu1llaum-3/sshm
+repo: https://github.com/gu1llaum-3/sshm

@@ -1,0 +1,9 @@
+id: ekphos
+name: ekphos
+description: A fast, lightweight, markdown research tool written in rust
+categories:
+  - productivity
+binaries:
+  - ekphos
+homepage: https://github.com/hanebox/ekphos
+repo: https://github.com/hanebox/ekphos

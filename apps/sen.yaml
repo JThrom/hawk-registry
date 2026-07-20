@@ -1,0 +1,9 @@
+id: sen
+name: sen
+description: Terminal User Interface for docker engine
+categories:
+  - containers
+binaries:
+  - sen
+homepage: https://github.com/TomasTomecek/sen
+repo: https://github.com/TomasTomecek/sen

@@ -1,0 +1,8 @@
+id: lagrange
+name: Lagrange
+description: Lagrange is a cross-platform client for browsing Geminispace
+categories:
+  - web
+binaries:
+  - lagrange
+homepage: https://gmi.skyjake.fi/lagrange

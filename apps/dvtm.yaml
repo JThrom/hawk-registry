@@ -1,0 +1,9 @@
+id: dvtm
+name: dvtm
+description: A terminal multiplexer with dwm like window management
+categories:
+  - productivity
+binaries:
+  - dvtm
+homepage: https://github.com/martanne/dvtm
+repo: https://github.com/martanne/dvtm

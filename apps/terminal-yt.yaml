@@ -1,0 +1,9 @@
+id: terminal-yt
+name: terminal-yt
+description: A small newsboat-inspired terminal youtube manager
+categories:
+  - media
+binaries:
+  - terminal-yt
+homepage: https://github.com/jooooscha/terminal-yt
+repo: https://github.com/jooooscha/terminal-yt

@@ -1,0 +1,8 @@
+id: pond
+name: pond
+description: A soothing in-terminal idle screen that simulates a little pond.
+categories:
+  - screensavers
+binaries:
+  - pond
+homepage: https://gitlab.com/alice-lefebvre/pond

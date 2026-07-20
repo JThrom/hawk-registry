@@ -1,0 +1,9 @@
+id: moribito
+name: moribito
+description: Browse LDAP directory trees, viewing records, and executing custom queries.
+categories:
+  - misc
+binaries:
+  - moribito
+homepage: https://github.com/ericschmar/moribito
+repo: https://github.com/ericschmar/moribito

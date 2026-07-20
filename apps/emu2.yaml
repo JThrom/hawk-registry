@@ -1,0 +1,9 @@
+id: emu2
+name: emu2
+description: A simple DOS emulator for the Linux text console, supporting basic DOS system calls and console I/O.
+categories:
+  - misc
+binaries:
+  - emu2
+homepage: https://github.com/dmsc/emu2
+repo: https://github.com/dmsc/emu2

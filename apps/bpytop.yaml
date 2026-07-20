@@ -1,0 +1,9 @@
+id: bpytop
+name: bpytop
+description: A Python-based system monitor with lots of information.
+categories:
+  - dashboards
+binaries:
+  - bpytop
+homepage: https://github.com/aristocratos/bpytop
+repo: https://github.com/aristocratos/bpytop

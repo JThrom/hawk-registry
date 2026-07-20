@@ -1,0 +1,9 @@
+id: toad
+name: Toad
+description: A unified interface for AI
+categories:
+  - dev
+binaries:
+  - toad
+homepage: https://github.com/batrachianai/toad
+repo: https://github.com/batrachianai/toad

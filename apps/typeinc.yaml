@@ -1,0 +1,9 @@
+id: typeinc
+name: typeinc
+description: ncurses based typing speed test with various difficulty levels.
+categories:
+  - games
+binaries:
+  - typeinc
+homepage: https://github.com/AnirudhG07/Typeinc
+repo: https://github.com/AnirudhG07/Typeinc

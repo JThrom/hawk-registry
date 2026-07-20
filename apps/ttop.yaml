@@ -1,0 +1,9 @@
+id: ttop
+name: ttop
+description: System monitoring tool with historical data service, triggers and top-like TUI
+categories:
+  - dashboards
+binaries:
+  - ttop
+homepage: https://github.com/inv2004/ttop
+repo: https://github.com/inv2004/ttop

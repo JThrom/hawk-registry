@@ -1,0 +1,10 @@
+id: humble-explorer
+name: HumBLE Explorer
+description: A cross-platform, command-line and human-friendly Bluetooth Low Energy scanner
+categories:
+  - misc
+binaries:
+  - humble-explorer
+  - humbleexplorer
+homepage: https://github.com/koenvervloesem/humble-explorer
+repo: https://github.com/koenvervloesem/humble-explorer

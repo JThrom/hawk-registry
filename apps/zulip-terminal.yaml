@@ -1,0 +1,9 @@
+id: zulip-terminal
+name: zulip-terminal
+description: Official Zulip terminal client (similar to matterhorn)
+categories:
+  - messaging
+binaries:
+  - zulip-terminal
+homepage: https://github.com/zulip/zulip-terminal
+repo: https://github.com/zulip/zulip-terminal

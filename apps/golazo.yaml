@@ -1,0 +1,9 @@
+id: golazo
+name: golazo
+description: Get soccer minute-by-minute updates and finished match stats in your terminal
+categories:
+  - misc
+binaries:
+  - golazo
+homepage: https://github.com/0xjuanma/golazo
+repo: https://github.com/0xjuanma/golazo

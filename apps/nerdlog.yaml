@@ -1,0 +1,9 @@
+id: nerdlog
+name: nerdlog
+description: fast, remote-first, multi-host TUI log viewer
+categories:
+  - dashboards
+binaries:
+  - nerdlog
+homepage: https://github.com/dimonomid/nerdlog
+repo: https://github.com/dimonomid/nerdlog

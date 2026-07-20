@@ -1,0 +1,9 @@
+id: corefreq
+name: CoreFreq
+description: CPU monitoring software designed for the 64-bits Processors
+categories:
+  - dashboards
+binaries:
+  - corefreq
+homepage: https://github.com/cyring/CoreFreq
+repo: https://github.com/cyring/CoreFreq

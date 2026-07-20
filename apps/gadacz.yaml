@@ -1,0 +1,9 @@
+id: gadacz
+name: gadacz
+description: Audiobook player
+categories:
+  - media
+binaries:
+  - gadacz
+homepage: https://github.com/rareitems/gadacz
+repo: https://github.com/rareitems/gadacz

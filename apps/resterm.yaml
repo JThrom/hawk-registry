@@ -1,0 +1,9 @@
+id: resterm
+name: resterm
+description: A terminal client for HTTP/GraphQL/gRPC with support for WebSockets, SSE, workflows, profiling, OpenAPI and response diffs.
+categories:
+  - dev
+binaries:
+  - resterm
+homepage: https://github.com/unkn0wn-root/resterm
+repo: https://github.com/unkn0wn-root/resterm

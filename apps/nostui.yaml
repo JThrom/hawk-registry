@@ -1,0 +1,9 @@
+id: nostui
+name: nostui
+description: Nostr client
+categories:
+  - messaging
+binaries:
+  - nostui
+homepage: https://github.com/akiomik/nostui
+repo: https://github.com/akiomik/nostui

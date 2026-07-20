@@ -1,0 +1,9 @@
+id: tcpterm
+name: tcpterm
+description: tcpterm is a packet visualizer in TUI.
+categories:
+  - misc
+binaries:
+  - tcpterm
+homepage: https://github.com/sachaos/tcpterm
+repo: https://github.com/sachaos/tcpterm

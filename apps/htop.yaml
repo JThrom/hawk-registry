@@ -1,0 +1,9 @@
+id: htop
+name: htop
+description: Interactive text-mode process viewer for Unix systems. It aims to be a better 'top'
+categories:
+  - dashboards
+binaries:
+  - htop
+homepage: https://github.com/htop-dev/htop
+repo: https://github.com/htop-dev/htop

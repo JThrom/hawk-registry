@@ -1,0 +1,9 @@
+id: bastet
+name: bastet
+description: Evil falling block game
+categories:
+  - games
+binaries:
+  - bastet
+homepage: https://github.com/fph/bastet
+repo: https://github.com/fph/bastet

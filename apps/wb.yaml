@@ -1,0 +1,9 @@
+id: wb
+name: wb
+description: A TUI vocabulary notebook app for Linux based devices.
+categories:
+  - misc
+binaries:
+  - wb
+homepage: https://github.com/MertGunduz/wb
+repo: https://github.com/MertGunduz/wb

@@ -1,0 +1,10 @@
+id: instagram-cli
+name: instagram-cli
+description: Use Instagram from your terminal, the end of brainrot is here
+categories:
+  - messaging
+binaries:
+  - instagram-cli
+  - instagram
+homepage: https://github.com/supreme-gg-gg/instagram-cli
+repo: https://github.com/supreme-gg-gg/instagram-cli

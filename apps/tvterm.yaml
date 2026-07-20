@@ -1,0 +1,9 @@
+id: tvterm
+name: tvterm
+description: A terminal emulator that runs in your terminal
+categories:
+  - productivity
+binaries:
+  - tvterm
+homepage: https://github.com/magiblot/tvterm
+repo: https://github.com/magiblot/tvterm

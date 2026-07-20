@@ -1,0 +1,9 @@
+id: brief
+name: Brief
+description: Terminal-first OpenAI chat client with slash-command palette and local tool execution.
+categories:
+  - productivity
+binaries:
+  - brief
+homepage: https://github.com/WilliamAGH/brief
+repo: https://github.com/WilliamAGH/brief

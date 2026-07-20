@@ -1,0 +1,10 @@
+id: square-tic-tac-toe
+name: Square Tic Tac Toe
+description: Like Tic Tac Toe, but form a square with 4 corners instead of a line
+categories:
+  - games
+binaries:
+  - square-tic-tac-toe
+  - squaretictactoe
+homepage: https://github.com/learnbyexample/TUI-apps/tree/main/SquareTicTacToe
+repo: https://github.com/learnbyexample/TUI-apps/tree/main/SquareTicTacToe

@@ -1,0 +1,9 @@
+id: nodebro
+name: nodebro
+description: Easily view most recent Github releases/tags and release notes from the terminal
+categories:
+  - dev
+binaries:
+  - nodebro
+homepage: https://github.com/jonaburg/nodebro
+repo: https://github.com/jonaburg/nodebro

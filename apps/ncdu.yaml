@@ -1,0 +1,8 @@
+id: ncdu
+name: ncdu
+description: disk usage analyzer with an ncurses interface
+categories:
+  - misc
+binaries:
+  - ncdu
+homepage: https://dev.yorhel.nl/ncdu

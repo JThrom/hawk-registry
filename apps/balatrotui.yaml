@@ -1,0 +1,9 @@
+id: balatrotui
+name: balatrotui
+description: A TUI clone of Balatro
+categories:
+  - games
+binaries:
+  - balatrotui
+homepage: https://github.com/Passeriform/BalatroTUI
+repo: https://github.com/Passeriform/BalatroTUI

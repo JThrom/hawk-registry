@@ -1,0 +1,8 @@
+id: chafa
+name: chafa
+description: A powerful utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal.
+categories:
+  - media
+binaries:
+  - chafa
+homepage: https://hpjansson.org/chafa/

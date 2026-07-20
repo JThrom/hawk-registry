@@ -1,0 +1,9 @@
+id: soundcloud2000
+name: soundcloud2000
+description: A terminal client for soundcloud
+categories:
+  - media
+binaries:
+  - soundcloud2000
+homepage: https://github.com/grobie/soundcloud2000
+repo: https://github.com/grobie/soundcloud2000

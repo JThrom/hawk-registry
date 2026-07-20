@@ -1,0 +1,9 @@
+id: tenere
+name: tenere
+description: A TUI for ChatGPT written in Rust.
+categories:
+  - productivity
+binaries:
+  - tenere
+homepage: https://github.com/pythops/tenere
+repo: https://github.com/pythops/tenere

@@ -1,0 +1,9 @@
+id: gobang
+name: gobang
+description: A cross-platform TUI database management tool written in Rust
+categories:
+  - dashboards
+binaries:
+  - gobang
+homepage: https://github.com/TaKO8Ki/gobang
+repo: https://github.com/TaKO8Ki/gobang

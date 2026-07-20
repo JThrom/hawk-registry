@@ -1,0 +1,9 @@
+id: tty-solitaire
+name: tty-solitaire
+description: Solitaire runs in your terminal!
+categories:
+  - games
+binaries:
+  - tty-solitaire
+homepage: https://github.com/mpereira/tty-solitaire
+repo: https://github.com/mpereira/tty-solitaire

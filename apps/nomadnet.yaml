@@ -1,0 +1,9 @@
+id: nomadnet
+name: nomadnet
+description: Secure messaging network built on Reticulum
+categories:
+  - messaging
+binaries:
+  - nomadnet
+homepage: https://github.com/markqvist/NomadNet
+repo: https://github.com/markqvist/NomadNet

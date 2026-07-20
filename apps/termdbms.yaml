@@ -1,0 +1,9 @@
+id: termdbms
+name: termdbms
+description: A TUI for viewing and editing database files.
+categories:
+  - dev
+binaries:
+  - termdbms
+homepage: https://github.com/mathaou/termdbms
+repo: https://github.com/mathaou/termdbms

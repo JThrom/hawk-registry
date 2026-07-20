@@ -1,0 +1,9 @@
+id: gittype
+name: GitType
+description: A CLI code-typing game that turns your source code into typing challenges
+categories:
+  - games
+binaries:
+  - gittype
+homepage: https://github.com/unhappychoice/gittype
+repo: https://github.com/unhappychoice/gittype

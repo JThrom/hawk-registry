@@ -1,0 +1,9 @@
+id: codex
+name: codex
+description: Lightweight coding agent that runs in your terminal
+categories:
+  - dev
+binaries:
+  - codex
+homepage: https://github.com/openai/codex
+repo: https://github.com/openai/codex

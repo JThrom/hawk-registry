@@ -1,0 +1,9 @@
+id: vv
+name: vv
+description: A terminal image viewer, supporting an extensive range of modern image formats
+categories:
+  - media
+binaries:
+  - vv
+homepage: https://github.com/wolfpld/vv
+repo: https://github.com/wolfpld/vv

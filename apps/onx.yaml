@@ -1,0 +1,9 @@
+id: onx
+name: onx
+description: Noughts & Crosses client-server game with your partner. Based on textual and python.
+categories:
+  - games
+binaries:
+  - onx
+homepage: https://github.com/vyalovvldmr/onx
+repo: https://github.com/vyalovvldmr/onx

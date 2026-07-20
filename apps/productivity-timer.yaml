@@ -1,0 +1,9 @@
+id: productivity-timer
+name: productivity-timer
+description: A command line time tracker application with a sleek TUI.
+categories:
+  - productivity
+binaries:
+  - productivity-timer
+homepage: https://github.com/h-sifat/productivity-timer
+repo: https://github.com/h-sifat/productivity-timer

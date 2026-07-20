@@ -1,0 +1,10 @@
+id: wg-commander
+name: WG Commander
+description: "A TUI for a simple WireGuard VPN setup: peer management, QR codes, setup wizard."
+categories:
+  - misc
+binaries:
+  - wg-commander
+  - wgcommander
+homepage: https://github.com/andrianbdn/wg-cmd
+repo: https://github.com/andrianbdn/wg-cmd

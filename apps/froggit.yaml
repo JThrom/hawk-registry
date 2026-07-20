@@ -1,0 +1,9 @@
+id: froggit
+name: Froggit
+description: Minimalist Git TUI with GitHub CLI integration
+categories:
+  - dev
+binaries:
+  - froggit
+homepage: https://github.com/thewizardshell/froggit
+repo: https://github.com/thewizardshell/froggit

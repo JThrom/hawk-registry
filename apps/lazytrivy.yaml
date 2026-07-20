@@ -1,0 +1,9 @@
+id: lazytrivy
+name: lazytrivy
+description: The lazier way to scan images, k8s and the filesytem with Trivy
+categories:
+  - containers
+binaries:
+  - lazytrivy
+homepage: https://github.com/owenrumney/lazytrivy
+repo: https://github.com/owenrumney/lazytrivy

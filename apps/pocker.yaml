@@ -1,0 +1,9 @@
+id: pocker
+name: Pocker
+description: TUI based application for docker related tasks.
+categories:
+  - containers
+binaries:
+  - pocker
+homepage: https://github.com/pommee/Pocker
+repo: https://github.com/pommee/Pocker

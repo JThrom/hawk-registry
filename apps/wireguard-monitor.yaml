@@ -1,0 +1,9 @@
+id: wireguard-monitor
+name: WireGuard Monitor
+description: Simple TUI written in Rust to display the status of WireGuard connections on a host.
+categories:
+  - misc
+binaries:
+  - wireguard-monitor
+  - wireguardmonitor
+homepage: https://codeberg.org/anthonymills/Wireguard_Monitor

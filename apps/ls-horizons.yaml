@@ -1,0 +1,9 @@
+id: ls-horizons
+name: ls-horizons
+description: Terminal UI for visualizing NASA's Deep Space Network in real-time
+categories:
+  - dashboards
+binaries:
+  - ls-horizons
+homepage: https://github.com/litescript/ls-horizons
+repo: https://github.com/litescript/ls-horizons

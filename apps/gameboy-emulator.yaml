@@ -1,0 +1,10 @@
+id: gameboy-emulator
+name: Gameboy Emulator
+description: A PHP Terminal GameBoy Emulator
+categories:
+  - games
+binaries:
+  - gameboy-emulator
+  - gameboyemulator
+homepage: https://github.com/gabrielrcouto/php-terminal-gameboy-emulator
+repo: https://github.com/gabrielrcouto/php-terminal-gameboy-emulator

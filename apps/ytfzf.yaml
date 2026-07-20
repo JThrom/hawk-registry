@@ -1,0 +1,9 @@
+id: ytfzf
+name: ytfzf
+description: A POSIX script that helps you find Youtube videos (without API) or Peertube videos and opens/downloads them using mpv/youtube-dl
+categories:
+  - media
+binaries:
+  - ytfzf
+homepage: https://github.com/pystardust/ytfzf
+repo: https://github.com/pystardust/ytfzf

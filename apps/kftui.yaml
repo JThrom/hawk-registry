@@ -1,0 +1,9 @@
+id: kftui
+name: kftui
+description: "- A TUI to manage multiple kubectl port-forward commands, with support for UDP and K8s proxy."
+categories:
+  - containers
+binaries:
+  - kftui
+homepage: https://github.com/hcavarsan/kftray
+repo: https://github.com/hcavarsan/kftray

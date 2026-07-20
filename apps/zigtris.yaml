@@ -1,0 +1,9 @@
+id: zigtris
+name: Zigtris
+description: YA terminal tetris
+categories:
+  - games
+binaries:
+  - zigtris
+homepage: https://github.com/ringtailsoftware/zigtris
+repo: https://github.com/ringtailsoftware/zigtris

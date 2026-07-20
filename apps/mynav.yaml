@@ -1,0 +1,9 @@
+id: mynav
+name: mynav
+description: Workspace and session management for terminal environments
+categories:
+  - productivity
+binaries:
+  - mynav
+homepage: https://github.com/GianlucaP106/mynav
+repo: https://github.com/GianlucaP106/mynav

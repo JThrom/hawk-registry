@@ -1,0 +1,9 @@
+id: dockly
+name: dockly
+description: Immersive terminal interface for managing docker containers and services
+categories:
+  - containers
+binaries:
+  - dockly
+homepage: https://github.com/lirantal/dockly
+repo: https://github.com/lirantal/dockly

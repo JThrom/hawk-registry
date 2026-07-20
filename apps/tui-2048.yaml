@@ -1,0 +1,9 @@
+id: tui-2048
+name: tui-2048
+description: The game 2048 for your terminal
+categories:
+  - games
+binaries:
+  - tui-2048
+homepage: https://github.com/ps06756/tui-2048
+repo: https://github.com/ps06756/tui-2048

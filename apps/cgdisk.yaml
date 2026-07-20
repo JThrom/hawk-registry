@@ -1,0 +1,8 @@
+id: cgdisk
+name: cgdisk
+description: TUI partition editor for manipulating GUID partition tables, and modeled after cfdisk
+categories:
+  - misc
+binaries:
+  - cgdisk
+homepage: https://www.rodsbooks.com/gdisk/cgdisk-walkthrough.html

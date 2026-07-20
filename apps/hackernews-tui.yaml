@@ -1,0 +1,10 @@
+id: hackernews-tui
+name: hackernews-TUI
+description: A Terminal UI to browse Hacker News
+categories:
+  - web
+binaries:
+  - hackernews-tui
+  - hackernews
+homepage: https://github.com/aome510/hackernews-TUI
+repo: https://github.com/aome510/hackernews-TUI

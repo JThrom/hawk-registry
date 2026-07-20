@@ -1,0 +1,9 @@
+id: pipe-viewer
+name: pipe-viewer
+description: A lightweight YouTube client for Linux, without requiring an API key.
+categories:
+  - media
+binaries:
+  - pipe-viewer
+homepage: https://github.com/trizen/pipe-viewer
+repo: https://github.com/trizen/pipe-viewer

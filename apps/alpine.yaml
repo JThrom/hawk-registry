@@ -1,0 +1,8 @@
+id: alpine
+name: alpine
+description: Email client
+categories:
+  - messaging
+binaries:
+  - alpine
+homepage: https://alpineapp.email/

@@ -1,0 +1,9 @@
+id: diskonaut
+name: diskonaut
+description: Terminal disk space navigator
+categories:
+  - misc
+binaries:
+  - diskonaut
+homepage: https://github.com/imsnif/diskonaut
+repo: https://github.com/imsnif/diskonaut

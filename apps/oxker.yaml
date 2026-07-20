@@ -1,0 +1,9 @@
+id: oxker
+name: oxker
+description: A simple tui to view & control docker containers
+categories:
+  - containers
+binaries:
+  - oxker
+homepage: https://github.com/mrjackwills/oxker
+repo: https://github.com/mrjackwills/oxker

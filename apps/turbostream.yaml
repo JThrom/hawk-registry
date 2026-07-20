@@ -1,0 +1,9 @@
+id: turbostream
+name: turbostream
+description: Tool to extract key signals from high-velocity streaming data using AI Agents
+categories:
+  - dev
+binaries:
+  - turbostream
+homepage: https://github.com/turboline-ai/turbostream
+repo: https://github.com/turboline-ai/turbostream

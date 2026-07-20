@@ -1,0 +1,9 @@
+id: pudb
+name: pudb
+description: A console-based visual debugger for Python
+categories:
+  - dev
+binaries:
+  - pudb
+homepage: https://github.com/inducer/pudb
+repo: https://github.com/inducer/pudb

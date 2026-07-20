@@ -1,0 +1,9 @@
+id: tig
+name: tig
+description: Text-mode interface for git
+categories:
+  - dev
+binaries:
+  - tig
+homepage: https://github.com/jonas/tig
+repo: https://github.com/jonas/tig

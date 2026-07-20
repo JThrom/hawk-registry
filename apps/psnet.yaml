@@ -1,0 +1,9 @@
+id: psnet
+name: psnet
+description: Real-time TUI network monitor for Windows with speed graphs, DNS resolution, and packet inspection.
+categories:
+  - dashboards
+binaries:
+  - psnet
+homepage: https://github.com/marlocarlo/psnet
+repo: https://github.com/marlocarlo/psnet

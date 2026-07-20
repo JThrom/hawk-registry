@@ -1,0 +1,9 @@
+id: lazyssh
+name: LazySSH
+description: "- TUI SSH manager to browse, connect, and manage servers from ssh config files."
+categories:
+  - productivity
+binaries:
+  - lazyssh
+homepage: https://github.com/adembc/lazyssh
+repo: https://github.com/adembc/lazyssh

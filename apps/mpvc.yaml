@@ -1,0 +1,9 @@
+id: mpvc
+name: mpvc
+description: A mpc-like control interface for mpv
+categories:
+  - media
+binaries:
+  - mpvc
+homepage: https://github.com/gmt4/mpvc
+repo: https://github.com/gmt4/mpvc

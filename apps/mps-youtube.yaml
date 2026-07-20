@@ -1,0 +1,9 @@
+id: mps-youtube
+name: mps-youtube
+description: Terminal based YouTube player and downloader
+categories:
+  - media
+binaries:
+  - mps-youtube
+homepage: https://github.com/mps-youtube/mps-youtube
+repo: https://github.com/mps-youtube/mps-youtube

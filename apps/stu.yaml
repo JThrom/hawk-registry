@@ -1,0 +1,9 @@
+id: stu
+name: stu
+description: A TUI for Amazon S3
+categories:
+  - dev
+binaries:
+  - stu
+homepage: https://github.com/lusingander/stu
+repo: https://github.com/lusingander/stu

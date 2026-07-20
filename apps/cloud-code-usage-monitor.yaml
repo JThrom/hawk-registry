@@ -1,0 +1,10 @@
+id: cloud-code-usage-monitor
+name: Cloud Code Usage Monitor
+description: Monitor Claude token usage
+categories:
+  - dev
+binaries:
+  - cloud-code-usage-monitor
+  - cloudcodeusagemonitor
+homepage: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor
+repo: https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor

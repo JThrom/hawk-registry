@@ -1,0 +1,9 @@
+id: amux
+name: amux
+description: Easily run parallel coding agents
+categories:
+  - dev
+binaries:
+  - amux
+homepage: https://github.com/andyrewlee/amux
+repo: https://github.com/andyrewlee/amux

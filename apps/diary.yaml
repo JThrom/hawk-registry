@@ -1,0 +1,9 @@
+id: diary
+name: diary
+description: A diary app written in Rust that encrypts both text and file data, and can decrypt and build a rich HTML representation of your diary when required.
+categories:
+  - misc
+binaries:
+  - diary
+homepage: https://github.com/actuday6418/Diary
+repo: https://github.com/actuday6418/Diary

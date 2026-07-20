@@ -1,0 +1,9 @@
+id: far2l
+name: far2l
+description: Linux port of Far v2 file manager
+categories:
+  - files
+binaries:
+  - far2l
+homepage: https://github.com/elfmz/far2l
+repo: https://github.com/elfmz/far2l

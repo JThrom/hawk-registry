@@ -1,0 +1,9 @@
+id: termui
+name: TermUI
+description: Golang terminal dashboard
+categories:
+  - dashboards
+binaries:
+  - termui
+homepage: https://github.com/gizak/termui
+repo: https://github.com/gizak/termui

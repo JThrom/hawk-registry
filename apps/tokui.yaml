@@ -1,0 +1,9 @@
+id: tokui
+name: tokui
+description: An interactive TUI for visualizing code statistics from tokei.
+categories:
+  - dev
+binaries:
+  - tokui
+homepage: https://github.com/zdyxry/tokui
+repo: https://github.com/zdyxry/tokui

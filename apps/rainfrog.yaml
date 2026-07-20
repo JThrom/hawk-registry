@@ -1,0 +1,9 @@
+id: rainfrog
+name: rainfrog
+description: A database management TUI for Postgres, MySQL, and SQLite written in Rust
+categories:
+  - dev
+binaries:
+  - rainfrog
+homepage: https://github.com/achristmascarl/rainfrog
+repo: https://github.com/achristmascarl/rainfrog

@@ -1,0 +1,9 @@
+id: spotify-player
+name: spotify-player
+description: A Spotify player in the terminal with full feature parity
+categories:
+  - media
+binaries:
+  - spotify-player
+homepage: https://github.com/aome510/spotify-player
+repo: https://github.com/aome510/spotify-player

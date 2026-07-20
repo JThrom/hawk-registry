@@ -1,0 +1,9 @@
+id: cruise
+name: cruise
+description: A container management TUI
+categories:
+  - containers
+binaries:
+  - cruise
+homepage: https://github.com/cruise-org/cruise
+repo: https://github.com/cruise-org/cruise

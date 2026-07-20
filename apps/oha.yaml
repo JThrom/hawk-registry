@@ -1,0 +1,9 @@
+id: oha
+name: oha
+description: HTTP load generator
+categories:
+  - misc
+binaries:
+  - oha
+homepage: https://github.com/hatoo/oha
+repo: https://github.com/hatoo/oha

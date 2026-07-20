@@ -1,0 +1,9 @@
+id: gitui
+name: gitui
+description: blazing fast terminal-ui for git written in rust
+categories:
+  - dev
+binaries:
+  - gitui
+homepage: https://github.com/extrawurst/gitui
+repo: https://github.com/extrawurst/gitui

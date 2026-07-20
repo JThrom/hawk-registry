@@ -1,0 +1,10 @@
+id: austin-tui
+name: austin-tui
+description: The top-like text-based user interface for Austin
+categories:
+  - dev
+binaries:
+  - austin-tui
+  - austin
+homepage: https://github.com/P403n1x87/austin-tui
+repo: https://github.com/P403n1x87/austin-tui

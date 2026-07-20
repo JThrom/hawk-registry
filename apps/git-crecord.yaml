@@ -1,0 +1,9 @@
+id: git-crecord
+name: git-crecord
+description: interactive selective commit tool
+categories:
+  - dev
+binaries:
+  - git-crecord
+homepage: https://github.com/andrewshadura/git-crecord
+repo: https://github.com/andrewshadura/git-crecord

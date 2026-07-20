@@ -1,0 +1,9 @@
+id: lazygit
+name: lazygit
+description: Simple terminal UI for git commands
+categories:
+  - dev
+binaries:
+  - lazygit
+homepage: https://github.com/jesseduffield/lazygit
+repo: https://github.com/jesseduffield/lazygit

@@ -1,0 +1,9 @@
+id: drako
+name: drako
+description: A grid-based, customizable and extendable command- and TUI-Deck launcher
+categories:
+  - productivity
+binaries:
+  - drako
+homepage: https://github.com/lucky7xz/drako
+repo: https://github.com/lucky7xz/drako

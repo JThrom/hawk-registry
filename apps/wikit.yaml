@@ -1,0 +1,9 @@
+id: wikit
+name: Wikit
+description: TUI for managing Wiki.js instances
+categories:
+  - dev
+binaries:
+  - wikit
+homepage: https://github.com/BryanCE/wikit
+repo: https://github.com/BryanCE/wikit

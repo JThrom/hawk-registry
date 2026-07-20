@@ -1,0 +1,9 @@
+id: netscanner
+name: netscanner
+description: Network scanner
+categories:
+  - dashboards
+binaries:
+  - netscanner
+homepage: https://github.com/Chleba/netscanner
+repo: https://github.com/Chleba/netscanner

@@ -1,0 +1,9 @@
+id: glances
+name: Glances
+description: Glances an Eye on your system. A top/htop alternative.
+categories:
+  - dashboards
+binaries:
+  - glances
+homepage: https://github.com/nicolargo/glances
+repo: https://github.com/nicolargo/glances

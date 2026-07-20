@@ -1,0 +1,9 @@
+id: violet
+name: violet
+description: Colorful TUI frontend to run Vagrant commands
+categories:
+  - dev
+binaries:
+  - violet
+homepage: https://github.com/braheezy/violet
+repo: https://github.com/braheezy/violet

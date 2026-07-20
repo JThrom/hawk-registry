@@ -1,0 +1,8 @@
+id: rttt
+name: rttt
+description: A Hackernews, RSS and Reddit reader for the terminal written in C++.
+categories:
+  - web
+binaries:
+  - rttt
+homepage: https://gitlab.com/BlackEdder/rttt

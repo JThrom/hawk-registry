@@ -1,0 +1,9 @@
+id: tui_projectmanager
+name: TUI_ProjectManager
+description: A simple project-based todo list written in Rust
+categories:
+  - productivity
+binaries:
+  - tui_projectmanager
+homepage: https://github.com/NicoDblc/TUI_ProjectManager
+repo: https://github.com/NicoDblc/TUI_ProjectManager

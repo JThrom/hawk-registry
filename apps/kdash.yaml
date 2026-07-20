@@ -1,0 +1,9 @@
+id: kdash
+name: kdash
+description: A simple and fast dashboard for Kubernetes
+categories:
+  - containers
+binaries:
+  - kdash
+homepage: https://github.com/kdash-rs/kdash
+repo: https://github.com/kdash-rs/kdash

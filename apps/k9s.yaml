@@ -1,0 +1,9 @@
+id: k9s
+name: k9s
+description: TUI for managing a Kubernetes cluster
+categories:
+  - containers
+binaries:
+  - k9s
+homepage: https://github.com/derailed/k9s
+repo: https://github.com/derailed/k9s

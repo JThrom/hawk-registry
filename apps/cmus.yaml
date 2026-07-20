@@ -1,0 +1,8 @@
+id: cmus
+name: cmus
+description: A small, fast and powerful console music player for Unix-like operating systems.
+categories:
+  - media
+binaries:
+  - cmus
+homepage: https://cmus.github.io/

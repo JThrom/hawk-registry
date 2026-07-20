@@ -1,0 +1,9 @@
+id: tui-slides
+name: tui-slides
+description: A terminal presentation tool capable of rendering images and many other widgets.
+categories:
+  - productivity
+binaries:
+  - tui-slides
+homepage: https://github.com/Chleba/tui-slides
+repo: https://github.com/Chleba/tui-slides

@@ -1,0 +1,9 @@
+id: frogmouth
+name: frogmouth
+description: A Markdown browser for your terminal
+categories:
+  - editors
+binaries:
+  - frogmouth
+homepage: https://github.com/Textualize/frogmouth
+repo: https://github.com/Textualize/frogmouth

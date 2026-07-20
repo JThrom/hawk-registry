@@ -1,0 +1,9 @@
+id: agent-deck
+name: agent-deck
+description: Terminal dashboard for managing multiple AI coding agent sessions
+categories:
+  - productivity
+binaries:
+  - agent-deck
+homepage: https://github.com/asheshgoplani/agent-deck
+repo: https://github.com/asheshgoplani/agent-deck

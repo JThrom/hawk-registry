@@ -1,0 +1,10 @@
+id: talos-linux
+name: talos linux
+description: A Linux distro with a TUI dashboard for local and remote usage
+categories:
+  - dashboards
+binaries:
+  - talos-linux
+  - taloslinux
+homepage: https://github.com/siderolabs/talos
+repo: https://github.com/siderolabs/talos

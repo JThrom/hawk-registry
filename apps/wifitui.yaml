@@ -1,0 +1,9 @@
+id: wifitui
+name: wifitui
+description: Fast featureful friendly wifi terminal UI, supports NetworkManager and iwd over dbus.
+categories:
+  - misc
+binaries:
+  - wifitui
+homepage: https://github.com/shazow/wifitui
+repo: https://github.com/shazow/wifitui

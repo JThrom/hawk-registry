@@ -1,0 +1,9 @@
+id: psmux
+name: psmux
+description: tmux-compatible terminal multiplexer for Windows built in Rust with ratatui.
+categories:
+  - dashboards
+binaries:
+  - psmux
+homepage: https://github.com/marlocarlo/psmux
+repo: https://github.com/marlocarlo/psmux

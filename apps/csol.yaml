@@ -1,0 +1,9 @@
+id: csol
+name: csol
+description: Collection of solitaire/patience games, such as Klondike, FreeCell, Spider, and Yukon
+categories:
+  - games
+binaries:
+  - csol
+homepage: https://github.com/nielssp/csol
+repo: https://github.com/nielssp/csol

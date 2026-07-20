@@ -1,0 +1,8 @@
+id: nmtui
+name: nmtui
+description: ncurses network manager
+categories:
+  - misc
+binaries:
+  - nmtui
+homepage: https://developer.gnome.org/NetworkManager/stable/nmtui.html

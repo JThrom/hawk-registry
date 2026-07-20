@@ -1,0 +1,9 @@
+id: catalyst
+name: catalyst
+description: Elegant TUI for triggering GitHub Actions workflows with matrix configurations.
+categories:
+  - dev
+binaries:
+  - catalyst
+homepage: https://github.com/PraveenGongada/catalyst
+repo: https://github.com/PraveenGongada/catalyst

@@ -1,0 +1,9 @@
+id: dry
+name: dry
+description: A Docker manager for the terminal
+categories:
+  - containers
+binaries:
+  - dry
+homepage: https://github.com/moncho/dry
+repo: https://github.com/moncho/dry

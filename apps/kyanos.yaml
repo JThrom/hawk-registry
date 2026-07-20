@@ -1,0 +1,9 @@
+id: kyanos
+name: Kyanos
+description: Linux network analysis tool based on eBPF
+categories:
+  - dashboards
+binaries:
+  - kyanos
+homepage: https://github.com/hengyoush/kyanos
+repo: https://github.com/hengyoush/kyanos

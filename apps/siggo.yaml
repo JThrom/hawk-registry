@@ -1,0 +1,9 @@
+id: siggo
+name: siggo
+description: A terminal ui for signal-cli, written in Go
+categories:
+  - messaging
+binaries:
+  - siggo
+homepage: https://github.com/derricw/siggo
+repo: https://github.com/derricw/siggo

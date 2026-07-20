@@ -1,0 +1,9 @@
+id: w3m
+name: w3m
+description: A text-mode WWW browser
+categories:
+  - web
+binaries:
+  - w3m
+homepage: https://github.com/tats/w3m
+repo: https://github.com/tats/w3m

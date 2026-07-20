@@ -1,0 +1,9 @@
+id: tizonia-openmax-il
+name: tizonia-openmax-il
+description: Command-line cloud music player for Linux with support for Spotify, Google Play Music, YouTube, SoundCloud, Dirble, Plex servers and Chromecast devices
+categories:
+  - media
+binaries:
+  - tizonia-openmax-il
+homepage: https://github.com/tizonia/tizonia-openmax-il
+repo: https://github.com/tizonia/tizonia-openmax-il

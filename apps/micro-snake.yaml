@@ -1,0 +1,10 @@
+id: micro-snake
+name: Micro Snake
+description: A small snake game, utilizing ANSI escape sequences to draw the board.
+categories:
+  - games
+binaries:
+  - micro-snake
+  - microsnake
+homepage: https://github.com/troglobit/snake
+repo: https://github.com/troglobit/snake

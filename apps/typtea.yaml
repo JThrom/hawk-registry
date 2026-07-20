@@ -1,0 +1,9 @@
+id: typtea
+name: typtea
+description: Minimal terminal-based typing speed tester with support for dozens of programming languages.
+categories:
+  - misc
+binaries:
+  - typtea
+homepage: https://github.com/ashish0kumar/typtea
+repo: https://github.com/ashish0kumar/typtea

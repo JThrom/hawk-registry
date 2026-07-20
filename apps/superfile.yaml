@@ -1,0 +1,9 @@
+id: superfile
+name: superfile
+description: Pretty fancy and modern terminal file manager.
+categories:
+  - files
+binaries:
+  - superfile
+homepage: https://github.com/MHNightCat/superfile
+repo: https://github.com/MHNightCat/superfile

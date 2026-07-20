@@ -1,0 +1,9 @@
+id: endcord
+name: endcord
+description: Feature rich Discord TUI client.
+categories:
+  - messaging
+binaries:
+  - endcord
+homepage: https://github.com/mzivic7/endcord
+repo: https://github.com/mzivic7/endcord

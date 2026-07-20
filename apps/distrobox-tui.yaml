@@ -1,0 +1,10 @@
+id: distrobox-tui
+name: distrobox-tui
+description: TUI for managing distrobox containers
+categories:
+  - misc
+binaries:
+  - distrobox-tui
+  - distrobox
+homepage: https://github.com/phanirithvij/distrobox-tui
+repo: https://github.com/phanirithvij/distrobox-tui

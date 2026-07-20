@@ -1,0 +1,9 @@
+id: zoridor
+name: Zoridor
+description: Play Quoridor in the terminal
+categories:
+  - games
+binaries:
+  - zoridor
+homepage: https://github.com/ringtailsoftware/zoridor
+repo: https://github.com/ringtailsoftware/zoridor

@@ -1,0 +1,10 @@
+id: regex-tui
+name: regex-tui
+description: A simple TUI to visualize and test regular expressions
+categories:
+  - dev
+binaries:
+  - regex-tui
+  - regex
+homepage: https://github.com/vitor-mariano/regex-tui
+repo: https://github.com/vitor-mariano/regex-tui

@@ -1,0 +1,9 @@
+id: wordle
+name: Wordle
+description: Script and library for Wordle, written in Raku
+categories:
+  - games
+binaries:
+  - wordle
+homepage: https://github.com/m-dango/raku-wordle/
+repo: https://github.com/m-dango/raku-wordle/

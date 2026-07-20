@@ -1,0 +1,9 @@
+id: cheatshh
+name: cheatshh
+description: A fzf TUI for managing custom made command-line cheatsheet for Unix.
+categories:
+  - dashboards
+binaries:
+  - cheatshh
+homepage: https://github.com/AnirudhG07/cheatshh
+repo: https://github.com/AnirudhG07/cheatshh

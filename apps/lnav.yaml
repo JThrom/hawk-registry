@@ -1,0 +1,8 @@
+id: lnav
+name: lnav
+description: An advanced log file viewer for the small-scale
+categories:
+  - misc
+binaries:
+  - lnav
+homepage: https://lnav.org/

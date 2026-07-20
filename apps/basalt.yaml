@@ -1,0 +1,9 @@
+id: basalt
+name: basalt
+description: TUI Application to manage Obsidian vaults and notes directly from the terminal.
+categories:
+  - messaging
+binaries:
+  - basalt
+homepage: https://github.com/erikjuhani/basalt
+repo: https://github.com/erikjuhani/basalt

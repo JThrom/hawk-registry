@@ -1,0 +1,9 @@
+id: tuios
+name: TUIOS
+description: A TUI window manager for managing multiple terminal sessions
+categories:
+  - productivity
+binaries:
+  - tuios
+homepage: https://github.com/Gaurav-Gosain/tuios
+repo: https://github.com/Gaurav-Gosain/tuios

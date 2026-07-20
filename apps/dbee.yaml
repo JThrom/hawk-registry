@@ -1,0 +1,9 @@
+id: dbee
+name: dbee
+description: Fast & Minimalistic Database Browser
+categories:
+  - dev
+binaries:
+  - dbee
+homepage: https://github.com/murat-cileli/dbee
+repo: https://github.com/murat-cileli/dbee

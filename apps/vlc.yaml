@@ -1,0 +1,9 @@
+id: vlc
+name: vlc
+description: VLC includes an ncurses interface, `vlc --intf ncurses`
+categories:
+  - media
+binaries:
+  - vlc
+homepage: https://github.com/videolan/vlc
+repo: https://github.com/videolan/vlc

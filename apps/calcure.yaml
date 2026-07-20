@@ -1,0 +1,9 @@
+id: calcure
+name: calcure
+description: Modern TUI calendar and task manager with minimal and customizable UI.
+categories:
+  - productivity
+binaries:
+  - calcure
+homepage: https://github.com/anufrievroman/calcure
+repo: https://github.com/anufrievroman/calcure

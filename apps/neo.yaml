@@ -1,0 +1,9 @@
+id: neo
+name: neo
+description: Simulates the digital rain from "The Matrix"
+categories:
+  - screensavers
+binaries:
+  - neo
+homepage: https://github.com/st3w/neo
+repo: https://github.com/st3w/neo

@@ -1,0 +1,9 @@
+id: judo
+name: Judo
+description: A multi-database TUI for ToDo lists, using Rust + Ratatui + SQLite
+categories:
+  - productivity
+binaries:
+  - judo
+homepage: https://github.com/giacomopiccinini/judo
+repo: https://github.com/giacomopiccinini/judo

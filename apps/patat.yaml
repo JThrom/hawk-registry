@@ -1,0 +1,9 @@
+id: patat
+name: patat
+description: Terminal-based presentations using Pandoc
+categories:
+  - productivity
+binaries:
+  - patat
+homepage: https://github.com/jaspervdj/patat
+repo: https://github.com/jaspervdj/patat

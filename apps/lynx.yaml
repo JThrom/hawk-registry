@@ -1,0 +1,8 @@
+id: lynx
+name: LYNX
+description: A text based Terminal browser
+categories:
+  - web
+binaries:
+  - lynx
+homepage: https://lynx.invisible-island.net/

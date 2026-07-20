@@ -1,0 +1,9 @@
+id: wiremix
+name: wiremix
+description: TUI audio mixer for PipeWire similar to pavucontrol to adjust volumes, change input/output devices and their profiles
+categories:
+  - media
+binaries:
+  - wiremix
+homepage: https://github.com/tsowell/wiremix
+repo: https://github.com/tsowell/wiremix

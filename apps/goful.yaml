@@ -1,0 +1,9 @@
+id: goful
+name: goful
+description: a powerful TUI file manager written in Go.
+categories:
+  - files
+binaries:
+  - goful
+homepage: https://github.com/anmitsu/goful
+repo: https://github.com/anmitsu/goful

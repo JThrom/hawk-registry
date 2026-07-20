@@ -1,0 +1,9 @@
+id: pesterexplorer
+name: PesterExplorer
+description: A TUI to explore Pester results.
+categories:
+  - misc
+binaries:
+  - pesterexplorer
+homepage: https://github.com/HeyItsGilbert/PesterExplorer
+repo: https://github.com/HeyItsGilbert/PesterExplorer

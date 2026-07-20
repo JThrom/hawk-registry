@@ -1,0 +1,10 @@
+id: gpg-tui
+name: gpg-tui
+description: A terminal user interface for GnuPG
+categories:
+  - misc
+binaries:
+  - gpg-tui
+  - gpg
+homepage: https://github.com/orhun/gpg-tui
+repo: https://github.com/orhun/gpg-tui

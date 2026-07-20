@@ -1,0 +1,9 @@
+id: cute
+name: CuTE
+description: TUI to help build, execute and save curl commands, recursively download from remote sources, test your API endpoints, and mange your keys
+categories:
+  - dev
+binaries:
+  - cute
+homepage: https://github.com/PThorpe92/CuTE
+repo: https://github.com/PThorpe92/CuTE

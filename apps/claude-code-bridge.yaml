@@ -1,0 +1,10 @@
+id: claude-code-bridge
+name: Claude Code Bridge
+description: Real-time multi-AI collaboration between Claude, Codex and Gemini in terminal
+categories:
+  - dev
+binaries:
+  - claude-code-bridge
+  - claudecodebridge
+homepage: https://github.com/bfly123/claude_code_bridge
+repo: https://github.com/bfly123/claude_code_bridge

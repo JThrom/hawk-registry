@@ -1,0 +1,9 @@
+id: lazycontainer
+name: lazycontainer
+description: TUI for managing Apple containers
+categories:
+  - containers
+binaries:
+  - lazycontainer
+homepage: https://github.com/andreybleme/lazycontainer
+repo: https://github.com/andreybleme/lazycontainer

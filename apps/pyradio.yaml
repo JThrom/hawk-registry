@@ -1,0 +1,9 @@
+id: pyradio
+name: pyradio
+description: TUI web radio player with thousands of stations from around the world
+categories:
+  - media
+binaries:
+  - pyradio
+homepage: https://github.com/coderholic/pyradio
+repo: https://github.com/coderholic/pyradio

@@ -1,0 +1,9 @@
+id: tdash
+name: tdash
+description: A terminal dashboard with stats from Google Analytics, GitHub, Travis CI, and Jenkins. Very much built specific to me
+categories:
+  - dashboards
+binaries:
+  - tdash
+homepage: https://github.com/jessfraz/tdash
+repo: https://github.com/jessfraz/tdash

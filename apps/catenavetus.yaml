@@ -1,0 +1,9 @@
+id: catenavetus
+name: CatenaVetus
+description: A TUI for reading the Church Fathers
+categories:
+  - web
+binaries:
+  - catenavetus
+homepage: https://github.com/jimbob88/CatenaVetus
+repo: https://github.com/jimbob88/CatenaVetus

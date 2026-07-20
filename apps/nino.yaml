@@ -1,0 +1,9 @@
+id: nino
+name: nino
+description: A small terminal-based text editor written in C.
+categories:
+  - editors
+binaries:
+  - nino
+homepage: https://github.com/evanlin96069/nino
+repo: https://github.com/evanlin96069/nino

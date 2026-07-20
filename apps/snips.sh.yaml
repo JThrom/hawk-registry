@@ -1,0 +1,9 @@
+id: snips.sh
+name: snips.sh
+description: ✂️ passwordless, anonymous SSH-powered pastebin with a human-friendly TUI and web UI
+categories:
+  - dev
+binaries:
+  - snips.sh
+homepage: https://github.com/robherley/snips.sh
+repo: https://github.com/robherley/snips.sh

@@ -1,0 +1,9 @@
+id: nchess
+name: nchess
+description: Chess in the terminal, written in C.
+categories:
+  - games
+binaries:
+  - nchess
+homepage: https://github.com/billyvinning/nchess
+repo: https://github.com/billyvinning/nchess

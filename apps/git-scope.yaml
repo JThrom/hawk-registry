@@ -1,0 +1,9 @@
+id: git-scope
+name: git-scope
+description: Terminal UI dashboard for inspecting multiple local Git repositories.
+categories:
+  - dev
+binaries:
+  - git-scope
+homepage: https://github.com/Bharath-code/git-scope
+repo: https://github.com/Bharath-code/git-scope

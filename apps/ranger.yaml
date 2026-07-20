@@ -1,0 +1,9 @@
+id: ranger
+name: ranger
+description: A VIM-inspired file manager for the console.
+categories:
+  - files
+binaries:
+  - ranger
+homepage: https://github.com/ranger/ranger
+repo: https://github.com/ranger/ranger

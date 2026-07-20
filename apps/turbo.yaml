@@ -1,0 +1,9 @@
+id: turbo
+name: turbo
+description: An experimental text editor for the terminal, based on Scintilla and Turbo Vision
+categories:
+  - editors
+binaries:
+  - turbo
+homepage: https://github.com/magiblot/turbo
+repo: https://github.com/magiblot/turbo

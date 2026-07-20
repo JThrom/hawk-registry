@@ -1,0 +1,10 @@
+id: micro-tetris
+name: Micro Tetris
+description: One of the smallest Tetris implementations in the world, utilizing only ANSI escape sequences to draw the board.
+categories:
+  - games
+binaries:
+  - micro-tetris
+  - microtetris
+homepage: https://github.com/troglobit/tetris
+repo: https://github.com/troglobit/tetris

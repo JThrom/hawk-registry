@@ -1,0 +1,9 @@
+id: podliner
+name: podliner
+description: A cross-platform podcast client
+categories:
+  - web
+binaries:
+  - podliner
+homepage: https://github.com/timkicker/podliner
+repo: https://github.com/timkicker/podliner

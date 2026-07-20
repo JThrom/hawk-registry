@@ -1,0 +1,9 @@
+id: hydrofetch
+name: HydroFetch
+description: A fast, beautiful, and lightweight system information tool written exclusively for the Fish shell.
+categories:
+  - productivity
+binaries:
+  - hydrofetch
+homepage: https://github.com/Henriquehnnm/hydrofetch
+repo: https://github.com/Henriquehnnm/hydrofetch

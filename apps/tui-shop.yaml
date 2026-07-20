@@ -1,0 +1,9 @@
+id: tui-shop
+name: tui-shop
+description: Something between a CLI and a GUI way of downloading TUIs/CLIs
+categories:
+  - misc
+binaries:
+  - tui-shop
+homepage: https://github.com/Gcat101/tui-shop
+repo: https://github.com/Gcat101/tui-shop

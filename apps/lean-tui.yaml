@@ -1,0 +1,9 @@
+id: lean-tui
+name: lean-tui
+description: Interactive visualization of proofs and programs written in the Lean4 proof-assistant
+categories:
+  - dev
+binaries:
+  - lean-tui
+  - lean
+homepage: https://codeberg.org/wvhulle/lean-tui

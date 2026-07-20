@@ -1,0 +1,9 @@
+id: htui
+name: htui
+description: Heroku Terminal User Interface
+categories:
+  - dashboards
+binaries:
+  - htui
+homepage: https://github.com/PierreKieffer/htui
+repo: https://github.com/PierreKieffer/htui

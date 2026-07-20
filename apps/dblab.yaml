@@ -1,0 +1,9 @@
+id: dblab
+name: dblab
+description: The database client every command line junkie deserves
+categories:
+  - dev
+binaries:
+  - dblab
+homepage: https://github.com/danvergara/dblab
+repo: https://github.com/danvergara/dblab

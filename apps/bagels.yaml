@@ -1,0 +1,9 @@
+id: bagels
+name: Bagels
+description: TUI expense tracker
+categories:
+  - productivity
+binaries:
+  - bagels
+homepage: https://github.com/EnhancedJax/Bagels
+repo: https://github.com/EnhancedJax/Bagels

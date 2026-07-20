@@ -1,0 +1,9 @@
+id: unipac
+name: UniPac
+description: Unicode-powered Pac-Man for the terminal, written in Rust.
+categories:
+  - games
+binaries:
+  - unipac
+homepage: https://github.com/jesper-olsen/UniPac
+repo: https://github.com/jesper-olsen/UniPac

@@ -1,0 +1,9 @@
+id: gocheat
+name: gocheat
+description: A beautiful TUI cheatsheet for keybindings,hotkeys,gestures and aliases
+categories:
+  - productivity
+binaries:
+  - gocheat
+homepage: https://github.com/Achno/gocheat
+repo: https://github.com/Achno/gocheat

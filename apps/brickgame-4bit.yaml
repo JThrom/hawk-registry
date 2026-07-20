@@ -1,0 +1,9 @@
+id: brickgame-4bit
+name: brickgame-4bit
+description: Brick Game emulator (4-bit Holtek chip)
+categories:
+  - games
+binaries:
+  - brickgame-4bit
+homepage: https://github.com/ilyakurdyukov/brickgame-4bit
+repo: https://github.com/ilyakurdyukov/brickgame-4bit

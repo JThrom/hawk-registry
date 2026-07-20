@@ -1,0 +1,8 @@
+id: greed
+name: Greed
+description: A game of consumption. Eat as much as you can before munching yourself into a corner!
+categories:
+  - games
+binaries:
+  - greed
+homepage: https://gitlab.com/esr/greed

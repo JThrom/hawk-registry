@@ -1,0 +1,9 @@
+id: pream-team
+name: pream-team
+description: a TUI utility that helps you keep track of your teams GitHub PRs across multiple repositories
+categories:
+  - productivity
+binaries:
+  - pream-team
+homepage: https://github.com/nikoladucak/pream-team/
+repo: https://github.com/nikoladucak/pream-team/

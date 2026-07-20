@@ -1,0 +1,9 @@
+id: profanity
+name: Profanity
+description: XMPP (Jabber) client
+categories:
+  - messaging
+  - misc
+binaries:
+  - profanity
+homepage: https://profanity-im.github.io

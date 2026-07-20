@@ -1,0 +1,9 @@
+id: tufw
+name: tufw
+description: Terminal UI for ufw
+categories:
+  - dashboards
+binaries:
+  - tufw
+homepage: https://github.com/peltho/tufw
+repo: https://github.com/peltho/tufw

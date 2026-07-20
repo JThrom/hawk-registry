@@ -1,0 +1,9 @@
+id: argonaut
+name: Argonaut
+description: ArgoCD TUI
+categories:
+  - containers
+binaries:
+  - argonaut
+homepage: https://github.com/darksworm/argonaut
+repo: https://github.com/darksworm/argonaut

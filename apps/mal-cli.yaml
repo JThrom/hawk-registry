@@ -1,0 +1,10 @@
+id: mal-cli
+name: MAL-Cli
+description: A terminal interface for the official myanimelist api written in rust.
+categories:
+  - media
+binaries:
+  - mal-cli
+  - mal
+homepage: https://github.com/L4z3x/mal-tui
+repo: https://github.com/L4z3x/mal-tui

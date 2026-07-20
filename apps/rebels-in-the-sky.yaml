@@ -1,0 +1,10 @@
+id: rebels-in-the-sky
+name: Rebels in the sky
+description: P2P terminal game about spacepirates playing basketball across the galaxy.
+categories:
+  - games
+binaries:
+  - rebels-in-the-sky
+  - rebelsinthesky
+homepage: https://github.com/ricott1/rebels-in-the-sky
+repo: https://github.com/ricott1/rebels-in-the-sky

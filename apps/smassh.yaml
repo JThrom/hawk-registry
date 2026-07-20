@@ -1,0 +1,9 @@
+id: smassh
+name: smassh
+description: A TUI based typing test application inspired by MonkeyType.
+categories:
+  - misc
+binaries:
+  - smassh
+homepage: https://github.com/kraanzu/smassh
+repo: https://github.com/kraanzu/smassh

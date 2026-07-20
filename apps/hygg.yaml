@@ -1,0 +1,9 @@
+id: hygg
+name: hygg
+description: 📚 Simplifying the way you read. Minimalistic Vim-like TUI document reader.
+categories:
+  - productivity
+binaries:
+  - hygg
+homepage: https://github.com/kruserr/hygg
+repo: https://github.com/kruserr/hygg

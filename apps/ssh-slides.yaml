@@ -1,0 +1,9 @@
+id: ssh-slides
+name: ssh-slides
+description: Terminal-based presentations over SSH
+categories:
+  - productivity
+binaries:
+  - ssh-slides
+homepage: https://github.com/ivantsepp/ssh-slides
+repo: https://github.com/ivantsepp/ssh-slides

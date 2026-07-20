@@ -1,0 +1,9 @@
+id: rustnet
+name: rustnet
+description: A cross-platform network monitoring tool with deep packet inspection
+categories:
+  - dashboards
+binaries:
+  - rustnet
+homepage: https://github.com/domcyrus/rustnet
+repo: https://github.com/domcyrus/rustnet

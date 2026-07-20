@@ -1,0 +1,9 @@
+id: markln
+name: markln
+description: A terminal-based markdown editor built with Textual.
+categories:
+  - editors
+binaries:
+  - markln
+homepage: https://github.com/xqtr/markln
+repo: https://github.com/xqtr/markln

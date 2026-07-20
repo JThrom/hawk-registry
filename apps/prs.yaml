@@ -1,0 +1,9 @@
+id: prs
+name: prs
+description: Stay updated on PRs without leaving the terminal
+categories:
+  - dev
+binaries:
+  - prs
+homepage: https://github.com/dhth/prs
+repo: https://github.com/dhth/prs

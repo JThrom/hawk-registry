@@ -1,0 +1,8 @@
+id: proxymock
+name: proxymock
+description: A network recorder that shows API payloads in a TUI and automatically generates tests and mocks from what it observes.
+categories:
+  - dev
+binaries:
+  - proxymock
+homepage: https://proxymock.io

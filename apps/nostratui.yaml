@@ -1,0 +1,9 @@
+id: nostratui
+name: nostratui
+description: A terminal user interface (TUI) for browsing Nostr posts, written in Rust.
+categories:
+  - messaging
+binaries:
+  - nostratui
+homepage: https://github.com/adamm-xyz/nostratui
+repo: https://github.com/adamm-xyz/nostratui

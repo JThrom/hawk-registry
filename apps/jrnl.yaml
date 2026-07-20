@@ -1,0 +1,8 @@
+id: jrnl
+name: jrnl
+description: Collect your thoughts and notes without leaving the command line. human-friendly. future-proof. secure.
+categories:
+  - misc
+binaries:
+  - jrnl
+homepage: https://jrnl.sh/

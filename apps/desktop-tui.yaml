@@ -1,0 +1,10 @@
+id: desktop-tui
+name: Desktop-TUI
+description: A desktop environment without graphics
+categories:
+  - productivity
+binaries:
+  - desktop-tui
+  - desktop
+homepage: https://github.com/Julien-cpsn/desktop-tui
+repo: https://github.com/Julien-cpsn/desktop-tui

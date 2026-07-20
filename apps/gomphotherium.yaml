@@ -1,0 +1,9 @@
+id: gomphotherium
+name: Gomphotherium
+description: A command line Mastodon client.
+categories:
+  - messaging
+binaries:
+  - gomphotherium
+homepage: https://github.com/mrusme/gomphotherium
+repo: https://github.com/mrusme/gomphotherium

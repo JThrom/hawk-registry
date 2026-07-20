@@ -1,0 +1,9 @@
+id: c-edit
+name: C-Edit
+description: A text editor with drop down menus in the style of MS-DOS Editor
+categories:
+  - editors
+binaries:
+  - c-edit
+homepage: https://github.com/velorek1/c-edit
+repo: https://github.com/velorek1/c-edit

@@ -1,0 +1,9 @@
+id: sweeper
+name: sweeper
+description: Minesweeper game using curtsies
+categories:
+  - games
+binaries:
+  - sweeper
+homepage: https://github.com/igor47/sweeper
+repo: https://github.com/igor47/sweeper

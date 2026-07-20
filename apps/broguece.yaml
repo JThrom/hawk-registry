@@ -1,0 +1,9 @@
+id: broguece
+name: BrogueCE
+description: Beautiful roguelike dungeon crawler
+categories:
+  - games
+binaries:
+  - broguece
+homepage: https://github.com/tmewett/BrogueCE
+repo: https://github.com/tmewett/BrogueCE

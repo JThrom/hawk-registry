@@ -1,0 +1,9 @@
+id: crunchycleaner
+name: CrunchyCleaner
+description: A lightweight, software cache cleanup tool for Windows & Linux.
+categories:
+  - misc
+binaries:
+  - crunchycleaner
+homepage: https://github.com/knuspii/crunchycleaner
+repo: https://github.com/knuspii/crunchycleaner

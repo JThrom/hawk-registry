@@ -1,0 +1,9 @@
+id: micro
+name: micro
+description: A modern and intuitive terminal-based text editor
+categories:
+  - editors
+binaries:
+  - micro
+homepage: https://github.com/zyedidia/micro
+repo: https://github.com/zyedidia/micro

@@ -1,0 +1,9 @@
+id: sysz
+name: sysz
+description: An fzf terminal UI for systemctl
+categories:
+  - dashboards
+binaries:
+  - sysz
+homepage: https://github.com/joehillen/sysz
+repo: https://github.com/joehillen/sysz

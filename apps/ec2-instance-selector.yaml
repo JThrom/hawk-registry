@@ -1,0 +1,9 @@
+id: ec2-instance-selector
+name: ec2-instance-selector
+description: A CLI tool and go library which recommends instance types based on resource criteria like vcpus and memory
+categories:
+  - misc
+binaries:
+  - ec2-instance-selector
+homepage: https://github.com/aws/amazon-ec2-instance-selector
+repo: https://github.com/aws/amazon-ec2-instance-selector

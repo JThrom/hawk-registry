@@ -1,0 +1,9 @@
+id: slap
+name: slap
+description: Sublime-like terminal-based text editor
+categories:
+  - editors
+binaries:
+  - slap
+homepage: https://github.com/slap-editor/slap
+repo: https://github.com/slap-editor/slap

@@ -1,0 +1,9 @@
+id: id-spoofer
+name: ID-Spoofer
+description: A cross-platform cybersecurity toolkit for fingerprint and traffic obfuscation.
+categories:
+  - dashboards
+binaries:
+  - id-spoofer
+homepage: https://github.com/NubleX/ID-Spoofer
+repo: https://github.com/NubleX/ID-Spoofer

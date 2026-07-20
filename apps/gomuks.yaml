@@ -1,0 +1,9 @@
+id: gomuks
+name: gomuks
+description: Matrix client
+categories:
+  - messaging
+binaries:
+  - gomuks
+homepage: https://github.com/tulir/gomuks
+repo: https://github.com/tulir/gomuks

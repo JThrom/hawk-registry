@@ -1,0 +1,9 @@
+id: fubar
+name: fubar
+description: Formidable Unix Binary Arsenal & Repository. TUI built for gtfobins power users.
+categories:
+  - dashboards
+binaries:
+  - fubar
+homepage: https://github.com/irishmaestro/fubar
+repo: https://github.com/irishmaestro/fubar

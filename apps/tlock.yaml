@@ -1,0 +1,9 @@
+id: tlock
+name: tlock
+description: Two-Factor Authentication Tokens Manager in Terminal
+categories:
+  - misc
+binaries:
+  - tlock
+homepage: https://github.com/eklairs/tlock
+repo: https://github.com/eklairs/tlock

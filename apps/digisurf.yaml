@@ -1,0 +1,9 @@
+id: digisurf
+name: DigiSurf
+description: A TUI signal waveform viewer
+categories:
+  - misc
+binaries:
+  - digisurf
+homepage: https://github.com/SeanMcLoughlin/digisurf
+repo: https://github.com/SeanMcLoughlin/digisurf

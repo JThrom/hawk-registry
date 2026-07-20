@@ -1,0 +1,8 @@
+id: ntc
+name: ntc
+description: Ncurses Tabbed file Chooser.
+categories:
+  - files
+binaries:
+  - ntc
+homepage: https://codeberg.org/ItsZariep/ntc

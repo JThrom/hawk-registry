@@ -1,0 +1,9 @@
+id: tblogs
+name: tblogs
+description: Read and browse development blogs from your terminal
+categories:
+  - web
+binaries:
+  - tblogs
+homepage: https://github.com/ezeoleaf/tblogs
+repo: https://github.com/ezeoleaf/tblogs

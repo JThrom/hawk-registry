@@ -1,0 +1,8 @@
+id: moc
+name: moc
+description: console audio player
+categories:
+  - misc
+binaries:
+  - moc
+homepage: https://moc.daper.net/download

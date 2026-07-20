@@ -1,0 +1,9 @@
+id: gitv
+name: gitv
+description: ": A beautiful, feature-rich and performant terminal client for GitHub issues."
+categories:
+  - dev
+binaries:
+  - gitv
+homepage: https://github.com/jayanaxhf/gitv
+repo: https://github.com/jayanaxhf/gitv

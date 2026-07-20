@@ -1,0 +1,9 @@
+id: gping
+name: gping
+description: Ping, but with a graph
+categories:
+  - dashboards
+binaries:
+  - gping
+homepage: https://github.com/orf/gping
+repo: https://github.com/orf/gping

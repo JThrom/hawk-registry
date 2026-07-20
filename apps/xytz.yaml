@@ -1,0 +1,9 @@
+id: xytz
+name: xytz
+description: "- Beautiful TUI for downloading YouTube videos/playlists/channels."
+categories:
+  - media
+binaries:
+  - xytz
+homepage: https://github.com/xdagiz/xytz
+repo: https://github.com/xdagiz/xytz

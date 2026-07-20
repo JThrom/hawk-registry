@@ -1,0 +1,9 @@
+id: tuidict
+name: tuidict
+description: Fast offline dictionary with in-app downloads and multi-language support from FreeDict
+categories:
+  - productivity
+binaries:
+  - tuidict
+homepage: https://github.com/404Simon/tuidict
+repo: https://github.com/404Simon/tuidict

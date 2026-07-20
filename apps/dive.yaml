@@ -1,0 +1,9 @@
+id: dive
+name: dive
+description: A tool for exploring each layer in a docker image
+categories:
+  - containers
+binaries:
+  - dive
+homepage: https://github.com/wagoodman/dive
+repo: https://github.com/wagoodman/dive

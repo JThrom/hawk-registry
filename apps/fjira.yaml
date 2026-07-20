@@ -1,0 +1,9 @@
+id: fjira
+name: fjira
+description: TUI application for Atlassian Jira
+categories:
+  - productivity
+binaries:
+  - fjira
+homepage: https://github.com/mk-5/fjira
+repo: https://github.com/mk-5/fjira

@@ -1,0 +1,10 @@
+id: roku-cli
+name: roku-cli
+description: A command line TUI remote for Roku
+categories:
+  - media
+binaries:
+  - roku-cli
+  - roku
+homepage: https://github.com/winsbe01/roku-cli
+repo: https://github.com/winsbe01/roku-cli

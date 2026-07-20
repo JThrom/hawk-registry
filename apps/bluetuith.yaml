@@ -1,0 +1,9 @@
+id: bluetuith
+name: bluetuith
+description: A TUI-based bluetooth connection manager, which can interact with bluetooth adapters and devices.
+categories:
+  - misc
+binaries:
+  - bluetuith
+homepage: https://github.com/darkhz/bluetuith
+repo: https://github.com/darkhz/bluetuith

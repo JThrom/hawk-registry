@@ -1,0 +1,9 @@
+id: maze
+name: Maze
+description: Simple maze game written in Go.
+categories:
+  - games
+binaries:
+  - maze
+homepage: https://github.com/itchyny/maze
+repo: https://github.com/itchyny/maze

@@ -1,0 +1,9 @@
+id: blinkenlights
+name: blinkenlights
+description: TUI that may be used for debugging x86_64-linux or i8086 programs across platforms
+categories:
+  - dev
+binaries:
+  - blinkenlights
+homepage: https://github.com/jart/blink
+repo: https://github.com/jart/blink

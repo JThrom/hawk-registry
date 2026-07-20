@@ -1,0 +1,9 @@
+id: awkaster
+name: awkaster
+description: Pseudo-3D shooter written completely in gawk using raycasting technique
+categories:
+  - games
+binaries:
+  - awkaster
+homepage: https://github.com/TheMozg/awk-raycaster
+repo: https://github.com/TheMozg/awk-raycaster

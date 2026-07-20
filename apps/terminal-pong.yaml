@@ -1,0 +1,9 @@
+id: terminal-pong
+name: terminal-pong
+description: A simple, fun ping pong game playable entirely in your terminal.
+categories:
+  - games
+binaries:
+  - terminal-pong
+homepage: https://github.com/IshmamR/terminal.pong
+repo: https://github.com/IshmamR/terminal.pong

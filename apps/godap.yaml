@@ -1,0 +1,9 @@
+id: godap
+name: godap
+description: A complete TUI for LDAP written in Golang
+categories:
+  - misc
+binaries:
+  - godap
+homepage: https://github.com/Macmod/godap
+repo: https://github.com/Macmod/godap

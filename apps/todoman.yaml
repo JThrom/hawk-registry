@@ -1,0 +1,9 @@
+id: todoman
+name: todoman
+description: A simple, standards-based (ics, DAV), cli task-manager
+categories:
+  - productivity
+binaries:
+  - todoman
+homepage: https://github.com/pimutils/todoman
+repo: https://github.com/pimutils/todoman

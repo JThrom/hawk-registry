@@ -1,0 +1,8 @@
+id: cbonsai
+name: cbonsai
+description: A bonsai tree generator
+categories:
+  - games
+binaries:
+  - cbonsai
+homepage: https://gitlab.com/jallbrit/cbonsai

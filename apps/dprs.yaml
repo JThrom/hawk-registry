@@ -1,0 +1,9 @@
+id: dprs
+name: dprs
+description: A TUI for managing Docker containers with real-time monitoring and log streaming
+categories:
+  - containers
+binaries:
+  - dprs
+homepage: https://github.com/durableprogramming/dprs
+repo: https://github.com/durableprogramming/dprs

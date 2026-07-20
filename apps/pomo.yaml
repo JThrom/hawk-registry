@@ -1,0 +1,9 @@
+id: pomo
+name: pomo
+description: A minimal, customizable TUI Pomodoro timer with ASCII art, progress bar, desktop notifications, and productivity statistics.
+categories:
+  - productivity
+binaries:
+  - pomo
+homepage: https://github.com/Bahaaio/pomo
+repo: https://github.com/Bahaaio/pomo

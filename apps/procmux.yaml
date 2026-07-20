@@ -1,0 +1,9 @@
+id: procmux
+name: procmux
+description: "- a TUI for running multiple commands in parallel in easily switchable terminals"
+categories:
+  - productivity
+binaries:
+  - procmux
+homepage: https://github.com/napisani/procmux
+repo: https://github.com/napisani/procmux

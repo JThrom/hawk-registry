@@ -1,0 +1,9 @@
+id: sls-dev-tools
+name: sls-dev-tools
+description: Dev Tools for the Serverless World
+categories:
+  - dev
+binaries:
+  - sls-dev-tools
+homepage: https://github.com/Theodo-UK/sls-dev-tools
+repo: https://github.com/Theodo-UK/sls-dev-tools

@@ -1,0 +1,9 @@
+id: nyaa
+name: nyaa
+description: A nyaa.si TUI for browsing and downloading torrents
+categories:
+  - web
+binaries:
+  - nyaa
+homepage: https://github.com/Beastwick18/nyaa
+repo: https://github.com/Beastwick18/nyaa

@@ -1,0 +1,9 @@
+id: sshtron
+name: sshtron
+description: multiplayer lightcycle game that runs through SSH
+categories:
+  - games
+binaries:
+  - sshtron
+homepage: https://github.com/zachlatta/sshtron
+repo: https://github.com/zachlatta/sshtron

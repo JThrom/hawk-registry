@@ -1,0 +1,9 @@
+id: textual-web
+name: textual-web
+description: Run TUIs and terminals in your browser
+categories:
+  - web
+binaries:
+  - textual-web
+homepage: https://github.com/Textualize/textual-web
+repo: https://github.com/Textualize/textual-web

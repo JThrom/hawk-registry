@@ -1,0 +1,10 @@
+id: typing-game-cli
+name: typing-game-cli
+description: Command line game to practice your typing speed by competing against typer-robot or against your best result
+categories:
+  - games
+binaries:
+  - typing-game-cli
+  - typing-game
+homepage: https://github.com/akgondber/typing-game-cli
+repo: https://github.com/akgondber/typing-game-cli

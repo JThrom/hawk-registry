@@ -1,0 +1,10 @@
+id: systemd-manager-tui
+name: Systemd-manager-tui
+description: A program for managing systemd services through a TUI.
+categories:
+  - misc
+binaries:
+  - systemd-manager-tui
+  - systemd-manager
+homepage: https://github.com/matheus-git/systemd-manager-tui
+repo: https://github.com/matheus-git/systemd-manager-tui

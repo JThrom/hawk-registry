@@ -1,0 +1,8 @@
+id: ninvaders
+name: nInvaders
+description: Space Invaders
+categories:
+  - games
+binaries:
+  - ninvaders
+homepage: http://ninvaders.sourceforge.net/

@@ -1,0 +1,9 @@
+id: nless
+name: nless
+description: Terminal pager for exploring tabular data with vi keybindings and automatic delimiter inference
+categories:
+  - productivity
+binaries:
+  - nless
+homepage: https://github.com/mpryor/nothing-less
+repo: https://github.com/mpryor/nothing-less

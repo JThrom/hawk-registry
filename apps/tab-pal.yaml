@@ -1,0 +1,9 @@
+id: tab-pal
+name: tab-pal
+description: Add and edit custom colour palettes in Tableau from the command-line.
+categories:
+  - misc
+binaries:
+  - tab-pal
+homepage: https://github.com/ben-n93/tab-pal
+repo: https://github.com/ben-n93/tab-pal

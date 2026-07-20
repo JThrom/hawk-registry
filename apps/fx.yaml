@@ -1,0 +1,9 @@
+id: fx
+name: fx
+description: Terminal JSON viewer & processor
+categories:
+  - dev
+binaries:
+  - fx
+homepage: https://github.com/antonmedv/fx
+repo: https://github.com/antonmedv/fx

@@ -1,0 +1,9 @@
+id: newsboat
+name: newsboat
+description: An RSS/Atom feed reader for the text console
+categories:
+  - web
+binaries:
+  - newsboat
+homepage: https://github.com/newsboat/newsboat
+repo: https://github.com/newsboat/newsboat

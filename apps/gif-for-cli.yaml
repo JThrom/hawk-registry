@@ -1,0 +1,10 @@
+id: gif-for-cli
+name: gif-for-cli
+description: Convert a gif into ASCII
+categories:
+  - misc
+binaries:
+  - gif-for-cli
+  - gif-for
+homepage: https://github.com/google/gif-for-cli
+repo: https://github.com/google/gif-for-cli

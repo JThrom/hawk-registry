@@ -1,0 +1,9 @@
+id: hnjobs
+name: hnjobs
+description: Find your next job on Who's Hiring
+categories:
+  - productivity
+binaries:
+  - hnjobs
+homepage: https://github.com/mwinters0/hnjobs
+repo: https://github.com/mwinters0/hnjobs

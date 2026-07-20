@@ -1,0 +1,8 @@
+id: isw
+name: isw
+description: A simple terminal stopwatch application for pomodoro etc.
+categories:
+  - misc
+binaries:
+  - isw
+homepage: https://gitlab.com/thom-cameron/isw

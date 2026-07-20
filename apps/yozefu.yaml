@@ -1,0 +1,9 @@
+id: yozefu
+name: Yozefu
+description: A TUI for exploring data of a kafka cluster.
+categories:
+  - dashboards
+binaries:
+  - yozefu
+homepage: https://github.com/MAIF/yozefu
+repo: https://github.com/MAIF/yozefu

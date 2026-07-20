@@ -1,0 +1,9 @@
+id: asciimol
+name: asciiMol
+description: Curses based ASCII molecule viewer for linux terminals.
+categories:
+  - misc
+binaries:
+  - asciimol
+homepage: https://github.com/dewberryants/asciiMol
+repo: https://github.com/dewberryants/asciiMol

@@ -1,0 +1,8 @@
+id: chawan
+name: Chawan
+description: A TUI web (and (S)FTP, Gopher, Gemini) browser with CSS, inline image and JavaScript support.
+categories:
+  - web
+binaries:
+  - chawan
+homepage: https://chawan.net

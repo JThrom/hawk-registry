@@ -1,0 +1,10 @@
+id: slack-term
+name: Slack-term
+description: Slack client for your terminal
+categories:
+  - messaging
+binaries:
+  - slack-term
+  - slack
+homepage: https://github.com/erroneousboat/slack-term
+repo: https://github.com/erroneousboat/slack-term

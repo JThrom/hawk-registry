@@ -1,0 +1,9 @@
+id: nanocore
+name: NanoCore
+description: An 8-bit CPU emulator TUI written in Rust with an assembler and a custom ISA.
+categories:
+  - misc
+binaries:
+  - nanocore
+homepage: https://github.com/AfaanBilal/NanoCore
+repo: https://github.com/AfaanBilal/NanoCore

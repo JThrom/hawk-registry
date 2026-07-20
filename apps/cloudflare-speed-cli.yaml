@@ -1,0 +1,10 @@
+id: cloudflare-speed-cli
+name: cloudflare-speed-cli
+description: Internet speed test via Cloudflare
+categories:
+  - web
+binaries:
+  - cloudflare-speed-cli
+  - cloudflare-speed
+homepage: https://github.com/kavehtehrani/cloudflare-speed-cli
+repo: https://github.com/kavehtehrani/cloudflare-speed-cli

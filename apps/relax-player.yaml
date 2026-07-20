@@ -1,0 +1,9 @@
+id: relax-player
+name: Relax-player
+description: A lightweight, distraction-free alternative to web-based ambient players.
+categories:
+  - media
+binaries:
+  - relax-player
+homepage: https://github.com/ebithril/relax-player
+repo: https://github.com/ebithril/relax-player

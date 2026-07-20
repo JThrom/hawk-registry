@@ -1,0 +1,10 @@
+id: gurk-rs
+name: gurk-rs
+description: Signal Messenger client for terminal
+categories:
+  - messaging
+binaries:
+  - gurk-rs
+  - gurk
+homepage: https://github.com/boxdot/gurk-rs
+repo: https://github.com/boxdot/gurk-rs

@@ -1,0 +1,9 @@
+id: minesweeper_4d_rs
+name: minesweeper_4d_rs
+description: 4D minesweeper written in Rust using Ratatui (can also be used for classic minesweeper)
+categories:
+  - games
+binaries:
+  - minesweeper_4d_rs
+homepage: https://github.com/itabesamesa/minesweeper_4d_rs
+repo: https://github.com/itabesamesa/minesweeper_4d_rs

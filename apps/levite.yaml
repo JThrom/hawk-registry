@@ -1,0 +1,9 @@
+id: levite
+name: levite
+description: A TUI spreadsheet application that uses an RPN formulas and features a vi-friendly interface
+categories:
+  - productivity
+binaries:
+  - levite
+homepage: https://github.com/RauliL/levite
+repo: https://github.com/RauliL/levite

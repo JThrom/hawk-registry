@@ -1,0 +1,9 @@
+id: sonicradio
+name: sonicradio
+description: A stylish TUI radio player making use of Radio Browser API and Bubbletea.
+categories:
+  - media
+binaries:
+  - sonicradio
+homepage: https://github.com/dancnb/sonicradio
+repo: https://github.com/dancnb/sonicradio

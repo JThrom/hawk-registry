@@ -1,0 +1,10 @@
+id: tray-tui
+name: tray-tui
+description: System tray in your terminal
+categories:
+  - misc
+binaries:
+  - tray-tui
+  - tray
+homepage: https://github.com/Levizor/tray-tui
+repo: https://github.com/Levizor/tray-tui

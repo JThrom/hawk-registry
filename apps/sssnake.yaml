@@ -1,0 +1,9 @@
+id: sssnake
+name: sssnake
+description: The classic snake game for the terminal that can play itself and be used like a screensaver.
+categories:
+  - games
+binaries:
+  - sssnake
+homepage: https://github.com/AngelJumbo/sssnake
+repo: https://github.com/AngelJumbo/sssnake

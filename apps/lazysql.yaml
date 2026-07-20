@@ -1,0 +1,9 @@
+id: lazysql
+name: lazysql
+description: A cross-platform TUI database management tool written in Go.
+categories:
+  - dev
+binaries:
+  - lazysql
+homepage: https://github.com/jorgerojas26/lazysql
+repo: https://github.com/jorgerojas26/lazysql

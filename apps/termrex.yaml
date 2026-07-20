@@ -1,0 +1,9 @@
+id: termrex
+name: termrex
+description: A terminal-based endless runner game inspired by the Chrome Dino offline game.
+categories:
+  - games
+binaries:
+  - termrex
+homepage: https://github.com/SATYADAHAL/termrex
+repo: https://github.com/SATYADAHAL/termrex

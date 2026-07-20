@@ -1,0 +1,10 @@
+id: close-mongo-ops-manager
+name: Close Mongo Ops Manager
+description: Monitor and kill MongoDB operations
+categories:
+  - dev
+binaries:
+  - close-mongo-ops-manager
+  - closemongoopsmanager
+homepage: https://github.com/closeio/close-mongo-ops-manager
+repo: https://github.com/closeio/close-mongo-ops-manager

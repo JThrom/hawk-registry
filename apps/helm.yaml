@@ -1,0 +1,9 @@
+id: helm
+name: helm
+description: A minimalistic & customizable pomodoro-like timer for your terminal
+categories:
+  - productivity
+binaries:
+  - helm
+homepage: https://github.com/0xjuanma/helm
+repo: https://github.com/0xjuanma/helm

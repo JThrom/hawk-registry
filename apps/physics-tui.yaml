@@ -1,0 +1,10 @@
+id: physics-tui
+name: physics-TUI
+description: Physics TUI application for undergraduate study
+categories:
+  - misc
+binaries:
+  - physics-tui
+  - physics
+homepage: https://github.com/ClaudioRMalvino/physics_TUI
+repo: https://github.com/ClaudioRMalvino/physics_TUI

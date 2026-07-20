@@ -1,0 +1,9 @@
+id: toolui
+name: toolui
+description: Dotnet core application to manage installed nuget tools
+categories:
+  - dev
+binaries:
+  - toolui
+homepage: https://github.com/jinek/ToolUI
+repo: https://github.com/jinek/ToolUI

@@ -1,0 +1,9 @@
+id: tiki
+name: tiki
+description: Markdown-based git-versioned project and issue manager
+categories:
+  - productivity
+binaries:
+  - tiki
+homepage: https://github.com/boolean-maybe/tiki
+repo: https://github.com/boolean-maybe/tiki

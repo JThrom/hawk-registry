@@ -1,0 +1,9 @@
+id: twterm
+name: twterm
+description: A full-featured TUI Twitter client
+categories:
+  - web
+binaries:
+  - twterm
+homepage: https://github.com/ryota-ka/twterm
+repo: https://github.com/ryota-ka/twterm

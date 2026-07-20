@@ -1,0 +1,9 @@
+id: kilo
+name: kilo
+description: A minimal but complete editor in ~1000 lines of C code.
+categories:
+  - editors
+binaries:
+  - kilo
+homepage: https://github.com/antirez/kilo
+repo: https://github.com/antirez/kilo

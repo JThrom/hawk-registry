@@ -1,0 +1,9 @@
+id: tttui
+name: tttui
+description: A Monkeytype-inspired typing test that runs entirely in your terminal
+categories:
+  - misc
+binaries:
+  - tttui
+homepage: https://github.com/reidoboss/tttui
+repo: https://github.com/reidoboss/tttui

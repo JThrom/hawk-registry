@@ -1,0 +1,9 @@
+id: raijin
+name: Raijin
+description: A free, simple weather TUI that pulls data without the need for an API key, account, or subscription
+categories:
+  - dashboards
+binaries:
+  - raijin
+homepage: https://github.com/MasonStooksbury/Raijin
+repo: https://github.com/MasonStooksbury/Raijin

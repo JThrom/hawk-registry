@@ -1,0 +1,9 @@
+id: puffin
+name: Puffin
+description: A beautiful terminal dashboard for hledger
+categories:
+  - dashboards
+binaries:
+  - puffin
+homepage: https://github.com/siddhantac/puffin
+repo: https://github.com/siddhantac/puffin

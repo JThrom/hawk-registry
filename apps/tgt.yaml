@@ -1,0 +1,9 @@
+id: tgt
+name: tgt
+description: A TUI for Telegram written in Rust
+categories:
+  - messaging
+binaries:
+  - tgt
+homepage: https://github.com/FedericoBruzzone/tgt
+repo: https://github.com/FedericoBruzzone/tgt

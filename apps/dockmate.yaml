@@ -1,0 +1,9 @@
+id: dockmate
+name: DockMate
+description: A lightweight TUI manager for Docker and Podman
+categories:
+  - containers
+binaries:
+  - dockmate
+homepage: https://github.com/shubh-io/dockmate
+repo: https://github.com/shubh-io/dockmate

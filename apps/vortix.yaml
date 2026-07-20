@@ -1,0 +1,9 @@
+id: vortix
+name: vortix
+description: Terminal UI for WireGuard and OpenVPN with real-time telemetry, leak detection, and kill switch.
+categories:
+  - misc
+binaries:
+  - vortix
+homepage: https://github.com/Harry-kp/vortix
+repo: https://github.com/Harry-kp/vortix

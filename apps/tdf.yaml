@@ -1,0 +1,9 @@
+id: tdf
+name: tdf
+description: A tui-based PDF viewer
+categories:
+  - media
+binaries:
+  - tdf
+homepage: https://github.com/itsjunetime/tdf
+repo: https://github.com/itsjunetime/tdf

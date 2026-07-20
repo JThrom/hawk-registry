@@ -1,0 +1,9 @@
+id: termshark
+name: termshark
+description: Terminal UI for tshark
+categories:
+  - misc
+binaries:
+  - termshark
+homepage: https://github.com/gcla/termshark
+repo: https://github.com/gcla/termshark

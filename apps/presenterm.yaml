@@ -1,0 +1,9 @@
+id: presenterm
+name: presenterm
+description: A markdown terminal slideshow tool
+categories:
+  - productivity
+binaries:
+  - presenterm
+homepage: https://github.com/mfontanini/presenterm
+repo: https://github.com/mfontanini/presenterm

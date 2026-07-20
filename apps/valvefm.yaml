@@ -1,0 +1,9 @@
+id: valvefm
+name: valveFM
+description: Vintage FM radio TUI for streaming stations from radio-browser.info
+categories:
+  - media
+binaries:
+  - valvefm
+homepage: https://github.com/zorig/valvefm
+repo: https://github.com/zorig/valvefm

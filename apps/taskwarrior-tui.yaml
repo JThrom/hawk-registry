@@ -1,0 +1,9 @@
+id: taskwarrior-tui
+name: taskwarrior-tui
+description: A Terminal User Interface for Taskwarrior
+categories:
+  - productivity
+binaries:
+  - taskwarrior-tui
+homepage: https://github.com/kdheepak/taskwarrior-tui
+repo: https://github.com/kdheepak/taskwarrior-tui

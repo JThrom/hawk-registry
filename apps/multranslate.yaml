@@ -1,0 +1,9 @@
+id: multranslate
+name: multranslate
+description: A TUI for translating text in multiple translators simultaneously, with support for translation history and language detection
+categories:
+  - productivity
+binaries:
+  - multranslate
+homepage: https://github.com/Lifailon/multranslate
+repo: https://github.com/Lifailon/multranslate

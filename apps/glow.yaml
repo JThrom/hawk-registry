@@ -1,0 +1,9 @@
+id: glow
+name: Glow
+description: A markdown reader, designed from the ground up to showcase the elegance and capabilities of TUI.
+categories:
+  - productivity
+binaries:
+  - glow
+homepage: https://github.com/charmbracelet/glow
+repo: https://github.com/charmbracelet/glow

@@ -1,0 +1,9 @@
+id: mqttui
+name: mqttui
+description: MQTT Client written in rust
+categories:
+  - misc
+binaries:
+  - mqttui
+homepage: https://github.com/EdJoPaTo/mqttui
+repo: https://github.com/EdJoPaTo/mqttui

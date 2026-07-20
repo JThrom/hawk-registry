@@ -1,0 +1,9 @@
+id: sup
+name: sup
+description: A curses threads-with-tags style email client
+categories:
+  - messaging
+binaries:
+  - sup
+homepage: https://github.com/sup-heliotrope/sup
+repo: https://github.com/sup-heliotrope/sup

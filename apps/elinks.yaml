@@ -1,0 +1,9 @@
+id: elinks
+name: elinks
+description: ELinks (HTTP/FTP/..) brower with mujs javascript support.
+categories:
+  - web
+binaries:
+  - elinks
+homepage: https://github.com/rkd77/elinks
+repo: https://github.com/rkd77/elinks

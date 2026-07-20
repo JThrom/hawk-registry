@@ -1,0 +1,9 @@
+id: fresh
+name: Fresh
+description: An easy-to-use, powerful and fast terminal-based text editor.
+categories:
+  - editors
+binaries:
+  - fresh
+homepage: https://github.com/sinelaw/fresh
+repo: https://github.com/sinelaw/fresh

@@ -1,0 +1,9 @@
+id: elia
+name: elia
+description: A terminal ChatGPT client build with Textual
+categories:
+  - productivity
+binaries:
+  - elia
+homepage: https://github.com/darrenburns/elia
+repo: https://github.com/darrenburns/elia

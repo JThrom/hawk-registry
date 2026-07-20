@@ -1,0 +1,9 @@
+id: grv
+name: grv
+description: Terminal interface for viewing git repositories
+categories:
+  - dev
+binaries:
+  - grv
+homepage: https://github.com/rgburke/grv
+repo: https://github.com/rgburke/grv

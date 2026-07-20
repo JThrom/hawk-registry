@@ -1,0 +1,10 @@
+id: podman-tui
+name: Podman-tui
+description: TUI for Podman containers
+categories:
+  - containers
+binaries:
+  - podman-tui
+  - podman
+homepage: https://github.com/containers/podman-tui
+repo: https://github.com/containers/podman-tui

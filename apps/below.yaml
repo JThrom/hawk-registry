@@ -1,0 +1,9 @@
+id: below
+name: below
+description: A time traveling resource monitor for modern Linux systems
+categories:
+  - dashboards
+binaries:
+  - below
+homepage: https://github.com/facebookincubator/below
+repo: https://github.com/facebookincubator/below

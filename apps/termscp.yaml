@@ -1,0 +1,9 @@
+id: termscp
+name: termscp
+description: A TUI file transfer and explorer, with support for SCP/SFTP/FTP/S3.
+categories:
+  - productivity
+binaries:
+  - termscp
+homepage: https://github.com/veeso/termscp
+repo: https://github.com/veeso/termscp

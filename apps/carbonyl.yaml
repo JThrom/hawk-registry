@@ -1,0 +1,9 @@
+id: carbonyl
+name: carbonyl
+description: Chromium running inside your terminal
+categories:
+  - web
+binaries:
+  - carbonyl
+homepage: https://github.com/fathyb/carbonyl
+repo: https://github.com/fathyb/carbonyl

@@ -1,0 +1,9 @@
+id: kew
+name: kew
+description: A terminal music player for Linux
+categories:
+  - media
+binaries:
+  - kew
+homepage: https://github.com/ravachol/kew
+repo: https://github.com/ravachol/kew

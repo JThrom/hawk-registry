@@ -1,0 +1,9 @@
+id: wifui
+name: WifUI
+description: TUI for managing Wi-Fi connections on Windows natively (Rust)
+categories:
+  - misc
+binaries:
+  - wifui
+homepage: https://github.com/sohamw03/wifui
+repo: https://github.com/sohamw03/wifui

@@ -1,0 +1,9 @@
+id: sfm
+name: sfm
+description: Simple file manager.
+categories:
+  - files
+binaries:
+  - sfm
+homepage: https://github.com/afify/sfm
+repo: https://github.com/afify/sfm

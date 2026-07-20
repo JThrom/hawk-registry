@@ -1,0 +1,9 @@
+id: sot
+name: sot
+description: A top like system observability tool written in python
+categories:
+  - dev
+binaries:
+  - sot
+homepage: https://github.com/anistark/sot
+repo: https://github.com/anistark/sot

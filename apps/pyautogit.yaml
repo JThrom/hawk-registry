@@ -1,0 +1,9 @@
+id: pyautogit
+name: pyautogit
+description: A terminal UI for managing git repositories, written using py_cui
+categories:
+  - dev
+binaries:
+  - pyautogit
+homepage: https://github.com/jwlodek/pyautogit
+repo: https://github.com/jwlodek/pyautogit

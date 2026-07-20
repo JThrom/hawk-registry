@@ -1,0 +1,9 @@
+id: vctui
+name: vctui
+description: Console interface for vCenter
+categories:
+  - dev
+binaries:
+  - vctui
+homepage: https://github.com/thebsdbox/vctui
+repo: https://github.com/thebsdbox/vctui

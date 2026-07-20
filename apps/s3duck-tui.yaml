@@ -1,0 +1,10 @@
+id: s3duck-tui
+name: s3duck-tui
+description: A TUI S3 client.
+categories:
+  - files
+binaries:
+  - s3duck-tui
+  - s3duck
+homepage: https://github.com/nexusriot/s3duck-tui
+repo: https://github.com/nexusriot/s3duck-tui

@@ -1,0 +1,9 @@
+id: television
+name: television
+description: A fast and versatile fuzzy finder TUI
+categories:
+  - productivity
+binaries:
+  - television
+homepage: https://github.com/alexpasmantier/television
+repo: https://github.com/alexpasmantier/television

@@ -1,0 +1,9 @@
+id: trophy
+name: Trophy
+description: A TUI 3D Model Viewer for OBJ and GLB files
+categories:
+  - media
+binaries:
+  - trophy
+homepage: https://github.com/taigrr/trophy
+repo: https://github.com/taigrr/trophy

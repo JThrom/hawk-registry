@@ -1,0 +1,9 @@
+id: moon-buggy
+name: moon-buggy
+description: Drive some car across the moon
+categories:
+  - games
+binaries:
+  - moon-buggy
+homepage: https://github.com/seehuhn/moon-buggy
+repo: https://github.com/seehuhn/moon-buggy

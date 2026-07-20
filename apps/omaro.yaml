@@ -1,0 +1,9 @@
+id: omaro
+name: omaro
+description: TUI to browse posts and comments on lobste.rs
+categories:
+  - web
+binaries:
+  - omaro
+homepage: https://github.com/Rolv-Apneseth/omaro
+repo: https://github.com/Rolv-Apneseth/omaro

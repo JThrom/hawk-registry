@@ -1,0 +1,9 @@
+id: crush
+name: crush
+description: The glamourous AI coding agent
+categories:
+  - dev
+binaries:
+  - crush
+homepage: https://github.com/charmbracelet/crush
+repo: https://github.com/charmbracelet/crush

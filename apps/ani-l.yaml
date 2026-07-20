@@ -1,0 +1,9 @@
+id: ani-l
+name: ani-l
+description: Rust-based anime browsing and streaming all without leaving the terminal
+categories:
+  - media
+binaries:
+  - ani-l
+homepage: https://github.com/komposer-aml/ani-l
+repo: https://github.com/komposer-aml/ani-l

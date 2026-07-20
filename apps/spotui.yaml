@@ -1,0 +1,9 @@
+id: spotui
+name: spotui
+description: Spotify client written in Python
+categories:
+  - media
+binaries:
+  - spotui
+homepage: https://github.com/ceuk/spotui
+repo: https://github.com/ceuk/spotui

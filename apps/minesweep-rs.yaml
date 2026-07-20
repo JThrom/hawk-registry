@@ -1,0 +1,10 @@
+id: minesweep-rs
+name: minesweep-rs
+description: A mine sweeping game written in Rust using tui-rs.
+categories:
+  - games
+binaries:
+  - minesweep-rs
+  - minesweep
+homepage: https://github.com/cpcloud/minesweep-rs
+repo: https://github.com/cpcloud/minesweep-rs

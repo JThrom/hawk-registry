@@ -1,0 +1,9 @@
+id: posting
+name: posting
+description: A powerful HTTP client that lives in your terminal
+categories:
+  - dev
+binaries:
+  - posting
+homepage: https://github.com/darrenburns/posting
+repo: https://github.com/darrenburns/posting

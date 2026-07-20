@@ -1,0 +1,9 @@
+id: managarr
+name: managarr
+description: A TUI and CLI for managing your \*arr servers
+categories:
+  - media
+binaries:
+  - managarr
+homepage: https://github.com/Dark-Alex-17/managarr
+repo: https://github.com/Dark-Alex-17/managarr

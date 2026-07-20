@@ -1,0 +1,9 @@
+id: tortuise
+name: tortuise
+description: Gaussian Splatting 3D viewer in your terminal. 6 render modes, CPU-only via crossterm + rayon
+categories:
+  - media
+binaries:
+  - tortuise
+homepage: https://github.com/buildoak/tortuise
+repo: https://github.com/buildoak/tortuise

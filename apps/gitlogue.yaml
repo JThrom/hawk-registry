@@ -1,0 +1,9 @@
+id: gitlogue
+name: gitlogue
+description: A TUI screensaver that visualizes Git commit history in your terminal
+categories:
+  - screensavers
+binaries:
+  - gitlogue
+homepage: https://github.com/unhappychoice/gitlogue
+repo: https://github.com/unhappychoice/gitlogue

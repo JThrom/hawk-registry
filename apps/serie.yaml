@@ -1,0 +1,9 @@
+id: serie
+name: serie
+description: A rich git commit graph
+categories:
+  - dev
+binaries:
+  - serie
+homepage: https://github.com/lusingander/serie
+repo: https://github.com/lusingander/serie

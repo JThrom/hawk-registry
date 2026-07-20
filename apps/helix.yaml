@@ -1,0 +1,8 @@
+id: helix
+name: helix
+description: A post-modern text editor.
+categories:
+  - editors
+binaries:
+  - hx
+homepage: https://helix-editor.com/

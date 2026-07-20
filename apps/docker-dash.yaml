@@ -1,0 +1,9 @@
+id: docker-dash
+name: docker-dash
+description: A full TUI managemnet tool for Docker
+categories:
+  - containers
+binaries:
+  - docker-dash
+homepage: https://github.com/GustavoCaso/docker-dash
+repo: https://github.com/GustavoCaso/docker-dash

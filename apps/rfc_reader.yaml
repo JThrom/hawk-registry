@@ -1,0 +1,9 @@
+id: rfc_reader
+name: rfc_reader
+description: A tool to read RFCs (Request for Comments) with a TUI, allowing you to fetch, cache, and browse RFC documents.
+categories:
+  - web
+binaries:
+  - rfc_reader
+homepage: https://github.com/ozan2003/rfc_reader
+repo: https://github.com/ozan2003/rfc_reader

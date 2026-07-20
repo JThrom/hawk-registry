@@ -1,0 +1,9 @@
+id: visidata
+name: Visidata
+description: A terminal spreadsheet multitool for discovering and arranging data
+categories:
+  - productivity
+binaries:
+  - visidata
+homepage: https://github.com/saulpw/visidata
+repo: https://github.com/saulpw/visidata

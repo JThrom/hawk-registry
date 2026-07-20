@@ -1,0 +1,10 @@
+id: nap
+name: nap
+description: Code snippets in your terminal
+categories:
+  - dev
+  - media
+binaries:
+  - nap
+homepage: https://github.com/maaslalani/nap
+repo: https://github.com/maaslalani/nap

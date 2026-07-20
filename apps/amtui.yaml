@@ -1,0 +1,9 @@
+id: amtui
+name: amtui
+description: Alertmanager TUI - Your Terminal Companion for Alertmanager
+categories:
+  - dev
+binaries:
+  - amtui
+homepage: https://github.com/pehlicd/amtui/
+repo: https://github.com/pehlicd/amtui/

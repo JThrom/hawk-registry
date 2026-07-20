@@ -1,0 +1,9 @@
+id: play
+name: play
+description: A TUI playground to experiment with your favorite programs, such as grep, sed, awk, jq and yq
+categories:
+  - dev
+binaries:
+  - play
+homepage: https://github.com/paololazzari/play
+repo: https://github.com/paololazzari/play

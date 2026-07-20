@@ -1,0 +1,9 @@
+id: awsui
+name: awsui
+description: A powerful, user-friendly terminal interface for AWS Profile and SSO management.
+categories:
+  - productivity
+binaries:
+  - awsui
+homepage: https://github.com/junminhong/awsui
+repo: https://github.com/junminhong/awsui

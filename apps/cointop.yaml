@@ -1,0 +1,9 @@
+id: cointop
+name: cointop
+description: The fastest and most interactive terminal based UI application for tracking cryptocurrencies
+categories:
+  - dashboards
+binaries:
+  - cointop
+homepage: https://github.com/miguelmota/cointop
+repo: https://github.com/miguelmota/cointop

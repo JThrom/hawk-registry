@@ -1,0 +1,9 @@
+id: go-life
+name: go-life
+description: Terminal based Conway's Game of Life
+categories:
+  - games
+binaries:
+  - go-life
+homepage: https://github.com/sachaos/go-life
+repo: https://github.com/sachaos/go-life

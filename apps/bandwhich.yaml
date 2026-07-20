@@ -1,0 +1,9 @@
+id: bandwhich
+name: bandwhich
+description: Terminal bandwidth utilization tool
+categories:
+  - dashboards
+binaries:
+  - bandwhich
+homepage: https://github.com/imsnif/bandwhich
+repo: https://github.com/imsnif/bandwhich

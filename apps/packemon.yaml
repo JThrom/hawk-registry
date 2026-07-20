@@ -1,0 +1,9 @@
+id: packemon
+name: packemon
+description: Packet generator and monitor.
+categories:
+  - misc
+binaries:
+  - packemon
+homepage: https://github.com/ddddddO/packemon
+repo: https://github.com/ddddddO/packemon

@@ -1,0 +1,9 @@
+id: differ
+name: differ
+description: A TUI git diff viewer
+categories:
+  - dev
+binaries:
+  - differ
+homepage: https://github.com/JanSmrcka/differ
+repo: https://github.com/JanSmrcka/differ

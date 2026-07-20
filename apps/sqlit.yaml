@@ -1,0 +1,9 @@
+id: sqlit
+name: sqlit
+description: A lightweight TUI for SQL databases inspired by lazygit
+categories:
+  - dev
+binaries:
+  - sqlit
+homepage: https://github.com/Maxteabag/sqlit
+repo: https://github.com/Maxteabag/sqlit

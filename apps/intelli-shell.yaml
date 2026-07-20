@@ -1,0 +1,9 @@
+id: intelli-shell
+name: intelli-shell
+description: "- Manage command templates/snippets with dynamic completions and AI integration"
+categories:
+  - productivity
+binaries:
+  - intelli-shell
+homepage: https://github.com/lasantosr/intelli-shell
+repo: https://github.com/lasantosr/intelli-shell

@@ -1,0 +1,9 @@
+id: favicon-editor
+name: favicon-editor
+description: Spartan grayscale favicon editor
+categories:
+  - media
+binaries:
+  - favicon-editor
+homepage: https://github.com/xyproto/favicon-editor
+repo: https://github.com/xyproto/favicon-editor

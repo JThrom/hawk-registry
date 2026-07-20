@@ -1,0 +1,9 @@
+id: csope
+name: csope
+description: C source code browser based on cscope
+categories:
+  - dev
+binaries:
+  - csope
+homepage: https://github.com/agvxov/csope
+repo: https://github.com/agvxov/csope

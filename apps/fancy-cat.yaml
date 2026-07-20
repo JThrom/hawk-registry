@@ -1,0 +1,9 @@
+id: fancy-cat
+name: fancy-cat
+description: A Lightweight terminal-based PDF reader with Vim keybindings
+categories:
+  - media
+binaries:
+  - fancy-cat
+homepage: https://github.com/freref/fancy-cat
+repo: https://github.com/freref/fancy-cat

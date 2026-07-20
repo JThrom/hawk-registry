@@ -1,0 +1,9 @@
+id: pug
+name: pug
+description: terraform and tofu module and infrastructure management.
+categories:
+  - misc
+binaries:
+  - pug
+homepage: https://github.com/leg100/pug
+repo: https://github.com/leg100/pug

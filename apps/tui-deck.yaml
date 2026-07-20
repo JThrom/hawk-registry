@@ -1,0 +1,9 @@
+id: tui-deck
+name: tui-deck
+description: A TUI frontend for Nextcloud Deck app written in GO
+categories:
+  - productivity
+binaries:
+  - tui-deck
+homepage: https://github.com/mebitek/tui-deck
+repo: https://github.com/mebitek/tui-deck

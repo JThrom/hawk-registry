@@ -1,0 +1,9 @@
+id: thokr
+name: thokr
+description: a sleek typing tui written in rust
+categories:
+  - misc
+binaries:
+  - thokr
+homepage: https://github.com/coloradocolby/thokr
+repo: https://github.com/coloradocolby/thokr

@@ -1,0 +1,9 @@
+id: talos-pilot
+name: talos-pilot
+description: TUI for Talos Linux providing real-time node monitoring, log streaming, and various diagnostics
+categories:
+  - containers
+binaries:
+  - talos-pilot
+homepage: https://github.com/handfish/talos-pilot
+repo: https://github.com/handfish/talos-pilot

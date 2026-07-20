@@ -1,0 +1,8 @@
+id: terminal-phase
+name: terminal-phase
+description: Space shooter game that runs in your terminal!
+categories:
+  - games
+binaries:
+  - terminal-phase
+homepage: https://gitlab.com/dustyweb/terminal-phase

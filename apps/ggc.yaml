@@ -1,0 +1,9 @@
+id: ggc
+name: ggc
+description: A terminal-based Git CLI tool written in Go
+categories:
+  - dev
+binaries:
+  - ggc
+homepage: https://github.com/bmf-san/ggc
+repo: https://github.com/bmf-san/ggc

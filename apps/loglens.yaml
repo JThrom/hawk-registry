@@ -1,0 +1,9 @@
+id: loglens
+name: LogLens
+description: "- A structured log viewer and query engine for the terminal."
+categories:
+  - dev
+binaries:
+  - loglens
+homepage: https://github.com/Caelrith/loglens-core
+repo: https://github.com/Caelrith/loglens-core

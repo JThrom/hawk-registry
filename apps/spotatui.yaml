@@ -1,0 +1,9 @@
+id: spotatui
+name: spotatui
+description: Spotify client with native streaming, synced lyrics, and real-time audio visualization
+categories:
+  - media
+binaries:
+  - spotatui
+homepage: https://github.com/LargeModGames/spotatui
+repo: https://github.com/LargeModGames/spotatui

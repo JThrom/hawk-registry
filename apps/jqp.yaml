@@ -1,0 +1,9 @@
+id: jqp
+name: jqp
+description: A TUI playground to experiment with jq
+categories:
+  - dev
+binaries:
+  - jqp
+homepage: https://github.com/noahgorstein/jqp
+repo: https://github.com/noahgorstein/jqp

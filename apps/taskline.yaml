@@ -1,0 +1,9 @@
+id: taskline
+name: taskline
+description: Tasks, boards & notes for the command-line habitat
+categories:
+  - productivity
+binaries:
+  - taskline
+homepage: https://github.com/perryrh0dan/taskline
+repo: https://github.com/perryrh0dan/taskline

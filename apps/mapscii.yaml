@@ -1,0 +1,9 @@
+id: mapscii
+name: mapscii
+description: Braille & ASCII world map renderer for your console
+categories:
+  - misc
+binaries:
+  - mapscii
+homepage: https://github.com/rastapasta/mapscii
+repo: https://github.com/rastapasta/mapscii

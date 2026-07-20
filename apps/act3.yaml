@@ -1,0 +1,9 @@
+id: act3
+name: act3
+description: Glance at the last 3 runs of your Github Actions
+categories:
+  - dev
+binaries:
+  - act3
+homepage: https://github.com/dhth/act3
+repo: https://github.com/dhth/act3

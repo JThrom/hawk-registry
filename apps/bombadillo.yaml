@@ -1,0 +1,8 @@
+id: bombadillo
+name: bombadillo
+description: "A TUI browser for the non-web: Gopher, Gemini, Finger"
+categories:
+  - web
+binaries:
+  - bombadillo
+homepage: https://bombadillo.colorfield.space/
