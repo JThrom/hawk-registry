@@ -21,7 +21,7 @@ tags:
 install:
   npm: npm install -g @seemseam/ccb
 packages:
-  npm: ""
+  npm: ccb
 installNotes: |-
   ## How to Install
 

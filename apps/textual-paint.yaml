@@ -11,11 +11,9 @@ language: Go
 tags:
   - paint
 install:
-  pip: pip install --upgrade
   pacman: pacman -S python-pipx
   pipx: pipx install textual-paint
 packages:
-  pip: --upgrade
   pacman: python-pipx
   pipx: textual-paint
 installNotes: |-
@@ -32,3 +30,8 @@ installNotes: |-
   pip install textual-paint
   ```
 readmeUrl: https://raw.githubusercontent.com/1j01/textual-paint/HEAD/README.md
+launch:
+  args:
+    - name: filename
+      required: false
+      placeholder: filename

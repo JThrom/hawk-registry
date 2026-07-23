@@ -10,10 +10,6 @@ repo: https://github.com/zaphar/sheetsui
 language: Rust
 tags:
   - spreadsheet
-install:
-  cargo: cargo install --git
-packages:
-  cargo: --git
 installNotes: |-
   ## Installing
 
@@ -29,3 +25,8 @@ installNotes: |-
   cargo install --git https://github.com/zaphar/sheetsui --locked
   ```
 readmeUrl: https://raw.githubusercontent.com/zaphar/sheetsui/HEAD/README.md
+launch:
+  args:
+    - name: workbook
+      required: true
+      placeholder: WORKBOOK

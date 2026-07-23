@@ -11,10 +11,10 @@ language: Rust
 tags:
   - dynamodb
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked ddv
   brew: brew install lusingander/tap/ddv
 packages:
-  cargo: --locked
+  cargo: ddv
   brew: ddv
 installNotes: |-
   ## Installation

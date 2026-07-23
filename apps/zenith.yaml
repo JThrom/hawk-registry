@@ -17,12 +17,10 @@ install:
   apt: apt install curl
   pacman: pacman -S zenith
   brew: brew install zenith
-  cargo: cargo install --git
 packages:
   apt: curl
   pacman: zenith
   brew: zenith
-  cargo: --git
 installNotes: |-
   ## Installation
 

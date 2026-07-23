@@ -21,11 +21,9 @@ tags:
   - viewing
   - filtering
 install:
-  apt: apt install -y
   brew: brew install lazyjournal
   go: go install github.com/Lifailon/lazyjournal@latest
 packages:
-  apt: -y
   brew: lazyjournal
   go: lazyjournal
 installNotes: |-

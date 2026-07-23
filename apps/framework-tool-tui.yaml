@@ -20,11 +20,9 @@ tags:
   - built
   - rust
 install:
-  cargo: cargo install --path
   pacman: pacman -S framework-tool-tui
   brew: brew install framework-tool-tui
 packages:
-  cargo: --path
   pacman: framework-tool-tui
   brew: framework-tool-tui
 installNotes: |-

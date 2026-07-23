@@ -14,12 +14,12 @@ tags:
   - vulnerabilities
   - cves
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked flawz
   apt: apt install libsqlite3-dev
   pacman: pacman -S flawz
   brew: brew install flawz
 packages:
-  cargo: --locked
+  cargo: flawz
   apt: libsqlite3-dev
   pacman: flawz
   brew: flawz

@@ -10,10 +10,6 @@ repo: https://github.com/haskellcamargo/sclack
 language: Go
 tags:
   - slack
-install:
-  pip: pip3 install -r
-packages:
-  pip: -r
 installNotes: |-
   ## Installation
 

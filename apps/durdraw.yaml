@@ -13,10 +13,6 @@ tags:
   - unicode
   - ansi
   - editor
-install:
-  pip: pip install --upgrade
-packages:
-  pip: --upgrade
 installNotes: |-
   ## Installation
 

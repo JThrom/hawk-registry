@@ -14,10 +14,10 @@ tags:
   - agent
 install:
   npm: npm install -g @openai/codex
-  brew: brew install --cask
+  brew: brew install --cask codex
 packages:
-  npm: ""
-  brew: --cask
+  npm: codex
+  brew: codex
 installNotes: |-
   ### Installing and running Codex CLI
 

@@ -13,9 +13,9 @@ tags:
   - cloud
   - amazon
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked stu
 packages:
-  cargo: --locked
+  cargo: stu
 installNotes: |-
   ## Installation
 

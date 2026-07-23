@@ -13,10 +13,6 @@ tags:
   - editor
   - built
   - textual
-install:
-  pip: pip install -r
-packages:
-  pip: -r
 installNotes: |-
   ### INSTALLATION
 

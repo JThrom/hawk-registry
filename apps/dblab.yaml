@@ -15,9 +15,9 @@ tags:
   - junkie
   - deserves
 install:
-  brew: brew install --cask
+  brew: brew install --cask danvergara/tools/dblab
 packages:
-  brew: --cask
+  brew: dblab
 installNotes: |-
   ## Installation
 

@@ -20,10 +20,10 @@ tags:
   - productivity
   - statistics
 install:
-  brew: brew install --cask
+  brew: brew install --cask bahaaio/pomo/pomo
   go: go install github.com/Bahaaio/pomo@latest
 packages:
-  brew: --cask
+  brew: pomo
   go: pomo
 installNotes: |-
   ## Installation

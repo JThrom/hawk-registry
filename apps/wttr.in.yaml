@@ -11,10 +11,6 @@ tags:
   - right
   - check
   - weather
-install:
-  apt: apt-get install -y
-packages:
-  apt: -y
 installNotes: |-
   ## Installation
 

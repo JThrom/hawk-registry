@@ -16,11 +16,9 @@ tags:
 install:
   brew: brew install fresh-editor
   npm: npm install -g @fresh-editor/fresh-editor
-  cargo: cargo install cargo-binstall
 packages:
   brew: fresh-editor
-  npm: ""
-  cargo: cargo-binstall
+  npm: fresh-editor
 installNotes: |-
   ## Installation
 

@@ -14,12 +14,10 @@ tags:
 install:
   pacman: pacman -S mpv
   apt: apt install mpv
-  cargo: cargo install --path
   brew: brew install mpv
 packages:
   pacman: mpv
   apt: mpv
-  cargo: --path
   brew: mpv
 installNotes: |-
   ## Installation

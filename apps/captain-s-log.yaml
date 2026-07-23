@@ -12,10 +12,8 @@ tags:
   - small
   - journaling
 install:
-  apt: apt-get install -y
   brew: brew install boost
 packages:
-  apt: -y
   brew: boost
 installNotes: |-
   ## Building & Installing

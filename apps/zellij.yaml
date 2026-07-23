@@ -13,9 +13,9 @@ tags:
   - batteries
   - included
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked zellij
 packages:
-  cargo: --locked
+  cargo: zellij
 installNotes: |-
   ## How do I install it?
 

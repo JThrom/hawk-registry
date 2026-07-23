@@ -13,10 +13,10 @@ tags:
   - signal
   - messenger
 install:
-  cargo: cargo install --git
+  cargo: cargo install --git https://github.com/boxdot/gurk-rs gurk
   pacman: pacman -S gurk
 packages:
-  cargo: --git
+  cargo: gurk
   pacman: gurk
 installNotes: |-
   # Installation

@@ -26,6 +26,7 @@ import {
   extractInstallSection,
   inferInstalls,
   inferLanguage,
+  inferLaunch,
   inferTags,
   redactSecrets,
 } from "./infer.ts";
@@ -142,6 +143,7 @@ async function enrichOne(file: string, args: Args, stats: Stats): Promise<void> 
   const language = entry.language ?? inferLanguage(readme);
   const installSection = extractInstallSection(readme);
   const tags = inferTags(entry.name, entry.description, entry.tags ?? []);
+  const launchArgs = inferLaunch(readme, entry.binaries ?? []);
 
   const merged: AppEntry = {
     ...entry,
@@ -151,7 +153,10 @@ async function enrichOne(file: string, args: Args, stats: Stats): Promise<void> 
     packages: { ...packages, ...entry.packages },
     installNotes: installSection ?? entry.installNotes, // README is source of truth
     readmeUrl: readmeUrl ?? entry.readmeUrl,
+    // Curated launch spec wins; otherwise use inferred positionals.
+    launch: entry.launch ?? (launchArgs.length ? { args: launchArgs } : undefined),
   };
+  if (!merged.launch) delete merged.launch;
 
   // Drop empty maps to keep files clean.
   if (merged.install && Object.keys(merged.install).length === 0) delete merged.install;

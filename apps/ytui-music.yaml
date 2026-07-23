@@ -20,10 +20,8 @@ tags:
   - beautiful
 install:
   brew: brew install mpv
-  apt: apt install -y
 packages:
   brew: mpv
-  apt: -y
 installNotes: |-
   # Installation
   NOTE: since the dependency `libmpv` seems not to be maintained anymore,

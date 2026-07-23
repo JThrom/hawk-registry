@@ -15,7 +15,7 @@ tags:
 install:
   npm: npm install -g @bryance/wikit
 packages:
-  npm: ""
+  npm: wikit
 installNotes: |-
   ## Installation
 

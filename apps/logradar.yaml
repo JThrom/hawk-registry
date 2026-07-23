@@ -14,10 +14,8 @@ tags:
   - filtering
   - highlighting
 install:
-  cargo: cargo install --path
   brew: brew install azure-cli
 packages:
-  cargo: --path
   brew: azure-cli
 installNotes: |-
   ## Installation

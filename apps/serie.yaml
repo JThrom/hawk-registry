@@ -15,9 +15,9 @@ tags:
   - commit
   - graph
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked serie
 packages:
-  cargo: --locked
+  cargo: serie
 installNotes: |-
   ## Installation
 

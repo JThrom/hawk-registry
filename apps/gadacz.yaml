@@ -15,10 +15,8 @@ tags:
   - player
 install:
   pacman: pacman -S gstreamer
-  cargo: cargo install --path
 packages:
   pacman: gstreamer
-  cargo: --path
 installNotes: |-
   ## Installation
 

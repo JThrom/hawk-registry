@@ -20,10 +20,10 @@ tags:
   - read
   - only
 install:
-  brew: brew install --cask
+  brew: brew install --cask clawscli/tap/claws
   go: go install github.com/clawscli/claws/cmd/claws@latest
 packages:
-  brew: --cask
+  brew: claws
   go: claws
 installNotes: |-
   ## Installation

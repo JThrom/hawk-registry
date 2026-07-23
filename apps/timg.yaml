@@ -61,3 +61,8 @@ installNotes: |-
   sudo apt install cmake git g++ pkg-config
   sudo apt install libgraphicsmagick++-dev libturbojpeg-dev libexif-dev libswscale-dev libdeflate-dev librsvg2-dev libcairo-dev # needed libs
 readmeUrl: https://raw.githubusercontent.com/hzeller/timg/HEAD/README.md
+launch:
+  args:
+    - name: image_video
+      required: true
+      placeholder: image/video

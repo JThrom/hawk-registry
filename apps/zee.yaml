@@ -13,10 +13,10 @@ tags:
   - editor
   - rust
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked zee
   apt: apt install xorg-dev
 packages:
-  cargo: --locked
+  cargo: zee
   apt: xorg-dev
 installNotes: |-
   ### install options

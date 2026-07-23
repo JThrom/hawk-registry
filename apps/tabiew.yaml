@@ -19,11 +19,11 @@ tags:
 install:
   pacman: pacman -S tabiew
   brew: brew install tabiew
-  cargo: cargo install --locked
+  cargo: cargo install --locked tabiew
 packages:
   pacman: tabiew
   brew: tabiew
-  cargo: --locked
+  cargo: tabiew
 installNotes: |-
   ## Installation
 

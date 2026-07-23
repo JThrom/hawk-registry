@@ -16,10 +16,10 @@ tags:
   - rust
 install:
   brew: brew install tako8ki/tap/gobang
-  cargo: cargo install --version
+  cargo: cargo install --version 0.1.0-alpha.5 gobang
 packages:
   brew: gobang
-  cargo: --version
+  cargo: gobang
 installNotes: |-
   ## Installation
 

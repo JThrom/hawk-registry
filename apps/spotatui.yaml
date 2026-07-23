@@ -21,13 +21,13 @@ tags:
   - visualization
 install:
   brew: brew install spotatui
-  cargo: cargo install --locked
+  cargo: cargo install --locked spotatui
   apt: apt-get install libpipewire-0.3-dev
   pacman: pacman -S pipewire
   dnf: dnf install pipewire-devel
 packages:
   brew: spotatui
-  cargo: --locked
+  cargo: spotatui
   apt: libpipewire-0.3-dev
   pacman: pipewire
   dnf: pipewire-devel

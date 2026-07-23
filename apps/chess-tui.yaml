@@ -17,11 +17,9 @@ tags:
 install:
   brew: brew install thomas-mauran/tap/chess-tui
   cargo: cargo install chess-tui
-  apt: apt-get install -f
 packages:
   brew: chess-tui
   cargo: chess-tui
-  apt: -f
 installNotes: |-
   ### Quick Install
 

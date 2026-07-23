@@ -14,10 +14,10 @@ tags:
   - kafka
   - cluster
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked yozefu
   brew: brew install yozefu
 packages:
-  cargo: --locked
+  cargo: yozefu
   brew: yozefu
 installNotes: |-
   ## Getting started

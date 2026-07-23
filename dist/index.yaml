@@ -1,5 +1,5 @@
 version: 1
-generatedAt: 2026-07-23T15:41:07.904Z
+generatedAt: 2026-07-23T18:00:41.236Z
 categories:
   - id: dashboards
     name: Dashboards & Monitoring
@@ -727,12 +727,10 @@ entries:
       pacman: pacman -S astroterm
       dnf: dnf install astroterm
       brew: brew install astroterm
-      apt: apt install -y
     packages:
       pacman: astroterm
       dnf: astroterm
       brew: astroterm
-      apt: -y
     installNotes: |-
       ## Installation
 
@@ -1210,10 +1208,6 @@ entries:
       - network
       - bandwidth
       - utilization
-    install:
-      cargo: cargo install --git
-    packages:
-      cargo: --git
     installNotes: |-
       ## Installation
 
@@ -2699,10 +2693,8 @@ entries:
       - small
       - journaling
     install:
-      apt: apt-get install -y
       brew: brew install boost
     packages:
-      apt: -y
       brew: boost
     installNotes: |-
       ## Building & Installing
@@ -2888,10 +2880,8 @@ entries:
       - fathers
     install:
       pipx: pipx install poetry
-      pip: pip install -e
     packages:
       pipx: poetry
-      pip: -e
     installNotes: |-
       ### Setup
 
@@ -3361,11 +3351,9 @@ entries:
     install:
       brew: brew install thomas-mauran/tap/chess-tui
       cargo: cargo install chess-tui
-      apt: apt-get install -f
     packages:
       brew: chess-tui
       cargo: chess-tui
-      apt: -f
     installNotes: |-
       ### Quick Install
 
@@ -3487,7 +3475,7 @@ entries:
     install:
       npm: npm install -g @seemseam/ccb
     packages:
-      npm: ""
+      npm: ccb
     installNotes: |-
       ## How to Install
 
@@ -3556,10 +3544,10 @@ entries:
       - read
       - only
     install:
-      brew: brew install --cask
+      brew: brew install --cask clawscli/tap/claws
       go: go install github.com/clawscli/claws/cmd/claws@latest
     packages:
-      brew: --cask
+      brew: claws
       go: claws
     installNotes: |-
       ## Installation
@@ -4028,10 +4016,10 @@ entries:
       - agent
     install:
       npm: npm install -g @openai/codex
-      brew: brew install --cask
+      brew: brew install --cask codex
     packages:
-      npm: ""
-      brew: --cask
+      npm: codex
+      brew: codex
     installNotes: |-
       ### Installing and running Codex CLI
 
@@ -4187,7 +4175,7 @@ entries:
       go: go install github.com/charmbracelet/crush@latest
     packages:
       brew: crush
-      npm: ""
+      npm: crush
       apt: crush
       go: crush
     installNotes: |-
@@ -4620,12 +4608,10 @@ entries:
     install:
       go: go install github.com/jr-k/d4s@latest
       brew: brew install jr-k/d4s/d4s
-      apt: apt install -y
       dnf: dnf install d4s
     packages:
       go: d4s
       brew: d4s
-      apt: -y
       dnf: d4s
     installNotes: |-
       ## Installation
@@ -4845,9 +4831,9 @@ entries:
       - junkie
       - deserves
     install:
-      brew: brew install --cask
+      brew: brew install --cask danvergara/tools/dblab
     packages:
-      brew: --cask
+      brew: dblab
     installNotes: |-
       ## Installation
 
@@ -4900,10 +4886,10 @@ entries:
     tags:
       - dynamodb
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked ddv
       brew: brew install lusingander/tap/ddv
     packages:
-      cargo: --locked
+      cargo: ddv
       brew: ddv
     installNotes: |-
       ## Installation
@@ -6110,11 +6096,11 @@ entries:
       - slightly
       - quackers
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked ducker
       pacman: pacman -S ducker
       brew: brew install ducker
     packages:
-      cargo: --locked
+      cargo: ducker
       pacman: ducker
       brew: ducker
     installNotes: |-
@@ -6169,10 +6155,6 @@ entries:
       - unicode
       - ansi
       - editor
-    install:
-      pip: pip install --upgrade
-    packages:
-      pip: --upgrade
     installNotes: |-
       ## Installation
 
@@ -6288,7 +6270,7 @@ entries:
       go: go install github.com/chojs23/ec/cmd/ec@latest
     packages:
       brew: ec
-      npm: ""
+      npm: ec
       go: ec
     installNotes: |-
       ## Installation
@@ -6647,10 +6629,6 @@ entries:
       - chatgpt
       - build
       - textual
-    install:
-      pipx: pipx install --python
-    packages:
-      pipx: --python
     installNotes: |-
       ## Installation
 
@@ -6887,10 +6865,8 @@ entries:
       - notebooks
     install:
       pipx: pipx install euporie
-      pip: pip install --user
     packages:
       pipx: euporie
-      pip: --user
     readmeUrl: https://raw.githubusercontent.com/joouha/euporie/HEAD/README.rst
   - id: fancy-cat
     name: fancy-cat
@@ -7059,12 +7035,10 @@ entries:
       - project
     install:
       cargo: cargo install feluda
-      apt: apt install -f
       dnf: dnf install feluda_*.rpm
       brew: brew install feluda
     packages:
       cargo: feluda
-      apt: -f
       dnf: feluda_*.rpm
       brew: feluda
     installNotes: |-
@@ -7189,12 +7163,12 @@ entries:
       - vulnerabilities
       - cves
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked flawz
       apt: apt install libsqlite3-dev
       pacman: pacman -S flawz
       brew: brew install flawz
     packages:
-      cargo: --locked
+      cargo: flawz
       apt: libsqlite3-dev
       pacman: flawz
       brew: flawz
@@ -7385,11 +7359,9 @@ entries:
       - built
       - rust
     install:
-      cargo: cargo install --path
       pacman: pacman -S framework-tool-tui
       brew: brew install framework-tool-tui
     packages:
-      cargo: --path
       pacman: framework-tool-tui
       brew: framework-tool-tui
     installNotes: |-
@@ -7426,11 +7398,9 @@ entries:
     install:
       brew: brew install fresh-editor
       npm: npm install -g @fresh-editor/fresh-editor
-      cargo: cargo install cargo-binstall
     packages:
       brew: fresh-editor
-      npm: ""
-      cargo: cargo-binstall
+      npm: fresh-editor
     installNotes: |-
       ## Installation
 
@@ -7786,10 +7756,8 @@ entries:
       - player
     install:
       pacman: pacman -S gstreamer
-      cargo: cargo install --path
     packages:
       pacman: gstreamer
-      cargo: --path
     installNotes: |-
       ## Installation
 
@@ -8382,10 +8350,10 @@ entries:
       - issues
     install:
       brew: brew install jayanaxhf/taps/gitv
-      cargo: cargo install --locked
+      cargo: cargo install --locked gitv-tui
     packages:
       brew: gitv
-      cargo: --locked
+      cargo: gitv-tui
     installNotes: |-
       ### Installation
 
@@ -8548,6 +8516,16 @@ entries:
 
       </details>
     readmeUrl: https://raw.githubusercontent.com/jayanaxhf/gitv/HEAD/README.md
+    launch:
+      args:
+        - name: owner
+          required: false
+          placeholder: OWNER
+          description: "GitHub repository owner or organization (for example: `rust-lang`)"
+        - name: repo
+          required: false
+          placeholder: REPO
+          description: "GitHub repository name under `owner` (for example: `rust`)"
   - id: glances
     name: Glances
     description: Glances an Eye on your system. A top/htop alternative.
@@ -8932,10 +8910,10 @@ entries:
       - rust
     install:
       brew: brew install tako8ki/tap/gobang
-      cargo: cargo install --version
+      cargo: cargo install --version 0.1.0-alpha.5 gobang
     packages:
       brew: gobang
-      cargo: --version
+      cargo: gobang
     installNotes: |-
       ## Installation
 
@@ -9585,6 +9563,12 @@ entries:
         gah install gping
         ```
     readmeUrl: https://raw.githubusercontent.com/orf/gping/HEAD/readme.md
+    launch:
+      args:
+        - name: hosts_or_commands
+          required: false
+          placeholder: HOSTS_OR_COMMANDS
+          description: ...  Hosts or IPs to ping, or commands to run if --cmd is provided. Can use cloud shorthands like aws:eu-west-1.
   - id: grafterm
     name: Grafterm
     description: Metrics dashboards on terminal, a Grafana inspired terminal version
@@ -9676,10 +9660,10 @@ entries:
       - signal
       - messenger
     install:
-      cargo: cargo install --git
+      cargo: cargo install --git https://github.com/boxdot/gurk-rs gurk
       pacman: pacman -S gurk
     packages:
-      cargo: --git
+      cargo: gurk
       pacman: gurk
     installNotes: |-
       # Installation
@@ -10339,9 +10323,9 @@ entries:
       - document
       - reader
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked hygg
     packages:
-      cargo: --locked
+      cargo: hygg
     readmeUrl: https://raw.githubusercontent.com/kruserr/hygg/HEAD/README.md
   - id: iamb
     name: iamb
@@ -10476,7 +10460,7 @@ entries:
       npm: npm install -g @i7m/instagram-cli
       brew: brew install instagram-cli
     packages:
-      npm: ""
+      npm: instagram-cli
       brew: instagram-cli
     installNotes: |-
       ## Installation
@@ -10590,12 +10574,10 @@ entries:
     install:
       pacman: pacman -S mpv
       apt: apt install mpv
-      cargo: cargo install --path
       brew: brew install mpv
     packages:
       pacman: mpv
       apt: mpv
-      cargo: --path
       brew: mpv
     installNotes: |-
       ## Installation
@@ -11928,11 +11910,9 @@ entries:
       - viewing
       - filtering
     install:
-      apt: apt install -y
       brew: brew install lazyjournal
       go: go install github.com/Lifailon/lazyjournal@latest
     packages:
-      apt: -y
       brew: lazyjournal
       go: lazyjournal
     installNotes: |-
@@ -12199,10 +12179,10 @@ entries:
       - filesytem
       - trivy
     install:
-      brew: brew install --cask
+      brew: brew install --cask lazytrivy
       go: go install github.com/owenrumney/lazytrivy@latest
     packages:
-      brew: --cask
+      brew: lazytrivy
       go: lazytrivy
     installNotes: |-
       ## Installation
@@ -12289,10 +12269,6 @@ entries:
       - heavy
       - inspiration
       - ranger
-    install:
-      go: go install -trimpath
-    packages:
-      go: -trimpath
     installNotes: |-
       ## Installation
 
@@ -12392,10 +12368,8 @@ entries:
       - filtering
       - highlighting
     install:
-      cargo: cargo install --path
       brew: brew install azure-cli
     packages:
-      cargo: --path
       brew: azure-cli
     installNotes: |-
       ## Installation
@@ -12778,10 +12752,6 @@ entries:
       - editor
       - built
       - textual
-    install:
-      pip: pip install -r
-    packages:
-      pip: -r
     installNotes: |-
       ### INSTALLATION
 
@@ -14657,10 +14627,8 @@ entries:
       - keybindings
     install:
       brew: brew install numr
-      cargo: cargo install --path
     packages:
       brew: numr
-      cargo: --path
     installNotes: |-
       ## Installation
 
@@ -15003,6 +14971,12 @@ entries:
 
       You can install it via `cargo install cargo-pgo`.
     readmeUrl: https://raw.githubusercontent.com/hatoo/oha/HEAD/README.md
+    launch:
+      args:
+        - name: url
+          required: true
+          placeholder: URL
+          description: Target URL or file with multiple URLs
   - id: omaro
     name: omaro
     description: TUI to browse posts and comments on lobste.rs
@@ -16017,10 +15991,10 @@ entries:
       - productivity
       - statistics
     install:
-      brew: brew install --cask
+      brew: brew install --cask bahaaio/pomo/pomo
       go: go install github.com/Bahaaio/pomo@latest
     packages:
-      brew: --cask
+      brew: pomo
       go: pomo
     installNotes: |-
       ## Installation
@@ -17256,11 +17230,9 @@ entries:
       - galaxy
     install:
       pacman: pacman -S rebels-in-the-sky
-      apt: apt-get install -y
       cargo: cargo install rebels
     packages:
       pacman: rebels-in-the-sky
-      apt: -y
       cargo: rebels
     installNotes: |-
       ## Installation
@@ -18084,10 +18056,6 @@ entries:
     language: Go
     tags:
       - slack
-    install:
-      pip: pip3 install -r
-    packages:
-      pip: -r
     installNotes: |-
       ## Installation
 
@@ -18389,9 +18357,9 @@ entries:
       - commit
       - graph
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked serie
     packages:
-      cargo: --locked
+      cargo: serie
     installNotes: |-
       ## Installation
 
@@ -18480,10 +18448,6 @@ entries:
     language: Rust
     tags:
       - spreadsheet
-    install:
-      cargo: cargo install --git
-    packages:
-      cargo: --git
     installNotes: |-
       ## Installing
 
@@ -18499,6 +18463,11 @@ entries:
       cargo install --git https://github.com/zaphar/sheetsui --locked
       ```
     readmeUrl: https://raw.githubusercontent.com/zaphar/sheetsui/HEAD/README.md
+    launch:
+      args:
+        - name: workbook
+          required: true
+          placeholder: WORKBOOK
   - id: siggo
     name: siggo
     description: A terminal ui for signal-cli, written in Go
@@ -18931,13 +18900,9 @@ entries:
     install:
       brew: brew install sot
       pipx: pipx install sot
-      apt: apt-get install -f
-      pip: pip install --system
     packages:
       brew: sot
       pipx: sot
-      apt: -f
-      pip: --system
     installNotes: |-
       ## Installation
 
@@ -19094,13 +19059,13 @@ entries:
       - visualization
     install:
       brew: brew install spotatui
-      cargo: cargo install --locked
+      cargo: cargo install --locked spotatui
       apt: apt-get install libpipewire-0.3-dev
       pacman: pacman -S pipewire
       dnf: dnf install pipewire-devel
     packages:
       brew: spotatui
-      cargo: --locked
+      cargo: spotatui
       apt: libpipewire-0.3-dev
       pacman: pipewire
       dnf: pipewire-devel
@@ -19630,9 +19595,9 @@ entries:
       - cloud
       - amazon
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked stu
     packages:
-      cargo: --locked
+      cargo: stu
     installNotes: |-
       ## Installation
 
@@ -20045,11 +20010,11 @@ entries:
     install:
       pacman: pacman -S tabiew
       brew: brew install tabiew
-      cargo: cargo install --locked
+      cargo: cargo install --locked tabiew
     packages:
       pacman: tabiew
       brew: tabiew
-      cargo: --locked
+      cargo: tabiew
     installNotes: |-
       ## Installation
 
@@ -20226,7 +20191,7 @@ entries:
     install:
       npm: npm install --global @perryrh0dan/taskline
     packages:
-      npm: ""
+      npm: taskline
     installNotes: |-
       ## Install
 
@@ -20416,10 +20381,6 @@ entries:
     homepage: https://github.com/itsjunetime/tdf
     repo: https://github.com/itsjunetime/tdf
     language: Rust
-    install:
-      cargo: cargo install --git
-    packages:
-      cargo: --git
     installNotes: |-
       ## Installation
 
@@ -20668,10 +20629,6 @@ entries:
       - inspired
       - youtube
       - manager
-    install:
-      cargo: cargo install --path
-    packages:
-      cargo: --path
     installNotes: |-
       ## Installation
 
@@ -20949,11 +20906,9 @@ entries:
     tags:
       - paint
     install:
-      pip: pip install --upgrade
       pacman: pacman -S python-pipx
       pipx: pipx install textual-paint
     packages:
-      pip: --upgrade
       pacman: python-pipx
       pipx: textual-paint
     installNotes: |-
@@ -20970,6 +20925,11 @@ entries:
       pip install textual-paint
       ```
     readmeUrl: https://raw.githubusercontent.com/1j01/textual-paint/HEAD/README.md
+    launch:
+      args:
+        - name: filename
+          required: false
+          placeholder: filename
   - id: textual-web
     name: textual-web
     description: Run TUIs and terminals in your browser
@@ -21301,6 +21261,11 @@ entries:
       sudo apt install cmake git g++ pkg-config
       sudo apt install libgraphicsmagick++-dev libturbojpeg-dev libexif-dev libswscale-dev libdeflate-dev librsvg2-dev libcairo-dev # needed libs
     readmeUrl: https://raw.githubusercontent.com/hzeller/timg/HEAD/README.md
+    launch:
+      args:
+        - name: image_video
+          required: true
+          placeholder: image/video
   - id: tinytetris
     name: tinytetris
     description: 80x23 terminal tetris!
@@ -21338,10 +21303,6 @@ entries:
       - soundcloud
       - dirble
       - plex
-    install:
-      pip: pip3 install --upgrade
-    packages:
-      pip: --upgrade
     installNotes: |-
       # Installation
 
@@ -22076,11 +22037,11 @@ entries:
       - cluttering
       - system
     install:
-      cargo: cargo install --path
+      cargo: cargo install try-rs
       apt: apt install try-rs
       brew: brew install try-rs
     packages:
-      cargo: --path
+      cargo: try-rs
       apt: try-rs
       brew: try-rs
     installNotes: |-
@@ -24244,7 +24205,7 @@ entries:
     install:
       npm: npm install -g @bryance/wikit
     packages:
-      npm: ""
+      npm: wikit
     installNotes: |-
       ## Installation
 
@@ -24431,10 +24392,6 @@ entries:
       - right
       - check
       - weather
-    install:
-      apt: apt-get install -y
-    packages:
-      apt: -y
     installNotes: |-
       ## Installation
 
@@ -24676,10 +24633,10 @@ entries:
       - kafka
       - cluster
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked yozefu
       brew: brew install yozefu
     packages:
-      cargo: --locked
+      cargo: yozefu
       brew: yozefu
     installNotes: |-
       ## Getting started
@@ -24806,10 +24763,8 @@ entries:
       - beautiful
     install:
       brew: brew install mpv
-      apt: apt install -y
     packages:
       brew: mpv
-      apt: -y
     installNotes: |-
       # Installation
       NOTE: since the dependency `libmpv` seems not to be maintained anymore,
@@ -24866,10 +24821,10 @@ entries:
       - editor
       - rust
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked zee
       apt: apt install xorg-dev
     packages:
-      cargo: --locked
+      cargo: zee
       apt: xorg-dev
     installNotes: |-
       ### install options
@@ -24930,9 +24885,9 @@ entries:
       - batteries
       - included
     install:
-      cargo: cargo install --locked
+      cargo: cargo install --locked zellij
     packages:
-      cargo: --locked
+      cargo: zellij
     installNotes: |-
       ## How do I install it?
 
@@ -24981,12 +24936,10 @@ entries:
       apt: apt install curl
       pacman: pacman -S zenith
       brew: brew install zenith
-      cargo: cargo install --git
     packages:
       apt: curl
       pacman: zenith
       brew: zenith
-      cargo: --git
     installNotes: |-
       ## Installation
 
@@ -25095,10 +25048,8 @@ entries:
       - matterhorn
     install:
       apt: apt-get install libnotify-bin
-      pip: pip3 install --user
     packages:
       apt: libnotify-bin
-      pip: --user
     installNotes: |-
       ## Installation
 

@@ -17,10 +17,10 @@ tags:
   - issues
 install:
   brew: brew install jayanaxhf/taps/gitv
-  cargo: cargo install --locked
+  cargo: cargo install --locked gitv-tui
 packages:
   brew: gitv
-  cargo: --locked
+  cargo: gitv-tui
 installNotes: |-
   ### Installation
 
@@ -183,3 +183,13 @@ installNotes: |-
 
   </details>
 readmeUrl: https://raw.githubusercontent.com/jayanaxhf/gitv/HEAD/README.md
+launch:
+  args:
+    - name: owner
+      required: false
+      placeholder: OWNER
+      description: "GitHub repository owner or organization (for example: `rust-lang`)"
+    - name: repo
+      required: false
+      placeholder: REPO
+      description: "GitHub repository name under `owner` (for example: `rust`)"

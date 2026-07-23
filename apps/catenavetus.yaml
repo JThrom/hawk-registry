@@ -14,10 +14,8 @@ tags:
   - fathers
 install:
   pipx: pipx install poetry
-  pip: pip install -e
 packages:
   pipx: poetry
-  pip: -e
 installNotes: |-
   ### Setup
 

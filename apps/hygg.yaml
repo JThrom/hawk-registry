@@ -16,7 +16,7 @@ tags:
   - document
   - reader
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked hygg
 packages:
-  cargo: --locked
+  cargo: hygg
 readmeUrl: https://raw.githubusercontent.com/kruserr/hygg/HEAD/README.md

@@ -21,12 +21,10 @@ tags:
 install:
   go: go install github.com/jr-k/d4s@latest
   brew: brew install jr-k/d4s/d4s
-  apt: apt install -y
   dnf: dnf install d4s
 packages:
   go: d4s
   brew: d4s
-  apt: -y
   dnf: d4s
 installNotes: |-
   ## Installation

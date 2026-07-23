@@ -20,7 +20,7 @@ install:
   go: go install github.com/chojs23/ec/cmd/ec@latest
 packages:
   brew: ec
-  npm: ""
+  npm: ec
   go: ec
 installNotes: |-
   ## Installation

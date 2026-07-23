@@ -12,10 +12,6 @@ tags:
   - chatgpt
   - build
   - textual
-install:
-  pipx: pipx install --python
-packages:
-  pipx: --python
 installNotes: |-
   ## Installation
 

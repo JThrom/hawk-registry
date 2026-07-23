@@ -17,7 +17,7 @@ install:
   npm: npm install -g @i7m/instagram-cli
   brew: brew install instagram-cli
 packages:
-  npm: ""
+  npm: instagram-cli
   brew: instagram-cli
 installNotes: |-
   ## Installation

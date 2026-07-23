@@ -15,10 +15,8 @@ tags:
   - matterhorn
 install:
   apt: apt-get install libnotify-bin
-  pip: pip3 install --user
 packages:
   apt: libnotify-bin
-  pip: --user
 installNotes: |-
   ## Installation
 

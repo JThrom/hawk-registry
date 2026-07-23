@@ -16,10 +16,6 @@ tags:
   - inspired
   - youtube
   - manager
-install:
-  cargo: cargo install --path
-packages:
-  cargo: --path
 installNotes: |-
   ## Installation
 

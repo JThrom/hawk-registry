@@ -14,11 +14,11 @@ tags:
   - slightly
   - quackers
 install:
-  cargo: cargo install --locked
+  cargo: cargo install --locked ducker
   pacman: pacman -S ducker
   brew: brew install ducker
 packages:
-  cargo: --locked
+  cargo: ducker
   pacman: ducker
   brew: ducker
 installNotes: |-

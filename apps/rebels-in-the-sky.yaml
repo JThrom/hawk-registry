@@ -19,11 +19,9 @@ tags:
   - galaxy
 install:
   pacman: pacman -S rebels-in-the-sky
-  apt: apt-get install -y
   cargo: cargo install rebels
 packages:
   pacman: rebels-in-the-sky
-  apt: -y
   cargo: rebels
 installNotes: |-
   ## Installation

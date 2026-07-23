@@ -18,12 +18,10 @@ install:
   pacman: pacman -S astroterm
   dnf: dnf install astroterm
   brew: brew install astroterm
-  apt: apt install -y
 packages:
   pacman: astroterm
   dnf: astroterm
   brew: astroterm
-  apt: -y
 installNotes: |-
   ## Installation
 

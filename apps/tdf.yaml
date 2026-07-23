@@ -8,10 +8,6 @@ binaries:
 homepage: https://github.com/itsjunetime/tdf
 repo: https://github.com/itsjunetime/tdf
 language: Rust
-install:
-  cargo: cargo install --git
-packages:
-  cargo: --git
 installNotes: |-
   ## Installation
 

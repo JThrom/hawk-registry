@@ -12,10 +12,6 @@ tags:
   - network
   - bandwidth
   - utilization
-install:
-  cargo: cargo install --git
-packages:
-  cargo: --git
 installNotes: |-
   ## Installation
 

@@ -16,13 +16,9 @@ tags:
 install:
   brew: brew install sot
   pipx: pipx install sot
-  apt: apt-get install -f
-  pip: pip install --system
 packages:
   brew: sot
   pipx: sot
-  apt: -f
-  pip: --system
 installNotes: |-
   ## Installation
 

@@ -17,10 +17,10 @@ tags:
   - filesytem
   - trivy
 install:
-  brew: brew install --cask
+  brew: brew install --cask lazytrivy
   go: go install github.com/owenrumney/lazytrivy@latest
 packages:
-  brew: --cask
+  brew: lazytrivy
   go: lazytrivy
 installNotes: |-
   ## Installation

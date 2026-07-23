@@ -73,3 +73,9 @@ installNotes: |-
     gah install gping
     ```
 readmeUrl: https://raw.githubusercontent.com/orf/gping/HEAD/readme.md
+launch:
+  args:
+    - name: hosts_or_commands
+      required: false
+      placeholder: HOSTS_OR_COMMANDS
+      description: ...  Hosts or IPs to ping, or commands to run if --cmd is provided. Can use cloud shorthands like aws:eu-west-1.

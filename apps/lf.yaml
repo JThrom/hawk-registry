@@ -16,10 +16,6 @@ tags:
   - heavy
   - inspiration
   - ranger
-install:
-  go: go install -trimpath
-packages:
-  go: -trimpath
 installNotes: |-
   ## Installation
 

@@ -22,11 +22,11 @@ tags:
   - cluttering
   - system
 install:
-  cargo: cargo install --path
+  cargo: cargo install try-rs
   apt: apt install try-rs
   brew: brew install try-rs
 packages:
-  cargo: --path
+  cargo: try-rs
   apt: try-rs
   brew: try-rs
 installNotes: |-

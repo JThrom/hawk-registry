@@ -20,10 +20,8 @@ tags:
   - keybindings
 install:
   brew: brew install numr
-  cargo: cargo install --path
 packages:
   brew: numr
-  cargo: --path
 installNotes: |-
   ## Installation
 

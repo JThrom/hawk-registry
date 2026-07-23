@@ -19,7 +19,7 @@ install:
   go: go install github.com/charmbracelet/crush@latest
 packages:
   brew: crush
-  npm: ""
+  npm: crush
   apt: crush
   go: crush
 installNotes: |-

@@ -21,10 +21,6 @@ tags:
   - soundcloud
   - dirble
   - plex
-install:
-  pip: pip3 install --upgrade
-packages:
-  pip: --upgrade
 installNotes: |-
   # Installation
 

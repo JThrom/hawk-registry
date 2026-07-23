@@ -16,7 +16,7 @@ tags:
 install:
   npm: npm install --global @perryrh0dan/taskline
 packages:
-  npm: ""
+  npm: taskline
 installNotes: |-
   ## Install
 

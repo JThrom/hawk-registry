@@ -17,12 +17,10 @@ tags:
   - project
 install:
   cargo: cargo install feluda
-  apt: apt install -f
   dnf: dnf install feluda_*.rpm
   brew: brew install feluda
 packages:
   cargo: feluda
-  apt: -f
   dnf: feluda_*.rpm
   brew: feluda
 installNotes: |-

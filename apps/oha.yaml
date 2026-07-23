@@ -97,3 +97,9 @@ installNotes: |-
 
   You can install it via `cargo install cargo-pgo`.
 readmeUrl: https://raw.githubusercontent.com/hatoo/oha/HEAD/README.md
+launch:
+  args:
+    - name: url
+      required: true
+      placeholder: URL
+      description: Target URL or file with multiple URLs
