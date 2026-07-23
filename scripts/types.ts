@@ -17,6 +17,19 @@ export type PackageManagerId =
   | "dnf"
   | "go";
 
+export interface LaunchArg {
+  name: string;
+  description?: string;
+  required?: boolean;
+  placeholder?: string;
+  flag?: string;
+  default?: string;
+}
+
+export interface LaunchSpec {
+  args?: LaunchArg[];
+}
+
 export interface AppEntry {
   id: string;
   name: string;
@@ -34,6 +47,8 @@ export interface AppEntry {
   installNotes?: string;
   /** Raw URL of the full README (sidecar stored in readmes/). */
   readmeUrl?: string;
+  /** Launch arguments/options prompted before launch. */
+  launch?: LaunchSpec;
 }
 
 export interface CategoryDef {

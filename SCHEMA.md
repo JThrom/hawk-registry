@@ -20,9 +20,25 @@ Each app is one YAML file in `apps/<id>.yaml`.
 | `language`    | no       | string            | Implementation language / runtime.                           |
 | `installNotes`| no       | string (markdown) | Extracted README install section; shown when no manager fits.|
 | `readmeUrl`   | no       | string (URL)      | Raw URL of the full README (sidecar in `readmes/`).          |
+| `launch`      | no       | object            | Launch arguments prompted before launch (see below).         |
 
 Most optional fields are auto-populated by `scripts/enrich.ts` from the
 project README; hand-curated values are preserved.
+
+### Launch arguments (`launch.args`)
+
+Apps that need parameters (e.g. a directory) declare them so Hawk can prompt:
+
+```yaml
+launch:
+  args:
+    - name: path            # required: shown in the prompt + details
+      description: Directory to open
+      required: false       # if true, the user must supply a value
+      placeholder: ~/projects
+      default: "."          # pre-filled value
+      flag: --path          # optional: passed as "--path <value>"; omit = positional
+```
 
 ### Valid package managers
 
